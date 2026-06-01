@@ -17,6 +17,6 @@ DRAFT
 | literacy | 10. Literacy category | illiterate | Standardize later |
 | marriage_status | 11. Marriage category | married | Standardize later |
 | allowance_status | 12. Financial support from administration | yes/no | Standardize later |
-| allowance_status | 13. Illness description | dumb | Standardize later |
+| illness | 13. Illness description | dumb | Standardize later |
 | comments | 14. Comments | in Mauka | Standardize later |
 | notes_raw | Source notes | RGB № 4800 | Keep raw text |
