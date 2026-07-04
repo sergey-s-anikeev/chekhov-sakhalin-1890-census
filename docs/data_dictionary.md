@@ -52,3 +52,26 @@ Format:
 
 ```text
 P + global sequential person number, zero-padded to 6 digits
+
+Example:
+P000001
+P000125
+P007445
+
+person_id is the stable primary ID and must not depend on settlement, household number, page number, or district.
+
+source_position_id
+
+Format:
+D-SS-HHH-PPPP
+
+Where:
+| Component | Meaning                                                |
+| --------- | ------------------------------------------------------ |
+| `D`       | District code                                          |
+| `SS`      | Settlement order                                       |
+| `HHH`     | Household number, zero-padded to 3 digits when numeric |
+| `PPPP`    | Person order within locality, zero-padded to 4 digits  |
+
+Example:
+3-48-002-0005
