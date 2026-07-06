@@ -296,7 +296,7 @@ If months are present, preserve the full age phrase in `comments`.
 
 ## Origin Place Rules
 
-`origin_place` is normalized against the 1890 administrative-unit reference library.
+`origin_place` is normalized against a separate 1890 reference list.
 
 Canonical values for governorates and oblasts should use full official administrative-unit names, for example:
 
