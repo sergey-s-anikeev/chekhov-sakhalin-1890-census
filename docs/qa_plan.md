@@ -109,6 +109,15 @@ Before full-scale extraction, the 300–500 record sample should be checked for:
 - likely source anomalies;
 - manual-correction workload.
 
+```
+500 record sample results:
+Unknown origin places: 0
+Unknown legal statuses: 0
+Unknown family statuses: 0
+Unknown religions: 0
+Unresolved source anomalies: 0
+Confirmed source anomalies preserved as printed: 1
+```
 ## QA Success Criteria for MVP
 
 The MVP sample is considered ready for analysis when:
