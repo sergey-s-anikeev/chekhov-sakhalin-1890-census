@@ -41,10 +41,7 @@ convert raw split records into final CSV schema
 ↓
 run validation and QA
 ```
-Workflow now includes manual anomaly review after automated QA and confirmed source typos are either:
-preserved as printed
-or:
-mapped through documented normalization rules depending on the field and certainty.
+Workflow now includes manual anomaly review after automated QA and confirmed source typos are either: preserved as printed or mapped through documented normalization rules depending on the field and certainty.
 
 Printed book page numbers are preserved in `page_number`. PDF viewer page numbers are not used unless they match printed pagination.
 
