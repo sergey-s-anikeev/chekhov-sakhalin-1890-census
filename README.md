@@ -65,6 +65,12 @@ chekhov-sakhalin-1890-census/
     .gitkeep
 ```
 
+## Scripts
+
+The `scripts/` folder contains reusable Python code for extraction, normalization, transformation, and QA.
+
+- `sakhalin_conversion_helpers_v11.py` — helper functions for cleaning source text, normalizing controlled fields, generating IDs, converting raw split records into the final CSV schema, and validating output.
+  
 ## Data Publication Note
 
 The original PDF and full person-level dataset are not included in this repository until copyright, access, and ethical considerations are reviewed.
