@@ -1,0 +1,37 @@
+{
+  "row_count": 500,
+  "unknown_origin_places": [],
+  "unknown_legal_statuses": [],
+  "unknown_family_statuses": [],
+  "unknown_religions": [],
+  "unresolved_source_anomalies": [],
+  "confirmed_source_anomalies": [
+    {
+      "person_id": "P000178",
+      "source_position_id": "3-30-030-0040",
+      "page_number": "425",
+      "settlement": "Поро-ан-Томари",
+      "name_raw": "Андрей Федоров Савельев",
+      "field": "religion",
+      "value": "1882",
+      "reason": "religion field contains a year-like value; probable source misprint"
+    }
+  ],
+  "rule_updates": [
+    {
+      "field": "religion/occupation and other text fields with square-bracket restoration",
+      "rule": "Remove extraction spaces before square-bracketed restored word parts before removing brackets.",
+      "example": "Правосл [авного] -> Православного -> Православное"
+    },
+    {
+      "field": "origin_place",
+      "rule": "Map Каменецк-Подольская to Подольская губерния using MAIN_GUBERNIAS_1890.",
+      "example": "Каменецк-Подольская -> Подольская губерния"
+    },
+    {
+      "field": "origin_place",
+      "rule": "Map Курляндского to Курляндская губерния using MAIN_GUBERNIAS_1890.",
+      "example": "Курляндского -> Курляндская губерния"
+    }
+  ]
+}
