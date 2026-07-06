@@ -7,6 +7,97 @@ from pathlib import Path
 from typing import Any
 
 
+def normalize_pdf_artifacts(value: str) -> str:
+    """Remove PDF extraction artifacts that split words or produce invisible separators."""
+    value = value.replace("\u00ad", "")   # soft hyphen
+    value = value.replace("\ufffe", "")   # artifact visible as ￾ in extracted text
+    value = value.replace("\ufeff", "")   # BOM / zero-width no-break space
+    value = value.replace("\xa0", " ")    # non-breaking space
+    value = value.replace("\u200b", "")   # zero-width space
+    value = value.replace("–", "-")
+    return value
+
+
+def base_text(value: Any) -> str:
+    """Minimal string cleanup: null handling, PDF artifacts, whitespace."""
+    if value is None:
+        return ""
+
+    value = str(value).strip()
+    if value.lower() in {"nan", "none", "null"}:
+        return ""
+
+    value = normalize_pdf_artifacts(value)
+    value = re.sub(r"\s+", " ", value).strip()
+    return value
+
+
+def remove_source_field_prefix(value: str) -> str:
+    """Remove source field prefixes such as '3.', '6.', '7.', '10.', '14.'."""
+    return re.sub(r"^\s*\d+\.\s*", "", value).strip()
+
+
+def normalize_source_markup(value: str) -> str:
+    """
+    Source markup:
+    - <angle brackets> = crossed-out words; remove them.
+    - [square brackets] = restored parts of words; keep letters but remove brackets.
+
+    If a PDF extraction artifact inserts a space before a restored word part,
+    remove that space before bracket restoration:
+    - Правосл [авного] -> Правосл[авного] -> Православного
+
+    This is especially important for one-word fields such as religion and occupation.
+    """
+    value = re.sub(r"<[^>]*>", " ", value)
+    value = re.sub(r"(?<=[А-Яа-яЁёA-Za-z])\s+(?=\[)", "", value)
+    value = value.replace("[", "").replace("]", "")
+    value = re.sub(r"\s+", " ", value).strip()
+    return value
+
+
+def remove_trailing_footnote_digits(value: str) -> str:
+    """
+    Remove trailing bare footnote digits:
+    - 'Вера Суменко2' -> 'Вера Суменко'
+    - 'Дочь поселенца1' -> 'Дочь поселенца'
+    - 'На Сахалине6' -> 'На Сахалине'
+
+    Preserve ordinal markers:
+    - 'Марья Алексеева Попова 2-я'
+    - 'Андрей Иванов 1-й'
+    """
+    value = re.sub(r"\s*\d+$", "", value).strip()
+    return value
+
+
+def clean_text(value: Any, *, remove_trailing_footnotes: bool = True) -> str:
+    """
+    General text-field cleanup.
+
+    Use remove_trailing_footnotes=False for:
+    - comments, because it may contain age notes such as '7 месяцев' or '1 год 5 месяцев';
+    - notes_raw, because it must preserve archival numbers such as 'РГБ № 6810'.
+    """
+    value = base_text(value)
+    if not value:
+        return ""
+
+    value = remove_source_field_prefix(value)
+    value = normalize_source_markup(value)
+    value = re.sub(r"\s+", " ", value).strip()
+
+    if remove_trailing_footnotes:
+        value = remove_trailing_footnote_digits(value)
+
+    return value
+
+
+def clean_preserve_comments(value: Any) -> str:
+    return clean_text(value, remove_trailing_footnotes=False)
+
+
+
 SETTLEMENTS = {
     "Александровское": {"settlement_order": "01", "district_code": "1", "district": "Александровский", "type": "селение", "page_start": 27},
     "Пост Александровский": {"settlement_order": "02", "district_code": "1", "district": "Александровский", "type": "пост", "page_start": 33},
@@ -184,8 +275,8 @@ def _build_legal_status_canonical_map() -> dict[str, str]:
     add("Поселенец", "Поселенец.", "поселенец")
     add("Поселка", "Поселка.", "поселка")
 
-    add("Ссыльнокаторжный", "Сcыльнокаторжный", "Сс каторжный", "Сс. каторжный", "Ссыльно каторжный", "Ссыльно-каторжный")
-    add("Ссыльнокаторжная", "Сcыльнокаторжная", "Сс каторжная", "Сс. каторжная", "Ссыльно каторжная", "Ссыльно-каторжная")
+    add("Ссыльнокаторжный", "Сcыльнокаторжный", "Сс каторжный", "Сс. каторжный", "Ссыльно каторжный", "Ссыльно-каторжный", "Ссылнокаторжный", "Сс[ылно]каторжный")
+    add("Ссыльнокаторжная", "Сcыльнокаторжная", "Сс каторжная", "Сс. каторжная", "Ссыльно каторжная", "Ссыльно-каторжная", "Ссылнокаторжная", "Сс[ылно]каторжная")
 
     add("Свободного состояния")
     add("Старший надзиратель")
@@ -564,9 +655,9 @@ def _build_origin_place_canonical_map() -> dict[str, str]:
     # Explicit historical/source spelling variants and duplicate spellings.
     _add_origin_variants(mapping, "Санкт-Петербургская губерния", "Петербургская", "Петербургской", "Петербургская губерния", "Петербургской губернии")
     _add_origin_variants(mapping, "Петроковская губерния", "Петраковская", "Петраковской", "Петраковская губерния", "Петраковской губернии")
-    _add_origin_variants(mapping, "Подольская губерния", "Каменец-Подольская", "Каменец-Подольской", "Каменец - Подольская", "Каменец - Подольской")
+    _add_origin_variants(mapping, "Подольская губерния", "Каменец-Подольская", "Каменец-Подольской", "Каменецк-Подольская", "Каменецк-Подольской", "Каменец - Подольская", "Каменец - Подольской", "Каменецк - Подольская", "Каменецк - Подольской")
     _add_origin_variants(mapping, "Астраханская губерния", "Астроханская", "Астроханской")
-    _add_origin_variants(mapping, "Курляндская губерния", "Курлядская", "Курлядской")
+    _add_origin_variants(mapping, "Курляндская губерния", "Курлядская", "Курлядской", "Курляндского")
     _add_origin_variants(mapping, "Великое княжество Финляндское", "Финляндская", "Финляндской", "Финлядская", "Финлядской", "Великого княжества Финляндская", "Великого княжества Финляндской", "Великого княжества Финляндского", "Великое княжество Финляндское")
 
     return mapping
@@ -591,6 +682,9 @@ ORIGIN_PLACE_OVERRIDES = {
     "бессарабская область": "Бессарабская губерния",
     "бессарабской область": "Бессарабская губерния",
     "бессарабской области": "Бессарабская губерния",
+    "каменецк-подольская": "Подольская губерния",
+    "каменецк-подольской": "Подольская губерния",
+    "курляндского": "Курляндская губерния",
 }
 
 
@@ -622,89 +716,6 @@ OCCUPATION_LIKE_VALUES = {
     "Торговля",
     "Фельдшер",
 }
-
-
-def normalize_pdf_artifacts(value: str) -> str:
-    """Remove PDF extraction artifacts that split words or produce invisible separators."""
-    value = value.replace("\u00ad", "")   # soft hyphen
-    value = value.replace("\ufffe", "")   # artifact visible as ￾ in extracted text
-    value = value.replace("\ufeff", "")   # BOM / zero-width no-break space
-    value = value.replace("\xa0", " ")    # non-breaking space
-    value = value.replace("\u200b", "")   # zero-width space
-    value = value.replace("–", "-")
-    return value
-
-
-def base_text(value: Any) -> str:
-    """Minimal string cleanup: null handling, PDF artifacts, whitespace."""
-    if value is None:
-        return ""
-
-    value = str(value).strip()
-    if value.lower() in {"nan", "none", "null"}:
-        return ""
-
-    value = normalize_pdf_artifacts(value)
-    value = re.sub(r"\s+", " ", value).strip()
-    return value
-
-
-def remove_source_field_prefix(value: str) -> str:
-    """Remove source field prefixes such as '3.', '6.', '7.', '10.', '14.'."""
-    return re.sub(r"^\s*\d+\.\s*", "", value).strip()
-
-
-def normalize_source_markup(value: str) -> str:
-    """
-    Source markup:
-    - <angle brackets> = crossed-out words; remove them.
-    - [square brackets] = restored parts of words; keep letters but remove brackets.
-    """
-    value = re.sub(r"<[^>]*>", " ", value)
-    value = value.replace("[", "").replace("]", "")
-    value = re.sub(r"\s+", " ", value).strip()
-    return value
-
-
-def remove_trailing_footnote_digits(value: str) -> str:
-    """
-    Remove trailing bare footnote digits:
-    - 'Вера Суменко2' -> 'Вера Суменко'
-    - 'Дочь поселенца1' -> 'Дочь поселенца'
-    - 'На Сахалине6' -> 'На Сахалине'
-
-    Preserve ordinal markers:
-    - 'Марья Алексеева Попова 2-я'
-    - 'Андрей Иванов 1-й'
-    """
-    value = re.sub(r"\s*\d+$", "", value).strip()
-    return value
-
-
-def clean_text(value: Any, *, remove_trailing_footnotes: bool = True) -> str:
-    """
-    General text-field cleanup.
-
-    Use remove_trailing_footnotes=False for:
-    - comments, because it may contain age notes such as '7 месяцев' or '1 год 5 месяцев';
-    - notes_raw, because it must preserve archival numbers such as 'РГБ № 6810'.
-    """
-    value = base_text(value)
-    if not value:
-        return ""
-
-    value = remove_source_field_prefix(value)
-    value = normalize_source_markup(value)
-    value = re.sub(r"\s+", " ", value).strip()
-
-    if remove_trailing_footnotes:
-        value = remove_trailing_footnote_digits(value)
-
-    return value
-
-
-def clean_preserve_comments(value: Any) -> str:
-    return clean_text(value, remove_trailing_footnotes=False)
 
 
 def normalize_notes_raw(value: Any) -> str:
@@ -1243,6 +1254,9 @@ def validate_output_csv(csv_path: str | Path) -> dict[str, Any]:
         # Trailing bare footnote digits are forbidden in these fields only.
         # comments and notes_raw are intentionally excluded.
         for col in TEXT_COLUMNS_FOR_TRAILING_FOOTNOTE_QA:
+            # Preserve confirmed source anomalies where the printed religion field contains a year-like value.
+            if col == "religion" and is_year_like_value(row[col]):
+                continue
             assert not re.search(r"\d+$", row[col]), f"Trailing footnote digit at line {i}, {col}: {row[col]}"
 
         # notes_raw should preserve archive numbers.
@@ -1334,4 +1348,3 @@ def validate_output_csv(csv_path: str | Path) -> dict[str, Any]:
     report["unknown_religions"] = unknown_religions
 
     return report
-
