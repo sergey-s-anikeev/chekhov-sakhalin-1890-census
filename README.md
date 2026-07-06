@@ -71,6 +71,12 @@ The `scripts/` folder contains reusable Python code for extraction, normalizatio
 
 - `sakhalin_conversion_helpers_v11.py` — helper functions for cleaning source text, normalizing controlled fields, generating IDs, converting raw split records into the final CSV schema, and validating output.
   
+## Data Availability
+
+The original PDF source and full raw extracted text are not included in this repository until copyright, access, and ethical considerations are reviewed.
+
+This repository includes a 500-record MVP sample to demonstrate the extraction, normalization, and QA workflow.
+
 ## Data Publication Note
 
 The original PDF and full person-level dataset are not included in this repository until copyright, access, and ethical considerations are reviewed.
