@@ -47,6 +47,18 @@ Printed book page numbers are preserved in `page_number`. PDF viewer page number
 
 If a person record starts on one printed page and continues onto the next page, the `page_number` should be the printed page where the record begins.
 
+## Language and Translation Strategy
+
+The project preserves Russian/Cyrillic source values as the authoritative data layer. Translation and transliteration are applied only after cleaning and QA are completed.
+
+The workflow uses three layers:
+
+1. Raw extracted data — source-like Russian text.
+2. Clean Russian canonical data — normalized Russian values used as the master database.
+3. Bilingual analytical data — Russian values plus English translations/transliterations for SQL, Tableau, and portfolio presentation.
+
+Personal names are transliterated, not translated. Analytical categories such as legal status, religion, literacy, family status, and origin place are translated through controlled reference tables.
+
 ## Raw-to-Final Conversion
 
 The extraction workflow separates the process into two stages.
