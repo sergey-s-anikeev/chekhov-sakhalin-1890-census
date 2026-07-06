@@ -109,8 +109,8 @@ Before full-scale extraction, the 300–500 record sample should be checked for:
 - likely source anomalies;
 - manual-correction workload.
 
+### 500 record sample results:
 ```
-500 record sample results:
 Unknown origin places: 0
 Unknown legal statuses: 0
 Unknown family statuses: 0
