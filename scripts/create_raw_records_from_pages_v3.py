@@ -157,7 +157,7 @@ def split_name_family(field4: str) -> tuple[str, str]:
 
 def parse_fields(block_text: str) -> dict[str, str]:
     # Cut after archival number to avoid footnote paragraphs entering person fields.
-    m_note = re.search(r'(РГ\s*Б\s*(?:№\s*)?\d+|РГБ\s*(?:№\s*)?\d+)', block_text, flags=re.I)
+    m_note = re.search(r'((?:РГ\s*Б|РГБ|РГ\s*АЛИ|РГАЛИ)\s*(?:№\s*)?\d+)', block_text, flags=re.I)
     notes_raw = ''
     if m_note:
         notes_raw = clean_cell(m_note.group(1))
@@ -376,7 +376,7 @@ def complete_settlement_sample(records: list[dict[str, str]], min_rows: int = 50
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description='Extract and parse Chekhov Sakhalin census PDF records. Generic district parser, v3.')
+    parser = argparse.ArgumentParser(description='Extract and parse Chekhov Sakhalin census PDF records. Generic district parser, v3.1.')
     parser.add_argument('--pdf', required=True, help='Path to source PDF.')
     parser.add_argument('--helper', required=True, help='Path to helper script containing SETTLEMENTS.')
     parser.add_argument('--out-dir', default='chekhov_pipeline_v2', help='Output directory.')
