@@ -719,16 +719,29 @@ OCCUPATION_LIKE_VALUES = {
 
 
 def normalize_notes_raw(value: Any) -> str:
+    """
+    Normalize archive/source note references.
+
+    Known archive prefixes in the source include:
+    - РГБ № <number>
+    - РГАЛИ № <number>
+
+    PDF extraction may insert spaces inside the abbreviation:
+    - РГ Б № 4568 -> РГБ № 4568
+    - РГ АЛИ № 146 -> РГАЛИ № 146
+    """
     value = clean_text(value, remove_trailing_footnotes=False)
     if not value:
         return ""
 
     value = re.sub(r"РГ\s*Б", "РГБ", value, flags=re.IGNORECASE)
+    value = re.sub(r"РГ\s*АЛИ", "РГАЛИ", value, flags=re.IGNORECASE)
     value = re.sub(r"\s+", " ", value).strip().rstrip(".")
 
-    match = re.search(r"РГБ\s*№?\s*(\d+)", value, flags=re.IGNORECASE)
+    match = re.search(r"\b(РГБ|РГАЛИ)\s*№?\s*(\d+)\b", value, flags=re.IGNORECASE)
     if match:
-        return f"РГБ № {match.group(1)}"
+        archive = match.group(1).upper()
+        return f"{archive} № {match.group(2)}"
 
     return value
 
@@ -1047,7 +1060,21 @@ def normalize_settlement_name(value: Any) -> str:
 
 
 def normalize_household_number(value: Any) -> str:
-    return clean_text(value, remove_trailing_footnotes=True)
+    """
+    Normalize the source household number from field `2.`.
+
+    Important: do not remove trailing digits here. A household number may be
+    the entire value, e.g. `26`, so generic trailing-footnote cleanup would
+    incorrectly turn it into an empty string.
+    """
+    value = base_text(value)
+    if not value:
+        return ""
+
+    value = remove_source_field_prefix(value)
+    value = normalize_source_markup(value)
+    value = re.sub(r"\s+", " ", value).strip(" .")
+    return value
 
 
 def household_for_source_position_id(value: str) -> str:
@@ -1261,7 +1288,7 @@ def validate_output_csv(csv_path: str | Path) -> dict[str, Any]:
 
         # notes_raw should preserve archive numbers.
         if row["notes_raw"]:
-            assert re.fullmatch(r"РГБ № \d+", row["notes_raw"]), f"Bad notes_raw at line {i}: {row['notes_raw']}"
+            assert re.fullmatch(r"(?:РГБ|РГАЛИ) № \d+", row["notes_raw"]), f"Bad notes_raw at line {i}: {row['notes_raw']}"
 
         if row["legal_status"] and row["legal_status"] not in LEGAL_STATUS_CANONICAL_VALUES:
             report["source_anomalies"].append({
