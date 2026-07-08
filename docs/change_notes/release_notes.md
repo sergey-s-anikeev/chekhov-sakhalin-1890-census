@@ -2,6 +2,16 @@
 
 The initial parser and normalization pipeline were developed and validated on a 500-record MVP sample. Running the pipeline on the complete Korsakovsky District exposed several edge cases that were not present in the sample. The parser and helper library were subsequently improved.
 
+| Version  | Description                              |
+| -------- | ---------------------------------------- |
+| **v1.0** | Initial MVP parser (500-record sample)   |
+| **v1.1** | Improved normalization rules             |
+| **v1.2** | Support for inline record starts         |
+| **v1.3** | Record-splitting prevention              |
+| **v1.4** | Arrival year fix                         |
+| **v1.5** | RGALI support and category-code recovery |
+
+
 ## 1. Support for inline record starts
 
 ### Issue
