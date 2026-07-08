@@ -734,11 +734,13 @@ def normalize_notes_raw(value: Any) -> str:
     if not value:
         return ""
 
-    value = re.sub(r"РГ\s*Б", "РГБ", value, flags=re.IGNORECASE)
-    value = re.sub(r"РГ\s*АЛИ", "РГАЛИ", value, flags=re.IGNORECASE)
+    value = re.sub(r"РГ\s*Б\.?", "РГБ", value, flags=re.IGNORECASE)
+    value = re.sub(r"РГБ\.", "РГБ", value, flags=re.IGNORECASE)
+    value = re.sub(r"РГ\s*АЛИ\.?", "РГАЛИ", value, flags=re.IGNORECASE)
+    value = re.sub(r"РГАЛИ\.", "РГАЛИ", value, flags=re.IGNORECASE)
     value = re.sub(r"\s+", " ", value).strip().rstrip(".")
 
-    match = re.search(r"\b(РГБ|РГАЛИ)\s*№?\s*(\d+)\b", value, flags=re.IGNORECASE)
+    match = re.search(r"\b(РГБ|РГАЛИ)\.?\s*№?\.?\s*(\d+)\b", value, flags=re.IGNORECASE)
     if match:
         archive = match.group(1).upper()
         return f"{archive} № {match.group(2)}"
@@ -789,7 +791,7 @@ def normalize_marriage_status(value: Any) -> str:
     value = value.replace("ё", "е")
     value = re.sub(r"\s+", " ", value).strip()
 
-    if value in {"женат на родине", "на родине"}:
+    if value in {"женат на родине", "женат не родине", "на родине", "не родине"}:
         return "женат на родине"
     if value in {"женат на сахалине", "на сахалине"}:
         return "женат на Сахалине"
@@ -961,9 +963,26 @@ def normalize_origin_place(value: Any) -> str:
 
 
 def normalize_year(value: Any) -> str:
-    value = clean_text(value, remove_trailing_footnotes=True)
+    """Normalize arrival year from source field `8.`.
+
+    Years may contain crossed-out digits inside angle brackets, e.g.
+    `187<2>0`. For year values only, remove the crossed-out part without
+    inserting a space so the remaining digits become `1870`.
+    """
+    value = base_text(value)
     if not value:
         return ""
+
+    value = remove_source_field_prefix(value)
+    value = re.sub(r"<[^>]*>", "", value)
+    value = re.sub(r"(?<=[А-Яа-яЁёA-Za-z])\s+(?=\[)", "", value)
+    value = value.replace("[", "").replace("]", "")
+    value = re.sub(r"\s+", " ", value).strip(" .")
+    value = remove_trailing_footnote_digits(value)
+
+    compact_digits = re.sub(r"\D", "", value)
+    if len(compact_digits) >= 4:
+        return compact_digits[:4]
 
     match = re.search(r"\d{4}", value)
     return match.group(0) if match else value
