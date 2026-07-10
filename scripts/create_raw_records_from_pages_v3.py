@@ -46,6 +46,10 @@ def load_settlements(helper_path: Path) -> dict[str, dict[str, Any]]:
 
 
 def normalize_text_layer(text: str) -> str:
+    # Join ordinary hyphenated Cyrillic line breaks introduced by PDF text extraction,
+    # e.g. `Негра-\nмотен` -> `Неграмотен`. Preserve true compounds
+    # such as `Каменец-Подольской` when the next segment starts uppercase.
+    text = re.sub(r'(?<=[А-Яа-яЁё])[-−]\s*\n\s*(?=[а-яё])', '', text)
     text = text.replace('\u00a0', ' ')
     text = text.replace('\ufeff', '')
     text = text.replace('\ufffe', '')
@@ -139,7 +143,7 @@ def canonical_heading(line: str, heading_map: dict[str, str]) -> str | None:
 
 def extract_printed_page_number(text: str) -> str:
     for line in text.splitlines()[:7]:
-        m = re.match(r'^\s*(\d{3,4})\s*$', line)
+        m = re.match(r'^\s*(\d{2,4})\s*$', line)
         if m:
             return m.group(1)
     return ''
@@ -164,36 +168,52 @@ def parse_fields(block_text: str) -> dict[str, str]:
         block_text = block_text[:m_note.start()]
 
     block_text = clean_cell(block_text)
+
+    # Some records include field `1.` (settlement/locality correction) before the usual
+    # household field `2.`. Field 1 is not part of the person-level output schema;
+    # remove it so the regular field parser can start at `2.`. Example:
+    #   1. <Дербинск> В[ерхний] Армудан. 2. <42> 18. 3. ...
+    block_text = re.sub(r'^\s*1\.\s*.*?\.\s*(?=2\.)', '', block_text, count=1)
+
     raw_fields: dict[str, str] = {}
 
     # Field 2 is followed by household number, usually numeric but sometimes textual.
-    m2 = re.match(r'^\s*2\.\s*', block_text)
-    if m2:
-        rest_after_2 = block_text[m2.end():]
-        # True field 3 starts before status text/markup, not before a numeric household number.
-        m3_rel = re.search(r'(?<![0-9A-Za-zА-Яа-яЁё\]\)])3\.\s*(?=[А-Яа-яЁё<])', rest_after_2)
-        if m3_rel:
-            raw_fields['2'] = clean_field_value(rest_after_2[:m3_rel.start()])
-            parse_region = block_text[m2.end() + m3_rel.start():]
-        else:
-            # Some records omit the explicit `3.` legal-status label:
-            #   2. 11. Сын сс[ыльнокаторжной]. 4. Иван ...
-            # In that case, parse the leading value as household_number and
-            # the text before field `4.` as legal_status.
-            m_household = re.match(r'^\s*([^\.]+?)\.\s*', rest_after_2)
-            if m_household:
-                raw_fields['2'] = clean_field_value(m_household.group(1))
-                rest_after_household = rest_after_2[m_household.end():]
-                m4_rel = re.search(r'(?<![0-9A-Za-zА-Яа-яЁё\]\)])4\.\s*(?=[А-Яа-яЁё<])', rest_after_household)
-                if m4_rel:
-                    raw_fields['3'] = clean_field_value(rest_after_household[:m4_rel.start()])
-                    parse_region = rest_after_household[m4_rel.start():]
-                else:
-                    parse_region = rest_after_household
-            else:
-                parse_region = block_text[m2.end():]
+    # Some printed records omit/misprint the explicit `2.` label and begin as:
+    #   3. 3. Поселенец. 4. Name ...
+    #   7. 3. Сс[ыльно]каторжная. 4. Name ...
+    # where the first number is the household number and the second `3.` is the legal-status field.
+    m_household_then_3 = re.match(r'^\s*([^\.\s]+)\.\s*(3\.\s*(?=[A-Za-zА-Яа-яЁё<]).*)$', block_text)
+    if m_household_then_3 and m_household_then_3.group(1) != '2':
+        raw_fields['2'] = clean_field_value(m_household_then_3.group(1))
+        parse_region = m_household_then_3.group(2)
     else:
-        parse_region = block_text
+        m2 = re.match(r'^\s*2\.\s*', block_text)
+        if m2:
+            rest_after_2 = block_text[m2.end():]
+            # True field 3 starts before status text/markup, not before a numeric household number.
+            m3_rel = re.search(r'(?<![0-9A-Za-zА-Яа-яЁё\]\)])3\.\s*(?=[A-Za-zА-Яа-яЁё<])', rest_after_2)
+            if m3_rel:
+                raw_fields['2'] = clean_field_value(rest_after_2[:m3_rel.start()])
+                parse_region = block_text[m2.end() + m3_rel.start():]
+            else:
+                # Some records omit the explicit `3.` legal-status label:
+                #   2. 11. Сын сс[ыльнокаторжной]. 4. Иван ...
+                # Some omit both legal_status and the `3.` label:
+                #   2. 27. 4. Захар Балаховский ...
+                m_household = re.match(r'^\s*([^\.]+?)\.\s*', rest_after_2)
+                if m_household:
+                    raw_fields['2'] = clean_field_value(m_household.group(1))
+                    rest_after_household = rest_after_2[m_household.end():]
+                    m4_rel = re.search(r'(?<![0-9A-Za-zА-Яа-яЁё\]\)])4\.\s*(?=[A-Za-zА-Яа-яЁё<])', rest_after_household)
+                    if m4_rel:
+                        raw_fields['3'] = clean_field_value(rest_after_household[:m4_rel.start()])
+                        parse_region = rest_after_household[m4_rel.start():]
+                    else:
+                        parse_region = rest_after_household
+                else:
+                    parse_region = block_text[m2.end():]
+        else:
+            parse_region = block_text
 
     def looks_like_field_label(match: re.Match[str]) -> bool:
         """Return True when a numeric source marker is likely a field label.
@@ -207,15 +227,17 @@ def parse_fields(block_text: str) -> dict[str, str]:
             return False
 
         first = rest[0]
-        starts_text = bool(re.match(r'[А-Яа-яЁё<]', first))
+        starts_text = bool(re.match(r'[A-Za-zА-Яа-яЁё<]', first))
 
         if fld in {'3', '4', '6', '7', '9', '10', '11', '12', '13'}:
             return starts_text
         if fld == '5':
             return bool(re.match(r'[0-9<(?]', first))
         if fld == '8':
-            # Arrival year is a four-digit year, not a one/two-digit age value.
-            return bool(re.match(r'(?:\d{2,4}<|1[5-9]\d{2}|20\d{2}|<)', rest))
+            # Arrival year is normally a four-digit year. Some source anomalies are
+            # partially crossed out, e.g. `8. 1 <8> 10. ...`; still treat `8.` as
+            # a field boundary so the origin_place field does not swallow it.
+            return bool(re.match(r'(?:1[5-9]\d{2}|20\d{2}|\d[\d\s<>\[\]]{0,8}|<)', rest))
         if fld == '14':
             return bool(re.match(r'[0-9А-Яа-яЁё<]', first))
         return False
@@ -239,21 +261,35 @@ def parse_fields(block_text: str) -> dict[str, str]:
         end = matches[i+1].start() if i+1 < len(matches) else len(parse_region)
         raw_fields[fld] = clean_field_value(parse_region[start:end])
 
-    # Source label-shift pattern seen in records where field `4.` is omitted
-    # and subsequent labels are shifted: `3. Legal. 5. Name. Role. 6. Age.
-    # 7. Religion. 8. Origin`. Convert it back to semantic fields.
-    if raw_fields.get('3') and not raw_fields.get('4'):
-        m_shift = re.match(r'^(?P<legal>.+?)\.\s*5\.\s*(?P<name_family>.+?)\.\s*6\.\s*(?P<age>[^.]+)$', raw_fields['3'])
-        if m_shift:
-            raw_fields['3'] = clean_field_value(m_shift.group('legal'))
-            raw_fields['4'] = clean_field_value(m_shift.group('name_family'))
-            raw_fields['5'] = clean_field_value(m_shift.group('age'))
+    # Repair rare source/category-code anomalies before mapping to columns.
+    # Example: `3. Дочь поселенца. 5. Анна ... Дочь. 5. 4 месяца ...`
+    # where the first `5.` is a misprinted field-4 label.
+    if not raw_fields.get('4') and raw_fields.get('3'):
+        v = raw_fields['3']
+        m_bad_field4 = re.search(r'\.\s*5\.\s*(?=[A-Za-zА-Яа-яЁё<])', v)
+        if m_bad_field4:
+            raw_fields['3'] = clean_field_value(v[:m_bad_field4.start()])
+            raw_fields['4'] = clean_field_value(v[m_bad_field4.end():])
+        elif re.search(r'\.\s+', v):
+            # Example: `3. Аграфена Балаховская. Незаконнорожденная дочь ...`
+            # The source omitted legal_status and used field 3 for name/family.
+            raw_fields['4'] = clean_field_value(v)
+            raw_fields['3'] = ''
+
+    # Repair source category-code shift where field `4.` is misprinted as `5.`
+    # and the subsequent labels are shifted, e.g.:
+    #   3. Поселенец. 5. Егор ... Хозяин. 6. 53. 7. Православного. 8. Орловской.
+    if raw_fields.get('4') and not raw_fields.get('5'):
+        m_bad_age = re.search(r'\.\s*6\.\s*(?=[0-9<(?])', raw_fields['4'])
+        if m_bad_age:
+            raw_fields['5'] = clean_field_value(raw_fields['4'][m_bad_age.end():])
+            raw_fields['4'] = clean_field_value(raw_fields['4'][:m_bad_age.start()])
 
     if raw_fields.get('7') and not raw_fields.get('6'):
-        m_religion_origin = re.match(r'^(?P<religion>.+?)\.\s*8\.\s*(?P<origin>.+)$', raw_fields['7'])
-        if m_religion_origin:
-            raw_fields['6'] = clean_field_value(m_religion_origin.group('religion'))
-            raw_fields['7'] = clean_field_value(m_religion_origin.group('origin'))
+        m_bad_religion_origin = re.search(r'\.\s*8\.\s*(?=[A-Za-zА-Яа-яЁё<])', raw_fields['7'])
+        if m_bad_religion_origin:
+            raw_fields['6'] = clean_field_value(raw_fields['7'][:m_bad_religion_origin.start()])
+            raw_fields['7'] = clean_field_value(raw_fields['7'][m_bad_religion_origin.end():])
 
     # Some printed records omit the explicit `7.` origin-place label and place
     # the origin immediately after religion, e.g.:
@@ -267,6 +303,56 @@ def parse_fields(block_text: str) -> dict[str, str]:
             raw_fields['6'] = clean_field_value(parts[0])
             raw_fields['7'] = clean_field_value(parts[1])
 
+    # Repair typo where arrival-year label `8.` is printed/extracted as another `7.`:
+    #   7. Полтавск[ой]. 7. 1881. 9. Неграмотен. 10. Женат ... 11. Нет.
+    if raw_fields.get('7') and not raw_fields.get('8'):
+        m_bad_arrival = re.search(r'\.\s*7\.\s*((?:1[5-9]\d{2}|20\d{2}|\d{3}\s+\d))\b', raw_fields['7'])
+        if m_bad_arrival:
+            raw_fields['8'] = clean_field_value(m_bad_arrival.group(1))
+            raw_fields['7'] = clean_field_value(raw_fields['7'][:m_bad_arrival.start()])
+
+    # Repair rare source field-number shifts where marital status and allowance
+    # are printed under neighboring field labels. Examples:
+    #   10. Холост. 11. Нет.
+    #   10. Холост. 12. Нет.
+    #   10. Неграмотен. 11. Да.
+    def source_value_key(v: str) -> str:
+        v = clean_cell(v).lower().replace('ё', 'е').strip(' .')
+        v = re.sub(r'<[^>]*>', ' ', v)
+        v = v.replace('[', '').replace(']', '')
+        v = re.sub(r'\s+', ' ', v).strip(' .')
+        v = re.sub(r'\s*\d+$', '', v).strip(' .')
+        return v
+
+    marriage_like = {
+        'холост', 'холоста', 'вдов', 'вдова',
+        'женат на родине', 'женат не родине', 'женат на сахалине',
+        'на родине', 'на сахалине',
+    }
+    literacy_like = {'грамотен', 'грамотная', 'грамотный', 'неграмотен', 'неграмотная', 'неграмотный', 'образован'}
+    bool_like = {'да', 'нет'}
+
+    v9 = source_value_key(raw_fields.get('9', ''))
+    v10 = source_value_key(raw_fields.get('10', ''))
+    v11 = source_value_key(raw_fields.get('11', ''))
+    v12 = source_value_key(raw_fields.get('12', ''))
+
+    if v9 in literacy_like and v10 in marriage_like and v11 in bool_like and not raw_fields.get('12'):
+        raw_fields['12'] = raw_fields['11']
+        raw_fields['11'] = raw_fields['10']
+        raw_fields['10'] = raw_fields['9']
+        raw_fields['9'] = ''
+    elif v10 in marriage_like and v11 in bool_like and not raw_fields.get('12'):
+        raw_fields['12'] = raw_fields['11']
+        raw_fields['11'] = raw_fields['10']
+        raw_fields['10'] = ''
+    elif v10 in marriage_like and v12 in bool_like and not raw_fields.get('11'):
+        raw_fields['11'] = raw_fields['10']
+        raw_fields['10'] = ''
+    elif v10 in literacy_like and v11 in bool_like and not raw_fields.get('12'):
+        raw_fields['12'] = raw_fields['11']
+        raw_fields['11'] = ''
+
     row = {c: '' for c in FIELD_COLUMNS}
     for fld, col in FIELD_MAP.items():
         if col == 'name_family':
@@ -276,41 +362,6 @@ def parse_fields(block_text: str) -> dict[str, str]:
         else:
             row[col] = raw_fields.get(fld, '')
     row['notes_raw'] = notes_raw
-
-    def semantic_key(value: str) -> str:
-        value = clean_cell(value).lower().replace('ё', 'е')
-        value = re.sub(r'<[^>]*>', ' ', value)
-        value = value.replace('[', '').replace(']', '')
-        value = re.sub(r'\s+', ' ', value).strip(' .')
-        value = re.sub(r'\.?\s*\d+$', '', value).strip(' .')
-        return value
-
-    def is_yes_no(value: str) -> bool:
-        return semantic_key(value) in {'да', 'нет'}
-
-    def is_marriage_like(value: str) -> bool:
-        key = semantic_key(value)
-        return key in {'холост', 'холоста', 'вдов', 'вдова', 'женат на родине', 'женат на сахалине', 'на родине', 'на сахалине'}
-
-    # Some source rows use shifted labels, e.g. `10. Холост. 11. Нет`
-    # where field 10 semantically contains marriage status and field 11 contains
-    # allowance status. Correct these obvious shifts in the parsed raw layer.
-    if is_marriage_like(row.get('literacy', '')) and is_yes_no(row.get('marriage_status', '')) and not row.get('allowance_status'):
-        row['allowance_status'] = row['marriage_status']
-        row['marriage_status'] = row['literacy']
-        row['literacy'] = ''
-
-    # Some rows use `10. Холост` and then skip directly to `12. Нет`;
-    # shift the marriage-like value out of literacy when allowance is already present.
-    if is_marriage_like(row.get('literacy', '')) and not row.get('marriage_status') and is_yes_no(row.get('allowance_status', '')):
-        row['marriage_status'] = row['literacy']
-        row['literacy'] = ''
-
-    # Some rows have no marriage status and use `11. Да/Нет` for allowance.
-    if is_yes_no(row.get('marriage_status', '')) and not row.get('allowance_status'):
-        row['allowance_status'] = row['marriage_status']
-        row['marriage_status'] = ''
-
     return row
 
 
@@ -346,6 +397,53 @@ class RecordStart:
         return self._record_number
 
 
+def looks_like_record_body_start(text: str) -> bool:
+    """Return True when text after a source record number begins like a person record.
+
+    Valid starts include:
+      - 2. <household>. 3. <legal_status> ...
+      - 2. <household>. <legal_status>. 4. <name> ...  (rare missing `3.` label)
+      - 2. <household>. 4. <name> ...                 (rare missing legal-status field)
+      - <household>. 3. <legal_status>. 4. <name> ... (rare missing/misprinted `2.` label)
+      - 3. <legal_status>. 4. <name> ...              (rare missing `2.` label)
+
+    This deliberately rejects continuation lines such as:
+      - 5. 2. 6. Правосл[авного] ...
+
+    where `5.` is an age field label, not a source record number.
+    """
+    s = clean_cell(text)
+    if not s:
+        return False
+
+    # Some records include field `1.` before the usual field `2.`.
+    # Field 1 is a source locality/correction field and should not prevent
+    # recognition of the person record start.
+    s_for_match = re.sub(r'^\s*1\.\s*.*?\.\s*(?=2\.)', '', s, count=1)
+
+    # Common normal case: field 2 + household + field 3.
+    if re.match(r'^2\.\s*[^.]{1,40}\.\s*3\.\s*(?=[A-Za-zА-Яа-яЁё<])', s_for_match):
+        return True
+
+    # Missing field-3 label: field 2 + household + legal status text + field 4.
+    if re.match(r'^2\.\s*[^.]{1,40}\.\s*[А-Яа-яЁё<][^\n]{1,160}?\.\s*4\.\s*(?=[A-Za-zА-Яа-яЁё<])', s):
+        return True
+
+    # Missing legal-status field and missing field-3 label: field 2 + household + field 4.
+    if re.match(r'^2\.\s*[^.]{1,40}\.\s*4\.\s*(?=[A-Za-zА-Яа-яЁё<])', s_for_match):
+        return True
+
+    # Missing/misprinted field-2 label: household number + field 3 + legal status + field 4.
+    if re.match(r'^\d{1,4}\.\s*3\.\s*[А-Яа-яЁё<][^\n]{1,160}?\.\s*4\.\s*(?=[A-Za-zА-Яа-яЁё<])', s):
+        return True
+
+    # Rare missing field-2 label: field 3 + legal status + field 4.
+    if re.match(r'^3\.\s*[А-Яа-яЁё<][^\n]{1,160}?\.\s*4\.\s*(?=[A-Za-zА-Яа-яЁё<])', s):
+        return True
+
+    return False
+
+
 def record_start_matches(text: str) -> list[RecordStart]:
     """
     Detect person-record starts robustly across all districts.
@@ -355,16 +453,9 @@ def record_start_matches(text: str) -> list[RecordStart]:
       104. 2. 41. 3. ...
       1153. 2. 256. 3. ...
 
-    Important edge case:
-      In the two-line layout, the source field line starts with `2.`, e.g.
-      `2. 37. 3. ...`. This must not be misread as a new source record `2.`.
-
-    The function therefore scans line by line and treats a line as a record start
-    only when it is either:
-      - a standalone source record number followed by a field-2 line; or
-      - an inline source record number immediately followed by field `2.` on the
-        same line, except when the previous non-empty line is already a standalone
-        record number.
+    The detector validates the field sequence after the source record number,
+    which prevents false splits on wrapped age lines such as:
+      5. 2. 6. Правосл[авного] ...
     """
     starts: list[RecordStart] = []
     lines = list(re.finditer(r'(?m)^.*(?:\n|$)', text))
@@ -377,8 +468,8 @@ def record_start_matches(text: str) -> list[RecordStart]:
         if not stripped:
             continue
 
-        # Case 1: standalone record number line, with field `2.` on the next
-        # non-empty line.
+        # Case 1: standalone source record number on one line; record body starts
+        # on the next non-empty line.
         m_standalone = re.match(r'^(\d{1,5})\.\s*$', stripped)
         if m_standalone:
             next_nonempty = ''
@@ -387,20 +478,51 @@ def record_start_matches(text: str) -> list[RecordStart]:
                 if candidate:
                     next_nonempty = candidate
                     break
-            if re.match(r'^(?:2|3)\.\s+', next_nonempty):
-                starts.append(RecordStart(line_match.start(), line_match.start() + line_no_newline.find(m_standalone.group(1)) + len(m_standalone.group(1)) + 1, m_standalone.group(1)))
+            if looks_like_record_body_start(next_nonempty):
+                starts.append(RecordStart(
+                    line_match.start(),
+                    line_match.start() + line_no_newline.find(m_standalone.group(1)) + len(m_standalone.group(1)) + 1,
+                    m_standalone.group(1),
+                ))
             previous_nonempty_line = stripped
             continue
 
-        # Case 2: inline record start, e.g. `104. 2. 41. 3. ...`.
-        # Do not accept a field-2 line immediately after a standalone source
-        # record number, e.g. `3.` followed by `2. 2. 3. ...`.
-        m_inline = re.match(r'^(\d{1,5})\.\s+(?:2|3)\.\s+', stripped)
-        if m_inline and not re.match(r'^\d{1,5}\.\s*$', previous_nonempty_line):
-            offset = line_no_newline.find(m_inline.group(0))
-            starts.append(RecordStart(line_match.start() + max(offset, 0), line_match.start() + max(offset, 0) + len(m_inline.group(1)) + 1, m_inline.group(1)))
+        # Case 2: inline source record number + record body on the same line.
+        # Reject if the previous line was a standalone source record number,
+        # because then this is the field-2 line belonging to that previous number.
+        m_number = re.match(r'^(\d{1,5})\.\s+(.*)$', stripped)
+        if m_number and not re.match(r'^\d{1,5}\.\s*$', previous_nonempty_line):
+            body_after_number = m_number.group(2)
+            if looks_like_record_body_start(body_after_number):
+                offset = line_no_newline.find(m_number.group(0))
+                starts.append(RecordStart(
+                    line_match.start() + max(offset, 0),
+                    line_match.start() + max(offset, 0) + len(m_number.group(1)) + 1,
+                    m_number.group(1),
+                ))
 
         previous_nonempty_line = stripped
+
+    # Case 3: embedded source record numbers after an archival reference on the same line.
+    # Seen in Alexandrovsky full-district validation, where source records such as
+    # `... РГБ № 2009. 18. 2. 4. 2. 3. ...` were swallowed into the previous
+    # block because the new source record number was not at line start.
+    embedded_pattern = re.compile(
+        r'(?:(?:РГ\s*Б|РГБ|РГ\s*АЛИ|РГАЛИ)\s*(?:№\.?\s*)?\d+[а-яА-Яa-zA-Z-]*\.?\s+)'
+        r'(\d{1,5})\.\s+(?=(?:1\.\s*)?2\.)',
+        flags=re.I,
+    )
+    for m in embedded_pattern.finditer(text):
+        record_no = m.group(1)
+        body_after_number = text[m.end(): m.end() + 260]
+        if looks_like_record_body_start(body_after_number):
+            starts.append(RecordStart(m.start(1), m.end(1) + 1, record_no))
+
+    # Deduplicate and sort; prefer the earliest match for each start position.
+    unique: dict[tuple[int, str], RecordStart] = {}
+    for s in starts:
+        unique[(s.start(), s.group(1))] = s
+    starts = sorted(unique.values(), key=lambda s: s.start())
 
     return starts
 
@@ -530,7 +652,7 @@ def complete_settlement_sample(records: list[dict[str, str]], min_rows: int = 50
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description='Extract and parse Chekhov Sakhalin census PDF records. Generic district parser, v3.11.1.')
+    parser = argparse.ArgumentParser(description='Extract and parse Chekhov Sakhalin census PDF records. Generic district parser, v3.12.0.')
     parser.add_argument('--pdf', required=True, help='Path to source PDF.')
     parser.add_argument('--helper', required=True, help='Path to helper script containing SETTLEMENTS.')
     parser.add_argument('--out-dir', default='chekhov_pipeline_v2', help='Output directory.')
