@@ -1,0 +1,26 @@
+{
+  "Александровский": {
+    "row_count": 2884,
+    "source_anomalies": 0,
+    "unknown_legal_statuses": 0,
+    "unknown_family_statuses": 0,
+    "unknown_religions": 0,
+    "unknown_origin_places": 0
+  },
+  "Тымовский": {
+    "row_count": 3242,
+    "source_anomalies": 0,
+    "unknown_legal_statuses": 0,
+    "unknown_family_statuses": 0,
+    "unknown_religions": 0,
+    "unknown_origin_places": 0
+  },
+  "Корсаковский": {
+    "row_count": 1320,
+    "source_anomalies": 0,
+    "unknown_legal_statuses": 0,
+    "unknown_family_statuses": 0,
+    "unknown_religions": 0,
+    "unknown_origin_places": 0
+  }
+}

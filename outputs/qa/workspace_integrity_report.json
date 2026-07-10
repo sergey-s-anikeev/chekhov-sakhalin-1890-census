@@ -1,0 +1,568 @@
+{
+  "generated_at": "2026-07-10T15:56:56+06:00",
+  "scope": "workspace_candidate clean working core",
+  "authoritative_packages": [
+    "final_sakhalin_1890_project_outputs.zip",
+    "final_scripts_update.zip"
+  ],
+  "summary": {
+    "canonical_files": 18,
+    "datasets": 4,
+    "scripts": 4,
+    "documentation_files_from_packages": 5,
+    "qa_outputs_from_packages": 5,
+    "combined_rows": 7446,
+    "district_rows_sum": 7446,
+    "overall_status": "passed"
+  },
+  "passed_checks": [
+    "Every approved canonical file was hashed and reconciled with its extracted source and the package-validation inventory; the only hash divergence is the authorized documentation revision to script_update_summary.md.",
+    "All canonical datasets and Python scripts are byte-for-byte identical to the authoritative package copies and validation hashes.",
+    "All four canonical Python scripts pass AST syntax validation without execution.",
+    "The combined CSV is the exact row-wise concatenation of Alexandrovsky, Tymovsky, and Korsakovsky district CSVs in the owner-approved order.",
+    "District codes and Russian district values match the owner-approved mappings.",
+    "The packaged v11 and v12 helper modules are byte-for-byte identical; only v12 is included in the clean core.",
+    "Canonical Markdown headings, explanatory prose, QA narratives, and human-readable JSON status fields are in English; Russian occurrences are preserved dataset or historical values.",
+    "No Russian dataset value was translated or modified; dataset hashes are unchanged from the authoritative package.",
+    "All 716 files in the pre-existing audited project baseline retain their recorded SHA-256 hashes."
+  ],
+  "warnings": [
+    "scripts/create_raw_records_from_pages_v3.py imports fitz (PyMuPDF), which is not available in the current validation runtime. The script was not executed; this dependency must be provisioned before a future approved extraction run.",
+    "script_update_summary.md has a new canonical hash because it was deliberately revised to document the owner-approved v12 selection and v11 exclusion; its source-package hash remains recorded.",
+    "Canonical documentation contains Cyrillic only where it quotes approved district names, historical values, normalized values, settlement names, or archive references. These occurrences were intentionally preserved."
+  ],
+  "unresolved_issues": [],
+  "owner_decisions_required": [
+    "No additional owner decision is required to assemble the approved clean core.",
+    "Before any future extraction run, the owner must approve an isolated runtime setup that provides the fitz module through PyMuPDF.",
+    "Future substantive normalization changes still require an owner-approved plan, record list, diff, and QA results.",
+    "Any future replacement of a canonical file requires explicit owner approval and a manifest update."
+  ],
+  "file_hash_checks": [
+    {
+      "canonical_path": "data/processed/clean_alexandrovsky_ru.csv",
+      "source_zip": "final_sakhalin_1890_project_outputs.zip",
+      "source_internal_path": "data/processed/clean_alexandrovsky_ru.csv",
+      "canonical_sha256": "a939571fab75393d6e51dc6d5a1911ac4ed6e0ad8ddb1373680b3c3dfc963862",
+      "source_sha256": "a939571fab75393d6e51dc6d5a1911ac4ed6e0ad8ddb1373680b3c3dfc963862",
+      "validation_report_sha256": "a939571fab75393d6e51dc6d5a1911ac4ed6e0ad8ddb1373680b3c3dfc963862",
+      "matches_source": true,
+      "matches_validation_report": true,
+      "authorized_documentation_revision": false,
+      "status": "passed"
+    },
+    {
+      "canonical_path": "data/processed/clean_tymovsky_ru.csv",
+      "source_zip": "final_sakhalin_1890_project_outputs.zip",
+      "source_internal_path": "data/processed/clean_tymovsky_ru.csv",
+      "canonical_sha256": "e3c190608bc7dc76e82d866e264b6a7abbd0389a1c1a302c3ecc78e53e976124",
+      "source_sha256": "e3c190608bc7dc76e82d866e264b6a7abbd0389a1c1a302c3ecc78e53e976124",
+      "validation_report_sha256": "e3c190608bc7dc76e82d866e264b6a7abbd0389a1c1a302c3ecc78e53e976124",
+      "matches_source": true,
+      "matches_validation_report": true,
+      "authorized_documentation_revision": false,
+      "status": "passed"
+    },
+    {
+      "canonical_path": "data/processed/clean_korsakovsky_ru.csv",
+      "source_zip": "final_sakhalin_1890_project_outputs.zip",
+      "source_internal_path": "data/processed/clean_korsakovsky_ru.csv",
+      "canonical_sha256": "c1ec56588d35b55c6bd16900f2fdf671d7ab773a7006c995681db8021343e100",
+      "source_sha256": "c1ec56588d35b55c6bd16900f2fdf671d7ab773a7006c995681db8021343e100",
+      "validation_report_sha256": "c1ec56588d35b55c6bd16900f2fdf671d7ab773a7006c995681db8021343e100",
+      "matches_source": true,
+      "matches_validation_report": true,
+      "authorized_documentation_revision": false,
+      "status": "passed"
+    },
+    {
+      "canonical_path": "data/processed/clean_sakhalin_1890_ru.csv",
+      "source_zip": "final_sakhalin_1890_project_outputs.zip",
+      "source_internal_path": "data/processed/clean_sakhalin_1890_ru.csv",
+      "canonical_sha256": "b716cfbc8daa28cd09341d8946d0ad553d73a8e23b01d39b8c376adcbacbc32b",
+      "source_sha256": "b716cfbc8daa28cd09341d8946d0ad553d73a8e23b01d39b8c376adcbacbc32b",
+      "validation_report_sha256": "b716cfbc8daa28cd09341d8946d0ad553d73a8e23b01d39b8c376adcbacbc32b",
+      "matches_source": true,
+      "matches_validation_report": true,
+      "authorized_documentation_revision": false,
+      "status": "passed"
+    },
+    {
+      "canonical_path": "scripts/create_raw_records_from_pages_v3.py",
+      "source_zip": "final_scripts_update.zip",
+      "source_internal_path": "scripts/create_raw_records_from_pages_v3.py",
+      "canonical_sha256": "a180fe1993363a9f35b8a22fc529f6f7c2f7961f68eeafaa85c4b966ebd2e12c",
+      "source_sha256": "a180fe1993363a9f35b8a22fc529f6f7c2f7961f68eeafaa85c4b966ebd2e12c",
+      "validation_report_sha256": "a180fe1993363a9f35b8a22fc529f6f7c2f7961f68eeafaa85c4b966ebd2e12c",
+      "matches_source": true,
+      "matches_validation_report": true,
+      "authorized_documentation_revision": false,
+      "status": "passed"
+    },
+    {
+      "canonical_path": "scripts/finalize_reviewed_clean_csv.py",
+      "source_zip": "final_scripts_update.zip",
+      "source_internal_path": "scripts/finalize_reviewed_clean_csv.py",
+      "canonical_sha256": "a71c226929a59fe3f907a5a679df54c873d257dec0fb792976d61124bd8bbbea",
+      "source_sha256": "a71c226929a59fe3f907a5a679df54c873d257dec0fb792976d61124bd8bbbea",
+      "validation_report_sha256": "a71c226929a59fe3f907a5a679df54c873d257dec0fb792976d61124bd8bbbea",
+      "matches_source": true,
+      "matches_validation_report": true,
+      "authorized_documentation_revision": false,
+      "status": "passed"
+    },
+    {
+      "canonical_path": "scripts/merge_clean_districts.py",
+      "source_zip": "final_scripts_update.zip",
+      "source_internal_path": "scripts/merge_clean_districts.py",
+      "canonical_sha256": "95513be6daf0b4f89a61a66cbd7b31a4b38720adb16696a05e662561fa4e3c5e",
+      "source_sha256": "95513be6daf0b4f89a61a66cbd7b31a4b38720adb16696a05e662561fa4e3c5e",
+      "validation_report_sha256": "95513be6daf0b4f89a61a66cbd7b31a4b38720adb16696a05e662561fa4e3c5e",
+      "matches_source": true,
+      "matches_validation_report": true,
+      "authorized_documentation_revision": false,
+      "status": "passed"
+    },
+    {
+      "canonical_path": "scripts/sakhalin_conversion_helpers_v12.py",
+      "source_zip": "final_scripts_update.zip",
+      "source_internal_path": "scripts/sakhalin_conversion_helpers_v12.py",
+      "canonical_sha256": "b7e1c0dc4ca7da0cbf05ec0a1e33cf9ead28e6618f27061a8a14d25813ae2f47",
+      "source_sha256": "b7e1c0dc4ca7da0cbf05ec0a1e33cf9ead28e6618f27061a8a14d25813ae2f47",
+      "validation_report_sha256": "b7e1c0dc4ca7da0cbf05ec0a1e33cf9ead28e6618f27061a8a14d25813ae2f47",
+      "matches_source": true,
+      "matches_validation_report": true,
+      "authorized_documentation_revision": false,
+      "status": "passed"
+    },
+    {
+      "canonical_path": "docs/data_dictionary.md",
+      "source_zip": "final_sakhalin_1890_project_outputs.zip",
+      "source_internal_path": "docs/data_dictionary.md",
+      "canonical_sha256": "63b01d1b6b14ed1c7c8ad7ae16296e0058747324115b4e9276af7dfebfffa0ac",
+      "source_sha256": "63b01d1b6b14ed1c7c8ad7ae16296e0058747324115b4e9276af7dfebfffa0ac",
+      "validation_report_sha256": "63b01d1b6b14ed1c7c8ad7ae16296e0058747324115b4e9276af7dfebfffa0ac",
+      "matches_source": true,
+      "matches_validation_report": true,
+      "authorized_documentation_revision": false,
+      "status": "passed"
+    },
+    {
+      "canonical_path": "docs/final_validation_summary.md",
+      "source_zip": "final_sakhalin_1890_project_outputs.zip",
+      "source_internal_path": "docs/final_validation_summary.md",
+      "canonical_sha256": "264a664b699570afee3c4592e11208bc6951274ac931b8963d27e4ae67ae3a85",
+      "source_sha256": "264a664b699570afee3c4592e11208bc6951274ac931b8963d27e4ae67ae3a85",
+      "validation_report_sha256": "264a664b699570afee3c4592e11208bc6951274ac931b8963d27e4ae67ae3a85",
+      "matches_source": true,
+      "matches_validation_report": true,
+      "authorized_documentation_revision": false,
+      "status": "passed"
+    },
+    {
+      "canonical_path": "docs/methodology.md",
+      "source_zip": "final_sakhalin_1890_project_outputs.zip",
+      "source_internal_path": "docs/methodology.md",
+      "canonical_sha256": "04ed7ddcddba1163401fa572d42e73b7322758bb5de783461d7338b92e979b9e",
+      "source_sha256": "04ed7ddcddba1163401fa572d42e73b7322758bb5de783461d7338b92e979b9e",
+      "validation_report_sha256": "04ed7ddcddba1163401fa572d42e73b7322758bb5de783461d7338b92e979b9e",
+      "matches_source": true,
+      "matches_validation_report": true,
+      "authorized_documentation_revision": false,
+      "status": "passed"
+    },
+    {
+      "canonical_path": "docs/release_notes.md",
+      "source_zip": "final_sakhalin_1890_project_outputs.zip",
+      "source_internal_path": "docs/release_notes.md",
+      "canonical_sha256": "ace02a4e002dfec78d2a4ec6e0a594005f63c04056fa7aa481b4c3304d1f87ba",
+      "source_sha256": "ace02a4e002dfec78d2a4ec6e0a594005f63c04056fa7aa481b4c3304d1f87ba",
+      "validation_report_sha256": "ace02a4e002dfec78d2a4ec6e0a594005f63c04056fa7aa481b4c3304d1f87ba",
+      "matches_source": true,
+      "matches_validation_report": true,
+      "authorized_documentation_revision": false,
+      "status": "passed"
+    },
+    {
+      "canonical_path": "docs/script_update_summary.md",
+      "source_zip": "final_scripts_update.zip",
+      "source_internal_path": "docs/script_update_summary.md",
+      "canonical_sha256": "1ac8f337995b038c734c8d5f04216ee9867cf43adca792961c9f627ae8412608",
+      "source_sha256": "aba24ea0eae8f1cfe05a7e16e2a40f64adc3d3d241a307be5f7e7183e379ab73",
+      "validation_report_sha256": "aba24ea0eae8f1cfe05a7e16e2a40f64adc3d3d241a307be5f7e7183e379ab73",
+      "matches_source": false,
+      "matches_validation_report": false,
+      "authorized_documentation_revision": true,
+      "status": "passed_with_authorized_revision"
+    },
+    {
+      "canonical_path": "outputs/qa/district_record_count_summary.csv",
+      "source_zip": "final_sakhalin_1890_project_outputs.zip",
+      "source_internal_path": "outputs/qa/district_record_count_summary.csv",
+      "canonical_sha256": "71495bceeb661ad2e8c0a1b4aa037a931bd28907bb28a30f9a026b89b3897fa4",
+      "source_sha256": "71495bceeb661ad2e8c0a1b4aa037a931bd28907bb28a30f9a026b89b3897fa4",
+      "validation_report_sha256": "71495bceeb661ad2e8c0a1b4aa037a931bd28907bb28a30f9a026b89b3897fa4",
+      "matches_source": true,
+      "matches_validation_report": true,
+      "authorized_documentation_revision": false,
+      "status": "passed"
+    },
+    {
+      "canonical_path": "outputs/qa/qa_sakhalin_1890_report.json",
+      "source_zip": "final_sakhalin_1890_project_outputs.zip",
+      "source_internal_path": "outputs/qa/qa_sakhalin_1890_report.json",
+      "canonical_sha256": "0d0a151eca09d895702f7ddb860c0929c08915f11052ce6c6de9ce615294a2db",
+      "source_sha256": "0d0a151eca09d895702f7ddb860c0929c08915f11052ce6c6de9ce615294a2db",
+      "validation_report_sha256": "0d0a151eca09d895702f7ddb860c0929c08915f11052ce6c6de9ce615294a2db",
+      "matches_source": true,
+      "matches_validation_report": true,
+      "authorized_documentation_revision": false,
+      "status": "passed"
+    },
+    {
+      "canonical_path": "outputs/qa/qa_sakhalin_1890_report.md",
+      "source_zip": "final_sakhalin_1890_project_outputs.zip",
+      "source_internal_path": "outputs/qa/qa_sakhalin_1890_report.md",
+      "canonical_sha256": "84da44664445d89c90d3aff83d4f9ec7e392006138e002789a9a53ddac3a1518",
+      "source_sha256": "84da44664445d89c90d3aff83d4f9ec7e392006138e002789a9a53ddac3a1518",
+      "validation_report_sha256": "84da44664445d89c90d3aff83d4f9ec7e392006138e002789a9a53ddac3a1518",
+      "matches_source": true,
+      "matches_validation_report": true,
+      "authorized_documentation_revision": false,
+      "status": "passed"
+    },
+    {
+      "canonical_path": "outputs/qa/settlement_sequence_validation.csv",
+      "source_zip": "final_sakhalin_1890_project_outputs.zip",
+      "source_internal_path": "outputs/qa/settlement_sequence_validation.csv",
+      "canonical_sha256": "7bbf563dfd7eba884431ac9ee5524d056641f49568ff874a0e4225a8892e0e35",
+      "source_sha256": "7bbf563dfd7eba884431ac9ee5524d056641f49568ff874a0e4225a8892e0e35",
+      "validation_report_sha256": "7bbf563dfd7eba884431ac9ee5524d056641f49568ff874a0e4225a8892e0e35",
+      "matches_source": true,
+      "matches_validation_report": true,
+      "authorized_documentation_revision": false,
+      "status": "passed"
+    },
+    {
+      "canonical_path": "outputs/qa/updated_scripts_validation_summary.json",
+      "source_zip": "final_scripts_update.zip",
+      "source_internal_path": "outputs/qa/updated_scripts_validation_summary.json",
+      "canonical_sha256": "9ba7116d6605d0d62f1f27f54943327788808a0f8d4e1d68463f5bba1ac33a75",
+      "source_sha256": "9ba7116d6605d0d62f1f27f54943327788808a0f8d4e1d68463f5bba1ac33a75",
+      "validation_report_sha256": "9ba7116d6605d0d62f1f27f54943327788808a0f8d4e1d68463f5bba1ac33a75",
+      "matches_source": true,
+      "matches_validation_report": true,
+      "authorized_documentation_revision": false,
+      "status": "passed"
+    }
+  ],
+  "script_checks": [
+    {
+      "path": "scripts/create_raw_records_from_pages_v3.py",
+      "sha256": "a180fe1993363a9f35b8a22fc529f6f7c2f7961f68eeafaa85c4b966ebd2e12c",
+      "syntax_ok": true,
+      "syntax_error": "",
+      "imports": [
+        {
+          "module": "__future__",
+          "kind": "standard_library",
+          "available": true
+        },
+        {
+          "module": "argparse",
+          "kind": "standard_library",
+          "available": true
+        },
+        {
+          "module": "ast",
+          "kind": "standard_library",
+          "available": true
+        },
+        {
+          "module": "collections",
+          "kind": "standard_library",
+          "available": true
+        },
+        {
+          "module": "csv",
+          "kind": "standard_library",
+          "available": true
+        },
+        {
+          "module": "fitz",
+          "kind": "third_party",
+          "available": false
+        },
+        {
+          "module": "json",
+          "kind": "standard_library",
+          "available": true
+        },
+        {
+          "module": "pathlib",
+          "kind": "standard_library",
+          "available": true
+        },
+        {
+          "module": "re",
+          "kind": "standard_library",
+          "available": true
+        },
+        {
+          "module": "typing",
+          "kind": "standard_library",
+          "available": true
+        }
+      ],
+      "all_imports_resolved": false
+    },
+    {
+      "path": "scripts/finalize_reviewed_clean_csv.py",
+      "sha256": "a71c226929a59fe3f907a5a679df54c873d257dec0fb792976d61124bd8bbbea",
+      "syntax_ok": true,
+      "syntax_error": "",
+      "imports": [
+        {
+          "module": "__future__",
+          "kind": "standard_library",
+          "available": true
+        },
+        {
+          "module": "argparse",
+          "kind": "standard_library",
+          "available": true
+        },
+        {
+          "module": "json",
+          "kind": "standard_library",
+          "available": true
+        },
+        {
+          "module": "pathlib",
+          "kind": "standard_library",
+          "available": true
+        },
+        {
+          "module": "sakhalin_conversion_helpers_v12",
+          "kind": "local",
+          "available": true
+        }
+      ],
+      "all_imports_resolved": true
+    },
+    {
+      "path": "scripts/merge_clean_districts.py",
+      "sha256": "95513be6daf0b4f89a61a66cbd7b31a4b38720adb16696a05e662561fa4e3c5e",
+      "syntax_ok": true,
+      "syntax_error": "",
+      "imports": [
+        {
+          "module": "__future__",
+          "kind": "standard_library",
+          "available": true
+        },
+        {
+          "module": "argparse",
+          "kind": "standard_library",
+          "available": true
+        },
+        {
+          "module": "csv",
+          "kind": "standard_library",
+          "available": true
+        },
+        {
+          "module": "json",
+          "kind": "standard_library",
+          "available": true
+        },
+        {
+          "module": "pathlib",
+          "kind": "standard_library",
+          "available": true
+        },
+        {
+          "module": "sakhalin_conversion_helpers_v12",
+          "kind": "local",
+          "available": true
+        }
+      ],
+      "all_imports_resolved": true
+    },
+    {
+      "path": "scripts/sakhalin_conversion_helpers_v12.py",
+      "sha256": "b7e1c0dc4ca7da0cbf05ec0a1e33cf9ead28e6618f27061a8a14d25813ae2f47",
+      "syntax_ok": true,
+      "syntax_error": "",
+      "imports": [
+        {
+          "module": "__future__",
+          "kind": "standard_library",
+          "available": true
+        },
+        {
+          "module": "collections",
+          "kind": "standard_library",
+          "available": true
+        },
+        {
+          "module": "csv",
+          "kind": "standard_library",
+          "available": true
+        },
+        {
+          "module": "pathlib",
+          "kind": "standard_library",
+          "available": true
+        },
+        {
+          "module": "pdfplumber",
+          "kind": "third_party",
+          "available": true
+        },
+        {
+          "module": "re",
+          "kind": "standard_library",
+          "available": true
+        },
+        {
+          "module": "tempfile",
+          "kind": "standard_library",
+          "available": true
+        },
+        {
+          "module": "typing",
+          "kind": "standard_library",
+          "available": true
+        }
+      ],
+      "all_imports_resolved": true
+    }
+  ],
+  "district_checks": [
+    {
+      "file": "clean_alexandrovsky_ru.csv",
+      "pairs": [
+        [
+          "1",
+          "Александровский"
+        ]
+      ],
+      "approved": true
+    },
+    {
+      "file": "clean_tymovsky_ru.csv",
+      "pairs": [
+        [
+          "2",
+          "Тымовский"
+        ]
+      ],
+      "approved": true
+    },
+    {
+      "file": "clean_korsakovsky_ru.csv",
+      "pairs": [
+        [
+          "3",
+          "Корсаковский"
+        ]
+      ],
+      "approved": true
+    }
+  ],
+  "combined_dataset_check": {
+    "exact_concatenation": true,
+    "approved_order": [
+      "clean_alexandrovsky_ru.csv",
+      "clean_tymovsky_ru.csv",
+      "clean_korsakovsky_ru.csv"
+    ],
+    "combined_rows": 7446,
+    "district_rows_sum": 7446
+  },
+  "helper_version_check": {
+    "v11_sha256": "b7e1c0dc4ca7da0cbf05ec0a1e33cf9ead28e6618f27061a8a14d25813ae2f47",
+    "v12_sha256": "b7e1c0dc4ca7da0cbf05ec0a1e33cf9ead28e6618f27061a8a14d25813ae2f47",
+    "byte_for_byte_identical": true,
+    "canonical_selection": "scripts/sakhalin_conversion_helpers_v12.py"
+  },
+  "language_checks": [
+    {
+      "path": "README.md",
+      "headings_english": true,
+      "cyrillic_line_count": 1,
+      "review_result": "passed: English prose; Cyrillic occurrences are preserved historical, normalized, district, settlement, or archive-reference values"
+    },
+    {
+      "path": "PROJECT_RULES.md",
+      "headings_english": true,
+      "cyrillic_line_count": 0,
+      "review_result": "passed: English prose; Cyrillic occurrences are preserved historical, normalized, district, settlement, or archive-reference values"
+    },
+    {
+      "path": "docs/decision_log.md",
+      "headings_english": true,
+      "cyrillic_line_count": 1,
+      "review_result": "passed: English prose; Cyrillic occurrences are preserved historical, normalized, district, settlement, or archive-reference values"
+    },
+    {
+      "path": "docs/data_dictionary.md",
+      "headings_english": true,
+      "cyrillic_line_count": 15,
+      "review_result": "passed: English prose; Cyrillic occurrences are preserved historical, normalized, district, settlement, or archive-reference values"
+    },
+    {
+      "path": "docs/final_validation_summary.md",
+      "headings_english": true,
+      "cyrillic_line_count": 3,
+      "review_result": "passed: English prose; Cyrillic occurrences are preserved historical, normalized, district, settlement, or archive-reference values"
+    },
+    {
+      "path": "docs/methodology.md",
+      "headings_english": true,
+      "cyrillic_line_count": 1,
+      "review_result": "passed: English prose; Cyrillic occurrences are preserved historical, normalized, district, settlement, or archive-reference values"
+    },
+    {
+      "path": "docs/release_notes.md",
+      "headings_english": true,
+      "cyrillic_line_count": 69,
+      "review_result": "passed: English prose; Cyrillic occurrences are preserved historical, normalized, district, settlement, or archive-reference values"
+    },
+    {
+      "path": "docs/script_update_summary.md",
+      "headings_english": true,
+      "cyrillic_line_count": 1,
+      "review_result": "passed: English prose; Cyrillic occurrences are preserved historical, normalized, district, settlement, or archive-reference values"
+    },
+    {
+      "path": "outputs/qa/qa_sakhalin_1890_report.md",
+      "headings_english": true,
+      "cyrillic_line_count": 3,
+      "review_result": "passed: English prose; Cyrillic occurrences are preserved historical, normalized, district, settlement, or archive-reference values"
+    }
+  ],
+  "json_checks": [
+    {
+      "path": "outputs/qa/qa_sakhalin_1890_report.json",
+      "valid_json": true,
+      "error": "",
+      "human_readable_fields_english": true,
+      "nonenglish_narrative_fields": []
+    },
+    {
+      "path": "outputs/qa/updated_scripts_validation_summary.json",
+      "valid_json": true,
+      "error": "",
+      "human_readable_fields_english": true,
+      "nonenglish_narrative_fields": []
+    }
+  ],
+  "old_project_check": {
+    "baseline_file_count": 716,
+    "unchanged": true,
+    "missing_paths": [],
+    "hash_mismatch_paths": []
+  }
+}

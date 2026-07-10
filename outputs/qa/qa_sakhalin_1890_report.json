@@ -1,0 +1,120 @@
+{
+  "generated_at": "2026-07-10T04:55:24Z",
+  "schema": [
+    "person_id",
+    "source_position_id",
+    "district_code",
+    "district",
+    "settlement_order",
+    "settlement",
+    "person_order_in_settlement",
+    "page_number",
+    "household_number",
+    "legal_status",
+    "name_raw",
+    "family_status",
+    "age",
+    "religion",
+    "origin_place",
+    "arrival_year",
+    "occupation",
+    "literacy",
+    "marriage_status",
+    "allowance_status",
+    "illness",
+    "comments",
+    "notes_raw"
+  ],
+  "total_rows": 7446,
+  "records_with_name_raw": 7446,
+  "blank_name_raw": 0,
+  "duplicate_person_id": 0,
+  "duplicate_source_position_id": 0,
+  "blank_source_position_id": 0,
+  "blank_required_structural_fields": {
+    "person_id": 0,
+    "source_position_id": 0,
+    "district_code": 0,
+    "district": 0,
+    "settlement_order": 0,
+    "settlement": 0,
+    "person_order_in_settlement": 0,
+    "page_number": 0,
+    "name_raw": 0
+  },
+  "age_non_numeric": 0,
+  "age_gt_100": 0,
+  "arrival_year_bad_format": 0,
+  "arrival_year_outside_1860_1891": 0,
+  "allowance_status_invalid": 0,
+  "settlement_order_not_two_digits": 0,
+  "settlements_posts_total": 51,
+  "settlements_posts_passed": 51,
+  "settlements_posts_needs_review": 0,
+  "district_counts": [
+    {
+      "district_code": "1",
+      "district": "Александровский",
+      "records": 2884,
+      "settlements_posts": 18,
+      "sequence_validation_status": "passed",
+      "first_person_id": "P000001",
+      "last_person_id": "P002884"
+    },
+    {
+      "district_code": "2",
+      "district": "Тымовский",
+      "records": 3242,
+      "settlements_posts": 9,
+      "sequence_validation_status": "passed",
+      "first_person_id": "P002885",
+      "last_person_id": "P006126"
+    },
+    {
+      "district_code": "3",
+      "district": "Корсаковский",
+      "records": 1320,
+      "settlements_posts": 24,
+      "sequence_validation_status": "passed",
+      "first_person_id": "P006127",
+      "last_person_id": "P007446"
+    }
+  ],
+  "source_file_checks": [
+    {
+      "district": "Александровский",
+      "input_file": "clean_alexandrovsky_ru.csv",
+      "rows": 2884,
+      "columns_match_schema": true,
+      "blank_name_raw": 0,
+      "duplicate_source_position_id": 0,
+      "duplicate_person_id_within_input": 0
+    },
+    {
+      "district": "Тымовский",
+      "input_file": "clean_tymovsky_ru.csv",
+      "rows": 3242,
+      "columns_match_schema": true,
+      "blank_name_raw": 0,
+      "duplicate_source_position_id": 0,
+      "duplicate_person_id_within_input": 0
+    },
+    {
+      "district": "Корсаковский",
+      "input_file": "clean_korsakovsky_ru.csv",
+      "rows": 1320,
+      "columns_match_schema": true,
+      "blank_name_raw": 0,
+      "duplicate_source_position_id": 0,
+      "duplicate_person_id_within_input": 0
+    }
+  ],
+  "blank_legal_status": 24,
+  "blank_family_status": 124,
+  "blank_religion": 250,
+  "blank_origin_place": 838,
+  "blank_literacy": 2027,
+  "blank_marriage_status": 2079,
+  "blank_allowance_status": 568,
+  "overall_status": "passed"
+}
