@@ -4,53 +4,49 @@
 
 Chekhov Sakhalin 1890 Census Data Analysis
 
-## Dataset Description
+## Dataset
 
-This dataset is being built from indexed person-level records based on Anton Chekhov’s 1890 Sakhalin census.
+Clean Russian master dataset for the reviewed 1890 Sakhalin census extraction.
 
-The final database is designed as a flat person-level CSV where **one row represents one person**. The expected combined database size is approximately **7,445 records**.
+One row represents one named person record.
 
-The source is a readable/searchable PDF with an existing text layer. OCR is not the primary extraction method. Printed book page numbers must be preserved for verification and traceability.
+Final merged record count: **7,446**.
+
+The final release combines the Alexandrovsky, Tymovsky, and Korsakovsky district datasets in source order. Printed book page numbers are preserved for verification and traceability.
 
 ## Unit of Analysis
 
 Individual person record.
 
-## Dataset Status
-
-Current status: extraction and normalization testing.
-
-The field structure is stable enough for sample extraction, but controlled vocabularies may expand as more records are processed.
-
 ---
 
 ## Final Field Structure
 
-| Field name | Type | Description | Example | Notes |
-|---|---:|---|---|---|
-| `person_id` | string | Stable global person ID | `P000001` | Generated sequentially across the whole database |
-| `source_position_id` | string | Source-navigation ID | `3-48-002-0005` | Built from district, settlement, household, and person order |
-| `district_code` | string | District code | `1`, `2`, `3` | Derived from settlement lookup |
-| `district` | string | District name | `Корсаковский` | Derived from settlement lookup |
-| `settlement_order` | string | Locality order in the book structure | `48` | Derived from settlement lookup |
-| `settlement` | string | Normalized locality name | `Сиянцы` | Standardized from source |
-| `person_order_in_settlement` | integer | Sequential person number within locality | `1` | Generated during transformation |
-| `page_number` | integer | Printed book page where the record begins | `479` | Must preserve printed page number, not PDF viewer page |
-| `household_number` | string | Source household number, field `2.` | `1` | Used in `source_position_id` |
-| `legal_status` | string | Legal/social status, source field `3.` | `Поселенец` | Normalized against controlled vocabulary |
-| `name_raw` | string | Person name from source field `4.` | `Семен Осипов Агапов` | Preserves source spelling after markup cleanup |
-| `family_status` | string | Family/household role from source field `4.` | `Хозяин` | Normalized against controlled vocabulary |
-| `age` | integer | Age in full years | `48` | Infants/months handled through `comments` |
-| `religion` | string | Confession label / вероисповедание | `Православное` | Normalized to canonical confession label |
-| `origin_place` | string | Place of origin | `Костромская губерния` | Normalized to 1890 administrative unit where possible |
-| `arrival_year` | integer | Year of arrival | `1882` | Natural 4-digit year where present |
-| `occupation` | string | Occupation, source field `9.` | `Плотник` | Cleaned text field |
-| `literacy` | string | Literacy category | `грамотен` | Controlled values: `неграмотен`, `грамотен`, `образован` |
-| `marriage_status` | string | Marriage status | `женат на родине` | Controlled values listed below |
-| `allowance_status` | string | Allowance status | `TRUE` / `FALSE` | Converted from `Да` / `Нет` |
-| `illness` | string | Illness field, source field `13.` | `Больная` | Cleaned text field |
-| `comments` | string | Source field `14.` and age notes for infants | `7 месяцев` | Footnote digits are preserved if meaningful |
-| `notes_raw` | string | Archival reference | `РГБ № 6810` | Normalized but not stripped of trailing digits |
+| Field | Type | Description | Example |
+|:--|:--|:--|:--|
+| `person_id` | string | Global sequential person ID assigned after merging all districts. | `P000001` |
+| `source_position_id` | string | Stable source-navigation ID built from district, settlement order, household number, and person order within settlement/post. | `3-48-002-0005` |
+| `district_code` | string | District code from the settlement lookup. | `1` |
+| `district` | string | District name. | `Александровский` |
+| `settlement_order` | string | Two-digit settlement/post order in the source structure. | `01` |
+| `settlement` | string | Normalized settlement/post name. | `Пост Дуэ` |
+| `person_order_in_settlement` | integer | Sequential source person number within settlement/post. | `274` |
+| `page_number` | integer | Printed book page where the record begins. | `203` |
+| `household_number` | string | Source household/dwelling number or textual household marker from field `2.` | `Казарма Ж 1` |
+| `legal_status` | string | Legal/social status from field `3.`, normalized after district review. | `Ссыльнокаторжный` |
+| `name_raw` | string | Person name from field `4.` after cleanup of markup and role leakage. | `Андрей Васильев Васильев` |
+| `family_status` | string | Household/family role parsed from field `4.` | `Хозяин` |
+| `age` | integer | Age in full years where possible; infants may be coded as `0` with exact age retained in `comments`. | `35` |
+| `religion` | string | Confession/religion from field `6.` | `Православное` |
+| `origin_place` | string | Place of origin from field `7.`, normalized and reviewed at district level. | `Смоленская губерния` |
+| `arrival_year` | integer | Year of arrival from field `8.` when present. | `1885` |
+| `occupation` | string | Occupation or activity from field `9.` | `Каменный уголь` |
+| `literacy` | string | Literacy category from field `10.` | `грамотен` |
+| `marriage_status` | string | Marriage status from field `11.`, with explanatory details moved to `comments` where reviewed. | `женат на родине` |
+| `allowance_status` | string | Allowance status from field `12.`, normalized from `Да/Нет` to `TRUE/FALSE`. | `TRUE` |
+| `illness` | string | Illness or condition from field `13.` | `Хронический катар желудка и кишок` |
+| `comments` | string | Source field `14.` and other reviewed explanatory notes. | `6 месяцев` |
+| `notes_raw` | string | Archive reference, normalized but preserved. | `РГБ № 2010` |
 
 ---
 
@@ -69,10 +65,10 @@ Examples:
 ```text
 P000001
 P000125
-P007445
+P007446
 ```
 
-`person_id` is the stable primary ID. It must not depend on settlement, household number, page number, or district.
+`person_id` is global in the final merged file and in the final district slices included in this release.
 
 ### `source_position_id`
 
@@ -85,11 +81,11 @@ D-SS-HHH-PPPP
 Where:
 
 | Component | Meaning |
-|---|---|
+|:--|:--|
 | `D` | District code |
 | `SS` | Settlement order |
 | `HHH` | Household number, zero-padded to 3 digits when numeric |
-| `PPPP` | Person order within locality, zero-padded to 4 digits |
+| `PPPP` | Person order within settlement/post, zero-padded to 4 digits |
 
 Example:
 
@@ -97,13 +93,15 @@ Example:
 3-48-002-0005
 ```
 
-If `household_number` is nonnumeric, it should be preserved in `source_position_id` in a safe text form rather than guessed.
+If `household_number` is nonnumeric, it is preserved in `source_position_id` in a safe text form rather than guessed.
+
+`source_position_id` is stable and source-derived.
 
 ---
 
 ## Controlled Fields
 
-The following fields are normalized against controlled vocabularies:
+The following fields are normalized against controlled vocabularies or reviewed canonical forms:
 
 - `settlement`
 - `legal_status`
@@ -132,7 +130,7 @@ Allowed values:
 
 ### `marriage_status`
 
-Allowed values:
+Canonical values include:
 
 ```text
 женат на родине
@@ -152,9 +150,17 @@ If crossed-out text leaves only `на Сахалине`, normalize to:
 Source field `12.` is normalized as:
 
 | Source value | Normalized value |
-|---|---|
+|:--|:--|
 | `Да` | `TRUE` |
 | `Нет` | `FALSE` |
+
+Allowed final values are:
+
+```text
+TRUE
+FALSE
+blank
+```
 
 ### `religion`
 
@@ -190,7 +196,7 @@ Examples:
 6. Старообрядца → Старообрядец
 ```
 
-Year-like or numeric values in the religion field should not be auto-corrected. They should be preserved and flagged for manual review as probable source anomalies.
+Year-like or numeric values in the religion field are not auto-corrected. They are preserved and flagged for manual review as probable source anomalies.
 
 ---
 
@@ -198,7 +204,7 @@ Year-like or numeric values in the religion field should not be auto-corrected. 
 
 ### Angle brackets
 
-Angle brackets `<...>` represent crossed-out text. Crossed-out text should not be converted into data.
+Angle brackets `<...>` represent crossed-out text. Crossed-out text is not converted into data.
 
 Examples:
 
@@ -226,7 +232,7 @@ Examples:
 
 ## Source Field Prefix Rules
 
-Remove source field numbers from converted values.
+Source field numbers are removed from converted values.
 
 Examples:
 
@@ -263,14 +269,14 @@ Examples:
 Больная1 → Больная
 ```
 
-Do not remove ordinal name markers:
+Ordinal name markers are retained:
 
 ```text
 Марья Алексеева Попова 2-я
 Андрей Иванов 1-й
 ```
 
-Do not apply trailing digit cleanup to:
+Trailing digit cleanup is not applied to:
 
 ```text
 notes_raw: РГБ № 6810
@@ -282,13 +288,13 @@ comments: 1 год 5 месяцев
 
 ## Age Rules
 
-`age` is a natural number of full years.
+`age` is stored as a natural number of full years.
 
-If months are present, preserve the full age phrase in `comments`.
+If months are present, the full age phrase is preserved in `comments`.
 
 | Source | `age` | `comments` |
-|---|---:|---|
-| `48` | `48` | empty |
+|:--|--:|:--|
+| `48` | `48` | blank |
 | `7 м[есяцев]` | `0` | `7 месяцев` |
 | `1 г[од] 5 м[есяцев]` | `1` | `1 год 5 месяцев` |
 
@@ -296,9 +302,9 @@ If months are present, preserve the full age phrase in `comments`.
 
 ## Origin Place Rules
 
-`origin_place` is normalized against a separate 1890 reference list.
+`origin_place` is normalized against the reviewed 1890 administrative reference list where possible.
 
-Canonical values for governorates and oblasts should use full official administrative-unit names, for example:
+Canonical governorate and oblast names use full official administrative-unit forms, for example:
 
 ```text
 Тверская губерния
@@ -310,7 +316,7 @@ Canonical values for governorates and oblasts should use full official administr
 
 Cleaning order:
 
-1. Remove source field prefix, e.g. `7.`
+1. Remove the source field prefix, for example `7.`
 2. Remove crossed-out text in `<angle brackets>`.
 3. Restore `[square-bracketed]` word parts.
 4. Remove trailing bare footnote digits.
@@ -337,7 +343,7 @@ Examples:
 На Сахалине6 → На Сахалине
 ```
 
-If `origin_place` contains a value that looks like an occupation, do not auto-correct it. Preserve the printed source value and flag it for manual review as a probable source anomaly.
+Values that look like an occupation but occur in `origin_place` are not silently corrected. They are preserved and flagged for manual review as probable source anomalies.
 
 ---
 
@@ -352,21 +358,26 @@ Normalize archive numbers as follows:
 РГБ 6844 → РГБ № 6844
 ```
 
-Do not remove trailing digits from `notes_raw`.
+Trailing digits are not removed from `notes_raw`.
 
 ---
 
-## QA Notes
+## QA Constraints
 
-The final CSV should pass the following checks:
+The final CSV must satisfy the following checks:
 
-1. `person_id` is unique.
-2. `source_position_id` is unique.
-3. Every `settlement` maps to one valid `district`, `district_code`, and `settlement_order`.
-4. `page_number`, `age`, and `arrival_year` are numeric where present.
-5. `literacy`, `marriage_status`, and `allowance_status` use controlled values.
-6. No `<...>` angle-bracket markup remains.
-7. No `[...]` square-bracket markup remains.
-8. Trailing bare footnote digits do not remain in normalized text fields except `comments` and `notes_raw`.
-9. `notes_raw` follows the format `РГБ № NNNN` where present.
-10. Unknown values in controlled fields are reported for manual review.
+1. `name_raw` is populated.
+2. `person_id` is unique.
+3. `source_position_id` is unique.
+4. Every `settlement` maps to one valid `district`, `district_code`, and `settlement_order`.
+5. `page_number`, `age`, and `arrival_year` are numeric where present.
+6. `age`, when present, is numeric and no greater than `100`.
+7. `arrival_year`, when present, is a four-digit year between `1860` and `1891`.
+8. `literacy`, `marriage_status`, and `allowance_status` use controlled values.
+9. `allowance_status` is `TRUE`, `FALSE`, or blank.
+10. No `<...>` angle-bracket markup remains.
+11. No `[...]` square-bracket markup remains.
+12. Trailing bare footnote digits do not remain in normalized text fields except `comments` and `notes_raw`.
+13. `notes_raw` follows the format `РГБ № NNNN` where present.
+14. `person_order_in_settlement` forms a complete sequence within each settlement/post.
+15. Unknown values in controlled fields are reported for manual review.
