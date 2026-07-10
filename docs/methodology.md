@@ -2,72 +2,61 @@
 
 ## Project Goal
 
-The goal of this project is to transform indexed historical census records from Anton Chekhov's 1890 Sakhalin census into a structured person-level dataset suitable for demographic, settlement-level, and migration-origin analysis.
+This project converts indexed historical records from Anton Chekhov's 1890 Sakhalin census into a structured person-level dataset suitable for demographic, settlement-level, and migration-origin analysis.
 
-The workflow converts a searchable PDF source into a normalized flat CSV where one row equals one person.
+The master dataset is a flat CSV where one row represents one named person record.
 
-## Current Phase
+## Source and Extraction Approach
 
-Current phase: PDF text extraction testing and conversion workflow design.
+The source material consists of searchable PDF district sections with a readable text layer. OCR was not used as the primary extraction method.
 
-The project has already defined:
-
-- final CSV schema;
-- locality metadata lookup;
-- stable person ID logic;
-- source-position ID logic;
-- controlled vocabularies;
-- text-cleaning rules;
-- Python helper functions for transformation and quality assurance.
-
-## Source Extraction Approach
-
-The source PDF has a readable text layer. Therefore, OCR is not the primary extraction method.
-
-The planned workflow is:
+The extraction workflow:
 
 ```text
 PDF text layer
 ↓
-extract page text with pdfplumber
+extract page text with PyMuPDF
 ↓
 preserve printed book page number
 ↓
-remove running headers and repeated locality/district headings
+detect settlement/post headings
 ↓
 split text into person-level records
 ↓
-convert raw split records into final CSV schema
+map numbered source fields into the fixed raw schema
 ↓
-run validation and QA
+normalize and review district files
+↓
+merge reviewed district files
+↓
+run final validation and QA
 ```
-Workflow now includes manual anomaly review after automated QA and confirmed source typos are either: preserved as printed or mapped through documented normalization rules depending on the field and certainty.
 
-Printed book page numbers are preserved in `page_number`. PDF viewer page numbers are not used unless they match printed pagination.
+Printed book page numbers are preserved in `page_number`. PDF viewer page numbers are not used unless they match the printed pagination.
 
-If a person record starts on one printed page and continues onto the next page, the `page_number` should be the printed page where the record begins.
+If a person record begins on one printed page and continues onto the next, `page_number` records the printed page on which the record begins.
 
-## Language and Translation Strategy
+## Processing Layers
 
-The project preserves Russian/Cyrillic source values as the authoritative data layer. Translation and transliteration are applied only after cleaning and QA are completed.
+The project uses three data layers:
 
-The workflow uses three layers:
+1. Raw/interim extraction files that preserve source-like parsed fields.
+2. Clean Russian district files reviewed at district level.
+3. Final merged Russian master file with global person identifiers.
 
-1. Raw extracted data — source-like Russian text.
-2. Clean Russian canonical data — normalized Russian values used as the master database.
-3. Bilingual analytical data — Russian values plus English translations/transliterations for SQL, Tableau, and portfolio presentation.
+Russian/Cyrillic source values remain the authoritative data layer. Translation, transliteration, and analytical grouping are intentionally deferred to later analytical layers.
 
-Personal names are transliterated, not translated. Analytical categories such as legal status, religion, literacy, family status, and origin place are translated through controlled reference tables.
+Personal names are transliterated rather than translated. Analytical categories such as legal status, religion, literacy, family status, and origin place can later be translated through controlled reference tables.
 
 ## Raw-to-Final Conversion
 
-The extraction workflow separates the process into two stages.
+The workflow separates extraction from normalization.
 
-### 1. Raw split-record CSV
+### 1. Raw split-record data
 
-This file contains source-derived fields after initial record splitting.
+Raw records preserve source-derived values after record detection and source-field parsing.
 
-Expected raw input fields include:
+Expected raw fields:
 
 ```text
 settlement
@@ -89,15 +78,47 @@ comments
 notes_raw
 ```
 
-### 2. Final normalized CSV
+Optional debug fields may include:
 
-The helper script transforms the raw split-record CSV into the final flat schema.
+```text
+source_record_number
+source_block_raw
+```
 
-The final schema includes generated IDs, district metadata, settlement metadata, normalized fields, and cleaned source-derived values.
+### 2. Clean district data
+
+Each district is normalized, QA-checked, and manually reviewed. District-level review resolves critical extraction errors, controlled-vocabulary variants, field shifts, and explanatory details that belong in `comments`.
+
+### 3. Final merged data
+
+The reviewed Alexandrovsky, Tymovsky, and Korsakovsky district files are standardized and merged into the final Russian master dataset.
+
+The final merged record count is **7,446**.
+
+`person_id` is reassigned globally from `P000001` to `P007446`. `source_position_id` remains the stable source-navigation identifier.
+
+## Source Field Mapping
+
+```text
+2  -> household_number
+3  -> legal_status
+4  -> name_raw + family_status
+5  -> age
+6  -> religion
+7  -> origin_place
+8  -> arrival_year
+9  -> occupation
+10 -> literacy
+11 -> marriage_status
+12 -> allowance_status
+13 -> illness
+14 -> comments
+РГБ / РГАЛИ № -> notes_raw
+```
 
 ## Locality Metadata
 
-Settlement names are normalized and mapped through the `SETTLEMENTS` lookup table.
+Settlement and post names are normalized and mapped through the `SETTLEMENTS` lookup table.
 
 The lookup derives:
 
@@ -105,38 +126,42 @@ The lookup derives:
 - `district`;
 - `settlement_order`;
 - settlement type;
-- starting page reference.
+- source starting-page reference.
 
-If a settlement is not found in the lookup table, the workflow should stop for manual review rather than guessing.
+If a locality is not found in the lookup table, processing stops for manual review rather than guessing.
 
-## Cleaning Principles
+## Normalization Principles
 
-The cleaning workflow follows these principles:
+The workflow follows these principles:
 
 1. Preserve source meaning.
 2. Remove source markup only according to documented rules.
-3. Normalize repeated historical categories through controlled vocabularies.
-4. Preserve unexpected values and report them for manual review.
-5. Avoid silent correction of ambiguous source anomalies.
-6. Keep printed page numbers for traceability.
-7. Keep `comments` and `notes_raw` separate from normalized analytical fields.
+3. Normalize repeated historical categories through controlled dictionaries.
+4. Preserve reviewed district-level values as canonical for this release.
+5. Preserve unexpected values and report them for manual review.
+6. Avoid silent correction of ambiguous source anomalies.
+7. Keep printed page numbers for traceability.
+8. Keep uncertain or explanatory details in `comments` rather than discarding them.
+9. Keep archive references in `notes_raw`.
+10. Keep `source_position_id` stable for source navigation.
 
-## General Text Cleanup Rules
+## General Text Cleanup
 
 General cleanup includes:
 
-- removing PDF artifacts and invisible separators;
-- removing source field prefixes such as `3.`, `6.`, `7.`;
+- removing PDF text-layer artifacts and invisible separators;
+- joining ordinary Cyrillic words broken across line endings by PDF extraction;
+- removing numbered source-field prefixes from converted values;
 - removing crossed-out text in angle brackets;
 - restoring square-bracketed word parts;
 - normalizing whitespace;
-- removing trailing bare footnote digits from selected text fields.
+- removing trailing bare footnote digits from selected normalized text fields.
 
-Trailing bare footnote digits are not removed from `comments` and `notes_raw`.
+Trailing bare footnote digits are not removed from `comments` or `notes_raw`.
 
 ## Source Markup Rules
 
-Angle brackets `<...>` represent crossed-out text and are removed from converted values.
+Angle brackets `<...>` represent crossed-out text and are removed from normalized values.
 
 Examples:
 
@@ -147,7 +172,7 @@ Examples:
 12. Да <нет> → TRUE
 ```
 
-Square brackets `[...]` contain restored word parts. The restored letters are kept and the brackets are removed.
+Square brackets `[...]` contain restored word parts. The restored letters are retained and the brackets are removed.
 
 Examples:
 
@@ -157,13 +182,28 @@ Examples:
 Сс[ыльно]каторжная → Ссыльнокаторжная
 ```
 
+## Record Detection and Source Anomalies
+
+The parser detects both standalone and inline source record numbers and validates the field sequence that follows each candidate record start.
+
+The extraction logic accounts for source and text-layer anomalies including:
+
+- records beginning with an additional field `1.`;
+- missing or misprinted field labels `2.`, `3.`, `4.`, `7.`, or `8.`;
+- shifted labels in legal status, name, age, religion, origin place, literacy, marriage status, and allowance status;
+- embedded record starts after archival references;
+- wrapped age lines that could otherwise be misread as new records;
+- household numbers and other numeric values that resemble source field labels.
+
+Repairs are applied only where the source pattern is sufficiently explicit. Ambiguous cases are preserved for manual review.
+
 ## Field Normalization
 
 ### Settlement
 
 Ordinary settlements remove the prefix `Селение`.
 
-Special locality types are preserved, for example:
+Special locality types are preserved, including:
 
 ```text
 Пост Александровский
@@ -176,31 +216,31 @@ Special locality types are preserved, for example:
 
 ### Legal Status
 
-`legal_status` is normalized against an expandable controlled vocabulary.
+`legal_status` is normalized against a controlled vocabulary.
 
 Known variants, abbreviations, and extraction artifacts are mapped to canonical values. Unknown values are preserved and reported for review.
 
 ### Family Status
 
-`family_status` is normalized against an expandable controlled vocabulary.
+`family_status` is normalized against a controlled vocabulary.
 
-Variants such as restored bracketed forms, spelling variants, and common abbreviations are mapped to canonical values. Unknown values are preserved and reported for review.
+Restored bracketed forms, spelling variants, and common abbreviations are mapped to canonical values. Unknown values are preserved and reported for review.
 
 ### Religion
 
 `religion` is normalized as a confession label / вероисповедание.
 
-Canonical values use neuter Russian forms where appropriate. The noun values `Раскольник` and `Старообрядец` are preserved as nouns.
+Canonical values use neuter Russian forms where appropriate. The noun values `Раскольник` and `Старообрядец` remain nouns.
 
 Year-like or numeric values in the religion field are preserved and flagged as probable source anomalies.
 
 ### Origin Place
 
-`origin_place` is normalized against an 1890 administrative-unit reference library.
+`origin_place` is normalized against the reviewed 1890 administrative-unit reference library.
 
-The reference library includes:
+The reference library covers:
 
-- main governorates of the Russian Empire;
+- governorates of the Russian Empire;
 - Polish governorates;
 - Finnish governorates;
 - oblasts;
@@ -209,56 +249,96 @@ The reference library includes:
 
 Unknown values are preserved and reported for manual review.
 
-If `origin_place` contains an occupation-like value, it is not automatically corrected. It is preserved and flagged as a probable source anomaly.
+Occupation-like values found in `origin_place` are not silently corrected. They are preserved and flagged as probable source anomalies.
 
-## Python Helper Script
+### Age
 
-The current helper script supports:
+`age` is stored as full years where possible.
 
-- PDF artifact cleanup;
-- source markup normalization;
-- field prefix removal;
-- trailing footnote cleanup;
-- settlement normalization;
-- household number normalization;
-- generation of `person_id`;
-- generation of `source_position_id`;
-- normalization of legal status, family status, religion, origin place, age, allowance status, and notes;
-- transformation of raw split-record CSV into final CSV;
-- validation of final output.
+For infants and mixed year/month expressions, the integer year value is retained in `age` and the exact source phrase is preserved in `comments`.
 
-The main planned workflow functions are:
+### Allowance Status
 
-```python
-extract_pdf_text_pages()
-transform_records_csv()
-validate_output_csv()
+Source values from field `12.` are normalized as:
+
+```text
+Да  → TRUE
+Нет → FALSE
 ```
 
-## Quality Assurance
+### Notes
 
-The QA workflow checks:
+Archive references are normalized into a consistent form while preserving the reference number, for example:
 
-- `person_id` uniqueness;
-- `source_position_id` uniqueness;
+```text
+РГ Б № 6810 → РГБ № 6810
+РГБ 6844 → РГБ № 6844
+```
+
+## Manual Review
+
+Each district was processed, QA-checked, and manually reviewed.
+
+Manual review focused on:
+
+- critical extraction errors;
+- record-sequence gaps;
+- age and arrival-year validation;
+- name and family-status parsing;
+- controlled-vocabulary expansion;
+- source field-number shifts;
+- probable source typos;
+- movement of explanatory details into `comments`;
+- preservation of uncertain values where automatic correction was not justified.
+
+Confirmed source typos were either preserved as printed or normalized through documented rules, depending on the field and level of certainty.
+
+## Python Workflow
+
+The validated workflow includes scripts for:
+
+- PDF text extraction;
+- person-record detection;
+- source-field parsing;
+- district-level cleaning;
+- manual anomaly decision application;
+- final district validation;
+- merging reviewed districts;
+- generation of QA reports and validation summaries.
+
+The extraction parser uses PyMuPDF (`fitz`) to read the PDF text layer.
+
+## Final Merge
+
+After district-level review, the three final district files were standardized and merged in this order:
+
+1. Alexandrovsky
+2. Tymovsky
+3. Korsakovsky
+
+The merged dataset contains **7,446 person records**.
+
+The district-level files included in the release are slices of the same validated project-level dataset and use the same final schema.
+
+## Final Quality Assurance
+
+The final QA validates:
+
+- row counts by district and settlement/post;
+- exact combined row count of 7,446;
+- no duplicate `person_id`;
+- no duplicate `source_position_id`;
+- no blank `name_raw`;
+- no settlement/post person-sequence gaps;
 - valid settlement-to-district mapping;
-- valid natural-number fields for page number, age, and arrival year;
+- consistent 23-field schema;
+- two-digit `settlement_order`;
+- numeric `page_number`, `age`, and `arrival_year` where present;
+- `age` not greater than 100 where present;
+- `arrival_year` between 1860 and 1891 where present;
+- `allowance_status` limited to `TRUE`, `FALSE`, or blank;
 - controlled values for literacy, marriage status, and allowance status;
-- absence of leftover `<...>` or `[...]` markup;
-- absence of trailing bare footnote digits in normalized text fields;
-- valid `notes_raw` archive-number format;
-- unknown legal status, family status, religion, and origin-place values;
-- possible source anomalies such as religion values that look like years or origin values that look like occupations.
-
-## Current Next Step
-
-The next methodological step is to create a 300–500 record sample and run the full conversion and QA workflow on that sample.
-
-The sample should produce:
-
-- raw split-record CSV;
-- final normalized CSV;
-- QA report;
-- list of unknown or ambiguous values for manual review;
-- updated controlled vocabularies where necessary.
-
+- no residual `<...>` or `[...]` markup;
+- no trailing bare footnote digits in normalized text fields except `comments` and `notes_raw`;
+- valid normalized archive-reference format;
+- reporting of unresolved controlled-field values and probable source anomalies.
