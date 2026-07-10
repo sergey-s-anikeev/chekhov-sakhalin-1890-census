@@ -1,6 +1,6 @@
 # Parser Improvements After Full-District Validation
 
-The initial parser and normalization pipeline were developed and validated on a 500-record MVP sample. Running the pipeline on complete district-level data exposed several edge cases that were not present in the sample. The parser, normalization helper, controlled dictionaries, and QA workflow were subsequently improved through full validation on the Korsakovsky and Tymovsky districts.
+The initial parser and normalization pipeline were developed and validated on a 500-record MVP sample. Running the pipeline on complete district-level data exposed several edge cases that were not present in the sample. The parser, normalization helper, controlled dictionaries, QA workflow, and final CSV utilities were subsequently improved through full validation on all three Sakhalin Census districts: Alexandrovsky, Tymovsky, and Korsakovsky.
 
 | Version  | Description |
 | -------- | ----------- |
@@ -15,6 +15,10 @@ The initial parser and normalization pipeline were developed and validated on a 
 | **v1.8** | Controlled-vocabulary expansion for Tymovsky values |
 | **v1.9** | Critical manual-review corrections and reproducible correction scripts |
 | **v2.0** | Numeric range QA and symbol-tolerant normalization |
+| **v2.1** | Alexandrovsky District extraction support and parser fixes |
+| **v2.2** | Alexandrovsky sequence-gap recovery and missing-record insertion |
+| **v2.3** | Final Alexandrovsky manual-review integration |
+| **v2.4** | Final three-district script update, CSV finalization, and merge support |
 
 ---
 
@@ -403,17 +407,6 @@ arrival_year:
 - must be between 1860 and 1891.
 ```
 
-### Result
-
-The current Tymovsky output passes these checks:
-
-```text
-age non-numeric: 0
-age > 100: 0
-arrival_year bad format: 0
-arrival_year outside 1860–1891: 0
-```
-
 ---
 
 ## 13. Symbol-tolerant normalization
@@ -489,24 +482,280 @@ Examples include:
 
 ---
 
-## Current Status
+## 15. Alexandrovsky District extraction support
 
-The pipeline currently supports full-district extraction, normalization, QA, manual review, and reproducible correction workflows for the processed districts.
+### Issue
 
-Current validated outputs include:
+Processing Alexandrovsky District exposed additional parser edge cases:
+
+- printed book pages begin with two-digit page numbers, for example page `27`;
+- ordinary Cyrillic words are sometimes broken by line breaks and hyphens;
+- long record blocks contain archival references followed immediately by the next source record.
+
+Examples:
 
 ```text
-Korsakovsky District:
-- rows: 1320
-- manual-review issues: 0
-- source anomalies: 0
+Негра-
+мотен
+→
+Неграмотен
+
+Саха-
+лине
+→
+Сахалине
+```
+
+and:
+
+```text
+РГБ № 2009. 18. 2. 4. 2. 3. Ж[енщина] св[ободного] состояния...
+```
+
+### Solution
+
+The parser was updated to:
+
+- detect two-digit printed page numbers;
+- join ordinary Cyrillic hyphenated line breaks;
+- detect embedded record starts after archival references;
+- preserve full source text for traceability while splitting person records correctly.
+
+---
+
+## 16. Alexandrovsky sequence-gap recovery
+
+### Issue
+
+Initial Alexandrovsky extraction produced complete-looking rows but record-sequence QA found gaps in five settlements/posts.
+
+The missing source records were present in the extracted text but had been swallowed into preceding parsed blocks.
+
+### Solution
+
+The missing records were recovered, inserted into the clean file, and numbering was regenerated.
+
+Recovered records:
+
+```text
+Александровское: 18, 23
+Пост Александровский: 549, 1151
+Ново-Михайловское: 163
+Красный Яр: 49, 50
+Пост Дуэ: 200, 255
+```
+
+### Result
+
+After recovery:
+
+```text
+Rows: 2884
+Inserted missing records: 9
+Settlements with sequence gaps: 0
+Record sequence QA: passed
+```
+
+---
+
+## 17. Alexandrovsky critical review and final manual review
+
+### Issue
+
+Alexandrovsky manual review identified critical data issues and broader review decisions:
+
+- blank `age` values where source field `5` was present;
+- age values inflated by footnote digits;
+- `arrival_year` source typos or extraction artefacts;
+- names contaminated by household roles or explanatory text;
+- household-role values stored in `name_raw` instead of `family_status`;
+- locality-level notes better stored in `comments`.
+
+### Solution
+
+Critical corrections were applied first, then the final reviewed Alexandrovsky CSV was accepted as the district-level canonical file.
+
+Manual-review decisions reflected in the final file:
+
+- `name_raw` contains the person name only;
+- household/family role details are stored in `family_status`;
+- explanatory source details are stored in `comments`;
+- critical `age`, `arrival_year`, and `name_raw` issues are resolved;
+- remaining reviewed values are accepted as Alexandrovsky district-level canonical values for now.
+
+### Result
+
+Final Alexandrovsky validation:
+
+```text
+Rows: 2884
+Duplicate person_id: 0
+Duplicate source_position_id: 0
+Blank name_raw: 0
+Record sequence gaps: 0
+Age non-numeric: 0
+Age > 100: 0
+Arrival year bad format: 0
+Arrival year outside 1860–1891: 0
+```
+
+---
+
+## 18. Excel and CSV finalization support
+
+### Issue
+
+Manual review in Excel can change technical CSV properties without changing substantive data.
+
+Observed examples:
+
+```text
+Delimiter: comma → semicolon
+Encoding: UTF-8 → UTF-8 with BOM
+settlement_order: 01 → 1
+```
+
+These are export artefacts but can affect reproducibility and downstream processing.
+
+### Solution
+
+Finalization utilities were added to standardize reviewed CSV files.
+
+The finalizer now supports:
+
+- comma or semicolon delimiter detection;
+- UTF-8 and UTF-8-BOM input;
+- restoration of two-digit `settlement_order` values;
+- sorting by source order;
+- export as project-standard comma-delimited UTF-8 CSV.
+
+Recommended Excel workflow for future manual edits:
+
+```text
+Data → From Text/CSV
+File origin: UTF-8
+Delimiter: choose actual delimiter
+Transform Data
+Set all columns to Text
+Then edit/save
+```
+
+Key columns should always be treated as text:
+
+```text
+person_id
+source_position_id
+district_code
+settlement_order
+person_order_in_settlement
+page_number
+household_number
+age
+arrival_year
+notes_raw
+```
+
+---
+
+## 19. Final script update and merge support
+
+### Issue
+
+After all three districts were manually reviewed, the scripts needed to support both district-level reproducibility and a consolidated all-district dataset.
+
+### Solution
+
+The final script update added:
+
+- reviewed Alexandrovsky, Tymovsky, and Korsakovsky values as accepted district-level canonical values;
+- CSV finalization for manually reviewed files;
+- post-processing helpers for `name_raw` role leakage into `family_status`;
+- post-processing helpers for `marriage_status` explanations into `comments`;
+- post-processing helpers for occupation explanatory suffixes into `comments`;
+- merge utility for the three final district clean files.
+
+Current final scripts include:
+
+```text
+sakhalin_conversion_helpers_v12.py
+create_raw_records_from_pages_v3.py
+finalize_reviewed_clean_csv.py
+merge_clean_districts.py
+```
+
+The merge workflow keeps `source_position_id` stable and can assign final global `person_id` values across all districts.
+
+---
+
+## 20. Three-district record-count validation
+
+### Issue
+
+After all districts were processed, the project required an all-district row-count validation based on settlement/post person-order sequences.
+
+### Solution
+
+Record counts were validated using this rule:
+
+```text
+records_with_name = max(person_order_in_settlement)
+and
+no missing person_order_in_settlement numbers
+and
+no duplicate person_order_in_settlement numbers
+and
+no blank name_raw rows
+```
+
+### Result
+
+All 51 settlements/posts passed sequence validation.
+
+| District | Records | Settlements/posts | Sequence validation |
+| -------- | ------: | ----------------: | ------------------- |
+| Александровский | 2884 | 18 | passed |
+| Тымовский | 3242 | 9 | passed |
+| Корсаковский | 1320 | 24 | passed |
+| **Total** | **7446** | **51** | **passed** |
+
+---
+
+## Current Status
+
+The pipeline now supports full-district extraction, normalization, QA, manual review, final CSV standardization, and reproducible correction workflows for all three districts.
+
+Current validated outputs:
+
+```text
+Alexandrovsky District:
+- rows: 2884
+- record-sequence QA: passed
+- blank name_raw: 0
+- duplicate source_position_id: 0
+- age range QA: passed
+- arrival_year range QA: passed
 
 Tymovsky District:
 - rows: 3242
 - manual-review issues: 0
 - unknown controlled-vocabulary values: 0
+- record-sequence QA: passed
 - age range QA: passed
 - arrival_year range QA: passed
+
+Korsakovsky District:
+- rows: 1320
+- manual-review issues: 0
+- source anomalies: 0
+- record-sequence QA: passed
+```
+
+All three districts combined:
+
+```text
+Total records: 7446
+Total settlements/posts: 51
+Settlement/post sequence validation: passed
 ```
 
 ---
@@ -527,4 +776,7 @@ The current workflow includes:
 - manual-review export;
 - reproducible correction scripts;
 - applied-change logs;
-- final remaining-issue reports.
+- reviewed CSV finalization;
+- final district validation;
+- three-district merge support;
+- consolidated record-count validation.
