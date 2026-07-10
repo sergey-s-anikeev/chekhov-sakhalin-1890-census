@@ -31,6 +31,22 @@ The combined dataset is the exact row-wise concatenation of the three reviewed d
 
 `source_position_id` remains the stable source-navigation identifier.
 
+## GitHub Repository Workflow
+
+This repository is connected to the project’s GitHub remote for version control and collaboration. The `main` branch represents the approved project state and tracks the configured `origin` remote.
+
+GitHub workflow rules:
+
+- Review local changes before committing or pushing them.
+- Keep source files and approved canonical datasets immutable.
+- Create new versioned files or release packages for proposed data results; never overwrite a canonical file in place.
+- Attach a SHA-256 hash, QA results, and a record-level diff to every proposed replacement.
+- Update `docs/canonical_manifest.csv` only after the project owner approves the new canonical version.
+- Keep raw PDFs, ZIP packages, and sensitive material excluded through `.gitignore` and the documented publication policy.
+- Confirm repository visibility, copyright, access, and ethical-release constraints before publishing new historical or person-level material.
+
+The GitHub repository is a version-control mirror, not a substitute for owner approval or the project’s provenance and QA records.
+
 ## Canonical Datasets
 
 - `data/processed/clean_alexandrovsky_ru.csv`
@@ -80,6 +96,7 @@ Project-level QA outputs include:
 - `outputs/qa/qa_sakhalin_1890_report.json`
 - `outputs/qa/settlement_sequence_validation.csv`
 - `outputs/qa/district_record_count_summary.csv`
+- `outputs/qa/updated_scripts_validation_summary.json`
 - `outputs/qa/workspace_integrity_report.md`
 - `outputs/qa/workspace_integrity_report.json`
 
@@ -141,6 +158,10 @@ The project distinguishes four information layers:
 7. Compare the result with the prior canonical artifact and provide a record-level diff.
 8. Run the applicable QA checks and document the results.
 9. Request owner approval before replacing or designating a new canonical artifact.
+
+### Versioning rule
+
+Canonical files are immutable release artifacts. A new processing result must be written as a new versioned file or release package; the existing canonical file is never overwritten in place. After review, update `docs/canonical_manifest.csv` with the new path, SHA-256, source package, approval date, and status. Only the project owner may approve which version becomes canonical. Older canonical versions remain available as historical records unless the owner explicitly authorizes their removal.
 
 All substantive normalization decisions require explicit approval from the project owner. Ambiguous historical evidence must be sent for manual review.
 

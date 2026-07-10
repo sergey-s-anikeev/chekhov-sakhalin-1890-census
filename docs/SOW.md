@@ -84,6 +84,19 @@ The project will use:
 - **GitHub** for project documentation and version control.
 - **Markdown** for README, source notes, and data dictionary.
 
+### GitHub governance and release workflow
+
+The connected GitHub repository is the project’s version-control and collaboration mirror. The `main` branch represents the approved project state and must not be treated as an unrestricted working area.
+
+- Review the working tree and proposed diff before every commit or push.
+- Keep source data and approved canonical processed datasets immutable; do not overwrite them in place.
+- Create each proposed processing result as a separate versioned file or release package.
+- For every proposed replacement, record the input files, script version, output path, SHA-256 hash, record-level diff, and QA results.
+- Update `docs/canonical_manifest.csv` only after explicit project-owner approval.
+- Preserve prior approved versions as historical records unless the owner explicitly authorizes their removal.
+- Keep raw PDFs, ZIP packages, and sensitive material excluded from publication according to `.gitignore`, source-access restrictions, and the ethical/legal policy.
+- Confirm repository visibility, copyright, access, and ethical-release constraints before publishing additional historical or person-level material.
+
 ## 7. Deliverables
 
 The final project should include:
