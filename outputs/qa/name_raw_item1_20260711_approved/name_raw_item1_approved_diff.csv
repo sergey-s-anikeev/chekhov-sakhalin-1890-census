@@ -1,0 +1,61 @@
+﻿person_id,source_position_id,field,canonical_value,staged_value,owner_decision,reviewer_notes
+P000512,1-02-074-0417,name_raw,Карл Лангер сменщик,Карл Лангер,approve,move to comments
+P000512,1-02-074-0417,comments,,Сменщик,approve,move to comments
+P000797,1-02-163-0702,name_raw,Станислав Шмаус близнец,Станислав Шмаус,approve,move to comments
+P000797,1-02-163-0702,comments,,Близнец,approve,move to comments
+P002157,1-05-012-0018,name_raw,Анна Шумилова жена,Анна Шумилова,approve,
+P002567,1-14-030-0024,name_raw,Анна от Надежденко,Анна,approve,move to comments
+P002567,1-14-030-0024,comments,354,354; от Надежденко,approve,move to comments
+P002568,1-14-030-0025,name_raw,Михаил от Надежденко,Михаил,approve,move to comments
+P002568,1-14-030-0025,comments,355,355; от Надежденко,approve,move to comments
+P002569,1-14-030-0026,name_raw,Андрей от Надежденко,Андрей,approve,move to comments
+P002569,1-14-030-0026,comments,356,356; от Надежденко,approve,move to comments
+P002629,1-18-005-0019,name_raw,Розалия Берен ис,Розалия Беренис,approve,
+P002631,1-18-005-0021,name_raw,Анисим Аник ин,Анисим Аникин,approve,
+P003322,2-21-098-0169,name_raw,Дарья Михайлова Печенкина - Познякова,Дарья Михайлова Печенкина,modify,create new column 'name_alias' in dataset after 'name_raw'. Insert the text from 'proposed_name_alias'
+P003322,2-21-098-0169,name_alias,,Познякова,modify,create new column 'name_alias' in dataset after 'name_raw'. Insert the text from 'proposed_name_alias'
+P003347,2-21-105-0194,name_raw,Яков Игнатьев Наконечный (Фурман),Яков Игнатьев Наконечный,modify,create new column 'name_alias' in dataset after 'name_raw'. Insert the text from 'proposed_name_alias'
+P003347,2-21-105-0194,name_alias,,Фурман,modify,create new column 'name_alias' in dataset after 'name_raw'. Insert the text from 'proposed_name_alias'
+P003372,2-21-117-0219,name_raw,Марфа Тарачова (Киреева),Марфа Тарачова,modify,create new column 'name_alias' in dataset after 'name_raw'. Insert the text from 'proposed_name_alias'
+P003372,2-21-117-0219,name_alias,,Киреева,modify,create new column 'name_alias' in dataset after 'name_raw'. Insert the text from 'proposed_name_alias'
+P003375,2-21-118-0222,name_raw,Ирина Попкова - Клюева,Ирина Попкова,modify,create new column 'name_alias' in dataset after 'name_raw'. Insert the text from 'proposed_name_alias'
+P003375,2-21-118-0222,name_alias,,Клюева,modify,create new column 'name_alias' in dataset after 'name_raw'. Insert the text from 'proposed_name_alias'
+P003396,2-21-126-0243,name_raw,Марья Матвеева Зайцева - Аманова,Марья Матвеева Зайцева,modify,create new column 'name_alias' in dataset after 'name_raw'. Insert the text from 'proposed_name_alias'
+P003396,2-21-126-0243,name_alias,,Аманова,modify,create new column 'name_alias' in dataset after 'name_raw'. Insert the text from 'proposed_name_alias'
+P003415,2-21-132-0262,name_raw,Бродяга Иван 35 лет,Иван,approve,
+P003415,2-21-132-0262,comments,,Бродяга; в поле имени указано 35 лет,approve,
+P003556,2-21-200-0403,name_raw,Иван Кандудин (Дудаков),Иван Кандудин,modify,create new column 'name_alias' in dataset after 'name_raw'. Insert the text from 'proposed_name_alias'
+P003556,2-21-200-0403,name_alias,,Дудаков,modify,create new column 'name_alias' in dataset after 'name_raw'. Insert the text from 'proposed_name_alias'
+P003991,2-23-008-0023,name_raw,Андрей Непомнящий - Заруба,Андрей Непомнящий,modify,create new column 'name_alias' in dataset after 'name_raw'. Insert the text from 'proposed_name_alias'
+P003991,2-23-008-0023,name_alias,,Заруба,modify,create new column 'name_alias' in dataset after 'name_raw'. Insert the text from 'proposed_name_alias'
+P004044,2-24-002-0008,name_raw,Анна Павлова Биспаева (Павлова),Анна Павлова Биспаева,modify,create new column 'name_alias' in dataset after 'name_raw'. Insert the text from 'proposed_name_alias'
+P004044,2-24-002-0008,name_alias,,Павлова,modify,create new column 'name_alias' in dataset after 'name_raw'. Insert the text from 'proposed_name_alias'
+P004064,2-24-007-0028,name_raw,Иван Филиппов (некрещеный) Кулешов,Иван Филиппов Кулешов,approve,
+P004064,2-24-007-0028,comments,2 недели; 30,2 недели; 30; некрещеный,approve,
+P004096,2-24-016-0060,name_raw,Прасковья она же Марья,Прасковья,modify,create new column 'name_alias' in dataset after 'name_raw'. Insert the text from 'proposed_name_alias'
+P004096,2-24-016-0060,name_alias,,Марья,modify,create new column 'name_alias' in dataset after 'name_raw'. Insert the text from 'proposed_name_alias'
+P004234,2-24-046-0198,name_raw,Ма рья Александрова Филиппова,Марья Александрова Филиппова,approve,
+P004448,2-24-093-0412,name_raw,Консультана (Пелагея) Копкиева (Васильева),Консультана Копкиева,modify,create new column 'name_alias' in dataset after 'name_raw'. Insert the text from 'proposed_name_alias'
+P004448,2-24-093-0412,name_alias,,Пелагея Васильева,modify,create new column 'name_alias' in dataset after 'name_raw'. Insert the text from 'proposed_name_alias'
+P004522,2-24-125-0486,name_raw,Арсентий Иванов Бе тлинский,Арсентий Иванов Бетлинский,approve,
+P004657,2-24-175-0621,name_raw,Иван Непомнящий 20 лет,Иван Непомнящий,approve,
+P004705,2-24-191-0669,name_raw,Ульяна Лаврентьева Сулина (Молодилова),Ульяна Лаврентьева Сулина,modify,create new column 'name_alias' in dataset after 'name_raw'. Insert the text from 'proposed_name_alias'
+P004705,2-24-191-0669,name_alias,,Молодилова,modify,create new column 'name_alias' in dataset after 'name_raw'. Insert the text from 'proposed_name_alias'
+P004791,2-24-214-0755,name_raw,Надежда Прохорова Михеева ( ),Надежда Прохорова Михеева,approve,
+P004898,2-24-243-0862,name_raw,Варвара Харитонова Любомудрова Жена,Варвара Харитонова Любомудрова,approve,
+P004898,2-24-243-0862,family_status,,Жена,approve,
+P004979,2-24-261-0943,name_raw,Волько Вилингер (по святому крещению Дмитрий Иванов Иванов),Волько Вилингер,modify,create new column 'name_alias' in dataset after 'name_raw'. Insert the text from 'proposed_name_alias'
+P004979,2-24-261-0943,name_alias,,Дмитрий Иванов Иванов,modify,create new column 'name_alias' in dataset after 'name_raw'. Insert the text from 'proposed_name_alias'
+P005023,2-24-277-0987,name_raw,Аг рафена Карпова Данилина,Аграфена Карпова Данилина,approve,
+P005528,2-25-150-0226,name_raw,Ев гений Петров Кр ыцуль,Евгений Петров Крыцуль,approve,
+P005638,2-26-016-0053,name_raw,Михаил Федотов Л ищенко,Михаил Федотов Лищенко,approve,
+P005758,2-26-052-0173,name_raw,"Егор Махнев, он же Красильников",Егор Махнев,modify,create new column 'name_alias' in dataset after 'name_raw'. Insert the text from 'proposed_name_alias'
+P005758,2-26-052-0173,name_alias,,Красильников,modify,create new column 'name_alias' in dataset after 'name_raw'. Insert the text from 'proposed_name_alias'
+P006007,2-27-120-0245,name_raw,Индер - Хон,Индер Хон,modify,"modify to 'Индер Хон"""
+P006021,2-27-130-0259,name_raw,Павел Арги популо,Павел Аргипопуло,approve,
+P006795,3-42-016-0017,name_raw,Трофим М осин,Трофим Мосин,approve,
+P006846,3-42-062-0068,name_raw,Иван Наркизов (Чубай),Иван Наркизов,modify,create new column 'name_alias' in dataset after 'name_raw'. Insert the text from 'proposed_name_alias'
+P006846,3-42-062-0068,name_alias,,Чубай,modify,create new column 'name_alias' in dataset after 'name_raw'. Insert the text from 'proposed_name_alias'
+P006888,3-43-030-0036,name_raw,Фил ипп Максимов Кривич,Филипп Максимов Кривич,approve,
+P007374,3-48-028-0048,name_raw,Алексей Гаврилов незаконнорожденный сын,Алексей Гаврилов,approve,
+P007374,3-48-028-0048,family_status,,Незаконнорожденный сын,approve,

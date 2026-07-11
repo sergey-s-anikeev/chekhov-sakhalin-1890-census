@@ -1,0 +1,57 @@
+{
+  "item": "1. Verify name_raw",
+  "status": "ready_for_owner_review",
+  "canonical_input": "data/processed/clean_sakhalin_1890_ru.csv",
+  "canonical_sha256_before": "b716cfbc8daa28cd09341d8946d0ad553d73a8e23b01d39b8c376adcbacbc32b",
+  "canonical_sha256_after": "b716cfbc8daa28cd09341d8946d0ad553d73a8e23b01d39b8c376adcbacbc32b",
+  "canonical_unchanged": true,
+  "canonical_schema_matches": true,
+  "canonical_record_count": 7446,
+  "canonical_person_id_unique": true,
+  "canonical_source_position_id_unique": true,
+  "canonical_blank_name_raw": 0,
+  "exception_record_count": 43,
+  "exception_counts": {
+    "age_text": 2,
+    "alias_or_parentage_phrase": 6,
+    "double_surname_item2": 5,
+    "long_multiword_name": 3,
+    "no_explicit_personal_name": 4,
+    "parenthetical_text_item2": 10,
+    "role_or_description_text": 5,
+    "unexpected_lowercase_or_word_split": 24
+  },
+  "proposed_correction_record_count": 43,
+  "proposed_field_diff_count": 59,
+  "pending_owner_decision_count": 43,
+  "high_confidence_proposals": 9,
+  "medium_confidence_proposals": 21,
+  "low_confidence_proposals": 13,
+  "preview_record_count": 7446,
+  "preview_original_columns_unchanged": true,
+  "preview_person_id_order_unchanged": true,
+  "preview_blank_proposed_name_count": 0,
+  "outputs": {
+    "data/review/name_raw_item1_20260710/name_raw_exception_inventory.csv": {
+      "sha256": "bdb825dc75290668fb433e5524d5647fd23f7c8d7ada178e6b4e56570e7dc7a8",
+      "bytes": 17061
+    },
+    "data/review/name_raw_item1_20260710/name_raw_proposed_corrections.csv": {
+      "sha256": "dd92c72a46d5e173765313453ee49e58153213261f89466f49e374ae2dc8390f",
+      "bytes": 11438
+    },
+    "data/review/name_raw_item1_20260710/clean_sakhalin_1890_ru_name_item1_review_preview.csv": {
+      "sha256": "ec08ad24dd9ac8e3a3e4ff27ff302d0e93248bfb07a3e6de0b2683353b0260ca",
+      "bytes": 2802372
+    },
+    "outputs/qa/name_raw_item1_20260710/name_raw_item1_proposed_diff.csv": {
+      "sha256": "fb7c79507ff4c264d5a14fa03030101bfb88c0f7de7da941cc21e8546ecf75da",
+      "bytes": 6330
+    }
+  },
+  "limitations": [
+    "The source PDFs are not present in the clean repository, so medium- and low-confidence proposals require source verification.",
+    "Parenthetical and double-surname classifications remain provisional until Item 2.",
+    "The exception inventory is exhaustive for the documented Item 1 heuristics, not a claim that every historical name can be linguistically validated without source review."
+  ]
+}

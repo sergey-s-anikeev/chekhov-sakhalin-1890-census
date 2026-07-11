@@ -806,3 +806,36 @@ Final QA status: passed
 ```
 
 The final release includes the merged Russian master file, district-level clean files, QA reports, settlement-sequence validation, district record counts, methodology, data dictionary, and final validation summary.
+
+---
+
+## v2.6 Owner-approved name normalization release
+
+### Date
+
+2026-07-11
+
+### Scope
+
+This versioned canonical release incorporates the approved Item 1 and Item 2 name reviews without overwriting the prior canonical artifacts.
+
+### Changes
+
+- Updated `name_raw` in 66 records: 37 Item 1 corrections and 29 approved Item 2 normalized names.
+- Added `name_alias` immediately after `name_raw`; 40 records contain approved alias values.
+- Applied 2 approved `family_status` corrections.
+- Applied 7 approved `comments` updates.
+- Excluded the review-only `name_norm`, `name_note`, `surname_alternative`, and `surname_alternative_proposed` fields from the canonical schema.
+- Created versioned combined and district files with a common 24-column schema.
+
+### Validation
+
+- Records: 7,446.
+- District counts: 2,884 Alexandrovsky; 3,242 Tymovsky; 1,320 Korsakovsky.
+- Blank `name_raw`: 0.
+- Duplicate `person_id`: 0.
+- Duplicate `source_position_id`: 0.
+- Stable identifier and district ordering: unchanged.
+- Combined file equals the exact ordered concatenation of the three versioned district files.
+
+QA evidence is stored in `outputs/qa/name_normalization_canonical_v2_20260711/`.

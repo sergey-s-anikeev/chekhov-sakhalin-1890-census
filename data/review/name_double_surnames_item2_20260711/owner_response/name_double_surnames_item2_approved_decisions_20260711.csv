@@ -1,0 +1,30 @@
+﻿person_id,source_position_id,name_raw,name_norm_approved,name_alias_approved,name_note_approved,decision_status
+P005204,2-24-330-1168,Агафья Никитина Никитина-Барановская,Агафья Никитина Никитина,Барановская,Hyphenated final token may be a double surname; distinguish from a fixed complex surname,correct
+P004126,2-24-023-0090,Аксинья Акинфиева Башмакова-Васильева,Аксинья Акинфиева Башмакова,Васильева,Hyphenated final token may be a double surname; distinguish from a fixed complex surname,correct
+P002545,1-14-021-0002,Аксинья Заздравных-Сапрыгина,Аксинья Заздравных,Сапрыгина,Hyphenated final token may be a double surname; distinguish from a fixed complex surname,correct
+P004704,2-24-191-0668,Акулина Афанасьева Сулина-Молодилова,Акулина Афанасьева Сулина,Молодилова,Hyphenated final token may be a double surname; distinguish from a fixed complex surname,correct
+P001744,1-04-013-0051,Александра Ивановна Мезенцева-Сверчкова,Александра Ивановна Мезенцева,Сверчкова,Hyphenated final token may be a double surname; distinguish from a fixed complex surname,correct
+P004672,2-24-178-0636,Антонина Войцехова Залевская-Целяк,Антонина Войцехова Залевская,Целяк,Hyphenated final token may be a double surname; distinguish from a fixed complex surname,correct
+P000150,1-02-002-0055,Грю Арзуманова-,Грю Арзуманова,,Dangling hyphen; do not manufacture an alias,correct
+P002812,1-18-Казарма_Б_3-0202,Екатерина Васильева Мазунина-Бусалаева,Екатерина Васильева Мазунина,Бусалаева,Hyphenated final token may be a double surname; distinguish from a fixed complex surname,correct
+P001736,1-04-009-0043,Елена Сергеева Савостьянова-Машукова,Елена Сергеева Савостьянова,Машукова,Hyphenated final token may be a double surname; distinguish from a fixed complex surname,correct
+P000556,1-02-085-0461,Елена Сорокина-Сотникова,Елена Сорокина,Сотникова,Hyphenated final token may be a double surname; distinguish from a fixed complex surname,correct
+P000065,1-01-011-0065,Лукерья Васильева Скородумова-Герасимова,Лукерья Васильева Скородумова,Герасимова,Hyphenated final token may be a double surname; distinguish from a fixed complex surname,correct
+P004046,2-24-002-0010,Маргарита Пауше-Лобачева,Маргарита Пауше,Лобачева,Hyphenated final token may be a double surname; distinguish from a fixed complex surname,correct
+P003277,2-21-083-0124,Марина Андреева Елкина-Егорова,Марина Андреева Елкина,Егорова,Hyphenated final token may be a double surname; distinguish from a fixed complex surname,correct
+P003173,2-21-006-0020,Мария Липчинская-Луцак,Мария Липчинская,Луцак,Hyphenated final token may be a double surname; distinguish from a fixed complex surname,correct
+P003192,2-21-025-0039,Марья Франкова-Маслова,Марья Франкова,Маслова,Hyphenated final token may be a double surname; distinguish from a fixed complex surname,correct
+P000548,1-02-082-0453,Махамет- Шахир Махумедьянов,Махамет-Шахир Махумедьянов,,Hyphen occurs in given-name position; preserve full name,correct
+P000936,1-02-192-0841,Меланья Гаврилова Хибученко-Ильяшенко,Меланья Гаврилова Хибученко,Ильяшенко,Hyphenated final token may be a double surname; distinguish from a fixed complex surname,correct
+P000289,1-02-028-0194,Наталья Кириллова Мазавина-Кулакова,Наталья Кириллова Мазавина,Кулакова,Hyphenated final token may be a double surname; distinguish from a fixed complex surname,correct
+P001909,1-04-067-0216,Наталья Максимова Соловьева-Пакус,Наталья Максимова Соловьева,Пакус,Hyphenated final token may be a double surname; distinguish from a fixed complex surname,correct
+P001756,1-04-016-0063,Николай Чернов Оглы-Халим-Мамет,Николай Чернов,Оглы-Халим-Мамет,Hyphenated given/ethnic construction; not safely separable as surnames,correct
+P003598,2-21-220-0445,Оглы-Мамет Тали- Кербалай,Оглы-Мамет Тали-Кербалай,,Hyphenated given/ethnic construction; not safely separable as surnames,correct
+P000092,1-01-016-0092,Ольга Владимировна Дитятева-Ландсберг,Ольга Владимировна Дитятева,Ландсберг,Hyphenated final token may be a double surname; distinguish from a fixed complex surname,correct
+P004273,2-24-059-0237,Прасковья Иванова Талазкина-Родионова,Прасковья Иванова Талазкина,Родионова,Hyphenated final token may be a double surname; distinguish from a fixed complex surname,correct
+P001471,1-03-009-0038,Прасковья Осипова Чумакова-Наумова,Прасковья Осипова Чумакова,Наумова,Hyphenated final token may be a double surname; distinguish from a fixed complex surname,correct
+P001951,1-04-080-0258,Розалия Яковлева Станковская-Матрас,Розалия Яковлева Станковская,Матрас,Hyphenated final token may be a double surname; distinguish from a fixed complex surname,correct
+P001912,1-04-068-0219,Теодора Антонова Балановская-Гонсевская,Теодора Антонова Балановская,Гонсевская,Hyphenated final token may be a double surname; distinguish from a fixed complex surname,correct
+P000546,1-02-082-0451,Шерифа Рахматова-Сагитова,Шерифа Рахматова,Сагитова,Hyphenated final token may be a double surname; distinguish from a fixed complex surname,correct
+P002027,1-04-103-0334,Юлия Пенкевич-Балабаненко,Юлия Пенкевич,Балабаненко,Hyphenated final token may be a double surname; distinguish from a fixed complex surname,correct
+P001907,1-04-066-0214,Ядвига Игнатьева Вдавальская-Войтисяк,Ядвига Игнатьева Вдавальская,Войтисяк,Hyphenated final token may be a double surname; distinguish from a fixed complex surname,correct

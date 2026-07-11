@@ -1,0 +1,10 @@
+﻿check,value
+input_records,7446
+output_records,7446
+nonnumeric_textual_household_records,269
+nonnumeric_household_distinct_values,106
+blank_source_household_records,24
+blank_new_source_position_id,0
+duplicate_new_source_position_id,0
+blank_household_type,24
+blank_household_detail_for_textual_nonnumeric,0

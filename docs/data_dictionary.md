@@ -8,6 +8,8 @@ Chekhov Sakhalin 1890 Census Data Analysis
 
 Clean Russian master dataset for the reviewed 1890 Sakhalin census extraction.
 
+Current canonical name-normalization release: `v2_20260711`. It contains 24 columns and incorporates the owner-approved Item 1 and Item 2 name reviews.
+
 One row represents one named person record.
 
 Final merged record count: **7,446**.
@@ -34,7 +36,8 @@ Individual person record.
 | `page_number` | integer | Printed book page where the record begins. | `203` |
 | `household_number` | string | Source household/dwelling number or textual household marker from field `2.` | `Казарма Ж 1` |
 | `legal_status` | string | Legal/social status from field `3.`, normalized after district review. | `Ссыльнокаторжный` |
-| `name_raw` | string | Person name from field `4.` after cleanup of markup and role leakage. | `Андрей Васильев Васильев` |
+| `name_raw` | string | Approved person name from field `4.` after cleanup of markup, role leakage, and owner-reviewed Item 2 hyphen normalization. Source evidence and review decisions remain auditable in the retained review package. | `Андрей Васильев Васильев` |
+| `name_alias` | string | Approved alternative, former, husband, baptismal, or otherwise reviewed name component. Blank when no approved alias exists. | `Герасимова` |
 | `family_status` | string | Household/family role parsed from field `4.` | `Хозяин` |
 | `age` | integer | Age in full years where possible; infants may be coded as `0` with exact age retained in `comments`. | `35` |
 | `religion` | string | Confession/religion from field `6.` | `Православное` |

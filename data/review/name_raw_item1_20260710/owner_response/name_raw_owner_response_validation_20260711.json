@@ -1,0 +1,18 @@
+{
+  "status": "validated",
+  "owner_response_workbook": "data/review/name_raw_item1_20260710/owner_response/name_raw_proposed_corrections_owner_response_20260711.xlsx",
+  "owner_response_workbook_sha256": "495870ebfbe5d9714dd624e97e613a2f805a27a6e060c3f5ebd918481b6d4cf4",
+  "source_proposal_csv": "data/review/name_raw_item1_20260710/name_raw_proposed_corrections.csv",
+  "source_proposal_csv_sha256": "dd92c72a46d5e173765313453ee49e58153213261f89466f49e374ae2dc8390f",
+  "approved_decision_csv": "data/review/name_raw_item1_20260710/owner_response/name_raw_approved_decisions_20260711.csv",
+  "approved_decision_csv_sha256": "86cb551cd78b1a26cf75ab3077088eb8b1485a6454f6547bd842b9799efdbbf7",
+  "sheet_name": "name_raw_proposed_corrections",
+  "record_count": 43,
+  "id_set_matches_proposal": true,
+  "protected_cells_unchanged": true,
+  "decision_counts": {
+    "approve": 28,
+    "modify": 15
+  },
+  "invalid_decision_count": 0
+}

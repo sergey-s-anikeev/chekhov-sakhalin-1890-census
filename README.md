@@ -49,10 +49,14 @@ The GitHub repository is a version-control mirror, not a substitute for owner ap
 
 ## Canonical Datasets
 
-- `data/processed/clean_alexandrovsky_ru.csv`
-- `data/processed/clean_tymovsky_ru.csv`
-- `data/processed/clean_korsakovsky_ru.csv`
-- `data/processed/clean_sakhalin_1890_ru.csv`
+Current versioned canonical release, approved 2026-07-11:
+
+- `data/processed/clean_alexandrovsky_ru_v2_20260711.csv`
+- `data/processed/clean_tymovsky_ru_v2_20260711.csv`
+- `data/processed/clean_korsakovsky_ru_v2_20260711.csv`
+- `data/processed/clean_sakhalin_1890_ru_v2_20260711.csv`
+
+The prior unversioned canonical files remain unchanged as historical release artifacts.
 
 The `district` field retains the approved Russian values:
 

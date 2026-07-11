@@ -1,0 +1,26 @@
+# Canonical name-normalization v2 QA report
+
+- **release_version**: `v2`
+- **approval_date**: `2026-07-11`
+- **current_canonical_sha256**: `b716cfbc8daa28cd09341d8946d0ad553d73a8e23b01d39b8c376adcbacbc32b`
+- **new_combined_sha256**: `09675fb6868b0814aab1f554b03149f0d956d231d66213ade2a35578cd3eb5a7`
+- **records**: `7446`
+- **columns**: `24`
+- **new_columns**: `['name_alias']`
+- **changed_records**: `66`
+- **field_change_counts**: `{'name_raw': 66, 'name_alias': 40, 'comments': 7, 'family_status': 2}`
+- **populated_name_alias**: `40`
+- **blank_name_raw**: `0`
+- **duplicate_person_id**: `0`
+- **duplicate_source_position_id**: `0`
+- **person_id_order_unchanged**: `True`
+- **source_position_id_unchanged**: `True`
+- **district_order_unchanged**: `True`
+- **combined_equals_ordered_district_concatenation**: `True`
+- **district_counts**: `{'Александровский': 2884, 'Тымовский': 3242, 'Корсаковский': 1320}`
+- **name_norm_present**: `False`
+- **name_note_present**: `False`
+- **surname_alternative_present**: `False`
+- **prior_canonical_files_overwritten**: `False`
+
+The owner-approved Item 1 and Item 2 changes are incorporated in a new versioned release. Previous canonical files remain unchanged.

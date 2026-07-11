@@ -1,0 +1,19 @@
+# Item 2 QA report
+
+- **input_sha256**: `4d0ac595f86c72173411bf2135993526fa6faab178879e878ed9a70e286f8c81`
+- **staged_sha256**: `3b346631cf43d79c0262396051c65e1824fe6e7ca414104d85d684570068819f`
+- **input_rows**: `7446`
+- **staged_rows**: `7446`
+- **inventory_rows**: `75`
+- **parenthetical_name_rows**: `0`
+- **hyphenated_name_rows**: `75`
+- **name_raw_changed**: `0`
+- **person_id_order_unchanged**: `True`
+- **source_position_id_unchanged**: `True`
+- **existing_name_alias_unchanged**: `True`
+- **review_required_count**: `39`
+- **proposed_alias_count**: `38`
+- **canonical_touched**: `False`
+- **classification_counts**: `{"surname_compound_candidate": 38, "ordinal_name_marker": 15, "ethnic_or_compound_name": 14, "compound_given_name": 7, "empty_artifact": 1}`
+
+The candidate is staged and pending owner review. `name_raw` and canonical datasets were not changed. Parenthetical expressions in `name_raw`: 0; parentheses found elsewhere remain outside this item.
