@@ -1,0 +1,10 @@
+﻿metric,value
+input_records,7446
+distinct_values_including_blank,190
+blank_records,122
+straightforward_distinct_values,0
+straightforward_records,0
+owner_review_distinct_values,0
+owner_review_records,0
+owner_approved_distinct_values,190
+owner_approved_records,7446

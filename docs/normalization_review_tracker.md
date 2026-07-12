@@ -67,25 +67,32 @@ Completion status: the owner reviewed all 75 hyphenated records on 2026-07-11. N
 
 Deliverables: derivation rules, conflict inventory, unresolved inventory, proposed `sex` values, staged result, diff, and QA report.
 
-### 4. Verify archival codes in `notes_raw`
+### 4. Verify archival codes in `notes_raw` — `[x]` Approved and completed
 
-- [ ] Validate the expected `РГБ № NNNN` structure.
-- [ ] Investigate archival identifiers containing letters or missing components, including the reported Tymovsky records associated with `РГБ № 4521г`.
-- [ ] Determine whether a suffix such as `г` is part of the identifier, a transcription artifact, or displaced text.
-- [ ] Preserve the complete source-derived `notes_raw` value.
-- [ ] Consider derived fields `archive_repository`, `archive_number`, and `archive_suffix`.
-- [ ] Keep archival identifiers as text.
+- [x] Validate the expected `РГБ № NNNN` structure and indexed variants.
+- [x] Inventory all duplicate `notes_raw` values and identify affected records by `person_id`, `source_position_id`, and `page_number`.
+- [x] Match suspected missing suffixes against owner-reviewed raw PDF page extracts.
+- [x] Preserve confirmed true duplicates from the original source.
+- [x] Recover confirmed suffixes and use the approved indexed format without a space or hyphen, for example `РГБ № 6152a`.
+- [x] Keep archival identifiers as text and preserve all non-`notes_raw` fields unchanged.
+
+Completion status: the owner reviewed the duplicate archive references against the original PDF and supplied raw page extracts for records with missing suffixes. The approved staged candidate contains 41 `notes_raw` changes: 37 suffix recoveries from page evidence, two owner-specified manual corrections, and two existing indexed values reformatted without hyphens. There are no unmatched or low-confidence cases and no unexpected duplicate values. Canonical data remains unchanged.
 
 Deliverables: invalid-format inventory, source-verification decisions, staged result, diff, and QA report.
 
-### 5. Revisit household and source-position identifier rules
+### 5. Revisit household and source-position identifier rules — `[x]` Approved and completed
 
-- [ ] Preserve `person_id` and `source_position_id` unchanged.
-- [ ] Inventory numeric and textual `household_number` values.
-- [ ] Separate household grouping from institutional or work-location descriptions.
-- [ ] Define proposed derived fields such as `household_group_id`, `household_number_norm`, `location_type`, and `location_name_or_number`.
-- [ ] Review proposed controlled Russian `location_type` values: `Домохозяйство`, `Штольня`, `Казарма`, `Тюрьма`, `Другое`, or blank.
-- [ ] Do not force textual household markers into numeric identifiers.
+- [x] Preserve `person_id` and row order.
+- [x] Inventory numeric and textual `household_number` values.
+- [x] Replace `household_number` in the staged candidate with `household_id`, `household_type`, and `household_details`.
+- [x] Apply the owner-reviewed workbook mapping by exact source-value match.
+- [x] Treat `household_id` as a text identifier, not an integer-only field, because approved ranges such as `80-81` and `292-293` must be preserved.
+- [x] Use `Частное` for numeric and corrected numeric household identifiers.
+- [x] Use `000` in `source_position_id` when no numeric household identifier is available.
+- [x] For approved hyphenated identifiers, use the first zero-padded number in the third `source_position_id` segment.
+- [x] Preserve genuinely blank source household values as blank across all three household fields.
+
+Completion status: the owner workbook supplied 106 mapping decisions covering 269 records. The staged v2 candidate contains 7,446 records, 39 corrected `household_id` values, and 9 hyphenated household IDs, with no blank or duplicate `source_position_id` values. On 2026-07-11, the project owner verified that the 24 blank `household_type` records correspond to blank source household values and should remain blank. Canonical data remains unchanged.
 
 Deliverables: textual-marker inventory, proposed identifier specification, approved vocabulary, staged result, diff, and QA report.
 
@@ -118,33 +125,52 @@ Deliverables: age exception inventory, manual decisions, staged result, diff, an
 
 Deliverables: parsed-age inventory, parsing rules, unresolved cases, staged result, diff, and QA report.
 
-### 9. Normalize capitalization
+### 9. Normalize capitalization — `[x]` Approved and staged
 
-- [ ] Define capitalization separately for proper names and categorical fields.
-- [ ] Preserve proper-name capitalization in `name_raw` after verification.
-- [ ] Review initial-uppercase forms for normalized `legal_status`, `family_status`, and `religion` values.
-- [ ] Preserve lowercase controlled `literacy` values: `грамотен`, `неграмотен`, and `образован`.
-- [ ] Do not apply blanket title-casing.
+- [x] Define Sentence case for normalized categorical fields separately from proper names and free text.
+- [x] Preserve proper-name capitalization in `name_raw` after verification.
+- [x] Confirm initial-uppercase forms for approved `legal_status_norm`, `family_status_norm`, and `religion` values.
+- [x] Normalize `literacy` to `Грамотен`, `Неграмотен`, `Образован`, or blank.
+- [x] Preserve `comments` and all other source-preserving or free-text fields without blanket capitalization.
+- [x] Do not apply blanket title-casing.
 
 Deliverables: capitalization specification, affected-value inventory, approved mappings, staged result, diff, and QA report.
 
-### 10. Correct military reserve-status grammar
+Completion status: the Sentence case specification is documented in `docs/capitalization_specification.md`. A 7,446-record candidate stages the approved literacy capitalization and the previously approved contradictory-value resolution. It changes 5,419 `literacy` records, changes no other field, and leaves canonical files unchanged.
 
-- [ ] Review `legal_status` values containing `рядовой`, `унтер-офицер`, and reserve-status wording.
-- [ ] Normalize `Запасный рядовой` to `Запасной рядовой` in an approved normalized field.
-- [ ] Normalize `Запасный унтер-офицер` to `Запасной унтер-офицер` in an approved normalized field.
-- [ ] Preserve the source-faithful value where required for auditability.
+#### Required capitalization step for subsequent normalization items
+
+- [ ] For every new or revised normalized categorical field, verify that each nonblank Russian category uses Sentence case before owner approval and staging.
+- [ ] Include capitalization exceptions in the affected-value inventory and mapping table.
+- [ ] Preserve proper nouns, abbreviations, identifiers, free text, and source-preserving fields without blanket capitalization.
+- [ ] Add a QA check confirming that no approved normalized category begins with an unintended lowercase letter.
+
+This checkpoint applies to pending normalized fields such as `sex`, `origin_place` or `origin_place_norm`, `illness_norm`, `marriage_status_norm`, and `spouse_location_norm`, as well as any later categorical fields.
+
+### 10. Correct military reserve-status grammar — `[x]` Approved and completed
+
+- [x] Review `legal_status` values containing `рядовой`, `унтер-офицер`, and reserve-status wording.
+- [x] Normalize `Запасный рядовой` to `Запасной рядовой` in the staged candidate.
+- [x] Normalize `Запасный унтер-офицер` to `Запасной унтер-офицер` in the staged candidate.
+- [x] Preserve the source-faithful canonical value pending final integrated approval.
 
 Deliverables: affected-record inventory, approved mappings, staged result, diff, and QA report.
 
-### 11. Create `family_status_norm`
+Completion status: six `legal_status` records were corrected from `запасный` to `запасной`; no matching values were present in `comments`. Canonical data remains unchanged.
 
-- [ ] Add a proposed one-word analytical field named `family_status_norm` while preserving detailed `family_status`.
-- [ ] Profile all distinct source-derived values before fixing the vocabulary.
-- [ ] Review candidate Russian categories: `Хозяин`, `Хозяйка`, `Жена`, `Муж`, `Сын`, `Дочь`, `Внук`, `Внучка`, `Сожитель`, `Сожительница`, `Жилец`, `Жилица`, `Совладелец`, `Работник`, `Прислуга`, `Родственник`, `Другое`, or blank.
-- [ ] Preserve qualifiers such as `незаконнорожденная`, `приемная`, and relationship-to-householder details outside the one-word field.
+### 11. Create `family_status_norm` — `[x]` Approved and staged
+
+- [x] Preliminary decision: keep the existing detailed `family_status` unchanged as the source-preserving field.
+- [x] Preliminary decision: add a compact Russian analytical field named `family_status_norm`, normally containing one or two words.
+- [x] Preliminary decision: prefer full historical terminology over abbreviations; retain forms such as `Незаконнорожденный сын` and `Незаконнорожденная дочь` in full.
+- [x] Profile and review every distinct `family_status` value before approving the controlled vocabulary or mapping rules.
+- [x] Approve the complete source-to-normalized mapping table after owner review.
+- [x] Preserve source details that are not selected for `family_status_norm` only in the unchanged `family_status`; do not reconstruct relationships between household members.
+- [x] Stage the approved field addition separately with diff and QA evidence; keep canonical files unchanged.
 
 Deliverables: distinct-value inventory, proposed controlled vocabulary, mapping table, staged result, diff, and QA report.
+
+Completion status: all 190 distinct values including blank were reviewed and approved. A 25-column candidate was staged with `family_status_norm` immediately after the unchanged `family_status`. The staged result contains all 7,446 records, has no unmapped nonblank values or non-target changes, and does not modify canonical files.
 
 ### 12. Normalize `origin_place`
 
@@ -156,7 +182,7 @@ Deliverables: distinct-value inventory, proposed controlled vocabulary, mapping 
 
 Deliverables: exceptional-value inventory, approved vocabulary and mappings, staged result, diff, and QA report.
 
-### 13. Normalize `religion`
+### 13. Normalize `religion` — `[x]` Approved and completed
 
 - [ ] Review the proposed analytical mapping `Римско-католическое` to `Католическое`.
 - [ ] Review the proposed analytical consolidation of `Магометанское` and `Мусульманское`, preferably under `Мусульманское`.
@@ -165,14 +191,17 @@ Deliverables: exceptional-value inventory, approved vocabulary and mappings, sta
 
 Deliverables: affected-record inventory, approved controlled vocabulary, mapping table, staged result, diff, and QA report.
 
-### 14. Resolve contradictory `literacy`
+Completion status: the owner approved replacing 6 `Римско-католическое` values with `Католическое`, 2 `Мусульманское` values with `Магометанское`, and 1 `Православное (выкрест)` value with `Православное`, moving `выкрест` to `comments`. The staged v2 candidate changes only `religion` and `comments`; canonical data remains unchanged.
 
-- [ ] Review the record containing `грамотен неграмотен` against the source evidence.
-- [ ] Do not automatically convert the value to blank.
-- [ ] Use blank only if the source is genuinely unresolved and the reviewer approves that representation.
-- [ ] Confirm all other `literacy` values against the approved vocabulary.
+### 14. Resolve contradictory `literacy` — `[x]` Approved and completed
+
+- [x] Review the record containing `грамотен неграмотен` against the source evidence.
+- [x] Apply the owner decision to use blank when several categories are selected.
+- [x] Confirm all other `literacy` values against the approved vocabulary.
 
 Deliverables: record-level decision, staged result, diff, and QA report.
+
+Completion status: the one contradictory `literacy` value `грамотен неграмотен` was changed to blank per owner decision. No contradictory literacy values remain. Canonical data remains unchanged.
 
 ### 15. Normalize `illness`
 
@@ -187,20 +216,40 @@ Deliverables: complete illness inventory, proposed controlled vocabulary, mappin
 
 - [ ] Preserve the complete current `marriage_status` value.
 - [ ] Define a broader `marriage_status_norm` field with an approved Russian vocabulary.
+- [x] Add the approved derived field `living_alone_status` using `Одинок` when `marriage_status` explicitly contains `одинок`, `одинока`, or `одинокий`; otherwise leave it blank.
+- [x] Treat blank `living_alone_status` as "not explicitly recorded," not as false; do not create a `FALSE` value from absence of evidence.
+- [x] Preserve the source wording and gendered variants in the unchanged `marriage_status`; use the Sentence case analytical value `Одинок` in the derived field.
 - [ ] Define `spouse_location_norm` for explicit locations such as `На Сахалине`, `На родине`, `Кара`, `Сибирь`, `Владивосток`, `Николаевск`, `Другое`, or blank.
 - [ ] Review `женат в другом месте` and named-location variants individually.
 - [ ] Preserve contradictory or compound statements for manual review.
 
-Deliverables: distinct-value inventory, approved category and location vocabularies, mapping table, staged result, diff, and QA report.
+Current approved decision: `living_alone_status` will contain `Одинок` for the 442 canonical records with an explicit `одинок-` form and blank for the remaining records. This field has been approved conceptually but has not yet been staged.
+
+Deliverables: distinct-value inventory, approved category, living-alone, and location vocabularies, mapping table, staged result, diff, and QA report.
+
+### 17. Normalize `legal_status` — `[x]` Approved and staged
+
+- [x] Profile every distinct `legal_status` value and its record count from the current canonical dataset.
+- [x] Separate the respondent's own legal or social status from occupation, military rank, geographic, and other removable details while retaining approved gendered and child/parent forms.
+- [x] Preserve the existing detailed `legal_status` unchanged.
+- [x] Add the approved Russian analytical vocabulary in a derived `legal_status_norm` field.
+- [x] Review compound, gendered, dependent-child, free-status, exile, penal, military, and exceptional forms individually or in transparent groups.
+- [x] Approve every distinct source-to-normalized mapping before staging the new field.
+- [x] Create a separate versioned staged candidate with a complete mapping table, record-level diff, and QA report; keep canonical files unchanged pending explicit release approval.
+
+Deliverables: distinct-value inventory, proposed controlled vocabulary, complete approved mapping table, staged result, diff, and QA report.
+
+Completion status: the owner approved all 100 distinct mappings including blank and supplied 12 corrections in `legal_status_review_owner.xlsx`. The staged 25-column candidate retains all 7,446 records, preserves detailed `legal_status`, adds `legal_status_norm` immediately after it, moves `Богаделец` to blank `illness` fields in 5 records, and has zero non-target changes. Canonical files remain unchanged.
 
 ## Final Integrated Validation
 
-This section begins only after Items 1-16 have been approved individually.
+This section begins only after Items 1-17 have been approved individually.
 
 - [ ] Generate one versioned consolidated candidate from the approved scripts and mappings.
 - [ ] Confirm 7,446 records and the approved 23 canonical columns plus only the approved new derived fields.
 - [ ] Confirm district order, row order, `person_id`, and `source_position_id` are unchanged.
 - [ ] Run all hard QA checks and produce all soft-review inventories.
+- [ ] Confirm every approved nonblank normalized Russian categorical value uses Sentence case, except documented proper-name, abbreviation, identifier, or source-preservation exceptions.
 - [ ] Produce a complete record-level and schema-level diff against the current canonical dataset.
 - [ ] Calculate SHA-256 hashes for the candidate and supporting correction inputs.
 - [ ] Submit the candidate package for project-owner review.
@@ -215,3 +264,13 @@ This section begins only after Items 1-16 have been approved individually.
 | 2026-07-11 | Item 1: owner decisions applied | Approved and completed | Validated 28 approvals and 15 modifications; generated a 7,446-record staged candidate with 37 changed records and 14 populated `name_alias` values. Canonical data unchanged. | `data/staging/name_raw_item1_20260711/`; `outputs/qa/name_raw_item1_20260711_approved/` |
 | 2026-07-11 | Item 2: parenthetical and double surname review | Ready for owner review | No parenthetical `name_raw` values; inventoried all 75 hyphenated names. Proposed derived fields and conservative classifications are staged; 39 records require owner review. Canonical data unchanged. | `data/review/name_double_surnames_item2_20260711/`; `data/staging/name_double_surnames_item2_20260711/`; `outputs/qa/name_double_surnames_item2_20260711/` |
 | 2026-07-11 | Item 2: owner decisions applied | Approved and completed | Applied 29 owner-approved corrections: 29 `name_norm` changes and 26 `name_alias` values. The women’s maiden-surname–husband-surname split rationale is documented; no surname-alternative column was created. Canonical data unchanged. | `data/review/name_double_surnames_item2_20260711/owner_response/`; `data/staging/name_double_surnames_item2_20260711_approved/`; `outputs/qa/name_double_surnames_item2_20260711_approved/` |
+| 2026-07-11 | Item 5: household structure | Approved and completed | Applied 106 owner mapping decisions to 269 records. The owner verified that all 24 blank `household_type` values are intentional source blanks, not classification errors. Canonical data unchanged. | `data/review/household_structure_owner_mapping_20260711.csv`; `data/staging/household_structure_20260711_v2/` |
+| 2026-07-11 | Item 4: archival codes in `notes_raw` | Approved and completed | Recovered 37 missing suffixes from owner-reviewed raw pages, applied two manual corrections, and normalized two existing indexed values to the approved no-hyphen format. The 7,446-record staged candidate has no unresolved matches or unexpected duplicate values. Canonical data unchanged. | `data/review/notes_raw_duplicates_item4_20260711/`; `data/staging/notes_raw_suffix_recovery_20260711/`; `outputs/qa/notes_raw_suffix_recovery_20260711/` |
+| 2026-07-11 | Item 10: military reserve-status grammar | Approved and completed | Corrected six `legal_status` values from `запасный` to `запасной`; no matching `comments` values were present. Canonical data unchanged. | `data/staging/items_10_14_20260711/`; `outputs/qa/items_10_14_20260711/` |
+| 2026-07-11 | Item 14: contradictory `literacy` | Approved and completed | Changed the one value `грамотен неграмотен` to blank per owner decision. Canonical data unchanged. | `data/staging/items_10_14_20260711/`; `outputs/qa/items_10_14_20260711/` |
+| 2026-07-11 | Item 13: religion | Approved and completed | Replaced 6 `Римско-католическое` values with `Католическое`, 2 `Мусульманское` values with `Магометанское`, and 1 `Православное (выкрест)` value with `Православное`, moving `выкрест` to `comments`. Canonical data unchanged. | `data/staging/item13_religion_20260711/`; `outputs/qa/item13_religion_20260711/` |
+| 2026-07-12 | Item 17: `legal_status` current-value profile | Ready for owner review | Profiled all 7,446 canonical v2 records: 99 distinct nonblank values, 24 blank records, and 195 representative records. No normalization mappings proposed and no dataset changes made. | `data/review/legal_status_item17_20260712/` |
+| 2026-07-12 | Item 17: `legal_status_norm` mapping proposal | Ready for owner review | Proposed mappings for all 100 distinct values including blank. Applied the requested `Свободного состояния` category, proposed moving `Богаделец` to `illness` for 5 records, and removed district or settlement qualifiers from normalized values. Eleven distinct values covering 12 records are flagged for focused review. No dataset changes made. | `data/review/legal_status_item17_20260712/legal_status_norm_mapping_proposal.csv` |
+| 2026-07-12 | Item 17: gender-preserving mapping revision | Ready for owner review | Revised the complete proposal to retain Russian gender distinctions for penal, peasant, settler, and child/parent forms. Normalized `Поселенка` to `Поселка`, including the inflected `Сын поселенки` to `Сын поселки`. Six distinct values covering 6 records remain flagged for focused review. No dataset changes made. | `data/review/legal_status_item17_20260712/legal_status_norm_mapping_proposal.csv` |
+| 2026-07-12 | Item 17: owner decisions applied | Approved and staged | Reconciled 12 owner corrections and 88 confirmed mappings. Staged all 7,446 records with `legal_status_norm`; preserved `legal_status`; added `Богаделец` to 5 previously blank `illness` values; zero unmapped values or non-target changes. Canonical data unchanged. | `data/review/legal_status_item17_20260712/owner_response/`; `data/staging/legal_status_norm_item17_20260712/`; `outputs/qa/legal_status_norm_item17_20260712/` |
+| 2026-07-12 | Item 9: Sentence case | Approved and staged | Approved Sentence case for normalized categorical fields, including `literacy`. Staged `Грамотен`, `Неграмотен`, `Образован`, or blank for all 7,446 records; 5,419 literacy values changed and no other fields changed. Canonical data unchanged. | `docs/capitalization_specification.md`; `data/review/capitalization_item9_20260712/`; `data/staging/capitalization_item9_20260712/`; `outputs/qa/capitalization_item9_20260712/` |

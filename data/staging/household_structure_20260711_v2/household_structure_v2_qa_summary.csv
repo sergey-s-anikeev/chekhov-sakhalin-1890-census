@@ -1,0 +1,16 @@
+﻿check,value
+input_records,7446
+output_records,7446
+owner_mapping_values,106
+mapped_records,269
+corrected_household_id_records,39
+hyphenated_household_id_records,9
+mapping_values_missing_from_source,0
+mapping_record_count_mismatches,0
+invalid_household_id_values,0
+blank_source_position_id,0
+duplicate_source_position_id,0
+blank_source_household_records,24
+blank_household_type,24
+owner_verified_blank_household_type_records,24
+owner_verification_status,confirmed_as_source_blanks

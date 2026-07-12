@@ -1,0 +1,7 @@
+﻿metric,value
+input_records,7446
+distinct_values_including_blank,100
+distinct_nonblank_values,99
+blank_records,24
+nonblank_records,7422
+representative_records,195

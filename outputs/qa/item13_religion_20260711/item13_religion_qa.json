@@ -1,0 +1,14 @@
+{
+  "source_rows": 7446,
+  "staged_rows": 7446,
+  "changed_records": 9,
+  "rimskо_katolicheskoe_changes": 6,
+  "musulmanskoe_changes": 2,
+  "vy_krest_changes": 1,
+  "comments_vy_krest_changes": 1,
+  "only_religion_or_comments_changed": true,
+  "remaining_rimsko_katolicheskoe": 0,
+  "remaining_musulmanskoe": 0,
+  "remaining_pravoslavnoe_vy_krest": 0,
+  "person_ids_preserved": true
+}

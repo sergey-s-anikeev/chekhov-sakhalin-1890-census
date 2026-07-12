@@ -1382,6 +1382,13 @@ def household_for_source_position_id(value: str) -> str:
     if re.fullmatch(r"\d+", value):
         return str(int(value)).zfill(3)
 
+    # For a normalized household range, use its first household number in the
+    # third source-position segment (for example, 292-293 -> 292 and
+    # 80-81 -> 080).
+    range_match = re.fullmatch(r"(\d+)\s*-\s*\d+", value)
+    if range_match:
+        return str(int(range_match.group(1))).zfill(3)
+
     # Preserve non-numeric household identifiers, but make the ID safer.
     return re.sub(r"\s+", "_", value)
 

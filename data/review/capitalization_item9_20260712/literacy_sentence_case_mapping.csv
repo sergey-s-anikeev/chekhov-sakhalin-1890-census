@@ -1,0 +1,6 @@
+﻿literacy_before,record_count,literacy_after,owner_decision,decision_basis
+неграмотен,3735,Неграмотен,approve,Sentence case
+,2027,,approve,Sentence case
+грамотен,1659,Грамотен,approve,Sentence case
+образован,24,Образован,approve,Sentence case
+грамотен неграмотен,1,,approve,Previously approved Item 14 contradiction resolution

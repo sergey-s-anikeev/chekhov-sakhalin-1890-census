@@ -44,7 +44,7 @@ Individual person record.
 | `origin_place` | string | Place of origin from field `7.`, normalized and reviewed at district level. | `Смоленская губерния` |
 | `arrival_year` | integer | Year of arrival from field `8.` when present. | `1885` |
 | `occupation` | string | Occupation or activity from field `9.` | `Каменный уголь` |
-| `literacy` | string | Literacy category from field `10.` | `грамотен` |
+| `literacy` | string | Sentence-case literacy category from field `10.` | `Грамотен` |
 | `marriage_status` | string | Marriage status from field `11.`, with explanatory details moved to `comments` where reviewed. | `женат на родине` |
 | `allowance_status` | string | Allowance status from field `12.`, normalized from `Да/Нет` to `TRUE/FALSE`. | `TRUE` |
 | `illness` | string | Illness or condition from field `13.` | `Хронический катар желудка и кишок` |
@@ -126,9 +126,9 @@ Unknown or unexpected values are preserved and reported for manual review rather
 Allowed values:
 
 ```text
-неграмотен
-грамотен
-образован
+Неграмотен
+Грамотен
+Образован
 ```
 
 ### `marriage_status`

@@ -1,0 +1,9 @@
+﻿metric,value
+proposed_distinct_values_including_blank,100
+straightforward_distinct_values,94
+straightforward_records,7440
+owner_review_distinct_values,6
+owner_review_records,6
+source_values_with_proposed_illness_addition,2
+records_with_proposed_illness_addition,5
+values_with_removed_detail,11

@@ -1,0 +1,9 @@
+﻿check,value,pass
+input_records,7446,TRUE
+staged_records,7446,TRUE
+approved_distinct_values_including_blank,100,TRUE
+unmapped_legal_status_values,0,TRUE
+blank_norm_for_nonblank_source,0,TRUE
+legal_status_preserved,0,TRUE
+illness_changes,5,TRUE
+non_target_field_changes,0,TRUE

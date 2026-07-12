@@ -1,0 +1,22 @@
+{
+  "source_file": "data\\processed\\clean_sakhalin_1890_ru.csv",
+  "source_sha256": "b716cfbc8daa28cd09341d8946d0ad553d73a8e23b01d39b8c376adcbacbc32b",
+  "source_rows": 7446,
+  "staged_rows": 7446,
+  "changed_records": 41,
+  "uploaded_suffix_recoveries": 37,
+  "manual_overrides": 2,
+  "format_normalizations": 2,
+  "manual_override_values": {
+    "P001792": "РГБ № 4300 -> РГБ № 4300а",
+    "P007384": "РГБ № 6152 -> РГБ № 6152a"
+  },
+  "true_duplicate_base_values": 34,
+  "remaining_duplicate_values": 31,
+  "unexpected_remaining_duplicate_values": {},
+  "all_person_ids_preserved": true,
+  "all_source_position_ids_preserved": true,
+  "only_notes_raw_changed": true,
+  "unmatched_suffix_evidence": [],
+  "low_confidence_suffix_evidence": []
+}

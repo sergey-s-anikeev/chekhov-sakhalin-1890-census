@@ -1,0 +1,7 @@
+﻿check,value,pass
+input_records,7446,TRUE
+staged_records,7446,TRUE
+changed_records,5419,TRUE
+non_target_field_changes,0,TRUE
+unexpected_literacy_values,0,TRUE
+contradictory_literacy_values,0,TRUE
