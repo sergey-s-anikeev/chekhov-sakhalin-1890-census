@@ -1,0 +1,17 @@
+﻿field,changed_records
+comments,8
+family_status_norm,7324
+household_details,211
+household_id,7200
+household_number,7422
+household_type,7422
+illness,5
+illness_norm,53
+legal_status,16
+legal_status_norm,7422
+literacy,5419
+notes_raw,41
+religion,9
+sex,7446
+sex_evidence,7446
+source_position_id,299

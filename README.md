@@ -49,14 +49,14 @@ The GitHub repository is a version-control mirror, not a substitute for owner ap
 
 ## Canonical Datasets
 
-Current versioned canonical release, approved 2026-07-11:
+Current versioned canonical release, approved 2026-07-12:
 
-- `data/processed/clean_alexandrovsky_ru_v2_20260711.csv`
-- `data/processed/clean_tymovsky_ru_v2_20260711.csv`
-- `data/processed/clean_korsakovsky_ru_v2_20260711.csv`
-- `data/processed/clean_sakhalin_1890_ru_v2_20260711.csv`
+- `data/processed/clean_alexandrovsky_ru_v3_20260712.csv`
+- `data/processed/clean_tymovsky_ru_v3_20260712.csv`
+- `data/processed/clean_korsakovsky_ru_v3_20260712.csv`
+- `data/processed/clean_sakhalin_1890_ru_v3_20260712.csv`
 
-The prior unversioned canonical files remain unchanged as historical release artifacts.
+The v2 and prior unversioned canonical files remain unchanged as historical release artifacts. The 31-column v3 release consolidates the currently approved normalization items; still-pending tracker items remain outside this release.
 
 The `district` field retains the approved Russian values:
 

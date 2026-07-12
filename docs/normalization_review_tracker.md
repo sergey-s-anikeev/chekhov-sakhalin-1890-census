@@ -54,18 +54,28 @@ Deliverables: classified record inventory, proposed field definitions, staged re
 
 Completion status: the owner reviewed all 75 hyphenated records on 2026-07-11. No `name_raw` values contain parentheses. The approved staged candidate contains `name_norm` and `name_note`; 26 approved alternative values were placed in the existing `name_alias` field. No `surname_alternative` field was created. For approved women’s hyphenated surname forms, `name_norm` retains the maiden surname and `name_alias` stores the husband surname. Canonical data remains unchanged.
 
-### 3. Create and verify derived `sex`
+### 3. Create and verify derived `sex` — `[x]` Approved and staged
 
-- [ ] Add a proposed derived field named `sex`; it is not present in the historical source dataset.
-- [ ] Use controlled values: `male`, `female`, or blank.
-- [ ] Derive a candidate value only from explicit grammatical or name evidence in `legal_status`, `family_status`, and `name_raw`.
-- [ ] Prefer explicit gendered evidence in `legal_status` or `family_status`; use `name_raw` only through a reviewed name rule or approved name reference.
-- [ ] Require manual review when fields conflict, the name is unfamiliar or non-Russian, only a surname is present, or evidence is insufficient.
-- [ ] Never infer `sex` from occupation, religion, origin, household position, or indirect demographic assumptions.
-- [ ] Record provenance in a companion field such as `sex_evidence` and optionally a confidence/review field.
-- [ ] Keep blank when the available evidence does not support a defensible value.
+- [x] Add a proposed derived field named `sex`; it is not present in the historical source dataset.
+- [x] Propose Russian Sentence case controlled values: `Мужской`, `Женский`, or blank.
+- [x] Derive a candidate value only from explicit grammatical or reviewed name evidence in `legal_status`, approved `legal_status_norm`, `family_status`, and `name_raw`.
+- [x] Prefer explicit gendered evidence in `legal_status` or `family_status`; use `name_raw` only through reviewed patronymic morphology or a future approved name reference.
+- [x] Require manual review when fields conflict, the name is unfamiliar or non-Russian, only a surname is present, or evidence is insufficient.
+- [x] Never infer `sex` from occupation, religion, origin, household position, or indirect demographic assumptions.
+- [x] Record provenance in the companion field `sex_evidence`.
+- [x] Keep blank when the available evidence does not support a defensible value.
+- [x] Review and approve the 12 unresolved records before final staging approval.
 
 Deliverables: derivation rules, conflict inventory, unresolved inventory, proposed `sex` values, staged result, diff, and QA report.
+
+Completion status: all 7,446 records have an approved value: 4,921 `Мужской` and 2,525 `Женский`. The 12 owner decisions resolve 10 grammatical conflicts and 2 insufficient-evidence cases. In all 10 conflicts, `family_status` agreed with the approved sex; the staged candidate therefore corrects 10 `legal_status` values and changes no `family_status` values or other existing fields. Canonical files remain unchanged.
+
+Canonical-version follow-up:
+
+- [ ] Apply the 10 owner-approved Item 3 `legal_status` corrections before deriving or regenerating `legal_status_norm` in the next consolidated canonical candidate.
+- [ ] Regenerate `legal_status_norm` for those 10 records from the corrected `legal_status`; do not carry forward the earlier Item 17 values based on the superseded status text.
+- [ ] Confirm that the resulting `sex`, `legal_status`, `legal_status_norm`, and unchanged `family_status` are grammatically consistent for all 10 records.
+- [ ] Include these synchronized changes in the canonical-candidate diff and QA report.
 
 ### 4. Verify archival codes in `notes_raw` — `[x]` Approved and completed
 
@@ -203,14 +213,19 @@ Deliverables: record-level decision, staged result, diff, and QA report.
 
 Completion status: the one contradictory `literacy` value `грамотен неграмотен` was changed to blank per owner decision. No contradictory literacy values remain. Canonical data remains unchanged.
 
-### 15. Normalize `illness`
+### 15. Normalize `illness` — `[x]` Approved and staged
 
-- [ ] Review every nonblank `illness` value.
-- [ ] Preserve `illness` and create an analytical field such as `illness_norm` only after vocabulary approval.
-- [ ] Prefer concise, gender-neutral Russian condition nouns, for example `слеп` / `слепа` to `Слепота`.
-- [ ] Do not infer a diagnosis beyond the explicit historical wording.
+- [x] Profile every nonblank `illness` value, incorporating the five approved Item 17 `Богадельщик` transfers.
+- [x] Review and approve every proposed source-to-normalized mapping.
+- [x] Preserve `illness` and add the approved analytical field `illness_norm` in a separate staged candidate.
+- [x] Prefer concise, gender-neutral Russian condition nouns, for example `Слепой` / `Слепая` to `Слепота`.
+- [x] Use semicolon-separated categories for explicitly compound conditions while preserving the complete original `illness`.
+- [x] Apply Sentence case to every proposed normalized category.
+- [x] Do not infer a diagnosis beyond the explicit historical wording.
 
 Deliverables: complete illness inventory, proposed controlled vocabulary, mapping table, staged result, diff, and QA report.
+
+Completion status: all 30 distinct nonblank values plus blank are approved. The owner preserved six historical expressions unchanged in `illness_norm` and normalized `Слаб` to `Слабосилен`; all other proposals were confirmed. The staged candidate contains 53 nonblank `illness_norm` values, preserves every original `illness`, uses Sentence case, and has zero non-target changes. Canonical files remain unchanged.
 
 ### 16. Normalize `marriage_status` and spouse location
 
@@ -239,17 +254,21 @@ Deliverables: distinct-value inventory, approved category, living-alone, and loc
 
 Deliverables: distinct-value inventory, proposed controlled vocabulary, complete approved mapping table, staged result, diff, and QA report.
 
-Completion status: the owner approved all 100 distinct mappings including blank and supplied 12 corrections in `legal_status_review_owner.xlsx`. The staged 25-column candidate retains all 7,446 records, preserves detailed `legal_status`, adds `legal_status_norm` immediately after it, moves `Богаделец` to blank `illness` fields in 5 records, and has zero non-target changes. Canonical files remain unchanged.
+Completion status: the owner approved all 100 distinct mappings including blank and supplied 12 corrections in `legal_status_review_owner.xlsx`. The staged 25-column candidate retains all 7,446 records, preserves detailed `legal_status`, adds `legal_status_norm` immediately after it, moves `Богадельщик` to blank `illness` fields in 5 records, and has zero non-target changes. Canonical files remain unchanged.
 
 ## Final Integrated Validation
 
 This section begins only after Items 1-17 have been approved individually.
+
+The `v3_20260712` canonical release is an approved interim consolidation of all completed items through 2026-07-12. It does not close this final-validation section because Items 6–8, 12, and 16 remain pending.
 
 - [ ] Generate one versioned consolidated candidate from the approved scripts and mappings.
 - [ ] Confirm 7,446 records and the approved 23 canonical columns plus only the approved new derived fields.
 - [ ] Confirm district order, row order, `person_id`, and `source_position_id` are unchanged.
 - [ ] Run all hard QA checks and produce all soft-review inventories.
 - [ ] Confirm every approved nonblank normalized Russian categorical value uses Sentence case, except documented proper-name, abbreviation, identifier, or source-preservation exceptions.
+- [ ] Apply the 10 approved Item 3 `legal_status` corrections before regenerating `legal_status_norm`; verify all 10 corresponding normalized values change consistently.
+- [ ] Run a cross-field QA check for gender consistency among `sex`, `legal_status`, `legal_status_norm`, and `family_status`, with every exception explicitly reviewed.
 - [ ] Produce a complete record-level and schema-level diff against the current canonical dataset.
 - [ ] Calculate SHA-256 hashes for the candidate and supporting correction inputs.
 - [ ] Submit the candidate package for project-owner review.
@@ -270,7 +289,12 @@ This section begins only after Items 1-17 have been approved individually.
 | 2026-07-11 | Item 14: contradictory `literacy` | Approved and completed | Changed the one value `грамотен неграмотен` to blank per owner decision. Canonical data unchanged. | `data/staging/items_10_14_20260711/`; `outputs/qa/items_10_14_20260711/` |
 | 2026-07-11 | Item 13: religion | Approved and completed | Replaced 6 `Римско-католическое` values with `Католическое`, 2 `Мусульманское` values with `Магометанское`, and 1 `Православное (выкрест)` value with `Православное`, moving `выкрест` to `comments`. Canonical data unchanged. | `data/staging/item13_religion_20260711/`; `outputs/qa/item13_religion_20260711/` |
 | 2026-07-12 | Item 17: `legal_status` current-value profile | Ready for owner review | Profiled all 7,446 canonical v2 records: 99 distinct nonblank values, 24 blank records, and 195 representative records. No normalization mappings proposed and no dataset changes made. | `data/review/legal_status_item17_20260712/` |
-| 2026-07-12 | Item 17: `legal_status_norm` mapping proposal | Ready for owner review | Proposed mappings for all 100 distinct values including blank. Applied the requested `Свободного состояния` category, proposed moving `Богаделец` to `illness` for 5 records, and removed district or settlement qualifiers from normalized values. Eleven distinct values covering 12 records are flagged for focused review. No dataset changes made. | `data/review/legal_status_item17_20260712/legal_status_norm_mapping_proposal.csv` |
+| 2026-07-12 | Item 17: `legal_status_norm` mapping proposal | Ready for owner review | Proposed mappings for all 100 distinct values including blank. Applied the requested `Свободного состояния` category, proposed moving the subsequently corrected category `Богадельщик` to `illness` for 5 records, and removed district or settlement qualifiers from normalized values. Eleven distinct values covering 12 records are flagged for focused review. No dataset changes made. | `data/review/legal_status_item17_20260712/legal_status_norm_mapping_proposal.csv` |
 | 2026-07-12 | Item 17: gender-preserving mapping revision | Ready for owner review | Revised the complete proposal to retain Russian gender distinctions for penal, peasant, settler, and child/parent forms. Normalized `Поселенка` to `Поселка`, including the inflected `Сын поселенки` to `Сын поселки`. Six distinct values covering 6 records remain flagged for focused review. No dataset changes made. | `data/review/legal_status_item17_20260712/legal_status_norm_mapping_proposal.csv` |
-| 2026-07-12 | Item 17: owner decisions applied | Approved and staged | Reconciled 12 owner corrections and 88 confirmed mappings. Staged all 7,446 records with `legal_status_norm`; preserved `legal_status`; added `Богаделец` to 5 previously blank `illness` values; zero unmapped values or non-target changes. Canonical data unchanged. | `data/review/legal_status_item17_20260712/owner_response/`; `data/staging/legal_status_norm_item17_20260712/`; `outputs/qa/legal_status_norm_item17_20260712/` |
+| 2026-07-12 | Item 17: owner decisions applied | Approved and staged | Reconciled 12 owner corrections and 88 confirmed mappings. Staged all 7,446 records with `legal_status_norm`; preserved `legal_status`; added the corrected category `Богадельщик` to 5 previously blank `illness` values; zero unmapped values or non-target changes. Canonical data unchanged. | `data/review/legal_status_item17_20260712/owner_response/`; `data/staging/legal_status_norm_item17_20260712/`; `outputs/qa/legal_status_norm_item17_20260712/` |
 | 2026-07-12 | Item 9: Sentence case | Approved and staged | Approved Sentence case for normalized categorical fields, including `literacy`. Staged `Грамотен`, `Неграмотен`, `Образован`, or blank for all 7,446 records; 5,419 literacy values changed and no other fields changed. Canonical data unchanged. | `docs/capitalization_specification.md`; `data/review/capitalization_item9_20260712/`; `data/staging/capitalization_item9_20260712/`; `outputs/qa/capitalization_item9_20260712/` |
+| 2026-07-12 | Item 3: derived `sex` proposal | Ready for owner review | Proposed `Мужской` for 4,919 records and `Женский` for 2,515 records using explicit grammatical evidence and reviewed patronymic morphology. Twelve records remain blank: 10 status conflicts and 2 with insufficient explicit evidence. Canonical data unchanged. | `data/review/sex_item3_20260712/`; `data/staging/sex_item3_20260712/`; `outputs/qa/sex_item3_20260712/` |
+| 2026-07-12 | Item 3: owner decisions applied | Approved and staged | Applied all 12 owner-approved sex decisions. Final counts are 4,921 `Мужской` and 2,525 `Женский`, with no blanks. Corrected 10 conflicting `legal_status` values; all corresponding `family_status` values already agreed and remain unchanged. Canonical data unchanged. | `data/review/sex_item3_20260712/sex_owner_review_cases.csv`; `data/staging/sex_item3_20260712/`; `outputs/qa/sex_item3_20260712/` |
+| 2026-07-12 | Item 15: `illness_norm` proposal | Ready for owner review | Profiled 53 nonblank records and 30 distinct nonblank values after incorporating five approved `Богадельщик` transfers. Proposed Sentence case, gender-neutral, and compound mappings; 10 values covering 12 records require focused review. No normalized field staged and canonical data unchanged. | `data/review/illness_item15_20260712/` |
+| 2026-07-12 | Item 15: owner decisions applied | Approved and staged | Approved all 31 mappings including blank. Preserved six owner-selected historical expressions in `illness_norm`, normalized `Слаб` to `Слабосилен`, and confirmed all other proposals. Staged 53 nonblank normalized values with original `illness` unchanged and zero non-target changes. Canonical data unchanged. | `data/review/illness_item15_20260712/illness_norm_approved_mapping.csv`; `data/staging/illness_item15_20260712/`; `outputs/qa/illness_item15_20260712/` |
+| 2026-07-12 | Canonical normalization release v3 | Approved and completed | Created and designated the 31-column `v3_20260712` combined and district datasets as current canonical files. Integrated all approved items in dependency order; retained 7,446 records, exact district concatenation, unique identifiers, Sentence case categories, and zero gender conflicts. Prior canonical releases remain unchanged. | `data/processed/*_v3_20260712.csv`; `scripts/build_canonical_v3_20260712.py`; `outputs/qa/canonical_v3_20260712/` |

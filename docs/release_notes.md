@@ -839,3 +839,44 @@ This versioned canonical release incorporates the approved Item 1 and Item 2 nam
 - Combined file equals the exact ordered concatenation of the three versioned district files.
 
 QA evidence is stored in `outputs/qa/name_normalization_canonical_v2_20260711/`.
+
+---
+
+## v3.0 Approved normalization consolidation
+
+### Date
+
+2026-07-12
+
+### Scope
+
+This versioned canonical release consolidates all normalization items approved through 2026-07-12 while preserving v2 and the unversioned canonical releases as historical artifacts. Pending tracker items are not represented as completed fields.
+
+### Schema
+
+- Expanded the common schema from 24 to 31 columns.
+- Replaced `household_number` with `household_id`, `household_type`, and `household_details`.
+- Added `legal_status_norm`, `sex`, `sex_evidence`, `family_status_norm`, and `illness_norm`.
+- Preserved detailed `legal_status`, `family_status`, and `illness` alongside their approved analytical fields.
+
+### Integrated approved changes
+
+- Applied the owner-reviewed household structure and 299 resulting source-position updates.
+- Applied 41 approved `notes_raw` changes.
+- Applied 16 detailed `legal_status` corrections and regenerated `legal_status_norm` afterward.
+- Added approved `sex` values for all records: 4,921 `Мужской` and 2,525 `Женский`.
+- Added approved `family_status_norm` and `illness_norm` mappings.
+- Applied 9 religion changes, 5,419 Sentence case literacy changes, 5 `Богадельщик` transfers to `illness`, and 8 comment changes.
+
+### Validation
+
+- Records: 7,446; fields: 31.
+- District counts: 2,884 Alexandrovsky; 3,242 Tymovsky; 1,320 Korsakovsky.
+- Unique, nonblank `person_id` and `source_position_id`: passed.
+- Person order and ordered district concatenation: passed.
+- Owner-verified blank `household_type` count: 24.
+- Sentence case normalized-category check: passed.
+- Cross-field gender consistency check: passed with zero unresolved conflicts.
+- Combined file equals the exact ordered concatenation of the three v3 district files.
+
+QA evidence and SHA-256 hashes are stored in `outputs/qa/canonical_v3_20260712/`.

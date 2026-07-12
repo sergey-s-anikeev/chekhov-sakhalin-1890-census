@@ -1,0 +1,10 @@
+﻿sex_proposed,sex_evidence,review_status,record_count
+Мужской,legal_status + family_status,proposed,4679
+Женский,legal_status + family_status,proposed,2338
+Женский,family_status,proposed,166
+Мужской,legal_status,proposed,126
+Мужской,family_status,proposed,113
+Женский,legal_status,proposed,11
+Женский,Owner-approved name and grammatical evidence,owner_approved,10
+Мужской,Owner-approved name and grammatical evidence,owner_approved,2
+Мужской,approved legal_status_norm + family_status,proposed,1

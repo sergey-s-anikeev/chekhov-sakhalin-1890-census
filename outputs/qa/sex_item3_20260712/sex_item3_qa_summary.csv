@@ -1,0 +1,11 @@
+﻿check,value,pass
+input_records,7446,TRUE
+staged_records,7446,TRUE
+male_proposed,4921,TRUE
+female_proposed,2525,TRUE
+blank_sex_values,0,TRUE
+owner_approved_records,12,TRUE
+legal_status_changes,10,TRUE
+family_status_changes,0,TRUE
+invalid_sex_values,0,TRUE
+non_target_field_changes,0,TRUE

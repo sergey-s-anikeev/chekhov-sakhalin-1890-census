@@ -51,7 +51,7 @@ def propose(value: str) -> tuple[str, str, str, str]:
     elif "временно уволенный" in low:
         removed = "временно уволенный"
 
-    illness = "Богаделец" if "богадел" in low else ""
+    illness = "Богадельщик" if "богадел" in low else ""
 
     # Free-status wording is normalized exactly as requested, regardless of
     # gender, kinship wording, occupation, or removed district qualifier.

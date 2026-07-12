@@ -1,0 +1,9 @@
+﻿check,value,pass
+input_records,7446,TRUE
+staged_records,7446,TRUE
+approved_distinct_values_including_blank,31,TRUE
+nonblank_illness_norm_records,53,TRUE
+unmapped_illness_values,0,TRUE
+illness_preserved,0,TRUE
+lowercase_normalized_categories,0,TRUE
+non_target_field_changes,0,TRUE

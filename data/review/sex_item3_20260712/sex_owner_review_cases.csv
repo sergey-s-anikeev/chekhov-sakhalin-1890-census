@@ -1,0 +1,13 @@
+﻿person_id,source_position_id,name_raw,legal_status,family_status,sex_proposed,sex_evidence,review_status,legal_status_proposed,family_status_proposed,owner_decision,owner_sex,reviewer_notes
+P000520,1-02-076-0425,Ирина Тимофеева Булдакова,Ссыльнокаторжный,Сожительница жильца,Женский,Owner-approved name and grammatical evidence,owner_approved,Ссыльнокаторжная,Сожительница жильца,approve,Женский,
+P000894,1-02-183-0799,Павлина Андреева,Ссыльнокаторжный,Сожительница,Женский,Owner-approved name and grammatical evidence,owner_approved,Ссыльнокаторжная,Сожительница,approve,Женский,
+P000955,1-02-196-0860,Степанида Алексеева Корюкина,Сын поселенца,Дочь,Женский,Owner-approved name and grammatical evidence,owner_approved,Дочь поселенца,Дочь,approve,Женский,
+P001405,1-02-309-1310,Марфа Прокофьева Ячменева,Крестьянин из ссыльных,Хозяйка,Женский,Owner-approved name and grammatical evidence,owner_approved,Крестьянка из ссыльных,Хозяйка,approve,Женский,
+P002762,1-18-Телеграф-0152,Иннокентий Игнатьев Павловский,Свободного состояния,,Мужской,Owner-approved name and grammatical evidence,owner_approved,Свободного состояния,,approve,Мужской,
+P003653,2-21-250-0500,Федора Матвеева Козлова,Сын ссыльнокаторжного,Дочь,Женский,Owner-approved name and grammatical evidence,owner_approved,Дочь ссыльнокаторжного,Дочь,approve,Женский,
+P004323,2-24-067-0287,Елена Константинова Ощаповская,Свободного состояния,Прислуга,Женский,Owner-approved name and grammatical evidence,owner_approved,Свободного состояния,Прислуга,approve,Женский,
+P005266,2-24-345-1230,Анна Корнеева Жайворонок,Сын ссыльнокаторжного,Дочь совладельца,Женский,Owner-approved name and grammatical evidence,owner_approved,Дочь ссыльнокаторжного,Дочь совладельца,approve,Женский,
+P006213,3-29-021-0049,Осип Алексеев Панюшкин,Дочь поселенца,Сын,Мужской,Owner-approved name and grammatical evidence,owner_approved,Сын поселенца,Сын,approve,Мужской,
+P006639,3-39-016-0028,Матрена Семенова Драчева,Поселенец,Сожительница,Женский,Owner-approved name and grammatical evidence,owner_approved,Поселка,Сожительница,approve,Женский,
+P006746,3-41-029-0057,Аграфена Васильева Григорьева,Крестьянин из ссыльных,Жена,Женский,Owner-approved name and grammatical evidence,owner_approved,Крестьянка из ссыльных,Жена,approve,Женский,
+P007406,3-49-003-0009,Юлия Станиславова Лобанова,Ссыльнокаторжный,Сожительница,Женский,Owner-approved name and grammatical evidence,owner_approved,Ссыльнокаторжная,Сожительница,approve,Женский,

@@ -1,0 +1,10 @@
+﻿change,field
+removed,household_number
+added,household_id
+added,household_type
+added,household_details
+added,legal_status_norm
+added,sex
+added,sex_evidence
+added,family_status_norm
+added,illness_norm

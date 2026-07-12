@@ -29,3 +29,11 @@ The release includes the merged clean dataset, district-level clean files, final
 The owner-approved `v2_20260711` release retains all 7,446 records and stable identifiers, adds `name_alias` as the twenty-fourth schema field, and incorporates the approved Item 1 and Item 2 changes. Sixty-six `name_raw` records differ from the prior release, 40 records contain `name_alias`, 2 `family_status` records were corrected, and 7 `comments` records were updated.
 
 The combined v2 file is the exact ordered concatenation of the three matching v2 district files. It contains no blank `name_raw`, duplicate `person_id`, or duplicate `source_position_id` values. The release-specific QA report and hashes are stored in `outputs/qa/name_normalization_canonical_v2_20260711/`.
+
+## Canonical normalization release v3
+
+The owner-approved `v3_20260712` release retains all 7,446 records in the established district and person order and expands the schema from 24 to 31 columns. It consolidates the approved household structure, archival-code recovery, religion, military-status, literacy, capitalization, derived sex, family-status normalization, legal-status normalization, and illness normalization decisions.
+
+The release removes `household_number` from the current schema and adds `household_id`, `household_type`, `household_details`, `legal_status_norm`, `sex`, `sex_evidence`, `family_status_norm`, and `illness_norm`. It applies 16 detailed `legal_status` corrections, 9 religion changes, 5,419 literacy changes, 5 `illness` transfers to `Богадельщик`, 8 comment changes, 41 archival-code changes, and 299 source-position changes. The combined file is the exact ordered concatenation of its three matching district files.
+
+Release QA confirms 31 fields, unique and nonblank identifiers, expected district counts, 24 owner-verified blank household types, Sentence case for normalized categories, and no cross-field gender conflicts. QA evidence and SHA-256 hashes are stored in `outputs/qa/canonical_v3_20260712/`. Items still pending in the normalization tracker are not included as new approved derived fields in this release.

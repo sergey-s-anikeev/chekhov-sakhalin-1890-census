@@ -1,0 +1,46 @@
+{
+  "release": "v3_20260712",
+  "base": "data\\processed\\clean_sakhalin_1890_ru_v2_20260711.csv",
+  "record_count": 7446,
+  "field_count": 31,
+  "district_counts": {
+    "Александровский": 2884,
+    "Тымовский": 3242,
+    "Корсаковский": 1320
+  },
+  "changed_records_vs_v2": 7446,
+  "field_change_counts": {
+    "comments": 8,
+    "family_status_norm": 7324,
+    "household_details": 211,
+    "household_id": 7200,
+    "household_number": 7422,
+    "household_type": 7422,
+    "illness": 5,
+    "illness_norm": 53,
+    "legal_status": 16,
+    "legal_status_norm": 7422,
+    "literacy": 5419,
+    "notes_raw": 41,
+    "religion": 9,
+    "sex": 7446,
+    "sex_evidence": 7446,
+    "source_position_id": 299
+  },
+  "checks": {
+    "record_count_7446": true,
+    "field_count_31": true,
+    "person_ids_unique": true,
+    "person_id_order_unchanged": true,
+    "source_position_ids_nonblank": true,
+    "source_position_ids_unique": true,
+    "district_counts_match": true,
+    "ordered_district_concatenation": true,
+    "written_district_slices_match": true,
+    "no_blank_sex": true,
+    "owner_verified_blank_household_type_count_24": true,
+    "no_invalid_normalized_case": true,
+    "no_gender_conflicts": true,
+    "combined_matches_written_file": true
+  }
+}

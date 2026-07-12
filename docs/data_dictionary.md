@@ -8,7 +8,7 @@ Chekhov Sakhalin 1890 Census Data Analysis
 
 Clean Russian master dataset for the reviewed 1890 Sakhalin census extraction.
 
-Current canonical name-normalization release: `v2_20260711`. It contains 24 columns and incorporates the owner-approved Item 1 and Item 2 name reviews.
+Current canonical release: `v3_20260712`. It contains 31 columns and consolidates all normalization items approved through 2026-07-12. Pending tracker items remain unchanged and are not represented as approved derived fields.
 
 One row represents one named person record.
 
@@ -34,11 +34,17 @@ Individual person record.
 | `settlement` | string | Normalized settlement/post name. | `Пост Дуэ` |
 | `person_order_in_settlement` | integer | Sequential source person number within settlement/post. | `274` |
 | `page_number` | integer | Printed book page where the record begins. | `203` |
-| `household_number` | string | Source household/dwelling number or textual household marker from field `2.` | `Казарма Ж 1` |
-| `legal_status` | string | Legal/social status from field `3.`, normalized after district review. | `Ссыльнокаторжный` |
+| `household_id` | string | Owner-reviewed normalized household identifier; blank where the source has no defensible identifier. | `12` |
+| `household_type` | string | Owner-reviewed household type. | `Частное` |
+| `household_details` | string | Preserved textual household or dwelling detail from source field `2.`. | `Казарма Ж 1` |
+| `legal_status` | string | Detailed legal/social status from field `3.`, including approved record-level corrections. | `Ссыльнокаторжный` |
+| `legal_status_norm` | string | Approved analytical legal-status category with Russian gender distinctions retained. | `Ссыльнокаторжный` |
 | `name_raw` | string | Approved person name from field `4.` after cleanup of markup, role leakage, and owner-reviewed Item 2 hyphen normalization. Source evidence and review decisions remain auditable in the retained review package. | `Андрей Васильев Васильев` |
 | `name_alias` | string | Approved alternative, former, husband, baptismal, or otherwise reviewed name component. Blank when no approved alias exists. | `Герасимова` |
+| `sex` | string | Approved derived sex category based on explicit grammatical, reviewed name, and owner evidence. | `Мужской` |
+| `sex_evidence` | string | Provenance path used to derive or approve `sex`. | `legal_status + family_status` |
 | `family_status` | string | Household/family role parsed from field `4.` | `Хозяин` |
+| `family_status_norm` | string | Approved compact analytical household/family role. | `Хозяин` |
 | `age` | integer | Age in full years where possible; infants may be coded as `0` with exact age retained in `comments`. | `35` |
 | `religion` | string | Confession/religion from field `6.` | `Православное` |
 | `origin_place` | string | Place of origin from field `7.`, normalized and reviewed at district level. | `Смоленская губерния` |
@@ -48,6 +54,7 @@ Individual person record.
 | `marriage_status` | string | Marriage status from field `11.`, with explanatory details moved to `comments` where reviewed. | `женат на родине` |
 | `allowance_status` | string | Allowance status from field `12.`, normalized from `Да/Нет` to `TRUE/FALSE`. | `TRUE` |
 | `illness` | string | Illness or condition from field `13.` | `Хронический катар желудка и кишок` |
+| `illness_norm` | string | Approved Sentence case analytical condition; compound categories use `; `. | `Слепота` |
 | `comments` | string | Source field `14.` and other reviewed explanatory notes. | `6 месяцев` |
 | `notes_raw` | string | Archive reference, normalized but preserved. | `РГБ № 2010` |
 
@@ -96,7 +103,7 @@ Example:
 3-48-002-0005
 ```
 
-If `household_number` is nonnumeric, it is preserved in `source_position_id` in a safe text form rather than guessed.
+Owner-reviewed household identifiers and safe textual segments are represented in `source_position_id`; textual source detail is preserved separately in `household_details` rather than guessed.
 
 `source_position_id` is stable and source-derived.
 
