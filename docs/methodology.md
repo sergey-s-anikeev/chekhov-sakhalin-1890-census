@@ -255,9 +255,18 @@ Occupation-like values found in `origin_place` are not silently corrected. They 
 
 ### Age
 
-`age` is stored as full years where possible.
+`age` is stored as completed years. `age_months` stores total completed months for infant and young-child analysis in the latest staged schema.
 
-For infants and mixed year/month expressions, the integer year value is retained in `age` and the exact source phrase is preserved in `comments`.
+When the source records a precise expression, that evidence controls both fields: for example, `1 год 7 месяцев` becomes `age = 1`, `age_months = 19`, and `5 месяцев` becomes `age = 0`, `age_months = 5`. Explicit ages below one month map to `0` completed months, except four weeks maps to one completed month under the approved convention.
+
+For statistical completeness, when the source gives only the completed whole-year age, blank month values are derived as follows:
+
+```text
+age = 1  → age_months = 12
+age = 2  → age_months = 24
+```
+
+Existing precise month values always take precedence over these derived whole-year conversions. The Item 23 review inventory records which values were derived. These rules are incorporated into canonical release `v4_20260717`.
 
 ### Allowance Status
 

@@ -1,0 +1,33 @@
+{
+  "source": "data\\staging\\origin_place_item12_20260715\\clean_sakhalin_1890_ru_v3_20260712_items7_8_item12_staged.csv",
+  "staged_output": "data\\staging\\marriage_status_item16_20260716\\clean_sakhalin_1890_ru_v3_20260712_items7_8_item12_item16_partial_staged.csv",
+  "row_count": 7446,
+  "source_column_count": 33,
+  "staged_column_count": 36,
+  "unique_person_ids": 7446,
+  "living_alone_status_odnok_records": 442,
+  "marriage_status_norm_counts": {
+    "": 2115,
+    "Вдов": 634,
+    "Девица": 1,
+    "Женат в другом регионе": 13,
+    "Женат на Сахалине": 383,
+    "Женат на родине": 2679,
+    "Холост": 1621
+  },
+  "spouse_location_norm_counts": {
+    "": 4363,
+    "Амур": 1,
+    "Владивосток": 2,
+    "Кара": 6,
+    "На Сахалине": 389,
+    "На родине": 2681,
+    "Николаевск": 2,
+    "Сибирь": 2
+  },
+  "comment_changes": 12,
+  "unresolved_records": 10,
+  "dual_location_records_left_unresolved": 2,
+  "non_target_changes": 0,
+  "canonical_data_modified": false
+}

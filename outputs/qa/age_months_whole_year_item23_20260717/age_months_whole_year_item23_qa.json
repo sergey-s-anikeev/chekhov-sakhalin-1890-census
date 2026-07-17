@@ -1,0 +1,20 @@
+{
+  "input": "data\\staging\\raw_age_recognition_item22_20260717\\clean_sakhalin_1890_ru_v3_20260712_items7_8_item12_item16_item18_comments_items21_22_staged.csv",
+  "output": "data\\staging\\age_months_whole_year_item23_20260717\\clean_sakhalin_1890_ru_v3_20260712_items7_8_item12_item16_item18_comments_items21_22_23_staged.csv",
+  "rule": "If age is exactly 1 or 2 completed years and age_months is blank, derive 12 or 24 respectively; preserve explicit precise values.",
+  "row_count": 7446,
+  "column_count": 36,
+  "identifier_order_unchanged": true,
+  "duplicate_person_ids": 0,
+  "changed_cell_count": 316,
+  "changed_record_count": 316,
+  "filled_by_age": {
+    "1": 105,
+    "2": 211
+  },
+  "preexisting_precise_value_count": 118,
+  "preexisting_precise_values_unchanged": true,
+  "remaining_blank_age_months_for_age_1_or_2": 0,
+  "input_sha256": "0c6454a3c0d93d09826715fa81a38aaeba75790a87d5bc1220cd83f7bdb0b646",
+  "output_sha256": "6a410f42ac6edb4e34b291fc8307609f4414bec6c42049090fe5bbaecb233341"
+}

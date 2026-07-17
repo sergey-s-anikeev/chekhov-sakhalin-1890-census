@@ -1,0 +1,38 @@
+{
+  "item": 7,
+  "mode": "read-only additional verification; no dataset changes",
+  "source": "data/staging/infant_age_item8_20260713_v2/clean_sakhalin_1890_ru_v3_20260712_items7_8_staged_v2.csv",
+  "source_sha256": "4a2b49403d3d7d25a520679ef46cfa3aab6dcc06956b88be326874806a2919cb",
+  "source_record_count": 7446,
+  "age_over_18_record_count": 5718,
+  "review_record_count": 49,
+  "reason_counts": {
+    "CHILD_RELATIONSHIP_IN_FAMILY_STATUS_NORM": 47,
+    "CHILD_RELATIONSHIP_IN_LEGAL_STATUS_NORM": 7,
+    "ORIGIN_PLACE_NA_SAKHALINE_OVER_18": 4
+  },
+  "age_counts": {
+    "19": 14,
+    "20": 6,
+    "21": 7,
+    "22": 7,
+    "23": 3,
+    "24": 1,
+    "25": 2,
+    "26": 2,
+    "27": 1,
+    "28": 1,
+    "35": 1,
+    "37": 2,
+    "54": 1,
+    "60": 1
+  },
+  "age_30_or_more_count": 5,
+  "origin_place_na_sakhaline_over18_count": 4,
+  "origin_place_only_added_count": 1,
+  "origin_place_and_child_status_overlap_count": 3,
+  "page_number_present_for_all_review_rows": true,
+  "unique_person_ids_in_review": true,
+  "canonical_or_staged_dataset_modified": false,
+  "inventory_sha256": "d0a373ddfa0e8c740fc036308a419d0b1eab89eae7e54b396dbd227788928261"
+}

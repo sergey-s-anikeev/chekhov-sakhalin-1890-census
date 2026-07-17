@@ -1,0 +1,8 @@
+﻿occupation,record_count,occupation_group,entry_type,occupation_norm_proposed,review_required,review_reason,representative_person_ids,representative_page_numbers,owner_decision,owner_note
+,5972,No occupation recorded,blank,,No,Blank source value; do not infer an occupation,P000002; P000003; P000004; P000005; P000008,27; 28; 29; 30; 31,,
+При муже,39,Dependent / supported by family,dependent_status,При муже,Yes,Support/dependency statement rather than a trade,P000018; P000023; P000025; P000031; P000034,28; 29; 30; 31; 32,,
+Никакого,29,No occupation recorded,explicit_no_occupation,Нет занятия,Yes,Explicitly states no occupation; approve shared analytical category,P000097; P000568; P000644; P000647; P000652,33; 61; 66; 67; 68,,
+При матери,2,Dependent / supported by family,dependent_status,При матери,Yes,Support/dependency statement rather than a trade,P000014; P000015,28,,
+При отце,2,Dependent / supported by family,dependent_status,При отце,Yes,Support/dependency statement rather than a trade,P000049; P000060,30,,
+Ничего,1,No occupation recorded,explicit_no_occupation,Нет занятия,Yes,Explicitly states no occupation; approve shared analytical category,P001001,88,,
+Ничем,1,No occupation recorded,explicit_no_occupation,Нет занятия,Yes,Explicitly states no occupation; approve shared analytical category,P001014,89,,

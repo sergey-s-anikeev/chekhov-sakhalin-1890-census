@@ -1,0 +1,19 @@
+{
+  "source": "data\\staging\\marriage_status_item16_20260716_v2\\clean_sakhalin_1890_ru_v3_20260712_items7_8_item12_item16_staged.csv",
+  "staged_output": "data\\staging\\occupation_item18_20260717\\clean_sakhalin_1890_ru_v3_20260712_items7_8_item12_item16_item18_staged.csv",
+  "row_count": 7446,
+  "source_column_count": 35,
+  "staged_column_count": 36,
+  "unique_person_ids": 7446,
+  "approved_distinct_values": 171,
+  "explicit_owner_decision_values": 21,
+  "confirmed_proposal_values": 150,
+  "unmapped_records": 0,
+  "occupation_source_preserved": true,
+  "occupation_norm_blank_records": 5972,
+  "occupation_norm_nonblank_records": 1474,
+  "records_where_norm_differs_from_source": 88,
+  "comment_transfers": 12,
+  "non_target_changes": 0,
+  "canonical_data_modified": false
+}

@@ -1,0 +1,22 @@
+{
+  "input": "data\\staging\\arrival_year_item21_20260717\\clean_sakhalin_1890_ru_v3_20260712_items7_8_item12_item16_item18_comments_item21_staged.csv",
+  "output": "data\\staging\\raw_age_recognition_item22_20260717\\clean_sakhalin_1890_ru_v3_20260712_items7_8_item12_item16_item18_comments_items21_22_staged.csv",
+  "row_count": 7446,
+  "column_count": 36,
+  "identifier_order_unchanged": true,
+  "duplicate_person_ids": 0,
+  "approved_record_count": 15,
+  "excluded_name_mismatch_ids": [
+    "P004306",
+    "P005959",
+    "P006718"
+  ],
+  "changed_cell_count": 17,
+  "changed_record_count": 15,
+  "changed_fields": {
+    "age": 2,
+    "age_months": 15
+  },
+  "input_sha256": "86545a1d2d986f20ae9f6d422fd103287f06a7dd50be034705f8231b80c60bc6",
+  "output_sha256": "0c6454a3c0d93d09826715fa81a38aaeba75790a87d5bc1220cd83f7bdb0b646"
+}

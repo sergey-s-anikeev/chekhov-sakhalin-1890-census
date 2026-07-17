@@ -1,0 +1,19 @@
+person_id,decision,reason
+P000019,approve_semantic_expected_values,Validated against raw age expression
+P000620,approve_semantic_expected_values,Validated against raw age expression
+P000807,approve_semantic_expected_values,Validated against raw age expression
+P001100,approve_semantic_expected_values,Validated against raw age expression
+P001152,approve_semantic_expected_values,Validated against raw age expression
+P001153,approve_semantic_expected_values,Validated against raw age expression
+P001207,approve_semantic_expected_values,Validated against raw age expression
+P002292,approve_semantic_expected_values,Validated against raw age expression
+P004172,approve_semantic_expected_values,Validated against raw age expression
+P004306,exclude_name_mismatch,Structured name conflicts with source_block_raw name
+P004910,approve_semantic_expected_values,Validated against raw age expression
+P005230,approve_semantic_expected_values,Validated against raw age expression
+P005285,approve_semantic_expected_values,Validated against raw age expression
+P005291,approve_semantic_expected_values,Validated against raw age expression
+P005959,exclude_name_mismatch,Structured name conflicts with source_block_raw name
+P006656,approve_semantic_expected_values,Validated against raw age expression
+P006718,exclude_name_mismatch,Structured name conflicts with source_block_raw name
+P007298,approve_semantic_expected_values,Validated against raw age expression

@@ -1,0 +1,20 @@
+{
+  "source": "data\\staging\\marriage_status_item16_20260716_v2\\clean_sakhalin_1890_ru_v3_20260712_items7_8_item12_item16_staged.csv",
+  "row_count": 7446,
+  "distinct_values_including_blank": 171,
+  "blank_records": 5972,
+  "explicit_no_occupation_records": 31,
+  "dependent_status_records": 43,
+  "compound_distinct_values": 11,
+  "compound_records": 11,
+  "entry_type_record_counts": {
+    "blank": 5972,
+    "case_spelling_or_synonym": 31,
+    "compound": 11,
+    "dependent_status": 43,
+    "descriptive_or_qualified": 20,
+    "explicit_no_occupation": 31,
+    "single_occupation": 1338
+  },
+  "status": "review proposal only; no staged or canonical data modified"
+}

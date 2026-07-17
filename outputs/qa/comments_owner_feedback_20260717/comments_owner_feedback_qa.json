@@ -1,0 +1,28 @@
+{
+  "base_file": "data/staging/comments_numeric_cleanup_20260717/clean_sakhalin_1890_ru_v3_20260712_items7_8_item12_item16_item18_comments_staged.csv",
+  "owner_feedback_file": "data/review/comments_numeric_cleanup_20260717/owner_review_comments.xlsx",
+  "output_file": "data/staging/comments_owner_feedback_20260717/clean_sakhalin_1890_ru_v3_20260712_items7_8_item12_item16_item18_comments_reviewed_staged.csv",
+  "review_rows": 389,
+  "reviewed_comments_nonblank": 225,
+  "reviewed_comments_blank": 164,
+  "reviewed_name_alias_nonblank": 5,
+  "rows_before": 7446,
+  "rows_after": 7446,
+  "columns_before": 36,
+  "columns_after": 36,
+  "comments_changed": 274,
+  "name_alias_changed": 5,
+  "address_values_normalized": 19,
+  "approved_address_mappings_applied": 19,
+  "changed_fields": [
+    "comments",
+    "name_alias"
+  ],
+  "person_id_order_preserved": true,
+  "source_position_id_order_preserved": true,
+  "owner_source_matches": true,
+  "remaining_reviewed_digit_only_comments": 0,
+  "base_sha256": "bf40b49397000e127bb79c5ac971db98993c13b1227d0ec302da902a11b852ac",
+  "output_sha256": "1a127dcf3354c416be742215099b48d7be5c581217e9bd02940944e629291117",
+  "owner_feedback_sha256": "9e012592094aa17da2e653fffdc4dba8aa75cded5b4d6267dcf28ed72e38f674"
+}

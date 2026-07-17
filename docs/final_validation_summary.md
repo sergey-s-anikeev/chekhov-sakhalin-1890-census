@@ -37,3 +37,13 @@ The owner-approved `v3_20260712` release retains all 7,446 records in the establ
 The release removes `household_number` from the current schema and adds `household_id`, `household_type`, `household_details`, `legal_status_norm`, `sex`, `sex_evidence`, `family_status_norm`, and `illness_norm`. It applies 16 detailed `legal_status` corrections, 9 religion changes, 5,419 literacy changes, 5 `illness` transfers to `Богадельщик`, 8 comment changes, 41 archival-code changes, and 299 source-position changes. The combined file is the exact ordered concatenation of its three matching district files.
 
 Release QA confirms 31 fields, unique and nonblank identifiers, expected district counts, 24 owner-verified blank household types, Sentence case for normalized categories, and no cross-field gender conflicts. QA evidence and SHA-256 hashes are stored in `outputs/qa/canonical_v3_20260712/`. Items still pending in the normalization tracker are not included as new approved derived fields in this release.
+
+## Canonical quality-review release v4
+
+The owner-authorized `v4_20260717` release retains all 7,446 records and established identifier order while expanding the schema from 31 to 36 columns. It consolidates the approved post-v3 work: age corrections and `age_months`, `origin_place_norm`, `occupation_norm`, `marriage_status_norm`, `living_alone_status`, reviewed comments, and later `name_alias` additions.
+
+The combined v4 dataset is the exact ordered concatenation of 2,884 Alexandrovsky, 3,242 Tymovsky, and 1,320 Korsakovsky records. Compared with v3, 7,016 records and 16,865 cells change. The five added schema fields are `age_months`, `origin_place_norm`, `occupation_norm`, `marriage_status_norm`, and `living_alone_status`.
+
+Release QA confirms 36 fields; unique, formatted, and order-preserved identifiers; integer-or-blank numeric fields; valid age and arrival-year ranges; complete and internally consistent month values for ages 0–2; approved allowance values; Sentence case normalized categories; synchronization of all ten Item 3 legal-status corrections with `legal_status_norm`; and zero cross-field gender conflicts. The release also reconciles 274 approved comment changes and 18 unique late alias changes without branch conflicts.
+
+QA evidence, complete v3-to-v4 diffs, and SHA-256 hashes are stored in `outputs/qa/canonical_v4_20260717/`.

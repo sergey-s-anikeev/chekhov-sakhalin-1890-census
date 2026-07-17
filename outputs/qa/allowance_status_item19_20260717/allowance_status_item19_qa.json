@@ -1,0 +1,18 @@
+{
+  "source": "data\\staging\\occupation_item18_20260717\\clean_sakhalin_1890_ru_v3_20260712_items7_8_item12_item16_item18_staged.csv",
+  "row_count": 7446,
+  "distinct_allowance_values_including_blank": 3,
+  "allowance_status_counts": {
+    "TRUE": 2550,
+    "FALSE": 4328,
+    "blank": 568
+  },
+  "arrival_year_blank_records": 2620,
+  "arrival_year_numeric_records": 4826,
+  "arrival_year_nonnumeric_records": 0,
+  "allowance_true_arrival_before_1880": 96,
+  "allowance_true_blank_arrival_year": 760,
+  "flagged_min_arrival_year": 1867,
+  "flagged_max_arrival_year": 1879,
+  "status": "review only; no staged or canonical data modified"
+}

@@ -1,0 +1,16 @@
+{
+  "source": "data\\staging\\arrival_year_item21_20260717\\clean_sakhalin_1890_ru_v3_20260712_items7_8_item12_item16_item18_comments_item21_staged.csv",
+  "feedback_workbook": "data\\review\\alias_name_add_20260717\\Sakhalin_1890_name_alias_update.xlsx",
+  "staged_output": "data\\staging\\name_alias_add_20260717\\clean_sakhalin_1890_ru_v3_20260712_items7_8_item12_item16_item18_comments_item21_alias_staged.csv",
+  "row_count": 7446,
+  "column_count": 36,
+  "unique_person_ids": 7446,
+  "workbook_person_ids": 7446,
+  "name_raw_mismatches": 0,
+  "alias_additions": 14,
+  "existing_alias_overwrites": 0,
+  "populated_name_alias_before": 40,
+  "populated_name_alias_after": 54,
+  "non_target_changes": 0,
+  "canonical_data_modified": false
+}

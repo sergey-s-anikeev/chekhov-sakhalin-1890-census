@@ -1,0 +1,11 @@
+﻿person_id,page_number,marriage_status,marriage_status_norm_proposed,living_alone_status_proposed,spouse_location_norm_proposed,comments,unresolved_reason,owner_decision,owner_note
+P000296,45,женат на родине и на Сахалине,,,,Ташкент,Dual location: owner will decide separately,,
+P003192,240,женат на родине и на сахалине,,,,,Dual location: owner will decide separately,,
+P004196,295,женат на Сахалине. вдов,,,На Сахалине,175,Contradictory marital states,,
+P004300,301,женат на Сахалине. вдов,,,На Сахалине,281,Contradictory marital states,,
+P004691,322,женат на Сахалине. вдов,,,На Сахалине,697,Contradictory marital states,,
+P004737,325,женат на Сахалине. вдов,,,На Сахалине,748,Contradictory marital states,,
+P004768,326,женат на родине. холост,,,На родине,792,Contradictory marital states,,
+P004770,326,женат на родине. холост,,,На родине,794,Contradictory marital states,,
+P004858,331,женат на Сахалине. вдов,,,На Сахалине,885; По мужу Генисар,Contradictory marital states,,
+P005758,382,женат на Сахалине. холост,,,На Сахалине,185,Contradictory marital states,,

@@ -1,0 +1,56 @@
+{
+  "item": 7,
+  "mode": "read-only review; no canonical or staged dataset changes",
+  "source": "data/processed/clean_sakhalin_1890_ru_v3_20260712.csv",
+  "source_sha256": "469292562baaceab9543ee0e2bb529b623be7c1a3587087c1e57568f8e3d4ea4",
+  "source_record_count": 7446,
+  "age_0_18_record_count": 1606,
+  "blank_age_record_count": 147,
+  "flagged_age_0_18_record_count": 274,
+  "age_zero_owner_reviewed_count": 202,
+  "age_zero_confirmed_without_anomaly_count": 202,
+  "age_zero_with_separate_status_flag_still_under_review_count": 3,
+  "remaining_age_0_18_under_review_count": 75,
+  "flagged_priority_counts": {
+    "high": 244,
+    "medium": 30
+  },
+  "flag_reason_counts": {
+    "ADULT_HOUSEHOLD_ROLE_IN_FAMILY_STATUS_NORM": 38,
+    "AGE_ZERO_VERIFY_SOURCE": 202,
+    "BLANK_FAMILY_STATUS_NORM": 14,
+    "BLANK_LEGAL_STATUS_NORM": 16,
+    "NON_CHILD_FAMILY_STATUS_NORM_REVIEW": 1,
+    "SERVICE_OR_HOUSEHOLD_ROLE_REVIEW": 5,
+    "STANDALONE_ADULT_LEGAL_STATUS_NORM": 22
+  },
+  "page_number_present_in_all_review_rows": true,
+  "unique_person_ids_in_source": true,
+  "full_inventory_has_every_integer_age_0_18_record": true,
+  "review_outputs": {
+    "data/review/age_item7_20260713/age_0_18_counts.csv": {
+      "sha256": "03bdcc6e40a29b3c85b44bdb52c9cacc2c3431fcfce7ef8000bf61d84fe86644"
+    },
+    "data/review/age_item7_20260713/age_0_18_flagged_review.csv": {
+      "sha256": "ec16584b020622182a7ef4e78f9713c6ab08e571b9f3ca90b188abb104a627ed"
+    },
+    "data/review/age_item7_20260713/age_0_18_full_inventory.csv": {
+      "sha256": "8a8d13d8b938f576614a0ba7cda7fe7e02a6585e14e6d0c70c909c9e4d9fa24b"
+    },
+    "data/review/age_item7_20260713/age_0_18_remaining_under_review.csv": {
+      "sha256": "fd1496795ac65eeb75f3eb4ef2ec0a2cd3c9500c9d8e050fd05104be620597c6"
+    },
+    "data/review/age_item7_20260713/blank_age_review.csv": {
+      "sha256": "f575ec7818e0f3b5b559a4b43e8495bd3e923997e1c4dce35f229368dc102b10"
+    },
+    "data/review/age_item7_20260713/family_status_norm_counts_age_0_18.csv": {
+      "sha256": "a6cc9d351c793e0423cb1cdbaf0f6493bdf766151669068fa9fbcfa6b7099d24"
+    },
+    "data/review/age_item7_20260713/legal_status_norm_counts_age_0_18.csv": {
+      "sha256": "eb5791e1b64539744e1d959ef7854e55d987195afeb76881d00640ba65e96598"
+    },
+    "data/review/age_item7_20260713/owner_response/age_zero_review_decisions.csv": {
+      "sha256": "7c0a64416ba86b9c39bd39503072a832e54fe9382f8aed3569538e865451648d"
+    }
+  }
+}

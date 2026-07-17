@@ -1,0 +1,153 @@
+{
+  "decision_rows": 21,
+  "affected_records": 25,
+  "decisions": [
+    {
+      "occupation": "15 старший надзиратель",
+      "record_count": 1,
+      "proposed": "15 старший надзиратель",
+      "owner_decision": "Старший надзиратель",
+      "owner_note": ""
+    },
+    {
+      "occupation": "Был плотником",
+      "record_count": 1,
+      "proposed": "Был плотником",
+      "owner_decision": "Плотник",
+      "owner_note": "Move full text in `comments`"
+    },
+    {
+      "occupation": "в работниках",
+      "record_count": 1,
+      "proposed": "В работниках",
+      "owner_decision": "Работник",
+      "owner_note": ""
+    },
+    {
+      "occupation": "Варит квас булочник",
+      "record_count": 1,
+      "proposed": "Варит квас булочник",
+      "owner_decision": "Булочник; Варит квас",
+      "owner_note": ""
+    },
+    {
+      "occupation": "Возит хлеб на дорогу для команды",
+      "record_count": 1,
+      "proposed": "Возит хлеб на дорогу для команды",
+      "owner_decision": "Возит хлеб",
+      "owner_note": "Move full text in `comments`"
+    },
+    {
+      "occupation": "Горшечник",
+      "record_count": 1,
+      "proposed": "Гончар",
+      "owner_decision": "Горшечник",
+      "owner_note": "keep initial wording"
+    },
+    {
+      "occupation": "Каюр: 15 нартовых собак",
+      "record_count": 2,
+      "proposed": "Каюр: 15 нартовых собак",
+      "owner_decision": "Каюр",
+      "owner_note": "Move full text in `comments` Каюр; 15 нартовых собак"
+    },
+    {
+      "occupation": "Каюр: 2 нартовые собаки",
+      "record_count": 1,
+      "proposed": "Каюр: 2 нартовые собаки",
+      "owner_decision": "Каюр",
+      "owner_note": "Move full text in `comments` Каюр; 2 нартовые собаки"
+    },
+    {
+      "occupation": "Каюр: 3 нартовые собаки",
+      "record_count": 2,
+      "proposed": "Каюр: 3 нартовые собаки",
+      "owner_decision": "Каюр",
+      "owner_note": "Move full text in `comments` Каюр; 3 нартовые собаки"
+    },
+    {
+      "occupation": "моет полы на кордоне",
+      "record_count": 1,
+      "proposed": "Моет полы на кордоне",
+      "owner_decision": "Моет полы",
+      "owner_note": "Move full text in `comments`"
+    },
+    {
+      "occupation": "Печатник типографии",
+      "record_count": 1,
+      "proposed": "Печатник типографии",
+      "owner_decision": "Печатник",
+      "owner_note": ""
+    },
+    {
+      "occupation": "Приказчик в колонизационном фонде",
+      "record_count": 1,
+      "proposed": "Приказчик в колонизационном фонде",
+      "owner_decision": "Приказчик",
+      "owner_note": "Move full text in `comments`"
+    },
+    {
+      "occupation": "Прислугой",
+      "record_count": 1,
+      "proposed": "Прислугой",
+      "owner_decision": "Прислуга",
+      "owner_note": ""
+    },
+    {
+      "occupation": "Рабочий в смольной яме",
+      "record_count": 1,
+      "proposed": "Рабочий в смольной яме",
+      "owner_decision": "Рабочий",
+      "owner_note": "Move full text in `comments`"
+    },
+    {
+      "occupation": "Рыбак",
+      "record_count": 2,
+      "proposed": "Рыболов",
+      "owner_decision": "Рыбак",
+      "owner_note": ""
+    },
+    {
+      "occupation": "Рыбалка",
+      "record_count": 2,
+      "proposed": "Рыболов",
+      "owner_decision": "Рыбак",
+      "owner_note": ""
+    },
+    {
+      "occupation": "Рыболов",
+      "record_count": 1,
+      "proposed": "Рыболов",
+      "owner_decision": "Рыбак",
+      "owner_note": ""
+    },
+    {
+      "occupation": "Рыболов и каюр",
+      "record_count": 1,
+      "proposed": "Рыболов; Каюр",
+      "owner_decision": "Рыбак; Каюр",
+      "owner_note": ""
+    },
+    {
+      "occupation": "Старший надзиратель на катере",
+      "record_count": 1,
+      "proposed": "Старший надзиратель на катере",
+      "owner_decision": "Старший надзиратель",
+      "owner_note": "Move full text in `comments`"
+    },
+    {
+      "occupation": "Сторож в казенном доме",
+      "record_count": 1,
+      "proposed": "Сторож в казенном доме",
+      "owner_decision": "Сторож",
+      "owner_note": "Move full text in `comments`"
+    },
+    {
+      "occupation": "Торговец",
+      "record_count": 1,
+      "proposed": "Торговец",
+      "owner_decision": "Торговля",
+      "owner_note": ""
+    }
+  ]
+}

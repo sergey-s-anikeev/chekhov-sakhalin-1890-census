@@ -12,7 +12,7 @@ Russian/Cyrillic source and normalized values remain authoritative. English docu
 
 ## Current Status
 
-The project has completed district-level extraction, normalization, manual review, final merge, and project-level QA.
+The project has completed the approved v3 district extraction, normalization, manual review, merge, and release QA. Additional staged quality-review items have since been approved; type validation and final consolidation into the next versioned canonical candidate remain pending.
 
 The current validated release contains:
 
@@ -49,14 +49,16 @@ The GitHub repository is a version-control mirror, not a substitute for owner ap
 
 ## Canonical Datasets
 
-Current versioned canonical release, approved 2026-07-12:
+Current versioned canonical release, approved 2026-07-17:
 
-- `data/processed/clean_alexandrovsky_ru_v3_20260712.csv`
-- `data/processed/clean_tymovsky_ru_v3_20260712.csv`
-- `data/processed/clean_korsakovsky_ru_v3_20260712.csv`
-- `data/processed/clean_sakhalin_1890_ru_v3_20260712.csv`
+- `data/processed/clean_alexandrovsky_ru_v4_20260717.csv`
+- `data/processed/clean_tymovsky_ru_v4_20260717.csv`
+- `data/processed/clean_korsakovsky_ru_v4_20260717.csv`
+- `data/processed/clean_sakhalin_1890_ru_v4_20260717.csv`
 
-The v2 and prior unversioned canonical files remain unchanged as historical release artifacts. The 31-column v3 release consolidates the currently approved normalization items; still-pending tracker items remain outside this release.
+The v4 release contains 36 columns and consolidates approved Items 1–23, including precise and derived `age_months`, normalized origin, occupation and marriage fields, reviewed comments, and later alias additions. The v3, v2, and prior unversioned canonical files remain unchanged as historical release artifacts.
+
+The canonical v4 schema includes `age_months` for infant and young-child analysis. Explicit source precision takes precedence: for example, 1 year 7 months is stored as `age = 1`, `age_months = 19`. When the source gives only the completed whole-year age, month values are analytically derived as `12` for `age = 1` and `24` for `age = 2`.
 
 The `district` field retains the approved Russian values:
 

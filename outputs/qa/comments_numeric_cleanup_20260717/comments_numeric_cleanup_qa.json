@@ -1,0 +1,21 @@
+{
+  "base_file": "data/staging/occupation_item18_20260717/clean_sakhalin_1890_ru_v3_20260712_items7_8_item12_item16_item18_staged.csv",
+  "output_file": "data/staging/comments_numeric_cleanup_20260717/clean_sakhalin_1890_ru_v3_20260712_items7_8_item12_item16_item18_comments_staged.csv",
+  "rule": "Blank comments only when stripped content matches ^[0-9]+$.",
+  "rows_before": 7446,
+  "rows_after": 7446,
+  "columns_before": 36,
+  "columns_after": 36,
+  "changed_rows": 1865,
+  "pure_numeric_comments_removed": 1865,
+  "mixed_text_number_comments_preserved": 389,
+  "changed_fields": [
+    "comments"
+  ],
+  "person_id_order_preserved": true,
+  "source_position_id_order_preserved": true,
+  "remaining_pure_numeric_comments": 0,
+  "mixed_text_number_comments_unchanged": true,
+  "base_sha256": "58729e7fb97538d550205cd8f4a40d517fd75c86e7ec8da7c304d6a5e22e3b86",
+  "output_sha256": "bf40b49397000e127bb79c5ac971db98993c13b1227d0ec302da902a11b852ac"
+}

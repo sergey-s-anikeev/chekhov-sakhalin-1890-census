@@ -1,0 +1,18 @@
+﻿person_id,source_position_id,name_raw,raw_age,field,old_value,new_value,reason
+P000019,1-01-004-0019,Иван Андреев Дудыкин,2 1 / 2,age_months,,30,Owner-validated raw age semantics
+P000620,1-02-100-0525,Василий Кононенко,1 1 / 2,age_months,,18,Owner-validated raw age semantics
+P000807,1-02-165-0712,Егор Сычов,1 г[од] 6 мес[яцев]3,age_months,,18,Owner-validated raw age semantics
+P001100,1-02-225-1005,Иван Стрельцов,1 1 / 2,age_months,,18,Owner-validated raw age semantics
+P001152,1-02-233-1057,Елена Вецкая,2 1 / 2,age_months,,30,Owner-validated raw age semantics
+P001153,1-02-233-1058,Вячеслав Вецкий,<2>1 1 / 2,age_months,,18,Owner-validated raw age semantics
+P001207,1-02-244-1112,Дмитрий,1 1 / 2,age_months,,18,Owner-validated raw age semantics
+P002292,1-08-010-0035,Михаил Макаров Захаров,1 1 / 2,age_months,,18,Owner-validated raw age semantics
+P004172,2-24-033-0136,Василий Прокофьевич Чернявский,1 1 / 2 л[ет],age_months,,18,Owner-validated raw age semantics
+P004910,2-24-245-0874,Марья Егорова Нуякшина,1 / 2 г[ода],age,1,0,Owner-validated raw age semantics
+P004910,2-24-245-0874,Марья Егорова Нуякшина,1 / 2 г[ода],age_months,,6,Owner-validated raw age semantics
+P005230,2-24-335-1194,Василий Благин,1 1 / 2,age_months,,18,Owner-validated raw age semantics
+P005285,2-24-377-1249,Ефим Серапионов Слепухин,1 1 / 2,age_months,,18,Owner-validated raw age semantics
+P005291,2-24-378-1255,Михаил Якубовский,1 1 / 2,age_months,,18,Owner-validated raw age semantics
+P006656,3-40-004-0007,Иван Колесников,5 [есяцев],age,5,0,Owner-validated raw age semantics
+P006656,3-40-004-0007,Иван Колесников,5 [есяцев],age_months,,5,Owner-validated raw age semantics
+P007298,3-47-012-0020,Марья Соловьева,1 г[од] 6 м[сяцев],age_months,,18,Owner-validated raw age semantics

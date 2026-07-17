@@ -1,0 +1,26 @@
+{
+  "source": "data\\staging\\items7_8_age_followup_20260715\\clean_sakhalin_1890_ru_v3_20260712_items7_8_staged_v3.csv",
+  "row_count": 7446,
+  "distinct_values_including_blank": 109,
+  "blank_records": 838,
+  "classification_record_counts": {
+    "blank": 838,
+    "exceptional_non_administrative": 1314,
+    "foreign_state": 3,
+    "foreign_subjecthood": 12,
+    "imperial_territory": 31,
+    "russian_administrative": 5135,
+    "transit": 113
+  },
+  "classification_distinct_value_counts": {
+    "blank": 1,
+    "exceptional_non_administrative": 7,
+    "foreign_state": 3,
+    "foreign_subjecthood": 7,
+    "imperial_territory": 2,
+    "russian_administrative": 84,
+    "transit": 5
+  },
+  "proposed_automatic_change_count": 0,
+  "status": "mapping proposal only; no staged or canonical data modified"
+}

@@ -8,7 +8,7 @@ Chekhov Sakhalin 1890 Census Data Analysis
 
 Clean Russian master dataset for the reviewed 1890 Sakhalin census extraction.
 
-Current canonical release: `v3_20260712`. It contains 31 columns and consolidates all normalization items approved through 2026-07-12. Pending tracker items remain unchanged and are not represented as approved derived fields.
+Current canonical release: `v4_20260717`. It contains 36 columns and consolidates all owner-approved normalization and quality-review items through Item 23.
 
 One row represents one named person record.
 
@@ -45,7 +45,8 @@ Individual person record.
 | `sex_evidence` | string | Provenance path used to derive or approve `sex`. | `legal_status + family_status` |
 | `family_status` | string | Household/family role parsed from field `4.` | `Хозяин` |
 | `family_status_norm` | string | Approved compact analytical household/family role. | `Хозяин` |
-| `age` | integer | Age in full years where possible; infants may be coded as `0` with exact age retained in `comments`. | `35` |
+| `age` | integer | Age in completed years. Infants below one completed year are coded as `0`. | `1` |
+| `age_months` | integer | Total completed months for ages 0–2 in the latest staged schema. Explicit precise source values take precedence; when only `age = 1` or `2` is recorded, derive `12` or `24`. | `19` |
 | `religion` | string | Confession/religion from field `6.` | `Православное` |
 | `origin_place` | string | Place of origin from field `7.`, normalized and reviewed at district level. | `Смоленская губерния` |
 | `arrival_year` | integer | Year of arrival from field `8.` when present. | `1885` |
@@ -57,6 +58,21 @@ Individual person record.
 | `illness_norm` | string | Approved Sentence case analytical condition; compound categories use `; `. | `Слепота` |
 | `comments` | string | Source field `14.` and other reviewed explanatory notes. | `6 месяцев` |
 | `notes_raw` | string | Archive reference, normalized but preserved. | `РГБ № 2010` |
+
+---
+
+## Age Rules in the Latest Staged Schema
+
+- `age` stores completed years.
+- `age_months` stores total completed months for records aged 0, 1, or 2.
+- Explicit precise source wording takes precedence: `1 год 7 месяцев` becomes `age = 1`, `age_months = 19`; `2 1/2` becomes `age = 2`, `age_months = 30`.
+- If the source provides only the whole number `1`, derive `age_months = 12`.
+- If the source provides only the whole number `2`, derive `age_months = 24`.
+- Do not replace an existing precise value with 12 or 24.
+- Explicit ages below one month map to `age = 0`, `age_months = 0`; four weeks maps to one completed month.
+- The Item 23 affected-record inventory distinguishes whole-year-derived values from source-precise values.
+
+These rules are incorporated into canonical release `v4_20260717`.
 
 ---
 

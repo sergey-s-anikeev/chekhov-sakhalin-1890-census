@@ -1,5 +1,15 @@
 # Parser Improvements After Full-District Validation
 
+## Canonical quality-review release v4 — 2026-07-17
+
+Release `v4_20260717` promotes the approved post-v3 quality-review sequence into a new immutable canonical version. It retains 7,446 records, expands the schema from 31 to 36 columns, and adds `age_months`, `origin_place_norm`, `occupation_norm`, `marriage_status_norm`, and `living_alone_status`.
+
+The release includes approved age and raw-recognition corrections, whole-year month derivation for ages 1 and 2, origin and occupation normalization, marriage-status structure, reviewed comment cleanup and owner feedback, and 18 unique late alias additions. All four v3 files remain unchanged as historical canonical artifacts.
+
+Integrated QA passed record counts, schema, district ordering and concatenation, identifier uniqueness and formatting, numeric formats and ranges, age/month consistency, controlled values, Sentence case, Item 3 legal-status dependency synchronization, gender consistency, complete diffs, and SHA-256 hashing. Evidence is stored in `outputs/qa/canonical_v4_20260717/`.
+
+---
+
 The initial parser and normalization pipeline were developed and validated on a 500-record MVP sample. Running the pipeline on complete district-level data exposed several edge cases that were not present in the sample. The parser, normalization helper, controlled dictionaries, QA workflow, and final CSV utilities were subsequently improved through full validation on all three Sakhalin Census districts: Alexandrovsky, Tymovsky, and Korsakovsky.
 
 | Version  | Description |

@@ -1,0 +1,5 @@
+person_id,decision,approved_value,owner_note
+P003355,no_issue,,Accepted as recorded; reviewed exception to the origin_place/arrival_year co-presence rule
+P004849,no_issue,,Accepted as recorded
+P005024,no_issue,,Accepted as recorded
+P005199,correct_age,25,Recognition and cleanup error; change age from 2 to 25

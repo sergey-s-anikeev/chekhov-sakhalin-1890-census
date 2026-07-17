@@ -1,0 +1,31 @@
+{
+  "item": 8,
+  "status": "approved rule staged",
+  "source": "data/staging/age_item7_20260713/clean_sakhalin_1890_ru_v3_20260712_age_item7_staged.csv",
+  "staged": "data/staging/infant_age_item8_20260713_v2/clean_sakhalin_1890_ru_v3_20260712_items7_8_staged_v2.csv",
+  "source_record_count": 7446,
+  "staged_record_count": 7446,
+  "source_column_count": 31,
+  "staged_column_count": 32,
+  "staged_columns_added": [
+    "age_months"
+  ],
+  "age_months_immediately_after_age": true,
+  "age_months_populated_count": 307,
+  "age_months_zero_count": 16,
+  "age_months_one_count": 12,
+  "week_day_record_count": 17,
+  "week_day_comments_preserved_count": 17,
+  "month_year_record_count": 290,
+  "month_year_comments_changed_count": 290,
+  "month_year_age_phrase_still_present_count": 0,
+  "age_unchanged": true,
+  "person_id_order_unchanged": true,
+  "source_position_id_order_unchanged": true,
+  "non_target_change_count": 0,
+  "diff_row_count": 597,
+  "source_sha256": "084efaeaee6b44d891fe1977bf73ee49a16212e35946d71e73d00e324079887a",
+  "mapping_sha256": "2e3bf7913a473e7bfbb8ea739fce8aa9f2e90e89d81f1fb2a6f21258b1ff44f2",
+  "staged_sha256": "4a2b49403d3d7d25a520679ef46cfa3aab6dcc06956b88be326874806a2919cb",
+  "diff_sha256": "73663350dd6f10d85eeb063eb412e62a870dcc07c64443a171984eb8e0faf4b1"
+}

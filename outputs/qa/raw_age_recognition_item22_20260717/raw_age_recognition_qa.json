@@ -1,0 +1,24 @@
+{
+  "raw_directory": "data\\raw\\raw_district_files",
+  "staged_dataset": "data\\staging\\arrival_year_item21_20260717\\clean_sakhalin_1890_ru_v3_20260712_items7_8_item12_item16_item18_comments_item21_staged.csv",
+  "raw_row_count": 7447,
+  "staged_row_count": 7446,
+  "raw_to_staged_match_status": {
+    "matched": 7446,
+    "unmatched": 1
+  },
+  "matched_nonplain_age_count": 838,
+  "comparison_counts": {
+    "consistent": 498,
+    "manual_parse_required": 339,
+    "owner_verified_override": 1
+  },
+  "risk_class_counts": {
+    "struck_content": 147,
+    "other_nonplain_expression": 328,
+    "embedded_struck_content": 19,
+    "uncertain_integer": 344
+  },
+  "mismatch_review_count": 0,
+  "semantic_mismatch_review_count": 18
+}

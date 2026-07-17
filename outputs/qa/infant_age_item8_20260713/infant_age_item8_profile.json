@@ -1,0 +1,28 @@
+{
+  "item": 8,
+  "mode": "read-only extraction proposal; comments unchanged",
+  "source": "data/staging/age_item7_20260713/clean_sakhalin_1890_ru_v3_20260712_age_item7_staged.csv",
+  "source_sha256": "084efaeaee6b44d891fe1977bf73ee49a16212e35946d71e73d00e324079887a",
+  "source_record_count": 7446,
+  "explicit_precise_age_phrase_count": 307,
+  "parse_type_counts": {
+    "days": 2,
+    "months": 185,
+    "weeks": 15,
+    "years_and_months": 105
+  },
+  "current_age_counts": {
+    "0": 202,
+    "1": 103,
+    "2": 2
+  },
+  "residual_comment_counts": {
+    "blank": 161,
+    "nonblank": 146
+  },
+  "manual_review_count": 0,
+  "page_number_present_count": 307,
+  "unique_person_id_count": 307,
+  "comments_modified": false,
+  "canonical_files_modified": false
+}

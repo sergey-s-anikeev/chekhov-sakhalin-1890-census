@@ -1,0 +1,317 @@
+﻿person_id,source_position_id,page_number,name_raw,age,age_months_before,age_months_after,basis
+P000032,1-01-005-0032,29,Николай Федоров Жимайтес,2,,24,derived_from_whole_completed_year_age
+P000044,1-01-008-0044,29,Марья Лепра,1,,12,derived_from_whole_completed_year_age
+P000051,1-01-009-0051,30,Меланья Николаева Кучма,2,,24,derived_from_whole_completed_year_age
+P000061,1-01-010-0061,30,Петр Фердиков,2,,24,derived_from_whole_completed_year_age
+P000093,1-01-016-0093,32,Георгий Карлов Ландсберг,1,,12,derived_from_whole_completed_year_age
+P000147,1-02-001-0052,36,Степан Брониславов Цислевский,2,,24,derived_from_whole_completed_year_age
+P000161,1-02-003-0066,37,Мейер Негилев,2,,24,derived_from_whole_completed_year_age
+P000175,1-02-005-0080,38,Егор Лапушин,2,,24,derived_from_whole_completed_year_age
+P000218,1-02-012-0123,40,Наталья Дагаева,1,,12,derived_from_whole_completed_year_age
+P000259,1-02-022-0164,43,Александра Смирнова,2,,24,derived_from_whole_completed_year_age
+P000265,1-02-022-0170,43,Александр Юдкевич,2,,24,derived_from_whole_completed_year_age
+P000292,1-02-029-0197,44,Александра Файнберг,2,,24,derived_from_whole_completed_year_age
+P000300,1-02-030-0205,45,Абдул-Малик Джаксамбетов,1,,12,derived_from_whole_completed_year_age
+P000308,1-02-033-0213,45,Дмитрий Алексеев Махалин,2,,24,derived_from_whole_completed_year_age
+P000333,1-02-037-0238,47,Константин Кодылев,1,,12,derived_from_whole_completed_year_age
+P000344,1-02-039-0249,48,Анна Андреева Кондратович,2,,24,derived_from_whole_completed_year_age
+P000349,1-02-040-0254,48,Дмитрий Гирев,1,,12,derived_from_whole_completed_year_age
+P000366,1-02-044-0271,49,Анна Деряга,2,,24,derived_from_whole_completed_year_age
+P000390,1-02-050-0295,50,Зоя Самыгина,2,,24,derived_from_whole_completed_year_age
+P000453,1-02-060-0358,54,Настасья Осипова Королюк,2,,24,derived_from_whole_completed_year_age
+P000461,1-02-062-0366,54,Марья Филиппова Грибанова,1,,12,derived_from_whole_completed_year_age
+P000466,1-02-063-0371,55,Алексей Марков Карелин,2,,24,derived_from_whole_completed_year_age
+P000471,1-02-064-0376,55,Петр Заславский,2,,24,derived_from_whole_completed_year_age
+P000491,1-02-068-0396,56,Иван Ткачев,2,,24,derived_from_whole_completed_year_age
+P000522,1-02-076-0427,58,Елизавета Булдакова,2,,24,derived_from_whole_completed_year_age
+P000532,1-02-078-0437,59,Марья Тимофеева Иванова,2,,24,derived_from_whole_completed_year_age
+P000569,1-02-088-0474,61,Марина Котенко,1,,12,derived_from_whole_completed_year_age
+P000572,1-02-088-0477,61,Мария Андрусенко,1,,12,derived_from_whole_completed_year_age
+P000575,1-02-089-0480,62,Александра Афанасьева,2,,24,derived_from_whole_completed_year_age
+P000583,1-02-090-0488,62,Николай Тимофеев Заверюха,1,,12,derived_from_whole_completed_year_age
+P000615,1-02-098-0520,64,Хаснаддин Гейзотов,2,,24,derived_from_whole_completed_year_age
+P000629,1-02-103-0534,65,Александра Яковлева,2,,24,derived_from_whole_completed_year_age
+P000645,1-02-110-0550,66,Александр Ермолаев,2,,24,derived_from_whole_completed_year_age
+P000653,1-02-111-0558,67,Александр Черешнев,1,,12,derived_from_whole_completed_year_age
+P000724,1-02-147-0629,71,Елена Андреева,1,,12,derived_from_whole_completed_year_age
+P000746,1-02-152-0651,72,Петр Сергеев Ляликов,1,,12,derived_from_whole_completed_year_age
+P000762,1-02-156-0667,73,Петр Лисовский,1,,12,derived_from_whole_completed_year_age
+P000775,1-02-159-0680,74,Пелагея Новосельцева,1,,12,derived_from_whole_completed_year_age
+P000778,1-02-159-0683,74,Александр Сергеев Черешнев,1,,12,derived_from_whole_completed_year_age
+P000781,1-02-160-0686,74,Аграфена Мельникова,1,,12,derived_from_whole_completed_year_age
+P000796,1-02-163-0701,75,Людвиг Шмаус,2,,24,derived_from_whole_completed_year_age
+P000797,1-02-163-0702,75,Станислав Шмаус,2,,24,derived_from_whole_completed_year_age
+P000806,1-02-165-0711,76,Настасья Сычова,2,,24,derived_from_whole_completed_year_age
+P000847,1-02-172-0752,79,Сергей Иванов Шубский,2,,24,derived_from_whole_completed_year_age
+P000876,1-02-179-0781,80,Марья Николаева Муравицкая,2,,24,derived_from_whole_completed_year_age
+P000908,1-02-186-0813,82,Анна Власова,2,,24,derived_from_whole_completed_year_age
+P000939,1-02-192-0844,84,Ольга Петрова Ильяшенко,2,,24,derived_from_whole_completed_year_age
+P000971,1-02-198-0876,86,Клавдия Дмитриева Плотникова,2,,24,derived_from_whole_completed_year_age
+P000975,1-02-199-0880,86,Василий Лаврентьев Галкин,1,,12,derived_from_whole_completed_year_age
+P001021,1-02-208-0926,89,Александр,1,,12,derived_from_whole_completed_year_age
+P001026,1-02-209-0931,90,Василий,2,,24,derived_from_whole_completed_year_age
+P001032,1-02-210-0937,90,Семен,1,,12,derived_from_whole_completed_year_age
+P001049,1-02-213-0954,91,Мария Зайцева,2,,24,derived_from_whole_completed_year_age
+P001093,1-02-224-0998,93,Петр,2,,24,derived_from_whole_completed_year_age
+P001103,1-02-225-1008,94,Елизавета Вильдеман,2,,24,derived_from_whole_completed_year_age
+P001129,1-02-229-1034,96,Александр,2,,24,derived_from_whole_completed_year_age
+P001162,1-02-234-1067,98,Константин Беляков,1,,12,derived_from_whole_completed_year_age
+P001279,1-02-266-1184,105,Николай,2,,24,derived_from_whole_completed_year_age
+P001312,1-02-276-1217,107,Марья Александрова Радченко,1,,12,derived_from_whole_completed_year_age
+P001366,1-02-297-1271,110,Матрена Никитина Стоногова,2,,24,derived_from_whole_completed_year_age
+P001400,1-02-307-1305,112,Павел Павлов,1,,12,derived_from_whole_completed_year_age
+P001460,1-03-005-0027,116,Василий Петров Мягкий,1,,12,derived_from_whole_completed_year_age
+P001493,1-03-014-0060,118,Иван Яковлев Терентьев,1,,12,derived_from_whole_completed_year_age
+P001500,1-03-015-0067,118,Александр Васильев,2,,24,derived_from_whole_completed_year_age
+P001523,1-03-024-0090,120,Петр Константинов Исаянц,2,,24,derived_from_whole_completed_year_age
+P001536,1-03-027-0103,120,Владимир Коростелев,2,,24,derived_from_whole_completed_year_age
+P001588,1-03-037-0155,124,Марья Данилова Чабановская,2,,24,derived_from_whole_completed_year_age
+P001619,1-03-043-0186,126,Михаил Егоров Федоров,2,,24,derived_from_whole_completed_year_age
+P001641,1-03-047-0208,127,Екатерина Бурза,2,,24,derived_from_whole_completed_year_age
+P001653,1-03-048-0220,128,Анна Арушанова,2,,24,derived_from_whole_completed_year_age
+P001686,1-03-055-0253,130,Андрей Николаев Горбатов,1,,12,derived_from_whole_completed_year_age
+P001689,1-03-056-0256,130,Марфа Евстигнеева Савельева,2,,24,derived_from_whole_completed_year_age
+P001699,1-04-001-0006,131,Христинья Ефимова Щербинина,2,,24,derived_from_whole_completed_year_age
+P001728,1-04-007-0035,133,Илья Михайлов Ерохин,1,,12,derived_from_whole_completed_year_age
+P001737,1-04-009-0044,133,Алексей Гаврилов Савостьянов,2,,24,derived_from_whole_completed_year_age
+P001752,1-04-014-0059,134,Герасим Михайлов Бырюков,1,,12,derived_from_whole_completed_year_age
+P001809,1-04-031-0116,138,Фекла Афанасьева Комкова,2,,24,derived_from_whole_completed_year_age
+P001903,1-04-065-0210,144,Сергей Лошкарев,2,,24,derived_from_whole_completed_year_age
+P001926,1-04-071-0233,145,Наталья Хабарова,2,,24,derived_from_whole_completed_year_age
+P001958,1-04-082-0265,147,Шмул Флейшман,2,,24,derived_from_whole_completed_year_age
+P001979,1-04-086-0286,148,Екатерина Михайлова Горшкова,2,,24,derived_from_whole_completed_year_age
+P001989,1-04-090-0296,149,Настасья Иванова Рященко,1,,12,derived_from_whole_completed_year_age
+P002002,1-04-093-0309,149,Иван Семенов Мицук,2,,24,derived_from_whole_completed_year_age
+P002006,1-04-094-0313,150,Николай Устинов Камышанов,2,,24,derived_from_whole_completed_year_age
+P002054,1-04-111-0361,153,Надежда Иванова Ильчева,1,,12,derived_from_whole_completed_year_age
+P002084,1-04-121-0391,154,Мария Горюнова,2,,24,derived_from_whole_completed_year_age
+P002087,1-04-122-0394,155,Дарья Иванова Богданова,2,,24,derived_from_whole_completed_year_age
+P002093,1-04-124-0400,155,Константин Никитин Коваленко,1,,12,derived_from_whole_completed_year_age
+P002116,1-04-131-0423,156,Лукерья Петрова Мамоненко,2,,24,derived_from_whole_completed_year_age
+P002177,1-05-026-0038,160,Александр Владимиров Пашкуров,2,,24,derived_from_whole_completed_year_age
+P002215,1-05-047-0076,163,Андрей Степанов Ковалин,2,,24,derived_from_whole_completed_year_age
+P002267,1-08-002-0010,166,Михаил Александров Савельев,2,,24,derived_from_whole_completed_year_age
+P002273,1-08-003-0016,166,Василий Осипов Гончаров,2,,24,derived_from_whole_completed_year_age
+P002281,1-08-006-0024,167,Михаил Васильев Падеров,2,,24,derived_from_whole_completed_year_age
+P002297,1-08-011-0040,168,Авдотья Миронова Ларина,2,,24,derived_from_whole_completed_year_age
+P002302,1-08-012-0045,169,Павел Осипов Вериго,2,,24,derived_from_whole_completed_year_age
+P002312,1-08-016-0055,169,Иван Семенов Иванов,2,,24,derived_from_whole_completed_year_age
+P002344,1-08-023-0087,172,Мария Давидова Вецезоль,1,,12,derived_from_whole_completed_year_age
+P002361,1-08-028-0104,173,Михаил Иванов Гноев,1,,12,derived_from_whole_completed_year_age
+P002383,1-09-035-0022,174,Александр Васильев Осипов,2,,24,derived_from_whole_completed_year_age
+P002474,1-11-058-0016,180,Марья Прохорова Петрова,1,,12,derived_from_whole_completed_year_age
+P002477,1-11-059-0019,180,Анна Миронова Грин,2,,24,derived_from_whole_completed_year_age
+P002481,1-11-060-0023,180,Екатерина Федорова Ухова,2,,24,derived_from_whole_completed_year_age
+P002490,1-11-062-0032,181,Евгения Родионова Судак,2,,24,derived_from_whole_completed_year_age
+P002513,1-12-007-0020,182,Илья,2,,24,derived_from_whole_completed_year_age
+P002528,1-12-014-0035,183,Михаил Лаврентьев Шворень,2,,24,derived_from_whole_completed_year_age
+P002540,1-13-018-0012,183,Александра Харитонова Потапенко,1,,12,derived_from_whole_completed_year_age
+P002546,1-14-021-0003,184,Федор Федоров Сапрыгин,2,,24,derived_from_whole_completed_year_age
+P002547,1-14-021-0004,184,Елена Федорова Сапрыгина,1,,12,derived_from_whole_completed_year_age
+P002569,1-14-030-0026,185,Андрей,1,,12,derived_from_whole_completed_year_age
+P002661,1-18-012-0051,190,Авдотья Кубышкина,2,,24,derived_from_whole_completed_year_age
+P002662,1-18-012-0052,190,Сергей Кубышкин,1,,12,derived_from_whole_completed_year_age
+P002709,1-18-026-0099,193,Николай Беляев,2,,24,derived_from_whole_completed_year_age
+P002761,1-18-040-0151,196,Антонина Петрова Потемкина,1,,12,derived_from_whole_completed_year_age
+P002778,1-18-000-0168,197,Прохор Константинов Протопопов,1,,12,derived_from_whole_completed_year_age
+P002857,1-18-000-0247,202,Павел Сидоров Ковалев,1,,12,derived_from_whole_completed_year_age
+P002860,1-18-000-0250,202,Ольга Алексеева Труленко,1,,12,derived_from_whole_completed_year_age
+P002905,2-19-010-0021,224,Александр Васильев Лошкарев,1,,12,derived_from_whole_completed_year_age
+P003006,2-19-051-0122,230,Алексей Мокин,2,,24,derived_from_whole_completed_year_age
+P003089,2-20-014-0030,235,Ольга Петрова,2,,24,derived_from_whole_completed_year_age
+P003116,2-20-025-0057,236,Войцех Нога,1,,12,derived_from_whole_completed_year_age
+P003161,2-21-002-0008,239,Ольга Челнокова,1,,12,derived_from_whole_completed_year_age
+P003169,2-21-004-0016,239,Григорий Никитин,2,,24,derived_from_whole_completed_year_age
+P003235,2-21-047-0082,243,Матрена Прокофьева Галактионова,2,,24,derived_from_whole_completed_year_age
+P003274,2-21-082-0121,245,Надежда Федорова Агафонова,2,,24,derived_from_whole_completed_year_age
+P003287,2-21-084-0134,246,Настасья Алексеева Иванова,2,,24,derived_from_whole_completed_year_age
+P003341,2-21-103-0188,249,Александра Александрова Устинова,2,,24,derived_from_whole_completed_year_age
+P003355,2-21-107-0202,250,Ян Лауке,2,,24,derived_from_whole_completed_year_age
+P003407,2-21-129-0254,253,Федор Владимиров Долженко,2,,24,derived_from_whole_completed_year_age
+P003430,2-21-136-0277,254,Лидия Васильева Кузьмина,2,,24,derived_from_whole_completed_year_age
+P003431,2-21-136-0278,254,Наталья Васильева Кузьмина,1,,12,derived_from_whole_completed_year_age
+P003484,2-21-169-0331,257,Степан Большаков,1,,12,derived_from_whole_completed_year_age
+P003501,2-21-177-0348,258,Александра Филиппова Ивлева,2,,24,derived_from_whole_completed_year_age
+P003505,2-21-178-0352,258,Василий Федоров Чариков,2,,24,derived_from_whole_completed_year_age
+P003528,2-21-188-0375,259,Вера Хохлова,1,,12,derived_from_whole_completed_year_age
+P003546,2-21-197-0393,260,Севастьян Никифоров Горбенко,2,,24,derived_from_whole_completed_year_age
+P003552,2-21-198-0399,260,Максим Данилов Чистяков,1,,12,derived_from_whole_completed_year_age
+P003567,2-21-204-0414,261,Александр Прохоров Морозов,2,,24,derived_from_whole_completed_year_age
+P003576,2-21-209-0423,261,Терентий Абрамов Афонин,2,,24,derived_from_whole_completed_year_age
+P003577,2-21-209-0424,261,Иван Абрамов Афонин,1,,12,derived_from_whole_completed_year_age
+P003660,2-21-253-0507,266,Иван Антонов Гусев,1,,12,derived_from_whole_completed_year_age
+P003670,2-21-259-0517,266,Василий Григорьев Галкин,2,,24,derived_from_whole_completed_year_age
+P003686,2-21-267-0533,267,Иларион Григорьев Серемягин,2,,24,derived_from_whole_completed_year_age
+P003699,2-21-271-0546,268,Марья Максимова Желтникова,1,,12,derived_from_whole_completed_year_age
+P003705,2-21-273-0552,268,Алексей Иванов Букреев,2,,24,derived_from_whole_completed_year_age
+P003712,2-21-276-0559,269,Марья Грабовская,2,,24,derived_from_whole_completed_year_age
+P003728,2-21-281-0575,270,Варвара Васильева Астахова,2,,24,derived_from_whole_completed_year_age
+P003758,2-21-295-0605,271,Александра Устинова Занина,1,,12,derived_from_whole_completed_year_age
+P003761,2-21-296-0608,271,Васса Корнеева Скляренко,2,,24,derived_from_whole_completed_year_age
+P003774,2-21-300-0621,272,Даниил Иванов Ищенко,2,,24,derived_from_whole_completed_year_age
+P003941,2-22-089-0156,280,Авдотья Щепина,2,,24,derived_from_whole_completed_year_age
+P003976,2-23-003-0008,282,Марья Павлова Скляренко,2,,24,derived_from_whole_completed_year_age
+P004063,2-24-007-0027,287,Анна Филиппова Кулешова,2,,24,derived_from_whole_completed_year_age
+P004098,2-24-016-0062,289,Лукерья Чипрякова,2,,24,derived_from_whole_completed_year_age
+P004114,2-24-019-0078,290,Марья Семенова Сурская,2,,24,derived_from_whole_completed_year_age
+P004117,2-24-020-0081,290,Ицко Абезгауз,2,,24,derived_from_whole_completed_year_age
+P004134,2-24-024-0098,291,Елизавета Васильева Скубко,2,,24,derived_from_whole_completed_year_age
+P004143,2-24-026-0107,292,Павел Никитин Желудок,2,,24,derived_from_whole_completed_year_age
+P004150,2-24-027-0114,292,Ефросинья Леонтьева Безбожная,1,,12,derived_from_whole_completed_year_age
+P004162,2-24-030-0126,293,Алексей Ефремов Манаев,2,,24,derived_from_whole_completed_year_age
+P004181,2-24-035-0145,294,Александр Андреев Белый,1,,12,derived_from_whole_completed_year_age
+P004191,2-24-037-0155,294,Аграфена Егорова Быкова,2,,24,derived_from_whole_completed_year_age
+P004192,2-24-037-0156,295,Лукерья Егорова Быкова,1,,12,derived_from_whole_completed_year_age
+P004226,2-24-044-0190,296,Евгений Федоров Агеев,2,,24,derived_from_whole_completed_year_age
+P004242,2-24-049-0206,297,Павлина Гордеева Штулун,1,,12,derived_from_whole_completed_year_age
+P004264,2-24-058-0228,299,Екатерина Романова Бокарева,1,,12,derived_from_whole_completed_year_age
+P004275,2-24-059-0239,299,Александра Павлова Родионова,2,,24,derived_from_whole_completed_year_age
+P004286,2-24-060-0250,300,Алексей Глебов Ловягин,1,,12,derived_from_whole_completed_year_age
+P004295,2-24-062-0259,300,Сарра Гельфонт,2,,24,derived_from_whole_completed_year_age
+P004296,2-24-062-0260,300,Хана Гельфонт,1,,12,derived_from_whole_completed_year_age
+P004306,2-24-065-0270,301,Александра Миронова Иванова,1,,12,derived_from_whole_completed_year_age
+P004316,2-24-066-0280,302,Мария Евстигнеева Линькова,2,,24,derived_from_whole_completed_year_age
+P004317,2-24-066-0281,302,Татьяна Евстигнеева Линькова,1,,12,derived_from_whole_completed_year_age
+P004332,2-24-068-0296,302,Анна Терентьева Морозова,1,,12,derived_from_whole_completed_year_age
+P004341,2-24-070-0305,303,Гордей Андриянович Сычов,2,,24,derived_from_whole_completed_year_age
+P004345,2-24-071-0309,303,Арсентий Николаев Дорофеев,2,,24,derived_from_whole_completed_year_age
+P004352,2-24-073-0316,304,Борис Дрога,2,,24,derived_from_whole_completed_year_age
+P004377,2-24-078-0341,305,Александр Григорьев Пахомов,2,,24,derived_from_whole_completed_year_age
+P004393,2-24-081-0357,306,Елена Степанова Фищенко,2,,24,derived_from_whole_completed_year_age
+P004405,2-24-083-0369,307,Василий Иванов Безпалов,2,,24,derived_from_whole_completed_year_age
+P004430,2-24-088-0394,308,Павел Куберниченко,2,,24,derived_from_whole_completed_year_age
+P004470,2-24-098-0434,311,Пелагея Сергеева Кондратьева,2,,24,derived_from_whole_completed_year_age
+P004476,2-24-100-0440,311,Семен Тихонов,2,,24,derived_from_whole_completed_year_age
+P004483,2-24-112-0447,311,Сергей Васильев Иванов,2,,24,derived_from_whole_completed_year_age
+P004484,2-24-112-0448,311,Даниил Васильев Иванов,1,,12,derived_from_whole_completed_year_age
+P004488,2-24-113-0452,312,Елена Иванова Милашевич,1,,12,derived_from_whole_completed_year_age
+P004501,2-24-118-0465,312,Николай Павлов Тюленев,2,,24,derived_from_whole_completed_year_age
+P004505,2-24-119-0469,312,Михаил Яковлев Типало,2,,24,derived_from_whole_completed_year_age
+P004511,2-24-120-0475,313,Степанида Архипова,2,,24,derived_from_whole_completed_year_age
+P004525,2-24-125-0489,314,Егор Арсентьев Бетлинский,2,,24,derived_from_whole_completed_year_age
+P004532,2-24-128-0496,314,Маркел Юденков,2,,24,derived_from_whole_completed_year_age
+P004555,2-24-139-0519,315,Анна Федосеева Скубко,1,,12,derived_from_whole_completed_year_age
+P004566,2-24-143-0530,316,Александр Андреев Мурзин,1,,12,derived_from_whole_completed_year_age
+P004569,2-24-143-0533,316,Анна Герасимова,1,,12,derived_from_whole_completed_year_age
+P004574,2-24-144-0538,316,Любовь Федорова Пикалова,1,,12,derived_from_whole_completed_year_age
+P004582,2-24-146-0546,316,Тимофей Сухов,2,,24,derived_from_whole_completed_year_age
+P004636,2-24-168-0600,319,Прасковья Антонова Милешкина,2,,24,derived_from_whole_completed_year_age
+P004655,2-24-173-0619,320,Даниил Васильев Сорокин,2,,24,derived_from_whole_completed_year_age
+P004663,2-24-176-0627,321,Пелагея Ефимова Афоничкина,2,,24,derived_from_whole_completed_year_age
+P004668,2-24-176-0632,321,Петр Степанов Филатов,1,,12,derived_from_whole_completed_year_age
+P004681,2-24-181-0645,322,Сергей Семенов Анисимов,1,,12,derived_from_whole_completed_year_age
+P004713,2-24-194-0677,323,Владимир Осипов Огуркас,2,,24,derived_from_whole_completed_year_age
+P004717,2-24-194-0681,324,Марина Иванова Тарасова,2,,24,derived_from_whole_completed_year_age
+P004725,2-24-197-0689,324,Франц Рохов Каменский,2,,24,derived_from_whole_completed_year_age
+P004731,2-24-199-0695,324,Надежда Емельянова Богданова,2,,24,derived_from_whole_completed_year_age
+P004736,2-24-200-0700,325,Дмитрий Маренчуков,1,,12,derived_from_whole_completed_year_age
+P004753,2-24-204-0717,326,Яков Маркелов Иванов,1,,12,derived_from_whole_completed_year_age
+P004763,2-24-206-0727,326,Иван Михайлов Симонов,1,,12,derived_from_whole_completed_year_age
+P004773,2-24-209-0737,327,Алексей Петров Сухов,2,,24,derived_from_whole_completed_year_age
+P004779,2-24-211-0743,327,Иван Сергеев Родионов,1,,12,derived_from_whole_completed_year_age
+P004795,2-24-215-0759,328,Александр Алексеев Белов,1,,12,derived_from_whole_completed_year_age
+P004798,2-24-216-0762,328,Екатерина Романчина,2,,24,derived_from_whole_completed_year_age
+P004799,2-24-216-0763,328,Настасья Романчина,1,,12,derived_from_whole_completed_year_age
+P004811,2-24-221-0775,329,Аграфена Александрова Дикарева,2,,24,derived_from_whole_completed_year_age
+P004815,2-24-222-0779,329,Наталья Федорова Павлихина,2,,24,derived_from_whole_completed_year_age
+P004821,2-24-223-0785,329,Сидор Матвеев Черемный,1,,12,derived_from_whole_completed_year_age
+P004835,2-24-227-0799,330,Алексей Петров Анучкин,2,,24,derived_from_whole_completed_year_age
+P004853,2-24-230-0817,331,Александр Николаев Каралич,1,,12,derived_from_whole_completed_year_age
+P004875,2-24-236-0839,332,Нил Кириллов Чудесов,1,,12,derived_from_whole_completed_year_age
+P004902,2-24-244-0866,334,Яков Васильев Попов,1,,12,derived_from_whole_completed_year_age
+P004909,2-24-245-0873,334,Авдотья Егорова Нуякшина,2,,24,derived_from_whole_completed_year_age
+P004923,2-24-249-0887,335,Николай Кусов,2,,24,derived_from_whole_completed_year_age
+P004924,2-24-249-0888,335,Иван Кусов,1,,12,derived_from_whole_completed_year_age
+P004936,2-24-252-0900,336,Василий Николаев Бауманов,2,,24,derived_from_whole_completed_year_age
+P004945,2-24-254-0909,336,Олимпиада Евграфова Тюлякова,2,,24,derived_from_whole_completed_year_age
+P004946,2-24-254-0910,336,Александра Старцева,2,,24,derived_from_whole_completed_year_age
+P004968,2-24-258-0932,337,Александр Петров Хомюков,2,,24,derived_from_whole_completed_year_age
+P004969,2-24-258-0933,338,Прасковья Петрова Елфимова,2,,24,derived_from_whole_completed_year_age
+P005015,2-24-274-0979,340,Екатерина Тихонова Сеченова,2,,24,derived_from_whole_completed_year_age
+P005021,2-24-276-0985,340,Екатерина Волкова,2,,24,derived_from_whole_completed_year_age
+P005040,2-24-281-1004,341,Настасья Михайлова Кузякова,2,,24,derived_from_whole_completed_year_age
+P005048,2-24-283-1012,342,Василий Владимиров Саушин,2,,24,derived_from_whole_completed_year_age
+P005058,2-24-286-1022,342,Василий Иванов Малышев,2,,24,derived_from_whole_completed_year_age
+P005059,2-24-286-1023,343,Ульяна Иванова Малышева,1,,12,derived_from_whole_completed_year_age
+P005070,2-24-289-1034,343,Еремей Шмелев,2,,24,derived_from_whole_completed_year_age
+P005071,2-24-289-1035,343,Евгения Шмелева,1,,12,derived_from_whole_completed_year_age
+P005080,2-24-293-1044,344,Иван Левищев,2,,24,derived_from_whole_completed_year_age
+P005090,2-24-296-1054,344,Иван Константинов Бобраков,2,,24,derived_from_whole_completed_year_age
+P005096,2-24-297-1060,345,Николай Васильев Гусаров,2,,24,derived_from_whole_completed_year_age
+P005104,2-24-301-1068,345,Варвара Шукур,1,,12,derived_from_whole_completed_year_age
+P005124,2-24-305-1088,346,Петр Денисов Бойко,1,,12,derived_from_whole_completed_year_age
+P005129,2-24-306-1093,347,Дмитрий Никитин,1,,12,derived_from_whole_completed_year_age
+P005144,2-24-312-1108,347,Илья Григорьев Сопего,1,,12,derived_from_whole_completed_year_age
+P005206,2-24-330-1170,351,Степан Федоров Барановский,2,,24,derived_from_whole_completed_year_age
+P005237,2-24-336-1201,353,Павел Бочаров,2,,24,derived_from_whole_completed_year_age
+P005242,2-24-337-1206,353,Егор Леонтьев Смоленко,2,,24,derived_from_whole_completed_year_age
+P005247,2-24-338-1211,353,Мария Емельянова Жигарева,2,,24,derived_from_whole_completed_year_age
+P005258,2-24-342-1222,354,Василий Пятышев,1,,12,derived_from_whole_completed_year_age
+P005266,2-24-345-1230,354,Анна Корнеева Жайворонок,2,,24,derived_from_whole_completed_year_age
+P005280,2-24-371-1244,355,Арсений Матвеев Долгонюк,2,,24,derived_from_whole_completed_year_age
+P005302,2-24-387-1266,357,Степан Степанов Шабанов,1,,12,derived_from_whole_completed_year_age
+P005307,2-25-000-0005,357,Федор Карпов Микрюков,2,,24,derived_from_whole_completed_year_age
+P005308,2-25-000-0006,357,Наталья Карпова Микрюкова,1,,12,derived_from_whole_completed_year_age
+P005421,2-25-061-0119,363,Дарья Пайонк,2,,24,derived_from_whole_completed_year_age
+P005444,2-25-087-0142,364,Надежда Николаева Чмырь,2,,24,derived_from_whole_completed_year_age
+P005458,2-25-103-0156,365,Анна Андреева Молодина,2,,24,derived_from_whole_completed_year_age
+P005609,2-26-006-0024,373,Иосиф Алтанес,2,,24,derived_from_whole_completed_year_age
+P005631,2-26-014-0046,375,Василий Тодор,2,,24,derived_from_whole_completed_year_age
+P005656,2-26-021-0071,376,Ольга Воробьева,2,,24,derived_from_whole_completed_year_age
+P005702,2-26-033-0117,379,Марья Ильина Потылицына,1,,12,derived_from_whole_completed_year_age
+P005783,2-27-012-0021,384,Анна Агафонова,1,,12,derived_from_whole_completed_year_age
+P005820,2-27-030-0058,386,Марья Иванова,2,,24,derived_from_whole_completed_year_age
+P005836,2-27-038-0074,387,Екатерина Ищенко,2,,24,derived_from_whole_completed_year_age
+P005892,2-27-067-0130,390,Татьяна Пец,2,,24,derived_from_whole_completed_year_age
+P005895,2-27-068-0133,390,Марианна Свидерская,2,,24,derived_from_whole_completed_year_age
+P005929,2-27-089-0167,392,Фатима Гарыпова,1,,12,derived_from_whole_completed_year_age
+P005934,2-27-091-0172,392,Франциска Виновская,2,,24,derived_from_whole_completed_year_age
+P005948,2-27-097-0186,393,Настасья Никифорова,2,,24,derived_from_whole_completed_year_age
+P005983,2-27-109-0221,395,Надежда Эльяшевич,2,,24,derived_from_whole_completed_year_age
+P005990,2-27-112-0228,395,Николай Рожков,2,,24,derived_from_whole_completed_year_age
+P006045,2-27-143-0283,398,Курман-Гали Галимов,1,,12,derived_from_whole_completed_year_age
+P006082,2-27-168-0320,400,Николай Киселев,2,,24,derived_from_whole_completed_year_age
+P006108,2-27-179-0346,402,Эюб Юсупов,2,,24,derived_from_whole_completed_year_age
+P006112,2-27-180-0350,402,Александр Дементьев,2,,24,derived_from_whole_completed_year_age
+P006122,2-27-000-0360,403,Александр Корнилов,2,,24,derived_from_whole_completed_year_age
+P006125,2-27-000-0363,403,Наталья Юрьева Янович,2,,24,derived_from_whole_completed_year_age
+P006174,3-29-004-0010,415,Федор Григорьев Глухов,1,,12,derived_from_whole_completed_year_age
+P006213,3-29-021-0049,417,Осип Алексеев Панюшкин,2,,24,derived_from_whole_completed_year_age
+P006263,3-29-040-0099,420,Федосья Васильева Кулешова,2,,24,derived_from_whole_completed_year_age
+P006278,3-29-043-0114,421,Елизавета Панкрушина,2,,24,derived_from_whole_completed_year_age
+P006326,3-30-009-0014,424,Настасья Ягельская,1,,12,derived_from_whole_completed_year_age
+P006336,3-30-016-0024,424,Марья Куликова,2,,24,derived_from_whole_completed_year_age
+P006363,3-30-034-0051,426,Елизавета Игнатьева Худоешко,2,,24,derived_from_whole_completed_year_age
+P006390,3-32-003-0005,428,Фекла Маттетедор,2,,24,derived_from_whole_completed_year_age
+P006418,3-33-013-0023,429,Марья Андреева Рудзит,2,,24,derived_from_whole_completed_year_age
+P006424,3-33-016-0029,430,Сергей Нилов,1,,12,derived_from_whole_completed_year_age
+P006439,3-34-007-0014,431,Софья Головнина,2,,24,derived_from_whole_completed_year_age
+P006479,3-34-024-0054,433,Аграфена Попова,2,,24,derived_from_whole_completed_year_age
+P006492,3-34-026-0067,434,Григорий Осипов Юхнюк,2,,24,derived_from_whole_completed_year_age
+P006493,3-34-026-0068,434,Лариса Осипова Юхнюк,1,,12,derived_from_whole_completed_year_age
+P006499,3-35-002-0005,434,Трофим Черкасов,2,,24,derived_from_whole_completed_year_age
+P006528,3-35-021-0034,436,Матрена Можарова,1,,12,derived_from_whole_completed_year_age
+P006576,3-37-002-0005,438,Николай Иванов Бароновский,2,,24,derived_from_whole_completed_year_age
+P006589,3-37-007-0018,439,Алексей Сальников,1,,12,derived_from_whole_completed_year_age
+P006595,3-37-010-0024,439,Иван Бутов,2,,24,derived_from_whole_completed_year_age
+P006614,3-39-001-0003,441,Марфа Павлова,2,,24,derived_from_whole_completed_year_age
+P006717,3-41-012-0028,446,Алексей Козичев,2,,24,derived_from_whole_completed_year_age
+P006868,3-43-012-0016,454,Елена Фимняк,2,,24,derived_from_whole_completed_year_age
+P006926,3-43-056-0074,457,Казимир Кашет,1,,12,derived_from_whole_completed_year_age
+P007037,3-44-059-0075,463,Иван Кибенко,1,,12,derived_from_whole_completed_year_age
+P007134,3-45-007-0013,468,Павел Кацен,2,,24,derived_from_whole_completed_year_age
+P007144,3-45-011-0023,469,Александр Репин,2,,24,derived_from_whole_completed_year_age
+P007158,3-45-018-0037,469,Семен Вржесинский,2,,24,derived_from_whole_completed_year_age
+P007179,3-45-030-0058,471,Александр Афанасьев,2,,24,derived_from_whole_completed_year_age
+P007182,3-45-031-0061,471,Анна Новикова,2,,24,derived_from_whole_completed_year_age
+P007225,3-46-009-0015,473,Николай Самсонов,1,,12,derived_from_whole_completed_year_age
+P007262,3-46-036-0052,475,Надежда Коханная,2,,24,derived_from_whole_completed_year_age
+P007291,3-47-009-0013,477,Авдотья Добровольская,2,,24,derived_from_whole_completed_year_age
+P007332,3-48-002-0006,480,Анна Савельева,2,,24,derived_from_whole_completed_year_age
+P007347,3-48-012-0021,480,Иван Архипов,1,,12,derived_from_whole_completed_year_age
+P007353,3-48-015-0027,481,Никола Савицкий,2,,24,derived_from_whole_completed_year_age
+P007358,3-48-016-0032,481,Эмилия Дравинская,2,,24,derived_from_whole_completed_year_age
+P007374,3-48-028-0048,482,Алексей Гаврилов,2,,24,derived_from_whole_completed_year_age
+P007389,3-48-038-0063,483,Авдотья Бондаренко,2,,24,derived_from_whole_completed_year_age
+P007400,3-49-001-0003,483,Александр Евсеев,2,,24,derived_from_whole_completed_year_age
+P007404,3-49-002-0007,483,Наталья Гельвиг,2,,24,derived_from_whole_completed_year_age

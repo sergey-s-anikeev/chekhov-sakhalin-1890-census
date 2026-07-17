@@ -1,0 +1,23 @@
+{
+  "source": "data\\staging\\items7_8_age_followup_20260715\\clean_sakhalin_1890_ru_v3_20260712_items7_8_staged_v3.csv",
+  "staged_output": "data\\staging\\origin_place_item12_20260715\\clean_sakhalin_1890_ru_v3_20260712_items7_8_item12_staged.csv",
+  "row_count": 7446,
+  "source_column_count": 32,
+  "staged_column_count": 33,
+  "origin_place_preserved": true,
+  "approved_mapping_distinct_values": 109,
+  "unmapped_records": 0,
+  "origin_place_norm_blank_records": 838,
+  "records_where_normalized_differs_from_source": 128,
+  "non_target_changes": 0,
+  "classification_record_counts": {
+    "blank": 838,
+    "exceptional_non_administrative": 1314,
+    "foreign_state": 3,
+    "foreign_subjecthood": 12,
+    "imperial_territory": 31,
+    "russian_administrative": 5135,
+    "transit": 113
+  },
+  "canonical_data_modified": false
+}
