@@ -1,0 +1,5 @@
+person_id,match_name_raw,new_name_raw,new_name_alias,first_name,patronymic_name,last_name,review_reason
+P002626,Алексейандр Нездаеволиев,Александр Нездолиев,,Александр,,Нездолиев,Owner corrected name_raw and confirmed first plus last
+P002628,Алексейандр Михаилов Богавец,Александр Михаилов Богавец,,Александр,Михаилов,Богавец,Owner corrected name_raw and confirmed first patronymic last
+P003385,Варвара Иларионаова Портникова,Варвара Иларионова Портникова,,Варвара,Иларионова,Портникова,Owner corrected name_raw patronymic spelling
+P006779,Кирилл Антоновисимов Анисимов,Кирилл Анисимов Анисимов,,Кирилл,Анисимов,Анисимов,Owner corrected name_raw patronymic spelling

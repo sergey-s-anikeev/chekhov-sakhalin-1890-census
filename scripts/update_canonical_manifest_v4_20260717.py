@@ -19,6 +19,7 @@ V4_SUPPORT = [
     ("scripts/build_canonical_v4_20260717.py", "Canonical v4 consolidation script", "Reconciles approved staged branches and writes district and combined v4 files."),
     ("outputs/qa/canonical_v4_20260717/canonical_v4_qa_report.json", "Canonical v4 machine-readable QA report", "All integrated hard checks passed."),
     ("outputs/qa/canonical_v4_20260717/canonical_v4_hashes.csv", "Canonical v4 release hash table", "SHA-256 hashes for all four v4 processed datasets."),
+    ("docs/field_type_specification.md", "Canonical field type and number-format specification", "Documents and re-verifies completed Item 6 requirements for canonical v4."),
 ]
 DOC_PATHS = {
     "docs/data_dictionary.md",

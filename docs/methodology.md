@@ -97,7 +97,7 @@ The final merged record count is **7,446**.
 
 `person_id` is reassigned globally from `P000001` to `P007446`. `source_position_id` remains the stable source-navigation identifier.
 
-The `v3_20260712` canonical release uses a 31-column schema. It replaces `household_number` with owner-reviewed `household_id`, `household_type`, and `household_details`, and adds the approved derived fields `legal_status_norm`, `sex`, `sex_evidence`, `family_status_norm`, and `illness_norm`. Detailed source-derived fields remain present alongside analytical fields.
+The current `v5_20260731` canonical release uses a 50-column schema. It preserves the 36-column v4 analytical structure, incorporates the approved Item 24 comment corrections, and adds 14 reviewed name-component and provenance fields. Detailed source-derived fields remain present alongside analytical and audit fields. Canonical v4 remains unchanged as a historical release.
 
 ## Source Field Mapping
 

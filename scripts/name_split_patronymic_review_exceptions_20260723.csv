@@ -1,0 +1,12 @@
+person_id,match_name_raw,match_name_alias,first_name,patronymic_name,last_name,parse_rule,review_reason
+P002626,Александр Нездолиев,,Александр,,Нездолиев,reviewed_name_raw_and_split,Owner corrected name_raw and confirmed first plus last
+P002628,Александр Михаилов Богавец,,Александр,Михаилов,Богавец,reviewed_name_raw_and_split,Owner corrected name_raw and confirmed first patronymic last
+P003385,Варвара Иларионова Портникова,,Варвара,Иларионова,Портникова,reviewed_name_raw_and_split,Owner corrected patronymic spelling
+P006779,Кирилл Анисимов Анисимов,,Кирилл,Анисимов,Анисимов,reviewed_name_raw_and_split,Owner corrected patronymic spelling
+P005130,Габо Гаджи Швили,,Габо,,Гаджи Швили,reviewed_first_compound_last,Owner confirmed first plus compound last name
+P005131,Никола Кехо Швили,,Никола,,Кехо Швили,reviewed_first_compound_last,Owner confirmed first plus compound last name
+P005664,Марианна Короха Швилли,,Марианна,,Короха Швили,reviewed_first_compound_last,Owner confirmed first plus compound last name and reviewed surname spelling
+P004496,Кют Андрес Генрих,,Андрес Генрих,,Кют,reviewed_last_compound_first,Owner confirmed last plus compound first name
+P005396,Человек неизвестного звания,,,,,reviewed_unknown_no_components,Owner confirmed descriptor contains no personal-name components
+P003135,Лея Пермут Броха,,Лея Пермут,,Броха,reviewed_jewish_compound_first,Restored owner-approved Jewish-name split from 200-record review
+P004116,Сарра Хаса Абезгауз,,Сара Хаса,,Абезгауз,reviewed_jewish_compound_first,Restored owner-corrected Jewish-name split from 200-record review

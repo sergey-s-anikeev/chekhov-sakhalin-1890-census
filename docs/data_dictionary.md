@@ -8,7 +8,7 @@ Chekhov Sakhalin 1890 Census Data Analysis
 
 Clean Russian master dataset for the reviewed 1890 Sakhalin census extraction.
 
-Current canonical release: `v4_20260717`. It contains 36 columns and consolidates all owner-approved normalization and quality-review items through Item 23.
+Current canonical release: `v5_20260731`. It contains 50 columns, preserves the v4 analytical schema, incorporates the 56 approved Item 24 comment corrections, and adds the fully reviewed name-component and parsing-provenance fields.
 
 One row represents one named person record.
 
@@ -49,15 +49,33 @@ Individual person record.
 | `age_months` | integer | Total completed months for ages 0–2 in the latest staged schema. Explicit precise source values take precedence; when only `age = 1` or `2` is recorded, derive `12` or `24`. | `19` |
 | `religion` | string | Confession/religion from field `6.` | `Православное` |
 | `origin_place` | string | Place of origin from field `7.`, normalized and reviewed at district level. | `Смоленская губерния` |
+| `origin_place_norm` | string | Approved analytical origin-place value with reviewed spelling and grouping. | `Смоленская губерния` |
 | `arrival_year` | integer | Year of arrival from field `8.` when present. | `1885` |
 | `occupation` | string | Occupation or activity from field `9.` | `Каменный уголь` |
+| `occupation_norm` | string | Approved Sentence case analytical occupation value. | `Каменный уголь` |
 | `literacy` | string | Sentence-case literacy category from field `10.` | `Грамотен` |
 | `marriage_status` | string | Marriage status from field `11.`, with explanatory details moved to `comments` where reviewed. | `женат на родине` |
+| `marriage_status_norm` | string | Approved analytical marriage-status category. | `Женат на родине` |
+| `living_alone_status` | string | Approved explicit living-alone indicator; blank unless documented. | `Одинок` |
 | `allowance_status` | string | Allowance status from field `12.`, normalized from `Да/Нет` to `TRUE/FALSE`. | `TRUE` |
 | `illness` | string | Illness or condition from field `13.` | `Хронический катар желудка и кишок` |
 | `illness_norm` | string | Approved Sentence case analytical condition; compound categories use `; `. | `Слепота` |
 | `comments` | string | Source field `14.` and other reviewed explanatory notes. | `6 месяцев` |
 | `notes_raw` | string | Archive reference, normalized but preserved. | `РГБ № 2010` |
+| `first_name` | string | Owner-reviewed or deterministically observed given-name component. | `Иван` |
+| `patronymic_name` | string | Owner-reviewed or directly observed patronymic component; blank where no approved patronymic is present. | `Петров` |
+| `last_name` | string | Owner-reviewed or deterministically observed surname component. | `Марин` |
+| `first_name_source` | string | Provenance for `first_name`, such as `observed` or `reviewed_exception`. | `observed` |
+| `patronymic_source` | string | Provenance for `patronymic_name`; blank whenever the component is blank. | `reviewed_exception` |
+| `last_name_source` | string | Provenance for `last_name`, such as `observed` or `reviewed_exception`. | `observed` |
+| `parse_status` | string | Final name-structure status. Canonical v5 contains `observed` only. | `observed` |
+| `parse_confidence` | string | Confidence assigned by the reviewed parsing workflow. | `high` |
+| `parse_rule` | string | Deterministic or owner-reviewed rule producing the final component structure. | `three_token_deterministic` |
+| `name_order_detected` | string | Observed or reviewed source-token order. | `first_patronymic_last` |
+| `naming_model` | string | Documented naming tradition used for conservative parsing. | `russian_historical` |
+| `manual_review_reason` | string | Audit note for records resolved through explicit manual review. | `Owner-approved last-name book discrepancy review` |
+| `patronymic_name_proposed` | string | Proposal-audit field; blank for every resolved canonical v5 record. |  |
+| `proposal_rule` | string | Proposal-rule audit field; blank for every resolved canonical v5 record. |  |
 
 ---
 
@@ -72,7 +90,7 @@ Individual person record.
 - Explicit ages below one month map to `age = 0`, `age_months = 0`; four weeks maps to one completed month.
 - The Item 23 affected-record inventory distinguishes whole-year-derived values from source-precise values.
 
-These rules are incorporated into canonical release `v4_20260717`.
+These rules are incorporated into canonical release `v5_20260731` and retained from v4.
 
 ---
 

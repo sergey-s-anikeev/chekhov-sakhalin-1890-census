@@ -1,0 +1,28 @@
+person_id,match_name_raw,match_name_alias,first_name,patronymic_name,last_name,parse_rule,review_reason
+P000760,Наполеон Станислав Лисовский,,Наполеон Станислав,,Лисовский,reviewed_compound_first_name,Owner-reviewed Polish/Catholic double given name
+P001550,Август Вильгельм Генрих Меллартек,,Август Вильгельм Генрих,,Меллартек,reviewed_compound_first_name,Owner-reviewed non-Russian triple given name
+P002141,Пен-Оги-Цой,,,,Пен-Оги-Цой,reviewed_single_token_surname,Owner-reviewed Korean/Chinese compound surname
+P002237,Пинкус Николай Когальницкий,,Пинкус,,Когальницкий,reviewed_infant_name_exception,Owner-reviewed exceptional name structure
+P004448,Консультана Копкиева,Пелагея Васильева,Пелагея,,Васильева,reviewed_alias_as_primary,Owner selected the reviewed alias as the analytical primary name
+P004671,Осип Каспер Целяк,Цисляк,Осип Каспер,,Целяк,reviewed_compound_first_name,Owner normalization indicates a Catholic double given name and separate surname alias
+P000576,Ян Генрих Биндер,,Ян Генрих,,Биндер,reviewed_compound_first_name,Owner-reviewed Catholic double given name in 200-record sample
+P001351,Замель Ян Радзин,,Замель Ян,,Радзин,reviewed_compound_first_name,Owner-reviewed Lutheran double given name in 200-record sample
+P005169,Мац Иоганов Лектор Лехтола,,Мац Иоганов Лектор,,Лехтола,reviewed_compound_first_name,Owner-reviewed Lutheran triple given name in 200-record sample
+P000072,Юрий Юган Юркаш,,Юрий Юган,,Юркаш,reviewed_compound_first_name,Owner approved targeted Lutheran compound given name
+P000577,Карл Бухгар Лесин,,Карл Бухгар,,Лесин,reviewed_compound_first_name,Owner approved targeted Lutheran compound given name
+P000578,Юган Фридрих Тайблер,,Юган Фридрих,,Тайблер,reviewed_compound_first_name,Owner approved targeted Lutheran compound given name
+P001156,Мариана Корнацкая,,Мариана,,Корнацкая,reviewed_manual_split,Owner removed repeated surname
+P001196,Франц Бевентора Москва,,Франц Бевентора,,Москва,reviewed_compound_first_name,Owner approved targeted Catholic compound given name
+P001217,Отто Фердинант Вильберг,Отто Фердинадович Витберг,Отто Фердинант,,Вильберг,reviewed_compound_first_name,Owner approved split and alternate full name
+P001388,Фриц Фриц Брювер,,Фриц Фриц,,Брювер,reviewed_compound_first_name,Owner approved targeted Lutheran compound given name
+P001624,Ирина Башинская,Анеля Башинская,Ирина,,Башинская,reviewed_manual_split,Owner moved alternate name to name_alias
+P002972,Матис Гавриельсон Антило,,Матис Гавриельсон,,Антило,reviewed_compound_first_name,Owner approved targeted Lutheran compound given name
+P004688,Ян Вонторок,,Ян,,Вонторок,reviewed_manual_split,Owner removed repeated surname
+P004707,Марианна Веселовская,Сикорска,Марианна,,Веселовская,reviewed_manual_split,Owner moved maiden name to name_alias
+P004723,Евва Каменская,Милевска,Евва,,Каменская,reviewed_manual_split,Owner moved maiden name to name_alias
+P004857,Ян Лель Юоло,,Ян Лель,,Юоло,reviewed_compound_first_name,Owner approved targeted Lutheran compound given name
+P004998,Станислава Агдовская,Агдовская Агда,Станислава,,Агдовская,reviewed_manual_split,Owner supplied reviewed alias and primary surname
+P005000,Елизавета Пульфус,Гауптов,Елизавета,,Пульфус,reviewed_manual_split,Owner moved maiden name to name_alias
+P000144,Федор Иван Храпылин,,Федор,Иванов,Храпылин,reviewed_short_patronymic,Owner approved historical short patronymic
+P000229,Григорий Иван Шевцов,,Григорий,Иванов,Шевцов,reviewed_short_patronymic,Owner approved historical short patronymic
+P002858,Алексей Алексей Труленко,,Алексей,Алексеев,Труленко,reviewed_short_patronymic,Owner approved historical short patronymic

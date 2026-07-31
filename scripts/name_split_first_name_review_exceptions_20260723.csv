@@ -1,0 +1,8 @@
+person_id,match_name_raw,match_name_alias,first_name,patronymic_name,last_name,parse_rule,review_reason
+P002785,N. N. Кестлер,,,,Кестлер,reviewed_placeholder_last_only,Owner removed placeholder first and patronymic values
+P002795,N. N. Зихер,,,,Зихер,reviewed_placeholder_last_only,Owner removed placeholder first and patronymic values
+P002802,N. N. Дудникова,,,,Дудникова,reviewed_placeholder_last_only,Owner removed placeholder first and patronymic values
+P002881,N. N. Генальский,,,,Генальский,reviewed_placeholder_last_only,Owner removed placeholder first and patronymic values
+P000835,Николая Петров,,Николай,,Петров,reviewed_first_name_correction,Owner corrected analytical first name
+P001260,Петров Аверьянов Свистов,,Петр,Аверьянов,Свистов,reviewed_first_name_correction,Owner corrected analytical first name
+P004361,Степанов Александров Низов,,Степан,Александров,Низов,reviewed_first_name_correction,Owner corrected analytical first name

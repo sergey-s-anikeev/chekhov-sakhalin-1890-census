@@ -1,0 +1,14 @@
+person_id,match_name_raw,match_name_alias,first_name,patronymic_name,last_name,parse_rule,review_reason
+P001753,Арутинов,,,,Арутинов,reviewed_single_token_last,Owner reviewed ambiguous single-token record and accepted current last_name
+P002580,Скрупский,,,,Скрупский,reviewed_single_token_last,Owner reviewed ambiguous single-token record and accepted current last_name
+P002654,Домбровский,,,,Домбровский,reviewed_single_token_last,Owner reviewed ambiguous single-token record and accepted current last_name
+P002655,Томашевский,,,,Томашевский,reviewed_single_token_last,Owner reviewed ambiguous single-token record and accepted current last_name
+P002789,Жданов,,,,Жданов,reviewed_single_token_last,Owner reviewed ambiguous single-token record and accepted current last_name
+P002790,Жданова,,,,Жданова,reviewed_single_token_last,Owner reviewed ambiguous single-token record and accepted current last_name
+P006155,Воскобойников,,,,Воскобойников,reviewed_single_token_last,Owner reviewed ambiguous single-token record and accepted current last_name
+P006156,Микулин,,,,Микулин,reviewed_single_token_last,Owner reviewed ambiguous single-token record and accepted current last_name
+P006157,Рубцов,,,,Рубцов,reviewed_single_token_last,Owner reviewed ambiguous single-token record and accepted current last_name
+P006229,Фоменко,,,,Фоменко,reviewed_single_token_last,Owner reviewed ambiguous single-token record and accepted current last_name
+P006308,Басовский,,,,Басовский,reviewed_single_token_last,Owner reviewed ambiguous single-token record and accepted current last_name
+P006309,Мочихов,,,,Мочихов,reviewed_single_token_last,Owner reviewed ambiguous single-token record and accepted current last_name
+P006531,Орехов,,,,Орехов,reviewed_single_token_last,Owner reviewed ambiguous single-token record and accepted current last_name

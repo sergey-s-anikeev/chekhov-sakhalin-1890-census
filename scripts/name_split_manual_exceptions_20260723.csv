@@ -1,0 +1,80 @@
+﻿person_id,match_name_raw,match_name_alias,first_name,patronymic_name,last_name,parse_rule,review_reason
+P000076,Биби Валеева Багманова,,Биби Валеева,,Багманова,reviewed_muslim_first_last,Owner-reviewed Muslim name split in full-dataset manual review
+P000098,Мамет Таги Хан,,,,Мамет Таги Хан,reviewed_muslim_unsplit_as_last,Owner-reviewed Muslim name split in full-dataset manual review
+P000124,Оглы Мула-Латиф Пир-Мурат,,,,Оглы Мула-Латиф Пир-Мурат,reviewed_muslim_unsplit_as_last,Owner-reviewed Muslim name split in full-dataset manual review
+P000166,Оглы Мула Шах Мамет Гаджи Зюльгуфар,,,,Оглы Мула Шах Мамет Гаджи Зюльгуфар,reviewed_muslim_unsplit_as_last,Owner-reviewed Muslim name split in full-dataset manual review
+P000172,Мамет Ирза Оглы Кербалай,,,,Мамет Ирза Оглы Кербалай,reviewed_muslim_unsplit_as_last,Owner-reviewed Muslim name split in full-dataset manual review
+P000254,Оглы Юсуф Ага-Киши,,,,Оглы Юсуф Ага-Киши,reviewed_muslim_unsplit_as_last,Owner-reviewed Muslim name split in full-dataset manual review
+P000255,Курбан Кизы Гульфара,,,,Курбан Кизы Гульфара,reviewed_muslim_unsplit_as_last,Owner-reviewed Muslim name split in full-dataset manual review
+P000256,Тели Кельбалай Габдула Кази,,,,Тели Кельбалай Габдула Кази,reviewed_muslim_unsplit_as_last,Owner-reviewed Muslim name split in full-dataset manual review
+P000273,Вас Хасан Мамет,,,,Вас Хасан Мамет,reviewed_muslim_unsplit_as_last,Owner-reviewed Muslim name split in full-dataset manual review
+P000610,Нагатора Юсупова Шарапова,,Нагатора Юсупова,,Шарапова,reviewed_muslim_first_last,Owner-reviewed Muslim name split in full-dataset manual review
+P000611,Махмет Имьмурат Шихмурад Мугаметов,,Махмет Имьмурат Шихмурад,,Мугаметов,reviewed_muslim_first_last,Owner-reviewed Muslim name split in full-dataset manual review
+P000703,Асли Ахмет Кизы,,,,Асли Ахмет Кизы,reviewed_muslim_unsplit_as_last,Owner-reviewed Muslim name split in full-dataset manual review
+P000817,Оглы Адам Мурат,,,,Оглы Адам Мурат,reviewed_muslim_unsplit_as_last,Owner-reviewed Muslim name split in full-dataset manual review
+P001000,Ага Бала Сефер Оглы,,,,Ага Бала Сефер Оглы,reviewed_muslim_unsplit_as_last,Owner-reviewed Muslim name split in full-dataset manual review
+P001001,Кизы Пари Джан-Рустам,,,,Кизы Пари Джан-Рустам,reviewed_muslim_unsplit_as_last,Owner-reviewed Muslim name split in full-dataset manual review
+P001121,Шах Базу Беков,,,,Шах Базу Беков,reviewed_muslim_unsplit_as_last,Owner-reviewed Muslim name split in full-dataset manual review
+P001122,Доста Амир Гизы,,,,Доста Амир Гизы,reviewed_muslim_unsplit_as_last,Owner-reviewed Muslim name split in full-dataset manual review
+P001127,Оглы Муса Абар Мешади,,,,Оглы Муса Абар Мешади,reviewed_muslim_unsplit_as_last,Owner-reviewed Muslim name split in full-dataset manual review
+P001344,Ширипей Касым Ге,,,,Ширипей Касым Ге,reviewed_muslim_unsplit_as_last,Owner-reviewed Muslim name split in full-dataset manual review
+P001345,Байрам,,Байрам,,,reviewed_muslim_first_only,Owner-reviewed Muslim name split in full-dataset manual review
+P001367,Оглы Мамет Рагим Абдурахман Мешади Абдул Оглы,,,,Оглы Мамет Рагим Абдурахман Мешади Абдул Оглы,reviewed_muslim_unsplit_as_last,Owner-reviewed Muslim name split in full-dataset manual review
+P001654,Оглы Фереч Кербанай-Самет,,,,Оглы Фереч Кербанай-Самет,reviewed_muslim_unsplit_as_last,Owner-reviewed Muslim name split in full-dataset manual review
+P001738,Шарипов Хай Рахман,,,,Шарипов Хай Рахман,reviewed_muslim_unsplit_as_last,Owner-reviewed Muslim name split in full-dataset manual review
+P001739,Шарипова Алтун Бекс,,,,Шарипова Алтун Бекс,reviewed_muslim_unsplit_as_last,Owner-reviewed Muslim name split in full-dataset manual review
+P001853,Айбуруш,,Айбуруш,,,reviewed_muslim_first_only,Owner-reviewed Muslim name split in full-dataset manual review
+P001854,Куты Хаджилов Мирзабир,,Мирзабир,,Куты Хаджилов,reviewed_muslim_first_last,Owner-reviewed Muslim name split in full-dataset manual review
+P001856,Куты Хаджилов Ильчи Бек,,Ильчи Бек,,Куты Хаджилов,reviewed_muslim_first_last,Owner-reviewed Muslim name split in full-dataset manual review
+P001857,Ульбигол Куты Хадживилова,,Ульбигол,,Куты Хадживилова,reviewed_muslim_first_last,Owner-reviewed Muslim name split in full-dataset manual review
+P001858,Бубукамага Куты Хадживилов,,Бубукамага,,Куты Хадживилов,reviewed_muslim_first_last,Owner-reviewed Muslim name split in full-dataset manual review
+P001891,Оглы Али-Яр Ага-Али,,,,Оглы Али-Яр Ага-Али,reviewed_muslim_unsplit_as_last,Owner-reviewed Muslim name split in full-dataset manual review
+P001892,Аванесса Кири Миладгим,,,,Аванесса Кири Миладгим,reviewed_muslim_unsplit_as_last,Owner-reviewed Muslim name split in full-dataset manual review
+P002158,Мустафа Ахмет Оглы,,,,Мустафа Ахмет Оглы,reviewed_muslim_unsplit_as_last,Owner-reviewed Muslim name split in full-dataset manual review
+P002161,Оглы Нефтали Мустафа Али,,,,Оглы Нефтали Мустафа Али,reviewed_muslim_unsplit_as_last,Owner-reviewed Muslim name split in full-dataset manual review
+P002181,Оглы-Вали-Мамет-Али,,,,Оглы-Вали-Мамет-Али,reviewed_muslim_unsplit_as_last,Owner-reviewed Muslim name split in full-dataset manual review
+P002187,Оглы-Абюш-Гюли,,,,Оглы-Абюш-Гюли,reviewed_muslim_unsplit_as_last,Owner-reviewed Muslim name split in full-dataset manual review
+P002247,Оглы Дшемшут Муса,,,,Оглы Дшемшут Муса,reviewed_muslim_unsplit_as_last,Owner-reviewed Muslim name split in full-dataset manual review
+P002453,Оглы-Ивезели-Касем,,,,Оглы-Ивезели-Касем,reviewed_muslim_unsplit_as_last,Owner-reviewed Muslim name split in full-dataset manual review
+P002646,Хиль Баба Абрусолева,,Хиль Баба,,Абрусолева,reviewed_muslim_first_last,Owner-reviewed Muslim name split in full-dataset manual review
+P002647,Магомед Ярд Бахтиаров,,Магомед Ярд,,Бахтиаров,reviewed_muslim_first_last,Owner-reviewed Muslim name split in full-dataset manual review
+P002820,Илья Зердин Байбиков,,Илья Зердин,,Байбиков,reviewed_muslim_first_last,Owner-reviewed Muslim name split in full-dataset manual review
+P002889,Оглы Асан Ахпер,,,,Оглы Асан Ахпер,reviewed_muslim_unsplit_as_last,Owner-reviewed Muslim name split in full-dataset manual review
+P002920,Гюль Мирза Мешеди Мелик,,,,Гюль Мирза Мешеди Мелик,reviewed_muslim_unsplit_as_last,Owner-reviewed Muslim name split in full-dataset manual review
+P002928,Мамед Оглы Камбар,,,,Мамед Оглы Камбар,reviewed_muslim_unsplit_as_last,Owner-reviewed Muslim name split in full-dataset manual review
+P003020,Оглы Тухватула Мирек Хан,,,,Оглы Тухватула Мирек Хан,reviewed_muslim_unsplit_as_last,Owner-reviewed Muslim name split in full-dataset manual review
+P003054,Оглы Мешади Джафар,,,,Оглы Мешади Джафар,reviewed_muslim_unsplit_as_last,Owner-reviewed Muslim name split in full-dataset manual review
+P003055,Оглы Мырза Мамед Сулейман,,,,Оглы Мырза Мамед Сулейман,reviewed_muslim_unsplit_as_last,Owner-reviewed Muslim name split in full-dataset manual review
+P003163,Агап Абдул Аркеев,,Агап Абдул,,Аркеев,reviewed_muslim_first_last,Owner-reviewed Muslim name split in full-dataset manual review
+P003164,Мохсиме Мефти Хотин,,,,Мохсиме Мефти Хотин,reviewed_muslim_unsplit_as_last,Owner-reviewed Muslim name split in full-dataset manual review
+P003449,Оглы Рахматула Кадъяс,,,,Оглы Рахматула Кадъяс,reviewed_muslim_unsplit_as_last,Owner-reviewed Muslim name split in full-dataset manual review
+P003792,Оглы Наджемедин Косум,,,,Оглы Наджемедин Косум,reviewed_muslim_unsplit_as_last,Owner-reviewed Muslim name split in full-dataset manual review
+P003814,Оглы Мир Михти Мир,,,,Оглы Мир Михти Мир,reviewed_muslim_unsplit_as_last,Owner-reviewed Muslim name split in full-dataset manual review
+P003942,Оглы Ибрагим Кули,,,,Оглы Ибрагим Кули,reviewed_muslim_unsplit_as_last,Owner-reviewed Muslim name split in full-dataset manual review
+P004007,Кали Мула Симбаев,,Кали Мула,,Симбаев,reviewed_muslim_first_last,Owner-reviewed Muslim name split in full-dataset manual review
+P004613,Бацай Мангаева Мутуш,,,,Бацай Мангаева Мутуш,reviewed_muslim_unsplit_as_last,Owner-reviewed Muslim name split in full-dataset manual review
+P004617,Оглы Маходым Мола Керым,,,,Оглы Маходым Мола Керым,reviewed_muslim_unsplit_as_last,Owner-reviewed Muslim name split in full-dataset manual review
+P004618,Оглы Идрис Гафум Алияр,,,,Оглы Идрис Гафум Алияр,reviewed_muslim_unsplit_as_last,Owner-reviewed Muslim name split in full-dataset manual review
+P004619,Арап Хан Адам,,,,Арап Хан Адам,reviewed_muslim_unsplit_as_last,Owner-reviewed Muslim name split in full-dataset manual review
+P004620,Муса Омар Оглы,,,,Муса Омар Оглы,reviewed_muslim_unsplit_as_last,Owner-reviewed Muslim name split in full-dataset manual review
+P004694,Макни Галей Гамакберов,,Макни Галей,,Гамакберов,reviewed_muslim_first_last,Owner-reviewed Muslim name split in full-dataset manual review
+P004774,Саран Муфт Темериков,,Саран Муфт,,Темериков,reviewed_muslim_first_last,Owner-reviewed Muslim name split in full-dataset manual review
+P004938,Оглы Баладжа Керым,,,,Оглы Баладжа Керым,reviewed_muslim_unsplit_as_last,Owner-reviewed Muslim name split in full-dataset manual review
+P005148,Ким Магомет Шарафутдинов,Киль Магомет Шарафутдинов,Ким Магомет,,Шарафутдинов,reviewed_muslim_first_last,Owner-reviewed Muslim name split in full-dataset manual review
+P005157,Уоте Нор Магомет,,,,Уоте Нор Магомет,reviewed_muslim_unsplit_as_last,Owner-reviewed Muslim name split in full-dataset manual review
+P005663,Муса Пиев Фуражиев,,Муса Пиев,,Фуражиев,reviewed_muslim_first_last,Owner-reviewed Muslim name split in full-dataset manual review
+P005832,Оглы Мордан Курбан,,,,Оглы Мордан Курбан,reviewed_muslim_unsplit_as_last,Owner-reviewed Muslim name split in full-dataset manual review
+P005907,Минне Срур Садыкова,,Минне Срур,,Садыкова,reviewed_muslim_first_last,Owner-reviewed Muslim name split in full-dataset manual review
+P005967,Мустафа Оглы Хаджи,,,,Мустафа Оглы Хаджи,reviewed_muslim_unsplit_as_last,Owner-reviewed Muslim name split in full-dataset manual review
+P006005,Кадыча,,Кадыча,,,reviewed_muslim_first_only,Owner-reviewed Muslim name split in full-dataset manual review
+P006077,Мухамет Вали Галеев,,Мухамет Вали,,Галеев,reviewed_muslim_first_last,Owner-reviewed Muslim name split in full-dataset manual review
+P006098,Биби Галиме Ахметова,,Биби Галиме,,Ахметова,reviewed_muslim_first_last,Owner-reviewed Muslim name split in full-dataset manual review
+P006100,Ир Мухамет Назмудин,,Ир Мухамет,,Назмудин,reviewed_muslim_first_last,Owner-reviewed Muslim name split in full-dataset manual review
+P006101,Бахриамала,,Бахриамала,,,reviewed_muslim_first_only,Owner-reviewed Muslim name split in full-dataset manual review
+P006102,Минне Хан Назмудин,,Минне Хан,,Назмудин,reviewed_muslim_first_last,Owner-reviewed Muslim name split in full-dataset manual review
+P006103,Шахе Тин Назмудин,,Шахе Тин,,Назмудин,reviewed_muslim_first_last,Owner-reviewed Muslim name split in full-dataset manual review
+P006104,Магомет Тин Назмудин,,Магомет Тин,,Назмудин,reviewed_muslim_first_last,Owner-reviewed Muslim name split in full-dataset manual review
+P006106,Серви Земал Юсупова,,Серви Земал,,Юсупова,reviewed_muslim_first_last,Owner-reviewed Muslim name split in full-dataset manual review
+P006107,Бибифа Изе Юсупова,,Бибифа Изе,,Юсупова,reviewed_muslim_first_last,Owner-reviewed Muslim name split in full-dataset manual review
+P006899,Осмон Оглы Мирза,,,,Осмон Оглы Мирза,reviewed_muslim_unsplit_as_last,Owner-reviewed Muslim name split in full-dataset manual review
+P006903,Абу Талиб Оглы Тюльнар,,,,Абу Талиб Оглы Тюльнар,reviewed_muslim_unsplit_as_last,Owner-reviewed Muslim name split in full-dataset manual review

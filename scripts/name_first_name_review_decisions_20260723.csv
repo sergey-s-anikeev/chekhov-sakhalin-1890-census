@@ -1,0 +1,25 @@
+person_id,review_decision,reviewed_first_name,review_notes
+P002785,Correct,,leave only last_name; remove first_name and patronymic_name
+P002795,Correct,,leave only last_name; remove first_name and patronymic_name
+P002802,Correct,,leave only last_name; remove first_name and patronymic_name
+P002881,Correct,,leave only last_name; remove first_name and patronymic_name
+P002626,Correct,Александр,reviewed earlier; already applied
+P002628,Correct,Александр,reviewed earlier; already applied
+P004583,Keep current,Кирил,
+P004970,Keep current,Кирил,
+P001959,Keep current,Антрон,
+P000157,Keep current,Вик***,
+P000835,Correct,Николай,
+P000672,Keep current,Палагея,
+P002687,Keep current,Семенд,
+P006166,Keep current,Амалия,
+P000666,Keep current,Анастасия,
+P001002,Keep current,Иванес,
+P001646,Keep current,Иванис,
+P002191,Keep current,Ираида,
+P007199,Keep current,Кириан,
+P006493,Keep current,Лариса,
+P005788,Keep current,Март,
+P005773,Keep current,Надар,
+P001260,Correct,Петр,
+P004361,Correct,Степан,

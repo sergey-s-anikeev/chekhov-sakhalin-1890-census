@@ -47,3 +47,17 @@ The combined v4 dataset is the exact ordered concatenation of 2,884 Alexandrovsk
 Release QA confirms 36 fields; unique, formatted, and order-preserved identifiers; integer-or-blank numeric fields; valid age and arrival-year ranges; complete and internally consistent month values for ages 0–2; approved allowance values; Sentence case normalized categories; synchronization of all ten Item 3 legal-status corrections with `legal_status_norm`; and zero cross-field gender conflicts. The release also reconciles 274 approved comment changes and 18 unique late alias changes without branch conflicts.
 
 QA evidence, complete v3-to-v4 diffs, and SHA-256 hashes are stored in `outputs/qa/canonical_v4_20260717/`.
+
+## Post-v4 review status
+
+Item 24 comments review was completed on 2026-07-18. Its superseding v3 staged candidate retains 7,446 records and 36 columns and differs from canonical v4 in exactly 56 `comments` cells, with no schema, identifier, ordering, or other-field changes. These approved changes are incorporated into canonical v5.
+
+Item 25 occupation-semantic evaluation was reviewed and deferred without data changes for future English translation and gender-specific normalization work.
+
+## Canonical reviewed-name release v5
+
+The owner-authorized `v5_20260731` release retains all 7,446 records and established identifier order while expanding the schema from 36 to 50 columns. It incorporates the 56 approved Item 24 comment corrections and the completed reviewed-name workflow, including manual name splitting, first-name and patronymic review, the last-name book discrepancy decisions, and subsequent owner household corrections.
+
+Compared with v4, all records receive the new name-component audit structure. Existing v4 fields change only within the approved scope: 56 `comments`, 55 `name_raw`, and 39 `name_alias` values. The combined file remains the exact ordered concatenation of 2,884 Alexandrovsky, 3,242 Tymovsky, and 1,320 Korsakovsky records.
+
+Release QA confirms 50 fields; unique, formatted, and order-preserved identifiers; valid integer formats and ranges; complete age/month consistency; exact district slicing and concatenation; no unapproved changes to existing v4 fields; all 7,446 names resolved as `observed`; component/provenance consistency; no family-inferred name sources; no unresolved patronymic proposals; and zero first-name spelling candidates. Complete v4-to-v5 cell and record diffs and SHA-256 hashes are stored in `outputs/qa/canonical_v5_20260731/`.

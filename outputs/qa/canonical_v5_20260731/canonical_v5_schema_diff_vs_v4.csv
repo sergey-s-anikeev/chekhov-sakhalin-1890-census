@@ -1,0 +1,15 @@
+﻿change,field
+added,first_name
+added,patronymic_name
+added,last_name
+added,first_name_source
+added,patronymic_source
+added,last_name_source
+added,parse_status
+added,parse_confidence
+added,parse_rule
+added,name_order_detected
+added,naming_model
+added,manual_review_reason
+added,patronymic_name_proposed
+added,proposal_rule

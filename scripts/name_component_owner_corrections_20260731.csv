@@ -1,0 +1,3 @@
+﻿person_id,match_name_raw,match_name_alias,match_first_name,match_patronymic_name,match_last_name,new_name_alias,new_first_name,new_patronymic_name,new_last_name,review_reason
+P001396,Наталья Гавриловна Синицина,,Наталья,Гавриловна,Синицина,,Наталья,Гавриловна,Синицына,Owner corrected last_name from Синицина to Синицына
+P002542,Марфа Ипполитова,,Марфа,,Ипполитова,,Марфа,,Ипполитова,Owner confirmed patronymic_name is blank and last_name is Ипполитова

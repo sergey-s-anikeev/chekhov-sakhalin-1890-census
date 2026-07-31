@@ -1,0 +1,7 @@
+﻿person_id,match_name_raw,match_name_alias,match_first_name,match_patronymic_name,match_last_name,new_name_alias,new_first_name,new_patronymic_name,new_last_name,review_reason
+P005625,Федор Марин,,Федор,,Марин,Тодор,Федор,,Марин,Owner identified Тодор as alias_name for household head
+P005627,Пелагея Тодор,,Пелагея,,Тодор,,Пелагея,Тодор,Марина,Owner assigned Тодор as patronymic_name and Марина as last_name
+P005628,Алексей Тодор,,Алексей,,Тодор,,Алексей,Тодор,Марин,Owner assigned Тодор as patronymic_name and Марин as last_name
+P005629,Анисим Тодор,,Анисим,,Тодор,,Анисим,Тодор,Марин,Owner assigned Тодор as patronymic_name and Марин as last_name
+P005630,Марья Тодор,,Марья,,Тодор,,Марья,Тодор,Марина,Owner assigned Тодор as patronymic_name and Марина as last_name
+P005631,Василий Тодор,,Василий,,Тодор,,Василий,Тодор,Марин,Owner assigned Тодор as patronymic_name and Марин as last_name

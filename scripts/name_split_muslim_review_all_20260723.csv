@@ -1,0 +1,198 @@
+﻿person_id,match_name_raw,match_name_alias,first_name,patronymic_name,last_name,parse_rule,review_reason
+P000167,Шихова-Хан Бибиш,,,,Шихова-Хан Бибиш,reviewed_muslim_unsplit_as_last,Owner-approved complete Muslim-name re-review: Use full string as last
+P000274,Бердаю-Хайрина Ниса-Тилла,,,,Бердаю-Хайрина Ниса-Тилла,reviewed_muslim_unsplit_as_last,Owner-approved complete Muslim-name re-review: Use full string as last
+P000300,Абдул-Малик Джаксамбетов,,Абдул-Малик,,Джаксамбетов,reviewed_muslim_first_last,Owner-approved complete Muslim-name re-review: Approve current
+P000341,Тосны-Науми Алипина,,Тосны-Науми,,Алипина,reviewed_muslim_first_last,Owner-approved complete Muslim-name re-review: Approve current
+P000548,Махамет-Шахир Махумедьянов,,Махамет-Шахир,,Махумедьянов,reviewed_muslim_first_last,Owner-approved complete Muslim-name re-review: Approve current
+P001343,Багиш Касым-Оглы,,,,Багиш Касым-Оглы,reviewed_muslim_unsplit_as_last,Owner-approved complete Muslim-name re-review: Use full string as last
+P002024,Шай-Мирта Ула,,,,Шай-Мирта Ула,reviewed_muslim_unsplit_as_last,Owner-approved complete Muslim-name re-review: Use full string as last
+P002182,Зара-Пай Мерваева,,Зара-Пай,,Мерваева,reviewed_muslim_first_last,Owner-approved complete Muslim-name re-review: Approve current
+P002954,Мине-Галим Садыков,,Мине-Галим,,Садыков,reviewed_muslim_first_last,Owner-approved complete Muslim-name re-review: Approve current
+P003596,Оглы-Эфенди Ибрагим,,,,Оглы-Эфенди Ибрагим,reviewed_muslim_unsplit_as_last,Owner-approved complete Muslim-name re-review: Use full string as last
+P003598,Оглы-Мамет Тали-Кербалай,,,,Оглы-Мамет Тали-Кербалай,reviewed_muslim_unsplit_as_last,Owner-approved complete Muslim-name re-review: Use full string as last
+P006045,Курман-Гали Галимов,,,,Курман-Гали Галимов,reviewed_muslim_unsplit_as_last,Owner-approved complete Muslim-name re-review: Use full string as last
+P006900,Абыкизы Нась-Ханума,,,,Абыкизы Нась-Ханума,reviewed_muslim_unsplit_as_last,Owner-approved complete Muslim-name re-review: Use full string as last
+P000149,Наврус Русланов,,Наврус,,Русланов,reviewed_muslim_first_last,Owner-approved complete Muslim-name re-review: Approve current
+P000296,Ултамбай Джаксамбетов,,Ултамбай,,Джаксамбетов,reviewed_muslim_first_last,Owner-approved complete Muslim-name re-review: Approve current
+P000297,Батыма Джаксамбетова,,Батыма,,Джаксамбетова,reviewed_muslim_first_last,Owner-approved complete Muslim-name re-review: Approve current
+P000298,Сасена Джаксамбетова,,Сасена,,Джаксамбетова,reviewed_muslim_first_last,Owner-approved complete Muslim-name re-review: Approve current
+P000299,Махмет Джаксамбетов,,Махмет,,Джаксамбетов,reviewed_muslim_first_last,Owner-approved complete Muslim-name re-review: Approve current
+P000339,Кейзон Алипин,,Кейзон,,Алипин,reviewed_muslim_first_last,Owner-approved complete Muslim-name re-review: Approve current
+P000340,Зинаб Алипина,,Зинаб,,Алипина,reviewed_muslim_first_last,Owner-approved complete Muslim-name re-review: Approve current
+P000538,Сагды Саликов,,Сагды,,Саликов,reviewed_muslim_first_last,Owner-approved complete Muslim-name re-review: Approve current
+P000542,Ахматджан Багоманов,,Ахматджан,,Багоманов,reviewed_muslim_first_last,Owner-approved complete Muslim-name re-review: Approve current
+P000543,Валиула Ахмадулин,,Валиула,,Ахмадулин,reviewed_muslim_first_last,Owner-approved complete Muslim-name re-review: Approve current
+P000545,Невредин Сагитов,,Невредин,,Сагитов,reviewed_muslim_first_last,Owner-approved complete Muslim-name re-review: Approve current
+P000546,Шерифа Рахматова,,Шерифа,,Рахматова,reviewed_muslim_first_last,Owner-approved complete Muslim-name re-review: Approve current
+P000547,Джелемдин Сагитов,,Джелемдин,,Сагитов,reviewed_muslim_first_last,Owner-approved complete Muslim-name re-review: Approve current
+P000601,Кузакузанов Махмут,,Махмут,,Кузакузанов,reviewed_muslim_first_last,Owner-approved complete Muslim-name re-review: Correct split
+P000609,Бисали Курманов,,Бисали,,Курманов,reviewed_muslim_first_last,Owner-approved complete Muslim-name re-review: Approve current
+P000612,Зариф Гейзотов,,Зариф,,Гейзотов,reviewed_muslim_first_last,Owner-approved complete Muslim-name re-review: Approve current
+P000613,Маги Незамединова,,Маги,,Незамединова,reviewed_muslim_first_last,Owner-approved complete Muslim-name re-review: Approve current
+P000614,Гельмеддин Гейзотов,,Гельмеддин,,Гейзотов,reviewed_muslim_first_last,Owner-approved complete Muslim-name re-review: Approve current
+P000615,Хаснаддин Гейзотов,,Хаснаддин,,Гейзотов,reviewed_muslim_first_last,Owner-approved complete Muslim-name re-review: Approve current
+P000771,Садык Ефаев,,Садык,,Ефаев,reviewed_muslim_first_last,Owner-approved complete Muslim-name re-review: Approve current
+P000772,Возизя Ефаева,,Возизя,,Ефаева,reviewed_muslim_first_last,Owner-approved complete Muslim-name re-review: Approve current
+P001094,Ималетдин Кабаев,,Ималетдин,,Кабаев,reviewed_muslim_first_last,Owner-approved complete Muslim-name re-review: Approve current
+P001095,Заида Кабаева,,Заида,,Кабаева,reviewed_muslim_first_last,Owner-approved complete Muslim-name re-review: Approve current
+P001341,Ахмет Апашев,,Ахмет,,Апашев,reviewed_muslim_first_last,Owner-approved complete Muslim-name re-review: Approve current
+P001346,Асли Багиш,,,,Асли Багиш,reviewed_muslim_unsplit_as_last,Owner-approved complete Muslim-name re-review: Use full string as last
+P001347,Казим Багиш,,,,Казим Багиш,reviewed_muslim_unsplit_as_last,Owner-approved complete Muslim-name re-review: Use full string as last
+P001368,Намнат Измаилова,,Намнат,,Измаилова,reviewed_muslim_first_last,Owner-approved complete Muslim-name re-review: Approve current
+P001434,Гайфула Абубакиров,,Гайфула,,Абубакиров,reviewed_muslim_first_last,Owner-approved complete Muslim-name re-review: Approve current
+P001435,Ганоста Абубакирова,,Ганоста,,Абубакирова,reviewed_muslim_first_last,Owner-approved complete Muslim-name re-review: Approve current
+P001436,Верхониса Абубакирова,,Верхониса,,Абубакирова,reviewed_muslim_first_last,Owner-approved complete Muslim-name re-review: Approve current
+P001437,Зейнатула Абубакирова,,Зейнатула,,Абубакирова,reviewed_muslim_first_last,Owner-approved complete Muslim-name re-review: Approve current
+P001438,Зенайха Абубакирова,,Зенайха,,Абубакирова,reviewed_muslim_first_last,Owner-approved complete Muslim-name re-review: Approve current
+P001439,Гарафула Абубакиров,,Гарафула,,Абубакиров,reviewed_muslim_first_last,Owner-approved complete Muslim-name re-review: Approve current
+P001441,Гайнула Абубакирова,,Гайнула,,Абубакирова,reviewed_muslim_first_last,Owner-approved complete Muslim-name re-review: Approve current
+P001757,Абдул Кадыр,,,,Абдул Кадыр,reviewed_muslim_unsplit_as_last,Owner-approved complete Muslim-name re-review: Use full string as last
+P001851,Байдуло Тургаев,,Байдуло,,Тургаев,reviewed_muslim_first_last,Owner-approved complete Muslim-name re-review: Approve current
+P001852,Чупаев Давлега,,Давлега,,Чупаев,reviewed_muslim_first_last,Owner-approved complete Muslim-name re-review: Correct split
+P001855,Тейсма Хаджилова,,Тейсма,,Хаджилова,reviewed_muslim_first_last,Owner-approved complete Muslim-name re-review: Approve current
+P001859,Сабит Паскеев,,Сабит,,Паскеев,reviewed_muslim_first_last,Owner-approved complete Muslim-name re-review: Approve current
+P002022,Хасьянов Мерапежетин,,Мерапежетин,,Хасьянов,reviewed_muslim_first_last,Owner-approved complete Muslim-name re-review: Correct split
+P002023,Зелифа Хасьянова,,Зелифа,,Хасьянова,reviewed_muslim_first_last,Owner-approved complete Muslim-name re-review: Approve current
+P002025,Ямана Мирта,,,,Ямана Мирта,reviewed_muslim_unsplit_as_last,Owner-approved complete Muslim-name re-review: Use full string as last
+P002100,Мустафа Якшимеев,,Мустафа,,Якшимеев,reviewed_muslim_first_last,Owner-approved complete Muslim-name re-review: Approve current
+P002159,Почедада Мители,,,,Почедада Мители,reviewed_muslim_unsplit_as_last,Owner-approved complete Muslim-name re-review: Use full string as last
+P002183,Мемади Али,,Мемади Али,,,reviewed_muslim_first_only,Owner-approved complete Muslim-name re-review: Correct split
+P002457,Хамой Даипов,,Хамой,,Даипов,reviewed_muslim_first_last,Owner-approved complete Muslim-name re-review: Approve current
+P002645,Мухамедьян Бахтиаров,,Мухамедьян,,Бахтиаров,reviewed_muslim_first_last,Owner-approved complete Muslim-name re-review: Approve current
+P002818,Хисамедин Байбиков,,Хисамедин,,Байбиков,reviewed_muslim_first_last,Owner-approved complete Muslim-name re-review: Approve current
+P002819,Лидина Байбикова,,Лидина,,Байбикова,reviewed_muslim_first_last,Owner-approved complete Muslim-name re-review: Approve current
+P002821,Хабениса Сайфулина,,Хабениса,,Сайфулина,reviewed_muslim_first_last,Owner-approved complete Muslim-name re-review: Approve current
+P002822,Рахим Юсупов,,Рахим,,Юсупов,reviewed_muslim_first_last,Owner-approved complete Muslim-name re-review: Approve current
+P002823,Бипкай Юсупова,,Бипкай,,Юсупова,reviewed_muslim_first_last,Owner-approved complete Muslim-name re-review: Approve current
+P002890,Машед Беляр,,,,Машед Беляр,reviewed_muslim_unsplit_as_last,Owner-approved complete Muslim-name re-review: Use full string as last
+P002918,Незамутдин Темершин,,,,Незамутдин Темершин,reviewed_muslim_unsplit_as_last,Owner-approved complete Muslim-name re-review: Use full string as last
+P002927,Саид Мамет,,,,Саид Мамет,reviewed_muslim_unsplit_as_last,Owner-approved complete Muslim-name re-review: Use full string as last
+P002929,Мешеди Алинбек,,,,Мешеди Алинбек,reviewed_muslim_unsplit_as_last,Owner-approved complete Muslim-name re-review: Use full string as last
+P002951,Абдул Садыков,,Абдул,,Садыков,reviewed_muslim_first_last,Owner-approved complete Muslim-name re-review: Approve current
+P002952,Галима Садыкова,,Галима,,Садыкова,reviewed_muslim_first_last,Owner-approved complete Muslim-name re-review: Approve current
+P002953,Халим Садыков,,Халим,,Садыков,reviewed_muslim_first_last,Owner-approved complete Muslim-name re-review: Approve current
+P002957,Мугдогала Болгинбала,,,,Мугдогала Болгинбала,reviewed_muslim_unsplit_as_last,Owner-approved complete Muslim-name re-review: Use full string as last
+P002958,Абас Мухамедьянов,,Абас,,Мухамедьянов,reviewed_muslim_first_last,Owner-approved complete Muslim-name re-review: Approve current
+P003023,Минзан Завадинов,,Минзан,,Завадинов,reviewed_muslim_first_last,Owner-approved complete Muslim-name re-review: Approve current
+P003588,Абдул Хамитов,,Абдул,,Хамитов,reviewed_muslim_first_last,Owner-approved complete Muslim-name re-review: Approve current
+P003589,Абдул Гинандин,,Абдул,,Гинандин,reviewed_muslim_first_last,Owner-approved complete Muslim-name re-review: Approve current
+P003590,Шамшонися Гымандин,,Шамшонися,,Гымандин,reviewed_muslim_first_last,Owner-approved complete Muslim-name re-review: Approve current
+P003789,Терти Эльмурзеев,,Терти,,Эльмурзеев,reviewed_muslim_first_last,Owner-approved complete Muslim-name re-review: Approve current
+P003790,Сулейман Аликбеков,,Сулейман,,Аликбеков,reviewed_muslim_first_last,Owner-approved complete Muslim-name re-review: Approve current
+P003791,Осман Умаров,,Осман,,Умаров,reviewed_muslim_first_last,Owner-approved complete Muslim-name re-review: Approve current
+P004612,Манга Мутуш,,Манга,,Мутуш,reviewed_muslim_first_last,Owner-approved complete Muslim-name re-review: Approve current
+P004918,Ибрагим Миндубаев,,Ибрагим,,Миндубаев,reviewed_muslim_first_last,Owner-approved complete Muslim-name re-review: Approve current
+P004919,Хаджар Альмухаметова,,Хаджар,,Альмухаметова,reviewed_muslim_first_last,Owner-approved complete Muslim-name re-review: Approve current
+P005358,Мухамедьян Мундыбаев,,Мухамедьян,,Мундыбаев,reviewed_muslim_first_last,Owner-approved complete Muslim-name re-review: Approve current
+P005365,Шарын Галеев,,Шарын,,Галеев,reviewed_muslim_first_last,Owner-approved complete Muslim-name re-review: Approve current
+P005518,Шамхудин Зубайров,,Шамхудин,,Зубайров,reviewed_muslim_first_last,Owner-approved complete Muslim-name re-review: Approve current
+P005828,Мустафа Непомнящий,,Мустафа,,Непомнящий,reviewed_muslim_first_last,Owner-approved complete Muslim-name re-review: Approve current
+P005833,Нематула Тураб,,,,Нематула Тураб,reviewed_muslim_unsplit_as_last,Owner-approved complete Muslim-name re-review: Use full string as last
+P005906,Заотин Садыков,,Заотин,,Садыков,reviewed_muslim_first_last,Owner-approved complete Muslim-name re-review: Approve current
+P005926,Хамотча Гарыпов,,Хамотча,,Гарыпов,reviewed_muslim_first_last,Owner-approved complete Muslim-name re-review: Approve current
+P005927,Хайриниса Гарыпова,,Хайриниса,,Гарыпова,reviewed_muslim_first_last,Owner-approved complete Muslim-name re-review: Approve current
+P005928,Ахматча Гарыпов,,Ахматча,,Гарыпов,reviewed_muslim_first_last,Owner-approved complete Muslim-name re-review: Approve current
+P005929,Фатима Гарыпова,,Фатима,,Гарыпова,reviewed_muslim_first_last,Owner-approved complete Muslim-name re-review: Approve current
+P005999,Мухтар Шамшутдинов,,Мухтар,,Шамшутдинов,reviewed_muslim_first_last,Owner-approved complete Muslim-name re-review: Approve current
+P006000,Хуснинир Шамшутдинова,,Хуснинир,,Шамшутдинова,reviewed_muslim_first_last,Owner-approved complete Muslim-name re-review: Approve current
+P006001,Берметин Шамшутдинов,,Берметин,,Шамшутдинов,reviewed_muslim_first_last,Owner-approved complete Muslim-name re-review: Approve current
+P006002,Бевинар Шамшутдинова,,Бевинар,,Шамшутдинова,reviewed_muslim_first_last,Owner-approved complete Muslim-name re-review: Approve current
+P006004,Бик Мухамет,,,,Бик Мухамет,reviewed_muslim_unsplit_as_last,Owner-approved complete Muslim-name re-review: Use full string as last
+P006006,Мине Хон,,Мине Хон,,,reviewed_muslim_first_only,Owner-approved complete Muslim-name re-review: Correct split
+P006007,Индер Хон,,Индер Хон,,,reviewed_muslim_first_only,Owner-approved complete Muslim-name re-review: Correct split
+P006043,Жамалетдин Галимов,,Жамалетдин,,Галимов,reviewed_muslim_first_last,Owner-approved complete Muslim-name re-review: Approve current
+P006044,Шарифа Галимова,,Шарифа,,Галимова,reviewed_muslim_first_last,Owner-approved complete Muslim-name re-review: Approve current
+P006063,Бетредин Сягитов,,Бетредин,,Сягитов,reviewed_muslim_first_last,Owner-approved complete Muslim-name re-review: Approve current
+P006064,Ферюза Сягитова,,Ферюза,,Сягитова,reviewed_muslim_first_last,Owner-approved complete Muslim-name re-review: Approve current
+P006065,Сагида Сягитова,,Сагида,,Сягитова,reviewed_muslim_first_last,Owner-approved complete Muslim-name re-review: Approve current
+P006094,Гильман Гильманов,,Гильман,,Гильманов,reviewed_muslim_first_last,Owner-approved complete Muslim-name re-review: Approve current
+P006095,Зайдула Зайнулин,,Зайдула,,Зайнулин,reviewed_muslim_first_last,Owner-approved complete Muslim-name re-review: Approve current
+P006096,Закир Ахметов,,Закир,,Ахметов,reviewed_muslim_first_last,Owner-approved complete Muslim-name re-review: Approve current
+P006097,Гарифа Ахметова,,Гарифа,,Ахметова,reviewed_muslim_first_last,Owner-approved complete Muslim-name re-review: Approve current
+P006099,Закизян Ахметов,,Закизян,,Ахметов,reviewed_muslim_first_last,Owner-approved complete Muslim-name re-review: Approve current
+P006105,Якуб Юсупов,,Якуб,,Юсупов,reviewed_muslim_first_last,Owner-approved complete Muslim-name re-review: Approve current
+P006108,Эюб Юсупов,,Эюб,,Юсупов,reviewed_muslim_first_last,Owner-approved complete Muslim-name re-review: Approve current
+P006109,Беузе Юсупова,,Беузе,,Юсупова,reviewed_muslim_first_last,Owner-approved complete Muslim-name re-review: Approve current
+P006711,Садык Гафузов,,Садык,,Гафузов,reviewed_muslim_first_last,Owner-approved complete Muslim-name re-review: Approve current
+P006722,Займетдин Хасметдинов,,Займетдин,,Хасметдинов,reviewed_muslim_first_last,Owner-approved complete Muslim-name re-review: Approve current
+P006901,Сона Абыкизы,,,,Сона Абыкизы,reviewed_muslim_unsplit_as_last,Owner-approved complete Muslim-name re-review: Use full string as last
+P006945,Мугамет Мактусов,,Мугамет,,Мактусов,reviewed_muslim_first_last,Owner-approved complete Muslim-name re-review: Approve current
+P000076,Биби Валеева Багманова,,Биби Валеева,,Багманова,reviewed_muslim_first_last,Owner-approved complete Muslim-name re-review: Approve current
+P000098,Мамет Таги Хан,,,,Мамет Таги Хан,reviewed_muslim_unsplit_as_last,Owner-approved complete Muslim-name re-review: Approve current
+P000124,Оглы Мула-Латиф Пир-Мурат,,,,Оглы Мула-Латиф Пир-Мурат,reviewed_muslim_unsplit_as_last,Owner-approved complete Muslim-name re-review: Approve current
+P000166,Оглы Мула Шах Мамет Гаджи Зюльгуфар,,,,Оглы Мула Шах Мамет Гаджи Зюльгуфар,reviewed_muslim_unsplit_as_last,Owner-approved complete Muslim-name re-review: Approve current
+P000172,Мамет Ирза Оглы Кербалай,,,,Мамет Ирза Оглы Кербалай,reviewed_muslim_unsplit_as_last,Owner-approved complete Muslim-name re-review: Approve current
+P000254,Оглы Юсуф Ага-Киши,,,,Оглы Юсуф Ага-Киши,reviewed_muslim_unsplit_as_last,Owner-approved complete Muslim-name re-review: Approve current
+P000255,Курбан Кизы Гульфара,,,,Курбан Кизы Гульфара,reviewed_muslim_unsplit_as_last,Owner-approved complete Muslim-name re-review: Approve current
+P000256,Тели Кельбалай Габдула Кази,,,,Тели Кельбалай Габдула Кази,reviewed_muslim_unsplit_as_last,Owner-approved complete Muslim-name re-review: Approve current
+P000273,Вас Хасан Мамет,,,,Вас Хасан Мамет,reviewed_muslim_unsplit_as_last,Owner-approved complete Muslim-name re-review: Approve current
+P000610,Нагатора Юсупова Шарапова,,Нагатора Юсупова,,Шарапова,reviewed_muslim_first_last,Owner-approved complete Muslim-name re-review: Approve current
+P000611,Махмет Имьмурат Шихмурад Мугаметов,,Махмет Имьмурат Шихмурад,,Мугаметов,reviewed_muslim_first_last,Owner-approved complete Muslim-name re-review: Approve current
+P000703,Асли Ахмет Кизы,,,,Асли Ахмет Кизы,reviewed_muslim_unsplit_as_last,Owner-approved complete Muslim-name re-review: Approve current
+P000817,Оглы Адам Мурат,,,,Оглы Адам Мурат,reviewed_muslim_unsplit_as_last,Owner-approved complete Muslim-name re-review: Approve current
+P001000,Ага Бала Сефер Оглы,,,,Ага Бала Сефер Оглы,reviewed_muslim_unsplit_as_last,Owner-approved complete Muslim-name re-review: Approve current
+P001001,Кизы Пари Джан-Рустам,,,,Кизы Пари Джан-Рустам,reviewed_muslim_unsplit_as_last,Owner-approved complete Muslim-name re-review: Approve current
+P001121,Шах Базу Беков,,,,Шах Базу Беков,reviewed_muslim_unsplit_as_last,Owner-approved complete Muslim-name re-review: Approve current
+P001122,Доста Амир Гизы,,,,Доста Амир Гизы,reviewed_muslim_unsplit_as_last,Owner-approved complete Muslim-name re-review: Approve current
+P001127,Оглы Муса Абар Мешади,,,,Оглы Муса Абар Мешади,reviewed_muslim_unsplit_as_last,Owner-approved complete Muslim-name re-review: Approve current
+P001344,Ширипей Касым Ге,,,,Ширипей Касым Ге,reviewed_muslim_unsplit_as_last,Owner-approved complete Muslim-name re-review: Approve current
+P001345,Байрам,,Байрам,,,reviewed_muslim_first_only,Owner-approved complete Muslim-name re-review: Approve current
+P001367,Оглы Мамет Рагим Абдурахман Мешади Абдул Оглы,,,,Оглы Мамет Рагим Абдурахман Мешади Абдул Оглы,reviewed_muslim_unsplit_as_last,Owner-approved complete Muslim-name re-review: Approve current
+P001654,Оглы Фереч Кербанай-Самет,,,,Оглы Фереч Кербанай-Самет,reviewed_muslim_unsplit_as_last,Owner-approved complete Muslim-name re-review: Approve current
+P001738,Шарипов Хай Рахман,,Хай Рахман,,Шарипов,reviewed_muslim_first_last,Owner-approved complete Muslim-name re-review: Correct split
+P001739,Шарипова Алтун Бекс,,Алтун Бекс,,Шарипова,reviewed_muslim_first_last,Owner-approved complete Muslim-name re-review: Correct split
+P001853,Айбуруш,,Айбуруш,,,reviewed_muslim_first_only,Owner-approved complete Muslim-name re-review: Approve current
+P001854,Куты Хаджилов Мирзабир,,Мирзабир,,Куты Хаджилов,reviewed_muslim_first_last,Owner-approved complete Muslim-name re-review: Approve current
+P001856,Куты Хаджилов Ильчи Бек,,Ильчи Бек,,Куты Хаджилов,reviewed_muslim_first_last,Owner-approved complete Muslim-name re-review: Approve current
+P001857,Ульбигол Куты Хадживилова,,Ульбигол,,Куты Хадживилова,reviewed_muslim_first_last,Owner-approved complete Muslim-name re-review: Approve current
+P001858,Бубукамага Куты Хадживилов,,Бубукамага,,Куты Хадживилов,reviewed_muslim_first_last,Owner-approved complete Muslim-name re-review: Approve current
+P001891,Оглы Али-Яр Ага-Али,,,,Оглы Али-Яр Ага-Али,reviewed_muslim_unsplit_as_last,Owner-approved complete Muslim-name re-review: Approve current
+P001892,Аванесса Кири Миладгим,,,,Аванесса Кири Миладгим,reviewed_muslim_unsplit_as_last,Owner-approved complete Muslim-name re-review: Approve current
+P002158,Мустафа Ахмет Оглы,,,,Мустафа Ахмет Оглы,reviewed_muslim_unsplit_as_last,Owner-approved complete Muslim-name re-review: Approve current
+P002161,Оглы Нефтали Мустафа Али,,,,Оглы Нефтали Мустафа Али,reviewed_muslim_unsplit_as_last,Owner-approved complete Muslim-name re-review: Approve current
+P002181,Оглы-Вали-Мамет-Али,,,,Оглы-Вали-Мамет-Али,reviewed_muslim_unsplit_as_last,Owner-approved complete Muslim-name re-review: Approve current
+P002187,Оглы-Абюш-Гюли,,,,Оглы-Абюш-Гюли,reviewed_muslim_unsplit_as_last,Owner-approved complete Muslim-name re-review: Approve current
+P002247,Оглы Дшемшут Муса,,,,Оглы Дшемшут Муса,reviewed_muslim_unsplit_as_last,Owner-approved complete Muslim-name re-review: Approve current
+P002453,Оглы-Ивезели-Касем,,,,Оглы-Ивезели-Касем,reviewed_muslim_unsplit_as_last,Owner-approved complete Muslim-name re-review: Approve current
+P002646,Хиль Баба Абрусолева,,Хиль Баба,,Абрусолева,reviewed_muslim_first_last,Owner-approved complete Muslim-name re-review: Approve current
+P002647,Магомед Ярд Бахтиаров,,Магомед Ярд,,Бахтиаров,reviewed_muslim_first_last,Owner-approved complete Muslim-name re-review: Approve current
+P002820,Илья Зердин Байбиков,,Илья Зердин,,Байбиков,reviewed_muslim_first_last,Owner-approved complete Muslim-name re-review: Approve current
+P002889,Оглы Асан Ахпер,,,,Оглы Асан Ахпер,reviewed_muslim_unsplit_as_last,Owner-approved complete Muslim-name re-review: Approve current
+P002920,Гюль Мирза Мешеди Мелик,,,,Гюль Мирза Мешеди Мелик,reviewed_muslim_unsplit_as_last,Owner-approved complete Muslim-name re-review: Approve current
+P002928,Мамед Оглы Камбар,,,,Мамед Оглы Камбар,reviewed_muslim_unsplit_as_last,Owner-approved complete Muslim-name re-review: Approve current
+P003020,Оглы Тухватула Мирек Хан,,,,Оглы Тухватула Мирек Хан,reviewed_muslim_unsplit_as_last,Owner-approved complete Muslim-name re-review: Approve current
+P003054,Оглы Мешади Джафар,,,,Оглы Мешади Джафар,reviewed_muslim_unsplit_as_last,Owner-approved complete Muslim-name re-review: Approve current
+P003055,Оглы Мырза Мамед Сулейман,,,,Оглы Мырза Мамед Сулейман,reviewed_muslim_unsplit_as_last,Owner-approved complete Muslim-name re-review: Approve current
+P003163,Агап Абдул Аркеев,,Агап Абдул,,Аркеев,reviewed_muslim_first_last,Owner-approved complete Muslim-name re-review: Approve current
+P003164,Мохсиме Мефти Хотин,,,,Мохсиме Мефти Хотин,reviewed_muslim_unsplit_as_last,Owner-approved complete Muslim-name re-review: Approve current
+P003449,Оглы Рахматула Кадъяс,,,,Оглы Рахматула Кадъяс,reviewed_muslim_unsplit_as_last,Owner-approved complete Muslim-name re-review: Approve current
+P003792,Оглы Наджемедин Косум,,,,Оглы Наджемедин Косум,reviewed_muslim_unsplit_as_last,Owner-approved complete Muslim-name re-review: Approve current
+P003814,Оглы Мир Михти Мир,,,,Оглы Мир Михти Мир,reviewed_muslim_unsplit_as_last,Owner-approved complete Muslim-name re-review: Approve current
+P003942,Оглы Ибрагим Кули,,,,Оглы Ибрагим Кули,reviewed_muslim_unsplit_as_last,Owner-approved complete Muslim-name re-review: Approve current
+P004007,Кали Мула Симбаев,,Кали Мула,,Симбаев,reviewed_muslim_first_last,Owner-approved complete Muslim-name re-review: Approve current
+P004613,Бацай Мангаева Мутуш,,Бацай Мангаева,,Мутуш,reviewed_muslim_first_last,Owner-approved complete Muslim-name re-review: Correct split
+P004617,Оглы Маходым Мола Керым,,,,Оглы Маходым Мола Керым,reviewed_muslim_unsplit_as_last,Owner-approved complete Muslim-name re-review: Approve current
+P004618,Оглы Идрис Гафум Алияр,,,,Оглы Идрис Гафум Алияр,reviewed_muslim_unsplit_as_last,Owner-approved complete Muslim-name re-review: Approve current
+P004619,Арап Хан Адам,,,,Арап Хан Адам,reviewed_muslim_unsplit_as_last,Owner-approved complete Muslim-name re-review: Approve current
+P004620,Муса Омар Оглы,,,,Муса Омар Оглы,reviewed_muslim_unsplit_as_last,Owner-approved complete Muslim-name re-review: Approve current
+P004694,Макни Галей Гамакберов,,Макни Галей,,Гамакберов,reviewed_muslim_first_last,Owner-approved complete Muslim-name re-review: Approve current
+P004774,Саран Муфт Темериков,,Саран Муфт,,Темериков,reviewed_muslim_first_last,Owner-approved complete Muslim-name re-review: Approve current
+P004938,Оглы Баладжа Керым,,,,Оглы Баладжа Керым,reviewed_muslim_unsplit_as_last,Owner-approved complete Muslim-name re-review: Approve current
+P005148,Ким Магомет Шарафутдинов,,Ким Магомет,,Шарафутдинов,reviewed_muslim_first_last,Owner-approved complete Muslim-name re-review: Approve current
+P005157,Уоте Нор Магомет,,,,Уоте Нор Магомет,reviewed_muslim_unsplit_as_last,Owner-approved complete Muslim-name re-review: Approve current
+P005663,Муса Пиев Фуражиев,,Муса Пиев,,Фуражиев,reviewed_muslim_first_last,Owner-approved complete Muslim-name re-review: Approve current
+P005832,Оглы Мордан Курбан,,,,Оглы Мордан Курбан,reviewed_muslim_unsplit_as_last,Owner-approved complete Muslim-name re-review: Approve current
+P005907,Минне Срур Садыкова,,Минне Срур,,Садыкова,reviewed_muslim_first_last,Owner-approved complete Muslim-name re-review: Approve current
+P005967,Мустафа Оглы Хаджи,,,,Мустафа Оглы Хаджи,reviewed_muslim_unsplit_as_last,Owner-approved complete Muslim-name re-review: Approve current
+P006005,Кадыча,,Кадыча,,,reviewed_muslim_first_only,Owner-approved complete Muslim-name re-review: Approve current
+P006077,Мухамет Вали Галеев,,Мухамет Вали,,Галеев,reviewed_muslim_first_last,Owner-approved complete Muslim-name re-review: Approve current
+P006098,Биби Галиме Ахметова,,Биби Галиме,,Ахметова,reviewed_muslim_first_last,Owner-approved complete Muslim-name re-review: Approve current
+P006100,Ир Мухамет Назмудин,,Ир Мухамет,,Назмудин,reviewed_muslim_first_last,Owner-approved complete Muslim-name re-review: Approve current
+P006101,Бахриамала,,Бахриамала,,,reviewed_muslim_first_only,Owner-approved complete Muslim-name re-review: Approve current
+P006102,Минне Хан Назмудин,,Минне Хан,,Назмудин,reviewed_muslim_first_last,Owner-approved complete Muslim-name re-review: Approve current
+P006103,Шахе Тин Назмудин,,Шахе Тин,,Назмудин,reviewed_muslim_first_last,Owner-approved complete Muslim-name re-review: Approve current
+P006104,Магомет Тин Назмудин,,Магомет Тин,,Назмудин,reviewed_muslim_first_last,Owner-approved complete Muslim-name re-review: Approve current
+P006106,Серви Земал Юсупова,,Серви Земал,,Юсупова,reviewed_muslim_first_last,Owner-approved complete Muslim-name re-review: Approve current
+P006107,Бибифа Изе Юсупова,,Бибифа Изе,,Юсупова,reviewed_muslim_first_last,Owner-approved complete Muslim-name re-review: Approve current
+P006899,Осмон Оглы Мирза,,,,Осмон Оглы Мирза,reviewed_muslim_unsplit_as_last,Owner-approved complete Muslim-name re-review: Approve current
+P006903,Абу Талиб Оглы Тюльнар,,,,Абу Талиб Оглы Тюльнар,reviewed_muslim_unsplit_as_last,Owner-approved complete Muslim-name re-review: Approve current

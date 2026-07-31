@@ -118,6 +118,8 @@ Deliverables: textual-marker inventory, proposed identifier specification, appro
 
 Completion status (2026-07-17): canonical v4 QA found zero integer-format or identifier-format exceptions, preserved all identifier order and leading-zero formats, and confirmed the approved 36-column schema and 7,446 records.
 
+Reverification (2026-07-18): reran Item 6 checks against the current canonical v4 combined file. Results remain unchanged: zero integer-format exceptions, zero malformed settlement orders, zero person-sequence exceptions, zero duplicate or blank stable identifiers, and zero missing `age_months` among ages 0–2. The durable specification is recorded in `docs/field_type_specification.md`.
+
 Deliverables: type specification, exception inventory, staged result, structural diff, and QA report.
 
 ### 7. Verify `age` — `[x]` Approved and staged
@@ -381,9 +383,44 @@ Interpretation rule: `age_months` may now contain either an exact value supporte
 
 Deliverables: affected-record inventory, reproducible staging script, staged candidate, diff, and QA report.
 
-## Final Integrated Validation
+## Post-v4 Review
 
-This section begins only after Items 1-23 have been approved individually.
+Canonical v4 remains current. Items in this section were reviewed after the v4 release and are not canonical unless a later versioned release is explicitly authorized.
+
+### 24. Capitalize initial lowercase words in `comments` — `[x]` Review completed and staged; release deferred
+
+- [x] Start from canonical v4.
+- [x] Capitalize only the initial character when `comments` begins with a lowercase Russian letter.
+- [x] Preserve the rest of each text string exactly.
+- [x] Leave digit-led precise ages and address strings unchanged.
+- [x] Preserve schema, row order, identifiers, and all non-`comments` fields.
+
+Approved result (2026-07-18): 53 records across 12 exact lowercase-initial comment strings were capitalized. `выкрест` became `Выкрест`. QA confirms 7,446 records, 36 columns, zero remaining lowercase Russian initials, unchanged identifiers, and no changes outside `comments`. The result is staged; canonical v4 remains unchanged.
+
+Owner follow-up (2026-07-18): removed the extra period in `P004464.comments`, changing `В доме. Пешкова` to `В доме Пешкова`. The superseding Item 24 v2 stage retains all 53 capitalization changes and adds this one approved comment correction. QA confirms one additional changed cell and no non-target changes. Canonical v4 remains unchanged.
+
+Second owner follow-up (2026-07-18): corrected `P000911.comments` from `Живет у Ннеразборчиво` to `Живет у Н.` and `P004407.comments` from `У Кас тера` to `У Кастера`. The superseding Item 24 v3 stage retains all prior Item 24 changes and adds exactly these two approved comment corrections. Canonical v4 remains unchanged.
+
+Review completion (2026-07-18): the owner confirmed that the comments review is complete but is not ready to create v5. The latest Item 24 v3 candidate changes exactly 56 `comments` cells relative to canonical v4 and changes no other field. Retain the candidate as the approved input for a future release.
+
+Deliverables: affected-record inventory, reproducible staging script, staged candidate, diff, and QA report.
+
+### 25. Review semantically close `occupation_norm` values — `[x]` Reviewed and deferred; no changes
+
+- [x] Profile the latest staged `occupation_norm` vocabulary and counts.
+- [x] Identify synonym, gender-variant, activity/role, and occupational-family relationships.
+- [x] Separate direct merge candidates from broader group-only relationships.
+- [x] Preserve `occupation_norm`; recommend a separate `occupation_group` for approved analytical consolidation.
+- [x] Review the proposed merge/group decisions.
+- [x] Defer any analytical grouping field until a future English-translation and gender-specific normalization task.
+
+Review result (2026-07-18): profiled 1,474 nonblank records and 135 distinct values. Prepared 17 candidate groups, including the owner-requested `Парикмахер`/`Цирюльник` comparison. No dataset values were changed.
+
+Owner decision (2026-07-18): no current merges or grouping field are required. Preserve `occupation_norm` unchanged and retain this evaluation for future English translation and gender-neutral analytical grouping, while keeping Russian historical and gender-specific distinctions available. Item closed without staged or canonical changes.
+
+## Canonical v4 Final Integrated Validation — completed 2026-07-17
+
+This completed release checkpoint covers Items 1–23. It predates the post-v4 Items 24–25 above.
 
 The `v4_20260717` canonical release completes the integrated validation and consolidation of approved Items 1–23. Earlier v3, v2, and unversioned canonical releases remain unchanged as historical artifacts.
 
@@ -398,6 +435,20 @@ The `v4_20260717` canonical release completes the integrated validation and cons
 - [x] Calculate SHA-256 hashes for all four v4 datasets.
 - [x] Submit the candidate package for project-owner review; the owner authorized the new canonical version on 2026-07-17.
 - [x] Update `docs/canonical_manifest.csv` only after explicit approval.
+
+## Canonical v5 Reviewed-Name Release — completed 2026-07-31
+
+The `v5_20260731` canonical release promotes the completed Item 24 comments review and the fully reviewed name-component workflow. It preserves all prior canonical versions as historical artifacts.
+
+- [x] Retain all 7,446 records and the established district and identifier order.
+- [x] Expand the schema from 36 to 50 columns with the 14 reviewed name-component and provenance fields.
+- [x] Incorporate exactly 56 approved Item 24 `comments` changes.
+- [x] Restrict changes to existing v4 fields to approved `comments`, `name_raw`, and `name_alias` updates.
+- [x] Confirm all 7,446 names have `parse_status = observed` with component/source consistency.
+- [x] Confirm zero unresolved name proposals, family-inferred name sources, or first-name spelling candidates.
+- [x] Produce complete v4-to-v5 cell, record, field, and schema diffs.
+- [x] Generate matching district slices, verify exact ordered concatenation, and calculate SHA-256 hashes.
+- [x] Update `docs/canonical_manifest.csv` after explicit owner authorization.
 
 ## Progress Log
 
@@ -451,3 +502,7 @@ The `v4_20260717` canonical release completes the integrated validation and cons
 | 2026-07-17 | Item 21: `arrival_year` substantive consistency | Approved and staged | Profiled all arrival years, applied the owner-confirmed `P005199` age correction from 2 to 25, retained the other three reviewed records unchanged, and found only one populated `arrival_year` paired with `origin_place = На Сахалине`: owner-accepted `P003355`. The new staged candidate changes one `age` cell only; canonical data unchanged. | `data/review/arrival_year_20260717/`; `data/staging/arrival_year_item21_20260717/`; `outputs/qa/arrival_year_item21_20260717/`; `scripts/stage_arrival_year_item21.py` |
 | 2026-07-17 | Item 22: raw age-recognition audit | Approved and staged with three exclusions | Applied owner-validated semantic age values to 15 records: two `age` corrections and 15 `age_months` updates. Excluded `P004306`, `P005959`, and `P006718` because their structured names conflict with their attached source-block names; those records remain unchanged for separate linkage review. Canonical data unchanged. | `data/review/raw_age_recognition_item22_20260717/`; `data/staging/raw_age_recognition_item22_20260717/`; `outputs/qa/raw_age_recognition_item22_20260717/`; `scripts/stage_raw_age_recognition_item22.py` |
 | 2026-07-17 | Item 23: whole-year `age_months` completion | Approved and staged | Revised the rule to derive `age_months = 12` for 105 blank records aged 1 and `24` for 211 blank records aged 2. Preserved all 118 explicit precise-month values and changed no other field. Canonical data unchanged. | `data/review/age_months_whole_year_item23_20260717/`; `data/staging/age_months_whole_year_item23_20260717/`; `outputs/qa/age_months_whole_year_item23_20260717/`; `scripts/stage_age_months_whole_year_item23.py` |
+| 2026-07-17 | Canonical quality-review release v4 | Approved and completed | Consolidated approved Items 1–23 into the immutable 36-column v4 district and combined datasets. Integrated QA passed all record, schema, identifier, type, capitalization, dependency, gender-consistency, diff, and hash checks. | `data/processed/*_v4_20260717.csv`; `scripts/build_canonical_v4_20260717.py`; `outputs/qa/canonical_v4_20260717/`; `docs/canonical_manifest.csv` |
+| 2026-07-18 | Item 24: final comments review | Approved and released in v5 | Completed 53 initial-capitalization changes and three owner follow-up corrections, producing exactly 56 comment-only differences from canonical v4. These changes were promoted in `v5_20260731`. | `data/staging/comments_initial_capitalization_item24_20260718_v3/`; `data/review/comments_initial_capitalization_item24_20260718/`; `outputs/qa/comments_initial_capitalization_item24_20260718_v3/` |
+| 2026-07-18 | Item 25: occupation semantic grouping | Reviewed and deferred; no changes | Evaluated 17 potential semantic groups across `occupation_norm`. Preserved current Russian values and deferred grouping to future English translation and gender-specific normalization work. | `data/review/occupation_semantic_merge_item25_20260718/` |
+| 2026-07-31 | Canonical reviewed-name release v5 | Approved and completed | Promoted the Item 24 comments review and completed name-component workflow into immutable 50-column district and combined datasets. Integrated QA passed all release checks. | `data/processed/*_v5_20260731.csv`; `scripts/build_canonical_v5_20260731.py`; `outputs/qa/canonical_v5_20260731/`; `docs/canonical_manifest.csv` |

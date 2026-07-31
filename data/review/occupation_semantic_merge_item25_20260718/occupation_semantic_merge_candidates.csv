@@ -1,0 +1,36 @@
+group_id,proposed_analytical_value,current_value,token_record_count,relationship,confidence,recommendation,rationale
+G01,Парикмахер,Парикмахер,1,near_synonym,high,merge_candidate,Modern and historical labels for the same personal-grooming trade
+G01,Парикмахер,Цирюльник,1,near_synonym,high,merge_candidate,Modern and historical labels for the same personal-grooming trade
+G02,Гончар,Гончар,2,synonym,high,merge_candidate,Pottery maker
+G02,Гончар,Горшечник,1,synonym,high,merge_candidate,Specialized lexical label for a pottery maker
+G03,Папиросник,Папиросник,1,synonym,high,merge_candidate,Cigarette maker
+G03,Папиросник,Делает папиросы,2,activity_role_equivalence,high,merge_candidate,Activity phrase explicitly describes the same trade
+G04,Фельдшер,Фельдшер,4,gender_variant,high,merge_candidate,Same occupation with masculine form
+G04,Фельдшер,Фельдшерица,1,gender_variant,high,merge_candidate,Same occupation with feminine form
+G05,Повар,Повар,2,gender_variant,high,merge_candidate,Same cooking occupation with masculine form
+G05,Повар,Кухарка,1,near_gender_variant,medium,review_merge,Often equivalent cook role but кухарка can imply domestic service
+G06,Учитель,Учитель,4,gender_variant,high,merge_candidate,Same occupation with masculine form
+G06,Учитель,Учительница,1,gender_variant,high,merge_candidate,Same occupation with feminine form
+G07,Рабочий,Рабочий,33,gender_variant,high,merge_candidate,Generic worker masculine form
+G07,Рабочий,Рабочая,8,gender_variant,high,merge_candidate,Generic worker feminine form
+G08,Работник,Работник,15,gender_variant,high,merge_candidate,Worker or hired hand masculine form
+G08,Работник,Работница,1,gender_variant,high,merge_candidate,Worker or hired hand feminine form
+G09,Чернорабочий,Чернорабочий,202,gender_variant,high,merge_candidate,Unskilled laborer masculine form
+G09,Чернорабочий,Чернорабочая,50,gender_variant,high,merge_candidate,Unskilled laborer feminine form
+G10,Пекарь,Булочник,6,near_synonym,medium,review_merge,Baker specializing in rolls or white bread
+G10,Пекарь,Хлебопек,7,near_synonym,medium,review_merge,Bread baker
+G11,Земледелец,Земледелие,245,activity_role_equivalence,medium,review_merge,Agricultural activity rather than personal title
+G11,Земледелец,Хлебопашец,8,near_synonym,medium,review_merge,Personal title for a crop farmer
+G12,Мельничное дело,Мельник,3,role_workplace_relation,low,group_only,Occupation is explicit
+G12,Мельничное дело,На мельнице,3,role_workplace_relation,low,group_only,Workplace is explicit but occupation is not
+G13,Банное дело,Банщик,1,role_workplace_relation,low,group_only,Occupation is explicit
+G13,Банное дело,Баня,1,role_workplace_relation,low,group_only,Workplace or establishment rather than occupation
+G14,Портной,Портной,48,gender_variant,high,merge_candidate,Same occupation with masculine form
+G14,Портной,Портниха,1,gender_variant,high,merge_candidate,Feminine form of tailor
+G17,Швейное дело,Швея,2,related_trade,medium,group_only,Sewing occupation related to but not identical with tailor
+G15,При родственнике,При матери,2,dependency_context,high,merge_candidate,Non-occupation dependency context with relationship detail
+G15,При родственнике,При муже,39,dependency_context,high,merge_candidate,Non-occupation dependency context with relationship detail
+G15,При родственнике,При отце,2,dependency_context,high,merge_candidate,Non-occupation dependency context with relationship detail
+G16,Надзор,Младший надзиратель,11,ranked_family,high,group_only,Same occupational family but junior rank should remain visible
+G16,Надзор,Надзиратель,22,ranked_family,high,group_only,Base supervisory rank
+G16,Надзор,Старший надзиратель,27,ranked_family,high,group_only,Same occupational family but senior rank should remain visible

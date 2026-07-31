@@ -1,0 +1,19 @@
+person_id,match_name_raw,new_name_raw,new_name_alias,first_name,patronymic_name,last_name,review_reason
+P000072,Юрий Юган Юркаш,Юрий Юган Юркаш,,Юрий Юган,,Юркаш,Owner approved Lutheran compound given name
+P000577,Карл Бухгар Лесин,Карл Бухгар Лесин,,Карл Бухгар,,Лесин,Owner approved Lutheran compound given name
+P000578,Юган Фридрих Тайблер,Юган Фридрих Тайблер,,Юган Фридрих,,Тайблер,Owner approved Lutheran compound given name
+P001156,Мариана Корнацкая Корнацкая,Мариана Корнацкая,,Мариана,,Корнацкая,Owner removed repeated surname
+P001196,Франц Бевентора Москва,Франц Бевентора Москва,,Франц Бевентора,,Москва,Owner approved Catholic compound given name
+P001217,Отто Фердинант Вильберг,Отто Фердинант Вильберг,Отто Фердинадович Витберг,Отто Фердинант,,Вильберг,Owner approved Lutheran compound given name and alternate full name
+P001388,Фриц Фриц Брювер,Фриц Фриц Брювер,,Фриц Фриц,,Брювер,Owner approved Lutheran compound given name
+P001624,Ирина Анеля Башинская,Ирина Башинская,Анеля Башинская,Ирина,,Башинская,Owner moved alternate name to name_alias
+P002972,Матис Гавриельсон Антило,Матис Гавриельсон Антило,,Матис Гавриельсон,,Антило,Owner approved Lutheran compound given name
+P004688,Ян Вонторок Вонторок,Ян Вонторок,,Ян,,Вонторок,Owner removed repeated surname
+P004707,Марианна Сикорска Веселовская,Марианна Веселовская,Сикорска,Марианна,,Веселовская,Owner moved maiden name to name_alias
+P004723,Евва Милевска Каменская,Евва Каменская,Милевска,Евва,,Каменская,Owner moved maiden name to name_alias
+P004857,Ян Лель Юоло,Ян Лель Юоло,,Ян Лель,,Юоло,Owner approved Lutheran compound given name
+P004998,Станислава Агдовская Агда,Станислава Агдовская,Агдовская Агда,Станислава,,Агдовская,Owner supplied reviewed alias and primary surname
+P005000,Елизавета Гауптов Пульфус,Елизавета Пульфус,Гауптов,Елизавета,,Пульфус,Owner moved maiden name to name_alias
+P000144,Федор Иван Храпылин,Федор Иван Храпылин,,Федор,Иванов,Храпылин,Owner approved historical short patronymic
+P000229,Григорий Иван Шевцов,Григорий Иван Шевцов,,Григорий,Иванов,Шевцов,Owner approved historical short patronymic
+P002858,Алексей Алексей Труленко,Алексей Алексей Труленко,,Алексей,Алексеев,Труленко,Owner approved historical short patronymic

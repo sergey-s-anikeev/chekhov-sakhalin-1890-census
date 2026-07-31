@@ -1,5 +1,15 @@
 # Parser Improvements After Full-District Validation
 
+## Canonical reviewed-name release v5 — 2026-07-31
+
+Release `v5_20260731` promotes the completed post-v4 review sequence into a new immutable canonical version. It retains 7,446 records and established identifier order, expands the schema from 36 to 50 columns, and preserves all prior analytical fields.
+
+The release incorporates exactly 56 approved Item 24 `comments` corrections, 55 reviewed `name_raw` changes, and 39 `name_alias` changes relative to v4. It adds `first_name`, `patronymic_name`, `last_name`, component-level provenance, parsing status and confidence, parsing rule, detected source order, naming model, manual-review reason, and two blank proposal-audit fields.
+
+All 7,446 name records are resolved with `parse_status = observed`. Integrated QA passed record and schema counts, identifier stability and formatting, district counts and exact concatenation, numeric formats and ranges, age/month consistency, controlled-value capitalization, approved-change boundaries, component/provenance consistency, zero unresolved name proposals, zero first-name spelling candidates, complete v4-to-v5 diffs, and SHA-256 hashing. Evidence is stored in `outputs/qa/canonical_v5_20260731/`.
+
+The v4, v3, v2, and original canonical datasets remain unchanged as historical release artifacts.
+
 ## Canonical quality-review release v4 — 2026-07-17
 
 Release `v4_20260717` promotes the approved post-v3 quality-review sequence into a new immutable canonical version. It retains 7,446 records, expands the schema from 31 to 36 columns, and adds `age_months`, `origin_place_norm`, `occupation_norm`, `marriage_status_norm`, and `living_alone_status`.
@@ -7,6 +17,8 @@ Release `v4_20260717` promotes the approved post-v3 quality-review sequence into
 The release includes approved age and raw-recognition corrections, whole-year month derivation for ages 1 and 2, origin and occupation normalization, marriage-status structure, reviewed comment cleanup and owner feedback, and 18 unique late alias additions. All four v3 files remain unchanged as historical canonical artifacts.
 
 Integrated QA passed record counts, schema, district ordering and concatenation, identifier uniqueness and formatting, numeric formats and ranges, age/month consistency, controlled values, Sentence case, Item 3 legal-status dependency synchronization, gender consistency, complete diffs, and SHA-256 hashing. Evidence is stored in `outputs/qa/canonical_v4_20260717/`.
+
+Post-v4 status (2026-07-18): Item 24 comments review is complete in a staged candidate with 56 comment-only changes. Item 25 occupation-semantic grouping was evaluated and deferred without changes. No v5 release has been authorized; v4 remains current canonical.
 
 ---
 

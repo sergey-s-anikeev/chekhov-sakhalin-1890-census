@@ -21,4 +21,21 @@ Thumbs.db
 
 # Local scratch files
 .tmp/
+tmp/
+
+# Intermediate staged datasets
+data/staging/
+
+# Intermediate review outputs
+outputs/name_split_*/
+outputs/name_raw_*/
+outputs/qa/name_split_*/
+outputs/qa/name_raw_*/
+outputs/qa/last_name_book_verification_20260723/
+outputs/qa/comments_initial_capitalization_item24_20260718/
+outputs/qa/comments_initial_capitalization_item24_20260718_v2/
+outputs/qa/comments_initial_capitalization_item24_20260718_v3/
+
 /data/review/notes_raw_duplicates_item4_20260711/raw_page_extracts
+/tmp/last_name_book_workbook/node_modules
+/outputs/name_raw_four_component_review_20260720/node_modules

@@ -12,7 +12,7 @@ Russian/Cyrillic source and normalized values remain authoritative. English docu
 
 ## Current Status
 
-The project has completed the approved v3 district extraction, normalization, manual review, merge, and release QA. Additional staged quality-review items have since been approved; type validation and final consolidation into the next versioned canonical candidate remain pending.
+The project has completed canonical release `v5_20260731`. It retains the validated v4 analytical data, incorporates the approved Item 24 comment corrections, and adds the fully reviewed name-component and provenance structure. Integrated release QA and manifest registration are complete.
 
 The current validated release contains:
 
@@ -49,16 +49,18 @@ The GitHub repository is a version-control mirror, not a substitute for owner ap
 
 ## Canonical Datasets
 
-Current versioned canonical release, approved 2026-07-17:
+Current versioned canonical release, approved 2026-07-31:
 
-- `data/processed/clean_alexandrovsky_ru_v4_20260717.csv`
-- `data/processed/clean_tymovsky_ru_v4_20260717.csv`
-- `data/processed/clean_korsakovsky_ru_v4_20260717.csv`
-- `data/processed/clean_sakhalin_1890_ru_v4_20260717.csv`
+- `data/processed/clean_alexandrovsky_ru_v5_20260731.csv`
+- `data/processed/clean_tymovsky_ru_v5_20260731.csv`
+- `data/processed/clean_korsakovsky_ru_v5_20260731.csv`
+- `data/processed/clean_sakhalin_1890_ru_v5_20260731.csv`
 
-The v4 release contains 36 columns and consolidates approved Items 1–23, including precise and derived `age_months`, normalized origin, occupation and marriage fields, reviewed comments, and later alias additions. The v3, v2, and prior unversioned canonical files remain unchanged as historical release artifacts.
+The v5 release contains 50 columns. It preserves the 36-column v4 structure and adds reviewed name components, component provenance, parsing status and confidence, parsing rules, detected order, naming model, manual-review reason, and proposal-audit fields. The v4, v3, v2, and prior unversioned canonical files remain unchanged as historical release artifacts.
 
 The canonical v4 schema includes `age_months` for infant and young-child analysis. Explicit source precision takes precedence: for example, 1 year 7 months is stored as `age = 1`, `age_months = 19`. When the source gives only the completed whole-year age, month values are analytically derived as `12` for `age = 1` and `24` for `age = 2`.
+
+The approved Item 24 stage contributes exactly 56 `comments` changes to v5. The reviewed name stage contributes the resolved name components and owner-approved corrections. All 7,446 records have `parse_status = observed` and no unresolved name proposals.
 
 The `district` field retains the approved Russian values:
 
