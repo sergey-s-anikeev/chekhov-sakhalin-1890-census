@@ -1,0 +1,17 @@
+{
+  "reconciliation_date": "2026-08-05",
+  "canonical_file": "data/processed/clean_sakhalin_1890_ru_v5_20260731.csv",
+  "review_workbook": "outputs/english_controlled_translation_review_20260802/illness_translation_review_20260805.xlsx",
+  "approved_mapping": "outputs/english_controlled_translation_review_20260802/illness_translation_approved_20260805.csv",
+  "canonical_distinct_illness_values": 25,
+  "approved_mapping_rows": 25,
+  "missing_values": [],
+  "extra_values": [],
+  "record_count_mismatches": [],
+  "owner_decisions": {"Approve A": 12, "Approve B": 9, "Approve C": 1, "Revise": 3},
+  "consistency_revision": {
+    "russian_value": "Слепота; Психическое расстройство",
+    "approved_english": "Blind; Mental disorder",
+    "reason": "Matches the approved standalone Mental disorder component."
+  }
+}

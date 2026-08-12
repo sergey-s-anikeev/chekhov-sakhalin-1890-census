@@ -1,0 +1,28 @@
+{
+  "date": "2026-08-09",
+  "source_workbook": "outputs/english_geographic_translation_review_20260809/geographic_translation_review_20260809.xlsx",
+  "status": "PASS",
+  "canonical_records": 7446,
+  "district": {
+    "distinct_populated": 3,
+    "mapping_rows": 3,
+    "unmapped": 0
+  },
+  "settlement": {
+    "distinct_populated": 51,
+    "mapping_rows": 51,
+    "unmapped": 0,
+    "revised": 2
+  },
+  "origin_place": {
+    "distinct_populated": 100,
+    "mapping_rows": 100,
+    "unmapped": 0,
+    "revised": 1,
+    "blank_records_preserved": 838
+  },
+  "intentional_duplicate_english_values": {
+    "Saint Petersburg Governorate": 2,
+    "Prussian subject": 2
+  }
+}

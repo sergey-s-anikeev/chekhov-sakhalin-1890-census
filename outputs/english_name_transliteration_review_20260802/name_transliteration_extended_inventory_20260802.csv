@@ -1,0 +1,1296 @@
+﻿person_id,district,settlement,religion,naming_model,name_raw,full_name_candidate,method,review_reasons
+P000008,Александровский,Александровское,Католическое,catholic,Мария Михайлова Шустова,Mariya Mikhaylova Shustova,general_rule,naming_model:catholic
+P000038,Александровский,Александровское,Католическое,catholic,Янчарек Павлов Войцех,Yancharek Pavlov Voytsekh,general_rule,naming_model:catholic
+P000042,Александровский,Александровское,Католическое,catholic,Франц Францов Кулеша,Frants Frantsov Kulesha,general_rule,naming_model:catholic
+P000043,Александровский,Александровское,Лютеранское,lutheran,Ева Иванова Лепра,Yeva Ivanova Lepra,general_rule,naming_model:lutheran
+P000044,Александровский,Александровское,Католическое,catholic,Марья Лепра,Marya Lepra,general_rule,naming_model:catholic
+P000053,Александровский,Александровское,Католическое,catholic,Адам Егоров Замойтис,Adam Yegorov Zamoytis,general_rule,naming_model:catholic
+P000054,Александровский,Александровское,Католическое,catholic,Ада Осипова Замойтис,Ada Osipova Zamoytis,general_rule,naming_model:catholic
+P000057,Александровский,Александровское,,unknown,Елена Адамова Замойтис,Yelena Adamova Zamoytis,general_rule,naming_model:unknown
+P000069,Александровский,Александровское,,unknown,Андрей Иванов Карауловский,Andrey Ivanov Karaulovskiy,general_rule,naming_model:unknown
+P000072,Александровский,Александровское,Лютеранское,lutheran,Юрий Юган Юркаш,Yuriy Yugan Yurkash,general_rule,naming_model:lutheran
+P000073,Александровский,Александровское,Католическое,catholic,Иван Петров Ракита,Ivan Petrov Rakita,general_rule,naming_model:catholic
+P000076,Александровский,Александровское,Магометанское,muslim,Биби Валеева Багманова,Bibi Valeyeva Bagmanova,general_rule,naming_model:muslim
+P000078,Александровский,Александровское,Лютеранское,lutheran,Август Яковлев Фрей,Avgust Yakovlev Frey,general_rule,naming_model:lutheran
+P000079,Александровский,Александровское,Лютеранское,lutheran,Лукерья Яковлева Фрей,Lukerya Yakovleva Frey,general_rule,naming_model:lutheran
+P000080,Александровский,Александровское,Лютеранское,lutheran,Александр Фрей,Aleksandr Frey,general_rule,naming_model:lutheran
+P000089,Александровский,Александровское,,unknown,Никифор Непомнящий,Nikifor Nepomnyashchiy,general_rule,naming_model:unknown
+P000090,Александровский,Александровское,,unknown,Дарья Непомнящая,Darya Nepomnyashchaya,general_rule,naming_model:unknown
+P000091,Александровский,Александровское,Лютеранское,lutheran,Карл Христофорович Ландсберг,Karl Khristoforovich Landsberg,general_rule,naming_model:lutheran
+P000095,Александровский,Александровское,Лютеранское,lutheran,Густав Юганов Холма,Gustav Yuganov Kholma,general_rule,naming_model:lutheran
+P000098,Александровский,Пост Александровский,Магометанское,muslim,Мамет Таги Хан,Mamet Tagi Khan,general_rule,naming_model:muslim
+P000099,Александровский,Пост Александровский,Католическое,catholic,Иозефа Матвеева Кубяк,Iozefa Matveyeva Kubyak,general_rule,naming_model:catholic
+P000100,Александровский,Пост Александровский,Католическое,catholic,Войцех Францов Данилевский,Voytsekh Frantsov Danilevskiy,general_rule,naming_model:catholic
+P000101,Александровский,Пост Александровский,Католическое,catholic,Войцех Петрович Цибульский,Voytsekh Petrovich Tsibulskiy,general_rule,naming_model:catholic
+P000112,Александровский,Пост Александровский,Армяно-григорианское,other_documented,Артем Манацукан Тургунов,Artem Manatsukan Turgunov,general_rule,naming_model:other_documented
+P000114,Александровский,Пост Александровский,Католическое,catholic,Осип Храстовский,Osip Khrastovskiy,general_rule,naming_model:catholic
+P000116,Александровский,Пост Александровский,Православное,russian_historical,Иван Битный-Шляхто,Ivan Bitnyy-Shlyakhto,general_rule,hyphenated
+P000122,Александровский,Пост Александровский,Католическое,catholic,Адам Данилов Падскочий,Adam Danilov Padskochiy,general_rule,naming_model:catholic
+P000124,Александровский,Пост Александровский,Магометанское,muslim,Оглы Мула-Латиф Пир-Мурат,Ogly Mula-Latif Pir-Murat,general_rule,naming_model:muslim; hyphenated
+P000129,Александровский,Пост Александровский,Лютеранское,lutheran,Егор Крус,Yegor Krus,general_rule,naming_model:lutheran
+P000130,Александровский,Пост Александровский,Лютеранское,lutheran,Макрида Крус,Makrida Krus,general_rule,naming_model:lutheran
+P000136,Александровский,Пост Александровский,Католическое,catholic,Осип Осипов Шумилов,Osip Osipov Shumilov,general_rule,naming_model:catholic
+P000146,Александровский,Пост Александровский,Католическое,catholic,Клементина Цислевская,Klementina Tsislevskaya,general_rule,naming_model:catholic
+P000147,Александровский,Пост Александровский,Католическое,catholic,Степан Брониславов Цислевский,Stepan Bronislavov Tsislevskiy,general_rule,naming_model:catholic
+P000148,Александровский,Пост Александровский,Католическое,catholic,Бронислав Фращинский,Bronislav Frashchinskiy,general_rule,naming_model:catholic
+P000149,Александровский,Пост Александровский,Магометанское,muslim,Наврус Русланов,Navrus Ruslanov,general_rule,naming_model:muslim
+P000150,Александровский,Пост Александровский,Армяно-григорианское,other_documented,Грю Арзуманова,Gryu Arzumanova,general_rule,naming_model:other_documented
+P000151,Александровский,Пост Александровский,Армяно-григорианское,other_documented,Марианна Азуманова,Marianna Azumanova,general_rule,naming_model:other_documented
+P000152,Александровский,Пост Александровский,Армяно-григорианское,other_documented,Михаил Азуманов,Mikhail Azumanov,general_rule,naming_model:other_documented
+P000153,Александровский,Пост Александровский,Армяно-григорианское,other_documented,Осип Арзуманов,Osip Arzumanov,general_rule,naming_model:other_documented
+P000155,Александровский,Пост Александровский,Иудейское,other_documented,Иоир Негелев,Ioir Negelev,general_rule,naming_model:other_documented
+P000156,Александровский,Пост Александровский,Иудейское,other_documented,Сарра Негилева,Sarra Negileva,general_rule,naming_model:other_documented
+P000157,Александровский,Пост Александровский,Иудейское,other_documented,Вик*** Негилев,Vik*** Negilev,general_rule,naming_model:other_documented; masked_characters
+P000158,Александровский,Пост Александровский,Иудейское,other_documented,Янкель Негилев,Yankel Negilev,general_rule,naming_model:other_documented
+P000159,Александровский,Пост Александровский,Иудейское,other_documented,Машко Негилев,Mashko Negilev,general_rule,naming_model:other_documented
+P000160,Александровский,Пост Александровский,Иудейское,other_documented,Залман Негилев,Zalman Negilev,general_rule,naming_model:other_documented
+P000161,Александровский,Пост Александровский,Иудейское,other_documented,Мейер Негилев,Meyyer Negilev,general_rule,naming_model:other_documented
+P000166,Александровский,Пост Александровский,Магометанское,muslim,Оглы Мула Шах Мамет Гаджи Зюльгуфар,Ogly Mula Shakh Mamet Gadzhi Zyulgufar,general_rule,naming_model:muslim; four_plus_tokens
+P000167,Александровский,Пост Александровский,Магометанское,muslim,Шихова-Хан Бибиш,Shikhova-Khan Bibish,general_rule,naming_model:muslim; hyphenated
+P000172,Александровский,Пост Александровский,Магометанское,muslim,Мамет Ирза Оглы Кербалай,Mamet Irza Ogly Kerbalay,general_rule,naming_model:muslim; four_plus_tokens
+P000191,Александровский,Пост Александровский,Католическое,catholic,Маргарита Васильева Сарно,Margarita Vasilyeva Sarno,general_rule,naming_model:catholic
+P000194,Александровский,Пост Александровский,Иудейское,other_documented,Лейба Фукс,Leyba Fuks,general_rule,naming_model:other_documented
+P000195,Александровский,Пост Александровский,Иудейское,other_documented,Хана Фукс,Khana Fuks,general_rule,naming_model:other_documented
+P000196,Александровский,Пост Александровский,Иудейское,other_documented,Сруль Фукс,Srul Fuks,general_rule,naming_model:other_documented
+P000197,Александровский,Пост Александровский,Католическое,catholic,Людвиг Казимирович Байков,Lyudvig Kazimirovich Baykov,general_rule,naming_model:catholic
+P000198,Александровский,Пост Александровский,Лютеранское,lutheran,Карл Баумгарт,Karl Baumgart,general_rule,naming_model:lutheran
+P000204,Александровский,Пост Александровский,Католическое,catholic,Марианна Хлебовская,Marianna Khlebovskaya,general_rule,naming_model:catholic
+P000221,Александровский,Пост Александровский,Католическое,catholic,Ян Зеленков,Yan Zelenkov,general_rule,naming_model:catholic
+P000223,Александровский,Пост Александровский,Иудейское,other_documented,Рафаил Бермант,Rafail Bermant,general_rule,naming_model:other_documented
+P000224,Александровский,Пост Александровский,Иудейское,other_documented,Сарра Бермант,Sarra Bermant,general_rule,naming_model:other_documented
+P000225,Александровский,Пост Александровский,Иудейское,other_documented,Павел Бермант,Pavel Bermant,general_rule,naming_model:other_documented
+P000226,Александровский,Пост Александровский,Иудейское,other_documented,Абрам Бермант,Abram Bermant,general_rule,naming_model:other_documented
+P000227,Александровский,Пост Александровский,Иудейское,other_documented,Исер Бермант,Iser Bermant,general_rule,naming_model:other_documented
+P000228,Александровский,Пост Александровский,Лютеранское,lutheran,Дия Ноксман,Diya Noksman,general_rule,naming_model:lutheran
+P000232,Александровский,Пост Александровский,Иудейское,other_documented,Мордох Лидерман,Mordokh Liderman,general_rule,naming_model:other_documented
+P000254,Александровский,Пост Александровский,Магометанское,muslim,Оглы Юсуф Ага-Киши,Ogly Yusuf Aga-Kishi,general_rule,naming_model:muslim; hyphenated
+P000255,Александровский,Пост Александровский,Магометанское,muslim,Курбан Кизы Гульфара,Kurban Kizy Gulfara,general_rule,naming_model:muslim
+P000256,Александровский,Пост Александровский,Магометанское,muslim,Тели Кельбалай Габдула Кази,Teli Kelbalay Gabdula Kazi,general_rule,naming_model:muslim; four_plus_tokens
+P000273,Александровский,Пост Александровский,Магометанское,muslim,Вас Хасан Мамет,Vas Khasan Mamet,general_rule,naming_model:muslim
+P000274,Александровский,Пост Александровский,Магометанское,muslim,Бердаю-Хайрина Ниса-Тилла,Berdayu-Khayrina Nisa-Tilla,general_rule,naming_model:muslim; hyphenated
+P000290,Александровский,Пост Александровский,Иудейское,other_documented,Герш Файнберг,Gersh Faynberg,general_rule,naming_model:other_documented
+P000291,Александровский,Пост Александровский,Иудейское,other_documented,Екатерина Файнберг,Yekaterina Faynberg,general_rule,naming_model:other_documented
+P000292,Александровский,Пост Александровский,Иудейское,other_documented,Александра Файнберг,Aleksandra Faynberg,general_rule,naming_model:other_documented
+P000295,Александровский,Пост Александровский,Католическое,catholic,Михаил Иванов Зонтик,Mikhail Ivanov Zontik,general_rule,naming_model:catholic
+P000296,Александровский,Пост Александровский,Магометанское,muslim,Ултамбай Джаксамбетов,Ultambay Dzhaksambetov,general_rule,naming_model:muslim
+P000297,Александровский,Пост Александровский,Магометанское,muslim,Батыма Джаксамбетова,Batyma Dzhaksambetova,general_rule,naming_model:muslim
+P000298,Александровский,Пост Александровский,Магометанское,muslim,Сасена Джаксамбетова,Sasena Dzhaksambetova,general_rule,naming_model:muslim
+P000299,Александровский,Пост Александровский,Магометанское,muslim,Махмет Джаксамбетов,Makhmet Dzhaksambetov,general_rule,naming_model:muslim
+P000300,Александровский,Пост Александровский,Магометанское,muslim,Абдул-Малик Джаксамбетов,Abdul-Malik Dzhaksambetov,general_rule,naming_model:muslim; hyphenated
+P000326,Александровский,Пост Александровский,Католическое,catholic,Павлина Осипова Каролис,Pavlina Osipova Karolis,general_rule,naming_model:catholic
+P000327,Александровский,Пост Александровский,Католическое,catholic,Мария Каролис,Mariya Karolis,general_rule,naming_model:catholic
+P000339,Александровский,Пост Александровский,Магометанское,muslim,Кейзон Алипин,Keyzon Alipin,general_rule,naming_model:muslim
+P000340,Александровский,Пост Александровский,Магометанское,muslim,Зинаб Алипина,Zinab Alipina,general_rule,naming_model:muslim
+P000341,Александровский,Пост Александровский,Магометанское,muslim,Тосны-Науми Алипина,Tosny-Naumi Alipina,general_rule,naming_model:muslim; hyphenated
+P000342,Александровский,Пост Александровский,Католическое,catholic,Андрей Фомин Кондратович,Andrey Fomin Kondratovich,general_rule,naming_model:catholic
+P000343,Александровский,Пост Александровский,Католическое,catholic,Евва Осипова Кондратович,Yevva Osipova Kondratovich,general_rule,naming_model:catholic
+P000344,Александровский,Пост Александровский,Католическое,catholic,Анна Андреева Кондратович,Anna Andreyeva Kondratovich,general_rule,naming_model:catholic
+P000352,Александровский,Пост Александровский,Католическое,catholic,Петр Иванов Длугос,Petr Ivanov Dlugos,general_rule,naming_model:catholic
+P000353,Александровский,Пост Александровский,Католическое,catholic,Марья Семенова Норжинская,Marya Semenova Norzhinskaya,general_rule,naming_model:catholic
+P000357,Александровский,Пост Александровский,Католическое,catholic,Антон Карлов Крулевич,Anton Karlov Krulevich,general_rule,naming_model:catholic
+P000363,Александровский,Пост Александровский,Католическое,catholic,Екатерина Иванова Деряга,Yekaterina Ivanova Deryaga,general_rule,naming_model:catholic
+P000392,Александровский,Пост Александровский,,unknown,Михаил Безпалов,Mikhail Bezpalov,general_rule,naming_model:unknown
+P000402,Александровский,Пост Александровский,Лютеранское,lutheran,Александр Адольфов Ванк,Aleksandr Adolfov Vank,general_rule,naming_model:lutheran
+P000403,Александровский,Пост Александровский,Лютеранское,lutheran,Отто Адольфов Ванк,Otto Adolfov Vank,general_rule,naming_model:lutheran
+P000404,Александровский,Пост Александровский,Лютеранское,lutheran,Кай Мартынова Ванк,Kay Martynova Vank,general_rule,naming_model:lutheran
+P000409,Александровский,Пост Александровский,Католическое,catholic,Давид Кауж,David Kauzh,general_rule,naming_model:catholic
+P000410,Александровский,Пост Александровский,Католическое,catholic,Елизавета Кауж,Yelizaveta Kauzh,general_rule,naming_model:catholic
+P000428,Александровский,Пост Александровский,Лютеранское,lutheran,Юрий Касперов Новицкий,Yuriy Kasperov Novitskiy,general_rule,naming_model:lutheran
+P000441,Александровский,Пост Александровский,Католическое,catholic,Адам Эразмов Концынский,Adam Erazmov Kontsynskiy,general_rule,naming_model:catholic
+P000445,Александровский,Пост Александровский,Католическое,catholic,Матвей Шупенец,Matvey Shupenets,general_rule,naming_model:catholic
+P000451,Александровский,Пост Александровский,,unknown,Аксинья Осипова Королюк,Aksinya Osipova Korolyuk,general_rule,naming_model:unknown
+P000454,Александровский,Пост Александровский,Католическое,catholic,Франц Самсель,Frants Samsel,general_rule,naming_model:catholic
+P000464,Александровский,Пост Александровский,,unknown,Ирина Маркова Карелина,Irina Markova Karelina,general_rule,naming_model:unknown
+P000503,Александровский,Пост Александровский,Католическое,catholic,Устин Станиславов Селевич,Ustin Stanislavov Selevich,general_rule,naming_model:catholic
+P000510,Александровский,Пост Александровский,Католическое,catholic,Мариана Свидерская,Mariana Sviderskaya,general_rule,naming_model:catholic
+P000538,Александровский,Пост Александровский,Магометанское,muslim,Сагды Саликов,Sagdy Salikov,general_rule,naming_model:muslim
+P000542,Александровский,Пост Александровский,Магометанское,muslim,Ахматджан Багоманов,Akhmatdzhan Bagomanov,general_rule,naming_model:muslim
+P000543,Александровский,Пост Александровский,Магометанское,muslim,Валиула Ахмадулин,Valiula Akhmadulin,general_rule,naming_model:muslim
+P000545,Александровский,Пост Александровский,Магометанское,muslim,Невредин Сагитов,Nevredin Sagitov,general_rule,naming_model:muslim
+P000546,Александровский,Пост Александровский,Магометанское,muslim,Шерифа Рахматова,Sherifa Rakhmatova,general_rule,naming_model:muslim
+P000547,Александровский,Пост Александровский,Магометанское,muslim,Джелемдин Сагитов,Dzhelemdin Sagitov,general_rule,naming_model:muslim
+P000548,Александровский,Пост Александровский,Магометанское,muslim,Махамет-Шахир Махумедьянов,Makhamet-Shakhir Makhumedyanov,general_rule,naming_model:muslim; hyphenated
+P000556,Александровский,Пост Александровский,Католическое,catholic,Елена Сорокина,Yelena Sorokina,general_rule,naming_model:catholic
+P000563,Александровский,Пост Александровский,,unknown,Назар Старин,Nazar Starin,general_rule,naming_model:unknown
+P000564,Александровский,Пост Александровский,Католическое,catholic,Антон Войцехов Поплавский,Anton Voytsekhov Poplavskiy,general_rule,naming_model:catholic
+P000565,Александровский,Пост Александровский,Католическое,catholic,Гилярий Викентьев Госткевич,Gilyariy Vikentyev Gostkevich,general_rule,naming_model:catholic
+P000566,Александровский,Пост Александровский,Католическое,catholic,Иван Францов Гельшер,Ivan Frantsov Gelsher,general_rule,naming_model:catholic
+P000576,Александровский,Пост Александровский,Католическое,catholic,Ян Генрих Биндер,Yan Genrikh Binder,general_rule,naming_model:catholic
+P000577,Александровский,Пост Александровский,Лютеранское,lutheran,Карл Бухгар Лесин,Karl Bukhgar Lesin,general_rule,naming_model:lutheran
+P000578,Александровский,Пост Александровский,Лютеранское,lutheran,Юган Фридрих Тайблер,Yugan Fridrikh Taybler,general_rule,naming_model:lutheran
+P000601,Александровский,Пост Александровский,Магометанское,muslim,Кузакузанов Махмут,Kuzakuzanov Makhmut,general_rule,naming_model:muslim
+P000604,Александровский,Пост Александровский,,unknown,Михаил Иванов,Mikhail Ivanov,general_rule,naming_model:unknown
+P000609,Александровский,Пост Александровский,Магометанское,muslim,Бисали Курманов,Bisali Kurmanov,general_rule,naming_model:muslim
+P000610,Александровский,Пост Александровский,Магометанское,muslim,Нагатора Юсупова Шарапова,Nagatora Yusupova Sharapova,general_rule,naming_model:muslim
+P000611,Александровский,Пост Александровский,Магометанское,muslim,Махмет Имьмурат Шихмурад Мугаметов,Makhmet Immurat Shikhmurad Mugametov,general_rule,naming_model:muslim; four_plus_tokens
+P000612,Александровский,Пост Александровский,Магометанское,muslim,Зариф Гейзотов,Zarif Geyzotov,general_rule,naming_model:muslim
+P000613,Александровский,Пост Александровский,Магометанское,muslim,Маги Незамединова,Magi Nezamedinova,general_rule,naming_model:muslim
+P000614,Александровский,Пост Александровский,Магометанское,muslim,Гельмеддин Гейзотов,Gelmeddin Geyzotov,general_rule,naming_model:muslim
+P000615,Александровский,Пост Александровский,Магометанское,muslim,Хаснаддин Гейзотов,Khasnaddin Geyzotov,general_rule,naming_model:muslim
+P000616,Александровский,Пост Александровский,Православное,russian_historical,Иван Васильев 2-й,Ivan Vasilyev (2),general_rule,hyphenated; numbered_disambiguator
+P000617,Александровский,Пост Александровский,Католическое,catholic,Станислав Павлов Бугайский,Stanislav Pavlov Bugayskiy,general_rule,naming_model:catholic
+P000620,Александровский,Пост Александровский,,unknown,Василий Кононенко,Vasiliy Kononenko,general_rule,naming_model:unknown
+P000622,Александровский,Пост Александровский,,unknown,Дмитрий Румянцев,Dmitriy Rumyantsev,general_rule,naming_model:unknown
+P000623,Александровский,Пост Александровский,Католическое,catholic,Козимир Собан,Kozimir Soban,general_rule,naming_model:catholic
+P000625,Александровский,Пост Александровский,Католическое,catholic,Франц Антонов Гриневич,Frants Antonov Grinevich,general_rule,naming_model:catholic
+P000633,Александровский,Пост Александровский,Католическое,catholic,Алексей Андреев Лочь,Aleksey Andreyev Loch,general_rule,naming_model:catholic
+P000635,Александровский,Пост Александровский,,unknown,Иларион Лошакин,Ilarion Loshakin,general_rule,naming_model:unknown
+P000637,Александровский,Пост Александровский,,unknown,Никита Елисеев,Nikita Yeliseyev,general_rule,naming_model:unknown
+P000662,Александровский,Пост Александровский,,unknown,Яков Демидов,Yakov Demidov,general_rule,naming_model:unknown
+P000663,Александровский,Пост Александровский,,unknown,Трофим Матор,Trofim Mator,general_rule,naming_model:unknown
+P000664,Александровский,Пост Александровский,Католическое,catholic,Христинья Матвеева Мущинская,Khristinya Matveyeva Mushchinskaya,general_rule,naming_model:catholic
+P000668,Александровский,Пост Александровский,,unknown,Аксентий Пономаренко,Aksentiy Ponomarenko,general_rule,naming_model:unknown
+P000673,Александровский,Пост Александровский,,unknown,Степан Соколов,Stepan Sokolov,general_rule,naming_model:unknown
+P000676,Александровский,Пост Александровский,Католическое,catholic,Феликс Станиславов Коневский,Feliks Stanislavov Konevskiy,general_rule,naming_model:catholic
+P000683,Александровский,Пост Александровский,,unknown,Василий Суворов,Vasiliy Suvorov,general_rule,naming_model:unknown
+P000688,Александровский,Пост Александровский,,unknown,Алексей Стаканов,Aleksey Stakanov,general_rule,naming_model:unknown
+P000689,Александровский,Пост Александровский,Католическое,catholic,Антон Михайлов Фиолковский,Anton Mikhaylov Fiolkovskiy,general_rule,naming_model:catholic
+P000690,Александровский,Пост Александровский,Католическое,catholic,Францишка Карлова Фиолковская,Frantsishka Karlova Fiolkovskaya,general_rule,naming_model:catholic
+P000691,Александровский,Пост Александровский,Католическое,catholic,Марианна Фиолковская,Marianna Fiolkovskaya,general_rule,naming_model:catholic
+P000692,Александровский,Пост Александровский,,unknown,Василий Каргин,Vasiliy Kargin,general_rule,naming_model:unknown
+P000693,Александровский,Пост Александровский,,unknown,Дмитрий Илюшкин,Dmitriy Ilyushkin,general_rule,naming_model:unknown
+P000699,Александровский,Пост Александровский,,unknown,Иван Галойкин,Ivan Galoykin,general_rule,naming_model:unknown
+P000703,Александровский,Пост Александровский,Магометанское,muslim,Асли Ахмет Кизы,Asli Akhmet Kizy,general_rule,naming_model:muslim
+P000719,Александровский,Пост Александровский,,unknown,Степан Гах,Stepan Gakh,general_rule,naming_model:unknown
+P000747,Александровский,Пост Александровский,Католическое,catholic,Владислав Иванов Андрюцкий,Vladislav Ivanov Andryutskiy,general_rule,naming_model:catholic
+P000751,Александровский,Пост Александровский,Лютеранское,lutheran,Фриц Гаук,Frits Gauk,general_rule,naming_model:lutheran
+P000760,Александровский,Пост Александровский,Католическое,catholic,Наполеон Станислав Лисовский,Napoleon Stanislav Lisovskiy,general_rule,naming_model:catholic
+P000761,Александровский,Пост Александровский,Католическое,catholic,Петрунела Лисовская,Petrunela Lisovskaya,general_rule,naming_model:catholic
+P000762,Александровский,Пост Александровский,Католическое,catholic,Петр Лисовский,Petr Lisovskiy,general_rule,naming_model:catholic
+P000764,Александровский,Пост Александровский,Католическое,catholic,Николай Киц,Nikolay Kits,general_rule,naming_model:catholic
+P000771,Александровский,Пост Александровский,Магометанское,muslim,Садык Ефаев,Sadyk Yefayev,general_rule,naming_model:muslim
+P000772,Александровский,Пост Александровский,Магометанское,muslim,Возизя Ефаева,Vozizya Yefayeva,general_rule,naming_model:muslim
+P000777,Александровский,Пост Александровский,,unknown,Марья Черешнева,Marya Chereshneva,general_rule,naming_model:unknown
+P000794,Александровский,Пост Александровский,Католическое,catholic,Осип Станиславов Шмаус,Osip Stanislavov Shmaus,general_rule,naming_model:catholic
+P000795,Александровский,Пост Александровский,Католическое,catholic,Феофила Шмаус,Feofila Shmaus,general_rule,naming_model:catholic
+P000796,Александровский,Пост Александровский,Католическое,catholic,Людвиг Шмаус,Lyudvig Shmaus,general_rule,naming_model:catholic
+P000797,Александровский,Пост Александровский,Католическое,catholic,Станислав Шмаус,Stanislav Shmaus,general_rule,naming_model:catholic
+P000798,Александровский,Пост Александровский,Католическое,catholic,Бронислава Шмаус,Bronislava Shmaus,general_rule,naming_model:catholic
+P000799,Александровский,Пост Александровский,Католическое,catholic,Лев Людвигов Дегурский,Lev Lyudvigov Degurskiy,general_rule,naming_model:catholic
+P000810,Александровский,Пост Александровский,Лютеранское,lutheran,Филипп Хохол-Канц,Filipp Khokhol-Kants,general_rule,naming_model:lutheran; hyphenated
+P000815,Александровский,Пост Александровский,Католическое,catholic,Валентий Николаев Качинский,Valentiy Nikolayev Kachinskiy,general_rule,naming_model:catholic
+P000817,Александровский,Пост Александровский,Магометанское,muslim,Оглы Адам Мурат,Ogly Adam Murat,general_rule,naming_model:muslim
+P000822,Александровский,Пост Александровский,Православное,russian_historical,Пелагея,Pelageya,general_rule,one_token
+P000825,Александровский,Пост Александровский,Лютеранское,lutheran,Ян Бруж,Yan Bruzh,general_rule,naming_model:lutheran
+P000826,Александровский,Пост Александровский,Лютеранское,lutheran,Луиза Бруж,Luiza Bruzh,general_rule,naming_model:lutheran
+P000828,Александровский,Пост Александровский,Православное,russian_historical,Наталья,Natalya,general_rule,one_token
+P000838,Александровский,Пост Александровский,Католическое,catholic,Андрей Степановский,Andrey Stepanovskiy,general_rule,naming_model:catholic
+P000865,Александровский,Пост Александровский,Католическое,catholic,Ансель Михаилов Венц,Ansel Mikhailov Vents,general_rule,naming_model:catholic
+P000869,Александровский,Пост Александровский,Католическое,catholic,Матеуш Ружесинский,Mateush Ruzhesinskiy,general_rule,naming_model:catholic
+P000879,Александровский,Пост Александровский,Лютеранское,lutheran,Ганс Михельсон,Gans Mikhelson,general_rule,naming_model:lutheran
+P000884,Александровский,Пост Александровский,Православное,russian_historical,Илья Иванов Кондратьев-Румянцев,Ilya Ivanov Kondratyev-Rumyantsev,general_rule,hyphenated
+P000893,Александровский,Пост Александровский,Лютеранское,lutheran,Генрих Мадди,Genrikh Maddi,general_rule,naming_model:lutheran
+P000895,Александровский,Пост Александровский,Лютеранское,lutheran,Ян Депан,Yan Depan,general_rule,naming_model:lutheran
+P000901,Александровский,Пост Александровский,,unknown,Дмитрий Заикин,Dmitriy Zaikin,general_rule,naming_model:unknown
+P000941,Александровский,Пост Александровский,Католическое,catholic,Михаил Каземиров Маржецкий,Mikhail Kazemirov Marzhetskiy,general_rule,naming_model:catholic
+P000960,Александровский,Пост Александровский,,unknown,Александр Яковлев Коротков,Aleksandr Yakovlev Korotkov,general_rule,naming_model:unknown
+P000964,Александровский,Пост Александровский,Католическое,catholic,Марья Иванова Соколовская,Marya Ivanova Sokolovskaya,general_rule,naming_model:catholic
+P000967,Александровский,Пост Александровский,Армяно-григорианское,other_documented,Макар Тиг Азизов,Makar Tig Azizov,general_rule,naming_model:other_documented
+P000977,Александровский,Пост Александровский,Католическое,catholic,Анна Осипова Максимова,Anna Osipova Maksimova,general_rule,naming_model:catholic
+P000978,Александровский,Пост Александровский,,unknown,Андрей Николаев Максимов,Andrey Nikolayev Maksimov,general_rule,naming_model:unknown
+P000979,Александровский,Пост Александровский,,unknown,Екатерина Николаева Максимова,Yekaterina Nikolayeva Maksimova,general_rule,naming_model:unknown
+P000980,Александровский,Пост Александровский,Армяно-григорианское,other_documented,Семен Мартынов Печенжио,Semen Martynov Pechenzhio,general_rule,naming_model:other_documented
+P000981,Александровский,Пост Александровский,Армяно-григорианское,other_documented,Гандил Арутинов,Gandil Arutinov,general_rule,naming_model:other_documented
+P000995,Александровский,Пост Александровский,Православное,russian_historical,Федор,Fedor,general_rule,one_token
+P001000,Александровский,Пост Александровский,Магометанское,muslim,Ага Бала Сефер Оглы,Aga Bala Sefer Ogly,general_rule,naming_model:muslim; four_plus_tokens
+P001001,Александровский,Пост Александровский,Магометанское,muslim,Кизы Пари Джан-Рустам,Kizy Pari Dzhan-Rustam,general_rule,naming_model:muslim; hyphenated
+P001002,Александровский,Пост Александровский,Армяно-григорианское,other_documented,Иванес Никитич Тигранянц,Ivanes Nikitich Tigranyants,general_rule,naming_model:other_documented
+P001005,Александровский,Пост Александровский,Православное,russian_historical,Дорофей,Dorofey,general_rule,one_token
+P001009,Александровский,Пост Александровский,,unknown,Андрей Ладыгин,Andrey Ladygin,general_rule,naming_model:unknown
+P001011,Александровский,Пост Александровский,,unknown,Филипп Иванов Иванов,Filipp Ivanov Ivanov,general_rule,naming_model:unknown
+P001021,Александровский,Пост Александровский,Православное,russian_historical,Александр,Aleksandr,general_rule,one_token
+P001023,Александровский,Пост Александровский,Католическое,catholic,Климентий Юрьев Некраш,Klimentiy Yuryev Nekrash,general_rule,naming_model:catholic
+P001026,Александровский,Пост Александровский,Православное,russian_historical,Василий,Vasiliy,general_rule,one_token
+P001029,Александровский,Пост Александровский,Православное,russian_historical,Екатерина,Yekaterina,general_rule,one_token
+P001032,Александровский,Пост Александровский,Православное,russian_historical,Семен,Semen,general_rule,one_token
+P001036,Александровский,Пост Александровский,,unknown,Захар Богданов,Zakhar Bogdanov,general_rule,naming_model:unknown
+P001052,Александровский,Пост Александровский,Католическое,catholic,Фелициан Людвикович Вильчинский,Felitsian Lyudvikovich Vilchinskiy,general_rule,naming_model:catholic
+P001059,Александровский,Пост Александровский,Католическое,catholic,Адолф Станиславов Форминский,Adolf Stanislavov Forminskiy,general_rule,naming_model:catholic
+P001060,Александровский,Пост Александровский,Католическое,catholic,Юлия Андреева Форминская,Yuliya Andreyeva Forminskaya,general_rule,naming_model:catholic
+P001061,Александровский,Пост Александровский,Католическое,catholic,Виктория Форминская,Viktoriya Forminskaya,general_rule,naming_model:catholic
+P001062,Александровский,Пост Александровский,Католическое,catholic,Бронислав Форминский,Bronislav Forminskiy,general_rule,naming_model:catholic
+P001077,Александровский,Пост Александровский,,unknown,Тимофей Семинченко,Timofey Seminchenko,general_rule,naming_model:unknown
+P001079,Александровский,Пост Александровский,Католическое,catholic,Болислав Иосифов Бобровский,Bolislav Iosifov Bobrovskiy,general_rule,naming_model:catholic
+P001087,Александровский,Пост Александровский,Католическое,catholic,Томас Иосипов Андрюшко,Tomas Iosipov Andryushko,general_rule,naming_model:catholic
+P001091,Александровский,Пост Александровский,Православное,russian_historical,Татьяна,Tatyana,general_rule,one_token
+P001092,Александровский,Пост Александровский,,unknown,Иван,Ivan,general_rule,naming_model:unknown; one_token
+P001093,Александровский,Пост Александровский,,unknown,Петр,Petr,general_rule,naming_model:unknown; one_token
+P001094,Александровский,Пост Александровский,Магометанское,muslim,Ималетдин Кабаев,Imaletdin Kabayev,general_rule,naming_model:muslim
+P001095,Александровский,Пост Александровский,Магометанское,muslim,Заида Кабаева,Zaida Kabayeva,general_rule,naming_model:muslim
+P001100,Александровский,Пост Александровский,,unknown,Иван Стрельцов,Ivan Streltsov,general_rule,naming_model:unknown
+P001101,Александровский,Пост Александровский,Лютеранское,lutheran,Иван Михайлов Вильдеман,Ivan Mikhaylov Vildeman,general_rule,naming_model:lutheran
+P001102,Александровский,Пост Александровский,Лютеранское,lutheran,Каролина Федорова Вильдеман,Karolina Fedorova Vildeman,general_rule,naming_model:lutheran
+P001103,Александровский,Пост Александровский,Лютеранское,lutheran,Елизавета Вильдеман,Yelizaveta Vildeman,general_rule,naming_model:lutheran
+P001104,Александровский,Пост Александровский,Лютеранское,lutheran,Иван Вильдеман,Ivan Vildeman,general_rule,naming_model:lutheran
+P001107,Александровский,Пост Александровский,Лютеранское,lutheran,Фердинанд Иванов Миллер,Ferdinand Ivanov Miller,general_rule,naming_model:lutheran
+P001108,Александровский,Пост Александровский,Лютеранское,lutheran,Юлия Романова Серафим,Yuliya Romanova Serafim,general_rule,naming_model:lutheran
+P001110,Александровский,Пост Александровский,,unknown,Елизавета Михайлова Дубенецкая,Yelizaveta Mikhaylova Dubenetskaya,general_rule,naming_model:unknown
+P001112,Александровский,Пост Александровский,,unknown,Сергей Дубенецкий,Sergey Dubenetskiy,general_rule,naming_model:unknown
+P001121,Александровский,Пост Александровский,Магометанское,muslim,Шах Базу Беков,Shakh Bazu Bekov,general_rule,naming_model:muslim
+P001122,Александровский,Пост Александровский,Магометанское,muslim,Доста Амир Гизы,Dosta Amir Gizy,general_rule,naming_model:muslim
+P001123,Александровский,Пост Александровский,Католическое,catholic,Степан Клементьев Кунцевич,Stepan Klementyev Kuntsevich,general_rule,naming_model:catholic
+P001124,Александровский,Пост Александровский,Католическое,catholic,Розалия Фомина Кунцевич,Rozaliya Fomina Kuntsevich,general_rule,naming_model:catholic
+P001127,Александровский,Пост Александровский,Магометанское,muslim,Оглы Муса Абар Мешади,Ogly Musa Abar Meshadi,general_rule,naming_model:muslim; four_plus_tokens
+P001129,Александровский,Пост Александровский,Православное,russian_historical,Александр,Aleksandr,general_rule,one_token
+P001134,Александровский,Пост Александровский,,unknown,Николай Найденов,Nikolay Naydenov,general_rule,naming_model:unknown
+P001142,Александровский,Пост Александровский,,unknown,Дмитрий Иванов,Dmitriy Ivanov,general_rule,naming_model:unknown
+P001151,Александровский,Пост Александровский,Православное,russian_historical,Любовь Александpова Вецкая,Lyubov Aleksandrova Vetskaya,owner_override_20260802,mixed_latin_cyrillic
+P001155,Александровский,Пост Александровский,Католическое,catholic,Иван Иванов Берба,Ivan Ivanov Berba,general_rule,naming_model:catholic
+P001156,Александровский,Пост Александровский,Католическое,catholic,Мариана Корнацкая,Mariana Kornatskaya,general_rule,naming_model:catholic
+P001168,Александровский,Пост Александровский,,unknown,Николай Тимошенко,Nikolay Timoshenko,general_rule,naming_model:unknown
+P001176,Александровский,Пост Александровский,,unknown,Григорий Воронов,Grigoriy Voronov,general_rule,naming_model:unknown
+P001177,Александровский,Пост Александровский,Католическое,catholic,Франциска Григорьева Мильбрант,Frantsiska Grigoryeva Milbrant,general_rule,naming_model:catholic
+P001189,Александровский,Пост Александровский,Католическое,catholic,Юлия Игнатьева Созина,Yuliya Ignatyeva Sozina,general_rule,naming_model:catholic
+P001190,Александровский,Пост Александровский,Католическое,catholic,Владимир Созин,Vladimir Sozin,general_rule,naming_model:catholic
+P001195,Александровский,Пост Александровский,Православное,russian_historical,Матрена,Matrena,general_rule,one_token
+P001196,Александровский,Пост Александровский,Католическое,catholic,Франц Бевентора Москва,Frants Beventora Moskva,general_rule,naming_model:catholic
+P001207,Александровский,Пост Александровский,Православное,russian_historical,Дмитрий,Dmitriy,general_rule,one_token
+P001217,Александровский,Пост Александровский,Лютеранское,lutheran,Отто Фердинант Вильберг,Otto Ferdinant Vilberg,general_rule,naming_model:lutheran
+P001218,Александровский,Пост Александровский,Лютеранское,lutheran,Вильгельмина Юганова Вильберг,Vilgelmina Yuganova Vilberg,general_rule,naming_model:lutheran
+P001219,Александровский,Пост Александровский,Лютеранское,lutheran,Илина-Юзефина Вильберг,Ilina-Yuzefina Vilberg,general_rule,naming_model:lutheran; hyphenated
+P001226,Александровский,Пост Александровский,Католическое,catholic,Цицилия Осипова Сабонис,Tsitsiliya Osipova Sabonis,general_rule,naming_model:catholic
+P001233,Александровский,Пост Александровский,,unknown,Игнатий Михняцкий,Ignatiy Mikhnyatskiy,general_rule,naming_model:unknown
+P001237,Александровский,Пост Александровский,Католическое,catholic,Адам Антонов Словик,Adam Antonov Slovik,general_rule,naming_model:catholic
+P001238,Александровский,Пост Александровский,Католическое,catholic,Юзефа Павлова Словик,Yuzefa Pavlova Slovik,general_rule,naming_model:catholic
+P001239,Александровский,Пост Александровский,Католическое,catholic,Станислава Словик,Stanislava Slovik,general_rule,naming_model:catholic
+P001240,Александровский,Пост Александровский,Католическое,catholic,Тадеуш Словик,Tadeush Slovik,general_rule,naming_model:catholic
+P001241,Александровский,Пост Александровский,Католическое,catholic,Станислав Филиппович Хроновский,Stanislav Filippovich Khronovskiy,general_rule,naming_model:catholic
+P001242,Александровский,Пост Александровский,,unknown,Василий Васильев Котов,Vasiliy Vasilyev Kotov,general_rule,naming_model:unknown
+P001247,Александровский,Пост Александровский,Католическое,catholic,Софья Степанова Мамелюк,Sofya Stepanova Mamelyuk,general_rule,naming_model:catholic
+P001253,Александровский,Пост Александровский,Католическое,catholic,Григорий Иванов Карась,Grigoriy Ivanov Karas,general_rule,naming_model:catholic
+P001257,Александровский,Пост Александровский,Католическое,catholic,Мария Вантиева Шиманская,Mariya Vantiyeva Shimanskaya,general_rule,naming_model:catholic
+P001262,Александровский,Пост Александровский,,unknown,Федор Малинин,Fedor Malinin,general_rule,naming_model:unknown
+P001268,Александровский,Пост Александровский,,unknown,Павел Шаповалов,Pavel Shapovalov,general_rule,naming_model:unknown
+P001275,Александровский,Пост Александровский,,unknown,Николай Дульщиков,Nikolay Dulshchikov,general_rule,naming_model:unknown
+P001279,Александровский,Пост Александровский,Православное,russian_historical,Николай,Nikolay,general_rule,one_token
+P001281,Александровский,Пост Александровский,,unknown,Никита Семченко,Nikita Semchenko,general_rule,naming_model:unknown
+P001284,Александровский,Пост Александровский,,unknown,Яков Брыкин,Yakov Brykin,general_rule,naming_model:unknown
+P001289,Александровский,Пост Александровский,Католическое,catholic,Феликс Иванов Уминский,Feliks Ivanov Uminskiy,general_rule,naming_model:catholic
+P001292,Александровский,Пост Александровский,Лютеранское,lutheran,Ян Корк,Yan Kork,general_rule,naming_model:lutheran
+P001293,Александровский,Пост Александровский,Лютеранское,lutheran,Анна Мартинсон,Anna Martinson,general_rule,naming_model:lutheran
+P001294,Александровский,Пост Александровский,Лютеранское,lutheran,Ян Гаук,Yan Gauk,general_rule,naming_model:lutheran
+P001295,Александровский,Пост Александровский,Лютеранское,lutheran,Лена Гаук,Lena Gauk,general_rule,naming_model:lutheran
+P001297,Александровский,Пост Александровский,Лютеранское,lutheran,Мартын Падер,Martyn Pader,general_rule,naming_model:lutheran
+P001298,Александровский,Пост Александровский,Католическое,catholic,Людвиг Пржебыльский,Lyudvig Przhebylskiy,general_rule,naming_model:catholic
+P001299,Александровский,Пост Александровский,Католическое,catholic,Розалия Яковлева Пржебыльская,Rozaliya Yakovleva Przhebylskaya,general_rule,naming_model:catholic
+P001300,Александровский,Пост Александровский,Католическое,catholic,Осип Секомян,Osip Sekomyan,general_rule,naming_model:catholic
+P001301,Александровский,Пост Александровский,Католическое,catholic,Анна Осипова Секомян,Anna Osipova Sekomyan,general_rule,naming_model:catholic
+P001322,Александровский,Пост Александровский,Православное,russian_historical,Яков Терабкаров-Какули,Yakov Terabkarov-Kakuli,general_rule,hyphenated
+P001326,Александровский,Пост Александровский,Лютеранское,lutheran,Людвиг Литенбург,Lyudvig Litenburg,general_rule,naming_model:lutheran
+P001335,Александровский,Пост Александровский,Католическое,catholic,Казимир Лисицкий,Kazimir Lisitskiy,general_rule,naming_model:catholic
+P001336,Александровский,Пост Александровский,Католическое,catholic,Марья Лисицкая,Marya Lisitskaya,general_rule,naming_model:catholic
+P001341,Александровский,Пост Александровский,Магометанское,muslim,Ахмет Апашев,Akhmet Apashev,general_rule,naming_model:muslim
+P001343,Александровский,Пост Александровский,Магометанское,muslim,Багиш Касым-Оглы,Bagish Kasym-Ogly,general_rule,naming_model:muslim; hyphenated
+P001344,Александровский,Пост Александровский,Магометанское,muslim,Ширипей Касым Ге,Shiripey Kasym Ge,general_rule,naming_model:muslim
+P001345,Александровский,Пост Александровский,Магометанское,muslim,Байрам,Bayram,general_rule,naming_model:muslim; one_token
+P001346,Александровский,Пост Александровский,Магометанское,muslim,Асли Багиш,Asli Bagish,general_rule,naming_model:muslim
+P001347,Александровский,Пост Александровский,Магометанское,muslim,Казим Багиш,Kazim Bagish,general_rule,naming_model:muslim
+P001351,Александровский,Пост Александровский,Лютеранское,lutheran,Замель Ян Радзин,Zamel Yan Radzin,general_rule,naming_model:lutheran
+P001367,Александровский,Пост Александровский,Магометанское,muslim,Оглы Мамет Рагим Абдурахман Мешади Абдул Оглы,Ogly Mamet Ragim Abdurakhman Meshadi Abdul Ogly,general_rule,naming_model:muslim; four_plus_tokens
+P001368,Александровский,Пост Александровский,Магометанское,muslim,Намнат Измаилова,Namnat Izmailova,general_rule,naming_model:muslim
+P001386,Александровский,Пост Александровский,Лютеранское,lutheran,Яков Андреевич Бельт,Yakov Andreyevich Belt,general_rule,naming_model:lutheran
+P001387,Александровский,Пост Александровский,Лютеранское,lutheran,Юлия Иванова Бельт,Yuliya Ivanova Belt,general_rule,naming_model:lutheran
+P001388,Александровский,Пост Александровский,Лютеранское,lutheran,Фриц Фриц Брювер,Frits Frits Bryuver,general_rule,naming_model:lutheran
+P001389,Александровский,Пост Александровский,Лютеранское,lutheran,Крет Семенов Арайс,Kret Semenov Arays,general_rule,naming_model:lutheran
+P001401,Александровский,Пост Александровский,Католическое,catholic,Андрей Андреев Наудуш,Andrey Andreyev Naudush,general_rule,naming_model:catholic
+P001402,Александровский,Пост Александровский,Католическое,catholic,Варвара Казимирова Наудуш,Varvara Kazimirova Naudush,general_rule,naming_model:catholic
+P001403,Александровский,Пост Александровский,Католическое,catholic,Владислав Андреев Найдуш,Vladislav Andreyev Naydush,general_rule,naming_model:catholic
+P001404,Александровский,Пост Александровский,Католическое,catholic,Иван Андреев Найдуш,Ivan Andreyev Naydush,general_rule,naming_model:catholic
+P001428,Александровский,Пост Александровский,Католическое,catholic,Эдмунд Плосский,Edmund Plosskiy,general_rule,naming_model:catholic
+P001429,Александровский,Пост Александровский,Католическое,catholic,Мария-Софья Плосская,Mariya-Sofya Plosskaya,general_rule,naming_model:catholic; hyphenated
+P001434,Александровский,Корсаковское,Магометанское,muslim,Гайфула Абубакиров,Gayfula Abubakirov,general_rule,naming_model:muslim
+P001435,Александровский,Корсаковское,Магометанское,muslim,Ганоста Абубакирова,Ganosta Abubakirova,general_rule,naming_model:muslim
+P001436,Александровский,Корсаковское,Магометанское,muslim,Верхониса Абубакирова,Verkhonisa Abubakirova,general_rule,naming_model:muslim
+P001437,Александровский,Корсаковское,Магометанское,muslim,Зейнатула Абубакирова,Zeynatula Abubakirova,general_rule,naming_model:muslim
+P001438,Александровский,Корсаковское,Магометанское,muslim,Зенайха Абубакирова,Zenaykha Abubakirova,general_rule,naming_model:muslim
+P001439,Александровский,Корсаковское,Магометанское,muslim,Гарафула Абубакиров,Garafula Abubakirov,general_rule,naming_model:muslim
+P001440,Александровский,Корсаковское,,unknown,Жамшенти Абубакиров,Zhamshenti Abubakirov,general_rule,naming_model:unknown
+P001441,Александровский,Корсаковское,Магометанское,muslim,Гайнула Абубакирова,Gaynula Abubakirova,general_rule,naming_model:muslim
+P001446,Александровский,Корсаковское,,unknown,Александра Владимирова Золотарева,Aleksandra Vladimirova Zolotareva,general_rule,naming_model:unknown
+P001453,Александровский,Корсаковское,,unknown,Дмитрий Македониев Степанов,Dmitriy Makedoniyev Stepanov,general_rule,naming_model:unknown
+P001461,Александровский,Корсаковское,Католическое,catholic,Франц Антонов Червинский,Frants Antonov Chervinskiy,general_rule,naming_model:catholic
+P001463,Александровский,Корсаковское,Католическое,catholic,Софья Осипова Ковальская,Sofya Osipova Kovalskaya,general_rule,naming_model:catholic
+P001464,Александровский,Корсаковское,Католическое,catholic,Иван Ковальский,Ivan Kovalskiy,general_rule,naming_model:catholic
+P001478,Александровский,Корсаковское,Православное,russian_historical,Анна 1-я Петрова,Anna (1) Petrova,general_rule,hyphenated; numbered_disambiguator
+P001480,Александровский,Корсаковское,Православное,russian_historical,Анна 2-я Петрова,Anna (2) Petrova,general_rule,hyphenated; numbered_disambiguator
+P001481,Александровский,Корсаковское,Католическое,catholic,Петр Александрович Жарский,Petr Aleksandrovich Zharskiy,general_rule,naming_model:catholic
+P001482,Александровский,Корсаковское,Католическое,catholic,Розалия Мацкевич,Rozaliya Matskevich,general_rule,naming_model:catholic
+P001483,Александровский,Корсаковское,Католическое,catholic,Владислав Петрович Жарский,Vladislav Petrovich Zharskiy,general_rule,naming_model:catholic
+P001484,Александровский,Корсаковское,Католическое,catholic,Иосиф Ковалевский,Iosif Kovalevskiy,general_rule,naming_model:catholic
+P001485,Александровский,Корсаковское,Католическое,catholic,Антон Осипович Ясинский,Anton Osipovich Yasinskiy,general_rule,naming_model:catholic
+P001498,Александровский,Корсаковское,,unknown,Маргарита Васильева,Margarita Vasilyeva,general_rule,naming_model:unknown
+P001501,Александровский,Корсаковское,Католическое,catholic,Григорий Агабобов,Grigoriy Agabobov,general_rule,naming_model:catholic
+P001520,Александровский,Корсаковское,Армяно-григорианское,other_documented,Константин Вартонов Исаянц,Konstantin Vartonov Isayants,general_rule,naming_model:other_documented
+P001521,Александровский,Корсаковское,Армяно-григорианское,other_documented,Марья Иванова Исаянц,Marya Ivanova Isayants,general_rule,naming_model:other_documented
+P001522,Александровский,Корсаковское,Армяно-григорианское,other_documented,Артем Константинов Исаянц,Artem Konstantinov Isayants,general_rule,naming_model:other_documented
+P001523,Александровский,Корсаковское,Армяно-григорианское,other_documented,Петр Константинов Исаянц,Petr Konstantinov Isayants,general_rule,naming_model:other_documented
+P001550,Александровский,Корсаковское,Лютеранское,lutheran,Август Вильгельм Генрих Меллартек,Avgust Vilgelm Genrikh Mellartek,general_rule,naming_model:lutheran; four_plus_tokens
+P001561,Александровский,Корсаковское,Католическое,catholic,Елена Францова Шляхова,Yelena Frantsova Shlyakhova,general_rule,naming_model:catholic
+P001593,Александровский,Корсаковское,,unknown,Авдотья Антонова Синельникова,Avdotya Antonova Sinelnikova,general_rule,naming_model:unknown
+P001622,Александровский,Корсаковское,Католическое,catholic,Каспер Тихос,Kasper Tikhos,general_rule,naming_model:catholic
+P001623,Александровский,Корсаковское,Католическое,catholic,Марья Башинская,Marya Bashinskaya,general_rule,naming_model:catholic
+P001624,Александровский,Корсаковское,Католическое,catholic,Ирина Башинская,Irina Bashinskaya,general_rule,naming_model:catholic
+P001625,Александровский,Корсаковское,Католическое,catholic,Яков Яцук,Yakov Yatsuk,general_rule,naming_model:catholic
+P001626,Александровский,Корсаковское,Католическое,catholic,Осип Казимиров Липинский,Osip Kazimirov Lipinskiy,general_rule,naming_model:catholic
+P001627,Александровский,Корсаковское,Католическое,catholic,Доротея Мазанова,Doroteya Mazanova,general_rule,naming_model:catholic
+P001634,Александровский,Корсаковское,Православное,russian_historical,Степан Андреев Янчугов-Кожевников,Stepan Andreyev Yanchugov-Kozhevnikov,general_rule,hyphenated
+P001638,Александровский,Корсаковское,Католическое,catholic,Марианна Андреева Бурза,Marianna Andreyeva Burza,general_rule,naming_model:catholic
+P001643,Александровский,Корсаковское,Католическое,catholic,Павел Казимиров Липинский,Pavel Kazimirov Lipinskiy,general_rule,naming_model:catholic
+P001646,Александровский,Корсаковское,Армяно-григорианское,other_documented,Иванис Арушанов,Ivanis Arushanov,general_rule,naming_model:other_documented
+P001648,Александровский,Корсаковское,Армяно-григорианское,other_documented,Иван Арушанов,Ivan Arushanov,general_rule,naming_model:other_documented
+P001649,Александровский,Корсаковское,Армяно-григорианское,other_documented,Павел Арушанов,Pavel Arushanov,general_rule,naming_model:other_documented
+P001651,Александровский,Корсаковское,Православное,russian_historical,Иван 2-й Арушанов,Ivan (2) Arushanov,general_rule,hyphenated; numbered_disambiguator
+P001654,Александровский,Корсаковское,Магометанское,muslim,Оглы Фереч Кербанай-Самет,Ogly Ferech Kerbanay-Samet,general_rule,naming_model:muslim; hyphenated
+P001657,Александровский,Корсаковское,,unknown,Авдотья Солодова,Avdotya Solodova,general_rule,naming_model:unknown
+P001690,Александровский,Корсаковское,Католическое,catholic,Карл Кохтанов Ковальский,Karl Kokhtanov Kovalskiy,general_rule,naming_model:catholic
+P001693,Александровский,Корсаковское,Католическое,catholic,Франц Иванов Подсядло,Frants Ivanov Podsyadlo,general_rule,naming_model:catholic
+P001703,Александровский,Ново-Михайловское,,unknown,Агафья Михайлова Сырова,Agafya Mikhaylova Syrova,general_rule,naming_model:unknown
+P001733,Александровский,Ново-Михайловское,,unknown,Пелагея Шепеленкова,Pelageya Shepelenkova,general_rule,naming_model:unknown
+P001738,Александровский,Ново-Михайловское,Магометанское,muslim,Шарипов Хай Рахман,Sharipov Khay Rakhman,general_rule,naming_model:muslim
+P001739,Александровский,Ново-Михайловское,Магометанское,muslim,Шарипова Алтун Бекс,Sharipova Altun Beks,general_rule,naming_model:muslim
+P001753,Александровский,Ново-Михайловское,Армяно-григорианское,other_documented,Арутинов,Arutinov,general_rule,naming_model:other_documented; one_token
+P001757,Александровский,Ново-Михайловское,Магометанское,muslim,Абдул Кадыр,Abdul Kadyr,general_rule,naming_model:muslim
+P001769,Александровский,Ново-Михайловское,Лютеранское,lutheran,Анна Брит,Anna Brit,general_rule,naming_model:lutheran
+P001783,Александровский,Ново-Михайловское,Католическое,catholic,Людвиг Мгустов Поцаловский,Lyudvig Mgustov Potsalovskiy,general_rule,naming_model:catholic
+P001791,Александровский,Ново-Михайловское,,unknown,Иван Степанов Фомин,Ivan Stepanov Fomin,general_rule,naming_model:unknown
+P001830,Александровский,Ново-Михайловское,Католическое,catholic,Франц Жураховский,Frants Zhurakhovskiy,general_rule,naming_model:catholic
+P001851,Александровский,Ново-Михайловское,Магометанское,muslim,Байдуло Тургаев,Baydulo Turgayev,general_rule,naming_model:muslim
+P001852,Александровский,Ново-Михайловское,Магометанское,muslim,Чупаев Давлега,Chupayev Davlega,general_rule,naming_model:muslim
+P001853,Александровский,Ново-Михайловское,Магометанское,muslim,Айбуруш,Ayburush,general_rule,naming_model:muslim; one_token
+P001854,Александровский,Ново-Михайловское,Магометанское,muslim,Куты Хаджилов Мирзабир,Kuty Khadzhilov Mirzabir,general_rule,naming_model:muslim
+P001855,Александровский,Ново-Михайловское,Магометанское,muslim,Тейсма Хаджилова,Teysma Khadzhilova,general_rule,naming_model:muslim
+P001856,Александровский,Ново-Михайловское,Магометанское,muslim,Куты Хаджилов Ильчи Бек,Kuty Khadzhilov Ilchi Bek,general_rule,naming_model:muslim; four_plus_tokens
+P001857,Александровский,Ново-Михайловское,Магометанское,muslim,Ульбигол Куты Хадживилова,Ulbigol Kuty Khadzhivilova,general_rule,naming_model:muslim
+P001858,Александровский,Ново-Михайловское,Магометанское,muslim,Бубукамага Куты Хадживилов,Bubukamaga Kuty Khadzhivilov,general_rule,naming_model:muslim
+P001859,Александровский,Ново-Михайловское,Магометанское,muslim,Сабит Паскеев,Sabit Paskeyev,general_rule,naming_model:muslim
+P001862,Александровский,Ново-Михайловское,,unknown,Филипп Гудков,Filipp Gudkov,general_rule,naming_model:unknown
+P001872,Александровский,Ново-Михайловское,Католическое,catholic,Аватис Вадимов Аввакумов,Avatis Vadimov Avvakumov,general_rule,naming_model:catholic
+P001890,Александровский,Ново-Михайловское,Католическое,catholic,Мартын Андреев Кочаровский,Martyn Andreyev Kocharovskiy,general_rule,naming_model:catholic
+P001891,Александровский,Ново-Михайловское,Магометанское,muslim,Оглы Али-Яр Ага-Али,Ogly Ali-Yar Aga-Ali,general_rule,naming_model:muslim; hyphenated
+P001892,Александровский,Ново-Михайловское,Магометанское,muslim,Аванесса Кири Миладгим,Avanessa Kiri Miladgim,general_rule,naming_model:muslim
+P001901,Александровский,Ново-Михайловское,,unknown,Николай Лошкарев,Nikolay Loshkarev,general_rule,naming_model:unknown
+P001906,Александровский,Ново-Михайловское,Католическое,catholic,Фома Игнатьев Войтисяк,Foma Ignatyev Voytisyak,general_rule,naming_model:catholic
+P001907,Александровский,Ново-Михайловское,Католическое,catholic,Ядвига Игнатьева Вдавальская,Yadviga Ignatyeva Vdavalskaya,general_rule,naming_model:catholic
+P001912,Александровский,Ново-Михайловское,Католическое,catholic,Теодора Антонова Балановская,Teodora Antonova Balanovskaya,general_rule,naming_model:catholic
+P001950,Александровский,Ново-Михайловское,Католическое,catholic,Осип Станковский,Osip Stankovskiy,general_rule,naming_model:catholic
+P001951,Александровский,Ново-Михайловское,Католическое,catholic,Розалия Яковлева Станковская,Rozaliya Yakovleva Stankovskaya,general_rule,naming_model:catholic
+P001956,Александровский,Ново-Михайловское,Иудейское,other_documented,Бени Шмуйлов Росинский,Beni Shmuylov Rosinskiy,general_rule,naming_model:other_documented
+P001957,Александровский,Ново-Михайловское,Иудейское,other_documented,Пейся Флейшман,Peysya Fleyshman,general_rule,naming_model:other_documented
+P001958,Александровский,Ново-Михайловское,Иудейское,other_documented,Шмул Флейшман,Shmul Fleyshman,general_rule,naming_model:other_documented
+P001977,Александровский,Ново-Михайловское,Православное,russian_historical,Наталья 2-я Михайлова Горшкова,Natalya (2) Mikhaylova Gorshkova,general_rule,four_plus_tokens; hyphenated; numbered_disambiguator
+P001980,Александровский,Ново-Михайловское,Католическое,catholic,Ян Гришко,Yan Grishko,general_rule,naming_model:catholic
+P001981,Александровский,Ново-Михайловское,Католическое,catholic,Екатерина Павлова Боровецкая,Yekaterina Pavlova Borovetskaya,general_rule,naming_model:catholic
+P001982,Александровский,Ново-Михайловское,Католическое,catholic,Мария Боровецкая,Mariya Borovetskaya,general_rule,naming_model:catholic
+P001985,Александровский,Ново-Михайловское,Католическое,catholic,Иван Иванов Дроздовский,Ivan Ivanov Drozdovskiy,general_rule,naming_model:catholic
+P001986,Александровский,Ново-Михайловское,Католическое,catholic,Агния Антонова Дорошевская,Agniya Antonova Doroshevskaya,general_rule,naming_model:catholic
+P001994,Александровский,Ново-Михайловское,,unknown,Михаил Васильев,Mikhail Vasilyev,general_rule,naming_model:unknown
+P002020,Александровский,Ново-Михайловское,Католическое,catholic,Мартын Степанов Могунцов,Martyn Stepanov Moguntsov,general_rule,naming_model:catholic
+P002021,Александровский,Ново-Михайловское,Католическое,catholic,Анна Адашева,Anna Adasheva,general_rule,naming_model:catholic
+P002022,Александровский,Ново-Михайловское,Магометанское,muslim,Хасьянов Мерапежетин,Khasyanov Merapezhetin,general_rule,naming_model:muslim
+P002023,Александровский,Ново-Михайловское,Магометанское,muslim,Зелифа Хасьянова,Zelifa Khasyanova,general_rule,naming_model:muslim
+P002024,Александровский,Ново-Михайловское,Магометанское,muslim,Шай-Мирта Ула,Shay-Mirta Ula,general_rule,naming_model:muslim; hyphenated
+P002025,Александровский,Ново-Михайловское,Магометанское,muslim,Ямана Мирта,Yamana Mirta,general_rule,naming_model:muslim
+P002026,Александровский,Ново-Михайловское,Католическое,catholic,Федор Федоров Балабаненко,Fedor Fedorov Balabanenko,general_rule,naming_model:catholic
+P002027,Александровский,Ново-Михайловское,Католическое,catholic,Юлия Пенкевич,Yuliya Penkevich,general_rule,naming_model:catholic
+P002035,Александровский,Ново-Михайловское,,unknown,Павел Беляев,Pavel Belyayev,general_rule,naming_model:unknown
+P002043,Александровский,Ново-Михайловское,,unknown,Матрена Осипова Софронова,Matrena Osipova Sofronova,general_rule,naming_model:unknown
+P002049,Александровский,Ново-Михайловское,Католическое,catholic,Александр Игнатьев Казакевич,Aleksandr Ignatyev Kazakevich,general_rule,naming_model:catholic
+P002055,Александровский,Ново-Михайловское,Лютеранское,lutheran,Карл Фридрихов Винтер,Karl Fridrikhov Vinter,general_rule,naming_model:lutheran
+P002056,Александровский,Ново-Михайловское,Лютеранское,lutheran,Анна Мячина,Anna Myachina,general_rule,naming_model:lutheran
+P002057,Александровский,Ново-Михайловское,Лютеранское,lutheran,Устинья Мячина,Ustinya Myachina,general_rule,naming_model:lutheran
+P002058,Александровский,Ново-Михайловское,Лютеранское,lutheran,Карл Лилу,Karl Lilu,general_rule,naming_model:lutheran
+P002060,Александровский,Ново-Михайловское,Католическое,catholic,Станислав Станиславов Домулис,Stanislav Stanislavov Domulis,general_rule,naming_model:catholic
+P002075,Александровский,Ново-Михайловское,Католическое,catholic,Иван Осипов Ковальский,Ivan Osipov Kovalskiy,general_rule,naming_model:catholic
+P002081,Александровский,Ново-Михайловское,Католическое,catholic,Иоган Никертич,Iogan Nikertich,general_rule,naming_model:catholic
+P002100,Александровский,Ново-Михайловское,Магометанское,muslim,Мустафа Якшимеев,Mustafa Yakshimeyev,general_rule,naming_model:muslim
+P002105,Александровский,Ново-Михайловское,Лютеранское,lutheran,Анна Матвеева Терская,Anna Matveyeva Terskaya,general_rule,naming_model:lutheran
+P002119,Александровский,Ново-Михайловское,Лютеранское,lutheran,Константин Матцев,Konstantin Mattsev,general_rule,naming_model:lutheran
+P002120,Александровский,Ново-Михайловское,Католическое,catholic,Михаил Иванович Мелерович,Mikhail Ivanovich Melerovich,general_rule,naming_model:catholic
+P002126,Александровский,Ново-Михайловское,,unknown,Николай Кудряшев,Nikolay Kudryashev,general_rule,naming_model:unknown
+P002140,Александровский,Красный Яр,Лютеранское,lutheran,Карл Андреев Струндревич,Karl Andreyev Strundrevich,general_rule,naming_model:lutheran
+P002141,Александровский,Красный Яр,,unknown,Пен-Оги-Цой,Pen-Ogi-Tsoy,general_rule,naming_model:unknown; one_token; hyphenated
+P002158,Александровский,Красный Яр,Магометанское,muslim,Мустафа Ахмет Оглы,Mustafa Akhmet Ogly,general_rule,naming_model:muslim
+P002159,Александровский,Красный Яр,Магометанское,muslim,Почедада Мители,Pochedada Miteli,general_rule,naming_model:muslim
+P002161,Александровский,Красный Яр,Магометанское,muslim,Оглы Нефтали Мустафа Али,Ogly Neftali Mustafa Ali,general_rule,naming_model:muslim; four_plus_tokens
+P002164,Александровский,Красный Яр,Католическое,catholic,Анна Пиуск,Anna Piusk,general_rule,naming_model:catholic
+P002170,Александровский,Красный Яр,Лютеранское,lutheran,Ян Лемке,Yan Lemke,general_rule,naming_model:lutheran
+P002181,Александровский,Красный Яр,Магометанское,muslim,Оглы-Вали-Мамет-Али,Ogly-Vali-Mamet-Ali,general_rule,naming_model:muslim; one_token; hyphenated
+P002182,Александровский,Красный Яр,Магометанское,muslim,Зара-Пай Мерваева,Zara-Pay Mervayeva,general_rule,naming_model:muslim; hyphenated
+P002183,Александровский,Красный Яр,Магометанское,muslim,Мемади Али,Memadi Ali,general_rule,naming_model:muslim
+P002187,Александровский,Красный Яр,Магометанское,muslim,Оглы-Абюш-Гюли,Ogly-Abyush-Gyuli,general_rule,naming_model:muslim; one_token; hyphenated
+P002205,Александровский,Красный Яр,Католическое,catholic,Викентий Осипов Бекерович,Vikentiy Osipov Bekerovich,general_rule,naming_model:catholic
+P002206,Александровский,Красный Яр,Католическое,catholic,Розалия Войтесяк,Rozaliya Voytesyak,general_rule,naming_model:catholic
+P002207,Александровский,Красный Яр,Католическое,catholic,Григорий Игнатьев Комель,Grigoriy Ignatyev Komel,general_rule,naming_model:catholic
+P002214,Александровский,Красный Яр,Католическое,catholic,Настасья Ковалина,Nastasya Kovalina,general_rule,naming_model:catholic
+P002215,Александровский,Красный Яр,Католическое,catholic,Андрей Степанов Ковалин,Andrey Stepanov Kovalin,general_rule,naming_model:catholic
+P002230,Александровский,Бутаково,Католическое,catholic,Иван Закманд,Ivan Zakmand,general_rule,naming_model:catholic
+P002234,Александровский,Бутаково,Лютеранское,lutheran,Георг Бернт,Georg Bernt,general_rule,naming_model:lutheran
+P002235,Александровский,Бутаково,Лютеранское,lutheran,Христина Бернт,Khristina Bernt,general_rule,naming_model:lutheran
+P002236,Александровский,Бутаково,Лютеранское,lutheran,Адам Георгов Бернт,Adam Georgov Bernt,general_rule,naming_model:lutheran
+P002245,Александровский,Бутаково,Лютеранское,lutheran,Август Хартвач,Avgust Khartvach,general_rule,naming_model:lutheran
+P002247,Александровский,Бутаково,Магометанское,muslim,Оглы Дшемшут Муса,Ogly Dshemshut Musa,general_rule,naming_model:muslim
+P002248,Александровский,Бутаково,Католическое,catholic,Осип Садонес,Osip Sadones,general_rule,naming_model:catholic
+P002249,Александровский,Бутаково,Католическое,catholic,Людвиг Пучинский,Lyudvig Puchinskiy,general_rule,naming_model:catholic
+P002250,Александровский,Бутаково,Католическое,catholic,Мария Залевская,Mariya Zalevskaya,general_rule,naming_model:catholic
+P002251,Александровский,Бутаково,Католическое,catholic,Михалина Людвигова Пучинская,Mikhalina Lyudvigova Puchinskaya,general_rule,naming_model:catholic
+P002295,Александровский,Арково I,,unknown,Акулина Миронова Ларина,Akulina Mironova Larina,general_rule,naming_model:unknown
+P002300,Александровский,Арково I,Католическое,catholic,Эмилия Григорьева Вериго,Emiliya Grigoryeva Verigo,general_rule,naming_model:catholic
+P002303,Александровский,Арково I,Католическое,catholic,Агата Кузьмина Павловская,Agata Kuzmina Pavlovskaya,general_rule,naming_model:catholic
+P002340,Александровский,Арково I,Лютеранское,lutheran,Давид Яковлев Вецезоль,David Yakovlev Vetsezol,general_rule,naming_model:lutheran
+P002356,Александровский,Арково I,Лютеранское,lutheran,Ян Аррай,Yan Array,general_rule,naming_model:lutheran
+P002357,Александровский,Арково I,Лютеранское,lutheran,Елизава Яковлева Конгус,Yelizava Yakovleva Kongus,general_rule,naming_model:lutheran
+P002386,Александровский,Арково II,,unknown,Иван Павлов Ретюнский,Ivan Pavlov Retyunskiy,general_rule,naming_model:unknown
+P002450,Александровский,Арковский станок,Католическое,catholic,Ян Степанов Козел,Yan Stepanov Kozel,general_rule,naming_model:catholic
+P002453,Александровский,Арковский станок,Магометанское,muslim,Оглы-Ивезели-Касем,Ogly-Ivezeli-Kasem,general_rule,naming_model:muslim; one_token; hyphenated
+P002457,Александровский,Арковский станок,Магометанское,muslim,Хамой Даипов,Khamoy Daipov,general_rule,naming_model:muslim
+P002459,Александровский,Арково III,Католическое,catholic,Иван Егоров Масловский,Ivan Yegorov Maslovskiy,general_rule,naming_model:catholic
+P002460,Александровский,Арково III,Католическое,catholic,Ушила Осипова Викулова,Ushila Osipova Vikulova,general_rule,naming_model:catholic
+P002461,Александровский,Арково III,Католическое,catholic,Домна Иванова Масловская,Domna Ivanova Maslovskaya,general_rule,naming_model:catholic
+P002462,Александровский,Арково III,Католическое,catholic,Осип Кузьмин Манкевич,Osip Kuzmin Mankevich,general_rule,naming_model:catholic
+P002463,Александровский,Арково III,Католическое,catholic,Евва Матвеева Манкевич,Yevva Matveyeva Mankevich,general_rule,naming_model:catholic
+P002464,Александровский,Арково III,Католическое,catholic,Эмилия Осипова Манкевич,Emiliya Osipova Mankevich,general_rule,naming_model:catholic
+P002465,Александровский,Арково III,Католическое,catholic,Викентий Петров Сарно,Vikentiy Petrov Sarno,general_rule,naming_model:catholic
+P002492,Александровский,Арково III,Католическое,catholic,Станислав Лукин Алексейчик,Stanislav Lukin Alekseychik,general_rule,naming_model:catholic
+P002494,Александровский,Мгачи,,unknown,Иван Касьянов,Ivan Kasyanov,general_rule,naming_model:unknown
+P002495,Александровский,Мгачи,,unknown,Констанция Каспарович,Konstantsiya Kasparovich,general_rule,naming_model:unknown
+P002496,Александровский,Мгачи,,unknown,Семен Юдин,Semen Yudin,general_rule,naming_model:unknown
+P002497,Александровский,Мгачи,,unknown,Елена Руднева,Yelena Rudneva,general_rule,naming_model:unknown
+P002498,Александровский,Мгачи,,unknown,Захар Соколов,Zakhar Sokolov,general_rule,naming_model:unknown
+P002499,Александровский,Мгачи,,unknown,Агафья Тюленкова,Agafya Tyulenkova,general_rule,naming_model:unknown
+P002500,Александровский,Мгачи,,unknown,Мойсей,Moysey,general_rule,naming_model:unknown; one_token
+P002501,Александровский,Мгачи,,unknown,Лукерья,Lukerya,general_rule,naming_model:unknown; one_token
+P002502,Александровский,Мгачи,,unknown,Игнатий,Ignatiy,general_rule,naming_model:unknown; one_token
+P002503,Александровский,Мгачи,,unknown,Фекла,Fekla,general_rule,naming_model:unknown; one_token
+P002504,Александровский,Мгачи,,unknown,Прасковья,Praskovya,general_rule,naming_model:unknown; one_token
+P002505,Александровский,Мгачи,,unknown,Дмитрий Тужилов,Dmitriy Tuzhilov,general_rule,naming_model:unknown
+P002507,Александровский,Мгачи,,unknown,Василий Громов,Vasiliy Gromov,general_rule,naming_model:unknown
+P002508,Александровский,Мгачи,,unknown,Дарья Телятникова,Darya Telyatnikova,general_rule,naming_model:unknown
+P002509,Александровский,Мгачи,,unknown,Яков Долбех,Yakov Dolbekh,general_rule,naming_model:unknown
+P002510,Александровский,Мгачи,,unknown,Настасья Бахмутова,Nastasya Bakhmutova,general_rule,naming_model:unknown
+P002511,Александровский,Мгачи,,unknown,Христофор Суслик,Khristofor Suslik,general_rule,naming_model:unknown
+P002512,Александровский,Мгачи,,unknown,Авдотья Кузнецова,Avdotya Kuznetsova,general_rule,naming_model:unknown
+P002513,Александровский,Мгачи,,unknown,Илья,Ilya,general_rule,naming_model:unknown; one_token
+P002514,Александровский,Мгачи,,unknown,Андрей Иванов,Andrey Ivanov,general_rule,naming_model:unknown
+P002515,Александровский,Мгачи,,unknown,Андрей Федоров,Andrey Fedorov,general_rule,naming_model:unknown
+P002516,Александровский,Мгачи,,unknown,Софья Алпатова,Sofya Alpatova,general_rule,naming_model:unknown
+P002517,Александровский,Мгачи,,unknown,Евгений Молошников,Yevgeniy Moloshnikov,general_rule,naming_model:unknown
+P002518,Александровский,Мгачи,,unknown,Марья Осокина,Marya Osokina,general_rule,naming_model:unknown
+P002519,Александровский,Мгачи,,unknown,Василий Самойленко,Vasiliy Samoylenko,general_rule,naming_model:unknown
+P002520,Александровский,Мгачи,,unknown,Авдотья Леонтьева,Avdotya Leontyeva,general_rule,naming_model:unknown
+P002521,Александровский,Мгачи,,unknown,Андрей Скляр,Andrey Sklyar,general_rule,naming_model:unknown
+P002522,Александровский,Мгачи,,unknown,Ольга Капралова,Olga Kapralova,general_rule,naming_model:unknown
+P002523,Александровский,Мгачи,,unknown,Федот Очковский,Fedot Ochkovskiy,general_rule,naming_model:unknown
+P002524,Александровский,Мгачи,,unknown,Феодора Очковская,Feodora Ochkovskaya,general_rule,naming_model:unknown
+P002525,Александровский,Мгачи,,unknown,Лаврентий Шворень,Lavrentiy Shvoren,general_rule,naming_model:unknown
+P002526,Александровский,Мгачи,,unknown,Ефросинья Шворень,Yefrosinya Shvoren,general_rule,naming_model:unknown
+P002527,Александровский,Мгачи,,unknown,Христинья Лаврентьева Шворень,Khristinya Lavrentyeva Shvoren,general_rule,naming_model:unknown
+P002529,Александровский,Танги,,unknown,Савватий Масленников,Savvatiy Maslennikov,general_rule,naming_model:unknown
+P002530,Александровский,Танги,,unknown,Александра Ошибкова,Aleksandra Oshibkova,general_rule,naming_model:unknown
+P002531,Александровский,Танги,,unknown,Григорий Миронов,Grigoriy Mironov,general_rule,naming_model:unknown
+P002532,Александровский,Танги,,unknown,Авдотья Кузнецова,Avdotya Kuznetsova,general_rule,naming_model:unknown
+P002533,Александровский,Танги,,unknown,Федор Леконцев,Fedor Lekontsev,general_rule,naming_model:unknown
+P002534,Александровский,Танги,,unknown,Константин Леконцев,Konstantin Lekontsev,general_rule,naming_model:unknown
+P002535,Александровский,Танги,,unknown,Вера Кудимова,Vera Kudimova,general_rule,naming_model:unknown
+P002536,Александровский,Танги,,unknown,Харитон Потапенко,Khariton Potapenko,general_rule,naming_model:unknown
+P002537,Александровский,Танги,,unknown,Дарья Потапенко,Darya Potapenko,general_rule,naming_model:unknown
+P002538,Александровский,Танги,,unknown,Ефим Харитонов Потапенко,Yefim Kharitonov Potapenko,general_rule,naming_model:unknown
+P002539,Александровский,Танги,,unknown,Марфа Харитонова Потапенко,Marfa Kharitonova Potapenko,general_rule,naming_model:unknown
+P002540,Александровский,Танги,,unknown,Александра Харитонова Потапенко,Aleksandra Kharitonova Potapenko,general_rule,naming_model:unknown
+P002541,Александровский,Танги,,unknown,Емельян Ипполитов Кучеренко,Yemelyan Ippolitov Kucherenko,general_rule,naming_model:unknown
+P002542,Александровский,Танги,,unknown,Марфа Ипполитова,Marfa Ippolitova,general_rule,naming_model:unknown
+P002543,Александровский,Танги,,unknown,Борис Субботин,Boris Subbotin,general_rule,naming_model:unknown
+P002544,Александровский,Хоэ,,unknown,Федор Сапрыгин,Fedor Saprygin,general_rule,naming_model:unknown
+P002545,Александровский,Хоэ,,unknown,Аксинья Заздравных,Aksinya Zazdravnykh,general_rule,naming_model:unknown
+P002548,Александровский,Хоэ,,unknown,Зиновий Проценко,Zinoviy Protsenko,general_rule,naming_model:unknown
+P002549,Александровский,Хоэ,,unknown,Василиса Проценко,Vasilisa Protsenko,general_rule,naming_model:unknown
+P002551,Александровский,Хоэ,,unknown,Петр Еремин,Petr Yeremin,general_rule,naming_model:unknown
+P002552,Александровский,Хоэ,,unknown,Марья Иванова,Marya Ivanova,general_rule,naming_model:unknown
+P002553,Александровский,Хоэ,,unknown,Федор Панасов,Fedor Panasov,general_rule,naming_model:unknown
+P002554,Александровский,Хоэ,,unknown,Марья Рубцова,Marya Rubtsova,general_rule,naming_model:unknown
+P002555,Александровский,Хоэ,,unknown,Иван Ткачук,Ivan Tkachuk,general_rule,naming_model:unknown
+P002556,Александровский,Хоэ,,unknown,Марья Юндовая,Marya Yundovaya,general_rule,naming_model:unknown
+P002557,Александровский,Хоэ,,unknown,Михаил Юндовый,Mikhail Yundovyy,general_rule,naming_model:unknown
+P002558,Александровский,Хоэ,,unknown,Осип Рукин,Osip Rukin,general_rule,naming_model:unknown
+P002559,Александровский,Хоэ,,unknown,Александра Волкова,Aleksandra Volkova,general_rule,naming_model:unknown
+P002560,Александровский,Хоэ,,unknown,Яков Казумец,Yakov Kazumets,general_rule,naming_model:unknown
+P002561,Александровский,Хоэ,,unknown,Екатерина Нимор,Yekaterina Nimor,general_rule,naming_model:unknown
+P002562,Александровский,Хоэ,,unknown,Никита Ульянченко,Nikita Ulyanchenko,general_rule,naming_model:unknown
+P002563,Александровский,Хоэ,,unknown,Павлина Ульянченко,Pavlina Ulyanchenko,general_rule,naming_model:unknown
+P002564,Александровский,Хоэ,,unknown,Адам Слюзик,Adam Slyuzik,general_rule,naming_model:unknown
+P002565,Александровский,Хоэ,,unknown,Авдотья Менщикова,Avdotya Menshchikova,general_rule,naming_model:unknown
+P002566,Александровский,Хоэ,,unknown,Агафья Грицаева,Agafya Gritsayeva,general_rule,naming_model:unknown
+P002567,Александровский,Хоэ,,unknown,Анна,Anna,general_rule,naming_model:unknown; one_token
+P002568,Александровский,Хоэ,,unknown,Михаил,Mikhail,general_rule,naming_model:unknown; one_token
+P002569,Александровский,Хоэ,,unknown,Андрей,Andrey,general_rule,naming_model:unknown; one_token
+P002570,Александровский,Хоэ,,unknown,Иван Марченко,Ivan Marchenko,general_rule,naming_model:unknown
+P002571,Александровский,Хоэ,,unknown,Федор Ковунов,Fedor Kovunov,general_rule,naming_model:unknown
+P002572,Александровский,Хоэ,,unknown,Дарья Полевая,Darya Polevaya,general_rule,naming_model:unknown
+P002573,Александровский,Хоэ,,unknown,Илья Грасс,Ilya Grass,general_rule,naming_model:unknown
+P002574,Александровский,Хоэ,,unknown,Степанида Сосновская,Stepanida Sosnovskaya,general_rule,naming_model:unknown
+P002575,Александровский,Трамбаус,,unknown,Мойсей Федоренко,Moysey Fedorenko,general_rule,naming_model:unknown
+P002576,Александровский,Трамбаус,,unknown,Меланья Федоренко,Melanya Fedorenko,general_rule,naming_model:unknown
+P002577,Александровский,Трамбаус,,unknown,Меланья Мойсеева Федоренко,Melanya Moyseyeva Fedorenko,general_rule,naming_model:unknown
+P002578,Александровский,Трамбаус,,unknown,Игнатий Бильтюков,Ignatiy Biltyukov,general_rule,naming_model:unknown
+P002579,Александровский,Трамбаус,,unknown,Авдотья Бильтюкова,Avdotya Biltyukova,general_rule,naming_model:unknown
+P002580,Александровский,Трамбаус,,unknown,Скрупский,Skrupskiy,general_rule,naming_model:unknown; one_token
+P002581,Александровский,Виахты,,unknown,Марк Синельников,Mark Sinelnikov,general_rule,naming_model:unknown
+P002582,Александровский,Виахты,,unknown,Марья Гаврилюкова,Marya Gavrilyukova,general_rule,naming_model:unknown
+P002583,Александровский,Виахты,,unknown,Ефрем Колосков,Yefrem Koloskov,general_rule,naming_model:unknown
+P002584,Александровский,Виахты,,unknown,Екатерина Мохоткина,Yekaterina Mokhotkina,general_rule,naming_model:unknown
+P002585,Александровский,Виахты,,unknown,Федор Сиганов,Fedor Siganov,general_rule,naming_model:unknown
+P002586,Александровский,Виахты,,unknown,Пелагея Кочегарова,Pelageya Kochegarova,general_rule,naming_model:unknown
+P002587,Александровский,Виахты,,unknown,Юрий Чарус,Yuriy Charus,general_rule,naming_model:unknown
+P002588,Александровский,Виахты,,unknown,Настасья Новикова,Nastasya Novikova,general_rule,naming_model:unknown
+P002589,Александровский,Виахты,,unknown,Дмитрий Осипов,Dmitriy Osipov,general_rule,naming_model:unknown
+P002590,Александровский,Виахты,,unknown,Лукерья Лашкова,Lukerya Lashkova,general_rule,naming_model:unknown
+P002591,Александровский,Виахты,,unknown,Сергей,Sergey,general_rule,naming_model:unknown; one_token
+P002592,Александровский,Виахты,,unknown,Иван Березовский,Ivan Berezovskiy,general_rule,naming_model:unknown
+P002593,Александровский,Виахты,,unknown,Пелагея Березовская,Pelageya Berezovskaya,general_rule,naming_model:unknown
+P002594,Александровский,Виахты,,unknown,Тимофей Иванов Березовский,Timofey Ivanov Berezovskiy,general_rule,naming_model:unknown
+P002595,Александровский,Виахты,,unknown,Василий Гончаров,Vasiliy Goncharov,general_rule,naming_model:unknown
+P002596,Александровский,Виахты,,unknown,Марфа Гончарова,Marfa Goncharova,general_rule,naming_model:unknown
+P002597,Александровский,Виахты,,unknown,Аксинья Васильева Гончарова,Aksinya Vasilyeva Goncharova,general_rule,naming_model:unknown
+P002598,Александровский,Ванги,,unknown,Николай Глубоковский,Nikolay Glubokovskiy,general_rule,naming_model:unknown
+P002599,Александровский,Ванги,,unknown,Прасковья Гонтовая,Praskovya Gontovaya,general_rule,naming_model:unknown
+P002600,Александровский,Ванги,,unknown,Яков,Yakov,general_rule,naming_model:unknown; one_token
+P002601,Александровский,Ванги,,unknown,Пелагея Семерикова,Pelageya Semerikova,general_rule,naming_model:unknown
+P002602,Александровский,Ванги,,unknown,Сильвестр Шорин,Silvestr Shorin,general_rule,naming_model:unknown
+P002603,Александровский,Ванги,,unknown,Екатерина Лошкина,Yekaterina Loshkina,general_rule,naming_model:unknown
+P002604,Александровский,Ванги,,unknown,Василий,Vasiliy,general_rule,naming_model:unknown; one_token
+P002605,Александровский,Ванги,,unknown,Василий Евплатов,Vasiliy Yevplatov,general_rule,naming_model:unknown
+P002606,Александровский,Ванги,,unknown,Авдотья Попова,Avdotya Popova,general_rule,naming_model:unknown
+P002607,Александровский,Ванги,,unknown,Петр Белянин,Petr Belyanin,general_rule,naming_model:unknown
+P002608,Александровский,Ванги,,unknown,Тодор Поппе,Todor Poppe,general_rule,naming_model:unknown
+P002609,Александровский,Ванги,,unknown,Василий Проходяк,Vasiliy Prokhodyak,general_rule,naming_model:unknown
+P002610,Александровский,Ванги,,unknown,Семен Андреев,Semen Andreyev,general_rule,naming_model:unknown
+P002617,Александровский,Пост Дуэ,Католическое,catholic,Петр Станковский,Petr Stankovskiy,general_rule,naming_model:catholic
+P002619,Александровский,Пост Дуэ,Католическое,catholic,Петр Петров Стефановский,Petr Petrov Stefanovskiy,general_rule,naming_model:catholic
+P002629,Александровский,Пост Дуэ,Католическое,catholic,Розалия Беренис,Rozaliya Berenis,general_rule,naming_model:catholic
+P002630,Александровский,Пост Дуэ,Католическое,catholic,Бронислав Борский,Bronislav Borskiy,general_rule,naming_model:catholic
+P002641,Александровский,Пост Дуэ,,unknown,Семен Бондарев,Semen Bondarev,general_rule,naming_model:unknown
+P002642,Александровский,Пост Дуэ,,unknown,Василий Петрушик,Vasiliy Petrushik,general_rule,naming_model:unknown
+P002643,Александровский,Пост Дуэ,Католическое,catholic,Казимир Меральский,Kazimir Meralskiy,general_rule,naming_model:catholic
+P002644,Александровский,Пост Дуэ,Католическое,catholic,Марианна Меральская,Marianna Meralskaya,general_rule,naming_model:catholic
+P002645,Александровский,Пост Дуэ,Магометанское,muslim,Мухамедьян Бахтиаров,Mukhamedyan Bakhtiarov,general_rule,naming_model:muslim
+P002646,Александровский,Пост Дуэ,Магометанское,muslim,Хиль Баба Абрусолева,Khil Baba Abrusoleva,general_rule,naming_model:muslim
+P002647,Александровский,Пост Дуэ,Магометанское,muslim,Магомед Ярд Бахтиаров,Magomed Yard Bakhtiarov,general_rule,naming_model:muslim
+P002649,Александровский,Пост Дуэ,,unknown,Анна Иванова,Anna Ivanova,general_rule,naming_model:unknown
+P002650,Александровский,Пост Дуэ,Католическое,catholic,Никодим Зеленка,Nikodim Zelenka,general_rule,naming_model:catholic
+P002651,Александровский,Пост Дуэ,Католическое,catholic,Марианна Мяро,Marianna Myaro,general_rule,naming_model:catholic
+P002652,Александровский,Пост Дуэ,Католическое,catholic,Бронислав Мяро,Bronislav Myaro,general_rule,naming_model:catholic
+P002654,Александровский,Пост Дуэ,Католическое,catholic,Домбровский,Dombrovskiy,general_rule,naming_model:catholic; one_token
+P002655,Александровский,Пост Дуэ,Католическое,catholic,Томашевский,Tomashevskiy,general_rule,naming_model:catholic; one_token
+P002710,Александровский,Пост Дуэ,Католическое,catholic,Онуфрий Онуфриев Петрусевич,Onufriy Onufriyev Petrusevich,general_rule,naming_model:catholic
+P002763,Александровский,Пост Дуэ,Православное,russian_historical,Надежда N Павловская,Nadezhda N Pavlovskaya,general_rule,mixed_latin_cyrillic
+P002784,Александровский,Пост Дуэ,Католическое,catholic,Август Кестлер,Avgust Kestler,general_rule,naming_model:catholic
+P002785,Александровский,Пост Дуэ,Православное,russian_historical,N. N. Кестлер,N. N. Kestler,general_rule,mixed_latin_cyrillic
+P002788,Александровский,Пост Дуэ,Православное,russian_historical,Дора N. Жданова,Dora N. Zhdanova,general_rule,mixed_latin_cyrillic
+P002789,Александровский,Пост Дуэ,Православное,russian_historical,Жданов,Zhdanov,general_rule,one_token
+P002790,Александровский,Пост Дуэ,Православное,russian_historical,Жданова,Zhdanova,general_rule,one_token
+P002794,Александровский,Пост Дуэ,Лютеранское,lutheran,Артур Григорьевич Зихер,Artur Grigoryevich Zikher,general_rule,naming_model:lutheran
+P002795,Александровский,Пост Дуэ,,unknown,N. N. Зихер,N. N. Zikher,general_rule,naming_model:unknown; mixed_latin_cyrillic
+P002796,Александровский,Пост Дуэ,Католическое,catholic,Станислав Осипович Козарский,Stanislav Osipovich Kozarskiy,general_rule,naming_model:catholic
+P002802,Александровский,Пост Дуэ,Православное,russian_historical,N. N. Дудникова,N. N. Dudnikova,general_rule,mixed_latin_cyrillic
+P002818,Александровский,Пост Дуэ,Магометанское,muslim,Хисамедин Байбиков,Khisamedin Baybikov,general_rule,naming_model:muslim
+P002819,Александровский,Пост Дуэ,Магометанское,muslim,Лидина Байбикова,Lidina Baybikova,general_rule,naming_model:muslim
+P002820,Александровский,Пост Дуэ,Магометанское,muslim,Илья Зердин Байбиков,Ilya Zerdin Baybikov,general_rule,naming_model:muslim
+P002821,Александровский,Пост Дуэ,Магометанское,muslim,Хабениса Сайфулина,Khabenisa Sayfulina,general_rule,naming_model:muslim
+P002822,Александровский,Пост Дуэ,Магометанское,muslim,Рахим Юсупов,Rakhim Yusupov,general_rule,naming_model:muslim
+P002823,Александровский,Пост Дуэ,Магометанское,muslim,Бипкай Юсупова,Bipkay Yusupova,general_rule,naming_model:muslim
+P002826,Александровский,Пост Дуэ,Лютеранское,lutheran,Карл Лихвальд,Karl Likhvald,general_rule,naming_model:lutheran
+P002881,Александровский,Пост Дуэ,,unknown,N. N. Генальский,N. N. Genalskiy,general_rule,naming_model:unknown; mixed_latin_cyrillic
+P002889,Тымовский,Верхний Армудан,Магометанское,muslim,Оглы Асан Ахпер,Ogly Asan Akhper,general_rule,naming_model:muslim
+P002890,Тымовский,Верхний Армудан,Магометанское,muslim,Машед Беляр,Mashed Belyar,general_rule,naming_model:muslim
+P002893,Тымовский,Верхний Армудан,Лютеранское,lutheran,Иоган Пильд,Iogan Pild,general_rule,naming_model:lutheran
+P002898,Тымовский,Верхний Армудан,Армяно-григорианское,other_documented,Вартан Акопов,Vartan Akopov,general_rule,naming_model:other_documented
+P002918,Тымовский,Верхний Армудан,Магометанское,muslim,Незамутдин Темершин,Nezamutdin Temershin,general_rule,naming_model:muslim
+P002920,Тымовский,Верхний Армудан,Магометанское,muslim,Гюль Мирза Мешеди Мелик,Gyul Mirza Meshedi Melik,general_rule,naming_model:muslim; four_plus_tokens
+P002921,Тымовский,Верхний Армудан,Лютеранское,lutheran,Андрей Друэ,Andrey Drue,general_rule,naming_model:lutheran
+P002927,Тымовский,Верхний Армудан,Магометанское,muslim,Саид Мамет,Said Mamet,general_rule,naming_model:muslim
+P002928,Тымовский,Верхний Армудан,Магометанское,muslim,Мамед Оглы Камбар,Mamed Ogly Kambar,general_rule,naming_model:muslim
+P002929,Тымовский,Верхний Армудан,Магометанское,muslim,Мешеди Алинбек,Meshedi Alinbek,general_rule,naming_model:muslim
+P002936,Тымовский,Верхний Армудан,Католическое,catholic,Адам Степанов Олива,Adam Stepanov Oliva,general_rule,naming_model:catholic
+P002937,Тымовский,Верхний Армудан,Католическое,catholic,Виктория Лован,Viktoriya Lovan,general_rule,naming_model:catholic
+P002945,Тымовский,Верхний Армудан,,unknown,Авдотья,Avdotya,general_rule,naming_model:unknown; one_token
+P002951,Тымовский,Верхний Армудан,Магометанское,muslim,Абдул Садыков,Abdul Sadykov,general_rule,naming_model:muslim
+P002952,Тымовский,Верхний Армудан,Магометанское,muslim,Галима Садыкова,Galima Sadykova,general_rule,naming_model:muslim
+P002953,Тымовский,Верхний Армудан,Магометанское,muslim,Халим Садыков,Khalim Sadykov,general_rule,naming_model:muslim
+P002954,Тымовский,Верхний Армудан,Магометанское,muslim,Мине-Галим Садыков,Mine-Galim Sadykov,general_rule,naming_model:muslim; hyphenated
+P002957,Тымовский,Верхний Армудан,Магометанское,muslim,Мугдогала Болгинбала,Mugdogala Bolginbala,general_rule,naming_model:muslim
+P002958,Тымовский,Верхний Армудан,Магометанское,muslim,Абас Мухамедьянов,Abas Mukhamedyanov,general_rule,naming_model:muslim
+P002972,Тымовский,Верхний Армудан,Лютеранское,lutheran,Матис Гавриельсон Антило,Matis Gavriyelson Antilo,general_rule,naming_model:lutheran
+P002973,Тымовский,Верхний Армудан,Лютеранское,lutheran,Екатерина Сипонен,Yekaterina Siponen,general_rule,naming_model:lutheran
+P002979,Тымовский,Верхний Армудан,Православное,russian_historical,Иван Боков 2-й,Ivan Bokov (2),general_rule,hyphenated; numbered_disambiguator
+P002985,Тымовский,Верхний Армудан,Лютеранское,lutheran,Антон Андреев Фреймон,Anton Andreyev Freymon,general_rule,naming_model:lutheran
+P002987,Тымовский,Верхний Армудан,,unknown,Абрам Ащев,Abram Ashchev,general_rule,naming_model:unknown
+P002988,Тымовский,Верхний Армудан,Армяно-григорианское,other_documented,Саркиз Петрусов,Sarkiz Petrusov,general_rule,naming_model:other_documented
+P003015,Тымовский,Верхний Армудан,Армяно-григорианское,other_documented,Акоп Гудовиг,Akop Gudovig,general_rule,naming_model:other_documented
+P003020,Тымовский,Верхний Армудан,Магометанское,muslim,Оглы Тухватула Мирек Хан,Ogly Tukhvatula Mirek Khan,general_rule,naming_model:muslim; four_plus_tokens
+P003023,Тымовский,Верхний Армудан,Магометанское,muslim,Минзан Завадинов,Minzan Zavadinov,general_rule,naming_model:muslim
+P003054,Тымовский,Верхний Армудан,Магометанское,muslim,Оглы Мешади Джафар,Ogly Meshadi Dzhafar,general_rule,naming_model:muslim
+P003055,Тымовский,Верхний Армудан,Магометанское,muslim,Оглы Мырза Мамед Сулейман,Ogly Myrza Mamed Suleyman,general_rule,naming_model:muslim; four_plus_tokens
+P003066,Тымовский,Нижний Армудан,Католическое,catholic,Осип Беляк,Osip Belyak,general_rule,naming_model:catholic
+P003067,Тымовский,Нижний Армудан,Лютеранское,lutheran,Ян Яниц,Yan Yanits,general_rule,naming_model:lutheran
+P003071,Тымовский,Нижний Армудан,Католическое,catholic,Антон Коздрей,Anton Kozdrey,general_rule,naming_model:catholic
+P003072,Тымовский,Нижний Армудан,Католическое,catholic,Игнатий Жилинский,Ignatiy Zhilinskiy,general_rule,naming_model:catholic
+P003073,Тымовский,Нижний Армудан,Лютеранское,lutheran,Юлиус Фрейлибен,Yulius Freyliben,general_rule,naming_model:lutheran
+P003074,Тымовский,Нижний Армудан,Лютеранское,lutheran,Марья Пун,Marya Pun,general_rule,naming_model:lutheran
+P003075,Тымовский,Нижний Армудан,Лютеранское,lutheran,Венцель Клечак,Ventsel Klechak,general_rule,naming_model:lutheran
+P003076,Тымовский,Нижний Армудан,Католическое,catholic,Карл Муравский,Karl Muravskiy,general_rule,naming_model:catholic
+P003082,Тымовский,Нижний Армудан,Армяно-григорианское,other_documented,Саят Геозанов,Sayat Geozanov,general_rule,naming_model:other_documented
+P003090,Тымовский,Нижний Армудан,Лютеранское,lutheran,Фридрих Морек,Fridrikh Morek,general_rule,naming_model:lutheran
+P003093,Тымовский,Нижний Армудан,Католическое,catholic,Степан Кыйма,Stepan Kyyma,general_rule,naming_model:catholic
+P003094,Тымовский,Нижний Армудан,Католическое,catholic,Франц Романовский,Frants Romanovskiy,general_rule,naming_model:catholic
+P003109,Тымовский,Нижний Армудан,Лютеранское,lutheran,Фриц Левендель,Frits Levendel,general_rule,naming_model:lutheran
+P003110,Тымовский,Нижний Армудан,Католическое,catholic,Марианна Ценскевич,Marianna Tsenskevich,general_rule,naming_model:catholic
+P003111,Тымовский,Нижний Армудан,Католическое,catholic,Владислав Ценскевич,Vladislav Tsenskevich,general_rule,naming_model:catholic
+P003112,Тымовский,Нижний Армудан,Католическое,catholic,Софья Ценскевич,Sofya Tsenskevich,general_rule,naming_model:catholic
+P003113,Тымовский,Нижний Армудан,Католическое,catholic,Франц Новинский,Frants Novinskiy,general_rule,naming_model:catholic
+P003114,Тымовский,Нижний Армудан,Католическое,catholic,Марианна Нога,Marianna Noga,general_rule,naming_model:catholic
+P003115,Тымовский,Нижний Армудан,Католическое,catholic,Виктория Нога,Viktoriya Noga,general_rule,naming_model:catholic
+P003116,Тымовский,Нижний Армудан,Католическое,catholic,Войцех Нога,Voytsekh Noga,general_rule,naming_model:catholic
+P003117,Тымовский,Нижний Армудан,Лютеранское,lutheran,Мартын Поппе,Martyn Poppe,general_rule,naming_model:lutheran
+P003121,Тымовский,Нижний Армудан,Католическое,catholic,Марья Столяр,Marya Stolyar,general_rule,naming_model:catholic
+P003128,Тымовский,Нижний Армудан,Католическое,catholic,Людвиг Грос,Lyudvig Gros,general_rule,naming_model:catholic
+P003129,Тымовский,Нижний Армудан,Католическое,catholic,Юлиана Грос,Yuliana Gros,general_rule,naming_model:catholic
+P003134,Тымовский,Нижний Армудан,Лютеранское,lutheran,Петр Перецкий,Petr Peretskiy,general_rule,naming_model:lutheran
+P003135,Тымовский,Нижний Армудан,Иудейское,other_documented,Лея Пермут Броха,Leya Permut Brokha,general_rule,naming_model:other_documented
+P003145,Тымовский,Нижний Армудан,Лютеранское,lutheran,Генрих Штейба,Genrikh Shteyba,general_rule,naming_model:lutheran
+P003147,Тымовский,Нижний Армудан,Католическое,catholic,Рох Томчих,Rokh Tomchikh,general_rule,naming_model:catholic
+P003151,Тымовский,Нижний Армудан,Лютеранское,lutheran,Август Клаус,Avgust Klaus,general_rule,naming_model:lutheran
+P003155,Тымовский,Дербинское,Лютеранское,lutheran,Иоган Лакс,Iogan Laks,general_rule,naming_model:lutheran
+P003158,Тымовский,Дербинское,,unknown,Никита Челноков,Nikita Chelnokov,general_rule,naming_model:unknown
+P003162,Тымовский,Дербинское,Лютеранское,lutheran,Ян Паю,Yan Payu,general_rule,naming_model:lutheran
+P003163,Тымовский,Дербинское,Магометанское,muslim,Агап Абдул Аркеев,Agap Abdul Arkeyev,general_rule,naming_model:muslim
+P003164,Тымовский,Дербинское,Магометанское,muslim,Мохсиме Мефти Хотин,Mokhsime Mefti Khotin,general_rule,naming_model:muslim
+P003172,Тымовский,Дербинское,Католическое,catholic,Мартын Любчинский,Martyn Lyubchinskiy,general_rule,naming_model:catholic
+P003173,Тымовский,Дербинское,Католическое,catholic,Мария Липчинская,Mariya Lipchinskaya,general_rule,naming_model:catholic
+P003174,Тымовский,Дербинское,Католическое,catholic,Лука Лонгефка,Luka Longefka,general_rule,naming_model:catholic
+P003176,Тымовский,Дербинское,Лютеранское,lutheran,Иоган Нельмас,Iogan Nelmas,general_rule,naming_model:lutheran
+P003177,Тымовский,Дербинское,Католическое,catholic,Игнатий Грудзинский,Ignatiy Grudzinskiy,general_rule,naming_model:catholic
+P003181,Тымовский,Дербинское,Католическое,catholic,Осип Адамов Янковский,Osip Adamov Yankovskiy,general_rule,naming_model:catholic
+P003185,Тымовский,Дербинское,Лютеранское,lutheran,Готлиб Цобель,Gotlib Tsobel,general_rule,naming_model:lutheran
+P003186,Тымовский,Дербинское,Лютеранское,lutheran,Вильгельмина Цобель,Vilgelmina Tsobel,general_rule,naming_model:lutheran
+P003187,Тымовский,Дербинское,Лютеранское,lutheran,Андрей Цобель,Andrey Tsobel,general_rule,naming_model:lutheran
+P003188,Тымовский,Дербинское,Лютеранское,lutheran,Ринета Цобель,Rineta Tsobel,general_rule,naming_model:lutheran
+P003201,Тымовский,Дербинское,Католическое,catholic,Франц Ополинский,Frants Opolinskiy,general_rule,naming_model:catholic
+P003226,Тымовский,Дербинское,Католическое,catholic,Иосиф Сооружевич,Iosif Sooruzhevich,general_rule,naming_model:catholic
+P003255,Тымовский,Дербинское,Католическое,catholic,Тимофей Казимиров Митрошевский,Timofey Kazimirov Mitroshevskiy,general_rule,naming_model:catholic
+P003258,Тымовский,Дербинское,Православное,russian_historical,Емельян Ильин Самохвалов 1-й,Yemelyan Ilin Samokhvalov (1),general_rule,four_plus_tokens; hyphenated; numbered_disambiguator
+P003261,Тымовский,Дербинское,Православное,russian_historical,Емельян Павлов Самохвалов 2-й,Yemelyan Pavlov Samokhvalov (2),general_rule,four_plus_tokens; hyphenated; numbered_disambiguator
+P003303,Тымовский,Дербинское,Католическое,catholic,Иван Рачис,Ivan Rachis,general_rule,naming_model:catholic
+P003304,Тымовский,Дербинское,Лютеранское,lutheran,Каролина Антер-Вальтер,Karolina Anter-Valter,general_rule,naming_model:lutheran; hyphenated
+P003307,Тымовский,Дербинское,Православное,russian_historical,Иван Денисов Денисов 1-й,Ivan Denisov Denisov (1),general_rule,four_plus_tokens; hyphenated; numbered_disambiguator
+P003311,Тымовский,Дербинское,Лютеранское,lutheran,Андрей Флинк,Andrey Flink,general_rule,naming_model:lutheran
+P003312,Тымовский,Дербинское,Католическое,catholic,Осип Пастушок,Osip Pastushok,general_rule,naming_model:catholic
+P003326,Тымовский,Дербинское,Лютеранское,lutheran,Мартын Крузе,Martyn Kruze,general_rule,naming_model:lutheran
+P003327,Тымовский,Дербинское,Иудейское,other_documented,Иук Славин,Iuk Slavin,general_rule,naming_model:other_documented
+P003328,Тымовский,Дербинское,Иудейское,other_documented,Либа Славина,Liba Slavina,general_rule,naming_model:other_documented
+P003329,Тымовский,Дербинское,Иудейское,other_documented,Сифа Славина,Sifa Slavina,general_rule,naming_model:other_documented
+P003330,Тымовский,Дербинское,,unknown,Сарра Славина,Sarra Slavina,general_rule,naming_model:unknown
+P003331,Тымовский,Дербинское,Иудейское,other_documented,Мендыль Славин,Mendyl Slavin,general_rule,naming_model:other_documented
+P003332,Тымовский,Дербинское,Иудейское,other_documented,Перец Славин,Perets Slavin,general_rule,naming_model:other_documented
+P003333,Тымовский,Дербинское,Иудейское,other_documented,Рахиль Славина,Rakhil Slavina,general_rule,naming_model:other_documented
+P003334,Тымовский,Дербинское,Иудейское,other_documented,Мойсей Славин,Moysey Slavin,general_rule,naming_model:other_documented
+P003350,Тымовский,Дербинское,Католическое,catholic,Иван Романовский,Ivan Romanovskiy,general_rule,naming_model:catholic
+P003353,Тымовский,Дербинское,Лютеранское,lutheran,Михель Лауке,Mikhel Lauke,general_rule,naming_model:lutheran
+P003354,Тымовский,Дербинское,Лютеранское,lutheran,Ильза Лауке,Ilza Lauke,general_rule,naming_model:lutheran
+P003355,Тымовский,Дербинское,Лютеранское,lutheran,Ян Лауке,Yan Lauke,general_rule,naming_model:lutheran
+P003356,Тымовский,Дербинское,Иудейское,other_documented,Шлема Азенштот,Shlema Azenshtot,general_rule,naming_model:other_documented
+P003357,Тымовский,Дербинское,Иудейское,other_documented,Сарра Азенштот,Sarra Azenshtot,general_rule,naming_model:other_documented
+P003358,Тымовский,Дербинское,Иудейское,other_documented,Меер Азенштот,Meyer Azenshtot,general_rule,naming_model:other_documented
+P003367,Тымовский,Дербинское,,unknown,Дарья Ильина,Darya Ilina,general_rule,naming_model:unknown
+P003376,Тымовский,Дербинское,Лютеранское,lutheran,Матвей Толла,Matvey Tolla,general_rule,naming_model:lutheran
+P003380,Тымовский,Дербинское,Православное,russian_historical,Некрещеная,Nekreshchenaya,general_rule,one_token
+P003391,Тымовский,Дербинское,,unknown,Дмитрий Смеев,Dmitriy Smeyev,general_rule,naming_model:unknown
+P003405,Тымовский,Дербинское,,unknown,Настасья Владимирова Долженко,Nastasya Vladimirova Dolzhenko,general_rule,naming_model:unknown
+P003412,Тымовский,Дербинское,,unknown,Александр Баранов,Aleksandr Baranov,general_rule,naming_model:unknown
+P003415,Тымовский,Дербинское,Православное,russian_historical,Иван,Ivan,general_rule,one_token
+P003421,Тымовский,Дербинское,Иудейское,other_documented,Хаим Скрыженко,Khaim Skryzhenko,general_rule,naming_model:other_documented
+P003449,Тымовский,Дербинское,Магометанское,muslim,Оглы Рахматула Кадъяс,Ogly Rakhmatula Kadyas,general_rule,naming_model:muslim; hard_sign
+P003467,Тымовский,Дербинское,Католическое,catholic,Иван Розаевский,Ivan Rozayevskiy,general_rule,naming_model:catholic
+P003468,Тымовский,Дербинское,Католическое,catholic,Анна Розаевская,Anna Rozayevskaya,general_rule,naming_model:catholic
+P003507,Тымовский,Дербинское,Католическое,catholic,Юрий Кватис,Yuriy Kvatis,general_rule,naming_model:catholic
+P003509,Тымовский,Дербинское,,unknown,Фома Аниськевич,Foma Aniskevich,general_rule,naming_model:unknown
+P003519,Тымовский,Дербинское,Лютеранское,lutheran,Марья Эгле,Marya Egle,general_rule,naming_model:lutheran
+P003525,Тымовский,Дербинское,,unknown,Василий Бурундуков,Vasiliy Burundukov,general_rule,naming_model:unknown
+P003529,Тымовский,Дербинское,,unknown,Николай Хохлов,Nikolay Khokhlov,general_rule,naming_model:unknown
+P003569,Тымовский,Дербинское,Католическое,catholic,Викентий Драбо,Vikentiy Drabo,general_rule,naming_model:catholic
+P003580,Тымовский,Дербинское,Католическое,catholic,Осип Радзевич,Osip Radzevich,general_rule,naming_model:catholic
+P003583,Тымовский,Дербинское,Молоканское,russian_historical,Иван Щукин 2-й,Ivan Shchukin (2),general_rule,hyphenated; numbered_disambiguator
+P003588,Тымовский,Дербинское,Магометанское,muslim,Абдул Хамитов,Abdul Khamitov,general_rule,naming_model:muslim
+P003589,Тымовский,Дербинское,Магометанское,muslim,Абдул Гинандин,Abdul Ginandin,general_rule,naming_model:muslim
+P003590,Тымовский,Дербинское,Магометанское,muslim,Шамшонися Гымандин,Shamshonisya Gymandin,general_rule,naming_model:muslim
+P003596,Тымовский,Дербинское,Магометанское,muslim,Оглы-Эфенди Ибрагим,Ogly-Efendi Ibragim,general_rule,naming_model:muslim; hyphenated
+P003597,Тымовский,Дербинское,Католическое,catholic,Миня Царо,Minya Tsaro,general_rule,naming_model:catholic
+P003598,Тымовский,Дербинское,Магометанское,muslim,Оглы-Мамет Тали-Кербалай,Ogly-Mamet Tali-Kerbalay,general_rule,naming_model:muslim; hyphenated
+P003601,Тымовский,Дербинское,Католическое,catholic,Фома Турцын,Foma Turtsyn,general_rule,naming_model:catholic
+P003602,Тымовский,Дербинское,Католическое,catholic,Екатерина Турцына,Yekaterina Turtsyna,general_rule,naming_model:catholic
+P003608,Тымовский,Дербинское,Католическое,catholic,Антон Ижицкий,Anton Izhitskiy,general_rule,naming_model:catholic
+P003609,Тымовский,Дербинское,Католическое,catholic,Бальмина Ижицкая,Balmina Izhitskaya,general_rule,naming_model:catholic
+P003610,Тымовский,Дербинское,Католическое,catholic,Станислав Ижицкий,Stanislav Izhitskiy,general_rule,naming_model:catholic
+P003624,Тымовский,Дербинское,Католическое,catholic,Степан Михайлов Юрковский,Stepan Mikhaylov Yurkovskiy,general_rule,naming_model:catholic
+P003633,Тымовский,Дербинское,Католическое,catholic,Франц Фращинский,Frants Frashchinskiy,general_rule,naming_model:catholic
+P003634,Тымовский,Дербинское,Католическое,catholic,Юлия Фращинская,Yuliya Frashchinskaya,general_rule,naming_model:catholic
+P003635,Тымовский,Дербинское,Католическое,catholic,Болеслав Фращинский,Boleslav Frashchinskiy,general_rule,naming_model:catholic
+P003643,Тымовский,Дербинское,Католическое,catholic,Антон Войновский,Anton Voynovskiy,general_rule,naming_model:catholic
+P003644,Тымовский,Дербинское,Католическое,catholic,Антон Игнатович,Anton Ignatovich,general_rule,naming_model:catholic
+P003709,Тымовский,Дербинское,Католическое,catholic,Осип Грабовский,Osip Grabovskiy,general_rule,naming_model:catholic
+P003710,Тымовский,Дербинское,Католическое,catholic,Юзефа Грабовская,Yuzefa Grabovskaya,general_rule,naming_model:catholic
+P003711,Тымовский,Дербинское,Католическое,catholic,Станислав Грабовский,Stanislav Grabovskiy,general_rule,naming_model:catholic
+P003712,Тымовский,Дербинское,Католическое,catholic,Марья Грабовская,Marya Grabovskaya,general_rule,naming_model:catholic
+P003713,Тымовский,Дербинское,Католическое,catholic,Петр Хаевский,Petr Khayevskiy,general_rule,naming_model:catholic
+P003714,Тымовский,Дербинское,Католическое,catholic,Людвига Хаевская,Lyudviga Khayevskaya,general_rule,naming_model:catholic
+P003715,Тымовский,Дербинское,Католическое,catholic,Екатерина Хаевская,Yekaterina Khayevskaya,general_rule,naming_model:catholic
+P003754,Тымовский,Дербинское,Католическое,catholic,Войцех Кигман,Voytsekh Kigman,general_rule,naming_model:catholic
+P003755,Тымовский,Дербинское,Католическое,catholic,Анна Кигман,Anna Kigman,general_rule,naming_model:catholic
+P003784,Тымовский,Дербинское,Иудейское,other_documented,Иуда Гамберг,Iuda Gamberg,general_rule,naming_model:other_documented
+P003785,Тымовский,Дербинское,Иудейское,other_documented,Ревекка Гамберг,Revekka Gamberg,general_rule,naming_model:other_documented
+P003789,Тымовский,Воскресенское,Магометанское,muslim,Терти Эльмурзеев,Terti Elmurzeyev,general_rule,naming_model:muslim
+P003790,Тымовский,Воскресенское,Магометанское,muslim,Сулейман Аликбеков,Suleyman Alikbekov,general_rule,naming_model:muslim
+P003791,Тымовский,Воскресенское,Магометанское,muslim,Осман Умаров,Osman Umarov,general_rule,naming_model:muslim
+P003792,Тымовский,Воскресенское,Магометанское,muslim,Оглы Наджемедин Косум,Ogly Nadzhemedin Kosum,general_rule,naming_model:muslim
+P003798,Тымовский,Воскресенское,Католическое,catholic,Иван Гордынский,Ivan Gordynskiy,general_rule,naming_model:catholic
+P003799,Тымовский,Воскресенское,,unknown,Константин Сурицкий,Konstantin Suritskiy,general_rule,naming_model:unknown
+P003812,Тымовский,Воскресенское,,unknown,Семен Ярочкин,Semen Yarochkin,general_rule,naming_model:unknown
+P003814,Тымовский,Воскресенское,Магометанское,muslim,Оглы Мир Михти Мир,Ogly Mir Mikhti Mir,general_rule,naming_model:muslim; four_plus_tokens
+P003823,Тымовский,Воскресенское,Лютеранское,lutheran,Фридрих Горст,Fridrikh Gorst,general_rule,naming_model:lutheran
+P003824,Тымовский,Воскресенское,Католическое,catholic,Антон Петрушко,Anton Petrushko,general_rule,naming_model:catholic
+P003825,Тымовский,Воскресенское,Лютеранское,lutheran,Соломон Рейженгорст,Solomon Reyzhengorst,general_rule,naming_model:lutheran
+P003840,Тымовский,Воскресенское,Католическое,catholic,Казимир Славинский,Kazimir Slavinskiy,general_rule,naming_model:catholic
+P003847,Тымовский,Воскресенское,Католическое,catholic,Густав Розенберг,Gustav Rozenberg,general_rule,naming_model:catholic
+P003851,Тымовский,Воскресенское,Католическое,catholic,Петр Борковский,Petr Borkovskiy,general_rule,naming_model:catholic
+P003855,Тымовский,Воскресенское,,unknown,Федор Королев,Fedor Korolev,general_rule,naming_model:unknown
+P003856,Тымовский,Воскресенское,Католическое,catholic,Яков Павляк,Yakov Pavlyak,general_rule,naming_model:catholic
+P003866,Тымовский,Воскресенское,Лютеранское,lutheran,Фридрих Капель,Fridrikh Kapel,general_rule,naming_model:lutheran
+P003867,Тымовский,Воскресенское,Лютеранское,lutheran,Август Кихель,Avgust Kikhel,general_rule,naming_model:lutheran
+P003875,Тымовский,Воскресенское,Лютеранское,lutheran,Петр Смоленский,Petr Smolenskiy,general_rule,naming_model:lutheran
+P003886,Тымовский,Воскресенское,Лютеранское,lutheran,Адольф Гренгален,Adolf Grengalen,general_rule,naming_model:lutheran
+P003888,Тымовский,Воскресенское,Армяно-григорианское,other_documented,Абарцум Грикуров,Abartsum Grikurov,general_rule,naming_model:other_documented
+P003901,Тымовский,Воскресенское,Католическое,catholic,Антон Крещук,Anton Kreshchuk,general_rule,naming_model:catholic
+P003902,Тымовский,Воскресенское,,unknown,Иван Врублевский,Ivan Vrublevskiy,general_rule,naming_model:unknown
+P003903,Тымовский,Воскресенское,Католическое,catholic,Петр Якубовский,Petr Yakubovskiy,general_rule,naming_model:catholic
+P003905,Тымовский,Воскресенское,,unknown,Алексей Карабанов,Aleksey Karabanov,general_rule,naming_model:unknown
+P003907,Тымовский,Воскресенское,,unknown,Григорий Орлов,Grigoriy Orlov,general_rule,naming_model:unknown
+P003910,Тымовский,Воскресенское,Католическое,catholic,Марья Маразинская,Marya Marazinskaya,general_rule,naming_model:catholic
+P003922,Тымовский,Воскресенское,Иудейское,other_documented,Давид Козедой,David Kozedoy,general_rule,naming_model:other_documented
+P003923,Тымовский,Воскресенское,,unknown,Петр Дымов,Petr Dymov,general_rule,naming_model:unknown
+P003925,Тымовский,Воскресенское,,unknown,Иван Неващенко,Ivan Nevashchenko,general_rule,naming_model:unknown
+P003927,Тымовский,Воскресенское,,unknown,Петр Гарбузов,Petr Garbuzov,general_rule,naming_model:unknown
+P003928,Тымовский,Воскресенское,Католическое,catholic,Иероним Правимото,Iyeronim Pravimoto,general_rule,naming_model:catholic
+P003929,Тымовский,Воскресенское,Католическое,catholic,Григорий Прокоп,Grigoriy Prokop,general_rule,naming_model:catholic
+P003930,Тымовский,Воскресенское,Католическое,catholic,Лука Лангевка,Luka Langevka,general_rule,naming_model:catholic
+P003942,Тымовский,Воскресенское,Магометанское,muslim,Оглы Ибрагим Кули,Ogly Ibragim Kuli,general_rule,naming_model:muslim
+P003953,Тымовский,Воскресенское,Католическое,catholic,Семен Дергач,Semen Dergach,general_rule,naming_model:catholic
+P003961,Тымовский,Воскресенское,Католическое,catholic,Степан Безубенко,Stepan Bezubenko,general_rule,naming_model:catholic
+P003982,Тымовский,Усково,,unknown,Иван Поповадзе,Ivan Popovadze,general_rule,naming_model:unknown
+P004007,Тымовский,Усково,Магометанское,muslim,Кали Мула Симбаев,Kali Mula Simbayev,general_rule,naming_model:muslim
+P004012,Тымовский,Усково,Лютеранское,lutheran,Петр Калинберг,Petr Kalinberg,general_rule,naming_model:lutheran
+P004013,Тымовский,Усково,Лютеранское,lutheran,Иван Дреймон,Ivan Dreymon,general_rule,naming_model:lutheran
+P004027,Тымовский,Усково,Лютеранское,lutheran,Иван Перекшойтис,Ivan Perekshoytis,general_rule,naming_model:lutheran
+P004028,Тымовский,Усково,Католическое,catholic,Юзефа Чурленец,Yuzefa Churlenets,general_rule,naming_model:catholic
+P004068,Тымовский,Рыковское,Иудейское,other_documented,Гершко Любарский,Gershko Lyubarskiy,general_rule,naming_model:other_documented
+P004085,Тымовский,Рыковское,Лютеранское,lutheran,Семен Матвеев Кузнецов,Semen Matveyev Kuznetsov,general_rule,naming_model:lutheran
+P004096,Тымовский,Рыковское,Православное,russian_historical,Прасковья,Praskovya,general_rule,one_token
+P004099,Тымовский,Рыковское,Православное,russian_historical,Некрещеная,Nekreshchenaya,general_rule,one_token
+P004105,Тымовский,Рыковское,Православное,russian_historical,Авдотья Иванова Непомнящая 1-я,Avdotya Ivanova Nepomnyashchaya (1),general_rule,four_plus_tokens; hyphenated; numbered_disambiguator
+P004115,Тымовский,Рыковское,Иудейское,other_documented,Зальман Абезгауз,Zalman Abezgauz,general_rule,naming_model:other_documented
+P004116,Тымовский,Рыковское,Иудейское,other_documented,Сарра Хаса Абезгауз,Sarra Khasa Abezgauz,general_rule,naming_model:other_documented
+P004117,Тымовский,Рыковское,Иудейское,other_documented,Ицко Абезгауз,Itsko Abezgauz,general_rule,naming_model:other_documented
+P004118,Тымовский,Рыковское,Иудейское,other_documented,Нихама Абезгауз,Nikhama Abezgauz,general_rule,naming_model:other_documented
+P004119,Тымовский,Рыковское,Католическое,catholic,Константин Иванов Домбровский,Konstantin Ivanov Dombrovskiy,general_rule,naming_model:catholic
+P004141,Тымовский,Рыковское,,unknown,Андрей Никитин Желудок,Andrey Nikitin Zheludok,general_rule,naming_model:unknown
+P004147,Тымовский,Рыковское,,unknown,Михаил Леонтьев Безбожный,Mikhail Leontyev Bezbozhnyy,general_rule,naming_model:unknown
+P004176,Тымовский,Рыковское,,unknown,Прасковья Федорова Ештакина,Praskovya Fedorova Yeshtakina,general_rule,naming_model:unknown
+P004182,Тымовский,Рыковское,Католическое,catholic,Готфрид Урбан,Gotfrid Urban,general_rule,naming_model:catholic
+P004183,Тымовский,Рыковское,Католическое,catholic,Марья Иванова Урбан,Marya Ivanova Urban,general_rule,naming_model:catholic
+P004184,Тымовский,Рыковское,Католическое,catholic,Иосиф Урбан,Iosif Urban,general_rule,naming_model:catholic
+P004185,Тымовский,Рыковское,Католическое,catholic,Марья Урбан,Marya Urban,general_rule,naming_model:catholic
+P004198,Тымовский,Рыковское,Католическое,catholic,Марианна Николаевна Рудницкая,Marianna Nikolayevna Rudnitskaya,general_rule,naming_model:catholic
+P004208,Тымовский,Рыковское,Католическое,catholic,Андрей Адамов Дудонис,Andrey Adamov Dudonis,general_rule,naming_model:catholic
+P004209,Тымовский,Рыковское,Католическое,catholic,Ева Харитонова Дудонис,Yeva Kharitonova Dudonis,general_rule,naming_model:catholic
+P004210,Тымовский,Рыковское,Католическое,catholic,Егор Андреев Дудонис,Yegor Andreyev Dudonis,general_rule,naming_model:catholic
+P004211,Тымовский,Рыковское,Католическое,catholic,Устинья Богданова Дудонис,Ustinya Bogdanova Dudonis,general_rule,naming_model:catholic
+P004252,Тымовский,Рыковское,Иудейское,other_documented,Лейба Хассер,Leyba Khasser,general_rule,naming_model:other_documented
+P004253,Тымовский,Рыковское,Иудейское,other_documented,Хана Хассер,Khana Khasser,general_rule,naming_model:other_documented
+P004254,Тымовский,Рыковское,Иудейское,other_documented,Роха Хассер,Rokha Khasser,general_rule,naming_model:other_documented
+P004255,Тымовский,Рыковское,Иудейское,other_documented,Ицка Хассер,Itska Khasser,general_rule,naming_model:other_documented
+P004289,Тымовский,Рыковское,Иудейское,other_documented,Шлема Гельфонт,Shlema Gelfont,general_rule,naming_model:other_documented
+P004290,Тымовский,Рыковское,Иудейское,other_documented,Двейра Гельфонт,Dveyra Gelfont,general_rule,naming_model:other_documented
+P004291,Тымовский,Рыковское,Иудейское,other_documented,Лейба Гельфонт,Leyba Gelfont,general_rule,naming_model:other_documented
+P004292,Тымовский,Рыковское,Иудейское,other_documented,Нахим Гельфонт,Nakhim Gelfont,general_rule,naming_model:other_documented
+P004293,Тымовский,Рыковское,Иудейское,other_documented,Арон Гельфонт,Aron Gelfont,general_rule,naming_model:other_documented
+P004294,Тымовский,Рыковское,Иудейское,other_documented,Липа Гельфонт,Lipa Gelfont,general_rule,naming_model:other_documented
+P004295,Тымовский,Рыковское,Иудейское,other_documented,Сарра Гельфонт,Sarra Gelfont,general_rule,naming_model:other_documented
+P004296,Тымовский,Рыковское,Иудейское,other_documented,Хана Гельфонт,Khana Gelfont,general_rule,naming_model:other_documented
+P004318,Тымовский,Рыковское,Иудейское,other_documented,Ман Абрамов Клоцман,Man Abramov Klotsman,general_rule,naming_model:other_documented
+P004319,Тымовский,Рыковское,Иудейское,other_documented,Лея Клоцман,Leya Klotsman,general_rule,naming_model:other_documented
+P004320,Тымовский,Рыковское,Иудейское,other_documented,Абрам Клоцман,Abram Klotsman,general_rule,naming_model:other_documented
+P004321,Тымовский,Рыковское,Лютеранское,lutheran,Ян Абель,Yan Abel,general_rule,naming_model:lutheran
+P004322,Тымовский,Рыковское,Католическое,catholic,Иван Новачок,Ivan Novachok,general_rule,naming_model:catholic
+P004349,Тымовский,Рыковское,Иудейское,other_documented,Мойсей Давидов Куперман,Moysey Davidov Kuperman,general_rule,naming_model:other_documented
+P004350,Тымовский,Рыковское,Иудейское,other_documented,Мойсей Абрамов Палатников,Moysey Abramov Palatnikov,general_rule,naming_model:other_documented
+P004351,Тымовский,Рыковское,Иудейское,other_documented,Лея Дрога,Leya Droga,general_rule,naming_model:other_documented
+P004352,Тымовский,Рыковское,Иудейское,other_documented,Борис Дрога,Boris Droga,general_rule,naming_model:other_documented
+P004391,Тымовский,Рыковское,,unknown,Варвара Степанова Фищенко,Varvara Stepanova Fishchenko,general_rule,naming_model:unknown
+P004407,Тымовский,Рыковское,Католическое,catholic,Казимир Томашунас,Kazimir Tomashunas,general_rule,naming_model:catholic
+P004408,Тымовский,Рыковское,Православное,russian_historical,Егор Васильев 2-й,Yegor Vasilyev (2),general_rule,hyphenated; numbered_disambiguator
+P004409,Тымовский,Рыковское,Иудейское,other_documented,Шаир Апилович,Shair Apilovich,general_rule,naming_model:other_documented
+P004410,Тымовский,Рыковское,Иудейское,other_documented,Рива Апилович,Riva Apilovich,general_rule,naming_model:other_documented
+P004411,Тымовский,Рыковское,Иудейское,other_documented,Ицка Апилович,Itska Apilovich,general_rule,naming_model:other_documented
+P004412,Тымовский,Рыковское,,unknown,Мовиса Апилович,Movisa Apilovich,general_rule,naming_model:unknown
+P004427,Тымовский,Рыковское,,unknown,Савелий Куберниченко,Saveliy Kubernichenko,general_rule,naming_model:unknown
+P004428,Тымовский,Рыковское,,unknown,Александр Куберниченко,Aleksandr Kubernichenko,general_rule,naming_model:unknown
+P004434,Тымовский,Рыковское,,unknown,Андрей Бурлаков,Andrey Burlakov,general_rule,naming_model:unknown
+P004441,Тымовский,Рыковское,,unknown,Борис Борисов Попов,Boris Borisov Popov,general_rule,naming_model:unknown
+P004447,Тымовский,Рыковское,Католическое,catholic,Михаил Бабин,Mikhail Babin,general_rule,naming_model:catholic
+P004458,Тымовский,Рыковское,,unknown,Ольга Иванова,Olga Ivanova,general_rule,naming_model:unknown
+P004485,Тымовский,Рыковское,Католическое,catholic,Мефодий Иванович Завольчук,Mefodiy Ivanovich Zavolchuk,general_rule,naming_model:catholic
+P004486,Тымовский,Рыковское,Католическое,catholic,Иван Михайлов Милашевич,Ivan Mikhaylov Milashevich,general_rule,naming_model:catholic
+P004487,Тымовский,Рыковское,Католическое,catholic,Евва Матвеева Милашевич,Yevva Matveyeva Milashevich,general_rule,naming_model:catholic
+P004488,Тымовский,Рыковское,Католическое,catholic,Елена Иванова Милашевич,Yelena Ivanova Milashevich,general_rule,naming_model:catholic
+P004490,Тымовский,Рыковское,Католическое,catholic,Павел Лукашев Войтасик,Pavel Lukashev Voytasik,general_rule,naming_model:catholic
+P004491,Тымовский,Рыковское,Католическое,catholic,Иван Лукашев Войтасик,Ivan Lukashev Voytasik,general_rule,naming_model:catholic
+P004508,Тымовский,Рыковское,,unknown,Александр Архипов,Aleksandr Arkhipov,general_rule,naming_model:unknown
+P004542,Тымовский,Рыковское,Католическое,catholic,Михаил Петров Чарус,Mikhail Petrov Charus,general_rule,naming_model:catholic
+P004592,Тымовский,Рыковское,Православное,russian_historical,Федот Ларионов Маcюкевич,Fedot Larionov Masyukevich,owner_override_20260802,mixed_latin_cyrillic
+P004593,Тымовский,Рыковское,Иудейское,other_documented,Ицка Адельский,Itska Adelskiy,general_rule,naming_model:other_documented
+P004594,Тымовский,Рыковское,Иудейское,other_documented,Цента Адельская,Tsenta Adelskaya,general_rule,naming_model:other_documented
+P004596,Тымовский,Рыковское,Иудейское,other_documented,Тени Абрамова Люри,Teni Abramova Lyuri,general_rule,naming_model:other_documented
+P004597,Тымовский,Рыковское,Иудейское,other_documented,Зисия Абрамова Люри,Zisiya Abramova Lyuri,general_rule,naming_model:other_documented
+P004598,Тымовский,Рыковское,Иудейское,other_documented,Меер Абрамов Люри,Meyer Abramov Lyuri,general_rule,naming_model:other_documented
+P004599,Тымовский,Рыковское,Иудейское,other_documented,Абрам Абрамов Люри,Abram Abramov Lyuri,general_rule,naming_model:other_documented
+P004600,Тымовский,Рыковское,Иудейское,other_documented,Липа Абрамов Люри,Lipa Abramov Lyuri,general_rule,naming_model:other_documented
+P004612,Тымовский,Рыковское,Магометанское,muslim,Манга Мутуш,Manga Mutush,general_rule,naming_model:muslim
+P004613,Тымовский,Рыковское,Магометанское,muslim,Бацай Мангаева Мутуш,Batsay Mangayeva Mutush,general_rule,naming_model:muslim
+P004617,Тымовский,Рыковское,Магометанское,muslim,Оглы Маходым Мола Керым,Ogly Makhodym Mola Kerym,general_rule,naming_model:muslim; four_plus_tokens
+P004618,Тымовский,Рыковское,Магометанское,muslim,Оглы Идрис Гафум Алияр,Ogly Idris Gafum Aliyar,general_rule,naming_model:muslim; four_plus_tokens
+P004619,Тымовский,Рыковское,Магометанское,muslim,Арап Хан Адам,Arap Khan Adam,general_rule,naming_model:muslim
+P004620,Тымовский,Рыковское,Магометанское,muslim,Муса Омар Оглы,Musa Omar Ogly,general_rule,naming_model:muslim
+P004638,Тымовский,Рыковское,Лютеранское,lutheran,Марья Рынц,Marya Rynts,general_rule,naming_model:lutheran
+P004644,Тымовский,Рыковское,Католическое,catholic,Агнеса Каменек,Agnesa Kamenek,general_rule,naming_model:catholic
+P004645,Тымовский,Рыковское,Католическое,catholic,Анна Каменек,Anna Kamenek,general_rule,naming_model:catholic
+P004649,Тымовский,Рыковское,Католическое,catholic,Франц Иванов Малиновский,Frants Ivanov Malinovskiy,general_rule,naming_model:catholic
+P004656,Тымовский,Рыковское,Католическое,catholic,Франц Осипов Непомнящий,Frants Osipov Nepomnyashchiy,general_rule,naming_model:catholic
+P004658,Тымовский,Рыковское,Лютеранское,lutheran,Майнестер Иогана,Maynester Iogana,general_rule,naming_model:lutheran
+P004671,Тымовский,Рыковское,Католическое,catholic,Осип Каспер Целяк,Osip Kasper Tselyak,general_rule,naming_model:catholic
+P004672,Тымовский,Рыковское,Католическое,catholic,Антонина Войцехова Залевская,Antonina Voytsekhova Zalevskaya,general_rule,naming_model:catholic
+P004679,Тымовский,Рыковское,,unknown,Иван Семенов Анисимов,Ivan Semenov Anisimov,general_rule,naming_model:unknown
+P004682,Тымовский,Рыковское,Православное,russian_historical,Иван Васильев Васильев 3-й,Ivan Vasilyev Vasilyev (3),general_rule,four_plus_tokens; hyphenated; numbered_disambiguator
+P004688,Тымовский,Рыковское,Католическое,catholic,Ян Вонторок,Yan Vontorok,general_rule,naming_model:catholic
+P004689,Тымовский,Рыковское,Лютеранское,lutheran,Ульрих Эглит,Ulrikh Eglit,general_rule,naming_model:lutheran
+P004694,Тымовский,Рыковское,Магометанское,muslim,Макни Галей Гамакберов,Makni Galey Gamakberov,general_rule,naming_model:muslim
+P004702,Тымовский,Рыковское,,unknown,Мария Лазарева,Mariya Lazareva,general_rule,naming_model:unknown
+P004706,Тымовский,Рыковское,Католическое,catholic,Томас Иванов Ковальский,Tomas Ivanov Kovalskiy,general_rule,naming_model:catholic
+P004707,Тымовский,Рыковское,Католическое,catholic,Марианна Веселовская,Marianna Veselovskaya,general_rule,naming_model:catholic
+P004708,Тымовский,Рыковское,Католическое,catholic,Иван Каспров Кужевский,Ivan Kasprov Kuzhevskiy,general_rule,naming_model:catholic
+P004711,Тымовский,Рыковское,Католическое,catholic,Осип Викентьев Огуркас,Osip Vikentyev Ogurkas,general_rule,naming_model:catholic
+P004712,Тымовский,Рыковское,Католическое,catholic,Наталья Иванова Огуркас,Natalya Ivanova Ogurkas,general_rule,naming_model:catholic
+P004713,Тымовский,Рыковское,Католическое,catholic,Владимир Осипов Огуркас,Vladimir Osipov Ogurkas,general_rule,naming_model:catholic
+P004722,Тымовский,Рыковское,Католическое,catholic,Рох Калинов Каменский,Rokh Kalinov Kamenskiy,general_rule,naming_model:catholic
+P004723,Тымовский,Рыковское,Католическое,catholic,Евва Каменская,Yevva Kamenskaya,general_rule,naming_model:catholic
+P004724,Тымовский,Рыковское,Католическое,catholic,Станислава Рохова Каменская,Stanislava Rokhova Kamenskaya,general_rule,naming_model:catholic
+P004725,Тымовский,Рыковское,Католическое,catholic,Франц Рохов Каменский,Frants Rokhov Kamenskiy,general_rule,naming_model:catholic
+P004726,Тымовский,Рыковское,Католическое,catholic,Андрей Михайлов Новаковский,Andrey Mikhaylov Novakovskiy,general_rule,naming_model:catholic
+P004774,Тымовский,Рыковское,Магометанское,muslim,Саран Муфт Темериков,Saran Muft Temerikov,general_rule,naming_model:muslim
+P004812,Тымовский,Рыковское,Иудейское,other_documented,Абрам Веселовицкий,Abram Veselovitskiy,general_rule,naming_model:other_documented
+P004826,Тымовский,Рыковское,Православное,russian_historical,Иван Васильевич Кравченко 4-й,Ivan Vasilyevich Kravchenko (4),general_rule,four_plus_tokens; hyphenated; numbered_disambiguator
+P004828,Тымовский,Рыковское,Лютеранское,lutheran,Карл Иванов Эльке,Karl Ivanov Elke,general_rule,naming_model:lutheran
+P004832,Тымовский,Рыковское,,unknown,Василий Григорьев Зимарев,Vasiliy Grigoryev Zimarev,general_rule,naming_model:unknown
+P004836,Тымовский,Рыковское,Православное,russian_historical,Иван Трофимов Лантухов 1-й,Ivan Trofimov Lantukhov (1),general_rule,four_plus_tokens; hyphenated; numbered_disambiguator
+P004840,Тымовский,Рыковское,Православное,russian_historical,Иван Иванов Лантухов 2-й,Ivan Ivanov Lantukhov (2),general_rule,four_plus_tokens; hyphenated; numbered_disambiguator
+P004850,Тымовский,Рыковское,,unknown,Мавра Николаева Каралич,Mavra Nikolayeva Karalich,general_rule,naming_model:unknown
+P004857,Тымовский,Рыковское,Лютеранское,lutheran,Ян Лель Юоло,Yan Lel Yuolo,general_rule,naming_model:lutheran
+P004886,Тымовский,Рыковское,Лютеранское,lutheran,Игнатий Егоров Остерлям,Ignatiy Yegorov Osterlyam,general_rule,naming_model:lutheran
+P004906,Тымовский,Рыковское,,unknown,Платон Егоров Нуякшин,Platon Yegorov Nuyakshin,general_rule,naming_model:unknown
+P004916,Тымовский,Рыковское,,unknown,Александра Сушкова,Aleksandra Sushkova,general_rule,naming_model:unknown
+P004918,Тымовский,Рыковское,Магометанское,muslim,Ибрагим Миндубаев,Ibragim Mindubayev,general_rule,naming_model:muslim
+P004919,Тымовский,Рыковское,Магометанское,muslim,Хаджар Альмухаметова,Khadzhar Almukhametova,general_rule,naming_model:muslim
+P004929,Тымовский,Рыковское,Иудейское,other_documented,Рубан Зонт,Ruban Zont,general_rule,naming_model:other_documented
+P004937,Тымовский,Рыковское,Иудейское,other_documented,Янкель Юткевич,Yankel Yutkevich,general_rule,naming_model:other_documented
+P004938,Тымовский,Рыковское,Магометанское,muslim,Оглы Баладжа Керым,Ogly Baladzha Kerym,general_rule,naming_model:muslim
+P004954,Тымовский,Рыковское,Католическое,catholic,Иван Станиславов Дрефинский,Ivan Stanislavov Drefinskiy,general_rule,naming_model:catholic
+P004955,Тымовский,Рыковское,Католическое,catholic,Лаврентий Феликсов Войтерский,Lavrentiy Feliksov Voyterskiy,general_rule,naming_model:catholic
+P004976,Тымовский,Рыковское,,unknown,Авдотья Павлова Селезнева,Avdotya Pavlova Selezneva,general_rule,naming_model:unknown
+P004990,Тымовский,Рыковское,Католическое,catholic,Войцех Рафов Завода,Voytsekh Rafov Zavoda,general_rule,naming_model:catholic
+P004991,Тымовский,Рыковское,Католическое,catholic,Андрей Вишневский,Andrey Vishnevskiy,general_rule,naming_model:catholic
+P004992,Тымовский,Рыковское,Католическое,catholic,Анна Михайлова Вишневская,Anna Mikhaylova Vishnevskaya,general_rule,naming_model:catholic
+P004993,Тымовский,Рыковское,Католическое,catholic,Андрей Адамович Непомнящий,Andrey Adamovich Nepomnyashchiy,general_rule,naming_model:catholic
+P004996,Тымовский,Рыковское,Католическое,catholic,Семен Иванов Войцех,Semen Ivanov Voytsekh,general_rule,naming_model:catholic
+P004997,Тымовский,Рыковское,Католическое,catholic,Осип Войцехов Макульский,Osip Voytsekhov Makulskiy,general_rule,naming_model:catholic
+P004998,Тымовский,Рыковское,Католическое,catholic,Станислава Агдовская,Stanislava Agdovskaya,general_rule,naming_model:catholic
+P004999,Тымовский,Рыковское,Лютеранское,lutheran,Иван Михайлов Пульфус,Ivan Mikhaylov Pulfus,general_rule,naming_model:lutheran
+P005000,Тымовский,Рыковское,Лютеранское,lutheran,Елизавета Пульфус,Yelizaveta Pulfus,general_rule,naming_model:lutheran
+P005001,Тымовский,Рыковское,,unknown,Никанор Иванов,Nikanor Ivanov,general_rule,naming_model:unknown
+P005002,Тымовский,Рыковское,,unknown,Яков Безпрозвания,Yakov Bezprozvaniya,general_rule,naming_model:unknown
+P005049,Тымовский,Рыковское,Иудейское,other_documented,Лейба Сырс,Leyba Syrs,general_rule,naming_model:other_documented
+P005050,Тымовский,Рыковское,Иудейское,other_documented,Брана Клявер,Brana Klyaver,general_rule,naming_model:other_documented
+P005051,Тымовский,Рыковское,Иудейское,other_documented,Мойсей Брана,Moysey Brana,general_rule,naming_model:other_documented
+P005067,Тымовский,Рыковское,,unknown,Иван Шмелев,Ivan Shmelev,general_rule,naming_model:unknown
+P005073,Тымовский,Рыковское,Католическое,catholic,Карл Адамович Табур,Karl Adamovich Tabur,general_rule,naming_model:catholic
+P005083,Тымовский,Рыковское,Католическое,catholic,Осип Андреев Лясоцкий,Osip Andreyev Lyasotskiy,general_rule,naming_model:catholic
+P005101,Тымовский,Рыковское,Лютеранское,lutheran,Александр Мартынов Неринг,Aleksandr Martynov Nering,general_rule,naming_model:lutheran
+P005108,Тымовский,Рыковское,Православное,russian_historical,Иванов Кирилл 2-й Иванов,Ivanov Kirill (2) Ivanov,general_rule,four_plus_tokens; hyphenated; numbered_disambiguator
+P005132,Тымовский,Рыковское,Лютеранское,lutheran,Иоган Иогансон,Iogan Ioganson,general_rule,naming_model:lutheran
+P005148,Тымовский,Рыковское,Магометанское,muslim,Ким Магомет Шарафутдинов,Kim Magomet Sharafutdinov,general_rule,naming_model:muslim
+P005155,Тымовский,Рыковское,Лютеранское,lutheran,Андрей Злот,Andrey Zlot,general_rule,naming_model:lutheran
+P005157,Тымовский,Рыковское,Магометанское,muslim,Уоте Нор Магомет,Uote Nor Magomet,general_rule,naming_model:muslim
+P005161,Тымовский,Рыковское,Католическое,catholic,Игнатий Антонов Шелковский,Ignatiy Antonov Shelkovskiy,general_rule,naming_model:catholic
+P005162,Тымовский,Рыковское,Католическое,catholic,Андрей Мартынов Гура,Andrey Martynov Gura,general_rule,naming_model:catholic
+P005168,Тымовский,Рыковское,Лютеранское,lutheran,Мариана Гендриксон,Mariana Gendrikson,general_rule,naming_model:lutheran
+P005169,Тымовский,Рыковское,Лютеранское,lutheran,Мац Иоганов Лектор Лехтола,Mats Ioganov Lektor Lekhtola,general_rule,naming_model:lutheran; four_plus_tokens
+P005170,Тымовский,Рыковское,Лютеранское,lutheran,Луиза Вейбергова Саймиярова,Luiza Veybergova Saymiyarova,general_rule,naming_model:lutheran
+P005220,Тымовский,Рыковское,Лютеранское,lutheran,Мария Люстрех,Mariya Lyustrekh,general_rule,naming_model:lutheran
+P005221,Тымовский,Рыковское,Лютеранское,lutheran,Иоган Петерc,Iogan Peters,owner_override_20260802,naming_model:lutheran; mixed_latin_cyrillic
+P005225,Тымовский,Рыковское,,unknown,Василий Матвеев Тремаскин,Vasiliy Matveyev Tremaskin,general_rule,naming_model:unknown
+P005260,Тымовский,Рыковское,Католическое,catholic,Иван Иванов Вербитский,Ivan Ivanov Verbitskiy,general_rule,naming_model:catholic
+P005263,Тымовский,Рыковское,Православное,russian_historical,Василий Николаев Николаев 1-й,Vasiliy Nikolayev Nikolayev (1),general_rule,four_plus_tokens; hyphenated; numbered_disambiguator
+P005268,Тымовский,Рыковское,Иудейское,other_documented,Тевель Крученов,Tevel Kruchenov,general_rule,naming_model:other_documented
+P005269,Тымовский,Рыковское,Католическое,catholic,Викентий Каземиров Пертулис,Vikentiy Kazemirov Pertulis,general_rule,naming_model:catholic
+P005286,Тымовский,Рыковское,Католическое,catholic,Мустафа Якубов Якубовский,Mustafa Yakubov Yakubovskiy,general_rule,naming_model:catholic
+P005287,Тымовский,Рыковское,Католическое,catholic,Михалина Францова Якубовская,Mikhalina Frantsova Yakubovskaya,general_rule,naming_model:catholic
+P005288,Тымовский,Рыковское,Католическое,catholic,Болеслав Степанов Якубовский,Boleslav Stepanov Yakubovskiy,general_rule,naming_model:catholic
+P005289,Тымовский,Рыковское,Католическое,catholic,Анна Степанова Якубовская,Anna Stepanova Yakubovskaya,general_rule,naming_model:catholic
+P005290,Тымовский,Рыковское,Католическое,catholic,Степан Степанов Якубовский,Stepan Stepanov Yakubovskiy,general_rule,naming_model:catholic
+P005291,Тымовский,Рыковское,Католическое,catholic,Михаил Якубовский,Mikhail Yakubovskiy,general_rule,naming_model:catholic
+P005292,Тымовский,Рыковское,Католическое,catholic,Войцех Мартынов Войда,Voytsekh Martynov Voyda,general_rule,naming_model:catholic
+P005311,Тымовский,Палево,Католическое,catholic,Иван Францов Новачок,Ivan Frantsov Novachok,general_rule,naming_model:catholic
+P005313,Тымовский,Палево,Иудейское,other_documented,Зисель Хидикель,Zisel Khidikel,general_rule,naming_model:other_documented
+P005327,Тымовский,Палево,Католическое,catholic,Казимир Коэлис,Kazimir Koelis,general_rule,naming_model:catholic
+P005333,Тымовский,Палево,Иудейское,other_documented,Вульф Шапиро,Vulf Shapiro,general_rule,naming_model:other_documented
+P005334,Тымовский,Палево,Иудейское,other_documented,Мойсей Куперман,Moysey Kuperman,general_rule,naming_model:other_documented
+P005356,Тымовский,Палево,,unknown,Андрей Галонин,Andrey Galonin,general_rule,naming_model:unknown
+P005358,Тымовский,Палево,Магометанское,muslim,Мухамедьян Мундыбаев,Mukhamedyan Mundybayev,general_rule,naming_model:muslim
+P005365,Тымовский,Палево,Магометанское,muslim,Шарын Галеев,Sharyn Galeyev,general_rule,naming_model:muslim
+P005371,Тымовский,Палево,Лютеранское,lutheran,Петр Юрдас,Petr Yurdas,general_rule,naming_model:lutheran
+P005388,Тымовский,Палево,Лютеранское,lutheran,Ян Абель,Yan Abel,general_rule,naming_model:lutheran
+P005393,Тымовский,Палево,Католическое,catholic,Игнатий Рудковский,Ignatiy Rudkovskiy,general_rule,naming_model:catholic
+P005394,Тымовский,Палево,Католическое,catholic,Екатерина Герайтес,Yekaterina Geraytes,general_rule,naming_model:catholic
+P005395,Тымовский,Палево,Католическое,catholic,Франц Степневский,Frants Stepnevskiy,general_rule,naming_model:catholic
+P005396,Тымовский,Палево,Православное,russian_historical,Человек неизвестного звания,Person of unknown rank,explicit_non_name_exception,descriptive_non_name
+P005404,Тымовский,Палево,Католическое,catholic,Ян Кепке,Yan Kepke,general_rule,naming_model:catholic
+P005405,Тымовский,Палево,Католическое,catholic,Людвиг Хайновский,Lyudvig Khaynovskiy,general_rule,naming_model:catholic
+P005406,Тымовский,Палево,Католическое,catholic,Иван Садовский,Ivan Sadovskiy,general_rule,naming_model:catholic
+P005413,Тымовский,Палево,Православное,russian_historical,Иван Филиппов Веселов 1-й,Ivan Filippov Veselov (1),general_rule,four_plus_tokens; hyphenated; numbered_disambiguator
+P005414,Тымовский,Палево,Православное,russian_historical,Иван Веселов 2-й,Ivan Veselov (2),general_rule,hyphenated; numbered_disambiguator
+P005418,Тымовский,Палево,Католическое,catholic,Петр Карлов Хибовский,Petr Karlov Khibovskiy,general_rule,naming_model:catholic
+P005419,Тымовский,Палево,Католическое,catholic,Антон Сапало,Anton Sapalo,general_rule,naming_model:catholic
+P005420,Тымовский,Палево,Католическое,catholic,Франциска Пайонк,Frantsiska Payonk,general_rule,naming_model:catholic
+P005421,Тымовский,Палево,Католическое,catholic,Дарья Пайонк,Darya Payonk,general_rule,naming_model:catholic
+P005423,Тымовский,Палево,Католическое,catholic,Андрей Иванов Виновский,Andrey Ivanov Vinovskiy,general_rule,naming_model:catholic
+P005424,Тымовский,Палево,Католическое,catholic,Людвиг Павлюкевич,Lyudvig Pavlyukevich,general_rule,naming_model:catholic
+P005425,Тымовский,Палево,Католическое,catholic,Розалия Урбаняк,Rozaliya Urbanyak,general_rule,naming_model:catholic
+P005435,Тымовский,Палево,Лютеранское,lutheran,Август Линдер,Avgust Linder,general_rule,naming_model:lutheran
+P005436,Тымовский,Палево,Лютеранское,lutheran,Александр Титов Лесницкий,Aleksandr Titov Lesnitskiy,general_rule,naming_model:lutheran
+P005452,Тымовский,Палево,Католическое,catholic,Станислав Михайлов Шамоновский,Stanislav Mikhaylov Shamonovskiy,general_rule,naming_model:catholic
+P005454,Тымовский,Палево,Католическое,catholic,Елена Андреева Ольчак,Yelena Andreyeva Olchak,general_rule,naming_model:catholic
+P005455,Тымовский,Палево,Католическое,catholic,Флорентина Ольчак,Florentina Olchak,general_rule,naming_model:catholic
+P005463,Тымовский,Палево,Католическое,catholic,Войцех Гуральский,Voytsekh Guralskiy,general_rule,naming_model:catholic
+P005464,Тымовский,Палево,Католическое,catholic,Осип Петров Сквар,Osip Petrov Skvar,general_rule,naming_model:catholic
+P005468,Тымовский,Палево,Католическое,catholic,Михаил Вонсонский,Mikhail Vonsonskiy,general_rule,naming_model:catholic
+P005469,Тымовский,Палево,Католическое,catholic,Виктория Кузьминская,Viktoriya Kuzminskaya,general_rule,naming_model:catholic
+P005474,Тымовский,Палево,,unknown,Семен Кузьминкин,Semen Kuzminkin,general_rule,naming_model:unknown
+P005489,Тымовский,Палево,Католическое,catholic,Мартын Игнатьев Сивковский,Martyn Ignatyev Sivkovskiy,general_rule,naming_model:catholic
+P005500,Тымовский,Палево,,unknown,Иван Дерюгин,Ivan Deryugin,general_rule,naming_model:unknown
+P005501,Тымовский,Палево,,unknown,Ефрем Сохненко,Yefrem Sokhnenko,general_rule,naming_model:unknown
+P005506,Тымовский,Палево,Католическое,catholic,Викентий Адамов Машалов,Vikentiy Adamov Mashalov,general_rule,naming_model:catholic
+P005509,Тымовский,Палево,,unknown,Лаврентий Животовский,Lavrentiy Zhivotovskiy,general_rule,naming_model:unknown
+P005515,Тымовский,Палево,Католическое,catholic,Игнатий Чарковский,Ignatiy Charkovskiy,general_rule,naming_model:catholic
+P005516,Тымовский,Палево,Католическое,catholic,Осип Рекс,Osip Reks,general_rule,naming_model:catholic
+P005518,Тымовский,Палево,Магометанское,muslim,Шамхудин Зубайров,Shamkhudin Zubayrov,general_rule,naming_model:muslim
+P005536,Тымовский,Палево,,unknown,Григорий Позняков,Grigoriy Poznyakov,general_rule,naming_model:unknown
+P005539,Тымовский,Палево,Католическое,catholic,Иван Михайлов Зверяк,Ivan Mikhaylov Zveryak,general_rule,naming_model:catholic
+P005542,Тымовский,Палево,Иудейское,other_documented,Давид Цейнер,David Tseyner,general_rule,naming_model:other_documented
+P005556,Тымовский,Палево,Католическое,catholic,Казимир Пыж,Kazimir Pyzh,general_rule,naming_model:catholic
+P005558,Тымовский,Палево,Католическое,catholic,Осип Викентьев Бояновский,Osip Vikentyev Boyanovskiy,general_rule,naming_model:catholic
+P005566,Тымовский,Палево,Лютеранское,lutheran,Матис Лац,Matis Lats,general_rule,naming_model:lutheran
+P005590,Тымовский,Мало-Тымово,Лютеранское,lutheran,Марья Андреева Хацко,Marya Andreyeva Khatsko,general_rule,naming_model:lutheran
+P005598,Тымовский,Мало-Тымово,Раскольничество,russian_historical,Иван Голубев 3-й,Ivan Golubev (3),general_rule,hyphenated; numbered_disambiguator
+P005599,Тымовский,Мало-Тымово,Католическое,catholic,Луция Павляк,Lutsiya Pavlyak,general_rule,naming_model:catholic
+P005607,Тымовский,Мало-Тымово,Лютеранское,lutheran,Анна Алтанес,Anna Altanes,general_rule,naming_model:lutheran
+P005637,Тымовский,Мало-Тымово,,unknown,Леонтий Николаев Изотов,Leontiy Nikolayev Izotov,general_rule,naming_model:unknown
+P005657,Тымовский,Мало-Тымово,Лютеранское,lutheran,Юлиус Францович Бауман,Yulius Frantsovich Bauman,general_rule,naming_model:lutheran
+P005663,Тымовский,Мало-Тымово,Магометанское,muslim,Муса Пиев Фуражиев,Musa Piyev Furazhiyev,general_rule,naming_model:muslim
+P005686,Тымовский,Мало-Тымово,,unknown,Семен Осипов Фадеев,Semen Osipov Fadeyev,general_rule,naming_model:unknown
+P005697,Тымовский,Мало-Тымово,,unknown,Иван Андреев Беланов,Ivan Andreyev Belanov,general_rule,naming_model:unknown
+P005706,Тымовский,Мало-Тымово,Православное,russian_historical,Иван 1-й Трофимов Лузин,Ivan (1) Trofimov Luzin,general_rule,four_plus_tokens; hyphenated; numbered_disambiguator
+P005707,Тымовский,Мало-Тымово,,unknown,Иван 2-й Трофимов Лузин,Ivan (2) Trofimov Luzin,general_rule,naming_model:unknown; four_plus_tokens; hyphenated; numbered_disambiguator
+P005720,Тымовский,Мало-Тымово,Армяно-григорианское,other_documented,Гаспар Багинов,Gaspar Baginov,general_rule,naming_model:other_documented
+P005721,Тымовский,Мало-Тымово,Армяно-григорианское,other_documented,Варвара Мякишова-Швилли,Varvara Myakishova-Shvilli,general_rule,naming_model:other_documented; hyphenated
+P005754,Тымовский,Мало-Тымово,,unknown,Пелагея Беляева,Pelageya Belyayeva,general_rule,naming_model:unknown
+P005766,Тымовский,Андрее-Ивановское,Католическое,catholic,Петр Осипов Кожуховский,Petr Osipov Kozhukhovskiy,general_rule,naming_model:catholic
+P005769,Тымовский,Андрее-Ивановское,Католическое,catholic,Франц Кухарский,Frants Kukharskiy,general_rule,naming_model:catholic
+P005770,Тымовский,Андрее-Ивановское,Католическое,catholic,Франц Осипов Магдалинский,Frants Osipov Magdalinskiy,general_rule,naming_model:catholic
+P005774,Тымовский,Андрее-Ивановское,,unknown,Силантий Помарев,Silantiy Pomarev,general_rule,naming_model:unknown
+P005791,Тымовский,Андрее-Ивановское,Православное,russian_historical,Дмитрий Фомин Попов 1-й,Dmitriy Fomin Popov (1),general_rule,four_plus_tokens; hyphenated; numbered_disambiguator
+P005801,Тымовский,Андрее-Ивановское,Лютеранское,lutheran,Егор Тельтинов,Yegor Teltinov,general_rule,naming_model:lutheran
+P005823,Тымовский,Андрее-Ивановское,Католическое,catholic,Феликс Фомин Ковальчук,Feliks Fomin Kovalchuk,general_rule,naming_model:catholic
+P005825,Тымовский,Андрее-Ивановское,Католическое,catholic,Семен Семенов Дашкус,Semen Semenov Dashkus,general_rule,naming_model:catholic
+P005828,Тымовский,Андрее-Ивановское,Магометанское,muslim,Мустафа Непомнящий,Mustafa Nepomnyashchiy,general_rule,naming_model:muslim
+P005829,Тымовский,Андрее-Ивановское,Католическое,catholic,Казимир Шишкевич,Kazimir Shishkevich,general_rule,naming_model:catholic
+P005832,Тымовский,Андрее-Ивановское,Магометанское,muslim,Оглы Мордан Курбан,Ogly Mordan Kurban,general_rule,naming_model:muslim
+P005833,Тымовский,Андрее-Ивановское,Магометанское,muslim,Нематула Тураб,Nematula Turab,general_rule,naming_model:muslim
+P005844,Тымовский,Андрее-Ивановское,Католическое,catholic,Адам Яблонский,Adam Yablonskiy,general_rule,naming_model:catholic
+P005856,Тымовский,Андрее-Ивановское,Лютеранское,lutheran,Франц Бруво,Frants Bruvo,general_rule,naming_model:lutheran
+P005860,Тымовский,Андрее-Ивановское,Иудейское,other_documented,Мойсей Григорьев Лейбович,Moysey Grigoryev Leybovich,general_rule,naming_model:other_documented
+P005878,Тымовский,Андрее-Ивановское,Лютеранское,lutheran,Якуб Кутуар,Yakub Kutuar,general_rule,naming_model:lutheran
+P005879,Тымовский,Андрее-Ивановское,Лютеранское,lutheran,Марья Кутуар,Marya Kutuar,general_rule,naming_model:lutheran
+P005890,Тымовский,Андрее-Ивановское,Лютеранское,lutheran,Ян Юр,Yan Yur,general_rule,naming_model:lutheran
+P005891,Тымовский,Андрее-Ивановское,Лютеранское,lutheran,Каролина Пец,Karolina Pets,general_rule,naming_model:lutheran
+P005893,Тымовский,Андрее-Ивановское,Католическое,catholic,Станислав Свидерский,Stanislav Sviderskiy,general_rule,naming_model:catholic
+P005894,Тымовский,Андрее-Ивановское,Католическое,catholic,Анна Свидерская,Anna Sviderskaya,general_rule,naming_model:catholic
+P005895,Тымовский,Андрее-Ивановское,Католическое,catholic,Марианна Свидерская,Marianna Sviderskaya,general_rule,naming_model:catholic
+P005896,Тымовский,Андрее-Ивановское,Католическое,catholic,Михаил Семенов Томашевич,Mikhail Semenov Tomashevich,general_rule,naming_model:catholic
+P005897,Тымовский,Андрее-Ивановское,Католическое,catholic,Анна Михайлова Томашевич,Anna Mikhaylova Tomashevich,general_rule,naming_model:catholic
+P005898,Тымовский,Андрее-Ивановское,Католическое,catholic,Софья Михайлова Томашевич,Sofya Mikhaylova Tomashevich,general_rule,naming_model:catholic
+P005904,Тымовский,Андрее-Ивановское,,unknown,Тодор Савва,Todor Savva,general_rule,naming_model:unknown
+P005906,Тымовский,Андрее-Ивановское,Магометанское,muslim,Заотин Садыков,Zaotin Sadykov,general_rule,naming_model:muslim
+P005907,Тымовский,Андрее-Ивановское,Магометанское,muslim,Минне Срур Садыкова,Minne Srur Sadykova,general_rule,naming_model:muslim
+P005917,Тымовский,Андрее-Ивановское,Католическое,catholic,Фома Антонов Возницкий,Foma Antonov Voznitskiy,general_rule,naming_model:catholic
+P005918,Тымовский,Андрее-Ивановское,Католическое,catholic,Франциска Залевская,Frantsiska Zalevskaya,general_rule,naming_model:catholic
+P005919,Тымовский,Андрее-Ивановское,Католическое,catholic,Аполинарий Залевский,Apolinariy Zalevskiy,general_rule,naming_model:catholic
+P005926,Тымовский,Андрее-Ивановское,Магометанское,muslim,Хамотча Гарыпов,Khamotcha Garypov,general_rule,naming_model:muslim
+P005927,Тымовский,Андрее-Ивановское,Магометанское,muslim,Хайриниса Гарыпова,Khayrinisa Garypova,general_rule,naming_model:muslim
+P005928,Тымовский,Андрее-Ивановское,Магометанское,muslim,Ахматча Гарыпов,Akhmatcha Garypov,general_rule,naming_model:muslim
+P005929,Тымовский,Андрее-Ивановское,Магометанское,muslim,Фатима Гарыпова,Fatima Garypova,general_rule,naming_model:muslim
+P005932,Тымовский,Андрее-Ивановское,Католическое,catholic,Станислав Наговский,Stanislav Nagovskiy,general_rule,naming_model:catholic
+P005933,Тымовский,Андрее-Ивановское,Католическое,catholic,Викторина Виновская,Viktorina Vinovskaya,general_rule,naming_model:catholic
+P005934,Тымовский,Андрее-Ивановское,Католическое,catholic,Франциска Виновская,Frantsiska Vinovskaya,general_rule,naming_model:catholic
+P005935,Тымовский,Андрее-Ивановское,Католическое,catholic,Франц Виновский,Frants Vinovskiy,general_rule,naming_model:catholic
+P005936,Тымовский,Андрее-Ивановское,Католическое,catholic,Людвиг Наговский,Lyudvig Nagovskiy,general_rule,naming_model:catholic
+P005942,Тымовский,Андрее-Ивановское,Католическое,catholic,Осип Антонов Густав,Osip Antonov Gustav,general_rule,naming_model:catholic
+P005943,Тымовский,Андрее-Ивановское,Католическое,catholic,Магажата Густав,Magazhata Gustav,general_rule,naming_model:catholic
+P005944,Тымовский,Андрее-Ивановское,Католическое,catholic,Александр Викентьев Яхимович,Aleksandr Vikentyev Yakhimovich,general_rule,naming_model:catholic
+P005945,Тымовский,Андрее-Ивановское,Католическое,catholic,Карл Зарембо,Karl Zarembo,general_rule,naming_model:catholic
+P005950,Тымовский,Андрее-Ивановское,Католическое,catholic,Франциска Зарембо,Frantsiska Zarembo,general_rule,naming_model:catholic
+P005952,Тымовский,Андрее-Ивановское,Католическое,catholic,Павел Матвеев Рыбицкий,Pavel Matveyev Rybitskiy,general_rule,naming_model:catholic
+P005965,Тымовский,Андрее-Ивановское,Католическое,catholic,Варфоломей Андреев Жуковский,Varfolomey Andreyev Zhukovskiy,general_rule,naming_model:catholic
+P005967,Тымовский,Андрее-Ивановское,Магометанское,muslim,Мустафа Оглы Хаджи,Mustafa Ogly Khadzhi,general_rule,naming_model:muslim
+P005982,Тымовский,Андрее-Ивановское,Католическое,catholic,Анна Иванова Эльяшевич,Anna Ivanova Elyashevich,general_rule,naming_model:catholic
+P005986,Тымовский,Андрее-Ивановское,Иудейское,other_documented,Мордух Цимбалистов,Mordukh Tsimbalistov,general_rule,naming_model:other_documented
+P005987,Тымовский,Андрее-Ивановское,Лютеранское,lutheran,Якуб Гобельман,Yakub Gobelman,general_rule,naming_model:lutheran
+P005996,Тымовский,Андрее-Ивановское,Католическое,catholic,Станислав Осипов Костржев,Stanislav Osipov Kostrzhev,general_rule,naming_model:catholic
+P005997,Тымовский,Андрее-Ивановское,Католическое,catholic,Екатерина Адамова Песецкая,Yekaterina Adamova Pesetskaya,general_rule,naming_model:catholic
+P005998,Тымовский,Андрее-Ивановское,Католическое,catholic,Юзефа Песецкая,Yuzefa Pesetskaya,general_rule,naming_model:catholic
+P005999,Тымовский,Андрее-Ивановское,Магометанское,muslim,Мухтар Шамшутдинов,Mukhtar Shamshutdinov,general_rule,naming_model:muslim
+P006000,Тымовский,Андрее-Ивановское,Магометанское,muslim,Хуснинир Шамшутдинова,Khusninir Shamshutdinova,general_rule,naming_model:muslim
+P006001,Тымовский,Андрее-Ивановское,Магометанское,muslim,Берметин Шамшутдинов,Bermetin Shamshutdinov,general_rule,naming_model:muslim
+P006002,Тымовский,Андрее-Ивановское,Магометанское,muslim,Бевинар Шамшутдинова,Bevinar Shamshutdinova,general_rule,naming_model:muslim
+P006003,Тымовский,Андрее-Ивановское,Православное,russian_historical,Дмитрий Кириллов Попов 2-й,Dmitriy Kirillov Popov (2),general_rule,four_plus_tokens; hyphenated; numbered_disambiguator
+P006004,Тымовский,Андрее-Ивановское,Магометанское,muslim,Бик Мухамет,Bik Mukhamet,general_rule,naming_model:muslim
+P006005,Тымовский,Андрее-Ивановское,Магометанское,muslim,Кадыча,Kadycha,general_rule,naming_model:muslim; one_token
+P006006,Тымовский,Андрее-Ивановское,Магометанское,muslim,Мине Хон,Mine Khon,general_rule,naming_model:muslim
+P006007,Тымовский,Андрее-Ивановское,Магометанское,muslim,Индер Хон,Inder Khon,general_rule,naming_model:muslim
+P006023,Тымовский,Андрее-Ивановское,Православное,russian_historical,Петр Иванов 2-й,Petr Ivanov (2),general_rule,hyphenated; numbered_disambiguator
+P006032,Тымовский,Андрее-Ивановское,Католическое,catholic,Мартын Ковальский,Martyn Kovalskiy,general_rule,naming_model:catholic
+P006043,Тымовский,Андрее-Ивановское,Магометанское,muslim,Жамалетдин Галимов,Zhamaletdin Galimov,general_rule,naming_model:muslim
+P006044,Тымовский,Андрее-Ивановское,Магометанское,muslim,Шарифа Галимова,Sharifa Galimova,general_rule,naming_model:muslim
+P006045,Тымовский,Андрее-Ивановское,Магометанское,muslim,Курман-Гали Галимов,Kurman-Gali Galimov,general_rule,naming_model:muslim; hyphenated
+P006047,Тымовский,Андрее-Ивановское,,unknown,Ценер Гамчурин,Tsener Gamchurin,general_rule,naming_model:unknown
+P006063,Тымовский,Андрее-Ивановское,Магометанское,muslim,Бетредин Сягитов,Betredin Syagitov,general_rule,naming_model:muslim
+P006064,Тымовский,Андрее-Ивановское,Магометанское,muslim,Ферюза Сягитова,Feryuza Syagitova,general_rule,naming_model:muslim
+P006065,Тымовский,Андрее-Ивановское,Магометанское,muslim,Сагида Сягитова,Sagida Syagitova,general_rule,naming_model:muslim
+P006073,Тымовский,Андрее-Ивановское,Католическое,catholic,Константин Мартынов Ямайковский,Konstantin Martynov Yamaykovskiy,general_rule,naming_model:catholic
+P006077,Тымовский,Андрее-Ивановское,Магометанское,muslim,Мухамет Вали Галеев,Mukhamet Vali Galeyev,general_rule,naming_model:muslim
+P006080,Тымовский,Андрее-Ивановское,Лютеранское,lutheran,Карл Абрамов Корн,Karl Abramov Korn,general_rule,naming_model:lutheran
+P006081,Тымовский,Андрее-Ивановское,Лютеранское,lutheran,Анна Киселева,Anna Kiseleva,general_rule,naming_model:lutheran
+P006084,Тымовский,Андрее-Ивановское,Лютеранское,lutheran,Генрих Грунау,Genrikh Grunau,general_rule,naming_model:lutheran
+P006085,Тымовский,Андрее-Ивановское,Лютеранское,lutheran,Иоган Нейман,Iogan Neyman,general_rule,naming_model:lutheran
+P006087,Тымовский,Андрее-Ивановское,Католическое,catholic,Валерия Францова Славинская,Valeriya Frantsova Slavinskaya,general_rule,naming_model:catholic
+P006090,Тымовский,Андрее-Ивановское,Католическое,catholic,Каземир Гаданюк,Kazemir Gadanyuk,general_rule,naming_model:catholic
+P006092,Тымовский,Андрее-Ивановское,,unknown,Нестер Арсеванидзе,Nester Arsevanidze,general_rule,naming_model:unknown
+P006094,Тымовский,Андрее-Ивановское,Магометанское,muslim,Гильман Гильманов,Gilman Gilmanov,general_rule,naming_model:muslim
+P006095,Тымовский,Андрее-Ивановское,Магометанское,muslim,Зайдула Зайнулин,Zaydula Zaynulin,general_rule,naming_model:muslim
+P006096,Тымовский,Андрее-Ивановское,Магометанское,muslim,Закир Ахметов,Zakir Akhmetov,general_rule,naming_model:muslim
+P006097,Тымовский,Андрее-Ивановское,Магометанское,muslim,Гарифа Ахметова,Garifa Akhmetova,general_rule,naming_model:muslim
+P006098,Тымовский,Андрее-Ивановское,Магометанское,muslim,Биби Галиме Ахметова,Bibi Galime Akhmetova,general_rule,naming_model:muslim
+P006099,Тымовский,Андрее-Ивановское,Магометанское,muslim,Закизян Ахметов,Zakizyan Akhmetov,general_rule,naming_model:muslim
+P006100,Тымовский,Андрее-Ивановское,Магометанское,muslim,Ир Мухамет Назмудин,Ir Mukhamet Nazmudin,general_rule,naming_model:muslim
+P006101,Тымовский,Андрее-Ивановское,Магометанское,muslim,Бахриамала,Bakhriamala,general_rule,naming_model:muslim; one_token
+P006102,Тымовский,Андрее-Ивановское,Магометанское,muslim,Минне Хан Назмудин,Minne Khan Nazmudin,general_rule,naming_model:muslim
+P006103,Тымовский,Андрее-Ивановское,Магометанское,muslim,Шахе Тин Назмудин,Shakhe Tin Nazmudin,general_rule,naming_model:muslim
+P006104,Тымовский,Андрее-Ивановское,Магометанское,muslim,Магомет Тин Назмудин,Magomet Tin Nazmudin,general_rule,naming_model:muslim
+P006105,Тымовский,Андрее-Ивановское,Магометанское,muslim,Якуб Юсупов,Yakub Yusupov,general_rule,naming_model:muslim
+P006106,Тымовский,Андрее-Ивановское,Магометанское,muslim,Серви Земал Юсупова,Servi Zemal Yusupova,general_rule,naming_model:muslim
+P006107,Тымовский,Андрее-Ивановское,Магометанское,muslim,Бибифа Изе Юсупова,Bibifa Ize Yusupova,general_rule,naming_model:muslim
+P006108,Тымовский,Андрее-Ивановское,Магометанское,muslim,Эюб Юсупов,Eyub Yusupov,general_rule,naming_model:muslim
+P006109,Тымовский,Андрее-Ивановское,Магометанское,muslim,Беузе Юсупова,Beuze Yusupova,general_rule,naming_model:muslim
+P006110,Тымовский,Андрее-Ивановское,Православное,russian_historical,Федот Васильев Тряхнирядно-Назаренко,Fedot Vasilyev Tryakhniryadno-Nazarenko,general_rule,hyphenated
+P006123,Тымовский,Андрее-Ивановское,Католическое,catholic,Юрий Францов Янович,Yuriy Frantsov Yanovich,general_rule,naming_model:catholic
+P006124,Тымовский,Андрее-Ивановское,Католическое,catholic,Екатерина Иванова Янович,Yekaterina Ivanova Yanovich,general_rule,naming_model:catholic
+P006125,Тымовский,Андрее-Ивановское,Католическое,catholic,Наталья Юрьева Янович,Natalya Yuryeva Yanovich,general_rule,naming_model:catholic
+P006126,Тымовский,Андрее-Ивановское,Католическое,catholic,Осип Юрьев Янович,Osip Yuryev Yanovich,general_rule,naming_model:catholic
+P006127,Корсаковский,Маука,Католическое,catholic,Иван Вардзинский,Ivan Vardzinskiy,general_rule,naming_model:catholic
+P006131,Корсаковский,Маука,Католическое,catholic,Иван Попрацкий,Ivan Popratskiy,general_rule,naming_model:catholic
+P006139,Корсаковский,Маука,Католическое,catholic,Юзефа Рачицкая,Yuzefa Rachitskaya,general_rule,naming_model:catholic
+P006142,Корсаковский,Маука,Католическое,catholic,Калинин Рженишевский,Kalinin Rzhenishevskiy,general_rule,naming_model:catholic
+P006146,Корсаковский,Маука,Католическое,catholic,Ефросинья Богословская,Yefrosinya Bogoslovskaya,general_rule,naming_model:catholic
+P006150,Корсаковский,Маука,Католическое,catholic,Хрисанф Бирич,Khrisanf Birich,general_rule,naming_model:catholic
+P006152,Корсаковский,Маука,Православное,russian_historical,Андрей Иванов 1-й,Andrey Ivanov (1),general_rule,hyphenated; numbered_disambiguator
+P006155,Корсаковский,Маука,,unknown,Воскобойников,Voskoboynikov,general_rule,naming_model:unknown; one_token
+P006156,Корсаковский,Маука,,unknown,Микулин,Mikulin,general_rule,naming_model:unknown; one_token
+P006157,Корсаковский,Маука,,unknown,Рубцов,Rubtsov,general_rule,naming_model:unknown; one_token
+P006158,Корсаковский,Маука,,unknown,Иван Кузнецов,Ivan Kuznetsov,general_rule,naming_model:unknown
+P006159,Корсаковский,Маука,,unknown,Андрей Киселев,Andrey Kiselev,general_rule,naming_model:unknown
+P006164,Корсаковский,Маука,Лютеранское,lutheran,Карл Кейве,Karl Keyve,general_rule,naming_model:lutheran
+P006166,Корсаковский,Пост Корсаковский,Лютеранское,lutheran,Амалия Иванова Фрейсдорф,Amaliya Ivanova Freysdorf,general_rule,naming_model:lutheran
+P006169,Корсаковский,Пост Корсаковский,Католическое,catholic,Игнатий Вильгул,Ignatiy Vilgul,general_rule,naming_model:catholic
+P006170,Корсаковский,Пост Корсаковский,Лютеранское,lutheran,Каролина Ульк,Karolina Ulk,general_rule,naming_model:lutheran
+P006187,Корсаковский,Пост Корсаковский,Католическое,catholic,Рафаил Королевский,Rafail Korolevskiy,general_rule,naming_model:catholic
+P006190,Корсаковский,Пост Корсаковский,Католическое,catholic,Викентий Лисавецкий,Vikentiy Lisavetskiy,general_rule,naming_model:catholic
+P006192,Корсаковский,Пост Корсаковский,Католическое,catholic,Бронислав Лисавецкий,Bronislav Lisavetskiy,general_rule,naming_model:catholic
+P006193,Корсаковский,Пост Корсаковский,Католическое,catholic,Мечислав Лечицкий,Mechislav Lechitskiy,general_rule,naming_model:catholic
+P006194,Корсаковский,Пост Корсаковский,Армяно-григорианское,other_documented,Маргарита Арютинова,Margarita Aryutinova,general_rule,naming_model:other_documented
+P006207,Корсаковский,Пост Корсаковский,Католическое,catholic,Марья Пивко,Marya Pivko,general_rule,naming_model:catholic
+P006209,Корсаковский,Пост Корсаковский,Лютеранское,lutheran,Устинья Михайлова Беккер,Ustinya Mikhaylova Bekker,general_rule,naming_model:lutheran
+P006219,Корсаковский,Пост Корсаковский,Католическое,catholic,Николай Матвеев Шикучинский,Nikolay Matveyev Shikuchinskiy,general_rule,naming_model:catholic
+P006220,Корсаковский,Пост Корсаковский,Католическое,catholic,Юзефа Пржиморская,Yuzefa Przhimorskaya,general_rule,naming_model:catholic
+P006221,Корсаковский,Пост Корсаковский,Католическое,catholic,Зиновия Пржиморская,Zinoviya Przhimorskaya,general_rule,naming_model:catholic
+P006229,Корсаковский,Пост Корсаковский,Православное,russian_historical,Фоменко,Fomenko,general_rule,one_token
+P006239,Корсаковский,Пост Корсаковский,Лютеранское,lutheran,Генрих Тейманг,Genrikh Teymang,general_rule,naming_model:lutheran
+P006240,Корсаковский,Пост Корсаковский,Лютеранское,lutheran,Эно Тейманг,Eno Teymang,general_rule,naming_model:lutheran
+P006250,Корсаковский,Пост Корсаковский,Католическое,catholic,Иван Шавлинский,Ivan Shavlinskiy,general_rule,naming_model:catholic
+P006256,Корсаковский,Пост Корсаковский,Католическое,catholic,Эдуард Заяц,Eduard Zayats,general_rule,naming_model:catholic
+P006285,Корсаковский,Пост Корсаковский,Католическое,catholic,Мориц Гейман,Morits Geyman,general_rule,naming_model:catholic
+P006288,Корсаковский,Пост Корсаковский,Католическое,catholic,Генрих Баранович,Genrikh Baranovich,general_rule,naming_model:catholic
+P006308,Корсаковский,Пост Корсаковский,,unknown,Басовский,Basovskiy,general_rule,naming_model:unknown; one_token
+P006309,Корсаковский,Пост Корсаковский,,unknown,Мочихов,Mochikhov,general_rule,naming_model:unknown; one_token
+P006316,Корсаковский,Поро-ан-Томари,Лютеранское,lutheran,Иван Федоров Брандт,Ivan Fedorov Brandt,general_rule,naming_model:lutheran
+P006317,Корсаковский,Поро-ан-Томари,Лютеранское,lutheran,Екатерина Аузинг,Yekaterina Auzing,general_rule,naming_model:lutheran
+P006318,Корсаковский,Поро-ан-Томари,Лютеранское,lutheran,Август Аузинг,Avgust Auzing,general_rule,naming_model:lutheran
+P006324,Корсаковский,Поро-ан-Томари,Лютеранское,lutheran,Карл Ворблани,Karl Vorblani,general_rule,naming_model:lutheran
+P006325,Корсаковский,Поро-ан-Томари,Католическое,catholic,Марья Ягельская,Marya Yagelskaya,general_rule,naming_model:catholic
+P006326,Корсаковский,Поро-ан-Томари,Католическое,catholic,Настасья Ягельская,Nastasya Yagelskaya,general_rule,naming_model:catholic
+P006327,Корсаковский,Поро-ан-Томари,Католическое,catholic,Онуфрий Висайтис,Onufriy Visaytis,general_rule,naming_model:catholic
+P006340,Корсаковский,Поро-ан-Томари,Католическое,catholic,Яков Киприанов Кржеминский,Yakov Kiprianov Krzheminskiy,general_rule,naming_model:catholic
+P006346,Корсаковский,Поро-ан-Томари,Лютеранское,lutheran,Фердинанд Прейс,Ferdinand Preys,general_rule,naming_model:lutheran
+P006347,Корсаковский,Поро-ан-Томари,Католическое,catholic,Екатерина Громска,Yekaterina Gromska,general_rule,naming_model:catholic
+P006348,Корсаковский,Поро-ан-Томари,Католическое,catholic,Ян Рыцыборский,Yan Rytsyborskiy,general_rule,naming_model:catholic
+P006350,Корсаковский,Поро-ан-Томари,Католическое,catholic,Матвей Сыцинский,Matvey Sytsinskiy,general_rule,naming_model:catholic
+P006352,Корсаковский,Поро-ан-Томари,,unknown,Андрей Федоров Савельев,Andrey Fedorov Savelyev,general_rule,naming_model:unknown
+P006368,Корсаковский,Поро-ан-Томари,Лютеранское,lutheran,Франц Шатрон,Frants Shatron,general_rule,naming_model:lutheran
+P006369,Корсаковский,Поро-ан-Томари,Лютеранское,lutheran,Ян Урд,Yan Urd,general_rule,naming_model:lutheran
+P006373,Корсаковский,Поро-ан-Томари,Лютеранское,lutheran,Михаил Михайлов Вудель,Mikhail Mikhaylov Vudel,general_rule,naming_model:lutheran
+P006386,Корсаковский,Вторая Падь,Лютеранское,lutheran,Юрий Гильдеброндт,Yuriy Gildebrondt,general_rule,naming_model:lutheran
+P006389,Корсаковский,Вторая Падь,Лютеранское,lutheran,Вильгельмина Маттетедор,Vilgelmina Mattetedor,general_rule,naming_model:lutheran
+P006414,Корсаковский,Третья Падь,Лютеранское,lutheran,Адам Румге,Adam Rumge,general_rule,naming_model:lutheran
+P006415,Корсаковский,Третья Падь,Лютеранское,lutheran,Андрей Андреев Рудзит,Andrey Andreyev Rudzit,general_rule,naming_model:lutheran
+P006416,Корсаковский,Третья Падь,Католическое,catholic,Марциана Ячкойсова,Martsiana Yachkoysova,general_rule,naming_model:catholic
+P006428,Корсаковский,Соловьевка,Католическое,catholic,Игнатий Армолис,Ignatiy Armolis,general_rule,naming_model:catholic
+P006441,Корсаковский,Соловьевка,Католическое,catholic,Бернард Зейферт,Bernard Zeyfert,general_rule,naming_model:catholic
+P006445,Корсаковский,Соловьевка,Католическое,catholic,Фома Зембецкий,Foma Zembetskiy,general_rule,naming_model:catholic
+P006459,Корсаковский,Соловьевка,Католическое,catholic,Антон Моналис,Anton Monalis,general_rule,naming_model:catholic
+P006460,Корсаковский,Соловьевка,Лютеранское,lutheran,Придо Ниго,Prido Nigo,general_rule,naming_model:lutheran
+P006476,Корсаковский,Соловьевка,Православное,russian_historical,Марья Алексеева Попова 2-я,Marya Alekseyeva Popova (2),general_rule,four_plus_tokens; hyphenated; numbered_disambiguator
+P006485,Корсаковский,Соловьевка,Католическое,catholic,Иосиф Юхнюк,Iosif Yukhnyuk,general_rule,naming_model:catholic
+P006524,Корсаковский,Лютога,Католическое,catholic,Казимир Каупшон,Kazimir Kaupshon,general_rule,naming_model:catholic
+P006530,Корсаковский,Лютога,Православное,russian_historical,Софья Бакче-Казар,Sofya Bakche-Kazar,general_rule,hyphenated
+P006531,Корсаковский,Лютога,Православное,russian_historical,Орехов,Orekhov,general_rule,one_token
+P006549,Корсаковский,Голый Мыс,Католическое,catholic,Клеафас Баранцевич,Kleafas Barantsevich,general_rule,naming_model:catholic
+P006556,Корсаковский,Голый Мыс,Лютеранское,lutheran,Андрей Орбе,Andrey Orbe,general_rule,naming_model:lutheran
+P006558,Корсаковский,Голый Мыс,Лютеранское,lutheran,Георг Петерсон,Georg Peterson,general_rule,naming_model:lutheran
+P006573,Корсаковский,Мицулька,Католическое,catholic,Анна Бокас,Anna Bokas,general_rule,naming_model:catholic
+P006574,Корсаковский,Мицулька,Католическое,catholic,Иван Бароновский,Ivan Baronovskiy,general_rule,naming_model:catholic
+P006603,Корсаковский,Лиственичное,Лютеранское,lutheran,Яков Иванов Лайм,Yakov Ivanov Laym,general_rule,naming_model:lutheran
+P006616,Корсаковский,Хомутовка,Католическое,catholic,Александр Матвеев Баруцкий,Aleksandr Matveyev Barutskiy,general_rule,naming_model:catholic
+P006625,Корсаковский,Хомутовка,Католическое,catholic,Эдуард Кумыкевич,Eduard Kumykevich,general_rule,naming_model:catholic
+P006636,Корсаковский,Хомутовка,Католическое,catholic,Осип Мартынов Хенчке,Osip Martynov Khenchke,general_rule,naming_model:catholic
+P006637,Корсаковский,Хомутовка,Католическое,catholic,Агнеса Уйма,Agnesa Uyma,general_rule,naming_model:catholic
+P006643,Корсаковский,Хомутовка,Католическое,catholic,Иван Павлов Броновский,Ivan Pavlov Bronovskiy,general_rule,naming_model:catholic
+P006703,Корсаковский,Владимировка,Католическое,catholic,Селивестр Антонов Варпучинский,Selivestr Antonov Varpuchinskiy,general_rule,naming_model:catholic
+P006711,Корсаковский,Владимировка,Магометанское,muslim,Садык Гафузов,Sadyk Gafuzov,general_rule,naming_model:muslim
+P006722,Корсаковский,Владимировка,Магометанское,muslim,Займетдин Хасметдинов,Zaymetdin Khasmetdinov,general_rule,naming_model:muslim
+P006733,Корсаковский,Владимировка,Католическое,catholic,Антон Кашевский,Anton Kashevskiy,general_rule,naming_model:catholic
+P006742,Корсаковский,Владимировка,Православное,russian_historical,Марья Дмитриева Попова 2-я,Marya Dmitriyeva Popova (2),general_rule,four_plus_tokens; hyphenated; numbered_disambiguator
+P006759,Корсаковский,Владимировка,Католическое,catholic,Маргарита Ныжак,Margarita Nyzhak,general_rule,naming_model:catholic
+P006767,Корсаковский,Владимировка,Католическое,catholic,Эдуард Иванов Хаецкий,Eduard Ivanov Khayetskiy,general_rule,naming_model:catholic
+P006773,Корсаковский,Владимировка,Лютеранское,lutheran,Марья Николаева Берг,Marya Nikolayeva Berg,general_rule,naming_model:lutheran
+P006793,Корсаковский,Луговое,Лютеранское,lutheran,Юрре Лишинский,Yurre Lishinskiy,general_rule,naming_model:lutheran
+P006837,Корсаковский,Луговое,Католическое,catholic,Станислав Чугун,Stanislav Chugun,general_rule,naming_model:catholic
+P006856,Корсаковский,Поповские Юрты,Католическое,catholic,Марианна Войцех,Marianna Voytsekh,general_rule,naming_model:catholic
+P006859,Корсаковский,Поповские Юрты,Католическое,catholic,Мартын Николаев Боровец,Martyn Nikolayev Borovets,general_rule,naming_model:catholic
+P006861,Корсаковский,Поповские Юрты,Католическое,catholic,Матвей Францев Бржезовский,Matvey Frantsev Brzhezovskiy,general_rule,naming_model:catholic
+P006862,Корсаковский,Поповские Юрты,Католическое,catholic,Игнатий Осипов Бачинский,Ignatiy Osipov Bachinskiy,general_rule,naming_model:catholic
+P006864,Корсаковский,Поповские Юрты,Католическое,catholic,Алексей Антонов Баранек,Aleksey Antonov Baranek,general_rule,naming_model:catholic
+P006866,Корсаковский,Поповские Юрты,Католическое,catholic,Войцех Выглиондело,Voytsekh Vygliondelo,general_rule,naming_model:catholic
+P006867,Корсаковский,Поповские Юрты,Католическое,catholic,Мария Фимняк,Mariya Fimnyak,general_rule,naming_model:catholic
+P006869,Корсаковский,Поповские Юрты,Католическое,catholic,Франц Галайтес,Frants Galaytes,general_rule,naming_model:catholic
+P006873,Корсаковский,Поповские Юрты,Католическое,catholic,Фома Францов Домбровский,Foma Frantsov Dombrovskiy,general_rule,naming_model:catholic
+P006875,Корсаковский,Поповские Юрты,Католическое,catholic,Войцех Юнчик,Voytsekh Yunchik,general_rule,naming_model:catholic
+P006876,Корсаковский,Поповские Юрты,Католическое,catholic,Осип Ипполитов Ивович,Osip Ippolitov Ivovich,general_rule,naming_model:catholic
+P006879,Корсаковский,Поповские Юрты,Католическое,catholic,Осип Михайлов Кусь,Osip Mikhaylov Kus,general_rule,naming_model:catholic
+P006884,Корсаковский,Поповские Юрты,Католическое,catholic,Франц Станиславов Кусковский,Frants Stanislavov Kuskovskiy,general_rule,naming_model:catholic
+P006887,Корсаковский,Поповские Юрты,Католическое,catholic,Доминик Качулис,Dominik Kachulis,general_rule,naming_model:catholic
+P006889,Корсаковский,Поповские Юрты,Католическое,catholic,Осип Осипов Любовицкий,Osip Osipov Lyubovitskiy,general_rule,naming_model:catholic
+P006890,Корсаковский,Поповские Юрты,Католическое,catholic,Екатерина Низяк,Yekaterina Nizyak,general_rule,naming_model:catholic
+P006891,Корсаковский,Поповские Юрты,Католическое,catholic,Францишка Низяк,Frantsishka Nizyak,general_rule,naming_model:catholic
+P006894,Корсаковский,Поповские Юрты,Католическое,catholic,Михаил Осипов Нияк,Mikhail Osipov Niyak,general_rule,naming_model:catholic
+P006895,Корсаковский,Поповские Юрты,Католическое,catholic,Иосиф Михайлов Нияк,Iosif Mikhaylov Niyak,general_rule,naming_model:catholic
+P006896,Корсаковский,Поповские Юрты,Католическое,catholic,Екатерина Нияк,Yekaterina Niyak,general_rule,naming_model:catholic
+P006897,Корсаковский,Поповские Юрты,Католическое,catholic,Анель Малицкая,Anel Malitskaya,general_rule,naming_model:catholic
+P006898,Корсаковский,Поповские Юрты,Католическое,catholic,Станислав Навацкий,Stanislav Navatskiy,general_rule,naming_model:catholic
+P006899,Корсаковский,Поповские Юрты,Магометанское,muslim,Осмон Оглы Мирза,Osmon Ogly Mirza,general_rule,naming_model:muslim
+P006900,Корсаковский,Поповские Юрты,Магометанское,muslim,Абыкизы Нась-Ханума,Abykizy Nas-Khanuma,general_rule,naming_model:muslim; hyphenated
+P006901,Корсаковский,Поповские Юрты,Магометанское,muslim,Сона Абыкизы,Sona Abykizy,general_rule,naming_model:muslim
+P006903,Корсаковский,Поповские Юрты,Магометанское,muslim,Абу Талиб Оглы Тюльнар,Abu Talib Ogly Tyulnar,general_rule,naming_model:muslim; four_plus_tokens
+P006906,Корсаковский,Поповские Юрты,Католическое,catholic,Валентин Мартынов Рек,Valentin Martynov Rek,general_rule,naming_model:catholic
+P006908,Корсаковский,Поповские Юрты,Католическое,catholic,Степан Сильманович,Stepan Silmanovich,general_rule,naming_model:catholic
+P006913,Корсаковский,Поповские Юрты,Католическое,catholic,Иван Домиников Соболевский,Ivan Dominikov Sobolevskiy,general_rule,naming_model:catholic
+P006914,Корсаковский,Поповские Юрты,Католическое,catholic,Каземир Антонов Стонкус,Kazemir Antonov Stonkus,general_rule,naming_model:catholic
+P006918,Корсаковский,Поповские Юрты,Католическое,catholic,Франц Тверианас,Frants Tverianas,general_rule,naming_model:catholic
+P006920,Корсаковский,Поповские Юрты,Лютеранское,lutheran,Яков Фебриков,Yakov Febrikov,general_rule,naming_model:lutheran
+P006921,Корсаковский,Поповские Юрты,Католическое,catholic,Франц Антонов Цеханский,Frants Antonov Tsekhanskiy,general_rule,naming_model:catholic
+P006922,Корсаковский,Поповские Юрты,Католическое,catholic,Екатерина Малицкая,Yekaterina Malitskaya,general_rule,naming_model:catholic
+P006923,Корсаковский,Поповские Юрты,Католическое,catholic,Марциана Цеханская,Martsiana Tsekhanskaya,general_rule,naming_model:catholic
+P006924,Корсаковский,Поповские Юрты,Католическое,catholic,Антон Андреев Шамонский,Anton Andreyev Shamonskiy,general_rule,naming_model:catholic
+P006925,Корсаковский,Поповские Юрты,Католическое,catholic,Юлия Кашет,Yuliya Kashet,general_rule,naming_model:catholic
+P006926,Корсаковский,Поповские Юрты,Католическое,catholic,Казимир Кашет,Kazimir Kashet,general_rule,naming_model:catholic
+P006927,Корсаковский,Поповские Юрты,Католическое,catholic,Рудольф Якимович,Rudolf Yakimovich,general_rule,naming_model:catholic
+P006929,Корсаковский,Поповские Юрты,Католическое,catholic,Викентий Францов Журин,Vikentiy Frantsov Zhurin,general_rule,naming_model:catholic
+P006945,Корсаковский,Поповские Юрты,Магометанское,muslim,Мугамет Мактусов,Mugamet Maktusov,general_rule,naming_model:muslim
+P006948,Корсаковский,Поповские Юрты,Католическое,catholic,Войцех Литвин,Voytsekh Litvin,general_rule,naming_model:catholic
+P006956,Корсаковский,Поповские Юрты,Католическое,catholic,Казимир Крупенко,Kazimir Krupenko,general_rule,naming_model:catholic
+P006963,Корсаковский,Березники,Лютеранское,lutheran,Симон Бракше,Simon Brakshe,general_rule,naming_model:lutheran
+P006996,Корсаковский,Березники,,unknown,Кирилл Михайлов Михайлов,Kirill Mikhaylov Mikhaylov,general_rule,naming_model:unknown
+P007054,Корсаковский,Березники,Лютеранское,lutheran,Георгий Францов Бухмейер,Georgiy Frantsov Bukhmeyyer,general_rule,naming_model:lutheran
+P007103,Корсаковский,Березники,Лютеранское,lutheran,Даве Розенберг,Dave Rozenberg,general_rule,naming_model:lutheran
+P007122,Корсаковский,Кресты,Католическое,catholic,Франц Адамов Александрович,Frants Adamov Aleksandrovich,general_rule,naming_model:catholic
+P007127,Корсаковский,Кресты,Лютеранское,lutheran,Трина Ризенберг,Trina Rizenberg,general_rule,naming_model:lutheran
+P007129,Корсаковский,Кресты,Католическое,catholic,Иван Осипов Будгин,Ivan Osipov Budgin,general_rule,naming_model:catholic
+P007132,Корсаковский,Кресты,Лютеранское,lutheran,Мартын Березин,Martyn Berezin,general_rule,naming_model:lutheran
+P007133,Корсаковский,Кресты,Лютеранское,lutheran,Либа Кацен,Liba Katsen,general_rule,naming_model:lutheran
+P007156,Корсаковский,Кресты,Православное,russian_historical,Андрей Иванов Иванов 2-й,Andrey Ivanov Ivanov (2),general_rule,four_plus_tokens; hyphenated; numbered_disambiguator
+P007157,Корсаковский,Кресты,Католическое,catholic,Францишка Вржесинская,Frantsishka Vrzhesinskaya,general_rule,naming_model:catholic
+P007164,Корсаковский,Кресты,Католическое,catholic,Антон Каулис,Anton Kaulis,general_rule,naming_model:catholic
+P007183,Корсаковский,Кресты,Лютеранское,lutheran,Яков Михайлов Озоль,Yakov Mikhaylov Ozol,general_rule,naming_model:lutheran
+P007195,Корсаковский,Кресты,Католическое,catholic,Антон Феликсов Транук,Anton Feliksov Tranuk,general_rule,naming_model:catholic
+P007198,Корсаковский,Кресты,Католическое,catholic,Адам Францов Францевич,Adam Frantsov Frantsevich,general_rule,naming_model:catholic
+P007204,Корсаковский,Кресты,Православное,russian_historical,Некрещеная,Nekreshchenaya,general_rule,one_token
+P007238,Корсаковский,Большое Такоэ,Католическое,catholic,Марья Павлова Ягелло,Marya Pavlova Yagello,general_rule,naming_model:catholic
+P007240,Корсаковский,Большое Такоэ,Католическое,catholic,Антон Качинский,Anton Kachinskiy,general_rule,naming_model:catholic
+P007249,Корсаковский,Большое Такоэ,Католическое,catholic,Франц Нык,Frants Nyk,general_rule,naming_model:catholic
+P007258,Корсаковский,Большое Такоэ,Католическое,catholic,Михаил Лаврентьев Радомский,Mikhail Lavrentyev Radomskiy,general_rule,naming_model:catholic
+P007282,Корсаковский,Малое Такоэ,Католическое,catholic,Войцех Бучек,Voytsekh Buchek,general_rule,naming_model:catholic
+P007283,Корсаковский,Малое Такоэ,Католическое,catholic,Осип Матвеев Городинский,Osip Matveyev Gorodinskiy,general_rule,naming_model:catholic
+P007285,Корсаковский,Малое Такоэ,Католическое,catholic,Адольф Гузейко,Adolf Guzeyko,general_rule,naming_model:catholic
+P007293,Корсаковский,Малое Такоэ,Православное,russian_historical,Михаил Иванов Иванов 3-й,Mikhail Ivanov Ivanov (3),general_rule,four_plus_tokens; hyphenated; numbered_disambiguator
+P007294,Корсаковский,Малое Такоэ,Католическое,catholic,Ядвига Микулина,Yadviga Mikulina,general_rule,naming_model:catholic
+P007305,Корсаковский,Малое Такоэ,Католическое,catholic,Софья Луковская,Sofya Lukovskaya,general_rule,naming_model:catholic
+P007306,Корсаковский,Малое Такоэ,Католическое,catholic,Войцех Науроли,Voytsekh Nauroli,general_rule,naming_model:catholic
+P007317,Корсаковский,Малое Такоэ,Лютеранское,lutheran,Аддер Рейн,Adder Reyn,general_rule,naming_model:lutheran
+P007351,Корсаковский,Сиянцы,Католическое,catholic,Габриэль Коттелас,Gabriel Kottelas,general_rule,naming_model:catholic
+P007352,Корсаковский,Сиянцы,Католическое,catholic,Анна Иванова Савицкая,Anna Ivanova Savitskaya,general_rule,naming_model:catholic
+P007356,Корсаковский,Сиянцы,Лютеранское,lutheran,Юрий Кубаш,Yuriy Kubash,general_rule,naming_model:lutheran
+P007357,Корсаковский,Сиянцы,Лютеранское,lutheran,Гретта Дравинская,Gretta Dravinskaya,general_rule,naming_model:lutheran
+P007358,Корсаковский,Сиянцы,Лютеранское,lutheran,Эмилия Дравинская,Emiliya Dravinskaya,general_rule,naming_model:lutheran
+P007365,Корсаковский,Сиянцы,Лютеранское,lutheran,Тенис Кушкин,Tenis Kushkin,general_rule,naming_model:lutheran
+P007402,Корсаковский,Дубки,Лютеранское,lutheran,Яков Беккер,Yakov Bekker,general_rule,naming_model:lutheran
+P007403,Корсаковский,Дубки,Лютеранское,lutheran,Каролина Гельвиг,Karolina Gelvig,general_rule,naming_model:lutheran
+P007404,Корсаковский,Дубки,Лютеранское,lutheran,Наталья Гельвиг,Natalya Gelvig,general_rule,naming_model:lutheran
+P007409,Корсаковский,Дубки,Лютеранское,lutheran,Криш Винсберг,Krish Vinsberg,general_rule,naming_model:lutheran
+P007412,Корсаковский,Дубки,Католическое,catholic,Станислав Домбровский,Stanislav Dombrovskiy,general_rule,naming_model:catholic
+P007413,Корсаковский,Дубки,Православное,russian_historical,Василий Иванов Иванов 1-й,Vasiliy Ivanov Ivanov (1),general_rule,four_plus_tokens; hyphenated; numbered_disambiguator
+P007420,Корсаковский,Дубки,Католическое,catholic,Владислав Маковский,Vladislav Makovskiy,general_rule,naming_model:catholic
+P007427,Корсаковский,Дубки,Лютеранское,lutheran,Петр Педдер,Petr Pedder,general_rule,naming_model:lutheran
+P007433,Корсаковский,Дубки,Лютеранское,lutheran,Симон Саулат,Simon Saulat,general_rule,naming_model:lutheran
+P007434,Корсаковский,Дубки,Лютеранское,lutheran,Ловиза Саулат,Loviza Saulat,general_rule,naming_model:lutheran

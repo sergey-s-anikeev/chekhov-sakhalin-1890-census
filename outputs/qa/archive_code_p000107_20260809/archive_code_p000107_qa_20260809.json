@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "date": "2026-08-09",
+  "source": "data/processed/clean_sakhalin_1890_ru_v5_20260731.csv",
+  "staged_output": "data/staging/archive_code_p000107_20260809/clean_sakhalin_1890_ru_v5_20260731_archive_code_staged.csv",
+  "records": 7446,
+  "columns": 50,
+  "changed_records": 1,
+  "changed_cells": 1,
+  "person_id": "P000107",
+  "field": "notes_raw",
+  "old_value": "",
+  "new_value": "ДМЧ (Ялта). КП № 1716.",
+  "row_order_preserved": true,
+  "schema_preserved": true,
+  "canonical_modified": false,
+  "source_sha256": "d8c7d414f7cb4ae7252ec0acbf100443f43ca529896a25176f9cbf8fbb3141cf",
+  "staged_sha256": "9f151804868afdeca05e0519b46e69e55428c844ea750997c38e727a31f0ced8"
+}

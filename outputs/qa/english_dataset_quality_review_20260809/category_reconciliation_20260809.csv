@@ -1,0 +1,15 @@
+english_field,source_distinct,lookup_rows,output_distinct,source_records,output_records,unmapped,status
+district,3,3,3,7446,7446,0,PASS
+settlement,51,51,51,7446,7446,0,PASS
+household_type,11,11,11,7422,7422,0,PASS
+legal_status,61,61,40,7422,7422,0,PASS
+sex,2,2,2,7446,7446,0,PASS
+family_status,37,37,30,7324,7324,0,PASS
+religion,9,9,9,7196,7196,0,PASS
+origin_place,100,100,98,6608,6608,0,PASS
+occupation,135,135,126,1474,1474,0,PASS
+literacy,3,3,3,5418,5418,0,PASS
+marital_status,7,7,7,5341,5341,0,PASS
+living_alone_status,1,1,1,442,442,0,PASS
+allowance_status,2,2,2,6878,6878,0,PASS
+illness,25,25,25,53,53,0,PASS

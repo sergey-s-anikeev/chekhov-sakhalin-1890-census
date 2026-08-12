@@ -1,0 +1,28 @@
+{
+  "source_records": 7446,
+  "candidate_records": 7446,
+  "blank_candidates": 0,
+  "cyrillic_remaining": 0,
+  "distinct_canonical_names": 7365,
+  "distinct_candidate_names": 7365,
+  "priority_review_records": 44,
+  "extended_inventory_records": 1295,
+  "collision_groups": 0,
+  "collision_records": 0,
+  "owner_overrides_applied": 3,
+  "reason_counts": {
+    "descriptive_non_name": 1,
+    "four_plus_tokens": 39,
+    "hard_sign": 1,
+    "hyphenated": 65,
+    "masked_characters": 1,
+    "mixed_latin_cyrillic": 9,
+    "naming_model:catholic": 490,
+    "naming_model:lutheran": 183,
+    "naming_model:muslim": 197,
+    "naming_model:other_documented": 109,
+    "naming_model:unknown": 250,
+    "numbered_disambiguator": 32,
+    "one_token": 54
+  }
+}

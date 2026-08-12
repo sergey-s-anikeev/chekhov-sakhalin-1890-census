@@ -265,3 +265,11 @@ Always perform:
 Never translate before QA.
 
 This preserves historical fidelity, simplifies quality control, and produces a professional bilingual dataset suitable for both academic work and an international data analytics portfolio.
+
+---
+
+# Current Implementation Decision
+
+On 2026-08-01, the project owner selected a **compact English-only analytical dataset** as the preferred downstream format for MySQL and Tableau. The Russian canonical `v5_20260731` dataset remains authoritative and unchanged.
+
+The project owner approved a 23-field compact schema on 2026-08-02. English dataset generation remains paused while English value, NULL, translation, and transliteration rules are completed. Missing values will be represented as empty CSV fields and converted to true SQL `NULL` during MySQL loading. `age = 0` remains a valid numeric value. `allowance_status` remains a nullable Boolean represented as `TRUE`, `FALSE`, or blank in CSV. Translation must use reviewed lookup tables, and personal names must be transliterated consistently rather than translated.

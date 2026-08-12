@@ -1,0 +1,102 @@
+{
+  "status": "PASS",
+  "date": "2026-08-09",
+  "mysql_runtime_available": true,
+  "mysql_service": "MySQL80",
+  "mysql_service_status": "Running",
+  "mysql_client": "C:/Program Files/MySQL/MySQL Server 8.0/bin/mysql.exe",
+  "actual_server_load_performed": true,
+  "server_test_status": "PASS",
+  "server_test_evidence": "User-provided MySQL Workbench screenshot: 7446 rows affected; Records 7446; Deleted 0; Skipped 0; Warnings 0; validation controls PASS",
+  "expected_columns": [
+    "person_id",
+    "source_position_id",
+    "district",
+    "settlement",
+    "person_seq",
+    "household_id",
+    "household_type",
+    "legal_status",
+    "full_name",
+    "sex",
+    "family_status",
+    "age",
+    "age_months",
+    "religion",
+    "origin_place",
+    "arrival_year",
+    "occupation",
+    "literacy",
+    "marital_status",
+    "living_alone_status",
+    "allowance_status",
+    "illness",
+    "archive_code"
+  ],
+  "schema_columns": [
+    "person_id",
+    "source_position_id",
+    "district",
+    "settlement",
+    "person_seq",
+    "household_id",
+    "household_type",
+    "legal_status",
+    "full_name",
+    "sex",
+    "family_status",
+    "age",
+    "age_months",
+    "religion",
+    "origin_place",
+    "arrival_year",
+    "occupation",
+    "literacy",
+    "marital_status",
+    "living_alone_status",
+    "allowance_status",
+    "illness",
+    "archive_code"
+  ],
+  "checks": {
+    "schema_column_order": "PASS",
+    "utf8mb4": "PASS",
+    "primary_key": "PASS",
+    "source_position_unique": "PASS",
+    "load_local_infile": "PASS",
+    "csv_header_ignored": "PASS",
+    "nullable_blank_conversion": "PASS",
+    "boolean_conversion": "PASS",
+    "record_validation": "PASS",
+    "cyrillic_validation": "PASS",
+    "analysis_queries": "PASS",
+    "import_documented": "PASS"
+  },
+  "hashes": [
+    {
+      "file": "sql/01_create_english_dataset.sql",
+      "bytes": 2037,
+      "sha256": "35aeef736e89b03d05b72926f78020fc17315124e14c9ed9ebdc49b6817f61af"
+    },
+    {
+      "file": "sql/02_load_english_dataset.sql",
+      "bytes": 2284,
+      "sha256": "8fdb66805a6f7d096dfc315b6d3796b8e1a314f1b71e656b75d9c19dacf92d0e"
+    },
+    {
+      "file": "sql/03_validate_english_dataset.sql",
+      "bytes": 4269,
+      "sha256": "3047a0ec8e6678030b024be1b419e2a704f661008e34f56889933d8954f00db4"
+    },
+    {
+      "file": "sql/04_analysis_queries.sql",
+      "bytes": 2394,
+      "sha256": "f3c67b9c6c254ef0841e0212b24d4cc12cb226654d313f63790cbad6b5a90066"
+    },
+    {
+      "file": "docs/mysql_english_dataset_import.md",
+      "bytes": 3643,
+      "sha256": "75451e6e5b49085474068aacb3465e089db3fc3fb7acc387e1287b7bd099ba9c"
+    }
+  ]
+}

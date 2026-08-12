@@ -1,0 +1,18 @@
+{
+  "reconciliation_date": "2026-08-08",
+  "canonical_file": "data/processed/clean_sakhalin_1890_ru_v5_20260731.csv",
+  "review_workbook": "outputs/english_controlled_translation_review_20260802/occupation_translation_review_20260805.xlsx",
+  "approved_mapping": "outputs/english_controlled_translation_review_20260802/occupation_translation_approved_20260808.csv",
+  "canonical_distinct_occupation_values": 135,
+  "approved_mapping_rows": 135,
+  "missing_values": [],
+  "extra_values": [],
+  "record_count_mismatches": [],
+  "blank_english_values": 0,
+  "owner_decisions": {"Approve": 129, "Revise": 6},
+  "confirmed_shared_label": {
+    "english_value": "Launch worker",
+    "russian_values": ["Катерный", "На катере"],
+    "combined_records": 2
+  }
+}

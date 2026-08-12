@@ -94,6 +94,7 @@ These values must not be translated or altered in the canonical Russian datasets
 - [Release Notes](docs/release_notes.md)
 - [Decision Log](docs/decision_log.md)
 - [Canonical Manifest](docs/canonical_manifest.csv)
+- [English Dataset Development Tracker](docs/english_dataset_development_tracker.md)
 - [Project Rules](PROJECT_RULES.md)
 
 ## QA Outputs

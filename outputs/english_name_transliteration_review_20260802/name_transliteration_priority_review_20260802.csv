@@ -1,0 +1,45 @@
+﻿person_id,district,settlement,religion,naming_model,name_raw,full_name_candidate,method,review_reasons
+P000157,Александровский,Пост Александровский,Иудейское,other_documented,Вик*** Негилев,Vik*** Negilev,general_rule,naming_model:other_documented; masked_characters
+P000616,Александровский,Пост Александровский,Православное,russian_historical,Иван Васильев 2-й,Ivan Vasilyev (2),general_rule,hyphenated; numbered_disambiguator
+P001151,Александровский,Пост Александровский,Православное,russian_historical,Любовь Александpова Вецкая,Lyubov Aleksandrova Vetskaya,owner_override_20260802,mixed_latin_cyrillic
+P001478,Александровский,Корсаковское,Православное,russian_historical,Анна 1-я Петрова,Anna (1) Petrova,general_rule,hyphenated; numbered_disambiguator
+P001480,Александровский,Корсаковское,Православное,russian_historical,Анна 2-я Петрова,Anna (2) Petrova,general_rule,hyphenated; numbered_disambiguator
+P001651,Александровский,Корсаковское,Православное,russian_historical,Иван 2-й Арушанов,Ivan (2) Arushanov,general_rule,hyphenated; numbered_disambiguator
+P001977,Александровский,Ново-Михайловское,Православное,russian_historical,Наталья 2-я Михайлова Горшкова,Natalya (2) Mikhaylova Gorshkova,general_rule,four_plus_tokens; hyphenated; numbered_disambiguator
+P002763,Александровский,Пост Дуэ,Православное,russian_historical,Надежда N Павловская,Nadezhda N Pavlovskaya,general_rule,mixed_latin_cyrillic
+P002785,Александровский,Пост Дуэ,Православное,russian_historical,N. N. Кестлер,N. N. Kestler,general_rule,mixed_latin_cyrillic
+P002788,Александровский,Пост Дуэ,Православное,russian_historical,Дора N. Жданова,Dora N. Zhdanova,general_rule,mixed_latin_cyrillic
+P002795,Александровский,Пост Дуэ,,unknown,N. N. Зихер,N. N. Zikher,general_rule,naming_model:unknown; mixed_latin_cyrillic
+P002802,Александровский,Пост Дуэ,Православное,russian_historical,N. N. Дудникова,N. N. Dudnikova,general_rule,mixed_latin_cyrillic
+P002881,Александровский,Пост Дуэ,,unknown,N. N. Генальский,N. N. Genalskiy,general_rule,naming_model:unknown; mixed_latin_cyrillic
+P002979,Тымовский,Верхний Армудан,Православное,russian_historical,Иван Боков 2-й,Ivan Bokov (2),general_rule,hyphenated; numbered_disambiguator
+P003258,Тымовский,Дербинское,Православное,russian_historical,Емельян Ильин Самохвалов 1-й,Yemelyan Ilin Samokhvalov (1),general_rule,four_plus_tokens; hyphenated; numbered_disambiguator
+P003261,Тымовский,Дербинское,Православное,russian_historical,Емельян Павлов Самохвалов 2-й,Yemelyan Pavlov Samokhvalov (2),general_rule,four_plus_tokens; hyphenated; numbered_disambiguator
+P003307,Тымовский,Дербинское,Православное,russian_historical,Иван Денисов Денисов 1-й,Ivan Denisov Denisov (1),general_rule,four_plus_tokens; hyphenated; numbered_disambiguator
+P003449,Тымовский,Дербинское,Магометанское,muslim,Оглы Рахматула Кадъяс,Ogly Rakhmatula Kadyas,general_rule,naming_model:muslim; hard_sign
+P003583,Тымовский,Дербинское,Молоканское,russian_historical,Иван Щукин 2-й,Ivan Shchukin (2),general_rule,hyphenated; numbered_disambiguator
+P004105,Тымовский,Рыковское,Православное,russian_historical,Авдотья Иванова Непомнящая 1-я,Avdotya Ivanova Nepomnyashchaya (1),general_rule,four_plus_tokens; hyphenated; numbered_disambiguator
+P004408,Тымовский,Рыковское,Православное,russian_historical,Егор Васильев 2-й,Yegor Vasilyev (2),general_rule,hyphenated; numbered_disambiguator
+P004592,Тымовский,Рыковское,Православное,russian_historical,Федот Ларионов Маcюкевич,Fedot Larionov Masyukevich,owner_override_20260802,mixed_latin_cyrillic
+P004682,Тымовский,Рыковское,Православное,russian_historical,Иван Васильев Васильев 3-й,Ivan Vasilyev Vasilyev (3),general_rule,four_plus_tokens; hyphenated; numbered_disambiguator
+P004826,Тымовский,Рыковское,Православное,russian_historical,Иван Васильевич Кравченко 4-й,Ivan Vasilyevich Kravchenko (4),general_rule,four_plus_tokens; hyphenated; numbered_disambiguator
+P004836,Тымовский,Рыковское,Православное,russian_historical,Иван Трофимов Лантухов 1-й,Ivan Trofimov Lantukhov (1),general_rule,four_plus_tokens; hyphenated; numbered_disambiguator
+P004840,Тымовский,Рыковское,Православное,russian_historical,Иван Иванов Лантухов 2-й,Ivan Ivanov Lantukhov (2),general_rule,four_plus_tokens; hyphenated; numbered_disambiguator
+P005108,Тымовский,Рыковское,Православное,russian_historical,Иванов Кирилл 2-й Иванов,Ivanov Kirill (2) Ivanov,general_rule,four_plus_tokens; hyphenated; numbered_disambiguator
+P005221,Тымовский,Рыковское,Лютеранское,lutheran,Иоган Петерc,Iogan Peters,owner_override_20260802,naming_model:lutheran; mixed_latin_cyrillic
+P005263,Тымовский,Рыковское,Православное,russian_historical,Василий Николаев Николаев 1-й,Vasiliy Nikolayev Nikolayev (1),general_rule,four_plus_tokens; hyphenated; numbered_disambiguator
+P005396,Тымовский,Палево,Православное,russian_historical,Человек неизвестного звания,Person of unknown rank,explicit_non_name_exception,descriptive_non_name
+P005413,Тымовский,Палево,Православное,russian_historical,Иван Филиппов Веселов 1-й,Ivan Filippov Veselov (1),general_rule,four_plus_tokens; hyphenated; numbered_disambiguator
+P005414,Тымовский,Палево,Православное,russian_historical,Иван Веселов 2-й,Ivan Veselov (2),general_rule,hyphenated; numbered_disambiguator
+P005598,Тымовский,Мало-Тымово,Раскольничество,russian_historical,Иван Голубев 3-й,Ivan Golubev (3),general_rule,hyphenated; numbered_disambiguator
+P005706,Тымовский,Мало-Тымово,Православное,russian_historical,Иван 1-й Трофимов Лузин,Ivan (1) Trofimov Luzin,general_rule,four_plus_tokens; hyphenated; numbered_disambiguator
+P005707,Тымовский,Мало-Тымово,,unknown,Иван 2-й Трофимов Лузин,Ivan (2) Trofimov Luzin,general_rule,naming_model:unknown; four_plus_tokens; hyphenated; numbered_disambiguator
+P005791,Тымовский,Андрее-Ивановское,Православное,russian_historical,Дмитрий Фомин Попов 1-й,Dmitriy Fomin Popov (1),general_rule,four_plus_tokens; hyphenated; numbered_disambiguator
+P006003,Тымовский,Андрее-Ивановское,Православное,russian_historical,Дмитрий Кириллов Попов 2-й,Dmitriy Kirillov Popov (2),general_rule,four_plus_tokens; hyphenated; numbered_disambiguator
+P006023,Тымовский,Андрее-Ивановское,Православное,russian_historical,Петр Иванов 2-й,Petr Ivanov (2),general_rule,hyphenated; numbered_disambiguator
+P006152,Корсаковский,Маука,Православное,russian_historical,Андрей Иванов 1-й,Andrey Ivanov (1),general_rule,hyphenated; numbered_disambiguator
+P006476,Корсаковский,Соловьевка,Православное,russian_historical,Марья Алексеева Попова 2-я,Marya Alekseyeva Popova (2),general_rule,four_plus_tokens; hyphenated; numbered_disambiguator
+P006742,Корсаковский,Владимировка,Православное,russian_historical,Марья Дмитриева Попова 2-я,Marya Dmitriyeva Popova (2),general_rule,four_plus_tokens; hyphenated; numbered_disambiguator
+P007156,Корсаковский,Кресты,Православное,russian_historical,Андрей Иванов Иванов 2-й,Andrey Ivanov Ivanov (2),general_rule,four_plus_tokens; hyphenated; numbered_disambiguator
+P007293,Корсаковский,Малое Такоэ,Православное,russian_historical,Михаил Иванов Иванов 3-й,Mikhail Ivanov Ivanov (3),general_rule,four_plus_tokens; hyphenated; numbered_disambiguator
+P007413,Корсаковский,Дубки,Православное,russian_historical,Василий Иванов Иванов 1-й,Vasiliy Ivanov Ivanov (1),general_rule,four_plus_tokens; hyphenated; numbered_disambiguator

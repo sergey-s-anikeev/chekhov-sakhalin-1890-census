@@ -1,0 +1,26 @@
+{
+  "reconciliation_date": "2026-08-05",
+  "canonical_file": "data/processed/clean_sakhalin_1890_ru_v5_20260731.csv",
+  "review_workbook": "outputs/english_controlled_translation_review_20260802/legal_status_translation_review_20260802.xlsx",
+  "approved_mapping": "outputs/english_controlled_translation_review_20260802/legal_status_translation_approved_20260805.csv",
+  "canonical_distinct_legal_status_values": 61,
+  "approved_mapping_rows": 61,
+  "missing_values": [],
+  "extra_values": [],
+  "record_count_mismatches": [],
+  "owner_decisions": {"Approve A": 12, "Approve B": 12, "Approve C": 3, "Revise": 34},
+  "article_free_pattern": {
+    "Дочь солдатки": "Child of soldier's wife",
+    "Сын солдатки": "Child of soldier's wife",
+    "Жена врача": "Wife of doctor"
+  },
+  "female_co_owner_check": {
+    "canonical_cyrillic_value": "Совладелица",
+    "family_status_records": 8,
+    "family_status_norm_records": 8,
+    "legal_status_norm_records": 0,
+    "mixed_latin_c_value": "Cовладелица",
+    "mixed_latin_c_records_all_fields": 0,
+    "included_in_batch_b_family_status_inventory": true
+  }
+}

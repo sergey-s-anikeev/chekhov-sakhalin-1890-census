@@ -1,0 +1,19 @@
+{
+  "reconciliation_date": "2026-08-09",
+  "canonical_file": "data/processed/clean_sakhalin_1890_ru_v5_20260731.csv",
+  "review_workbook": "outputs/english_controlled_translation_review_20260802/family_status_translation_review_20260805.xlsx",
+  "approved_mapping": "outputs/english_controlled_translation_review_20260802/family_status_translation_approved_20260809.csv",
+  "canonical_distinct_family_status_values": 37,
+  "approved_mapping_rows": 37,
+  "missing_values": [],
+  "extra_values": [],
+  "record_count_mismatches": [],
+  "blank_english_values": 0,
+  "owner_decisions": {"Approve A": 17, "Approve B": 3, "Approve C": 8, "Revise": 9},
+  "confirmed_adoption_labels": {
+    "Приемная дочь": "Adopted daughter",
+    "Приемный сын": "Adopted son",
+    "Приемный отец": "Adoptive father"
+  },
+  "female_co_owner": {"russian_value": "Совладелица", "record_count": 8, "english_value": "Joint householder"}
+}

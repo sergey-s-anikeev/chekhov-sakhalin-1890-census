@@ -1,0 +1,110 @@
+{
+  "status": "PASS",
+  "date": "2026-08-09",
+  "source": "data/staging/archive_code_p000107_20260809/clean_sakhalin_1890_ru_v5_20260731_archive_code_staged.csv",
+  "output": "data/analytical/sakhalin_1890_en_v1.csv",
+  "core": {
+    "Output records": {
+      "actual": 7446,
+      "expected": 7446,
+      "status": "PASS"
+    },
+    "Output columns": {
+      "actual": 23,
+      "expected": 23,
+      "status": "PASS"
+    },
+    "Row-order mismatches": {
+      "actual": 0,
+      "expected": 0,
+      "status": "PASS"
+    },
+    "Unique person_id": {
+      "actual": 7446,
+      "expected": 7446,
+      "status": "PASS"
+    },
+    "Unique source_position_id": {
+      "actual": 7446,
+      "expected": 7446,
+      "status": "PASS"
+    },
+    "Transformation mismatches": {
+      "actual": 0,
+      "expected": 0,
+      "status": "PASS"
+    },
+    "Cyrillic cells": {
+      "actual": 0,
+      "expected": 0,
+      "status": "PASS"
+    },
+    "Exception/error rows": {
+      "actual": 0,
+      "expected": 0,
+      "status": "PASS"
+    }
+  },
+  "numeric": {
+    "person_seq": {
+      "populated": 7446,
+      "blank": 0,
+      "min": 1,
+      "max": 1338,
+      "invalid": 0,
+      "status": "PASS"
+    },
+    "age": {
+      "populated": 7299,
+      "blank": 147,
+      "min": 0,
+      "max": 91,
+      "invalid": 0,
+      "status": "PASS"
+    },
+    "age_months": {
+      "populated": 638,
+      "blank": 6808,
+      "min": 0,
+      "max": 33,
+      "invalid": 0,
+      "status": "PASS"
+    },
+    "arrival_year": {
+      "populated": 4826,
+      "blank": 2620,
+      "min": 1865,
+      "max": 1890,
+      "invalid": 0,
+      "status": "PASS"
+    },
+    "allowance_status": {
+      "populated": 6878,
+      "blank": 568,
+      "min": "",
+      "max": "",
+      "invalid": 0,
+      "status": "PASS"
+    }
+  },
+  "household": {
+    "source_groups": 2796,
+    "output_groups": 2796,
+    "membership_mismatches": 0,
+    "duplicate_person_seq_within_settlement": 0,
+    "blank_household_id_records": 246
+  },
+  "allowance_values": [
+    "",
+    "FALSE",
+    "TRUE"
+  ],
+  "archive_counts": {
+    "RGB": 7223,
+    "RGALI": 222,
+    "DMCh": 1,
+    "blank": 0
+  },
+  "output_sha256": "1b77d6330855763c54c32f21d247dc44471a69590db4fc00925c4e22eb8ac508",
+  "owner_approval_required": true
+}
