@@ -1,0 +1,42 @@
+legal_status,people
+"Exile settler",3366
+"Penal convict",1372
+"Free-status person",862
+"Child of exile settler",748
+"Child of penal convict",459
+"Exile peasant",303
+"Child of exile peasant",219
+NULL,24
+"Reserve private",16
+Peasant,14
+"Reserve non-commissioned officer",6
+"Retired private soldier",6
+"Administrative exile",4
+"Private soldier",4
+"Retired non-commissioned officer",4
+"Child of court councillor",3
+"Child of soldier's wife",3
+"Retired first sergeant",3
+Townsman,3
+"Child of lieutenant colonel",2
+"Child of private soldier",2
+"Mine foreman",2
+"Non-commissioned officer",2
+"Wife of private soldier",2
+Blacksmith,1
+Captain,1
+"Child of retired private soldier",1
+Clerk,1
+"Court councillor",1
+Doctor,1
+"Joint householder",1
+"Lieutenant colonel",1
+"Medical assistant",1
+Midwife,1
+Nobleman,1
+"Reserve corporal",1
+"Second lieutenant",1
+"Senior warder",1
+"Wife of court councillor",1
+"Wife of doctor",1
+"Wife of lieutenant colonel",1
