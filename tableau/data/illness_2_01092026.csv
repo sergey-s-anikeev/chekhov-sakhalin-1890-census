@@ -1,0 +1,29 @@
+sex,illness,people
+Female,Syphilis,3
+Female,Blind,2
+Female,Deaf,2
+Female,"Mental disorder",2
+Female,"Bronchial catarrh",1
+Female,"Chronic gastric and intestinal catarrh",1
+Female,Conjunctivitis,1
+Female,Paralysed,1
+Female,Rheumatism,1
+Female,"Women's ailment",1
+Male,"Almshouse resident",10
+Male,Blind,4
+Male,Syphilis,4
+Male,"Mental disorder",3
+Male,"Dropsy; Almshouse resident",2
+Male,"Physically weak",2
+Male,"Respiratory distress",2
+Male,"Blind; Mental disorder",1
+Male,Cancer,1
+Male,"Contusion injury",1
+Male,"Impaired vision",1
+Male,"Left arm disability",1
+Male,Mute,1
+Male,"Old left-elbow dislocation",1
+Male,Pleurisy,1
+Male,"Rheumatism; Gastric catarrh",1
+Male,Tuberculosis,1
+Male,"Tuberculosis; Syphilis",1
