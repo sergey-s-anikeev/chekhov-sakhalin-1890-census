@@ -1,10 +1,16 @@
 # Analytical exports
 
+## Children's age decision — 2026-10-12
+
+Decision 40 approves **Children aged 0–15** for the new analytical block. The historical `children_age_profile_clean22082026.csv` (0–17) and `children_by_sex01092026.csv` (0–16) are superseded for that block but remain unchanged here. The replacement exports are present and verified: `children_age_0_15_10122026.csv` (32 rows) and `children_by_sex_0_15_10122026.csv` (2 rows). Both total 1,467: Female 726, Male 741. They match the first two queries in [`sql/05_children_0_15_queries.sql`](../../sql/05_children_0_15_queries.sql). The literal filename suffix `10122026` is preserved as supplied; registration and verification date: 2026-10-12. Tableau checks remain pending.
+
+The previous 40-match audit below predates the correction. After registering the two new files, 40 of 46 snapshots match current queries, four match documented variants (including the two former child scopes), and two remain legacy exclusions. The [registration audit](../../outputs/qa/tableau_preflight_20261012_csv_register/README.md) verifies every file and records its hash. See [children's QA](../../outputs/qa/children_0_15_20261012/README.md) for the specific correction and exact affected IDs.
+
 ## Preflight review — 2026-10-04
 
 Rechecked 2026-10-12 with the same 40 current-query matches, two documented variants, and two starter exclusions. The [latest report](../../outputs/qa/tableau_preflight_20261012/README.md) includes 59 passed preparation assertions and exact import benchmarks. Actual Tableau import checks remain pending.
 
-For the main interactive workbook, use the separate [local names-free practice source](../practice/README.md). These 44 files remain historical comparison snapshots. Do not join or union them together.
+For the main interactive workbook, use the separate [local names-free practice source](../practice/README.md). The 46 files include current results and historical comparison snapshots. Do not join or union them together.
 
 The [preflight audit](../../outputs/qa/tableau_preflight_20261004/README.md) compares all snapshots to current query logic using an in-memory SQLite replay, not a new MySQL execution. Forty match current queries; the allowance-No and top-30 household files match their documented variants. Two legacy files are excluded from the starter selection: `children_age_profile22082026.csv` (use the year-only clean file) and `origina_place_profile_07092026.csv` (earlier ranking without a matching current query; reproduce from person-level data if needed).
 
@@ -13,7 +19,8 @@ Matching the query does not make a file additive at every level. Use the top-fiv
 - Source table: **`sakhalin_1890_en`**
 - SQL source: [`../../sql/04_analysis_queries.sql`](../../sql/04_analysis_queries.sql)
 - Export dates encoded in filenames: **2026-08-22**, **2026-08-28**, **2026-09-01**, **2026-09-07**, and **2026-09-08**
-- Inventory: **44 CSV files**; row counts below exclude headers.
+- Newly registered on **2026-10-12**: two children aged 0–15 exports, with the supplied filename suffix `10122026`.
+- Inventory: **46 CSV files**; row counts below exclude headers.
 
 These CSV files are static MySQL query results prepared for visualization from the 7,446-record English analytical dataset. SQL analysis and export preparation are complete; Tableau import validation and dashboard construction are the next stage. These files are CSV snapshots, not Tableau workbooks or extracts.
 
@@ -35,9 +42,11 @@ The SQL file contains the current analysis logic, but some exports represent ear
 | `age_and_sex_profile22082026.csv` | 6 | Age profile by district and sex |
 | `median_age22082026.csv` | 1 | Median age of the complete population |
 | `median_age_bysex22082026.csv` | 2 | Median age by sex |
-| `children_age_profile_clean22082026.csv` | 36 | Child age distribution in completed years by sex, ages 0–17 |
+| `children_age_0_15_10122026.csv` | 32 | Current: children aged 0–15 by completed age and sex; total 1,467 |
+| `children_by_sex_0_15_10122026.csv` | 2 | Current: children aged 0–15 by sex; Female 726 (49.5%), Male 741 (50.5%); denominator 1,467 |
+| `children_age_profile_clean22082026.csv` | 36 | Historical: ages 0–17; superseded for the children’s block |
 | `children_age_profile22082026.csv` | 84 | Earlier child-age export using months for ages 0–2; superseded by the year-only export |
-| `children_by_sex01092026.csv` | 2 | Male and female shares of the population aged 16 or younger |
+| `children_by_sex01092026.csv` | 2 | Historical: ages 0–16; superseded for the children’s block |
 
 ## Legal status and literacy
 
@@ -132,7 +141,7 @@ The current SQL file also contains **Extended analysis 3: Origin concentration w
 - Blank ages are excluded from age calculations; recorded age zero remains valid.
 - `NULL` represents a missing SQL value, not a category such as `No occupation`.
 - `TRUE` and `FALSE` are meaningful allowance values; a blank allowance value is missing.
-- Use the year-only child-age export for the current child-age visualization.
-- Age thresholds differ by query: the child-age distribution covers ages 0–17, the child-sex share covers ages 0–16, and adult analyses start at age 16. Label each visualization with its actual scope.
+- Use children_age_0_15_10122026.csv and children_by_sex_0_15_10122026.csv for current children’s visualizations; earlier snapshots are historical.
+- Current children's queries consistently cover ages 0–15; 16+ analyses retain their scope. Older child snapshots use 0–17 and 0–16 and must not be used as the new block's sources. Label 16+ analyses Residents aged 16+ without implying legal adulthood.
 - Aggregates have different grains and filters. Do not sum repeated cohort totals or join these files without checking the grouping keys and denominators.
 - Export descriptions and row counts document the saved CSVs; they do not imply that every snapshot has been rerun against the latest SQL.

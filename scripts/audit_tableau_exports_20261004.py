@@ -32,9 +32,11 @@ def normal(value):
 def bag(rows, fields):
     return Counter(tuple(normal(row[f]) for f in fields) for row in rows)
 
-def main(audit_date='2026-10-04'):
+def main(audit_date='2026-10-04', report_suffix=''):
     date.fromisoformat(audit_date)
-    out = ROOT / ('outputs/qa/tableau_preflight_' + audit_date.replace('-', ''))
+    if report_suffix and not re.fullmatch(r'[a-z0-9_]+', report_suffix):
+        raise ValueError('Report suffix must use lowercase letters, digits, or underscores')
+    out = ROOT / ('outputs/qa/tableau_preflight_' + audit_date.replace('-', '') + ('_' + report_suffix if report_suffix else ''))
     source = ROOT / 'data/analytical/sakhalin_1890_en_v1.csv'
     fields, rows = read(source)
     assert len(rows) == 7446 and len(fields) == 23
@@ -66,6 +68,8 @@ def main(audit_date='2026-10-04'):
         cursor = db.execute(query)
         results.append((number, [c[0] for c in cursor.description], [dict(r) for r in cursor.fetchall()]))
     variants = {
+        'children_age_profile_clean22082026.csv': next(q for q in queries if 'AS children' in q and 'GROUP BY sex, age' in q).replace('BETWEEN 0 AND 15', 'BETWEEN 0 AND 17'),
+        'children_by_sex01092026.csv': next(q for q in queries if 'AS child_group_share_pct' in q).replace('BETWEEN 0 AND 15', 'BETWEEN 0 AND 16'),
         'allowance_by_year_NO01092026.csv': "SELECT arrival_year, COUNT(*) AS people FROM sakhalin_1890_en WHERE allowance_status = 0 AND arrival_year IS NOT NULL GROUP BY arrival_year",
         'household_size_settlements01092026.csv': next(q for q in queries if "AS household_size" in q and 'LIMIT 10' in q).replace('LIMIT 10', 'LIMIT 30'),
     }
@@ -132,7 +136,7 @@ def main(audit_date='2026-10-04'):
     subtotal = [r for r in top if r['settlement'] == 'Top 5 subtotal']
     details = [r for r in top if r['settlement'] != 'Top 5 subtotal']
     check('top_five_subtotal_equals_detail', len(subtotal) == 1 and sum(int(r['people']) for r in details) == int(subtotal[0]['people']))
-    check('snapshots_accounted_for', len(audit) == 44 and Counter(r['status'] for r in audit) == {'MATCH': 40, 'MATCH_DOCUMENTED_VARIANT': 2, 'REVIEW': 2})
+    check('snapshots_accounted_for', len(audit) == 46 and Counter(r['status'] for r in audit) == {'MATCH': 40, 'MATCH_DOCUMENTED_VARIANT': 4, 'REVIEW': 2})
     report = {'date': audit_date, 'source_sha256': digest(source), 'sql_sha256': digest(sql_path),
               'source_rows': len(rows), 'source_columns': len(fields), 'practice_columns': len(pfields),
               'practice_sha256': digest(practice), 'retained_cell_mismatches': mismatches,
@@ -154,7 +158,8 @@ def main(audit_date='2026-10-04'):
              '## Historical export reconciliation', '', '| File | Rows | Result | Current query |', '|---|---:|---|---|']
     lines += [f"| {r['file']} | {r['rows']} | {r['status']} | {', '.join(map(str, r['matching_query_numbers'])) or 'See review notes'} |" for r in audit]
     lines += ['', '## Review notes', '',
-              '- 40 snapshots match current SQL values; two match the documented allowance-No and top-30-household variants.',
+              '- 40 snapshots match current SQL values; four match documented variants (allowance-No, top-30 households, and the two superseded child age scopes).',
+              '- Decision 40 uses ages 0–15. Both new child exports with the literal suffix 10122026 match the corrected queries. Use these in place of older child snapshots. Historical reports describe the files and SQL hash at their original run.',
               '- The older mixed-unit child-age file is excluded in favor of children_age_profile_clean22082026.csv.',
               '- The earlier origina_place_profile_07092026.csv ranking is excluded from starter sources because it has no matching current query.',
               '- All historical snapshots are preserved. Current-match status does not establish that subtotals, percentages, or repeated denominators are additive.',
@@ -164,11 +169,14 @@ def main(audit_date='2026-10-04'):
     lines += ['', '## Import benchmarks', '', f'All {len(checks)} preparation assertions passed. Actual Tableau testing remains pending.', '', '| Scope | Expected values |', '|---|---|']
     for name, values in benchmarks.items():
         lines.append(f'| {name} | ' + '; '.join(', '.join(f'{k}={v}' for k, v in row.items()) for row in values) + ' |')
-    lines += ['', f'Repeat this dated audit with `python scripts/audit_tableau_exports_20261004.py --date {audit_date}`. The report is tied to the hashes in audit.json.']
+    suffix_option = f' --report-suffix {report_suffix}' if report_suffix else ''
+    lines += ['', f'Repeat this dated audit with `python scripts/audit_tableau_exports_20261004.py --date {audit_date}{suffix_option}`. The report is tied to the hashes in audit.json.']
     (out / 'README.md').write_text('\n'.join(lines) + '\n', encoding='utf-8')
     print(json.dumps({'queries': len(queries), 'statuses': dict(Counter(r['status'] for r in audit)), 'retained_cell_mismatches': mismatches}, indent=2))
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('--date', default='2026-10-04', help='Explicit report date in YYYY-MM-DD format')
-    main(parser.parse_args().date)
+    parser.add_argument('--report-suffix', default='', help='Separate same-day reports without replacing prior evidence')
+    args = parser.parse_args()
+    main(args.date, args.report_suffix)

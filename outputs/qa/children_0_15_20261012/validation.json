@@ -1,0 +1,825 @@
+{
+  "date": "2026-10-12",
+  "status": "PASS",
+  "definition": "Children aged 0–15",
+  "method": "SQLite local query execution and comparison; MySQL execution and CSV exports pending.",
+  "hashes": {
+    "data\\analytical\\sakhalin_1890_en_v1.csv": "1b77d6330855763c54c32f21d247dc44471a69590db4fc00925c4e22eb8ac508",
+    "sql\\05_children_0_15_queries.sql": "72c8d2a534c1a30e6e551496a0984b8f870f6c0156347972014b9463eb62ead4",
+    "sql\\04_analysis_queries.sql": "ee021ecab843346ad6865aea73f6cc3d78d387eb1a63f22834e8a06e7dbb7721"
+  },
+  "query_results": [
+    [
+      {
+        "sex": "Female",
+        "age": 0,
+        "children": 98
+      },
+      {
+        "sex": "Male",
+        "age": 0,
+        "children": 106
+      },
+      {
+        "sex": "Female",
+        "age": 1,
+        "children": 101
+      },
+      {
+        "sex": "Male",
+        "age": 1,
+        "children": 118
+      },
+      {
+        "sex": "Female",
+        "age": 2,
+        "children": 104
+      },
+      {
+        "sex": "Male",
+        "age": 2,
+        "children": 111
+      },
+      {
+        "sex": "Female",
+        "age": 3,
+        "children": 87
+      },
+      {
+        "sex": "Male",
+        "age": 3,
+        "children": 79
+      },
+      {
+        "sex": "Female",
+        "age": 4,
+        "children": 62
+      },
+      {
+        "sex": "Male",
+        "age": 4,
+        "children": 65
+      },
+      {
+        "sex": "Female",
+        "age": 5,
+        "children": 50
+      },
+      {
+        "sex": "Male",
+        "age": 5,
+        "children": 56
+      },
+      {
+        "sex": "Female",
+        "age": 6,
+        "children": 48
+      },
+      {
+        "sex": "Male",
+        "age": 6,
+        "children": 36
+      },
+      {
+        "sex": "Female",
+        "age": 7,
+        "children": 30
+      },
+      {
+        "sex": "Male",
+        "age": 7,
+        "children": 34
+      },
+      {
+        "sex": "Female",
+        "age": 8,
+        "children": 21
+      },
+      {
+        "sex": "Male",
+        "age": 8,
+        "children": 33
+      },
+      {
+        "sex": "Female",
+        "age": 9,
+        "children": 23
+      },
+      {
+        "sex": "Male",
+        "age": 9,
+        "children": 23
+      },
+      {
+        "sex": "Female",
+        "age": 10,
+        "children": 27
+      },
+      {
+        "sex": "Male",
+        "age": 10,
+        "children": 25
+      },
+      {
+        "sex": "Female",
+        "age": 11,
+        "children": 25
+      },
+      {
+        "sex": "Male",
+        "age": 11,
+        "children": 14
+      },
+      {
+        "sex": "Female",
+        "age": 12,
+        "children": 19
+      },
+      {
+        "sex": "Male",
+        "age": 12,
+        "children": 15
+      },
+      {
+        "sex": "Female",
+        "age": 13,
+        "children": 14
+      },
+      {
+        "sex": "Male",
+        "age": 13,
+        "children": 8
+      },
+      {
+        "sex": "Female",
+        "age": 14,
+        "children": 9
+      },
+      {
+        "sex": "Male",
+        "age": 14,
+        "children": 15
+      },
+      {
+        "sex": "Female",
+        "age": 15,
+        "children": 8
+      },
+      {
+        "sex": "Male",
+        "age": 15,
+        "children": 3
+      }
+    ],
+    [
+      {
+        "sex": "Female",
+        "children": 726,
+        "child_group_share_pct": 49.5
+      },
+      {
+        "sex": "Male",
+        "children": 741,
+        "child_group_share_pct": 50.5
+      }
+    ],
+    [
+      {
+        "total_people": 7446,
+        "children_0_15": 1467,
+        "female_children": 726,
+        "male_children": 741,
+        "children_other_or_missing_sex": 0,
+        "residents_16_plus": 5832,
+        "age_not_recorded": 147,
+        "recorded_age_zero": 204
+      }
+    ]
+  ],
+  "output_changes": [
+    {
+      "file": "children_age_profile_clean22082026.csv",
+      "old_max_age": 17,
+      "before": 1545,
+      "after": 1467,
+      "removed_count": 78,
+      "removed_records": [
+        {
+          "person_id": "P000003",
+          "age": 17,
+          "sex": "Male"
+        },
+        {
+          "person_id": "P000004",
+          "age": 16,
+          "sex": "Male"
+        },
+        {
+          "person_id": "P000015",
+          "age": 17,
+          "sex": "Female"
+        },
+        {
+          "person_id": "P000029",
+          "age": 17,
+          "sex": "Female"
+        },
+        {
+          "person_id": "P000039",
+          "age": 16,
+          "sex": "Female"
+        },
+        {
+          "person_id": "P000060",
+          "age": 16,
+          "sex": "Male"
+        },
+        {
+          "person_id": "P000103",
+          "age": 16,
+          "sex": "Female"
+        },
+        {
+          "person_id": "P000202",
+          "age": 17,
+          "sex": "Female"
+        },
+        {
+          "person_id": "P000253",
+          "age": 16,
+          "sex": "Female"
+        },
+        {
+          "person_id": "P000264",
+          "age": 17,
+          "sex": "Female"
+        },
+        {
+          "person_id": "P000500",
+          "age": 17,
+          "sex": "Male"
+        },
+        {
+          "person_id": "P000600",
+          "age": 17,
+          "sex": "Male"
+        },
+        {
+          "person_id": "P001039",
+          "age": 17,
+          "sex": "Male"
+        },
+        {
+          "person_id": "P001272",
+          "age": 16,
+          "sex": "Male"
+        },
+        {
+          "person_id": "P001319",
+          "age": 17,
+          "sex": "Male"
+        },
+        {
+          "person_id": "P001333",
+          "age": 16,
+          "sex": "Male"
+        },
+        {
+          "person_id": "P001371",
+          "age": 17,
+          "sex": "Female"
+        },
+        {
+          "person_id": "P001419",
+          "age": 16,
+          "sex": "Female"
+        },
+        {
+          "person_id": "P001633",
+          "age": 16,
+          "sex": "Female"
+        },
+        {
+          "person_id": "P001649",
+          "age": 16,
+          "sex": "Male"
+        },
+        {
+          "person_id": "P001666",
+          "age": 16,
+          "sex": "Male"
+        },
+        {
+          "person_id": "P001726",
+          "age": 16,
+          "sex": "Male"
+        },
+        {
+          "person_id": "P001776",
+          "age": 17,
+          "sex": "Male"
+        },
+        {
+          "person_id": "P001788",
+          "age": 17,
+          "sex": "Female"
+        },
+        {
+          "person_id": "P001816",
+          "age": 16,
+          "sex": "Female"
+        },
+        {
+          "person_id": "P001836",
+          "age": 17,
+          "sex": "Male"
+        },
+        {
+          "person_id": "P001844",
+          "age": 16,
+          "sex": "Male"
+        },
+        {
+          "person_id": "P001992",
+          "age": 17,
+          "sex": "Female"
+        },
+        {
+          "person_id": "P002014",
+          "age": 17,
+          "sex": "Female"
+        },
+        {
+          "person_id": "P002308",
+          "age": 16,
+          "sex": "Female"
+        },
+        {
+          "person_id": "P002319",
+          "age": 17,
+          "sex": "Male"
+        },
+        {
+          "person_id": "P002330",
+          "age": 17,
+          "sex": "Male"
+        },
+        {
+          "person_id": "P002348",
+          "age": 17,
+          "sex": "Male"
+        },
+        {
+          "person_id": "P002441",
+          "age": 16,
+          "sex": "Female"
+        },
+        {
+          "person_id": "P002534",
+          "age": 16,
+          "sex": "Male"
+        },
+        {
+          "person_id": "P002538",
+          "age": 17,
+          "sex": "Male"
+        },
+        {
+          "person_id": "P002597",
+          "age": 16,
+          "sex": "Female"
+        },
+        {
+          "person_id": "P002770",
+          "age": 17,
+          "sex": "Female"
+        },
+        {
+          "person_id": "P002850",
+          "age": 16,
+          "sex": "Female"
+        },
+        {
+          "person_id": "P002917",
+          "age": 17,
+          "sex": "Female"
+        },
+        {
+          "person_id": "P003221",
+          "age": 16,
+          "sex": "Female"
+        },
+        {
+          "person_id": "P003250",
+          "age": 17,
+          "sex": "Female"
+        },
+        {
+          "person_id": "P003308",
+          "age": 16,
+          "sex": "Female"
+        },
+        {
+          "person_id": "P003318",
+          "age": 17,
+          "sex": "Female"
+        },
+        {
+          "person_id": "P003399",
+          "age": 16,
+          "sex": "Male"
+        },
+        {
+          "person_id": "P003446",
+          "age": 16,
+          "sex": "Male"
+        },
+        {
+          "person_id": "P003635",
+          "age": 16,
+          "sex": "Male"
+        },
+        {
+          "person_id": "P003741",
+          "age": 16,
+          "sex": "Female"
+        },
+        {
+          "person_id": "P003747",
+          "age": 16,
+          "sex": "Female"
+        },
+        {
+          "person_id": "P004067",
+          "age": 17,
+          "sex": "Male"
+        },
+        {
+          "person_id": "P004084",
+          "age": 16,
+          "sex": "Female"
+        },
+        {
+          "person_id": "P004140",
+          "age": 16,
+          "sex": "Male"
+        },
+        {
+          "person_id": "P004259",
+          "age": 16,
+          "sex": "Female"
+        },
+        {
+          "person_id": "P004323",
+          "age": 17,
+          "sex": "Female"
+        },
+        {
+          "person_id": "P004327",
+          "age": 16,
+          "sex": "Male"
+        },
+        {
+          "person_id": "P004328",
+          "age": 16,
+          "sex": "Female"
+        },
+        {
+          "person_id": "P004338",
+          "age": 17,
+          "sex": "Male"
+        },
+        {
+          "person_id": "P004375",
+          "age": 17,
+          "sex": "Male"
+        },
+        {
+          "person_id": "P004388",
+          "age": 16,
+          "sex": "Male"
+        },
+        {
+          "person_id": "P004482",
+          "age": 16,
+          "sex": "Female"
+        },
+        {
+          "person_id": "P004653",
+          "age": 17,
+          "sex": "Female"
+        },
+        {
+          "person_id": "P004666",
+          "age": 16,
+          "sex": "Female"
+        },
+        {
+          "person_id": "P004749",
+          "age": 16,
+          "sex": "Male"
+        },
+        {
+          "person_id": "P004847",
+          "age": 16,
+          "sex": "Female"
+        },
+        {
+          "person_id": "P004868",
+          "age": 16,
+          "sex": "Female"
+        },
+        {
+          "person_id": "P004890",
+          "age": 16,
+          "sex": "Female"
+        },
+        {
+          "person_id": "P005224",
+          "age": 17,
+          "sex": "Female"
+        },
+        {
+          "person_id": "P005289",
+          "age": 17,
+          "sex": "Female"
+        },
+        {
+          "person_id": "P005488",
+          "age": 17,
+          "sex": "Male"
+        },
+        {
+          "person_id": "P005588",
+          "age": 17,
+          "sex": "Male"
+        },
+        {
+          "person_id": "P005694",
+          "age": 16,
+          "sex": "Male"
+        },
+        {
+          "person_id": "P005738",
+          "age": 17,
+          "sex": "Male"
+        },
+        {
+          "person_id": "P005979",
+          "age": 16,
+          "sex": "Male"
+        },
+        {
+          "person_id": "P006053",
+          "age": 17,
+          "sex": "Female"
+        },
+        {
+          "person_id": "P006102",
+          "age": 16,
+          "sex": "Male"
+        },
+        {
+          "person_id": "P006186",
+          "age": 16,
+          "sex": "Male"
+        },
+        {
+          "person_id": "P006584",
+          "age": 16,
+          "sex": "Female"
+        },
+        {
+          "person_id": "P007284",
+          "age": 17,
+          "sex": "Female"
+        }
+      ]
+    },
+    {
+      "file": "children_by_sex01092026.csv",
+      "old_max_age": 16,
+      "before": 1510,
+      "after": 1467,
+      "removed_count": 43,
+      "removed_records": [
+        {
+          "person_id": "P000004",
+          "age": 16,
+          "sex": "Male"
+        },
+        {
+          "person_id": "P000039",
+          "age": 16,
+          "sex": "Female"
+        },
+        {
+          "person_id": "P000060",
+          "age": 16,
+          "sex": "Male"
+        },
+        {
+          "person_id": "P000103",
+          "age": 16,
+          "sex": "Female"
+        },
+        {
+          "person_id": "P000253",
+          "age": 16,
+          "sex": "Female"
+        },
+        {
+          "person_id": "P001272",
+          "age": 16,
+          "sex": "Male"
+        },
+        {
+          "person_id": "P001333",
+          "age": 16,
+          "sex": "Male"
+        },
+        {
+          "person_id": "P001419",
+          "age": 16,
+          "sex": "Female"
+        },
+        {
+          "person_id": "P001633",
+          "age": 16,
+          "sex": "Female"
+        },
+        {
+          "person_id": "P001649",
+          "age": 16,
+          "sex": "Male"
+        },
+        {
+          "person_id": "P001666",
+          "age": 16,
+          "sex": "Male"
+        },
+        {
+          "person_id": "P001726",
+          "age": 16,
+          "sex": "Male"
+        },
+        {
+          "person_id": "P001816",
+          "age": 16,
+          "sex": "Female"
+        },
+        {
+          "person_id": "P001844",
+          "age": 16,
+          "sex": "Male"
+        },
+        {
+          "person_id": "P002308",
+          "age": 16,
+          "sex": "Female"
+        },
+        {
+          "person_id": "P002441",
+          "age": 16,
+          "sex": "Female"
+        },
+        {
+          "person_id": "P002534",
+          "age": 16,
+          "sex": "Male"
+        },
+        {
+          "person_id": "P002597",
+          "age": 16,
+          "sex": "Female"
+        },
+        {
+          "person_id": "P002850",
+          "age": 16,
+          "sex": "Female"
+        },
+        {
+          "person_id": "P003221",
+          "age": 16,
+          "sex": "Female"
+        },
+        {
+          "person_id": "P003308",
+          "age": 16,
+          "sex": "Female"
+        },
+        {
+          "person_id": "P003399",
+          "age": 16,
+          "sex": "Male"
+        },
+        {
+          "person_id": "P003446",
+          "age": 16,
+          "sex": "Male"
+        },
+        {
+          "person_id": "P003635",
+          "age": 16,
+          "sex": "Male"
+        },
+        {
+          "person_id": "P003741",
+          "age": 16,
+          "sex": "Female"
+        },
+        {
+          "person_id": "P003747",
+          "age": 16,
+          "sex": "Female"
+        },
+        {
+          "person_id": "P004084",
+          "age": 16,
+          "sex": "Female"
+        },
+        {
+          "person_id": "P004140",
+          "age": 16,
+          "sex": "Male"
+        },
+        {
+          "person_id": "P004259",
+          "age": 16,
+          "sex": "Female"
+        },
+        {
+          "person_id": "P004327",
+          "age": 16,
+          "sex": "Male"
+        },
+        {
+          "person_id": "P004328",
+          "age": 16,
+          "sex": "Female"
+        },
+        {
+          "person_id": "P004388",
+          "age": 16,
+          "sex": "Male"
+        },
+        {
+          "person_id": "P004482",
+          "age": 16,
+          "sex": "Female"
+        },
+        {
+          "person_id": "P004666",
+          "age": 16,
+          "sex": "Female"
+        },
+        {
+          "person_id": "P004749",
+          "age": 16,
+          "sex": "Male"
+        },
+        {
+          "person_id": "P004847",
+          "age": 16,
+          "sex": "Female"
+        },
+        {
+          "person_id": "P004868",
+          "age": 16,
+          "sex": "Female"
+        },
+        {
+          "person_id": "P004890",
+          "age": 16,
+          "sex": "Female"
+        },
+        {
+          "person_id": "P005694",
+          "age": 16,
+          "sex": "Male"
+        },
+        {
+          "person_id": "P005979",
+          "age": 16,
+          "sex": "Male"
+        },
+        {
+          "person_id": "P006102",
+          "age": 16,
+          "sex": "Male"
+        },
+        {
+          "person_id": "P006186",
+          "age": 16,
+          "sex": "Male"
+        },
+        {
+          "person_id": "P006584",
+          "age": 16,
+          "sex": "Female"
+        }
+      ]
+    }
+  ],
+  "source_value_changes": 0
+}

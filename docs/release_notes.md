@@ -1,5 +1,9 @@
 # Parser Improvements After Full-District Validation
 
+## Approved children's scope and SQL correction — 2026-10-12
+
+Decision 40 defines the children's block as Children aged 0–15. Corrected both child queries in `sql/04_analysis_queries.sql`, and added `sql/05_children_0_15_queries.sql` with the two replacement queries and a validation result. Child-age totals change from 1,545 to 1,467; child-sex totals from 1,510 to 1,467. Female: 726; Male: 741. Local validation passed, and the affected IDs are recorded in `outputs/qa/children_0_15_20261012/`. Existing 16+ analyses retain their filters, with clearer descriptive comments. Original CSVs and person records remain unchanged. Follow-up registration: both supplied replacement CSVs with suffix `10122026` are present and match the corrected queries. The export register now contains 46 CSVs. Verification evidence is in `outputs/qa/tableau_preflight_20261012_csv_register/`; MySQL execution logs were not inspected and Tableau checks remain pending.
+
 ## Tableau pre-import follow-up — 2026-10-12
 
 Refreshed source and snapshot reconciliation in a separate dated QA package, preserving the 2026-10-04 evidence. All 59 preparation assertions passed. Added exact import benchmarks, explicit starter-source selection, and numerical examples of subtotal, percentage-denominator, and age-scope errors. Reconfirmed the 22-column practice file has zero retained-cell differences from English v1. The 44 snapshot results remain 40 current matches, two documented variants, and two legacy files excluded from starter use. No person values, canonical releases, or historical exports changed. Tableau application tests and external publication verification remain pending.

@@ -2,6 +2,14 @@
 
 Updated 2026-10-12. Preparation checks passed on the current files; actual Tableau import and dashboard testing remain pending.
 
+## Approved children's definition — Decision 40
+
+Use **Children aged 0–15** (`age BETWEEN 0 AND 15`) for every output in the children's analytical block. This source-informed convention follows Chekhov's inclusion of fifteen-year-olds in Chapter XVII, rather than asserting legal adulthood at 16. Preserve zero ages and report unknown age separately; never infer age from `Child of ...` status.
+
+The corrected queries are in `sql/04_analysis_queries.sql` and the standalone `sql/05_children_0_15_queries.sql`. Expected totals: 1,467 children, Female 726 (49.5%), Male 741 (50.5%). The registered replacement files are `children_age_0_15_10122026.csv` and `children_by_sex_0_15_10122026.csv`. Both were verified against the corrected queries on 2026-10-12; see `outputs/qa/tableau_preflight_20261012_csv_register/`. Keep previous snapshots as historical files.
+
+The [children's validation report](../outputs/qa/children_0_15_20261012/README.md) verifies the correction locally. Earlier general preflight reports remain evidence for their recorded SQL hashes; they predate this change.
+
 ## Sources and intended use
 
 | Source | Purpose | One row represents |
@@ -12,7 +20,7 @@ Updated 2026-10-12. Preparation checks passed on the current files; actual Table
 
 The practice copy removes only `full_name`. Every other value and the source row order remain unchanged. All IDs from P000001 through P007446 are affected by this column omission; the QA JSON enumerates them. The original English and Russian releases are unchanged. This is a local practice derivative, not an anonymized or approved public release.
 
-Use the person-level practice source for the main interactive workbook. Do not join or union the 44 historical exports into that table. Specialized aggregates may be independent worksheet sources, with their own filters and denominators. Dashboard filters across independent sources require explicit mapping and testing.
+Use the person-level practice source for the main interactive workbook. Do not join or union the 46 current and historical exports into that table. Specialized aggregates may be independent worksheet sources, with their own filters and denominators. Dashboard filters across independent sources require explicit mapping and testing.
 
 ## Import specification
 
@@ -46,8 +54,8 @@ Historical `_pct` columns contain percentage points (for example 18 means 18%, n
 | Precomputed medians and averages | Recalculate from people when filters change. Do not average group medians or unweighted group means. |
 | Top-N files omit other categories | Label them Top 5, Top 4, Top 50, or Top 30 as applicable. Use the full source for reranking after filters and for full-population shares. |
 | Female occupation export has extra exclusions | It excludes `Dependent on husband` and `No occupation`; do not present it as directly comparable to an unrestricted male ranking without explaining the scope. |
-| Child/adult thresholds differ | Preserve the existing analyses: child age distribution 0–17; child sex shares 0–16; adult analyses 16+. These overlap and must not be combined into a single exclusive classification. Use explicit age labels. |
-| Earlier child-age file mixes month/year detail | Use `children_age_profile_clean22082026.csv` for year-based comparisons; retain the older file as historical only. |
+| Historical child thresholds differ | The older CSVs use 0–17 and 0–16. Replace both for current use with the approved 0–15 queries. The unchanged 16+ analyses complement the new child scope; label them Residents aged 16+. |
+| Earlier child-age files | Both the mixed-unit and 0–17 year-only snapshots are historical. Use children_age_0_15_10122026.csv for the current children's block. |
 | Household IDs repeat across places | Group by district, settlement, and household_id together. Exclude missing household IDs. Apply `household_type = 'Private household'` only for private-household analyses. |
 | Household sizes repeated on person rows | A person-weighted mean is not an average household size. Aggregate to one row per household before averaging. |
 | Household top-30 export versus SQL top-10 | Both are documented scopes. The audit checks the saved file against a LIMIT 30 variant; use the current query for a current top-10 result. |
@@ -65,7 +73,7 @@ The latest snapshot checks and exact import benchmarks are recorded in [the 2026
 | Interactive exploration | The 22-column names-free practice file | Main local source; no joins required. |
 | District and settlement validation | districts_by_population22082026.csv and settlements_by_population22082026.csv | Compare counts; do not attach them to person rows. |
 | Top-five chart | top5_by_population22082026.csv, or a calculation from the main source | Exclude the separate subtotal file from chart input. Retain the full-population denominator for a share of all recorded residents. |
-| Child ages in years | children_age_profile_clean22082026.csv | Earlier mixed-unit file is historical only. |
+| Child ages in years | Corrected query in sql/05_children_0_15_queries.sql | Use children_age_0_15_10122026.csv; do not substitute the old 0–17 snapshot. |
 | Origin rankings by sex | Main person-level source | Earlier origina_place_profile_07092026.csv stays outside the starter selection; its original query is not established. |
 | Household comparison | household_size01092026.csv | All populated composite household IDs. The private top-30 snapshot is a different scope and must be labeled separately. |
 
@@ -82,6 +90,7 @@ These values were recalculated from approved English v1 on 2026-10-12. Check wit
 | Recorded age / missing age | 7,299 / 147 |
 | Recorded age zero | 204 |
 | Mean recorded age | 30.9253 years (30.9 to one decimal) |
+| Approved children aged 0–15 | 1,467 (Female 726; Male 741) |
 | Ages 0–17 / 0–16 / 16+ | 1,545 / 1,510 / 5,832 |
 | Ages 16–17 (overlap between 0–17 and 16+) | 78 |
 | Composite household groups with an ID | 2,796 |
@@ -96,7 +105,7 @@ Examples of errors these checks expose:
 - Summing top-five details and their subtotal gives 8,092, double the correct 4,046.
 - Summing the displayed rounded top-five percentages can differ from the ratio calculated from counts. Use 4,046 / 7,446 for the combined share.
 - An allowance rate among all people uses 2,550 / 7,446; a rate among recorded statuses uses 2,550 / 6,878. Both can be valid, with different labels.
-- Summing the 0–17 and 16+ groups counts 78 people twice and omits the 147 people with missing age. The query-specific age groups are not a population partition.
+- The historical 0–17 and 16+ groups overlap by 78 people. Under Decision 40, use 1,467 children aged 0–15 + 5,832 residents aged 16+ + 147 missing ages = 7,446.
 - Household means must use one observation per composite household. Averaging household size repeated on person rows overweights larger households.
 
 ## Person-level publication recommendation

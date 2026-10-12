@@ -143,7 +143,9 @@ WHERE position_number IN (
 GROUP BY sex
 ORDER BY sex;
 
--- Child age distribution in completed years by sex (ages 0-17).
+-- Children aged 0-15: age distribution in completed years by sex.
+-- Decision 40 (2026-10-12): use ages 0-15 for every children's-block output.
+-- Export as children_age_0_15_10122026.csv; preserve earlier snapshots.
 -- This query uses only the age column; age_months is not included.
 -- Keep both sex values in the result for visualization filtering.
 -- To export one sex only, replace the IN condition with sex = 'Female' or sex = 'Male'.
@@ -152,12 +154,13 @@ SELECT
     age,
     COUNT(*) AS children
 FROM sakhalin_1890_en
-WHERE age BETWEEN 0 AND 17
+WHERE age BETWEEN 0 AND 15
   AND sex IN ('Female', 'Male')
 GROUP BY sex, age
 ORDER BY age, sex;
 
--- Male and female shares within the child population aged 16 or younger.
+-- Children aged 0-15: male and female shares within the same population.
+-- Export as children_by_sex_0_15_10122026.csv; preserve earlier snapshots.
 -- Missing ages are excluded by the age condition.
 SELECT
     sex,
@@ -167,7 +170,7 @@ SELECT
         1
     ) AS child_group_share_pct
 FROM sakhalin_1890_en
-WHERE age <= 16
+WHERE age BETWEEN 0 AND 15
   AND sex IN ('Female', 'Male')
 GROUP BY sex
 ORDER BY sex;
@@ -211,7 +214,7 @@ FROM sakhalin_1890_en
 GROUP BY sex, literacy
 ORDER BY sex, people DESC;
 
--- Adult literacy by sex (age 16 and older).
+-- Literacy by sex among residents aged 16+ (analytical scope, not legal adulthood).
 -- Records with a missing age are excluded by the age condition.
 SELECT
     sex,
@@ -535,7 +538,7 @@ FROM settlement_completeness
 ORDER BY completion_pct DESC, people DESC, district, settlement
 LIMIT 10;
 
--- Extended analysis 1: Adult literacy by age band and sex.
+-- Extended analysis 1: Literacy among residents aged 16+, by age band and sex.
 -- Shares use all people in each age/sex group, including missing literacy.
 -- Literate and Educated are reported separately; no category is reclassified.
 WITH adult_age_bands AS (
@@ -714,7 +717,8 @@ WHERE distinct_non_child_statuses >= 2
 ORDER BY distinct_non_child_statuses DESC, household_size DESC,
     district, settlement, household_id;
 
--- Extended analysis 7: Recorded Sakhalin marriage by arrival cohort, adult age band, and sex.
+-- Extended analysis 7: Recorded Sakhalin marriage among residents aged 16+,
+-- by arrival cohort, age band, and sex. This is not a legal-adulthood definition.
 -- Age is age in 1890, not age at arrival or at marriage.
 -- Includes compound Sakhalin-marriage labels, even if also widowed.
 -- Missing age or arrival year is excluded; missing marital status is reported.

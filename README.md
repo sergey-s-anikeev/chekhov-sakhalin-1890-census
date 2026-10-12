@@ -19,7 +19,7 @@ Russian/Cyrillic source and normalized values remain authoritative. English docu
 | Extraction, cleaning, and Russian canonical release | Complete | Reviewed `v5_20260731` release, integrated QA, and manifest registration |
 | English analytical dataset | Approved; QA complete | 7,446 records and 23 columns in `sakhalin_1890_en_v1.csv` |
 | MySQL import and validation | Complete | 7,446 loaded rows, zero skipped records or warnings, and all validation controls passed |
-| SQL analysis and visualization exports | Complete | Demographic and extended analytical queries; 44 dated CSV snapshots in `tableau/data/` |
+| SQL analysis and visualization exports | Complete | Demographic and extended analytical queries; 46 CSV snapshots in `tableau/data/` |
 | Tableau source validation and dashboard | Pending | Import checks, charts, filters, and reconciliation to SQL totals |
 | Final findings and portfolio presentation | Pending | Analytical summary, dashboard screenshots, and final project narrative |
 
@@ -57,9 +57,11 @@ Analysis covers population by district and settlement, age and sex, legal status
 
 ## Visualization Exports and Next Steps
 
+**Children's block:** Decision 40 approves **Children aged 0–15**. Both child queries are corrected, and their replacement exports are registered in [the export inventory](tableau/data/README.md). Use [the standalone SQL](sql/05_children_0_15_queries.sql) to reproduce them. Expected total: 1,467 children (726 female, 741 male). Earlier child exports use different age ranges and remain historical. See [correction QA](outputs/qa/children_0_15_20261012/README.md). Both replacement CSVs match the corrected queries; Tableau validation remains pending.
+
 Start local practice with [`tableau/practice/sakhalin_1890_en_no_full_name_20261004.csv`](tableau/practice/sakhalin_1890_en_no_full_name_20261004.csv): all 7,446 people and 22 columns, omitting only full_name. It retains linkable identifiers and is not an anonymous public-release file. Use the [Tableau preparation guide](docs/tableau_preparation.md) for import types, denominators, household grouping, legacy-export selection, and aggregate-only public dashboard recommendations. The [preflight report](outputs/qa/tableau_preflight_20261004/README.md) records snapshot reconciliation and exact retained-value verification.
 
-The [analytical export inventory](tableau/data/README.md) describes all **44 CSV snapshots**, exported on 2026-08-22, 2026-08-28, 2026-09-01, 2026-09-07, and 2026-09-08. It records each file's row count, analytical scope, percentage denominators, and known differences from the current SQL. Some snapshots are earlier or manual query variants; two extended queries do not yet have corresponding CSV exports.
+The [analytical export inventory](tableau/data/README.md) describes all **46 CSV snapshots**: the 44 earlier exports plus two corrected children aged 0–15 files registered and verified on 2026-10-12. It records each file's row count, analytical scope, percentage denominators, and known differences from the current SQL. Some snapshots are earlier or manual query variants; two extended queries do not yet have corresponding CSV exports.
 
 The next steps are:
 
@@ -195,7 +197,7 @@ chekhov-sakhalin-1890-census/
 └── tableau/
     └── data/
         ├── README.md
-        └── <44 dated analytical CSV exports>
+        └── <46 analytical CSV exports>
 ```
 
 ## Processing Layers
@@ -262,7 +264,7 @@ Tableau dashboards and the final visual presentation are the next deliverables.
 
 ## Data Availability
 
-This repository includes the reviewed Russian processed datasets, the approved English analytical dataset, code, SQL scripts, 44 analytical CSV snapshots, documentation, QA outputs, and a 500-record sample.
+This repository includes the reviewed Russian processed datasets, the approved English analytical dataset, code, SQL scripts, 46 analytical CSV snapshots, documentation, QA outputs, and a 500-record sample.
 
 The original source PDFs and full raw extracted text are not included here unless copyright, access, provenance, and ethical considerations permit publication.
 

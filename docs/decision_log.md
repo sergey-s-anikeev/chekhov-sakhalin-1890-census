@@ -378,3 +378,15 @@
 - Publication recommendation: Use purpose-specific aggregate sources for the initial public dashboard. The names-free practice file retains source-linkable identifiers and is not anonymous. Public release scope and external publication conditions remain to be verified; this entry does not record approval to publish.
 - Future names analysis: Use reviewed canonical first_name components with reviewed English labels; publish name-frequency aggregates separately. Label mean-age/modal-name/literacy profiles as statistical summaries, not reconstructed individuals. No new first-name mapping or name database is created at this stage.
 - Evidence: `docs/tableau_preparation.md`; `tableau/practice/`; `outputs/qa/tableau_preflight_20261004/`.
+
+## Decision 40 — Children aged 0–15
+
+- Date: 2026-10-12. Approved explicitly by the project owner.
+- Definition: The Sakhalin children's analytical block includes recorded completed ages 0–15 inclusive (`age BETWEEN 0 AND 15`, equivalent to `age < 16` for valid nonnegative ages). Apply this filter consistently to all outputs within that block.
+- Historical basis: Chekhov's *Sakhalin Island*, Chapter XVII, explicitly includes adolescents who turned 15 in 1890 in his children's count. This is a source-informed analytical definition, not a claim of universal imperial legal adulthood at 16. Source: https://ru.wikisource.org/wiki/Остров_Сахалин_(Чехов)/Глава_17 . Dataset totals are not expected to reproduce Chekhov's published total because source coverage differs.
+- Missing and status rules: Preserve recorded age zero; exclude unknown ages from age-defined groups and report them separately. Do not infer age from `Child of ...` legal status or household roles.
+- SQL changes: Correct the child-age distribution from 0–17 to 0–15 and child-sex distribution from 0–16 to 0–15 in `sql/04_analysis_queries.sql`. Provide both corrected queries and a validation query in `sql/05_children_0_15_queries.sql`.
+- Impact: Child-age output excludes 43 age-16 and 35 age-17 records (78 total); child-sex output excludes the same 43 age-16 records. Both outputs now cover 1,467 children: 726 female and 741 male. Person-level values and canonical datasets do not change.
+- Existing 16+ literacy and marriage filters remain unchanged; use the label Residents aged 16+ rather than implying legal adulthood.
+- Export policy: Preserve earlier CSV snapshots. Initial proposed filenames used the suffix `20261012`. Registration update on 2026-10-12: the supplied files are `children_age_0_15_10122026.csv` and `children_by_sex_0_15_10122026.csv`; retain those exact names. Both saved outputs match the corrected queries. MySQL execution logs were not inspected; Tableau validation remains pending.
+- QA: `outputs/qa/children_0_15_20261012/` records exact affected IDs, aggregate before/after differences, query equivalence, and source/script hashes. Local SQLite checks are not live MySQL execution.

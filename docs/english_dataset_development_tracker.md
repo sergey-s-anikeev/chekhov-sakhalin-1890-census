@@ -394,6 +394,9 @@ warnings; the validation result set matched all expected totals and showed
 - [x] Prepare a separate local practice CSV without full_name and verify all 7,446 retained records and values.
 - [x] Audit historical snapshots against current analytical logic and document variants and excluded legacy files; see `outputs/qa/tableau_preflight_20261004/`.
 - [x] Refresh pre-import checks on 2026-10-12: 59 assertions passed; exact demographic, missing-value, household, subtotal, and cohort-denominator benchmarks are in `outputs/qa/tableau_preflight_20261012/`.
+- [x] Record Decision 40, Children aged 0–15; correct both child queries and verify 1,467 children locally (`outputs/qa/children_0_15_20261012/`). This supersedes the earlier child-scope checks, not the historical evidence.
+- [x] Register and reconcile both supplied 0–15 CSV exports with the corrected SQL: `children_age_0_15_10122026.csv` and `children_by_sex_0_15_10122026.csv`; see `outputs/qa/tableau_preflight_20261012_csv_register/`. This verifies saved results, not MySQL execution logs.
+- [ ] Validate the registered children’s exports in Tableau.
 - [ ] Validate filters and summary counts against SQL and CSV QA outputs.
 - [ ] Build dashboards only after source totals reconcile.
 
