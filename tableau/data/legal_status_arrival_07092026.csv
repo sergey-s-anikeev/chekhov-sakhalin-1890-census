@@ -1,0 +1,155 @@
+arrival_year,legal_status,people,cohort_people,cohort_share_pct
+1865,"Exile settler",2,2,100.0
+1866,"Exile settler",2,2,100.0
+1867,"Exile settler",2,3,66.7
+1867,"Exile peasant",1,3,33.3
+1868,"Exile settler",2,3,66.7
+1868,"Free-status person",1,3,33.3
+1869,"Exile settler",33,47,70.2
+1869,"Exile peasant",9,47,19.1
+1869,"Free-status person",4,47,8.5
+1869,Peasant,1,47,2.1
+1870,"Exile settler",25,32,78.1
+1870,"Exile peasant",4,32,12.5
+1870,"Free-status person",2,32,6.3
+1870,Peasant,1,32,3.1
+1871,"Exile settler",8,9,88.9
+1871,"Free-status person",1,9,11.1
+1872,"Exile settler",9,14,64.3
+1872,"Penal convict",2,14,14.3
+1872,"Exile peasant",1,14,7.1
+1872,Peasant,1,14,7.1
+1872,"Retired first sergeant",1,14,7.1
+1873,"Exile settler",8,11,72.7
+1873,"Exile peasant",1,11,9.1
+1873,"Penal convict",1,11,9.1
+1873,"Reserve private",1,11,9.1
+1874,"Exile settler",14,27,51.9
+1874,"Exile peasant",8,27,29.6
+1874,"Free-status person",2,27,7.4
+1874,"Penal convict",2,27,7.4
+1874,"Child of exile peasant",1,27,3.7
+1875,"Exile settler",87,145,60.0
+1875,"Exile peasant",36,145,24.8
+1875,"Free-status person",16,145,11.0
+1875,"Penal convict",4,145,2.8
+1875,"Child of exile settler",1,145,0.7
+1875,Peasant,1,145,0.7
+1876,"Exile settler",96,175,54.9
+1876,"Exile peasant",40,175,22.9
+1876,"Free-status person",29,175,16.6
+1876,"Penal convict",6,175,3.4
+1876,"Child of exile settler",2,175,1.1
+1876,"Child of exile peasant",1,175,0.6
+1876,"Retired non-commissioned officer",1,175,0.6
+1877,"Exile settler",50,95,52.6
+1877,"Free-status person",21,95,22.1
+1877,"Exile peasant",17,95,17.9
+1877,"Penal convict",6,95,6.3
+1877,Peasant,1,95,1.1
+1878,"Exile settler",74,120,61.7
+1878,"Free-status person",22,120,18.3
+1878,"Exile peasant",12,120,10.0
+1878,"Penal convict",7,120,5.8
+1878,"Reserve private",2,120,1.7
+1878,NULL,1,120,0.8
+1878,"Child of exile peasant",1,120,0.8
+1878,"Reserve corporal",1,120,0.8
+1879,"Exile settler",242,326,74.2
+1879,"Exile peasant",48,326,14.7
+1879,"Free-status person",16,326,4.9
+1879,"Penal convict",14,326,4.3
+1879,Peasant,3,326,0.9
+1879,"Child of exile settler",2,326,0.6
+1879,"Child of exile peasant",1,326,0.3
+1880,"Exile settler",194,270,71.9
+1880,"Free-status person",31,270,11.5
+1880,"Exile peasant",23,270,8.5
+1880,"Penal convict",12,270,4.4
+1880,"Reserve non-commissioned officer",2,270,0.7
+1880,"Reserve private",2,270,0.7
+1880,"Child of penal convict",1,270,0.4
+1880,"Joint householder",1,270,0.4
+1880,Peasant,1,270,0.4
+1880,"Retired first sergeant",1,270,0.4
+1880,"Retired private soldier",1,270,0.4
+1880,"Wife of private soldier",1,270,0.4
+1881,"Exile settler",159,203,78.3
+1881,"Exile peasant",19,203,9.4
+1881,"Penal convict",14,203,6.9
+1881,"Free-status person",6,203,3.0
+1881,Peasant,2,203,1.0
+1881,NULL,1,203,0.5
+1881,"Child of exile peasant",1,203,0.5
+1881,"Reserve private",1,203,0.5
+1882,"Exile settler",239,320,74.7
+1882,"Exile peasant",49,320,15.3
+1882,"Penal convict",18,320,5.6
+1882,"Free-status person",9,320,2.8
+1882,Peasant,3,320,0.9
+1882,"Child of exile settler",1,320,0.3
+1882,"Child of penal convict",1,320,0.3
+1883,"Exile settler",293,429,68.3
+1883,"Free-status person",69,429,16.1
+1883,"Penal convict",49,429,11.4
+1883,"Child of exile settler",8,429,1.9
+1883,"Exile peasant",6,429,1.4
+1883,NULL,2,429,0.5
+1883,"Reserve private",2,429,0.5
+1884,"Exile settler",349,548,63.7
+1884,"Penal convict",120,548,21.9
+1884,"Free-status person",60,548,10.9
+1884,"Child of exile settler",10,548,1.8
+1884,"Reserve private",4,548,0.7
+1884,"Child of penal convict",2,548,0.4
+1884,"Exile peasant",1,548,0.2
+1884,"Reserve non-commissioned officer",1,548,0.2
+1884,"Retired private soldier",1,548,0.2
+1885,"Exile settler",301,474,63.5
+1885,"Penal convict",121,474,25.5
+1885,"Free-status person",44,474,9.3
+1885,"Child of exile peasant",2,474,0.4
+1885,"Child of penal convict",2,474,0.4
+1885,"Child of exile settler",1,474,0.2
+1885,"Exile peasant",1,474,0.2
+1885,"Reserve private",1,474,0.2
+1885,"Retired private soldier",1,474,0.2
+1886,"Exile settler",229,489,46.8
+1886,"Penal convict",185,489,37.8
+1886,"Free-status person",64,489,13.1
+1886,"Child of exile settler",2,489,0.4
+1886,"Private soldier",2,489,0.4
+1886,"Child of penal convict",1,489,0.2
+1886,"Exile peasant",1,489,0.2
+1886,"Reserve non-commissioned officer",1,489,0.2
+1886,"Retired private soldier",1,489,0.2
+1886,Townsman,1,489,0.2
+1886,"Wife of court councillor",1,489,0.2
+1886,"Wife of private soldier",1,489,0.2
+1887,"Penal convict",233,464,50.2
+1887,"Free-status person",114,464,24.6
+1887,"Exile settler",110,464,23.7
+1887,"Child of exile settler",2,464,0.4
+1887,"Child of penal convict",2,464,0.4
+1887,NULL,1,464,0.2
+1887,"Reserve non-commissioned officer",1,464,0.2
+1887,"Retired private soldier",1,464,0.2
+1888,"Penal convict",170,264,64.4
+1888,"Free-status person",63,264,23.9
+1888,"Exile settler",27,264,10.2
+1888,"Administrative exile",3,264,1.1
+1888,"Private soldier",1,264,0.4
+1889,"Penal convict",216,336,64.3
+1889,"Free-status person",106,336,31.5
+1889,"Exile settler",7,336,2.1
+1889,"Administrative exile",1,336,0.3
+1889,"Exile peasant",1,336,0.3
+1889,Nobleman,1,336,0.3
+1889,"Reserve non-commissioned officer",1,336,0.3
+1889,"Reserve private",1,336,0.3
+1889,"Retired non-commissioned officer",1,336,0.3
+1889,Townsman,1,336,0.3
+1890,"Penal convict",11,18,61.1
+1890,"Free-status person",4,18,22.2
+1890,"Exile settler",2,18,11.1
+1890,"Retired non-commissioned officer",1,18,5.6

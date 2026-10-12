@@ -4,7 +4,7 @@
 
 Implemented on 2026-08-09 for `data/analytical/sakhalin_1890_en_v1.csv`.
 Canonical Russian v5 remains authoritative and unchanged. The current English
-candidate uses the owner-approved one-record Russian staged correction at
+release, approved under Decision 38 on 2026-08-09, uses the owner-approved one-record Russian staged correction at
 `data/staging/archive_code_p000107_20260809/`.
 
 | Order | English field | Canonical source | Transformation |

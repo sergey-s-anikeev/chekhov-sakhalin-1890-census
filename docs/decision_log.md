@@ -367,3 +367,14 @@
 - Static QA: All 12 package controls passed, including schema order, character set, keys, NULL and Boolean conversion, validation coverage, analysis-query coverage, and documentation.
 - Runtime reconciliation: The user's MySQL Workbench connection successfully loaded 7,446 rows into `sakhalin_1890_en`, with zero skipped records and zero warnings. Validation matched the expected CSV QA totals: 7,446 records, 2,796 populated household groups, correct NULL/Boolean totals, 7,223 RGB archive codes, 222 RGALI codes, 1 DMCh code, and zero blank archive codes. All displayed validation controls returned `PASS`; Item 9 is complete.
 - Deliverables: `sql/01_create_english_dataset.sql`, `sql/02_load_english_dataset.sql`, `sql/03_validate_english_dataset.sql`, `sql/04_analysis_queries.sql`, `docs/mysql_english_dataset_import.md`, and `outputs/qa/mysql_package_20260809/mysql_package_static_qa_20260809.json`.
+
+## Decision 39 — Local Tableau preparation and publication guidance
+
+- Date: 2026-10-04.
+- Owner request: Resolve visualization export traps, update documentation and completed release items, and advise on omitting names from Tableau files while preserving future name research.
+- Implementation: Create a separate local practice derivative of approved English v1 with full_name omitted from all 7,446 records (P000001–P007446). Preserve all 22 retained fields, values, identifiers, and row order. The English master, Russian canonical files, and 44 historical snapshots remain unchanged.
+- QA: Source hash matches Decision 38; zero retained-value differences. Snapshot reconciliation uses SQLite replay of current SQL with documented compatibility functions: 40 match current queries, two match documented variants, and two legacy files are excluded from recommended starter sources. No new live MySQL execution or Tableau import is claimed.
+- Documentation: Reconcile completed English release tasks using Decision 38, the QA package, and local commit abaa760. Add source specification, denominator and filter rules, English field definitions and omissions, updated limitations, and release notes.
+- Publication recommendation: Use purpose-specific aggregate sources for the initial public dashboard. The names-free practice file retains source-linkable identifiers and is not anonymous. Public release scope and external publication conditions remain to be verified; this entry does not record approval to publish.
+- Future names analysis: Use reviewed canonical first_name components with reviewed English labels; publish name-frequency aggregates separately. Label mean-age/modal-name/literacy profiles as statistical summaries, not reconstructed individuals. No new first-name mapping or name database is created at this stage.
+- Evidence: `docs/tableau_preparation.md`; `tableau/practice/`; `outputs/qa/tableau_preflight_20261004/`.

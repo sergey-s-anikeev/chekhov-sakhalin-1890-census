@@ -1,0 +1,61 @@
+cohort_start,arrival_cohort,legal_status,people,allowance_yes,allowance_no,allowance_not_recorded,allowance_pct_all,allowance_pct_recorded
+1865,1865-1869,"Exile settler",41,1,40,0,2.4,2.4
+1865,1865-1869,"Exile peasant",10,0,10,0,0.0,0.0
+1865,1865-1869,"Free-status person",5,0,5,0,0.0,0.0
+1865,1865-1869,Peasant,1,0,1,0,0.0,0.0
+1870,1870-1874,"Exile settler",64,7,55,2,10.9,11.3
+1870,1870-1874,"Exile peasant",14,0,14,0,0.0,0.0
+1870,1870-1874,"Free-status person",5,0,5,0,0.0,0.0
+1870,1870-1874,"Penal convict",5,5,0,0,100.0,100.0
+1870,1870-1874,Peasant,2,0,2,0,0.0,0.0
+1870,1870-1874,"Child of exile peasant",1,0,1,0,0.0,0.0
+1870,1870-1874,"Reserve private",1,1,0,0,100.0,100.0
+1870,1870-1874,"Retired first sergeant",1,0,1,0,0.0,0.0
+1875,1875-1879,"Exile settler",549,37,503,9,6.7,6.9
+1875,1875-1879,"Exile peasant",153,3,148,2,2.0,2.0
+1875,1875-1879,"Free-status person",104,1,101,2,1.0,1.0
+1875,1875-1879,"Penal convict",37,36,1,0,97.3,97.3
+1875,1875-1879,"Child of exile settler",5,2,3,0,40.0,40.0
+1875,1875-1879,Peasant,5,0,5,0,0.0,0.0
+1875,1875-1879,"Child of exile peasant",3,0,3,0,0.0,0.0
+1875,1875-1879,"Reserve private",2,1,1,0,50.0,50.0
+1875,1875-1879,NULL,1,0,1,0,0.0,0.0
+1875,1875-1879,"Reserve corporal",1,1,0,0,100.0,100.0
+1875,1875-1879,"Retired non-commissioned officer",1,1,0,0,100.0,100.0
+1880,1880-1884,"Exile settler",1234,159,1054,21,12.9,13.1
+1880,1880-1884,"Penal convict",213,208,3,2,97.7,98.6
+1880,1880-1884,"Free-status person",175,6,168,1,3.4,3.4
+1880,1880-1884,"Exile peasant",98,2,95,1,2.0,2.1
+1880,1880-1884,"Child of exile settler",19,5,14,0,26.3,26.3
+1880,1880-1884,"Reserve private",9,7,0,2,77.8,100.0
+1880,1880-1884,Peasant,6,0,6,0,0.0,0.0
+1880,1880-1884,"Child of penal convict",4,2,2,0,50.0,50.0
+1880,1880-1884,NULL,3,0,3,0,0.0,0.0
+1880,1880-1884,"Reserve non-commissioned officer",3,1,2,0,33.3,33.3
+1880,1880-1884,"Retired private soldier",2,1,1,0,50.0,50.0
+1880,1880-1884,"Child of exile peasant",1,0,1,0,0.0,0.0
+1880,1880-1884,"Joint householder",1,1,0,0,100.0,100.0
+1880,1880-1884,"Retired first sergeant",1,0,1,0,0.0,0.0
+1880,1880-1884,"Wife of private soldier",1,0,1,0,0.0,0.0
+1885,1885-1889,"Penal convict",925,907,15,3,98.1,98.4
+1885,1885-1889,"Exile settler",674,320,345,9,47.5,48.1
+1885,1885-1889,"Free-status person",391,42,336,13,10.7,11.1
+1885,1885-1889,"Child of exile settler",5,2,3,0,40.0,40.0
+1885,1885-1889,"Child of penal convict",5,5,0,0,100.0,100.0
+1885,1885-1889,"Administrative exile",4,4,0,0,100.0,100.0
+1885,1885-1889,"Exile peasant",3,0,3,0,0.0,0.0
+1885,1885-1889,"Private soldier",3,2,0,1,66.7,100.0
+1885,1885-1889,"Reserve non-commissioned officer",3,2,1,0,66.7,66.7
+1885,1885-1889,"Retired private soldier",3,3,0,0,100.0,100.0
+1885,1885-1889,"Child of exile peasant",2,0,2,0,0.0,0.0
+1885,1885-1889,"Reserve private",2,1,0,1,50.0,100.0
+1885,1885-1889,Townsman,2,0,2,0,0.0,0.0
+1885,1885-1889,NULL,1,1,0,0,100.0,100.0
+1885,1885-1889,Nobleman,1,0,1,0,0.0,0.0
+1885,1885-1889,"Retired non-commissioned officer",1,1,0,0,100.0,100.0
+1885,1885-1889,"Wife of court councillor",1,0,1,0,0.0,0.0
+1885,1885-1889,"Wife of private soldier",1,0,0,1,0.0,NULL
+1890,1890-1894,"Penal convict",11,11,0,0,100.0,100.0
+1890,1890-1894,"Free-status person",4,0,4,0,0.0,0.0
+1890,1890-1894,"Exile settler",2,1,1,0,50.0,50.0
+1890,1890-1894,"Retired non-commissioned officer",1,0,1,0,0.0,0.0

@@ -1,0 +1,52 @@
+district,settlement,people,distinct_origins,recorded_origin_people,origin_not_recorded,origin_completion_pct,dominant_origin,dominant_origin_people,dominant_origin_pct
+"Alexandrovsky District","Alexandrovsky Post",1338,87,1291,47,96.5,"On Sakhalin",201,15.6
+"Tymovsky District",Rykovskoe,1266,83,1229,37,97.1,"On Sakhalin",306,24.9
+"Tymovsky District",Derbinskoe,632,67,478,154,75.6,"On Sakhalin",111,23.2
+"Tymovsky District",Andree-Ivanovskoe,364,66,311,53,85.4,"On Sakhalin",53,17.0
+"Alexandrovsky District",Novo-Mikhaylovskoe,446,65,429,17,96.2,"On Sakhalin",98,22.8
+"Alexandrovsky District",Korsakovskoe,260,59,251,9,96.5,"On Sakhalin",65,25.9
+"Tymovsky District",Palevo,283,57,222,61,78.4,"On Sakhalin",24,10.8
+"Alexandrovsky District","Doue Post",274,56,234,40,85.4,"On Sakhalin",42,17.9
+"Tymovsky District","Verkhniy Armudan",175,54,169,6,96.6,"On Sakhalin",15,8.9
+"Tymovsky District",Malo-Tymovo,177,47,168,9,94.9,"On Sakhalin",45,26.8
+"Tymovsky District","Nizhniy Armudan",94,46,89,5,94.7,"On Sakhalin",8,9.0
+"Korsakovsky District","Korsakovsky Post",148,44,141,7,95.3,"On Sakhalin",20,14.2
+"Korsakovsky District",Vladimirovka,89,43,87,2,97.8,"On Sakhalin",15,17.2
+"Korsakovsky District","Popovskiye Yurts",110,42,107,3,97.3,"Poltava Governorate",13,12.1
+"Korsakovsky District",Berezniki,159,41,157,2,98.7,"Novgorod Governorate",12,7.6
+"Korsakovsky District",Poro-an-Tomari,67,39,67,0,100.0,"On Sakhalin",8,11.9
+"Alexandrovsky District",Aleksandrovskoe,95,37,90,5,94.7,"On Sakhalin",23,25.6
+"Korsakovsky District",Lugovoe,74,37,73,1,98.6,"Kursk Governorate",6,8.2
+"Alexandrovsky District","Krasnyy Yar",90,36,74,16,82.2,"On Sakhalin",11,14.9
+"Korsakovsky District",Kresty,89,36,89,0,100.0,"On Sakhalin",17,19.1
+"Korsakovsky District","Bolshoe Takoe",68,34,67,1,98.5,"On Sakhalin",8,11.9
+"Alexandrovsky District","Arkovo I",104,32,98,6,94.2,"On Sakhalin",29,29.6
+"Korsakovsky District",Siyantsy,71,30,69,2,97.2,"On Sakhalin",10,14.5
+"Alexandrovsky District","Arkovo II",86,28,84,2,97.7,"On Sakhalin",24,28.6
+"Korsakovsky District",Solovevka,69,28,68,1,98.6,"On Sakhalin",26,38.2
+"Korsakovsky District",Khomutovka,38,27,37,1,97.4,"Chernigov Governorate",3,8.1
+"Korsakovsky District","Maloe Takoe",48,26,46,2,95.8,"Grodno Governorate",5,10.9
+"Korsakovsky District",Dubki,41,25,41,0,100.0,"Courland Governorate",5,12.2
+"Korsakovsky District",Lyutoga,53,22,42,11,79.2,"Chernigov Governorate",5,11.9
+"Korsakovsky District","Bolshaya Elan",40,22,40,0,100.0,"Kharkov Governorate",4,10.0
+"Korsakovsky District",Mauka,38,21,27,11,71.1,"Kiev Governorate",3,11.1
+"Tymovsky District",Uskovo,68,18,37,31,54.4,"Samara Governorate",6,16.2
+"Korsakovsky District","Tretya Pad",30,15,30,0,100.0,"On Sakhalin",9,30.0
+"Korsakovsky District",Mitsulka,25,14,25,0,100.0,"On Sakhalin",9,36.0
+"Korsakovsky District","Golyy Mys",24,13,22,2,91.7,"Kiev Governorate",3,13.6
+"Korsakovsky District",Listvenichnoe,15,12,14,1,93.3,"Kiev Governorate",3,21.4
+"Alexandrovsky District","Arkovo III",35,11,35,0,100.0,"On Sakhalin",15,42.9
+"Alexandrovsky District","Arkovsky Way Station",11,10,11,0,100.0,"Don Host Oblast",2,18.2
+"Tymovsky District",Voskresenskoe,183,9,9,174,4.9,"Kostroma Governorate",1,11.1
+"Korsakovsky District","Vtoraya Pad",10,8,10,0,100.0,"Kharkov Governorate",2,20.0
+"Korsakovsky District",Siska,7,5,6,1,85.7,"Pskov Governorate",2,33.3
+"Korsakovsky District","Pervaya Pad",6,5,6,0,100.0,"Kostroma Governorate",2,33.3
+"Alexandrovsky District","Arkovsky Cordon",4,4,4,0,100.0,"Don Host Oblast",1,25.0
+"Alexandrovsky District",Butakovo,24,2,5,19,20.8,"On Sakhalin",4,80.0
+"Alexandrovsky District",Mgachi,35,1,6,29,17.1,"On Sakhalin",6,100.0
+"Alexandrovsky District",Khoe,31,1,7,24,22.6,"On Sakhalin",7,100.0
+"Alexandrovsky District",Viakhty,17,1,2,15,11.8,"On Sakhalin",2,100.0
+"Alexandrovsky District",Tangi,15,1,2,13,13.3,"On Sakhalin",2,100.0
+"Alexandrovsky District",Trambaus,6,1,1,5,16.7,"On Sakhalin",1,100.0
+"Korsakovsky District","Tarayskoye Winter Settlement",1,1,1,0,100.0,"Oryol Governorate",1,100.0
+"Alexandrovsky District",Vangi,13,0,0,13,0.0,NULL,NULL,NULL

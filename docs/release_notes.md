@@ -1,5 +1,19 @@
 # Parser Improvements After Full-District Validation
 
+## Tableau pre-import follow-up — 2026-10-12
+
+Refreshed source and snapshot reconciliation in a separate dated QA package, preserving the 2026-10-04 evidence. All 59 preparation assertions passed. Added exact import benchmarks, explicit starter-source selection, and numerical examples of subtotal, percentage-denominator, and age-scope errors. Reconfirmed the 22-column practice file has zero retained-cell differences from English v1. The 44 snapshot results remain 40 current matches, two documented variants, and two legacy files excluded from starter use. No person values, canonical releases, or historical exports changed. Tableau application tests and external publication verification remain pending.
+
+## Tableau preparation and documentation reconciliation — 2026-10-04
+
+Added a separate 7,446-row, 22-column local practice derivative of English v1, omitting only full_name. All retained values and row order reconcile exactly. The approved source hash is unchanged. Preparation guidance defines dimensions, missing values, denominators, household grouping, age scopes, historical snapshot selection, and public aggregate recommendations. Preflight evidence is in `outputs/qa/tableau_preflight_20261004/`.
+
+Reconciled the development checklist with existing English approval and MySQL QA evidence, documented the English dictionary and excluded canonical fields, and replaced obsolete sample-stage limitations. Tableau application checks and external publication verification remain pending. Original releases and historical exports remain unchanged.
+
+## Approved English analytical release v1 — 2026-08-09
+
+Decision 38 approved `data/analytical/sakhalin_1890_en_v1.csv`: 7,446 rows and 23 fields, with approved transliteration and category/geographic mappings. SHA-256: `1b77d6330855763c54c32f21d247dc44471a69590db4fc00925c4e22eb8ac508`. Field reconciliation found zero mismatches; the MySQL import loaded all records without warnings and passed documented controls. Russian canonical v5 remains authoritative. See `outputs/qa/english_dataset_quality_review_20260809/english_dataset_quality_report_20260809.json` and `docs/mysql_english_dataset_import.md`.
+
 ## Canonical reviewed-name release v5 — 2026-07-31
 
 Release `v5_20260731` promotes the completed post-v4 review sequence into a new immutable canonical version. It retains 7,446 records and established identifier order, expands the schema from 36 to 50 columns, and preserves all prior analytical fields.
@@ -18,7 +32,7 @@ The release includes approved age and raw-recognition corrections, whole-year mo
 
 Integrated QA passed record counts, schema, district ordering and concatenation, identifier uniqueness and formatting, numeric formats and ranges, age/month consistency, controlled values, Sentence case, Item 3 legal-status dependency synchronization, gender consistency, complete diffs, and SHA-256 hashing. Evidence is stored in `outputs/qa/canonical_v4_20260717/`.
 
-Post-v4 status (2026-07-18): Item 24 comments review is complete in a staged candidate with 56 comment-only changes. Item 25 occupation-semantic grouping was evaluated and deferred without changes. No v5 release has been authorized; v4 remains current canonical.
+Historical post-v4 status (2026-07-18, superseded by the v5 release above): Item 24 comments review was complete in a staged candidate with 56 comment-only changes. Item 25 occupation-semantic grouping was evaluated and deferred without changes. At that date no v5 release had been authorized and v4 remained canonical.
 
 ---
 

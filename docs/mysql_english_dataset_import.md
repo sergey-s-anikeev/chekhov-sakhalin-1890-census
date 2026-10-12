@@ -8,7 +8,7 @@
 - the MySQL client started with `--local-infile=1`;
 - UTF-8 (`utf8mb4`) throughout.
 
-The candidate CSV is `data/analytical/sakhalin_1890_en_v1.csv`. Its approved
+The approved English CSV is `data/analytical/sakhalin_1890_en_v1.csv`. Its approved
 SHA-256 is
 `1b77d6330855763c54c32f21d247dc44471a69590db4fc00925c4e22eb8ac508`.
 

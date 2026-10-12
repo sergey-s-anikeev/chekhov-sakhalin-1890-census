@@ -384,33 +384,41 @@ Boolean values. Workbench loaded 7,446 rows with zero skipped records and zero
 warnings; the validation result set matched all expected totals and showed
 `PASS` for every control.
 
-## 10. Tableau Readiness — `[ ]` Pending
+## 10. Tableau Readiness — `[~]` Preparation complete; application validation pending
 
 - [ ] Test direct CSV import into Tableau.
 - [ ] Verify field types, aliases, geographic roles, and default aggregations.
 - [ ] Confirm that identifiers are treated as dimensions rather than measures.
 - [ ] Confirm that age, year, and Boolean fields behave correctly.
-- [ ] Create a Tableau data-source specification.
+- [x] Create a Tableau data-source specification: `docs/tableau_preparation.md` (2026-10-04).
+- [x] Prepare a separate local practice CSV without full_name and verify all 7,446 retained records and values.
+- [x] Audit historical snapshots against current analytical logic and document variants and excluded legacy files; see `outputs/qa/tableau_preflight_20261004/`.
+- [x] Refresh pre-import checks on 2026-10-12: 59 assertions passed; exact demographic, missing-value, household, subtotal, and cohort-denominator benchmarks are in `outputs/qa/tableau_preflight_20261012/`.
 - [ ] Validate filters and summary counts against SQL and CSV QA outputs.
 - [ ] Build dashboards only after source totals reconcile.
 
-## 11. Documentation and Release — `[ ]` Pending
+## 11. Documentation and Release — `[~]` Approved analytical release; publication verification pending
 
-- [ ] Update the data dictionary for the approved compact English schema.
-- [ ] Document translation and transliteration standards and limitations.
-- [ ] Document every excluded canonical field and the reason for exclusion.
-- [ ] Add MySQL and Tableau usage instructions.
-- [ ] Record known historical-language limitations and non-equivalent terms.
-- [ ] Create release notes and a machine-readable QA report.
-- [ ] Obtain owner approval before designating the English analytical dataset as
+- [x] Update the data dictionary for the approved compact English schema (2026-10-04).
+- [x] Document translation and transliteration standards and limitations (name, legal-status, geographic, and value specifications).
+- [x] Document every excluded canonical field and the reason for exclusion (`docs/data_dictionary.md`).
+- [x] Add MySQL and Tableau usage instructions (`docs/mysql_english_dataset_import.md`; `docs/tableau_preparation.md`).
+- [x] Record known historical-language limitations and non-equivalent terms (`docs/limitations.md`; translation specifications).
+- [x] Create release notes and a machine-readable QA report (`docs/release_notes.md`; `outputs/qa/english_dataset_quality_review_20260809/english_dataset_quality_report_20260809.json`).
+- [x] Obtain owner approval before designating the English analytical dataset as
   the current analytical release.
-- [ ] Commit and upload the approved analytical release without changing the
-  canonical Russian designation.
+- [x] Commit the approved analytical release without changing the canonical Russian designation (local Git commit `abaa760`).
+- [ ] Verify external upload/publication status and source reuse conditions; local commit evidence does not establish remote visibility or publication clearance.
+
+Reconciled 2026-10-04 against Decisions 35–38 and the existing QA package. Historical progress-log entries below retain the status recorded on their original dates. Future Russian-version reviews remain open. No Tableau runtime checks or external publication have been marked complete by this documentation update.
+
+Rechecked 2026-10-12: documentation/release checkmarks remain supported. The outstanding Item 10 checks require Tableau itself; the outstanding Item 11 check concerns external publication evidence. Neither is a missing CSV-preparation task. Current edits and preparation outputs are local and uncommitted; the completed commit item above refers specifically to the previously approved English release.
 
 ## Progress Log
 
 | Date | Stage | Status | Summary | Evidence |
 |:--|:--|:--|:--|:--|
+| 2026-10-12 | Tableau pre-import follow-up | Preparation checks passed; application checks pending | Reconciled all 44 snapshots, retained two legacy exclusions, and passed 59 assertions covering counts, missingness, household grouping, subtotals, and cohort denominators. Preserved all source records and historical CSVs. | `outputs/qa/tableau_preflight_20261012/`; `docs/tableau_preparation.md` |
 | 2026-08-01 | English analytical-layer direction | Approved | Selected a compact English-only dataset for MySQL and Tableau while retaining canonical v5 as the authoritative Russian source. | `docs/decision_log.md`; `docs/language_translation_strategy.md` |
 | 2026-08-01 | Compact column selection | Pending owner review | Dataset generation is paused until the exact included and excluded columns are approved. | This tracker, Section 2 |
 | 2026-08-02 | Compact column review workbook | Ready for owner review | Profiled all 50 canonical fields and prepared recommendations, proposed English names, rationale, usage statistics, decision dropdowns, and a live completion summary. | `outputs/english_dataset_column_review_20260802/english_compact_column_review_20260802.xlsx` |

@@ -2,7 +2,7 @@
 
 Historical data project based on Anton Chekhov’s 1890 Sakhalin census records.
 
-The repository provides a reproducible person-level dataset and supporting code for demographic, settlement-level, legal-status, age, literacy, family-status, and migration-origin analysis using Python, SQL, and Tableau.
+The repository provides a reproducible person-level dataset, Python processing code, MySQL analysis, and CSV results prepared for Tableau visualization of population, settlements, legal status, age, literacy, family status, and migration origins.
 
 ## Purpose
 
@@ -12,7 +12,18 @@ Russian/Cyrillic source and normalized values remain authoritative. English docu
 
 ## Current Status
 
-The project has completed canonical release `v5_20260731`. It retains the validated v4 analytical data, incorporates the approved Item 24 comment corrections, and adds the fully reviewed name-component and provenance structure. Integrated release QA and manifest registration are complete.
+**SQL analysis and Tableau source preparation are complete. Tableau import validation and dashboard construction remain pending.** The historical SQL snapshots run through 2026-09-08; the names-free practice source was prepared on 2026-10-04 and rechecked with exact import benchmarks on 2026-10-12. See the [latest preparation report](outputs/qa/tableau_preflight_20261012/README.md).
+
+| Stage | Status | Result |
+|---|---|---|
+| Extraction, cleaning, and Russian canonical release | Complete | Reviewed `v5_20260731` release, integrated QA, and manifest registration |
+| English analytical dataset | Approved; QA complete | 7,446 records and 23 columns in `sakhalin_1890_en_v1.csv` |
+| MySQL import and validation | Complete | 7,446 loaded rows, zero skipped records or warnings, and all validation controls passed |
+| SQL analysis and visualization exports | Complete | Demographic and extended analytical queries; 44 dated CSV snapshots in `tableau/data/` |
+| Tableau source validation and dashboard | Pending | Import checks, charts, filters, and reconciliation to SQL totals |
+| Final findings and portfolio presentation | Pending | Analytical summary, dashboard screenshots, and final project narrative |
+
+The Russian canonical release `v5_20260731` retains the validated v4 analytical data, incorporates the approved Item 24 comment corrections, and adds the fully reviewed name-component and provenance structure.
 
 The current validated release contains:
 
@@ -30,6 +41,34 @@ The combined dataset is the exact row-wise concatenation of the three reviewed d
 `person_id` is assigned globally from `P000001` to `P007446`.
 
 `source_position_id` remains the stable source-navigation identifier.
+
+## English Dataset and SQL Analysis
+
+The approved [English analytical dataset](data/analytical/sakhalin_1890_en_v1.csv) is a separate 23-column analytical layer built from Russian canonical v5 plus documented, owner-approved staged corrections. Personal names are transliterated, and categories and places use approved English mappings. Field-level QA confirmed exact row-order reconciliation, unique identifiers, zero unmapped populated values, zero Cyrillic cells, and zero transformation mismatches.
+
+The MySQL workflow is documented in [the import guide](docs/mysql_english_dataset_import.md):
+
+1. [Create the analytical table](sql/01_create_english_dataset.sql).
+2. [Load the English CSV](sql/02_load_english_dataset.sql), converting empty nullable fields to SQL `NULL` and allowance values to `1`, `0`, or `NULL`.
+3. [Validate the loaded dataset](sql/03_validate_english_dataset.sql).
+4. [Run analytical queries](sql/04_analysis_queries.sql) and export the required results.
+
+Analysis covers population by district and settlement, age and sex, legal status, literacy, occupations, migration origins and arrival years, household sizes and lodgers, allowance, illness, and field completeness. Extended queries examine adult literacy by age band, allowance by legal status and arrival cohort, origin concentration and diversity, household status composition, recorded Sakhalin marriages, literacy by occupation, and origins in the Kingdom of Poland under historical boundaries.
+
+## Visualization Exports and Next Steps
+
+Start local practice with [`tableau/practice/sakhalin_1890_en_no_full_name_20261004.csv`](tableau/practice/sakhalin_1890_en_no_full_name_20261004.csv): all 7,446 people and 22 columns, omitting only full_name. It retains linkable identifiers and is not an anonymous public-release file. Use the [Tableau preparation guide](docs/tableau_preparation.md) for import types, denominators, household grouping, legacy-export selection, and aggregate-only public dashboard recommendations. The [preflight report](outputs/qa/tableau_preflight_20261004/README.md) records snapshot reconciliation and exact retained-value verification.
+
+The [analytical export inventory](tableau/data/README.md) describes all **44 CSV snapshots**, exported on 2026-08-22, 2026-08-28, 2026-09-01, 2026-09-07, and 2026-09-08. It records each file's row count, analytical scope, percentage denominators, and known differences from the current SQL. Some snapshots are earlier or manual query variants; two extended queries do not yet have corresponding CSV exports.
+
+The next steps are:
+
+1. Select the main analytical findings and the charts needed to explain them.
+2. Import the relevant CSVs into Tableau and verify field types, dimensions, missing values, aggregations, and totals against the saved results and SQL.
+3. Build the charts and dashboard, then validate filters and percentage denominators.
+4. Add dashboard screenshots, the final analytical findings, limitations, and a portfolio-ready project description.
+
+Tableau source validation remains pending in the [development tracker](docs/english_dataset_development_tracker.md). No Tableau workbook or packaged dashboard is currently present in this repository.
 
 ## GitHub Repository Workflow
 
@@ -95,6 +134,10 @@ These values must not be translated or altered in the canonical Russian datasets
 - [Decision Log](docs/decision_log.md)
 - [Canonical Manifest](docs/canonical_manifest.csv)
 - [English Dataset Development Tracker](docs/english_dataset_development_tracker.md)
+- [MySQL Import and Validation Guide](docs/mysql_english_dataset_import.md)
+- [English Dataset Field Lineage](docs/english_dataset_field_lineage.md)
+- [Analytical Export Inventory](tableau/data/README.md)
+- [Tableau Preparation and Publication](docs/tableau_preparation.md)
 - [Project Rules](PROJECT_RULES.md)
 
 ## QA Outputs
@@ -118,12 +161,13 @@ chekhov-sakhalin-1890-census/
 ├── README.md
 ├── PROJECT_RULES.md
 ├── data/
+│   ├── analytical/
+│   │   └── sakhalin_1890_en_v1.csv
 │   └── processed/
-│       ├── clean_alexandrovsky_ru.csv
-│       ├── clean_tymovsky_ru.csv
-│       ├── clean_korsakovsky_ru.csv
-│       ├── clean_sakhalin_1890_ru.csv
-│       └── clean_sample_500.csv
+│       ├── clean_alexandrovsky_ru_v5_20260731.csv
+│       ├── clean_tymovsky_ru_v5_20260731.csv
+│       ├── clean_korsakovsky_ru_v5_20260731.csv
+│       └── clean_sakhalin_1890_ru_v5_20260731.csv
 ├── docs/
 │   ├── SOW.md
 │   ├── source_note.md
@@ -144,15 +188,23 @@ chekhov-sakhalin-1890-census/
 │   └── qa/
 ├── scripts/
 ├── sql/
+│   ├── 01_create_english_dataset.sql
+│   ├── 02_load_english_dataset.sql
+│   ├── 03_validate_english_dataset.sql
+│   └── 04_analysis_queries.sql
 └── tableau/
+    └── data/
+        ├── README.md
+        └── <44 dated analytical CSV exports>
 ```
 
 ## Processing Layers
 
-The project distinguishes four information layers:
+The project distinguishes five information layers:
 
 - **Source data** preserves documentary evidence and extraction context and must remain immutable.
 - **Processed data** contains reviewed, normalized person-level records approved for the current release.
+- **Analytical data** contains the approved English person-level dataset, its MySQL representation, and derived CSV query snapshots for visualization.
 - **QA outputs** record structural checks, counts, identifier validation, and sequence validation for specific artifacts.
 - **Documentation** records methodology, field definitions, decisions, provenance, and release history.
 
@@ -183,9 +235,9 @@ Use an isolated working directory and copies of the canonical inputs.
 The documented merge inputs are:
 
 ```text
-data/processed/clean_alexandrovsky_ru.csv
-data/processed/clean_tymovsky_ru.csv
-data/processed/clean_korsakovsky_ru.csv
+data/processed/clean_alexandrovsky_ru_v5_20260731.csv
+data/processed/clean_tymovsky_ru_v5_20260731.csv
+data/processed/clean_korsakovsky_ru_v5_20260731.csv
 ```
 
 Run scripts only after reviewing their command-line arguments and the applicable project rules.
@@ -196,19 +248,21 @@ Direct outputs to a new staging directory, recalculate SHA-256 hashes, compare t
 
 The canonical data layer remains Russian.
 
-Later analytical layers may add:
+The completed English and SQL analytical layers provide:
 
 - transliterated personal names;
 - English translations of controlled categories;
 - SQL-ready analytical tables;
-- Tableau extracts and dashboards;
+- CSV snapshots prepared for Tableau visualization;
 - aggregate demographic and migration-origin outputs.
 
 Personal names are transliterated, not translated.
 
+Tableau dashboards and the final visual presentation are the next deliverables.
+
 ## Data Availability
 
-This repository includes the reviewed processed datasets, code, documentation, QA outputs, and a 500-record sample.
+This repository includes the reviewed Russian processed datasets, the approved English analytical dataset, code, SQL scripts, 44 analytical CSV snapshots, documentation, QA outputs, and a 500-record sample.
 
 The original source PDFs and full raw extracted text are not included here unless copyright, access, provenance, and ethical considerations permit publication.
 

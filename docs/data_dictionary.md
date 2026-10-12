@@ -20,6 +20,62 @@ The final release combines the Alexandrovsky, Tymovsky, and Korsakovsky district
 
 Individual person record.
 
+## Approved English analytical schema
+
+English v1 was approved on 2026-08-09 under Decision 38: 7,446 records, 23 columns. The local Tableau practice derivative dated 2026-10-04 omits only full_name, retaining 22 columns. See [field lineage](english_dataset_field_lineage.md), [types and null rules](english_dataset_value_null_specification.md), and [Tableau preparation](tableau_preparation.md).
+
+| Field | Meaning and analytical use |
+|---|---|
+| person_id | Unique global person key; count distinct for population. Linkable to named research data. |
+| source_position_id | Unique source-navigation key; text, not a measure. |
+| district | Approved English historical district label. |
+| settlement | Approved historical locality label; modern geocoding is not assumed. |
+| person_seq | Source person sequence within settlement; dimension, not population. |
+| household_id | Nullable text ID; only meaningful together with district and settlement. |
+| household_type | Recorded household/institution classification; restrict explicitly for private-household analyses. |
+| legal_status | Approved translation of normalized historical legal/social status. |
+| full_name | Approved transliteration of recorded name; preserved in English v1, omitted from the practice copy. |
+| sex | Reviewed recorded/derived sex category according to project methodology. |
+| family_status | Normalized recorded household role; a blank role is unknown. |
+| age | Completed years; zero is valid, blank is missing. |
+| age_months | Total completed months for infant/young-child analysis; some whole-year equivalents are derived under approved rules. |
+| religion | Recorded confession category; preserve historical terminology. |
+| origin_place | Reviewed historical place/status label; not an ethnicity or modern nationality variable. |
+| arrival_year | Recorded year of arrival, stored as integer; missing years stay missing. |
+| occupation | Normalized recorded occupation/category; compound labels remain intact and No occupation is meaningful. |
+| literacy | Recorded literacy category; Literate and Educated remain separate. |
+| marital_status | Normalized recorded marriage history; not always current marital status. |
+| living_alone_status | Nullable recorded text; blank does not mean FALSE. |
+| allowance_status | Nullable Boolean: TRUE, FALSE, or blank. |
+| illness | Normalized recorded illness label; blank does not establish absence of illness. |
+| archive_code | Transliterated archive reference; text and a direct source linkage. |
+
+## Canonical fields omitted from English v1
+
+The 27 fields below remain in Russian canonical v5. This documents the existing compact-schema selection rather than changing it. Approved source fields used under new English names are covered by the lineage table and are not counted as omissions.
+
+| Omitted canonical field(s) | Reason for keeping in the research layer |
+|---|---|
+| district_code | Technical geography code; the English district label is retained. |
+| settlement_order | Source ordering metadata; source_position_id and person_seq retain navigation context. |
+| page_number | Detailed source pagination; source_position_id and archive_code remain in English v1. |
+| household_details | Detailed source text; compact analysis retains household_id and household_type. |
+| legal_status | Detailed/source-like status; English uses legal_status_norm. |
+| name_alias | Alternate-name research; outside the single full_name compact field. |
+| sex_evidence | Derivation/audit evidence; English retains the reviewed sex value. |
+| family_status | Detailed/source-like role; English uses family_status_norm. |
+| origin_place | Detailed/source-like origin; English uses origin_place_norm. |
+| occupation | Detailed/source-like occupation; English uses occupation_norm. |
+| marriage_status | Detailed/source-like marriage entry; English uses marriage_status_norm. |
+| illness | Detailed/source-like illness; English uses illness_norm. |
+| comments | Free-text research and review context, outside the compact analytical scope. |
+| first_name, patronymic_name, last_name | Reviewed name components retained for future name research; English v1 has one full_name field. |
+| first_name_source, patronymic_source, last_name_source | Component-level provenance for name research and verification. |
+| parse_status, parse_confidence, parse_rule | Parsing audit metadata, not compact demographic dimensions. |
+| name_order_detected, naming_model | Name-structure metadata used by the research workflow. |
+| manual_review_reason | Review provenance retained in canonical records. |
+| patronymic_name_proposed, proposal_rule | Technical proposal-audit fields, outside the approved compact schema. |
+
 ---
 
 ## Final Field Structure

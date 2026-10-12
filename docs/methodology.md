@@ -38,15 +38,17 @@ If a person record begins on one printed page and continues onto the next, `page
 
 ## Processing Layers
 
-The project uses three data layers:
+The project uses the following data layers:
 
 1. Raw/interim extraction files that preserve source-like parsed fields.
 2. Clean Russian district files reviewed at district level.
 3. Final merged Russian master file with global person identifiers.
+4. Approved English v1 analytical dataset and its MySQL representation.
+5. Derived SQL snapshots and a separate names-free local Tableau practice file.
 
-Russian/Cyrillic source values remain the authoritative data layer. Translation, transliteration, and analytical grouping are intentionally deferred to later analytical layers.
+Russian/Cyrillic source values remain the authoritative data layer. English translation and transliteration were completed through owner-approved lookups in the separate analytical layer.
 
-Personal names are transliterated rather than translated. Analytical categories such as legal status, religion, literacy, family status, and origin place can later be translated through controlled reference tables.
+Personal names are transliterated rather than translated. Analytical categories use controlled reference tables. See `english_dataset_field_lineage.md` and `tableau_preparation.md` for lineage and visualization conventions.
 
 ## Raw-to-Final Conversion
 
@@ -342,7 +344,7 @@ The final QA validates:
 - no blank `name_raw`;
 - no settlement/post person-sequence gaps;
 - valid settlement-to-district mapping;
-- consistent 23-field schema;
+- version-specific schema: 50 columns in Russian canonical v5; 23 in approved English v1; 22 in the local names-free Tableau derivative;
 - two-digit `settlement_order`;
 - numeric `page_number`, `age`, and `arrival_year` where present;
 - `age` not greater than 100 where present;

@@ -42,13 +42,15 @@ Some origin-place values may remain unresolved and require manual review.
 
 ## Data Completeness Limitations
 
-The current workflow is being validated on an extraction sample before scaling to the full source.
+Full-district processing and review are complete for the project's 7,446 recorded people across Alexandrovsky, Tymovsky, and Korsakovsky. The approved Russian v5 and English v1 datasets supersede the earlier sample-validation stage.
 
-Until full extraction is complete, the dataset should not be interpreted as a complete population database.
+Completion of this extraction does not establish that the surviving source covers every person living on Sakhalin in 1890. Describe chart totals as people in the recorded dataset. Field omissions and uneven source coverage remain analytical limitations.
 
 ## Data Publication Limitations
 
-The full raw PDF and full person-level dataset are not published until copyright, access, and ethical considerations are reviewed.
+The repository contains reviewed person-level datasets, including names. Its current external visibility and the scope of previous publication review have not been independently verified here. The original source PDF remains excluded under the repository policy.
+
+Removing full_name alone does not anonymize the remaining records. Stable IDs, archive references, household membership, and rare attribute combinations can link to named sources. Prefer purpose-specific aggregates for the initial public Tableau dashboard; retain person-level files for local research and practice. See [Tableau preparation and publication](tableau_preparation.md).
 
 Public outputs should prioritize:
 
@@ -68,5 +70,5 @@ All cleaned categories are analytical standardizations and should remain traceab
 
 ## Current Project Limitation
 
-The extraction workflow has been designed, but it still needs validation on a 300–500 record sample before scaling to the full dataset.
+English v1 was approved under Decision 38 on 2026-08-09, and the documented MySQL import passed validation. CSV preparation and snapshot reconciliation are documented as of 2026-10-04. Actual Tableau import, interactive filter checks, dashboard validation, and the final public-release selection remain pending.
 
