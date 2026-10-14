@@ -384,7 +384,7 @@ Boolean values. Workbench loaded 7,446 rows with zero skipped records and zero
 warnings; the validation result set matched all expected totals and showed
 `PASS` for every control.
 
-## 10. Tableau Readiness — `[~]` Preparation complete; application validation pending
+## 10. Tableau Readiness — `[~]` First dashboard published; remaining validation in progress
 
 - [ ] Test direct CSV import into Tableau.
 - [ ] Verify field types, aliases, geographic roles, and default aggregations.
@@ -396,9 +396,21 @@ warnings; the validation result set matched all expected totals and showed
 - [x] Refresh pre-import checks on 2026-10-12: 59 assertions passed; exact demographic, missing-value, household, subtotal, and cohort-denominator benchmarks are in `outputs/qa/tableau_preflight_20261012/`.
 - [x] Record Decision 40, Children aged 0–15; correct both child queries and verify 1,467 children locally (`outputs/qa/children_0_15_20261012/`). This supersedes the earlier child-scope checks, not the historical evidence.
 - [x] Register and reconcile both supplied 0–15 CSV exports with the corrected SQL: `children_age_0_15_10122026.csv` and `children_by_sex_0_15_10122026.csv`; see `outputs/qa/tableau_preflight_20261012_csv_register/`. This verifies saved results, not MySQL execution logs.
-- [ ] Validate the registered children’s exports in Tableau.
-- [ ] Validate filters and summary counts against SQL and CSV QA outputs.
-- [ ] Build dashboards only after source totals reconcile.
+- [x] Review both published children’s dashboards and save six screenshots (owner report, 2026-10-14).
+- [x] Inspect the saved total, female and male screenshots locally.
+- [x] Correct summary-filter mismatches: literacy total must change to 274/262; age summary must follow selection or be explicitly labelled unfiltered. Confirmed in owner review and updated screenshots, 2026-10-14.
+- [x] Validate displayed children’s filters and summary counts against SQL/CSV benchmarks (updated screenshots, 2026-10-14).
+- [x] Build the first children’s age-and-sex dashboard (owner completion report; editor screenshot shows the expected totals).
+- [x] Record the owner-supplied public dashboard URL on 2026-10-13: [Sakhalin 1890 — Children aged 0–15](https://public.tableau.com/views/Sakhalin1890Childrenaged015/Dashboard1).
+- [x] Review published children’s dashboard layout and filter states (owner review and screenshots, 2026-10-14).
+- [ ] Independently inspect published workbook data-source connections.
+- [x] Prepare and locally validate the next children’s literacy SQL and authoring guide.
+- [x] Record Decision 42: filter literacy charts to ages 5–15 while preserving the 0–15 export and overall children’s definition.
+- [x] Set the literacy chart Age filter to 5–15 (owner report, 2026-10-13).
+- [x] Verify Age 5–15 applies to all related literacy sheets and reconcile the filtered total of 536 (274 female; 262 male). Confirmed in owner review and updated screenshots, 2026-10-14.
+- [x] Register the saved 75-row literacy CSV and reconcile it exactly with local SQL results (2026-10-13); live MySQL execution logs were not inspected.
+- [x] Record completion/publication of the literacy dashboard based on the owner-supplied URL (2026-10-13): [Recorded literacy among children aged 5–15](https://public.tableau.com/views/Recordedliteracyamongchildrenaged515/Dashboard1).
+- [x] Verify the published literacy dashboard’s layout, filters and percentage calculations. Confirmed in owner review and updated screenshots, 2026-10-14.
 
 ## 11. Documentation and Release — `[~]` Approved analytical release; publication verification pending
 
@@ -416,6 +428,16 @@ warnings; the validation result set matched all expected totals and showed
 Reconciled 2026-10-04 against Decisions 35–38 and the existing QA package. Historical progress-log entries below retain the status recorded on their original dates. Future Russian-version reviews remain open. No Tableau runtime checks or external publication have been marked complete by this documentation update.
 
 Rechecked 2026-10-12: documentation/release checkmarks remain supported. The outstanding Item 10 checks require Tableau itself; the outstanding Item 11 check concerns external publication evidence. Neither is a missing CSV-preparation task. Current edits and preparation outputs are local and uncommitted; the completed commit item above refers specifically to the previously approved English release.
+
+Reconciled 2026-10-13: first dashboard construction and URL receipt are complete based on the owner report and earlier editor screenshot. General source tests and published-view validation remain open; the web retrieval tool could not inspect the supplied page. Follow-up on 2026-10-13: the literacy CSV is now present and validated, and the owner supplied its dashboard URL. See `outputs/qa/children_literacy_export_20261013/validation.json`.
+
+## Dashboard review — 2026-10-14
+
+Owner review and screenshot corrections completed 2026-10-14. Updated single-sex screenshots confirm literacy totals of Female 274 / Male 262 and age-summary totals of Female 726 / Male 741. The displayed summary-filter checks pass. See [findings and review](children_findings.md). Workbook connection internals were not independently inspected.
+
+- [x] Write `docs/children_findings.md` with scopes, denominators and limitations.
+- [x] Prepare and locally validate `sql/07_children_by_district_queries.sql`.
+- [ ] Export/register the district comparison and build its visualization.
 
 ## Progress Log
 

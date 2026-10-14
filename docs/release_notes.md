@@ -1,5 +1,29 @@
 # Parser Improvements After Full-District Validation
 
+## Children's findings and corrected screenshot acceptance — 2026-10-14
+
+Verified updated single-sex screenshots: literacy totals 274 female / 262 male; age totals 726 female / 741 male. Closed displayed summary-filter checks and reconciled current documentation. The findings section records 136 Literate, 178 Illiterate and 222 Not recorded among ages 5–15, with missingness and school-attendance limitations. README now describes literacy as published and explains all 47 CSVs, including the literacy export. Historical review entries below retain their original status; the corrections in this entry supersede those open summary issues.
+
+## Dashboard review, findings and district query — 2026-10-14
+
+Recorded owner review completion and six screenshots. Local image inspection found that the literacy summary remains 536 in both single-sex views; expected values are 274 and 262. The age summary table also remains unfiltered. These acceptance items stay open. Added `docs/children_findings.md` and a read-only district comparison query, locally validated against 7,446 people and 1,467 children. District export is pending; inventory remains 47 CSV files. No source data or existing exports changed.
+
+## Literacy dashboard publication and export registration — 2026-10-13
+
+Owner supplied the second dashboard URL: [Recorded literacy among children aged 5–15](https://public.tableau.com/views/Recordedliteracyamongchildrenaged515/Dashboard1). Registered `children_literacy_age_sex_20261013.csv`: 75 rows matching SQL exactly, 1,467 children in the full export and 536 aged 5–15. Inventory is now 47 CSVs. SHA-256 and local reconciliation evidence: `outputs/qa/children_literacy_export_20261013/validation.json`. Published layout, sources, filters and percentage behavior remain unverified because web retrieval could not inspect the dashboard. Existing source data and historical exports remain unchanged.
+
+## Revised literacy chart age filter — 2026-10-13
+
+Decision 42 supersedes Decision 41: use ages 5–15 to include one recorded literate child at age five and one at age six. The owner reports setting the chart filter. Updated current guidance and benchmarks: 536 children (274 female; 262 male), including 136 Literate, 178 Illiterate and 222 Not recorded. Educated remains zero. The 0–15 SQL/export and source data remain unchanged; propagation to all related sheets still requires verification.
+
+## Initial literacy chart age filter — 2026-10-13 (superseded by Decision 42)
+
+Decision 41 records the owner-approved ages 7–15 focus for the literacy visualization. The 0–15 definition and SQL/export scope remain unchanged. Updated the authoring instructions and checklist to apply the filter to related sheets, retain missing literacy and verify 346 children (176 female; 170 male). Source tallies: Literate 134, Educated 0, Illiterate 150, Not recorded 62. Tableau application remains pending.
+
+## First Tableau dashboard and next literacy source — 2026-10-13
+
+Recorded the owner-supplied public link: [Sakhalin 1890 — Children aged 0–15](https://public.tableau.com/views/Sakhalin1890Childrenaged015/Dashboard1). Construction/publication is owner-reported; independently checking the published view remains pending. Added the children’s literacy SQL, export/browser instructions and local validation. The query returns 75 groups covering 1,467 children: Literate 136, Educated 0, Illiterate 211, Not recorded 1,120. Each age/sex total reconciles to the first dashboard’s registered CSV. No canonical data or existing CSVs changed. The next MySQL export has not been created; the inventory remains 46 files. See `docs/children_literacy_tableau.md` and `outputs/qa/children_literacy_20261013/`.
+
 ## Approved children's scope and SQL correction — 2026-10-12
 
 Decision 40 defines the children's block as Children aged 0–15. Corrected both child queries in `sql/04_analysis_queries.sql`, and added `sql/05_children_0_15_queries.sql` with the two replacement queries and a validation result. Child-age totals change from 1,545 to 1,467; child-sex totals from 1,510 to 1,467. Female: 726; Male: 741. Local validation passed, and the affected IDs are recorded in `outputs/qa/children_0_15_20261012/`. Existing 16+ analyses retain their filters, with clearer descriptive comments. Original CSVs and person records remain unchanged. Follow-up registration: both supplied replacement CSVs with suffix `10122026` are present and match the corrected queries. The export register now contains 46 CSVs. Verification evidence is in `outputs/qa/tableau_preflight_20261012_csv_register/`; MySQL execution logs were not inspected and Tableau checks remain pending.

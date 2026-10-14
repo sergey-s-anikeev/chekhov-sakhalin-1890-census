@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "date": "2026-10-13",
+  "method": "Local SQLite execution; live MySQL, CSV export, and Tableau validation pending.",
+  "hashes": {
+    "data/analytical/sakhalin_1890_en_v1.csv": "1b77d6330855763c54c32f21d247dc44471a69590db4fc00925c4e22eb8ac508",
+    "sql/06_children_literacy_queries.sql": "d87a82662ab11d5e38e7083e8bba5352a1c665339b04b5b4ce58d37676fa40ba"
+  },
+  "export_rows": 75,
+  "totals": {
+    "children": 1467,
+    "female_children": 726,
+    "male_children": 741,
+    "literate_children": 136,
+    "educated_children": 0,
+    "illiterate_children": 211,
+    "literacy_not_recorded": 1120,
+    "unexpected_literacy": 0
+  },
+  "source_value_changes": 0
+}

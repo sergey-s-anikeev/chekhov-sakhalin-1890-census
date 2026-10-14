@@ -390,3 +390,24 @@
 - Existing 16+ literacy and marriage filters remain unchanged; use the label Residents aged 16+ rather than implying legal adulthood.
 - Export policy: Preserve earlier CSV snapshots. Initial proposed filenames used the suffix `20261012`. Registration update on 2026-10-12: the supplied files are `children_age_0_15_10122026.csv` and `children_by_sex_0_15_10122026.csv`; retain those exact names. Both saved outputs match the corrected queries. MySQL execution logs were not inspected; Tableau validation remains pending.
 - QA: `outputs/qa/children_0_15_20261012/` records exact affected IDs, aggregate before/after differences, query equivalence, and source/script hashes. Local SQLite checks are not live MySQL execution.
+
+## Decision 41 — Literacy visualization focused on ages 7–15 (superseded by Decision 42)
+
+- Date: 2026-10-13. Explicitly approved by the project owner.
+- Visualization scope: Use ages 7–15 inclusive for the children's literacy chart, titled **Recorded literacy among children aged 7–15**.
+- Relationship to Decision 40: The overall children's definition remains ages 0–15. This is a narrower analytical subset, not a revised definition of childhood.
+- Implementation: Retain the existing 0–15 SQL and aggregate export specification. Apply an inclusive Age filter of 7–15 in Tableau to all related literacy sheets, including total-count and percentage sheets. Do not apply this restriction to the first age-distribution dashboard.
+- Missingness and denominator: Keep Not recorded visible; do not infer illiteracy or school attendance. Percentages use the selected age/sex population (or each selected age group as labelled), including missing literacy. Any recorded-only analysis must explicitly identify its different denominator.
+- Rationale: Focus on recorded literacy among older children. This is an analytical choice, not a verified historical claim that children under seven could not attend school.
+- Local source benchmarks: 346 children aged 7–15 (176 female, 170 male): Literate 134, Educated 0, Illiterate 150, Not recorded 62. Literacy is recorded for 284. These are checks against the approved English source, not evidence that the Tableau filter has been applied.
+- Documentation-only change: No source records, SQL queries, or exported data are changed. Guide: `docs/children_literacy_tableau.md`.
+
+## Decision 42 — Literacy visualization expanded to ages 5–15
+
+- Date: 2026-10-13. Explicit owner update; supersedes Decision 41's 7–15 visualization scope.
+- Rationale: The approved English source contains one child recorded as Literate at age five and one at age six. Include these recorded observations rather than excluding them through the earlier lower age bound. Literacy does not establish school attendance.
+- Visualization scope and title: **Recorded literacy among children aged 5–15**, inclusive. The owner reports setting this filter in Tableau.
+- Implementation: Apply Age 5–15 to all related literacy count, summary and percentage sheets. Verify filter propagation and percentage denominators. Keep Not recorded visible. The first age-distribution dashboard remains ages 0–15.
+- Export and definition: Decision 40 and the SQL/export remain ages 0–15; only the literacy visualization subset changes. No source values, SQL or CSV files are changed.
+- Source benchmarks: 536 children (274 female, 262 male): Literate 136, Educated 0, Illiterate 178, Not recorded 222. Recorded literacy: 314. A recorded-only percentage would use 314, not all 536, and must be explicitly labelled.
+- Evidence: Local tally of approved `data/analytical/sakhalin_1890_en_v1.csv` on 2026-10-13. Published filter behavior has not been independently verified. Updated `docs/children_literacy_tableau.md` and the development tracker.

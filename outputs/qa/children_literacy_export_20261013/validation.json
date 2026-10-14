@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "method": "Saved CSV compared with local SQLite execution; published workbook not inspected.",
+  "rows": 75,
+  "children_0_15": 1467,
+  "children_5_15": 536,
+  "hashes": {
+    "data\\analytical\\sakhalin_1890_en_v1.csv": "1b77d6330855763c54c32f21d247dc44471a69590db4fc00925c4e22eb8ac508",
+    "sql\\06_children_literacy_queries.sql": "d87a82662ab11d5e38e7083e8bba5352a1c665339b04b5b4ce58d37676fa40ba",
+    "tableau\\data\\children_literacy_age_sex_20261013.csv": "b3d0bc4c257c502b2f106470a3f6bfcace0e5e9d250608f0151d01158452c2a2"
+  }
+}

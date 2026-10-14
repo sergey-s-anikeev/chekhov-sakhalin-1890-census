@@ -1,8 +1,14 @@
 # Analytical exports
 
+## Dashboard publication and next export — 2026-10-13
+
+First dashboard: [Sakhalin 1890 — Children aged 0–15](https://public.tableau.com/views/Sakhalin1890Childrenaged015/Dashboard1). Publication is owner-reported; URL received on 2026-10-13. Owner review and updated screenshot checks completed 2026-10-14. The two registered 0–15 files below are the intended sources; actual published workbook connections have not been inspected.
+
+Registered 2026-10-13: `children_literacy_age_sex_20261013.csv`, from query 1 in [`sql/06_children_literacy_queries.sql`](../../sql/06_children_literacy_queries.sql). Verified 75 rows, 1,467 children (0–15), with 536 aged 5–15. The saved CSV matches the query exactly; hash and evidence: [`export QA`](../../outputs/qa/children_literacy_export_20261013/validation.json). **Inventory: 47 CSV files.** Published literacy dashboard: [Recorded literacy among children aged 5–15](https://public.tableau.com/views/Recordedliteracyamongchildrenaged515/Dashboard1). URL owner-supplied; displayed filter checks passed in updated screenshots on 2026-10-14. See [instructions](../../docs/children_literacy_tableau.md) and [local QA](../../outputs/qa/children_literacy_20261013/README.md).
+
 ## Children's age decision — 2026-10-12
 
-Decision 40 approves **Children aged 0–15** for the new analytical block. The historical `children_age_profile_clean22082026.csv` (0–17) and `children_by_sex01092026.csv` (0–16) are superseded for that block but remain unchanged here. The replacement exports are present and verified: `children_age_0_15_10122026.csv` (32 rows) and `children_by_sex_0_15_10122026.csv` (2 rows). Both total 1,467: Female 726, Male 741. They match the first two queries in [`sql/05_children_0_15_queries.sql`](../../sql/05_children_0_15_queries.sql). The literal filename suffix `10122026` is preserved as supplied; registration and verification date: 2026-10-12. Tableau checks remain pending.
+Decision 40 approves **Children aged 0–15** for the new analytical block. The historical `children_age_profile_clean22082026.csv` (0–17) and `children_by_sex01092026.csv` (0–16) are superseded for that block but remain unchanged here. The replacement exports are present and verified: `children_age_0_15_10122026.csv` (32 rows) and `children_by_sex_0_15_10122026.csv` (2 rows). Both total 1,467: Female 726, Male 741. They match the first two queries in [`sql/05_children_0_15_queries.sql`](../../sql/05_children_0_15_queries.sql). The literal filename suffix `10122026` is preserved as supplied; registration and verification date: 2026-10-12. Children’s displayed totals and filter checks were completed using owner review and updated screenshots on 2026-10-14.
 
 The previous 40-match audit below predates the correction. After registering the two new files, 40 of 46 snapshots match current queries, four match documented variants (including the two former child scopes), and two remain legacy exclusions. The [registration audit](../../outputs/qa/tableau_preflight_20261012_csv_register/README.md) verifies every file and records its hash. See [children's QA](../../outputs/qa/children_0_15_20261012/README.md) for the specific correction and exact affected IDs.
 
@@ -10,7 +16,7 @@ The previous 40-match audit below predates the correction. After registering the
 
 Rechecked 2026-10-12 with the same 40 current-query matches, two documented variants, and two starter exclusions. The [latest report](../../outputs/qa/tableau_preflight_20261012/README.md) includes 59 passed preparation assertions and exact import benchmarks. Actual Tableau import checks remain pending.
 
-For the main interactive workbook, use the separate [local names-free practice source](../practice/README.md). The 46 files include current results and historical comparison snapshots. Do not join or union them together.
+For the main interactive workbook, use the separate [local names-free practice source](../practice/README.md). The 47 files include current results and historical comparison snapshots. Do not join or union them together.
 
 The [preflight audit](../../outputs/qa/tableau_preflight_20261004/README.md) compares all snapshots to current query logic using an in-memory SQLite replay, not a new MySQL execution. Forty match current queries; the allowance-No and top-30 household files match their documented variants. Two legacy files are excluded from the starter selection: `children_age_profile22082026.csv` (use the year-only clean file) and `origina_place_profile_07092026.csv` (earlier ranking without a matching current query; reproduce from person-level data if needed).
 
@@ -20,9 +26,9 @@ Matching the query does not make a file additive at every level. Use the top-fiv
 - SQL source: [`../../sql/04_analysis_queries.sql`](../../sql/04_analysis_queries.sql)
 - Export dates encoded in filenames: **2026-08-22**, **2026-08-28**, **2026-09-01**, **2026-09-07**, and **2026-09-08**
 - Newly registered on **2026-10-12**: two children aged 0–15 exports, with the supplied filename suffix `10122026`.
-- Inventory: **46 CSV files**; row counts below exclude headers.
+- Inventory: **47 CSV files**; row counts below exclude headers.
 
-These CSV files are static MySQL query results prepared for visualization from the 7,446-record English analytical dataset. SQL analysis and export preparation are complete; Tableau import validation and dashboard construction are the next stage. These files are CSV snapshots, not Tableau workbooks or extracts.
+These CSV files are static MySQL query results prepared for visualization from the 7,446-record English analytical dataset. The first children’s dashboard is owner-reported as published; published-view validation and further dashboard construction remain in progress. These files are CSV snapshots, not Tableau workbooks or extracts.
 
 The SQL file contains the current analysis logic, but some exports represent earlier queries or manual variants, as noted below. When the source table or analysis logic changes, write a new dated export and reconcile its totals before using it in a visualization. Preserve earlier snapshots.
 
@@ -55,6 +61,7 @@ The SQL file contains the current analysis logic, but some exports represent ear
 | `legal_status_profile22082026.csv` | 41 | Complete legal-status distribution, including missing status |
 | `legal_status_profile28082026.csv` | 4 | Four largest non-child legal-status categories |
 | `legal_status_profile_share28082026.csv` | 4 | Four largest non-child legal-status categories and their shares of the complete population |
+| `children_literacy_age_sex_20261013.csv` | 75 | Ages 0–15 by age, sex and literacy; 1,467 children. Dashboard filters to ages 5–15 (536). Missing literacy displayed as Not recorded. |
 | `education_profile22082026.csv` | 8 | Literacy distribution by sex |
 | `adult_education_profile2_01092026.csv` | 8 | Literacy distribution by sex for people aged 16 or older |
 | `literacy_cohorts_07092026.csv` | 10 | Adult literacy by age band and sex; counts and percentages for `Literate`, `Educated`, `Illiterate`, and missing literacy |

@@ -1,0 +1,37 @@
+{
+  "status": "PASS",
+  "method": "Local SQLite execution; MySQL export and Tableau construction pending.",
+  "results": [
+    {
+      "district": "Tymovsky District",
+      "district_people": 3242,
+      "children": 679,
+      "female_children": 339,
+      "male_children": 340,
+      "age_not_recorded": 47,
+      "children_share_district_pct": 20.9
+    },
+    {
+      "district": "Alexandrovsky District",
+      "district_people": 2884,
+      "children": 626,
+      "female_children": 300,
+      "male_children": 326,
+      "age_not_recorded": 82,
+      "children_share_district_pct": 21.7
+    },
+    {
+      "district": "Korsakovsky District",
+      "district_people": 1320,
+      "children": 162,
+      "female_children": 87,
+      "male_children": 75,
+      "age_not_recorded": 18,
+      "children_share_district_pct": 12.3
+    }
+  ],
+  "hashes": {
+    "data\\analytical\\sakhalin_1890_en_v1.csv": "1b77d6330855763c54c32f21d247dc44471a69590db4fc00925c4e22eb8ac508",
+    "sql\\07_children_by_district_queries.sql": "9d516f9a7183556000ac1d1efdcc606db56df8e3781a00109e5184a7dfc78e6b"
+  }
+}

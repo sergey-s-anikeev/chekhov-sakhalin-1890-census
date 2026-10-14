@@ -1,6 +1,12 @@
 # Tableau source preparation and publication
 
-Updated 2026-10-12. Preparation checks passed on the current files; actual Tableau import and dashboard testing remain pending.
+## Latest review — 2026-10-14
+
+Owner review and screenshot corrections completed 2026-10-14. Updated single-sex screenshots confirm literacy totals of Female 274 / Male 262 and age-summary totals of Female 726 / Male 741. The displayed summary-filter checks pass. See [findings and review](children_findings.md). Workbook connection internals were not independently inspected.
+
+Updated 2026-10-13. First dashboard: [Sakhalin 1890 — Children aged 0–15](https://public.tableau.com/views/Sakhalin1890Childrenaged015/Dashboard1). The owner reports completion and publication and supplied this URL on 2026-10-13. The earlier editor screenshot showed Female 726, Male 741 and total 1,467. The published page could not be inspected with the web retrieval tool; the later owner review and updated screenshots verify displayed layout and selected filter states; workbook source connections remain uninspected.
+
+Next: [children’s literacy export and Tableau instructions](children_literacy_tableau.md). Decision 42 focuses the literacy visualization on ages 5–15 (536 children), using a Tableau filter; the export and overall children’s definition remain 0–15. Published literacy dashboard: [Recorded literacy among children aged 5–15](https://public.tableau.com/views/Recordedliteracyamongchildrenaged515/Dashboard1) (owner-supplied URL, 2026-10-13). The saved CSV passed local SQL reconciliation; owner review and screenshot checks were completed on 2026-10-14.
 
 ## Approved children's definition — Decision 40
 

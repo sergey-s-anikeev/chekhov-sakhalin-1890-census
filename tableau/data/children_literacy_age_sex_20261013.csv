@@ -1,0 +1,76 @@
+age,sex,literacy_status,children
+0,Female,"Not recorded",98
+0,Male,Illiterate,1
+0,Male,"Not recorded",105
+1,Female,"Not recorded",101
+1,Male,Illiterate,1
+1,Male,"Not recorded",117
+2,Female,"Not recorded",104
+2,Male,Illiterate,7
+2,Male,"Not recorded",104
+3,Female,Illiterate,2
+3,Female,"Not recorded",85
+3,Male,Illiterate,4
+3,Male,"Not recorded",75
+4,Female,Illiterate,8
+4,Female,"Not recorded",54
+4,Male,Illiterate,10
+4,Male,"Not recorded",55
+5,Female,Illiterate,8
+5,Female,"Not recorded",42
+5,Male,Illiterate,5
+5,Male,Literate,1
+5,Male,"Not recorded",50
+6,Female,Illiterate,7
+6,Female,"Not recorded",41
+6,Male,Illiterate,8
+6,Male,Literate,1
+6,Male,"Not recorded",27
+7,Female,Illiterate,12
+7,Female,Literate,1
+7,Female,"Not recorded",17
+7,Male,Illiterate,20
+7,Male,Literate,4
+7,Male,"Not recorded",10
+8,Female,Illiterate,15
+8,Female,Literate,3
+8,Female,"Not recorded",3
+8,Male,Illiterate,14
+8,Male,Literate,12
+8,Male,"Not recorded",7
+9,Female,Illiterate,14
+9,Female,Literate,5
+9,Female,"Not recorded",4
+9,Male,Illiterate,9
+9,Male,Literate,11
+9,Male,"Not recorded",3
+10,Female,Illiterate,15
+10,Female,Literate,7
+10,Female,"Not recorded",5
+10,Male,Illiterate,6
+10,Male,Literate,18
+10,Male,"Not recorded",1
+11,Female,Illiterate,11
+11,Female,Literate,10
+11,Female,"Not recorded",4
+11,Male,Illiterate,3
+11,Male,Literate,11
+12,Female,Illiterate,10
+12,Female,Literate,9
+12,Male,Illiterate,7
+12,Male,Literate,8
+13,Female,Illiterate,2
+13,Female,Literate,9
+13,Female,"Not recorded",3
+13,Male,Illiterate,1
+13,Male,Literate,7
+14,Female,Illiterate,4
+14,Female,Literate,4
+14,Female,"Not recorded",1
+14,Male,Illiterate,1
+14,Male,Literate,10
+14,Male,"Not recorded",4
+15,Female,Illiterate,5
+15,Female,Literate,3
+15,Male,Illiterate,1
+15,Male,Literate,2
