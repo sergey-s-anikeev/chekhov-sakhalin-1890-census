@@ -19,7 +19,7 @@ Russian/Cyrillic source and normalized values remain authoritative. English docu
 | Extraction, cleaning, and Russian canonical release | Complete | Reviewed `v5_20260731` release, integrated QA, and manifest registration |
 | English analytical dataset | Approved; QA complete | 7,446 records and 23 columns in `sakhalin_1890_en_v1.csv` |
 | MySQL import and validation | Complete | 7,446 loaded rows, zero skipped records or warnings, and all validation controls passed |
-| SQL analysis and visualization exports | Complete | Demographic and extended analytical queries; 47 CSV snapshots in `tableau/data/` |
+| SQL analysis and visualization exports | Complete | Demographic and extended analytical queries; 48 CSV snapshots in `tableau/data/` |
 | Tableau source validation and dashboards | In progress | Two children’s dashboards published (owner report); owner review and displayed filter checks complete |
 | Final findings and portfolio presentation | Pending | Analytical summary, dashboard screenshots, and final project narrative |
 
@@ -57,11 +57,13 @@ Analysis covers population by district and settlement, age and sex, legal status
 
 ## Visualization Exports and Next Steps
 
+Settlement dashboard completed by the owner on 2026-10-14; [screenshot](tableau/screenshots/children_by_settlement_20261014.png) inspected and 51-row export verified. Public URL pending.
+
 **Children's block:** Decision 40 approves **Children aged 0–15**. Both child queries are corrected, and their replacement exports are registered in [the export inventory](tableau/data/README.md). Use [the standalone SQL](sql/05_children_0_15_queries.sql) to reproduce them. Expected total: 1,467 children (726 female, 741 male). Earlier child exports use different age ranges and remain historical. See [correction QA](outputs/qa/children_0_15_20261012/README.md). Both replacement CSVs match the corrected queries. Published dashboard: [Sakhalin 1890 — Children aged 0–15](https://public.tableau.com/views/Sakhalin1890Childrenaged015/Dashboard1). The owner supplied this link on 2026-10-13; the published view has not been independently inspected.
 
 Start local practice with [`tableau/practice/sakhalin_1890_en_no_full_name_20261004.csv`](tableau/practice/sakhalin_1890_en_no_full_name_20261004.csv): all 7,446 people and 22 columns, omitting only full_name. It retains linkable identifiers and is not an anonymous public-release file. Use the [Tableau preparation guide](docs/tableau_preparation.md) for import types, denominators, household grouping, legacy-export selection, and aggregate-only public dashboard recommendations. The [preflight report](outputs/qa/tableau_preflight_20261004/README.md) records snapshot reconciliation and exact retained-value verification.
 
-The [analytical export inventory](tableau/data/README.md) describes all **47 CSV snapshots**: the 44 earlier exports, two corrected children aged 0–15 files registered on 2026-10-12, and the literacy export registered on 2026-10-13. It records each file's row count, analytical scope, percentage denominators, and known differences from the current SQL. Some snapshots are earlier or manual query variants; two extended queries do not yet have corresponding CSV exports.
+The [analytical export inventory](tableau/data/README.md) describes all **48 CSV snapshots**: the 44 earlier exports, two corrected children aged 0–15 files registered on 2026-10-12, the literacy export registered on 2026-10-13, and the settlement export registered on 2026-10-14. It records each file's row count, analytical scope, percentage denominators, and known differences from the current SQL. Some snapshots are earlier or manual query variants; two extended queries do not yet have corresponding CSV exports.
 
 Published literacy analysis: children’s recorded literacy by age and sex. Decision 42 focuses its visualization on ages 5–15 using a Tableau filter; the export retains ages 0–15. Use the [export and browser-authoring instructions](docs/children_literacy_tableau.md) and [read-only SQL](sql/06_children_literacy_queries.sql). Published literacy dashboard: [Recorded literacy among children aged 5–15](https://public.tableau.com/views/Recordedliteracyamongchildrenaged515/Dashboard1). The saved literacy CSV matches the SQL locally; owner review and updated screenshot checks are complete.
 
@@ -69,8 +71,8 @@ The next steps are:
 
 1. Select the main analytical findings and the charts needed to explain them.
 2. Import the relevant CSVs into Tableau and verify field types, dimensions, missing values, aggregations, and totals against the saved results and SQL.
-3. Export and visualize the prepared district comparison using `sql/07_children_by_district_queries.sql`.
-4. Extend the [documented children’s findings](docs/children_findings.md) with the district comparison, then finish the overall project narrative.
+3. Record the public URL and live filter checks for the completed settlement dashboard; see [the settlement guide](docs/children_settlements_tableau.md).
+4. Extend the [documented children’s findings](docs/children_findings.md) with the settlement comparison, then finish the overall project narrative.
 
 The [development tracker](docs/english_dataset_development_tracker.md) records both dashboards, the owner review and six screenshots. Summary-filter corrections are verified in the updated screenshots. No packaged Tableau workbook is stored in this repository.
 
@@ -199,7 +201,7 @@ chekhov-sakhalin-1890-census/
 └── tableau/
     └── data/
         ├── README.md
-        └── <47 analytical CSV exports>
+        └── <48 analytical CSV exports>
 ```
 
 ## Processing Layers
@@ -266,7 +268,7 @@ Further Tableau dashboards and the final visual presentation are the next delive
 
 ## Data Availability
 
-This repository includes the reviewed Russian processed datasets, the approved English analytical dataset, code, SQL scripts, 47 analytical CSV snapshots, documentation, QA outputs, and a 500-record sample.
+This repository includes the reviewed Russian processed datasets, the approved English analytical dataset, code, SQL scripts, 48 analytical CSV snapshots, documentation, QA outputs, and a 500-record sample.
 
 The original source PDFs and full raw extracted text are not included here unless copyright, access, provenance, and ethical considerations permit publication.
 

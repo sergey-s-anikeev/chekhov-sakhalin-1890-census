@@ -1,10 +1,14 @@
 # Analytical exports
 
+## Settlement export registration — 2026-10-14
+
+Registered `children_by_settlement_20261014.csv`: 51 rows, one per district/settlement, 7,446 people and 1,467 children aged 0–15. Includes seven zero-child groups and 147 missing ages. Both percentage denominators are documented in [the guide](../../docs/children_settlements_tableau.md). Exact CSV-to-SQL-result comparison passed; SHA-256 is recorded in [export QA](../../outputs/qa/children_settlements_20261014/export_validation.json). Dashboard completion is owner-reported; screenshot saved, public URL pending. Current inventory: 48 CSVs.
+
 ## Dashboard publication and next export — 2026-10-13
 
 First dashboard: [Sakhalin 1890 — Children aged 0–15](https://public.tableau.com/views/Sakhalin1890Childrenaged015/Dashboard1). Publication is owner-reported; URL received on 2026-10-13. Owner review and updated screenshot checks completed 2026-10-14. The two registered 0–15 files below are the intended sources; actual published workbook connections have not been inspected.
 
-Registered 2026-10-13: `children_literacy_age_sex_20261013.csv`, from query 1 in [`sql/06_children_literacy_queries.sql`](../../sql/06_children_literacy_queries.sql). Verified 75 rows, 1,467 children (0–15), with 536 aged 5–15. The saved CSV matches the query exactly; hash and evidence: [`export QA`](../../outputs/qa/children_literacy_export_20261013/validation.json). **Inventory: 47 CSV files.** Published literacy dashboard: [Recorded literacy among children aged 5–15](https://public.tableau.com/views/Recordedliteracyamongchildrenaged515/Dashboard1). URL owner-supplied; displayed filter checks passed in updated screenshots on 2026-10-14. See [instructions](../../docs/children_literacy_tableau.md) and [local QA](../../outputs/qa/children_literacy_20261013/README.md).
+Registered 2026-10-13: `children_literacy_age_sex_20261013.csv`, from query 1 in [`sql/06_children_literacy_queries.sql`](../../sql/06_children_literacy_queries.sql). Verified 75 rows, 1,467 children (0–15), with 536 aged 5–15. The saved CSV matches the query exactly; hash and evidence: [`export QA`](../../outputs/qa/children_literacy_export_20261013/validation.json). **Inventory: 48 CSV files.** Published literacy dashboard: [Recorded literacy among children aged 5–15](https://public.tableau.com/views/Recordedliteracyamongchildrenaged515/Dashboard1). URL owner-supplied; displayed filter checks passed in updated screenshots on 2026-10-14. See [instructions](../../docs/children_literacy_tableau.md) and [local QA](../../outputs/qa/children_literacy_20261013/README.md).
 
 ## Children's age decision — 2026-10-12
 
@@ -16,7 +20,7 @@ The previous 40-match audit below predates the correction. After registering the
 
 Rechecked 2026-10-12 with the same 40 current-query matches, two documented variants, and two starter exclusions. The [latest report](../../outputs/qa/tableau_preflight_20261012/README.md) includes 59 passed preparation assertions and exact import benchmarks. Actual Tableau import checks remain pending.
 
-For the main interactive workbook, use the separate [local names-free practice source](../practice/README.md). The 47 files include current results and historical comparison snapshots. Do not join or union them together.
+For the main interactive workbook, use the separate [local names-free practice source](../practice/README.md). The 48 files include current results and historical comparison snapshots. Do not join or union them together.
 
 The [preflight audit](../../outputs/qa/tableau_preflight_20261004/README.md) compares all snapshots to current query logic using an in-memory SQLite replay, not a new MySQL execution. Forty match current queries; the allowance-No and top-30 household files match their documented variants. Two legacy files are excluded from the starter selection: `children_age_profile22082026.csv` (use the year-only clean file) and `origina_place_profile_07092026.csv` (earlier ranking without a matching current query; reproduce from person-level data if needed).
 
@@ -26,7 +30,7 @@ Matching the query does not make a file additive at every level. Use the top-fiv
 - SQL source: [`../../sql/04_analysis_queries.sql`](../../sql/04_analysis_queries.sql)
 - Export dates encoded in filenames: **2026-08-22**, **2026-08-28**, **2026-09-01**, **2026-09-07**, and **2026-09-08**
 - Newly registered on **2026-10-12**: two children aged 0–15 exports, with the supplied filename suffix `10122026`.
-- Inventory: **47 CSV files**; row counts below exclude headers.
+- Inventory: **48 CSV files**; row counts below exclude headers.
 
 These CSV files are static MySQL query results prepared for visualization from the 7,446-record English analytical dataset. The first children’s dashboard is owner-reported as published; published-view validation and further dashboard construction remain in progress. These files are CSV snapshots, not Tableau workbooks or extracts.
 
@@ -36,6 +40,7 @@ The SQL file contains the current analysis logic, but some exports represent ear
 
 | CSV file | Rows | Contents |
 |---|---:|---|
+| `children_by_settlement_20261014.csv` | 51 | Children aged 0–15 by district/settlement, population denominators, missing-age coverage and shares |
 | `districts_by_population22082026.csv` | 3 | District population ranking |
 | `settlements_by_population22082026.csv` | 51 | Population by settlement and district |
 | `top5_by_population22082026.csv` | 5 | Five largest settlements and their shares of the complete population |

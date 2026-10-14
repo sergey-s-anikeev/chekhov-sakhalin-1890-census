@@ -1,0 +1,52 @@
+district,settlement,settlement_people,children,female_children,male_children,residents_16_plus,age_recorded,age_not_recorded,children_share_settlement_pct,children_share_known_age_pct
+"Tymovsky District",Rykovskoe,1266,363,171,192,892,1255,11,28.7,28.9
+"Alexandrovsky District","Alexandrovsky Post",1338,236,103,133,1067,1303,35,17.6,18.1
+"Tymovsky District",Derbinskoe,632,142,73,69,478,620,12,22.5,22.9
+"Alexandrovsky District",Novo-Mikhaylovskoe,446,113,57,56,331,444,2,25.3,25.5
+"Alexandrovsky District",Korsakovskoe,260,83,45,38,177,260,0,31.9,31.9
+"Tymovsky District",Andree-Ivanovskoe,364,59,31,28,299,358,6,16.2,16.5
+"Tymovsky District",Malo-Tymovo,177,55,32,23,121,176,1,31.1,31.3
+"Alexandrovsky District","Doue Post",274,47,26,21,223,270,4,17.2,17.4
+"Alexandrovsky District","Arkovo I",104,38,13,25,66,104,0,36.5,36.5
+"Alexandrovsky District","Arkovo II",86,35,19,16,50,85,1,40.7,41.2
+"Korsakovsky District",Solovevka,69,26,15,11,43,69,0,37.7,37.7
+"Tymovsky District",Palevo,283,25,14,11,254,279,4,8.8,9.0
+"Korsakovsky District","Korsakovsky Post",148,23,15,8,121,144,4,15.5,16.0
+"Alexandrovsky District",Aleksandrovskoe,95,21,9,12,72,93,2,22.1,22.6
+"Tymovsky District","Verkhniy Armudan",175,19,8,11,154,173,2,10.9,11.0
+"Korsakovsky District",Kresty,89,18,8,10,71,89,0,20.2,20.2
+"Alexandrovsky District","Arkovo III",35,15,10,5,20,35,0,42.9,42.9
+"Alexandrovsky District","Krasnyy Yar",90,15,6,9,74,89,1,16.7,16.9
+"Korsakovsky District",Vladimirovka,89,15,7,8,73,88,1,16.9,17.0
+"Korsakovsky District",Siyantsy,71,10,5,5,61,71,0,14.1,14.1
+"Tymovsky District","Nizhniy Armudan",94,10,5,5,84,94,0,10.6,10.6
+"Korsakovsky District","Bolshoe Takoe",68,8,3,5,59,67,1,11.8,11.9
+"Korsakovsky District",Mitsulka,25,8,2,6,16,24,1,32.0,33.3
+"Korsakovsky District","Popovskiye Yurts",110,8,5,3,102,110,0,7.3,7.3
+"Korsakovsky District",Poro-an-Tomari,67,8,4,4,59,67,0,11.9,11.9
+"Korsakovsky District","Tretya Pad",30,8,5,3,22,30,0,26.7,26.7
+"Alexandrovsky District",Khoe,31,7,2,5,19,26,5,22.6,26.9
+"Alexandrovsky District",Mgachi,35,7,4,3,24,31,4,20.0,22.6
+"Korsakovsky District",Lyutoga,53,7,2,5,46,53,0,13.2,13.2
+"Korsakovsky District","Maloe Takoe",48,5,4,1,42,47,1,10.4,10.6
+"Tymovsky District",Uskovo,68,5,4,1,61,66,2,7.4,7.6
+"Alexandrovsky District",Butakovo,24,4,3,1,19,23,1,16.7,17.4
+"Korsakovsky District",Berezniki,159,4,2,2,154,158,1,2.5,2.5
+"Korsakovsky District",Dubki,41,4,3,1,37,41,0,9.8,9.8
+"Korsakovsky District","Bolshaya Elan",40,3,1,2,36,39,1,7.5,7.7
+"Korsakovsky District",Khomutovka,38,3,3,0,35,38,0,7.9,7.9
+"Alexandrovsky District",Tangi,15,2,2,0,8,10,5,13.3,20.0
+"Korsakovsky District","Vtoraya Pad",10,2,2,0,8,10,0,20.0,20.0
+"Alexandrovsky District",Trambaus,6,1,1,0,0,1,5,16.7,100.0
+"Alexandrovsky District",Vangi,13,1,0,1,0,1,12,7.7,100.0
+"Alexandrovsky District",Viakhty,17,1,0,1,11,12,5,5.9,8.3
+"Korsakovsky District",Lugovoe,74,1,0,1,73,74,0,1.4,1.4
+"Korsakovsky District","Pervaya Pad",6,1,1,0,5,6,0,16.7,16.7
+"Tymovsky District",Voskresenskoe,183,1,1,0,173,174,9,0.5,0.6
+"Alexandrovsky District","Arkovsky Cordon",4,0,0,0,4,4,0,0.0,0.0
+"Alexandrovsky District","Arkovsky Way Station",11,0,0,0,11,11,0,0.0,0.0
+"Korsakovsky District","Golyy Mys",24,0,0,0,23,23,1,0.0,0.0
+"Korsakovsky District",Listvenichnoe,15,0,0,0,15,15,0,0.0,0.0
+"Korsakovsky District",Mauka,38,0,0,0,31,31,7,0.0,0.0
+"Korsakovsky District",Siska,7,0,0,0,7,7,0,0.0,0.0
+"Korsakovsky District","Tarayskoye Winter Settlement",1,0,0,0,1,1,0,0.0,0.0

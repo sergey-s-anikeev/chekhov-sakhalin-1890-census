@@ -437,7 +437,9 @@ Owner review and screenshot corrections completed 2026-10-14. Updated single-sex
 
 - [x] Write `docs/children_findings.md` with scopes, denominators and limitations.
 - [x] Prepare and locally validate `sql/07_children_by_district_queries.sql`.
-- [ ] Export/register the district comparison and build its visualization.
+- [x] Prepare and locally validate settlement-level analysis (owner direction, 2026-10-14): 51 groups, 1,467 children; district query retained as reference.
+- [x] Export/register the settlement comparison and build its visualization (owner completion, screenshot inspection and exact export QA, 2026-10-14).
+- [ ] Record the settlement dashboard public URL and verify live District filter behavior.
 
 ## Progress Log
 

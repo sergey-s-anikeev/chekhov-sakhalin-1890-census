@@ -1,5 +1,13 @@
 # Parser Improvements After Full-District Validation
 
+## Settlement dashboard and saved export — 2026-10-14
+
+Recorded owner completion and the final screenshot. Registered the settlement CSV after exact comparison with validated SQL results: 51 rows, 7,446 people, 1,467 children. Inventory now 48 CSVs. Screenshot layout reviewed; public URL and independent live filter checks pending. Source data unchanged.
+
+## Settlement geography preparation — 2026-10-14
+
+Owner selected settlement-level analysis instead of a district-only dashboard. Added a read-only query, reproducible validation and Tableau guide. Local checks reconcile 51 district/settlement groups to 7,446 people and 1,467 children, retaining seven zero-child groups and reporting missing-age coverage. Settlement establishment is an untested explanatory hypothesis. CSV export remains pending; the 47-file inventory and all source records are unchanged.
+
 ## Children's findings and corrected screenshot acceptance — 2026-10-14
 
 Verified updated single-sex screenshots: literacy totals 274 female / 262 male; age totals 726 female / 741 male. Closed displayed summary-filter checks and reconciled current documentation. The findings section records 136 Literate, 178 Illiterate and 222 Not recorded among ages 5–15, with missingness and school-attendance limitations. README now describes literacy as published and explains all 47 CSVs, including the literacy export. Historical review entries below retain their original status; the corrections in this entry supersede those open summary issues.

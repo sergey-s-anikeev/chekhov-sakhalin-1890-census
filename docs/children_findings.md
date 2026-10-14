@@ -27,4 +27,4 @@ The owner review and displayed summary-filter acceptance checks are complete. Sc
 
 ## Next analysis
 
-Compare children aged 0–15 by district using [`sql/07_children_by_district_queries.sql`](../sql/07_children_by_district_queries.sql). Show counts and the share of each district's recorded population. Include missing-age counts so readers can see the limits of the age-defined numerator. Do not interpret the share as a complete historical population estimate.
+The owner selected settlement-level geography on 2026-10-14. Use [the settlement guide](children_settlements_tableau.md) and `sql/08_children_by_settlement_queries.sql` to compare child counts and shares, with district as context. Earlier establishment as an explanation remains a hypothesis requiring historical evidence; no founding dates have been added.

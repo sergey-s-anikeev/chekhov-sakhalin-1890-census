@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "method": "Saved CSV compared with previously validated SQL result",
+  "rows": 51,
+  "children": 1467,
+  "people": 7446,
+  "sha256": "2852427ac44465ed5f91149b8f39e8518a16c2573d71c2750216ba8d3bee2e5c"
+}
