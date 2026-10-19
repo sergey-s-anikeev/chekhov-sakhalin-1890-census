@@ -25,6 +25,20 @@ The owner reported reviewing both published dashboards and saved six PNG screens
 
 The owner review and displayed summary-filter acceptance checks are complete. Screenshots establish displayed states, not every possible live interaction or the contents of workbook connections. The current PNGs are the corrected versions; the initial review findings are retained in this narrative.
 
+## Settlement distribution, ages 0–15
+
+Added 2026-10-19, using the [validated settlement export](../tableau/data/children_by_settlement_20261014.csv).
+
+The 1,467 recorded children are distributed across 51 settlement groups. Seven groups contain no recorded children; this describes the available records, not proof that no children lived in those places. Grouping uses district and settlement together.
+
+Rykovskoe has the largest child count: 363 among 1,266 recorded people (28.7%). Alexandrovsky Post has a larger recorded population, 1,338, but fewer children: 236 (17.6%). Thus, a larger settlement population does not necessarily imply either more children or a higher child share.
+
+Child counts and shares answer different questions. Arkovo III has 15 children among only 35 recorded people (42.9%), compared with Rykovskoe's 363 among 1,266 (28.7%). Arkovo III's higher proportion describes a much smaller group; population denominators should accompany comparisons of shares.
+
+These percentages include all recorded people in each settlement, including missing ages. Across the full dataset 147 people have missing ages; they cannot be classified into the age-defined child numerator. Missing-age coverage and the availability of records can affect comparisons.
+
+Earlier settlement establishment is a hypothesis for subsequent historical investigation, not a demonstrated cause of higher child shares. No founding-date comparison has been performed. Settlement function, migration and population composition are other questions to examine before explaining the pattern.
+
 ## Next analysis
 
-The owner selected settlement-level geography on 2026-10-14. Use [the settlement guide](children_settlements_tableau.md) and `sql/08_children_by_settlement_queries.sql` to compare child counts and shares, with district as context. Earlier establishment as an explanation remains a hypothesis requiring historical evidence; no founding dates have been added.
+Compare these observations with Chekhov's descriptions, using the [saved interpretation draft](drafts/children_age_literacy_interpretation_20261014.md). Record exact passages, edition/chapter references, geographic scope, age definitions and denominators. Historical comparison and settlement-founding-date research remain pending.

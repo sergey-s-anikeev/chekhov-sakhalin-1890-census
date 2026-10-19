@@ -1,5 +1,9 @@
 # Tableau source preparation and publication
 
+## Current inventory — 2026-10-19
+
+Three children's dashboards and seven screenshots are documented. Settlement dashboard: [Sakhalin 1890 — Children by settlement](https://public.tableau.com/views/Sakhalin1890Childrenbysettlement/Sakhalin1890Childrenbysettlement). The [full audit](../outputs/qa/tableau_preflight_20261019_full_inventory/README.md) covers 48 CSVs, including literacy and settlement exports: 42 current matches, four documented variants, two known legacy exclusions. Independent live settlement-filter checks remain open; URL registration does not establish those checks.
+
 ## Latest review — 2026-10-14
 
 Owner review and screenshot corrections completed 2026-10-14. Updated single-sex screenshots confirm literacy totals of Female 274 / Male 262 and age-summary totals of Female 726 / Male 741. The displayed summary-filter checks pass. See [findings and review](children_findings.md). Workbook connection internals were not independently inspected.

@@ -1,5 +1,9 @@
 # Parser Improvements After Full-District Validation
 
+## Children's documentation and full inventory reconciliation — 2026-10-19
+
+Updated current status to three dashboards and seven screenshots, recorded the previously supplied settlement URL, and kept live filter verification separate. Expanded the general export audit to include the literacy and settlement SQL, preserving earlier QA reports. All 48 CSVs reconcile: 42 current matches, four documented historical variants and two known legacy exclusions; no retained source-value differences. Added settlement findings comparing counts and shares with explicit denominators and missing-age limitations. Earlier establishment remains a hypothesis for later comparison with historical sources. No canonical data or exported CSVs changed.
+
 ## Settlement dashboard and saved export — 2026-10-14
 
 Recorded owner completion and the final screenshot. Registered the settlement CSV after exact comparison with validated SQL results: 51 rows, 7,446 people, 1,467 children. Inventory now 48 CSVs. Screenshot layout reviewed; public URL and independent live filter checks pending. Source data unchanged.

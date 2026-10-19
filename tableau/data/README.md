@@ -1,8 +1,12 @@
 # Analytical exports
 
+## Full inventory reconciliation — 2026-10-19
+
+All 48 files were checked together against current SQL and documented historical variants: 42 MATCH, four MATCH_DOCUMENTED_VARIANT and two known legacy REVIEW exclusions. The literacy and settlement queries are now included in the general audit. See [the dated report](../../outputs/qa/tableau_preflight_20261019_full_inventory/README.md). Earlier audit sections below retain their original scope and counts.
+
 ## Settlement export registration — 2026-10-14
 
-Registered `children_by_settlement_20261014.csv`: 51 rows, one per district/settlement, 7,446 people and 1,467 children aged 0–15. Includes seven zero-child groups and 147 missing ages. Both percentage denominators are documented in [the guide](../../docs/children_settlements_tableau.md). Exact CSV-to-SQL-result comparison passed; SHA-256 is recorded in [export QA](../../outputs/qa/children_settlements_20261014/export_validation.json). Dashboard completion is owner-reported; screenshot saved, public URL pending. Current inventory: 48 CSVs.
+Registered `children_by_settlement_20261014.csv`: 51 rows, one per district/settlement, 7,446 people and 1,467 children aged 0–15. Includes seven zero-child groups and 147 missing ages. Both percentage denominators are documented in [the guide](../../docs/children_settlements_tableau.md). Exact CSV-to-SQL-result comparison passed; SHA-256 is recorded in [export QA](../../outputs/qa/children_settlements_20261014/export_validation.json). Dashboard completion is owner-reported; screenshot saved. Published dashboard: [Sakhalin 1890 — Children by settlement](https://public.tableau.com/views/Sakhalin1890Childrenbysettlement/Sakhalin1890Childrenbysettlement) (owner-supplied URL; registered 2026-10-19). Current inventory: 48 CSVs.
 
 ## Dashboard publication and next export — 2026-10-13
 
@@ -32,7 +36,7 @@ Matching the query does not make a file additive at every level. Use the top-fiv
 - Newly registered on **2026-10-12**: two children aged 0–15 exports, with the supplied filename suffix `10122026`.
 - Inventory: **48 CSV files**; row counts below exclude headers.
 
-These CSV files are static MySQL query results prepared for visualization from the 7,446-record English analytical dataset. The first children’s dashboard is owner-reported as published; published-view validation and further dashboard construction remain in progress. These files are CSV snapshots, not Tableau workbooks or extracts.
+These CSV files are static MySQL query results prepared for visualization from the 7,446-record English analytical dataset. Three children’s dashboards are owner-reported as published; independent live settlement-filter verification remains open. These files are CSV snapshots, not Tableau workbooks or extracts.
 
 The SQL file contains the current analysis logic, but some exports represent earlier queries or manual variants, as noted below. When the source table or analysis logic changes, write a new dated export and reconcile its totals before using it in a visualization. Preserve earlier snapshots.
 

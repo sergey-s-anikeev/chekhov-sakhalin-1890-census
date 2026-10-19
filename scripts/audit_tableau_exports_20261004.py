@@ -67,6 +67,14 @@ def main(audit_date='2026-10-04', report_suffix=''):
     for number, query in enumerate(queries, 1):
         cursor = db.execute(query)
         results.append((number, [c[0] for c in cursor.description], [dict(r) for r in cursor.fetchall()]))
+    supplemental_paths = [ROOT / 'sql/06_children_literacy_queries.sql',
+                          ROOT / 'sql/08_children_by_settlement_queries.sql']
+    for path in supplemental_paths:
+        # Only the first statement is an export; later statements may be controls.
+        query = re.sub(r'--[^\n]*', '', path.read_text(encoding='utf-8-sig')).split(';')[0]
+        cursor = db.execute(query)
+        results.append((path.name + ':1', [c[0] for c in cursor.description],
+                        [dict(r) for r in cursor.fetchall()]))
     variants = {
         'children_age_profile_clean22082026.csv': next(q for q in queries if 'AS children' in q and 'GROUP BY sex, age' in q).replace('BETWEEN 0 AND 15', 'BETWEEN 0 AND 17'),
         'children_by_sex01092026.csv': next(q for q in queries if 'AS child_group_share_pct' in q).replace('BETWEEN 0 AND 15', 'BETWEEN 0 AND 16'),
@@ -89,7 +97,7 @@ def main(audit_date='2026-10-04', report_suffix=''):
             if item['variant_matches']:
                 item['status'] = 'MATCH_DOCUMENTED_VARIANT'
         exclusions = {
-            'children_age_profile22082026.csv': 'Historical mixed-unit age variant; use children_age_profile_clean22082026.csv for year-only charts.',
+            'children_age_profile22082026.csv': 'Historical mixed-unit age variant; use children_age_0_15_10122026.csv for the current children block.',
             'origina_place_profile_07092026.csv': 'Earlier ranking has no current query; excluded from starter sources. Recompute from person-level source if needed.'
         }
         if path.name in exclusions:
@@ -136,8 +144,12 @@ def main(audit_date='2026-10-04', report_suffix=''):
     subtotal = [r for r in top if r['settlement'] == 'Top 5 subtotal']
     details = [r for r in top if r['settlement'] != 'Top 5 subtotal']
     check('top_five_subtotal_equals_detail', len(subtotal) == 1 and sum(int(r['people']) for r in details) == int(subtotal[0]['people']))
-    check('snapshots_accounted_for', len(audit) == 46 and Counter(r['status'] for r in audit) == {'MATCH': 40, 'MATCH_DOCUMENTED_VARIANT': 4, 'REVIEW': 2})
+    check('snapshots_accounted_for', len(audit) == 48 and Counter(r['status'] for r in audit) == {'MATCH': 42, 'MATCH_DOCUMENTED_VARIANT': 4, 'REVIEW': 2})
+    check('only_known_legacy_exclusions', {r['file'] for r in audit if r['status'] == 'REVIEW'} == set(exclusions))
+    for filename in ('children_literacy_age_sex_20261013.csv', 'children_by_settlement_20261014.csv'):
+        check(filename + ':matches_current_sql', next(r for r in audit if r['file'] == filename)['status'] == 'MATCH')
     report = {'date': audit_date, 'source_sha256': digest(source), 'sql_sha256': digest(sql_path),
+              'supplemental_sql_sha256': {p.relative_to(ROOT).as_posix(): digest(p) for p in supplemental_paths},
               'source_rows': len(rows), 'source_columns': len(fields), 'practice_columns': len(pfields),
               'practice_sha256': digest(practice), 'retained_cell_mismatches': mismatches,
               'omitted_field': 'full_name', 'affected_person_ids': [r['person_id'] for r in rows],
@@ -145,7 +157,7 @@ def main(audit_date='2026-10-04', report_suffix=''):
               'missing_counts': {f: sum(r[f] == '' for r in rows) for f in fields},
               'age_zero_count': sum(r['age'] == '0' for r in rows),
               'allowance_counts': dict(Counter(r['allowance_status'] for r in rows)),
-              'queries_replayed': len(queries), 'exports': audit, 'benchmarks': benchmarks, 'checks': checks,
+              'queries_replayed': len(results), 'exports': audit, 'benchmarks': benchmarks, 'checks': checks,
               'method': 'SQLite in-memory replay of current SQL with CONCAT/FLOOR compatibility functions. Numeric formatting and blank/NULL export markers normalized for comparison; row order ignored. MySQL collation may differ. No live MySQL or Tableau validation claimed.'}
     out.mkdir(parents=True, exist_ok=True)
     (out / 'audit.json').write_text(json.dumps(report, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
@@ -158,21 +170,21 @@ def main(audit_date='2026-10-04', report_suffix=''):
              '## Historical export reconciliation', '', '| File | Rows | Result | Current query |', '|---|---:|---|---|']
     lines += [f"| {r['file']} | {r['rows']} | {r['status']} | {', '.join(map(str, r['matching_query_numbers'])) or 'See review notes'} |" for r in audit]
     lines += ['', '## Review notes', '',
-              '- 40 snapshots match current SQL values; four match documented variants (allowance-No, top-30 households, and the two superseded child age scopes).',
+              '- 42 snapshots match current SQL values, including the literacy and settlement exports; four match documented variants (allowance-No, top-30 households, and the two superseded child age scopes).',
               '- Decision 40 uses ages 0–15. Both new child exports with the literal suffix 10122026 match the corrected queries. Use these in place of older child snapshots. Historical reports describe the files and SQL hash at their original run.',
-              '- The older mixed-unit child-age file is excluded in favor of children_age_profile_clean22082026.csv.',
+              '- The older mixed-unit child-age file is excluded; use children_age_0_15_10122026.csv for the current children block.',
               '- The earlier origina_place_profile_07092026.csv ranking is excluded from starter sources because it has no matching current query.',
               '- All historical snapshots are preserved. Current-match status does not establish that subtotals, percentages, or repeated denominators are additive.',
               '- Tableau runtime and live MySQL checks were not performed.', '',
               '## Reproduction', '',
               'Run scripts/build_tableau_practice_20261004.mjs with the bundled node_modules path, then scripts/audit_tableau_exports_20261004.py. The builder refuses to overwrite a different versioned practice file.']
-    lines += ['', '## Import benchmarks', '', f'All {len(checks)} preparation assertions passed. Actual Tableau testing remains pending.', '', '| Scope | Expected values |', '|---|---|']
+    lines += ['', '## Import benchmarks', '', f'All {len(checks)} preparation assertions passed. This audit does not test Tableau; dashboard review evidence is documented separately.', '', '| Scope | Expected values |', '|---|---|']
     for name, values in benchmarks.items():
         lines.append(f'| {name} | ' + '; '.join(', '.join(f'{k}={v}' for k, v in row.items()) for row in values) + ' |')
     suffix_option = f' --report-suffix {report_suffix}' if report_suffix else ''
     lines += ['', f'Repeat this dated audit with `python scripts/audit_tableau_exports_20261004.py --date {audit_date}{suffix_option}`. The report is tied to the hashes in audit.json.']
     (out / 'README.md').write_text('\n'.join(lines) + '\n', encoding='utf-8')
-    print(json.dumps({'queries': len(queries), 'statuses': dict(Counter(r['status'] for r in audit)), 'retained_cell_mismatches': mismatches}, indent=2))
+    print(json.dumps({'queries': len(results), 'statuses': dict(Counter(r['status'] for r in audit)), 'retained_cell_mismatches': mismatches}, indent=2))
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()

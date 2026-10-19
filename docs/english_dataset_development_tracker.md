@@ -439,7 +439,10 @@ Owner review and screenshot corrections completed 2026-10-14. Updated single-sex
 - [x] Prepare and locally validate `sql/07_children_by_district_queries.sql`.
 - [x] Prepare and locally validate settlement-level analysis (owner direction, 2026-10-14): 51 groups, 1,467 children; district query retained as reference.
 - [x] Export/register the settlement comparison and build its visualization (owner completion, screenshot inspection and exact export QA, 2026-10-14).
-- [ ] Record the settlement dashboard public URL and verify live District filter behavior.
+- [x] Record the settlement dashboard public URL (2026-10-19; supplied 2026-10-14): [Sakhalin 1890 — Children by settlement](https://public.tableau.com/views/Sakhalin1890Childrenbysettlement/Sakhalin1890Childrenbysettlement).
+- [ ] Verify live District filter behavior on both settlement charts.
+- [x] Reconcile all 48 CSVs in the general audit: 42 current matches, four documented variants and two known exclusions (2026-10-19).
+- [x] Add settlement findings with population denominators and interpretation limits (2026-10-19).
 
 ## Progress Log
 

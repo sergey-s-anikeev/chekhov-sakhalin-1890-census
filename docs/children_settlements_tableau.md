@@ -41,4 +41,4 @@ Keep the existing district-only query as a reference; it is no longer the next p
 
 ## Completion — 2026-10-14
 
-The owner reported completion and saved `tableau/screenshots/children_by_settlement_20261014.png`. Local inspection confirms distinct count/share titles, aligned settlement order, one District filter, a color legend and the denominator note. The saved CSV has 51 rows covering 7,446 people and 1,467 children. Public URL receipt and independent live filter checks remain pending; a screenshot alone cannot verify filter behavior.
+The owner reported completion and saved `tableau/screenshots/children_by_settlement_20261014.png`. Local inspection confirms distinct count/share titles, aligned settlement order, one District filter, a color legend and the denominator note. The saved CSV has 51 rows covering 7,446 people and 1,467 children. Published dashboard: [Sakhalin 1890 — Children by settlement](https://public.tableau.com/views/Sakhalin1890Childrenbysettlement/Sakhalin1890Childrenbysettlement). URL supplied on 2026-10-14 and recorded on 2026-10-19. Independent live filter checks remain pending; a screenshot alone cannot verify filter behavior.

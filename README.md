@@ -12,7 +12,9 @@ Russian/Cyrillic source and normalized values remain authoritative. English docu
 
 ## Current Status
 
-**Two children’s dashboards are published, as reported by the owner: age and sex (0–15), and recorded literacy (5–15). Both links were supplied on 2026-10-13.** Owner review and six saved screenshots were completed on 2026-10-14. Updated screenshots confirm the summary-filter corrections; see [findings and review](docs/children_findings.md). The historical SQL snapshots run through 2026-09-08; the names-free practice source was prepared on 2026-10-04 and rechecked with exact import benchmarks on 2026-10-12. See the [latest preparation report](outputs/qa/tableau_preflight_20261012/README.md).
+**Three children’s dashboards are published, as reported by the owner: age and sex (0–15), recorded literacy (5–15), and settlement distribution (0–15).** Seven screenshots are saved. Owner review and updated screenshots confirm the age/literacy summary-filter corrections; the settlement layout was inspected, while independent live District-filter verification remains open. See the [findings and review](docs/children_findings.md).
+
+The [full inventory audit](outputs/qa/tableau_preflight_20261019_full_inventory/README.md), run on 2026-10-19, reconciles all 48 CSVs: 42 current-query matches, four documented variants and two known legacy exclusions. Source hashes and all retained practice-file values are unchanged.
 
 | Stage | Status | Result |
 |---|---|---|
@@ -20,7 +22,7 @@ Russian/Cyrillic source and normalized values remain authoritative. English docu
 | English analytical dataset | Approved; QA complete | 7,446 records and 23 columns in `sakhalin_1890_en_v1.csv` |
 | MySQL import and validation | Complete | 7,446 loaded rows, zero skipped records or warnings, and all validation controls passed |
 | SQL analysis and visualization exports | Complete | Demographic and extended analytical queries; 48 CSV snapshots in `tableau/data/` |
-| Tableau source validation and dashboards | In progress | Two children’s dashboards published (owner report); owner review and displayed filter checks complete |
+| Tableau source validation and dashboards | In progress | Three dashboards published (owner report); age/literacy screenshot checks complete; settlement live-filter check open |
 | Final findings and portfolio presentation | Pending | Analytical summary, dashboard screenshots, and final project narrative |
 
 The Russian canonical release `v5_20260731` retains the validated v4 analytical data, incorporates the approved Item 24 comment corrections, and adds the fully reviewed name-component and provenance structure.
@@ -57,7 +59,7 @@ Analysis covers population by district and settlement, age and sex, legal status
 
 ## Visualization Exports and Next Steps
 
-Settlement dashboard completed by the owner on 2026-10-14; [screenshot](tableau/screenshots/children_by_settlement_20261014.png) inspected and 51-row export verified. Public URL pending.
+Settlement dashboard completed by the owner on 2026-10-14; [screenshot](tableau/screenshots/children_by_settlement_20261014.png) inspected and 51-row export verified. Published dashboard: [Sakhalin 1890 — Children by settlement](https://public.tableau.com/views/Sakhalin1890Childrenbysettlement/Sakhalin1890Childrenbysettlement). URL supplied by the owner on 2026-10-14; recorded in documentation on 2026-10-19.
 
 **Children's block:** Decision 40 approves **Children aged 0–15**. Both child queries are corrected, and their replacement exports are registered in [the export inventory](tableau/data/README.md). Use [the standalone SQL](sql/05_children_0_15_queries.sql) to reproduce them. Expected total: 1,467 children (726 female, 741 male). Earlier child exports use different age ranges and remain historical. See [correction QA](outputs/qa/children_0_15_20261012/README.md). Both replacement CSVs match the corrected queries. Published dashboard: [Sakhalin 1890 — Children aged 0–15](https://public.tableau.com/views/Sakhalin1890Childrenaged015/Dashboard1). The owner supplied this link on 2026-10-13; the published view has not been independently inspected.
 
@@ -71,10 +73,10 @@ The next steps are:
 
 1. Select the main analytical findings and the charts needed to explain them.
 2. Import the relevant CSVs into Tableau and verify field types, dimensions, missing values, aggregations, and totals against the saved results and SQL.
-3. Record the public URL and live filter checks for the completed settlement dashboard; see [the settlement guide](docs/children_settlements_tableau.md).
-4. Extend the [documented children’s findings](docs/children_findings.md) with the settlement comparison, then finish the overall project narrative.
+3. Verify live District-filter behavior for the completed settlement dashboard; see [the settlement guide](docs/children_settlements_tableau.md).
+4. Compare the [documented children’s findings](docs/children_findings.md), now including settlements, with Chekhov’s account; then finish the overall project narrative.
 
-The [development tracker](docs/english_dataset_development_tracker.md) records both dashboards, the owner review and six screenshots. Summary-filter corrections are verified in the updated screenshots. No packaged Tableau workbook is stored in this repository.
+The [development tracker](docs/english_dataset_development_tracker.md) records three dashboards, the owner review and seven screenshots. Summary-filter corrections are verified in the updated screenshots. No packaged Tableau workbook is stored in this repository.
 
 ## GitHub Repository Workflow
 
