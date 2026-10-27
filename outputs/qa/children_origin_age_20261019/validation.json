@@ -1,0 +1,388 @@
+{
+  "status": "PASS",
+  "method": "SQLite replay and independent Python counts/decimal percentages",
+  "hashes": {
+    "data/analytical/sakhalin_1890_en_v1.csv": "1b77d6330855763c54c32f21d247dc44471a69590db4fc00925c4e22eb8ac508",
+    "sql/10_children_origin_age_profile.sql": "f4d34cbc7a0383cf6a4383d93cbd99a2a57872e25b19d49ff138f89081a311e0"
+  },
+  "results": [
+    [
+      {
+        "age": 0,
+        "row_type": "Age",
+        "all_children": 204,
+        "origin_elsewhere": 0,
+        "origin_elsewhere_pct": 0.0,
+        "in_transit": 1,
+        "in_transit_pct": 0.5,
+        "origin_not_recorded": 1,
+        "origin_not_recorded_pct": 0.5,
+        "origin_unknown": 0,
+        "origin_unknown_pct": 0.0
+      },
+      {
+        "age": 1,
+        "row_type": "Age",
+        "all_children": 219,
+        "origin_elsewhere": 1,
+        "origin_elsewhere_pct": 0.5,
+        "in_transit": 2,
+        "in_transit_pct": 0.9,
+        "origin_not_recorded": 0,
+        "origin_not_recorded_pct": 0.0,
+        "origin_unknown": 0,
+        "origin_unknown_pct": 0.0
+      },
+      {
+        "age": 2,
+        "row_type": "Age",
+        "all_children": 215,
+        "origin_elsewhere": 0,
+        "origin_elsewhere_pct": 0.0,
+        "in_transit": 7,
+        "in_transit_pct": 3.3,
+        "origin_not_recorded": 4,
+        "origin_not_recorded_pct": 1.9,
+        "origin_unknown": 0,
+        "origin_unknown_pct": 0.0
+      },
+      {
+        "age": 3,
+        "row_type": "Age",
+        "all_children": 166,
+        "origin_elsewhere": 2,
+        "origin_elsewhere_pct": 1.2,
+        "in_transit": 9,
+        "in_transit_pct": 5.4,
+        "origin_not_recorded": 3,
+        "origin_not_recorded_pct": 1.8,
+        "origin_unknown": 0,
+        "origin_unknown_pct": 0.0
+      },
+      {
+        "age": 4,
+        "row_type": "Age",
+        "all_children": 127,
+        "origin_elsewhere": 2,
+        "origin_elsewhere_pct": 1.6,
+        "in_transit": 9,
+        "in_transit_pct": 7.1,
+        "origin_not_recorded": 5,
+        "origin_not_recorded_pct": 3.9,
+        "origin_unknown": 0,
+        "origin_unknown_pct": 0.0
+      },
+      {
+        "age": 5,
+        "row_type": "Age",
+        "all_children": 106,
+        "origin_elsewhere": 3,
+        "origin_elsewhere_pct": 2.8,
+        "in_transit": 13,
+        "in_transit_pct": 12.3,
+        "origin_not_recorded": 1,
+        "origin_not_recorded_pct": 0.9,
+        "origin_unknown": 0,
+        "origin_unknown_pct": 0.0
+      },
+      {
+        "age": 6,
+        "row_type": "Age",
+        "all_children": 84,
+        "origin_elsewhere": 7,
+        "origin_elsewhere_pct": 8.3,
+        "in_transit": 4,
+        "in_transit_pct": 4.8,
+        "origin_not_recorded": 3,
+        "origin_not_recorded_pct": 3.6,
+        "origin_unknown": 0,
+        "origin_unknown_pct": 0.0
+      },
+      {
+        "age": 7,
+        "row_type": "Age",
+        "all_children": 64,
+        "origin_elsewhere": 13,
+        "origin_elsewhere_pct": 20.3,
+        "in_transit": 6,
+        "in_transit_pct": 9.4,
+        "origin_not_recorded": 1,
+        "origin_not_recorded_pct": 1.6,
+        "origin_unknown": 0,
+        "origin_unknown_pct": 0.0
+      },
+      {
+        "age": 8,
+        "row_type": "Age",
+        "all_children": 54,
+        "origin_elsewhere": 0,
+        "origin_elsewhere_pct": 0.0,
+        "in_transit": 1,
+        "in_transit_pct": 1.9,
+        "origin_not_recorded": 52,
+        "origin_not_recorded_pct": 96.3,
+        "origin_unknown": 0,
+        "origin_unknown_pct": 0.0
+      },
+      {
+        "age": 9,
+        "row_type": "Age",
+        "all_children": 46,
+        "origin_elsewhere": 3,
+        "origin_elsewhere_pct": 6.5,
+        "in_transit": 3,
+        "in_transit_pct": 6.5,
+        "origin_not_recorded": 2,
+        "origin_not_recorded_pct": 4.3,
+        "origin_unknown": 0,
+        "origin_unknown_pct": 0.0
+      },
+      {
+        "age": 10,
+        "row_type": "Age",
+        "all_children": 52,
+        "origin_elsewhere": 4,
+        "origin_elsewhere_pct": 7.7,
+        "in_transit": 11,
+        "in_transit_pct": 21.2,
+        "origin_not_recorded": 2,
+        "origin_not_recorded_pct": 3.8,
+        "origin_unknown": 0,
+        "origin_unknown_pct": 0.0
+      },
+      {
+        "age": 11,
+        "row_type": "Age",
+        "all_children": 39,
+        "origin_elsewhere": 2,
+        "origin_elsewhere_pct": 5.1,
+        "in_transit": 9,
+        "in_transit_pct": 23.1,
+        "origin_not_recorded": 0,
+        "origin_not_recorded_pct": 0.0,
+        "origin_unknown": 0,
+        "origin_unknown_pct": 0.0
+      },
+      {
+        "age": 12,
+        "row_type": "Age",
+        "all_children": 34,
+        "origin_elsewhere": 1,
+        "origin_elsewhere_pct": 2.9,
+        "in_transit": 8,
+        "in_transit_pct": 23.5,
+        "origin_not_recorded": 1,
+        "origin_not_recorded_pct": 2.9,
+        "origin_unknown": 0,
+        "origin_unknown_pct": 0.0
+      },
+      {
+        "age": 13,
+        "row_type": "Age",
+        "all_children": 22,
+        "origin_elsewhere": 1,
+        "origin_elsewhere_pct": 4.5,
+        "in_transit": 4,
+        "in_transit_pct": 18.2,
+        "origin_not_recorded": 2,
+        "origin_not_recorded_pct": 9.1,
+        "origin_unknown": 0,
+        "origin_unknown_pct": 0.0
+      },
+      {
+        "age": 14,
+        "row_type": "Age",
+        "all_children": 24,
+        "origin_elsewhere": 3,
+        "origin_elsewhere_pct": 12.5,
+        "in_transit": 10,
+        "in_transit_pct": 41.7,
+        "origin_not_recorded": 1,
+        "origin_not_recorded_pct": 4.2,
+        "origin_unknown": 0,
+        "origin_unknown_pct": 0.0
+      },
+      {
+        "age": 15,
+        "row_type": "Age",
+        "all_children": 11,
+        "origin_elsewhere": 5,
+        "origin_elsewhere_pct": 45.5,
+        "in_transit": 5,
+        "in_transit_pct": 45.5,
+        "origin_not_recorded": 0,
+        "origin_not_recorded_pct": 0.0,
+        "origin_unknown": 0,
+        "origin_unknown_pct": 0.0
+      },
+      {
+        "age": null,
+        "row_type": "Total",
+        "all_children": 1467,
+        "origin_elsewhere": 47,
+        "origin_elsewhere_pct": 3.2,
+        "in_transit": 102,
+        "in_transit_pct": 7.0,
+        "origin_not_recorded": 78,
+        "origin_not_recorded_pct": 5.3,
+        "origin_unknown": 0,
+        "origin_unknown_pct": 0.0
+      }
+    ],
+    [
+      {
+        "age": 0,
+        "row_type": "Age",
+        "all_children": 204,
+        "on_sakhalin": 202,
+        "on_sakhalin_pct": 99.0,
+        "all_other_origins": 2,
+        "all_other_origins_pct": 1.0
+      },
+      {
+        "age": 1,
+        "row_type": "Age",
+        "all_children": 219,
+        "on_sakhalin": 216,
+        "on_sakhalin_pct": 98.6,
+        "all_other_origins": 3,
+        "all_other_origins_pct": 1.4
+      },
+      {
+        "age": 2,
+        "row_type": "Age",
+        "all_children": 215,
+        "on_sakhalin": 204,
+        "on_sakhalin_pct": 94.9,
+        "all_other_origins": 11,
+        "all_other_origins_pct": 5.1
+      },
+      {
+        "age": 3,
+        "row_type": "Age",
+        "all_children": 166,
+        "on_sakhalin": 152,
+        "on_sakhalin_pct": 91.6,
+        "all_other_origins": 14,
+        "all_other_origins_pct": 8.4
+      },
+      {
+        "age": 4,
+        "row_type": "Age",
+        "all_children": 127,
+        "on_sakhalin": 111,
+        "on_sakhalin_pct": 87.4,
+        "all_other_origins": 16,
+        "all_other_origins_pct": 12.6
+      },
+      {
+        "age": 5,
+        "row_type": "Age",
+        "all_children": 106,
+        "on_sakhalin": 89,
+        "on_sakhalin_pct": 84.0,
+        "all_other_origins": 17,
+        "all_other_origins_pct": 16.0
+      },
+      {
+        "age": 6,
+        "row_type": "Age",
+        "all_children": 84,
+        "on_sakhalin": 70,
+        "on_sakhalin_pct": 83.3,
+        "all_other_origins": 14,
+        "all_other_origins_pct": 16.7
+      },
+      {
+        "age": 7,
+        "row_type": "Age",
+        "all_children": 64,
+        "on_sakhalin": 44,
+        "on_sakhalin_pct": 68.8,
+        "all_other_origins": 20,
+        "all_other_origins_pct": 31.3
+      },
+      {
+        "age": 8,
+        "row_type": "Age",
+        "all_children": 54,
+        "on_sakhalin": 1,
+        "on_sakhalin_pct": 1.9,
+        "all_other_origins": 53,
+        "all_other_origins_pct": 98.1
+      },
+      {
+        "age": 9,
+        "row_type": "Age",
+        "all_children": 46,
+        "on_sakhalin": 38,
+        "on_sakhalin_pct": 82.6,
+        "all_other_origins": 8,
+        "all_other_origins_pct": 17.4
+      },
+      {
+        "age": 10,
+        "row_type": "Age",
+        "all_children": 52,
+        "on_sakhalin": 35,
+        "on_sakhalin_pct": 67.3,
+        "all_other_origins": 17,
+        "all_other_origins_pct": 32.7
+      },
+      {
+        "age": 11,
+        "row_type": "Age",
+        "all_children": 39,
+        "on_sakhalin": 28,
+        "on_sakhalin_pct": 71.8,
+        "all_other_origins": 11,
+        "all_other_origins_pct": 28.2
+      },
+      {
+        "age": 12,
+        "row_type": "Age",
+        "all_children": 34,
+        "on_sakhalin": 24,
+        "on_sakhalin_pct": 70.6,
+        "all_other_origins": 10,
+        "all_other_origins_pct": 29.4
+      },
+      {
+        "age": 13,
+        "row_type": "Age",
+        "all_children": 22,
+        "on_sakhalin": 15,
+        "on_sakhalin_pct": 68.2,
+        "all_other_origins": 7,
+        "all_other_origins_pct": 31.8
+      },
+      {
+        "age": 14,
+        "row_type": "Age",
+        "all_children": 24,
+        "on_sakhalin": 10,
+        "on_sakhalin_pct": 41.7,
+        "all_other_origins": 14,
+        "all_other_origins_pct": 58.3
+      },
+      {
+        "age": 15,
+        "row_type": "Age",
+        "all_children": 11,
+        "on_sakhalin": 1,
+        "on_sakhalin_pct": 9.1,
+        "all_other_origins": 10,
+        "all_other_origins_pct": 90.9
+      },
+      {
+        "age": null,
+        "row_type": "Total",
+        "all_children": 1467,
+        "on_sakhalin": 1240,
+        "on_sakhalin_pct": 84.5,
+        "all_other_origins": 227,
+        "all_other_origins_pct": 15.5
+      }
+    ]
+  ]
+}

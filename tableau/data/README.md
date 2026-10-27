@@ -1,5 +1,11 @@
 # Analytical exports
 
+## Children's origin by age: two new exports — 2026-10-27
+
+Registered `children_origin_age_profile_20261027.csv` and `children_origin_age__islanders_profile_20261027.csv`, each with 17 result rows (ages 0–15 plus a Total row), from queries 1 and 2 in [`sql/10_children_origin_age_profile.sql`](../../sql/10_children_origin_age_profile.sql). The first keeps recorded origin elsewhere, In transit, Not recorded and explicit unknown separate. The second shows On Sakhalin and its **all other origin records** complement; that complement is not a migrant count. All percentages use the complete same-age child count; Total-row percentages use all 1,467 children. Filter out `row_type = Total` before summing age rows in Tableau, or totals will be doubled. The Total row's age is marked `NULL` in the supplied CSVs.
+
+Both saved files match every header and value in the locally validated SQL results. Row counts and hashes are in [export QA](../../outputs/qa/children_origin_age_export_20261027/validation.json). This verifies saved results against the approved source through local SQL replay; live MySQL execution logs were not inspected. **Current inventory: 50 CSV files.** The dated audits and counts below document the earlier 48-file state.
+
 ## Full inventory reconciliation — 2026-10-19
 
 All 48 files were checked together against current SQL and documented historical variants: 42 MATCH, four MATCH_DOCUMENTED_VARIANT and two known legacy REVIEW exclusions. The literacy and settlement queries are now included in the general audit. See [the dated report](../../outputs/qa/tableau_preflight_20261019_full_inventory/README.md). Earlier audit sections below retain their original scope and counts.

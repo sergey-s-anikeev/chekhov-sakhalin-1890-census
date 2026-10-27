@@ -384,7 +384,7 @@ Boolean values. Workbench loaded 7,446 rows with zero skipped records and zero
 warnings; the validation result set matched all expected totals and showed
 `PASS` for every control.
 
-## 10. Tableau Readiness — `[~]` First dashboard published; remaining validation in progress
+## 10. Tableau Readiness — `[~]` Four named children's dashboards published; remaining validation paused
 
 - [ ] Test direct CSV import into Tableau.
 - [ ] Verify field types, aliases, geographic roles, and default aggregations.
@@ -411,6 +411,10 @@ warnings; the validation result set matched all expected totals and showed
 - [x] Register the saved 75-row literacy CSV and reconcile it exactly with local SQL results (2026-10-13); live MySQL execution logs were not inspected.
 - [x] Record completion/publication of the literacy dashboard based on the owner-supplied URL (2026-10-13): [Recorded literacy among children aged 5–15](https://public.tableau.com/views/Recordedliteracyamongchildrenaged515/Dashboard1).
 - [x] Verify the published literacy dashboard’s layout, filters and percentage calculations. Confirmed in owner review and updated screenshots, 2026-10-14.
+- [x] Register both owner-supplied origin-by-age CSVs and their exact local result validation (2026-10-27); see `tableau/data/README.md`.
+- [x] Record the [two-group origin-by-age share link](https://public.tableau.com/shared/ZMWP4CSS2) and save its screenshot (owner supplied, 2026-10-27).
+- [x] Record the [detailed four-category origin-by-age dashboard](https://public.tableau.com/views/ChildrensrecordedoriginbyageSakhalin1890/Dashboard1) and save its screenshot with the age-eight missing-origin note (owner supplied, 2026-10-27).
+- [x] Inspect both origin screenshots locally for displayed categories, age range and caveat; live Tableau pages and data-source connections remain unverified.
 
 ## 11. Documentation and Release — `[~]` Approved analytical release; publication verification pending
 
@@ -443,6 +447,9 @@ Owner review and screenshot corrections completed 2026-10-14. Updated single-sex
 - [ ] Verify live District filter behavior on both settlement charts.
 - [x] Reconcile all 48 CSVs in the general audit: 42 current matches, four documented variants and two known exclusions (2026-10-19).
 - [x] Add settlement findings with population denominators and interpretation limits (2026-10-19).
+- [x] Document the published origin-by-age views and screenshot evidence (2026-10-27); four named children’s dashboards and one additional shared view are now recorded.
+
+The owner paused further review and CSV extracts on 2026-10-27. Open application checks and unsaved SQL outputs remain documented, without implying that new exports or a Chekhov numerical comparison are planned.
 
 ## Progress Log
 

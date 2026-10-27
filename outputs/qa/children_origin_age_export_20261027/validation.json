@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "method": "Exact header and ordered row comparison with locally validated SQL results; live MySQL execution not inspected",
+  "files": [
+    {
+      "path": "tableau/data/children_origin_age_profile_20261027.csv",
+      "rows": 17,
+      "sha256": "389c4d9f833ae95a4a5b3b0a61d08f8f7a922c2b8ef6807252ab513a31926a20",
+      "comparison": "MATCH"
+    },
+    {
+      "path": "tableau/data/children_origin_age__islanders_profile_20261027.csv",
+      "rows": 17,
+      "sha256": "0856483b8552dcfe696d903fc25bb30386c17edcd84c81bb18b2723dc4d1c89a",
+      "comparison": "MATCH"
+    }
+  ]
+}

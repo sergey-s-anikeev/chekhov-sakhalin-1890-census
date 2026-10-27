@@ -2,6 +2,8 @@
 
 ## Purpose
 
+Historical context: [Chekhov, Chapter XV — origin-place extract and note 12](chekhov_ch15_origin_place_ru.md), preserved in Russian. This reference does not change the canonical values or normalization rules below.
+
 This reference list documents canonical values used to normalize the `origin_place` field in the Chekhov Sakhalin 1890 Census project.
 
 The list is intended to support reproducible cleaning of historical place-of-origin values extracted from the PDF source. Source values may appear in abbreviated, genitive, bracket-restored, or typo-affected forms. The normalized output should use the canonical values below when the mapping is clear.

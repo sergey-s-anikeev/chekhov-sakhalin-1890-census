@@ -1,0 +1,144 @@
+{
+  "status": "PASS",
+  "method": "Local SQLite replay and independent CSV tally; no live MySQL execution",
+  "hashes": {
+    "data/analytical/sakhalin_1890_en_v1.csv": "1b77d6330855763c54c32f21d247dc44471a69590db4fc00925c4e22eb8ac508",
+    "sql/12_children_literacy_by_origin.sql": "564f694b5128b29eadcba4e940a68e9abd1437951fd8bdbcb257391849551dca"
+  },
+  "four_group_rows": [
+    {
+      "age_scope": "0-15",
+      "origin_group": "In transit",
+      "children": 102,
+      "literate": 32,
+      "educated": 0,
+      "illiterate": 27,
+      "literacy_not_recorded": 43,
+      "literate_pct_all": 31.4,
+      "literate_pct_recorded": 54.2
+    },
+    {
+      "age_scope": "0-15",
+      "origin_group": "On Sakhalin",
+      "children": 1240,
+      "literate": 78,
+      "educated": 0,
+      "illiterate": 140,
+      "literacy_not_recorded": 1022,
+      "literate_pct_all": 6.3,
+      "literate_pct_recorded": 35.8
+    },
+    {
+      "age_scope": "0-15",
+      "origin_group": "Origin not recorded",
+      "children": 78,
+      "literate": 16,
+      "educated": 0,
+      "illiterate": 29,
+      "literacy_not_recorded": 33,
+      "literate_pct_all": 20.5,
+      "literate_pct_recorded": 35.6
+    },
+    {
+      "age_scope": "0-15",
+      "origin_group": "Recorded origin elsewhere",
+      "children": 47,
+      "literate": 10,
+      "educated": 0,
+      "illiterate": 15,
+      "literacy_not_recorded": 22,
+      "literate_pct_all": 21.3,
+      "literate_pct_recorded": 40.0
+    },
+    {
+      "age_scope": "5-15",
+      "origin_group": "In transit",
+      "children": 74,
+      "literate": 32,
+      "educated": 0,
+      "illiterate": 26,
+      "literacy_not_recorded": 16,
+      "literate_pct_all": 43.2,
+      "literate_pct_recorded": 55.2
+    },
+    {
+      "age_scope": "5-15",
+      "origin_group": "On Sakhalin",
+      "children": 355,
+      "literate": 78,
+      "educated": 0,
+      "illiterate": 108,
+      "literacy_not_recorded": 169,
+      "literate_pct_all": 22.0,
+      "literate_pct_recorded": 41.9
+    },
+    {
+      "age_scope": "5-15",
+      "origin_group": "Origin not recorded",
+      "children": 65,
+      "literate": 16,
+      "educated": 0,
+      "illiterate": 29,
+      "literacy_not_recorded": 20,
+      "literate_pct_all": 24.6,
+      "literate_pct_recorded": 35.6
+    },
+    {
+      "age_scope": "5-15",
+      "origin_group": "Recorded origin elsewhere",
+      "children": 42,
+      "literate": 10,
+      "educated": 0,
+      "illiterate": 15,
+      "literacy_not_recorded": 17,
+      "literate_pct_all": 23.8,
+      "literate_pct_recorded": 40.0
+    }
+  ],
+  "two_group_rows": [
+    {
+      "age_scope": "0-15",
+      "origin_group": "All other origin records",
+      "children": 227,
+      "literate": 58,
+      "educated": 0,
+      "illiterate": 71,
+      "literacy_not_recorded": 98,
+      "literate_pct_all": 25.6,
+      "literate_pct_recorded": 45.0
+    },
+    {
+      "age_scope": "0-15",
+      "origin_group": "On Sakhalin",
+      "children": 1240,
+      "literate": 78,
+      "educated": 0,
+      "illiterate": 140,
+      "literacy_not_recorded": 1022,
+      "literate_pct_all": 6.3,
+      "literate_pct_recorded": 35.8
+    },
+    {
+      "age_scope": "5-15",
+      "origin_group": "All other origin records",
+      "children": 181,
+      "literate": 58,
+      "educated": 0,
+      "illiterate": 70,
+      "literacy_not_recorded": 53,
+      "literate_pct_all": 32.0,
+      "literate_pct_recorded": 45.3
+    },
+    {
+      "age_scope": "5-15",
+      "origin_group": "On Sakhalin",
+      "children": 355,
+      "literate": 78,
+      "educated": 0,
+      "illiterate": 108,
+      "literacy_not_recorded": 169,
+      "literate_pct_all": 22.0,
+      "literate_pct_recorded": 41.9
+    }
+  ]
+}

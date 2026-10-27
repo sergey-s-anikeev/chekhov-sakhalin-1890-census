@@ -12,17 +12,17 @@ Russian/Cyrillic source and normalized values remain authoritative. English docu
 
 ## Current Status
 
-**Three children’s dashboards are published, as reported by the owner: age and sex (0–15), recorded literacy (5–15), and settlement distribution (0–15).** Seven screenshots are saved. Owner review and updated screenshots confirm the age/literacy summary-filter corrections; the settlement layout was inspected, while independent live District-filter verification remains open. See the [findings and review](docs/children_findings.md).
+**Four named children’s dashboards are published, as reported by the owner: age and sex (0–15), recorded literacy (5–15), settlement distribution (0–15), and recorded origin by age (0–15).** A two-group origin view also has an owner-supplied Tableau share link. Nine screenshots are saved, including both origin views. Owner review and updated screenshots confirm the age/literacy summary-filter corrections; the settlement layout was inspected, while independent live District-filter verification remains open. See the [findings and review](docs/children_findings.md) and [origin-by-age analysis](docs/children_origin_age_profile.md).
 
-The [full inventory audit](outputs/qa/tableau_preflight_20261019_full_inventory/README.md), run on 2026-10-19, reconciles all 48 CSVs: 42 current-query matches, four documented variants and two known legacy exclusions. Source hashes and all retained practice-file values are unchanged.
+The [full inventory audit](outputs/qa/tableau_preflight_20261019_full_inventory/README.md), run on 2026-10-19, reconciled the 48 CSVs present then: 42 current-query matches, four documented variants and two known legacy exclusions. Two children's origin-by-age exports were [registered separately on 2026-10-27](outputs/qa/children_origin_age_export_20261027/validation.json), bringing the current inventory to 50. Source hashes and all retained practice-file values are unchanged.
 
 | Stage | Status | Result |
 |---|---|---|
 | Extraction, cleaning, and Russian canonical release | Complete | Reviewed `v5_20260731` release, integrated QA, and manifest registration |
 | English analytical dataset | Approved; QA complete | 7,446 records and 23 columns in `sakhalin_1890_en_v1.csv` |
 | MySQL import and validation | Complete | 7,446 loaded rows, zero skipped records or warnings, and all validation controls passed |
-| SQL analysis and visualization exports | Complete | Demographic and extended analytical queries; 48 CSV snapshots in `tableau/data/` |
-| Tableau source validation and dashboards | In progress | Three dashboards published (owner report); age/literacy screenshot checks complete; settlement live-filter check open |
+| SQL analysis and visualization exports | In progress | Demographic and extended analytical queries; 50 CSV snapshots in `tableau/data/`; selected new origin views still await exports |
+| Tableau source validation and dashboards | In progress | Four named dashboards published (owner report), plus one shared two-group origin view; nine screenshots saved; settlement live-filter check open |
 | Final findings and portfolio presentation | Pending | Analytical summary, dashboard screenshots, and final project narrative |
 
 The Russian canonical release `v5_20260731` retains the validated v4 analytical data, incorporates the approved Item 24 comment corrections, and adds the fully reviewed name-component and provenance structure.
@@ -65,18 +65,19 @@ Settlement dashboard completed by the owner on 2026-10-14; [screenshot](tableau/
 
 Start local practice with [`tableau/practice/sakhalin_1890_en_no_full_name_20261004.csv`](tableau/practice/sakhalin_1890_en_no_full_name_20261004.csv): all 7,446 people and 22 columns, omitting only full_name. It retains linkable identifiers and is not an anonymous public-release file. Use the [Tableau preparation guide](docs/tableau_preparation.md) for import types, denominators, household grouping, legacy-export selection, and aggregate-only public dashboard recommendations. The [preflight report](outputs/qa/tableau_preflight_20261004/README.md) records snapshot reconciliation and exact retained-value verification.
 
-The [analytical export inventory](tableau/data/README.md) describes all **48 CSV snapshots**: the 44 earlier exports, two corrected children aged 0–15 files registered on 2026-10-12, the literacy export registered on 2026-10-13, and the settlement export registered on 2026-10-14. It records each file's row count, analytical scope, percentage denominators, and known differences from the current SQL. Some snapshots are earlier or manual query variants; two extended queries do not yet have corresponding CSV exports.
+The [analytical export inventory](tableau/data/README.md) describes all **50 CSV snapshots**: the earlier 48 plus two children’s origin-by-age results registered on 2026-10-27. It records their row counts, analytical scope, percentage denominators, and known differences from current SQL. Some snapshots are earlier or manual query variants; selected child-origin and two extended queries do not yet have corresponding CSV exports.
 
 Published literacy analysis: children’s recorded literacy by age and sex. Decision 42 focuses its visualization on ages 5–15 using a Tableau filter; the export retains ages 0–15. Use the [export and browser-authoring instructions](docs/children_literacy_tableau.md) and [read-only SQL](sql/06_children_literacy_queries.sql). Published literacy dashboard: [Recorded literacy among children aged 5–15](https://public.tableau.com/views/Recordedliteracyamongchildrenaged515/Dashboard1). The saved literacy CSV matches the SQL locally; owner review and updated screenshot checks are complete.
 
-The next steps are:
+Published origin-by-age analysis: the [detailed dashboard](https://public.tableau.com/views/ChildrensrecordedoriginbyageSakhalin1890/Dashboard1) separates On Sakhalin, recorded origin elsewhere, In transit and origin not recorded. The [earlier two-group view](https://public.tableau.com/shared/ZMWP4CSS2) combines the latter three categories as all other origin records. Both links were supplied by the owner on 2026-10-27; the [detailed screenshot](tableau/screenshots/children_origin_by_age_full_20261027.png) and [two-group screenshot](tableau/screenshots/children_origin_by_age_20261027.png) were inspected locally, but the live Tableau pages and workbook connections were not independently checked. The detailed view flags age eight: 52 of 54 children have no recorded origin. See [analysis, CSV sources and interpretation](docs/children_origin_age_profile.md).
 
-1. Select the main analytical findings and the charts needed to explain them.
-2. Import the relevant CSVs into Tableau and verify field types, dimensions, missing values, aggregations, and totals against the saved results and SQL.
-3. Verify live District-filter behavior for the completed settlement dashboard; see [the settlement guide](docs/children_settlements_tableau.md).
-4. Compare the [documented children’s findings](docs/children_findings.md), now including settlements, with Chekhov’s account; then finish the overall project narrative.
+On 2026-10-27, the owner paused further review and CSV extracts. The remaining project steps are:
 
-The [development tracker](docs/english_dataset_development_tracker.md) records three dashboards, the owner review and seven screenshots. Summary-filter corrections are verified in the updated screenshots. No packaged Tableau workbook is stored in this repository.
+1. Select the main findings from the published dashboards and finish the project narrative.
+2. If review resumes, verify the live District filter on the settlement dashboard and published workbook connections; see [the settlement guide](docs/children_settlements_tableau.md).
+3. Resume any further SQL exports only if the owner requests them. A numerical comparison with Chekhov’s published figures is outside the current plan.
+
+The [development tracker](docs/english_dataset_development_tracker.md) records four named dashboards, the additional two-group origin view, the owner review and nine screenshots. Summary-filter corrections are verified in the updated screenshots. No packaged Tableau workbook is stored in this repository.
 
 ## GitHub Repository Workflow
 

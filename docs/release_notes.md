@@ -1,5 +1,13 @@
 # Parser Improvements After Full-District Validation
 
+## Children's origin-by-age Tableau views — 2026-10-27
+
+Recorded the owner-supplied [detailed four-category dashboard](https://public.tableau.com/views/ChildrensrecordedoriginbyageSakhalin1890/Dashboard1) and [two-group share link](https://public.tableau.com/shared/ZMWP4CSS2). Saved screenshots of both views were visually inspected. The detailed dashboard retains On Sakhalin, recorded origin elsewhere, In transit and origin not recorded as separate segments and displays the age-eight missing-origin caveat. Updated the README, origin analysis and tracker to four named children's dashboards, an additional shared view and nine screenshots. Live Tableau pages and data-source connections were not independently inspected. No existing dataset or CSV values changed.
+
+## Children's origin-by-age CSV registration — 2026-10-27
+
+Registered two owner-supplied, 17-row children’s origin-by-age results from `sql/10_children_origin_age_profile.sql`. Every header and value matches the locally validated query results; hashes are saved in `outputs/qa/children_origin_age_export_20261027/validation.json`. The current Tableau inventory is 50 CSV files. The results of `sql/09_arrival_children_origin_queries.sql` and the new settlement-literacy query remain unexported. No canonical or previously registered CSV was changed.
+
 ## Children's documentation and full inventory reconciliation — 2026-10-19
 
 Updated current status to three dashboards and seven screenshots, recorded the previously supplied settlement URL, and kept live filter verification separate. Expanded the general export audit to include the literacy and settlement SQL, preserving earlier QA reports. All 48 CSVs reconcile: 42 current matches, four documented historical variants and two known legacy exclusions; no retained source-value differences. Added settlement findings comparing counts and shares with explicit denominators and missing-age limitations. Earlier establishment remains a hypothesis for later comparison with historical sources. No canonical data or exported CSVs changed.

@@ -41,4 +41,18 @@ Earlier settlement establishment is a hypothesis for subsequent historical inves
 
 ## Next analysis
 
-Compare these observations with Chekhov's descriptions, using the [saved interpretation draft](drafts/children_age_literacy_interpretation_20261014.md). Record exact passages, edition/chapter references, geographic scope, age definitions and denominators. Historical comparison and settlement-founding-date research remain pending.
+The project owner decided on 2026-10-27 to skip a numerical comparison with Chekhov's published figures. Historical passages remain as contextual source references. The current analytical question is whether recorded child literacy varies by settlement and how any variation relates to documented school locations. See the [preliminary settlement literacy check](children_literacy_settlements_20261027.md). Settlement-founding-date research remains pending.
+
+On 2026-10-19, the [Chapter XIX schools and literacy reference](reference/chekhov_ch19_schools_literacy.md) was added with the Russian original, bibliographic citation, an English working translation and details of a published English edition. Its all-age sex-specific literacy rates, children's origin-specific rates and school enrolment figures use different populations. Statistical reconciliation and verification of the published English passage remain pending.
+
+## Arrival and origin follow-up — 2026-10-19
+
+See [arrival cohorts and child origins](arrival_children_origin.md) for existing-query reuse, verified counts and connections to the age, literacy and settlement dashboards. Among ages 0–15, 1,240 records say On Sakhalin, 47 name origins elsewhere, 102 say In transit and 78 have no recorded origin. In transit remains separate; origin is not an islander identity. Only 42 children have a recorded arrival year, so arrival-cohort analysis cannot describe all children or establish parental migration timing.
+
+The [age-specific origin tables](children_origin_age_profile.md) preserve both detailed categories and the On Sakhalin/complement comparison, with reproducible SQL. At age eight, 52 of 54 records lack origin. On 2026-10-27, the project owner reported verifying the original records: these origins are unrecorded in the source, and the concentration at this age is a coincidence rather than a processing issue. The investigation is closed on that basis. Missing origins remain unchanged and must not be interpreted as a migration peak.
+
+The owner published a [detailed origin-by-age dashboard](https://public.tableau.com/views/ChildrensrecordedoriginbyageSakhalin1890/Dashboard1) and an [earlier two-group origin view](https://public.tableau.com/shared/ZMWP4CSS2) on 2026-10-27. Both screenshots are saved and were visually inspected; the detailed chart keeps elsewhere, In transit and missing origins separate and includes the age-eight note. See the [Tableau view record](children_origin_age_profile.md#tableau-views--2026-10-27). Live workbook connections were not independently inspected.
+
+The [literacy-by-origin check](children_literacy_by_origin_20261027.md) compares ages 5–15: 78 of 355 children labelled On Sakhalin and 10 of 42 with a named origin elsewhere are recorded Literate (22.0% and 23.8% of all children in each group). Among children with recorded literacy, the shares are 41.9% and 40.0%; missing literacy and the small elsewhere group limit inference. In transit and missing origins remain separate. No school-attendance conclusion follows.
+
+A requested two-group display combines every other origin record: On Sakhalin 78/355 (22.0%) versus the complement 58/181 (32.0%) recorded Literate among ages 5–15. The complement includes 74 In transit and 65 missing-origin children; it is not a born-outside group. Literacy coverage differs, reducing the recorded-only rate gap to 41.9% versus 45.3%. See the same [origin comparison](children_literacy_by_origin_20261027.md) for counts and the 0–15 scope check.

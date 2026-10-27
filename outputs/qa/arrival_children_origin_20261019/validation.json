@@ -1,0 +1,203 @@
+{
+  "status": "PASS",
+  "method": "Local SQLite execution and comparison with existing dashboard CSVs; MySQL export pending.",
+  "hashes": {
+    "data\\analytical\\sakhalin_1890_en_v1.csv": "1b77d6330855763c54c32f21d247dc44471a69590db4fc00925c4e22eb8ac508",
+    "sql\\09_arrival_children_origin_queries.sql": "2c20b5304f4c76e70d07c3d6290738ea7bdbb10035d758afe6f9493a1fed3052"
+  },
+  "ranked_arrivals": [
+    {
+      "arrival_year": 1884,
+      "people": 548,
+      "children_0_15": 12,
+      "share_recorded_arrivals_pct": 11.4
+    },
+    {
+      "arrival_year": 1886,
+      "people": 489,
+      "children_0_15": 3,
+      "share_recorded_arrivals_pct": 10.1
+    },
+    {
+      "arrival_year": 1885,
+      "people": 474,
+      "children_0_15": 6,
+      "share_recorded_arrivals_pct": 9.8
+    },
+    {
+      "arrival_year": 1887,
+      "people": 464,
+      "children_0_15": 4,
+      "share_recorded_arrivals_pct": 9.6
+    },
+    {
+      "arrival_year": 1883,
+      "people": 429,
+      "children_0_15": 7,
+      "share_recorded_arrivals_pct": 8.9
+    },
+    {
+      "arrival_year": 1889,
+      "people": 336,
+      "children_0_15": 0,
+      "share_recorded_arrivals_pct": 7.0
+    },
+    {
+      "arrival_year": 1879,
+      "people": 326,
+      "children_0_15": 3,
+      "share_recorded_arrivals_pct": 6.8
+    },
+    {
+      "arrival_year": 1882,
+      "people": 320,
+      "children_0_15": 2,
+      "share_recorded_arrivals_pct": 6.6
+    },
+    {
+      "arrival_year": 1880,
+      "people": 270,
+      "children_0_15": 1,
+      "share_recorded_arrivals_pct": 5.6
+    },
+    {
+      "arrival_year": 1888,
+      "people": 264,
+      "children_0_15": 0,
+      "share_recorded_arrivals_pct": 5.5
+    },
+    {
+      "arrival_year": 1881,
+      "people": 203,
+      "children_0_15": 0,
+      "share_recorded_arrivals_pct": 4.2
+    },
+    {
+      "arrival_year": 1876,
+      "people": 175,
+      "children_0_15": 2,
+      "share_recorded_arrivals_pct": 3.6
+    },
+    {
+      "arrival_year": 1875,
+      "people": 145,
+      "children_0_15": 1,
+      "share_recorded_arrivals_pct": 3.0
+    },
+    {
+      "arrival_year": 1878,
+      "people": 120,
+      "children_0_15": 1,
+      "share_recorded_arrivals_pct": 2.5
+    },
+    {
+      "arrival_year": 1877,
+      "people": 95,
+      "children_0_15": 0,
+      "share_recorded_arrivals_pct": 2.0
+    },
+    {
+      "arrival_year": 1869,
+      "people": 47,
+      "children_0_15": 0,
+      "share_recorded_arrivals_pct": 1.0
+    },
+    {
+      "arrival_year": 1870,
+      "people": 32,
+      "children_0_15": 0,
+      "share_recorded_arrivals_pct": 0.7
+    },
+    {
+      "arrival_year": 1874,
+      "people": 27,
+      "children_0_15": 0,
+      "share_recorded_arrivals_pct": 0.6
+    },
+    {
+      "arrival_year": 1890,
+      "people": 18,
+      "children_0_15": 0,
+      "share_recorded_arrivals_pct": 0.4
+    },
+    {
+      "arrival_year": 1872,
+      "people": 14,
+      "children_0_15": 0,
+      "share_recorded_arrivals_pct": 0.3
+    },
+    {
+      "arrival_year": 1873,
+      "people": 11,
+      "children_0_15": 0,
+      "share_recorded_arrivals_pct": 0.2
+    },
+    {
+      "arrival_year": 1871,
+      "people": 9,
+      "children_0_15": 0,
+      "share_recorded_arrivals_pct": 0.2
+    },
+    {
+      "arrival_year": 1867,
+      "people": 3,
+      "children_0_15": 0,
+      "share_recorded_arrivals_pct": 0.1
+    },
+    {
+      "arrival_year": 1868,
+      "people": 3,
+      "children_0_15": 0,
+      "share_recorded_arrivals_pct": 0.1
+    },
+    {
+      "arrival_year": 1865,
+      "people": 2,
+      "children_0_15": 0,
+      "share_recorded_arrivals_pct": 0.0
+    },
+    {
+      "arrival_year": 1866,
+      "people": 2,
+      "children_0_15": 0,
+      "share_recorded_arrivals_pct": 0.0
+    }
+  ],
+  "child_origin_summary": [
+    {
+      "origin_group": "On Sakhalin",
+      "children": 1240,
+      "share_all_children_pct": 84.5
+    },
+    {
+      "origin_group": "In transit",
+      "children": 102,
+      "share_all_children_pct": 7.0
+    },
+    {
+      "origin_group": "Not recorded",
+      "children": 78,
+      "share_all_children_pct": 5.3
+    },
+    {
+      "origin_group": "Recorded origin elsewhere",
+      "children": 47,
+      "share_all_children_pct": 3.2
+    }
+  ],
+  "dashboard_rows": 632,
+  "coverage": {
+    "people": 7446,
+    "recorded_arrival_year": 4826,
+    "missing_arrival_year": 2620,
+    "children": 1467,
+    "children_recorded_arrival": 42,
+    "sakhalin_origin_children_with_arrival": 1
+  },
+  "origin_ages_5_15": {
+    "Not recorded": 65,
+    "On Sakhalin": 355,
+    "Recorded origin elsewhere": 42,
+    "In transit": 74
+  }
+}
