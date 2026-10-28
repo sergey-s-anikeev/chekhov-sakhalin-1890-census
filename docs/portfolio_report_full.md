@@ -150,16 +150,26 @@ Across 51 settlements, Alexandrovsky Post has 1,338 records and Rykovskoe has 1,
 This concentration means overall statistics are strongly influenced by the largest settlements. District-level comparisons and settlement filters should accompany the headline totals. Counts alone do not establish settlement density, urbanization, or relative completeness of historical coverage.
 
 **Evidence:** [District totals](../tableau/data/districts_by_population22082026.csv), [settlement totals](../tableau/data/settlements_by_population22082026.csv), and [top-five counts](../tableau/data/top5_by_population_witsubtotal_22082026.csv).  
-**Planned figure 1:** Ranked settlement bars, with the top-five share and district context.
+**Figure 1 completed, 2026-10-28:** [Sakhalin 1890 — Settlement concentration](https://public.tableau.com/views/Sakhalin1890Settlementconcentration/Settlementconcentration), with ranked settlement bars, District filter, selected-population total and fixed all-district top-five note. [Saved screenshot](../tableau/screenshots/settlement_concentration_20261028.png). Publication is owner-reported; the screenshot was inspected locally. Live interactions and workbook connections were not independently inspected.
 
 ### 5.2 Male records predominate, and median ages differ
 
 The derived sex field contains 4,921 male records (66.1%) and 2,525 female records (33.9%). The median age among recorded ages is 33 overall, 35 for males, and 29 for females. Age is missing for 147 people, or 2.0% of the dataset.
 
+District comparison added 2026-10-28 following the owner's Tableau exploration:
+
+| District | Male records | All records | Male share |
+|---|---:|---:|---:|
+| Alexandrovsky | 1,742 | 2,884 | 60.4% |
+| Tymovsky | 2,198 | 3,242 | 67.8% |
+| Korsakovsky | 981 | 1,320 | 74.3% |
+
+The male share increases across these three district groups. Differences in settlement development and migration phases are possible explanations proposed by the owner; this comparison does not test their effects. Each percentage uses all recorded people in its district, including those without recorded age. The comparison is reported by district rather than as a continuous geographic gradient.
+
 The results establish a difference in the composition of the represented groups. They do not explain why the difference exists. Historical selection, legal status, migration, family composition, and survival could all affect the observed distribution; this analysis does not isolate their effects.
 
 **Evidence:** [Age/sex profile](../tableau/data/age_and_sex_profile22082026.csv), [overall median](../tableau/data/median_age22082026.csv), and [medians by sex](../tableau/data/median_age_bysex22082026.csv).  
-**Planned figure 2:** Sex composition and median-age indicators. A full age pyramid would require an additional age-band aggregation; it is not supplied by the district summary alone.
+**Figure 2 completed, 2026-10-28:** [Published dashboard](https://public.tableau.com/views/Sakhalin1890Sexcompositionbydistrictandrecordedages/Sakhalin1890Sexcompositionandrecordedages), URL supplied by the owner. The [saved screenshot](../tableau/screenshots/sex_composition_recorded_ages_20261028.png) confirms Female 2,525, Male 4,921, a District filter and explicitly all-district median/coverage notes. District filtering and percentage tooltips are owner-reported; live interactions and workbook connections were not independently inspected. See [action-plan item 2](tableau_visualization_action_plan.md). A full age pyramid would require an additional age-band aggregation; it is not supplied by the district summary alone.
 
 ### 5.3 Exile settlers are the largest recorded legal-status category
 
@@ -168,7 +178,7 @@ The results establish a difference in the composition of the represented groups.
 These categories describe the source's administrative classifications. A child-status label does not establish the child's own conviction history, and a non-child label does not guarantee an adult age. The top-four non-child export is a filtered ranking whose percentages still use the entire dataset; it is not a complete distribution.
 
 **Evidence:** [Full legal-status distribution](../tableau/data/legal_status_profile22082026.csv) and [filtered status shares](../tableau/data/legal_status_profile_share28082026.csv).  
-**Planned figure 3:** Selected legal-status bars with explicit count and dataset-share labels; retain the complete distribution in a supporting table.
+**Figure 3 completed, 2026-10-28:** [Published combined-status pie](https://public.tableau.com/views/Sakhalin1890Combinedlegalandsocialstatusgroups/Sakhalin1890Combinedlegalandsocialstatusgroups), with [saved screenshot](../tableau/screenshots/legal_status_groups_20261028.png). The owner also reported preparing the full ranked bar view. Display groups combine the three principal exile categories with their corresponding child-status labels: settler 4,114 (55.3%), convict 1,831 (24.6%), peasant 522 (7.0%); free-status person remains 862 (11.6%); Other is 117 (1.6%), including 24 missing. These are display groupings, not verified families or age classes. See [definitions and publication evidence](legal_status_tableau.md); rounded shares sum to 100.1%.
 
 ### 5.4 The literacy difference persists under two denominators
 
@@ -251,6 +261,8 @@ Some earlier project documents still describe the sample-stage plan. This draft 
 
 The first Tableau version should prioritize geography, age/sex composition, legal status, literacy, and household structure. These subjects have interpretable measures and stronger supporting coverage. Occupation and illness belong in supporting views with prominent coverage information.
 
+The [Tableau visualization action plan](tableau_visualization_action_plan.md), agreed 2026-10-27, retains the six whole-population figures proposed below, records the completed children's segment as item 7, and adds a planned historical Russian Empire map of recorded origins as item 8. The map requires reviewed historical geography; it is not yet a published figure. This report's October 4 status and planned-figure text remain a draft and need reconciliation with the later Tableau publications before final portfolio release.
+
 Each view should state its unit, date context, denominator, exclusions, and missing count. Aggregate CSVs have different grains and cannot safely be combined through arbitrary joins. Repeated cohort totals must not be summed as independent observations. Filtering a saved percentage does not recalculate its denominator; dynamic percentages require compatible counts at the required grain or the person-level source.
 
 Before publication, validate displayed counts against SQL outputs, check filters, distinguish unknown from no, and show the effect of denominator choices. Historical maps remain optional until settlement locations and boundaries are reliably documented.
@@ -289,7 +301,7 @@ The export inventory records older query variants and two extended analyses with
 ## 10. Remaining work for the final portfolio release
 
 1. Review this draft's narrative and select the findings that should lead the portfolio presentation.
-2. Build and validate the six proposed figures and the Tableau dashboard; replace planned-figure notes with actual images and captions.
+2. Follow the [eight-item Tableau action plan](tableau_visualization_action_plan.md): complete the six proposed whole-population figures, incorporate the completed children's segment, and develop the origin map only after its historical geography is reviewed. Replace planned-figure notes with actual images and captions.
 3. Reconcile older source, methodology, and limitations documents with the completed release stage.
 4. Add the final repository and dashboard links, then review both report versions for consistent figures and claims.
 

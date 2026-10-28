@@ -384,7 +384,7 @@ Boolean values. Workbench loaded 7,446 rows with zero skipped records and zero
 warnings; the validation result set matched all expected totals and showed
 `PASS` for every control.
 
-## 10. Tableau Readiness — `[~]` Four named children's dashboards published; remaining validation paused
+## 10. Tableau Readiness — `[~]` Seven named dashboards published; remaining independent validation paused
 
 - [ ] Test direct CSV import into Tableau.
 - [ ] Verify field types, aliases, geographic roles, and default aggregations.
@@ -451,7 +451,21 @@ Owner review and screenshot corrections completed 2026-10-14. Updated single-sex
 
 The owner paused further review and CSV extracts on 2026-10-27. Open application checks and unsaved SQL outputs remain documented, without implying that new exports or a Chekhov numerical comparison are planned.
 
+The owner agreed an [eight-item Tableau visualization plan](tableau_visualization_action_plan.md): six original whole-population figures, the completed children's segment (item 7), and a historical Russian Empire origin map (item 8). The map is planned; its place lookup and historical geography have not been prepared or validated.
+
+### Settlement concentration — 2026-10-28
+
+- [x] Complete action-plan item 1: ranked settlement bars for all recorded people, District filter, linked total sheet and fixed all-district top-five note.
+- [x] Record the owner-supplied [published dashboard](https://public.tableau.com/views/Sakhalin1890Settlementconcentration/Settlementconcentration) and [saved screenshot](../tableau/screenshots/settlement_concentration_20261028.png).
+- [x] Inspect the screenshot locally: total 7,446, top five 4,046 (54.3%), scope caption and horizontal total-label layout are displayed. Independent live interactions and source connections remain unverified.
+
+Current record: seven named dashboards (four children's dashboards, settlement concentration, sex composition and combined legal/social status), one additional shared origin view, and twelve screenshots. Items 1, 2, 3 and 7 are complete; item 4, adult literacy, is next. Items 4–6 and 8 remain planned.
+
 ## Progress Log
+
+Legal/social status completed 2026-10-28: [published pie dashboard](https://public.tableau.com/views/Sakhalin1890Combinedlegalandsocialstatusgroups/Sakhalin1890Combinedlegalandsocialstatusgroups) and [screenshot](../tableau/screenshots/legal_status_groups_20261028.png) registered; five groups reconcile to 7,446. The detailed bars are owner-reported. Item 3 is complete and item 4, adult literacy, is next. [Definitions and evidence](legal_status_tableau.md) include the child-group caveat and historical rights summaries.
+
+Sex-composition dashboard completed 2026-10-28: owner supplied the [public URL](https://public.tableau.com/views/Sakhalin1890Sexcompositionbydistrictandrecordedages/Sakhalin1890Sexcompositionandrecordedages), and the [saved screenshot](../tableau/screenshots/sex_composition_recorded_ages_20261028.png) was inspected locally. It confirms Female 2,525 / Male 4,921, the District filter, all-district medians 29 / 35 / 33, and 147 missing ages. District interactions and percentage tooltips are owner-reported; live connections were not inspected. Action-plan item 2 is complete.
 
 | Date | Stage | Status | Summary | Evidence |
 |:--|:--|:--|:--|:--|

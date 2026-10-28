@@ -12,7 +12,7 @@ Russian/Cyrillic source and normalized values remain authoritative. English docu
 
 ## Current Status
 
-**Four named children’s dashboards are published, as reported by the owner: age and sex (0–15), recorded literacy (5–15), settlement distribution (0–15), and recorded origin by age (0–15).** A two-group origin view also has an owner-supplied Tableau share link. Nine screenshots are saved, including both origin views. Owner review and updated screenshots confirm the age/literacy summary-filter corrections; the settlement layout was inspected, while independent live District-filter verification remains open. See the [findings and review](docs/children_findings.md) and [origin-by-age analysis](docs/children_origin_age_profile.md).
+**Seven named dashboards are published, as reported by the owner: settlement concentration, sex composition and combined legal/social status for all recorded people, plus four children’s dashboards covering age and sex (0–15), recorded literacy (5–15), settlement distribution (0–15), and recorded origin by age (0–15).** A two-group origin view also has an owner-supplied Tableau share link. Twelve screenshots are saved. Action-plan items 1, 2, 3 and 7 are complete; item 4 is next. Owner review and updated screenshots confirm the age/literacy summary-filter corrections; independent live settlement-filter verification remains open. See the [visualization action plan](docs/tableau_visualization_action_plan.md), [children's findings and review](docs/children_findings.md), and [origin-by-age analysis](docs/children_origin_age_profile.md).
 
 The [full inventory audit](outputs/qa/tableau_preflight_20261019_full_inventory/README.md), run on 2026-10-19, reconciled the 48 CSVs present then: 42 current-query matches, four documented variants and two known legacy exclusions. Two children's origin-by-age exports were [registered separately on 2026-10-27](outputs/qa/children_origin_age_export_20261027/validation.json), bringing the current inventory to 50. Source hashes and all retained practice-file values are unchanged.
 
@@ -22,7 +22,7 @@ The [full inventory audit](outputs/qa/tableau_preflight_20261019_full_inventory/
 | English analytical dataset | Approved; QA complete | 7,446 records and 23 columns in `sakhalin_1890_en_v1.csv` |
 | MySQL import and validation | Complete | 7,446 loaded rows, zero skipped records or warnings, and all validation controls passed |
 | SQL analysis and visualization exports | In progress | Demographic and extended analytical queries; 50 CSV snapshots in `tableau/data/`; selected new origin views still await exports |
-| Tableau source validation and dashboards | In progress | Four named dashboards published (owner report), plus one shared two-group origin view; nine screenshots saved; settlement live-filter check open |
+| Tableau source validation and dashboards | In progress | Seven named dashboards published (owner report), plus one shared two-group origin view; twelve screenshots saved; action-plan items 1, 2, 3 and 7 complete |
 | Final findings and portfolio presentation | Pending | Analytical summary, dashboard screenshots, and final project narrative |
 
 The Russian canonical release `v5_20260731` retains the validated v4 analytical data, incorporates the approved Item 24 comment corrections, and adds the fully reviewed name-component and provenance structure.
@@ -59,6 +59,12 @@ Analysis covers population by district and settlement, age and sex, legal status
 
 ## Visualization Exports and Next Steps
 
+Combined legal and social status groups completed on 2026-10-28: [published pie dashboard](https://public.tableau.com/views/Sakhalin1890Combinedlegalandsocialstatusgroups/Sakhalin1890Combinedlegalandsocialstatusgroups), [screenshot](tableau/screenshots/legal_status_groups_20261028.png), and [group definitions/historical context](docs/legal_status_tableau.md). All 7,446 records are represented in five groups, including 117 Other (24 missing). The detailed bars were completed during authoring according to the owner. Item 3 is complete; item 4, adult literacy, is next.
+
+Sex composition by district and recorded ages completed on 2026-10-28: [published dashboard](https://public.tableau.com/views/Sakhalin1890Sexcompositionbydistrictandrecordedages/Sakhalin1890Sexcompositionandrecordedages), [saved screenshot](tableau/screenshots/sex_composition_recorded_ages_20261028.png). The screenshot shows Female 2,525 and Male 4,921, the District filter and fixed all-district median/coverage notes. The URL and filter behavior are owner-reported; the screenshot was inspected locally. Items 2 and 3 are complete; item 4, adult literacy, is next.
+
+Settlement concentration for all recorded people completed on 2026-10-28: [published dashboard](https://public.tableau.com/views/Sakhalin1890Settlementconcentration/Settlementconcentration), [saved screenshot](tableau/screenshots/settlement_concentration_20261028.png). It shows ranked settlement counts, a District filter and selected-population total, plus a fixed top-five note for all districts: 4,046 / 7,446 (54.3%). The owner supplied the URL and completed the filter setup; the screenshot was inspected locally. Independent live interactions and workbook connections were not inspected. [Action-plan item 1](docs/tableau_visualization_action_plan.md) is complete; item 2, sex composition and recorded ages, is next.
+
 Settlement dashboard completed by the owner on 2026-10-14; [screenshot](tableau/screenshots/children_by_settlement_20261014.png) inspected and 51-row export verified. Published dashboard: [Sakhalin 1890 — Children by settlement](https://public.tableau.com/views/Sakhalin1890Childrenbysettlement/Sakhalin1890Childrenbysettlement). URL supplied by the owner on 2026-10-14; recorded in documentation on 2026-10-19.
 
 **Children's block:** Decision 40 approves **Children aged 0–15**. Both child queries are corrected, and their replacement exports are registered in [the export inventory](tableau/data/README.md). Use [the standalone SQL](sql/05_children_0_15_queries.sql) to reproduce them. Expected total: 1,467 children (726 female, 741 male). Earlier child exports use different age ranges and remain historical. See [correction QA](outputs/qa/children_0_15_20261012/README.md). Both replacement CSVs match the corrected queries. Published dashboard: [Sakhalin 1890 — Children aged 0–15](https://public.tableau.com/views/Sakhalin1890Childrenaged015/Dashboard1). The owner supplied this link on 2026-10-13; the published view has not been independently inspected.
@@ -73,11 +79,11 @@ Published origin-by-age analysis: the [detailed dashboard](https://public.tablea
 
 On 2026-10-27, the owner paused further review and CSV extracts. The remaining project steps are:
 
-1. Select the main findings from the published dashboards and finish the project narrative.
-2. If review resumes, verify the live District filter on the settlement dashboard and published workbook connections; see [the settlement guide](docs/children_settlements_tableau.md).
-3. Resume any further SQL exports only if the owner requests them. A numerical comparison with Chekhov’s published figures is outside the current plan.
+1. Follow the agreed [eight-item Tableau visualization action plan](docs/tableau_visualization_action_plan.md): the original six whole-population figures, the completed children's segment, and a planned historical Russian Empire origin map.
+2. Select the main findings from the published dashboards and finish the project narrative.
+3. If review resumes, verify the live District filter on the settlement dashboard and published workbook connections; see [the settlement guide](docs/children_settlements_tableau.md). Resume further SQL exports only if the owner requests them. A numerical comparison with Chekhov’s published figures is outside the current plan.
 
-The [development tracker](docs/english_dataset_development_tracker.md) records four named dashboards, the additional two-group origin view, the owner review and nine screenshots. Summary-filter corrections are verified in the updated screenshots. No packaged Tableau workbook is stored in this repository.
+The [development tracker](docs/english_dataset_development_tracker.md) records seven named dashboards, the additional two-group origin view, the owner review and twelve screenshots. Summary-filter corrections are verified in the updated screenshots. No packaged Tableau workbook is stored in this repository.
 
 ## GitHub Repository Workflow
 

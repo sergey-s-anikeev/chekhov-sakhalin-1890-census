@@ -1,5 +1,25 @@
 # Parser Improvements After Full-District Validation
 
+## Legal/social status publication and daily progress — 2026-10-28
+
+Recorded the [combined-status dashboard](https://public.tableau.com/views/Sakhalin1890Combinedlegalandsocialstatusgroups/Sakhalin1890Combinedlegalandsocialstatusgroups) and inspected its saved screenshot. Added [group definitions and historical context](legal_status_tableau.md), preserving source classifications and documenting the five pie groups, full-population denominator, rounding and 24 missing statuses. Item 3 is complete; items 1, 2, 3 and 7 are now complete. Item 4, adult literacy, is next. Seven named dashboard publications, one shared origin view and twelve screenshots are registered. Today's package also includes the action plan, settlement and sex-composition screenshots, and the district male-share finding. No new CSV exports were generated.
+
+## Sex-composition dashboard publication — 2026-10-28
+
+Recorded the owner-supplied [published dashboard](https://public.tableau.com/views/Sakhalin1890Sexcompositionbydistrictandrecordedages/Sakhalin1890Sexcompositionandrecordedages) and inspected its [saved screenshot](../tableau/screenshots/sex_composition_recorded_ages_20261028.png). Displayed counts reconcile to Female 2,525 and Male 4,921; median-age and missing-age notes explicitly cover all districts. Item 2 is complete; item 3, legal status, is next. The publication record now contains six named dashboards, one shared origin view and eleven screenshots. District filtering and percentage tooltips are owner-reported; live interactions and source connections were not independently inspected.
+
+## District sex-composition finding — 2026-10-28
+
+Added district male shares to the full and short portfolio reports: Alexandrovsky 1,742/2,884 (60.4%), Tymovsky 2,198/3,242 (67.8%), and Korsakovsky 981/1,320 (74.3%). Settlement development and migration phases remain owner-proposed explanations, untested by this comparison. Updated action-plan item 2 to owner-reported authoring complete, with publication URL and screenshot pending, and saved revised dashboard title/description. The District filter applies to sex counts/shares; fixed median-age and missing-age notes are labelled as all-district results.
+
+## Settlement concentration dashboard — 2026-10-28
+
+Completed item 1 of the [Tableau action plan](tableau_visualization_action_plan.md). Recorded the owner-supplied [published dashboard](https://public.tableau.com/views/Sakhalin1890Settlementconcentration/Settlementconcentration) and inspected its [saved screenshot](../tableau/screenshots/settlement_concentration_20261028.png). The view ranks all recorded people by settlement, provides a District filter and selected-population total, and keeps the top-five concentration note fixed at 4,046 / 7,446 (54.3%) with an explicit all-district label. The total label and number are arranged horizontally. Current publication record: five named dashboards plus one shared two-group origin view, with ten screenshots. Live interactions and workbook connections were not independently inspected. The CSV inventory remains 50; no new export was created. Item 2, sex composition and recorded ages, is next.
+
+## Eight-item Tableau visualization plan — 2026-10-27
+
+Added a [dedicated visualization checklist](tableau_visualization_action_plan.md) for the six whole-population figures in the portfolio draft, the completed children's segment (item 7), and a planned map of recorded origins of Sakhalin residents on a historically appropriate Russian Empire base (item 8). The map remains pending a reviewed place lookup, historical geography and mapped/unmapped coverage accounting. Existing CSV snapshots are the starting point; no new export or source-data change was made.
+
 ## Children's origin-by-age Tableau views — 2026-10-27
 
 Recorded the owner-supplied [detailed four-category dashboard](https://public.tableau.com/views/ChildrensrecordedoriginbyageSakhalin1890/Dashboard1) and [two-group share link](https://public.tableau.com/shared/ZMWP4CSS2). Saved screenshots of both views were visually inspected. The detailed dashboard retains On Sakhalin, recorded origin elsewhere, In transit and origin not recorded as separate segments and displays the age-eight missing-origin caveat. Updated the README, origin analysis and tracker to four named children's dashboards, an additional shared view and nine screenshots. Live Tableau pages and data-source connections were not independently inspected. No existing dataset or CSV values changed.

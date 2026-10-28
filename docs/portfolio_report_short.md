@@ -32,6 +32,7 @@ These cases demonstrate reviewed field recovery, controlled normalization, and c
 |---|---|---|
 | Geographic concentration | The five largest settlements contain 4,046 people, or 54.3% of all records. | Overall results are strongly influenced by a small number of settlements. |
 | Different age/sex composition | The derived sex field is 66.1% male; median recorded ages are 35 for males and 29 for females. | The represented groups differ in composition; the analysis does not establish the causes. |
+| District differences in male share | Male records account for 60.4% in Alexandrovsky, 67.8% in Tymovsky and 74.3% in Korsakovsky. Each denominator is the full recorded district population. | Differences in settlement development and migration phases are owner-proposed explanations that remain untested. |
 | A substantial literacy difference | Among adults aged 16+ with recorded literacy, 39.1% of males and 10.3% of females carry the `Literate` label. | A 28.9 percentage-point difference remains when missing literacy is excluded; `Educated` remains a separate category. |
 | Small households are common | One- and two-person groups account for 62.1% of 2,796 identified households. | Household counts reveal structure but do not directly measure living-alone status. |
 
