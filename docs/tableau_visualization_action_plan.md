@@ -32,17 +32,22 @@ Proposed Tableau description (under 231 characters): Explore female and male sha
 
 Published [combined-status pie dashboard](https://public.tableau.com/views/Sakhalin1890Combinedlegalandsocialstatusgroups/Sakhalin1890Combinedlegalandsocialstatusgroups); [screenshot](../tableau/screenshots/legal_status_groups_20261028.png) inspected locally. The four principal groups contain 4,114, 1,831, 862 and 522 people; Other contains 117, including 24 missing statuses. See [group definitions, historical context and evidence limits](legal_status_tableau.md). The bar view remains owner-reported; its separate public URL is not registered. Item 4 is next.
 
-## 4. Adult literacy — planned
+## 4. Adult literacy — completed 2026-10-29
 
-- [ ] Build separate panels, or another clearly labelled comparison, for `Literate / all adults aged 16+` and `Literate / adults with recorded literacy`, by sex. Use [adult literacy counts](../tableau/data/adult_education_profile2_01092026.csv); recalculate each rate from counts within its denominator.
-- [ ] Keep `Educated`, `Illiterate` and missing literacy separate. Show the missing-literacy count or share beside the rates.
-- [ ] Explain that the two denominators answer different questions and that recorded literacy does not establish school attendance.
+- [x] Build separate panels, or another clearly labelled comparison, for `Literate / all adults aged 16+` and `Literate / adults with recorded literacy`, by sex. Use [adult literacy counts](../tableau/data/adult_education_profile2_01092026.csv); recalculate each rate from counts within its denominator.
+- [x] Keep `Educated`, `Illiterate` and missing literacy separate. Show the missing-literacy count or share beside the rates.
+- [x] Explain that the two denominators answer different questions and that recorded literacy does not establish school attendance.
 
-## 5. Recorded arrival years — planned
+Published: [Recorded adult literacy by sex](https://public.tableau.com/views/Sakhalin1890Recordedadultliteracybysex/Sakhalin1890Recordedadultliteracybysex), owner-supplied link received 2026-10-29. The [saved screenshot](../tableau/screenshots/adult_literacy_by_sex_20261029.png) confirms counts and both percentage panels. See [scope, denominators and findings](adult_literacy_tableau.md). Item 5 is next.
 
-- [ ] Build bars by year from the [arrival-year distribution](../tableau/data/arrival_year_cohorts01092026.csv). Caption them **“Recorded arrival years among people represented in 1890.”**
-- [ ] Show coverage: **4,826 / 7,446** records have an arrival year. Identify 1884 as the largest recorded year (**548**), subject to the saved result's scope.
-- [ ] Do not interpret the bars as annual immigration flows; the records do not include all people who arrived and later died or departed.
+## 5. Recorded arrival years — completed 2026-10-29
+
+- [x] Build bars by year from the [arrival-year distribution](../tableau/data/arrival_year_cohorts01092026.csv). Caption them **“Recorded arrival years among people represented in 1890.”**
+- [x] Show coverage: **4,826 / 7,446** records have an arrival year. Identify 1884 as the largest recorded year (**548**), subject to the saved result's scope.
+- [x] Do not interpret the bars as annual immigration flows; the records do not include all people who arrived and later died or departed.
+- [x] Add a decade/year-ending heatmap companion using the same annual counts, preserving blanks outside 1865–1890.
+
+Published: [Recorded arrival years](https://public.tableau.com/views/Sakhalin1890Recordedarrivalyears/Sakhalin1890Recordedarrivalyears), owner-supplied URL received 2026-10-29. The [saved screenshot](../tableau/screenshots/arrival_years_20261029.png) was inspected locally. [Dashboard scope and evidence](arrival_years_tableau.md). Item 6 is next.
 
 ## 6. Household size and lodgers — planned
 

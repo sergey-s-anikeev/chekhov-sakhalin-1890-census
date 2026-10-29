@@ -196,7 +196,7 @@ The male–female difference is 24.1 percentage points using all adults and 28.9
 The saved age-band analysis shows a higher male `Literate` share in every adult age band when all members of each age/sex group are counted. This strengthens the descriptive finding, but does not establish a causal effect of sex or adjust for all other compositional differences.
 
 **Evidence:** [Adult literacy counts](../tableau/data/adult_education_profile2_01092026.csv) and [age-band literacy](../tableau/data/literacy_cohorts_07092026.csv).  
-**Planned figure 4:** Grouped literacy bars with a denominator toggle or two clearly separated panels, plus a visible missing-category share.
+**Figure 4 completed, 2026-10-29:** [Recorded adult literacy by sex](https://public.tableau.com/views/Sakhalin1890Recordedadultliteracybysex/Sakhalin1890Recordedadultliteracybysex), with [saved screenshot](../tableau/screenshots/adult_literacy_by_sex_20261029.png). Three panels show counts, all-adult shares and recorded-only shares by sex; Educated remains separate. The screenshot confirms the key counts, rates and explanation of 787 missing literacy records. Publication is owner-reported; live connections and tooltips were not inspected. [Detailed dashboard record](adult_literacy_tableau.md).
 
 ### 5.5 Origins are diverse; arrival years describe people observed in 1890
 
@@ -207,7 +207,7 @@ Arrival year is recorded for 4,826 people (64.8%). Within this subset, 1884 is t
 The origin field also includes labels such as `In transit`. Its categories should be shown as recorded origin labels, not automatically mapped to nationality. Historical boundaries require explicit geographic interpretation before any map is created.
 
 **Evidence:** [English dataset](../data/analytical/sakhalin_1890_en_v1.csv), [origin distribution](../tableau/data/origin_place_01092026.csv), and [arrival-year distribution](../tableau/data/arrival_year_cohorts01092026.csv).  
-**Planned figure 5:** Arrival-year bars captioned “Recorded arrival years among people represented in 1890,” with coverage shown alongside them.
+**Figure 5 completed, 2026-10-29:** [Recorded arrival years](https://public.tableau.com/views/Sakhalin1890Recordedarrivalyears/Sakhalin1890Recordedarrivalyears), with [saved screenshot](../tableau/screenshots/arrival_years_20261029.png). Chronological bars and a decade/year-ending heatmap show the same annual counts, including 1884 = 548, with coverage and retrospective-count caveats. Publication is owner-reported; the screenshot was inspected locally. [Scope and evidence](arrival_years_tableau.md).
 
 ### 5.6 Small households are common, and some contain recorded lodgers
 

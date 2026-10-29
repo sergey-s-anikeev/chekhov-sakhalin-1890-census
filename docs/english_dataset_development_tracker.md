@@ -384,7 +384,7 @@ Boolean values. Workbench loaded 7,446 rows with zero skipped records and zero
 warnings; the validation result set matched all expected totals and showed
 `PASS` for every control.
 
-## 10. Tableau Readiness — `[~]` Seven named dashboards published; remaining independent validation paused
+## 10. Tableau Readiness — `[~]` Nine named dashboards published; remaining independent validation paused
 
 - [ ] Test direct CSV import into Tableau.
 - [ ] Verify field types, aliases, geographic roles, and default aggregations.
@@ -459,9 +459,13 @@ The owner agreed an [eight-item Tableau visualization plan](tableau_visualizatio
 - [x] Record the owner-supplied [published dashboard](https://public.tableau.com/views/Sakhalin1890Settlementconcentration/Settlementconcentration) and [saved screenshot](../tableau/screenshots/settlement_concentration_20261028.png).
 - [x] Inspect the screenshot locally: total 7,446, top five 4,046 (54.3%), scope caption and horizontal total-label layout are displayed. Independent live interactions and source connections remain unverified.
 
-Current record: seven named dashboards (four children's dashboards, settlement concentration, sex composition and combined legal/social status), one additional shared origin view, and twelve screenshots. Items 1, 2, 3 and 7 are complete; item 4, adult literacy, is next. Items 4–6 and 8 remain planned.
+Current record: nine named dashboards (four children's dashboards, settlement concentration, sex composition, combined legal/social status, adult literacy and recorded arrival years), one additional shared origin view, and fourteen screenshots. Items 1–5 and 7 are complete; item 6, household size and lodgers, is next. Items 6 and 8 remain planned.
 
 ## Progress Log
+
+Recorded arrival years completed 2026-10-29: [published dashboard](https://public.tableau.com/views/Sakhalin1890Recordedarrivalyears/Sakhalin1890Recordedarrivalyears) and [screenshot](../tableau/screenshots/arrival_years_20261029.png) registered. Local inspection confirms annual bars, a decade heatmap, 1884 = 548, and coverage/interpretation notes. Item 5 is complete; item 6 is next. [Dashboard record](arrival_years_tableau.md).
+
+Adult literacy completed 2026-10-29: [published dashboard](https://public.tableau.com/views/Sakhalin1890Recordedadultliteracybysex/Sakhalin1890Recordedadultliteracybysex) and [screenshot](../tableau/screenshots/adult_literacy_by_sex_20261029.png) registered. Local screenshot inspection confirms counts, two denominators, separate Educated and missing-literacy categories, and interpretation notes. Item 4 is complete; item 5 is next. [Dashboard record](adult_literacy_tableau.md).
 
 Legal/social status completed 2026-10-28: [published pie dashboard](https://public.tableau.com/views/Sakhalin1890Combinedlegalandsocialstatusgroups/Sakhalin1890Combinedlegalandsocialstatusgroups) and [screenshot](../tableau/screenshots/legal_status_groups_20261028.png) registered; five groups reconcile to 7,446. The detailed bars are owner-reported. Item 3 is complete and item 4, adult literacy, is next. [Definitions and evidence](legal_status_tableau.md) include the child-group caveat and historical rights summaries.
 

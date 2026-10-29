@@ -1,5 +1,13 @@
 # Parser Improvements After Full-District Validation
 
+## Recorded arrival-years dashboard — 2026-10-29
+
+Recorded the owner-supplied [published dashboard](https://public.tableau.com/views/Sakhalin1890Recordedarrivalyears/Sakhalin1890Recordedarrivalyears) and inspected its saved screenshot. Chronological bars and a decade/year-ending heatmap show 4,826 records with arrival years from 1865–1890. Both show 1884 = 548; coverage and retrospective-count caveats are displayed. Item 5 is complete; item 6, household size and lodgers, is next. Nine named dashboards, one shared origin view and fourteen screenshots are registered. No new CSV was generated. [Dashboard record](arrival_years_tableau.md).
+
+## Adult literacy dashboard publication — 2026-10-29
+
+Recorded the owner-supplied [published dashboard](https://public.tableau.com/views/Sakhalin1890Recordedadultliteracybysex/Sakhalin1890Recordedadultliteracybysex) and inspected its saved screenshot. Three panels reconcile counts and percentages for 5,832 people aged 16+, including 787 with no literacy recorded. Literate shares are Female 9.2% / Male 33.3% among all adults and 10.3% / 39.1% among recorded-literacy adults; Educated stays separate. Item 4 is complete; item 5, recorded arrival years, is next. The publication record now contains eight named dashboards, one shared origin view and thirteen screenshots. No new export was created. [Dashboard record](adult_literacy_tableau.md).
+
 ## Legal/social status publication and daily progress — 2026-10-28
 
 Recorded the [combined-status dashboard](https://public.tableau.com/views/Sakhalin1890Combinedlegalandsocialstatusgroups/Sakhalin1890Combinedlegalandsocialstatusgroups) and inspected its saved screenshot. Added [group definitions and historical context](legal_status_tableau.md), preserving source classifications and documenting the five pie groups, full-population denominator, rounding and 24 missing statuses. Item 3 is complete; items 1, 2, 3 and 7 are now complete. Item 4, adult literacy, is next. Seven named dashboard publications, one shared origin view and twelve screenshots are registered. Today's package also includes the action plan, settlement and sex-composition screenshots, and the district male-share finding. No new CSV exports were generated.
