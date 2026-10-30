@@ -49,11 +49,13 @@ Published: [Recorded adult literacy by sex](https://public.tableau.com/views/Sak
 
 Published: [Recorded arrival years](https://public.tableau.com/views/Sakhalin1890Recordedarrivalyears/Sakhalin1890Recordedarrivalyears), owner-supplied URL received 2026-10-29. The [saved screenshot](../tableau/screenshots/arrival_years_20261029.png) was inspected locally. [Dashboard scope and evidence](arrival_years_tableau.md). Item 6 is next.
 
-## 6. Household size and lodgers — planned
+## 6. Household size and lodgers — completed 2026-10-30
 
-- [ ] Show the [household-size distribution](../tableau/data/household_size01092026.csv) for **2,796 identified household groups**; one- and two-person groups total **1,735 (62.1%)**.
-- [ ] Add a separate recorded-lodger indicator using the [lodger summary](../tableau/data/Lodgers_households_08092026.csv): **320 households with recorded lodgers**, among 2,796 private households in that result. Keep its definition and denominator visible.
-- [ ] Note that **246 people have no household ID** and that no recorded lodger does not prove none was present.
+- [x] Show the [household-size distribution](../tableau/data/household_size01092026.csv) for **2,796 identified household groups**; one- and two-person groups total **1,735 (62.1%)**.
+- [x] Add a separate recorded-lodger indicator using the [lodger summary](../tableau/data/Lodgers_households_08092026.csv): **320 households with recorded lodgers**, among 2,796 private households in that result. Keep its definition and denominator visible.
+- [x] Note that **246 people have no household ID** and that no recorded lodger does not prove none was present.
+
+Published: [Household sizes and recorded lodgers](https://public.tableau.com/views/Sakhalin1890Householdsizesandrecordedlodgers/Sakhalin1890Householdsizesandrecordedlodgers), owner-supplied URL received 2026-10-30. The [saved screenshot](../tableau/screenshots/households_lodgers_20261030.png) was inspected locally. Settlement bars omit zero-recorded-lodger settlements and have a District filter; the size distribution and 11.4% indicator cover all districts. [Definitions, calculations and evidence](households_lodgers_tableau.md). Items 1–7 are complete; item 8 is next.
 
 ## 7. Children's segment — completed
 

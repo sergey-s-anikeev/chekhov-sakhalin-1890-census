@@ -384,7 +384,7 @@ Boolean values. Workbench loaded 7,446 rows with zero skipped records and zero
 warnings; the validation result set matched all expected totals and showed
 `PASS` for every control.
 
-## 10. Tableau Readiness — `[~]` Nine named dashboards published; remaining independent validation paused
+## 10. Tableau Readiness — `[~]` Ten named dashboards published; remaining independent validation paused
 
 - [ ] Test direct CSV import into Tableau.
 - [ ] Verify field types, aliases, geographic roles, and default aggregations.
@@ -459,9 +459,11 @@ The owner agreed an [eight-item Tableau visualization plan](tableau_visualizatio
 - [x] Record the owner-supplied [published dashboard](https://public.tableau.com/views/Sakhalin1890Settlementconcentration/Settlementconcentration) and [saved screenshot](../tableau/screenshots/settlement_concentration_20261028.png).
 - [x] Inspect the screenshot locally: total 7,446, top five 4,046 (54.3%), scope caption and horizontal total-label layout are displayed. Independent live interactions and source connections remain unverified.
 
-Current record: nine named dashboards (four children's dashboards, settlement concentration, sex composition, combined legal/social status, adult literacy and recorded arrival years), one additional shared origin view, and fourteen screenshots. Items 1–5 and 7 are complete; item 6, household size and lodgers, is next. Items 6 and 8 remain planned.
+Current record: ten named dashboards (four children's dashboards, settlement concentration, sex composition, combined legal/social status, adult literacy, recorded arrival years and household sizes/lodgers), one additional shared origin view, and fifteen screenshots. Items 1–7 are complete; item 8, the historical origin map, remains planned.
 
 ## Progress Log
+
+Household sizes and lodgers completed 2026-10-30: [published dashboard](https://public.tableau.com/views/Sakhalin1890Householdsizesandrecordedlodgers/Sakhalin1890Householdsizesandrecordedlodgers) and [screenshot](../tableau/screenshots/households_lodgers_20261030.png) registered. Local inspection confirms size bars, 11.4% overall indicator, settlement percentages and scope notes. Item 6 is complete; items 1–7 are complete and item 8 remains planned. [Dashboard record](households_lodgers_tableau.md).
 
 Recorded arrival years completed 2026-10-29: [published dashboard](https://public.tableau.com/views/Sakhalin1890Recordedarrivalyears/Sakhalin1890Recordedarrivalyears) and [screenshot](../tableau/screenshots/arrival_years_20261029.png) registered. Local inspection confirms annual bars, a decade heatmap, 1884 = 548, and coverage/interpretation notes. Item 5 is complete; item 6 is next. [Dashboard record](arrival_years_tableau.md).
 

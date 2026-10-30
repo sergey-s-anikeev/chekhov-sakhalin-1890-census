@@ -12,7 +12,7 @@ Russian/Cyrillic source and normalized values remain authoritative. English docu
 
 ## Current Status
 
-**Nine named dashboards are published, as reported by the owner: settlement concentration, sex composition and combined legal/social status for all recorded people, adult literacy at ages 16+ and recorded arrival years, plus four children’s dashboards covering age and sex (0–15), recorded literacy (5–15), settlement distribution (0–15), and recorded origin by age (0–15).** A two-group origin view also has an owner-supplied Tableau share link. Fourteen screenshots are saved. Action-plan items 1–5 and 7 are complete; item 6 is next. Owner review and updated screenshots confirm the age/literacy summary-filter corrections; independent live settlement-filter verification remains open. See the [visualization action plan](docs/tableau_visualization_action_plan.md), [children's findings and review](docs/children_findings.md), and [origin-by-age analysis](docs/children_origin_age_profile.md).
+**Ten named dashboards are published, as reported by the owner: settlement concentration, sex composition and combined legal/social status for all recorded people, adult literacy at ages 16+, recorded arrival years and household sizes/lodgers, plus four children’s dashboards covering age and sex (0–15), recorded literacy (5–15), settlement distribution (0–15), and recorded origin by age (0–15).** A two-group origin view also has an owner-supplied Tableau share link. Fifteen screenshots are saved. Action-plan items 1–7 are complete; item 8 is next. Owner review and updated screenshots confirm the age/literacy summary-filter corrections; independent live settlement-filter verification remains open. See the [visualization action plan](docs/tableau_visualization_action_plan.md), [children's findings and review](docs/children_findings.md), and [origin-by-age analysis](docs/children_origin_age_profile.md).
 
 The [full inventory audit](outputs/qa/tableau_preflight_20261019_full_inventory/README.md), run on 2026-10-19, reconciled the 48 CSVs present then: 42 current-query matches, four documented variants and two known legacy exclusions. Two children's origin-by-age exports were [registered separately on 2026-10-27](outputs/qa/children_origin_age_export_20261027/validation.json), bringing the current inventory to 50. Source hashes and all retained practice-file values are unchanged.
 
@@ -22,7 +22,7 @@ The [full inventory audit](outputs/qa/tableau_preflight_20261019_full_inventory/
 | English analytical dataset | Approved; QA complete | 7,446 records and 23 columns in `sakhalin_1890_en_v1.csv` |
 | MySQL import and validation | Complete | 7,446 loaded rows, zero skipped records or warnings, and all validation controls passed |
 | SQL analysis and visualization exports | In progress | Demographic and extended analytical queries; 50 CSV snapshots in `tableau/data/`; selected new origin views still await exports |
-| Tableau source validation and dashboards | In progress | Nine named dashboards published (owner report), plus one shared two-group origin view; fourteen screenshots saved; action-plan items 1–5 and 7 complete |
+| Tableau source validation and dashboards | In progress | Ten named dashboards published (owner report), plus one shared two-group origin view; fifteen screenshots saved; action-plan items 1–7 complete |
 | Final findings and portfolio presentation | Pending | Analytical summary, dashboard screenshots, and final project narrative |
 
 The Russian canonical release `v5_20260731` retains the validated v4 analytical data, incorporates the approved Item 24 comment corrections, and adds the fully reviewed name-component and provenance structure.
@@ -59,6 +59,8 @@ Analysis covers population by district and settlement, age and sex, legal status
 
 ## Visualization Exports and Next Steps
 
+Household sizes and recorded lodgers completed on 2026-10-30: [published dashboard](https://public.tableau.com/views/Sakhalin1890Householdsizesandrecordedlodgers/Sakhalin1890Householdsizesandrecordedlodgers), [screenshot](tableau/screenshots/households_lodgers_20261030.png), and [scope/calculations](docs/households_lodgers_tableau.md). Size bars cover 2,796 household groups; one-/two-person groups account for 62.1%. The all-settlement lodger indicator is 11.4%; a District filter applies only to the settlement comparison. Item 6 is complete; item 8, the historical origin map, remains planned. Screenshot inspected locally; live interactions were not independently inspected.
+
 Recorded arrival years completed on 2026-10-29: [published dashboard](https://public.tableau.com/views/Sakhalin1890Recordedarrivalyears/Sakhalin1890Recordedarrivalyears), [screenshot](tableau/screenshots/arrival_years_20261029.png), and [scope/evidence](docs/arrival_years_tableau.md). Bars and a decade heatmap show 4,826 records with an arrival year, including the largest group in 1884 (548; 11.4%). Coverage and retrospective-count caveats are displayed. Item 5 is complete; item 6, household size and lodgers, is next.
 
 Adult literacy by sex completed on 2026-10-29: [published dashboard](https://public.tableau.com/views/Sakhalin1890Recordedadultliteracybysex/Sakhalin1890Recordedadultliteracybysex), [screenshot](tableau/screenshots/adult_literacy_by_sex_20261029.png), and [scope/denominator record](docs/adult_literacy_tableau.md). Counts and both percentage views cover 5,832 people aged 16+; 787 have no literacy recorded. Item 4 is complete; item 5, recorded arrival years, is next. The saved screenshot was inspected locally; live connections and tooltips were not inspected.
@@ -87,7 +89,7 @@ On 2026-10-27, the owner paused further review and CSV extracts. The remaining p
 2. Select the main findings from the published dashboards and finish the project narrative.
 3. If review resumes, verify the live District filter on the settlement dashboard and published workbook connections; see [the settlement guide](docs/children_settlements_tableau.md). Resume further SQL exports only if the owner requests them. A numerical comparison with Chekhov’s published figures is outside the current plan.
 
-The [development tracker](docs/english_dataset_development_tracker.md) records nine named dashboards, the additional two-group origin view, the owner review and fourteen screenshots. Summary-filter corrections are verified in the updated screenshots. No packaged Tableau workbook is stored in this repository.
+The [development tracker](docs/english_dataset_development_tracker.md) records ten named dashboards, the additional two-group origin view, the owner review and fifteen screenshots. Summary-filter corrections are verified in the updated screenshots. No packaged Tableau workbook is stored in this repository.
 
 ## GitHub Repository Workflow
 

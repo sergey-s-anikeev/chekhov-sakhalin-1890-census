@@ -218,7 +218,7 @@ The private-household lodger export covers 7,200 people in 2,796 households. It 
 A one-person group is not interchangeable with an explicit living-alone status. Likewise, a household without a recorded lodger is not proof that no lodger was present.
 
 **Evidence:** [Household-size distribution](../tableau/data/household_size01092026.csv) and [lodger summaries](../tableau/data/Lodgers_households_08092026.csv).  
-**Planned figure 6:** Household-size distribution and a separate recorded-lodger indicator.
+**Figure 6 completed, 2026-10-30:** [Household sizes and recorded lodgers](https://public.tableau.com/views/Sakhalin1890Householdsizesandrecordedlodgers/Sakhalin1890Householdsizesandrecordedlodgers), with [saved screenshot](../tableau/screenshots/households_lodgers_20261030.png). Size-frequency bars, the all-settlement indicator 320 / 2,796 (11.4%) and settlement lodger-share bars are displayed with coverage notes. The District filter affects only the settlement panel, which omits zero-recorded-lodger settlements. Publication is owner-reported; the screenshot was inspected locally. [Dashboard record](households_lodgers_tableau.md).
 
 ### 5.7 Allowance coverage supports comparison, but missingness still matters
 

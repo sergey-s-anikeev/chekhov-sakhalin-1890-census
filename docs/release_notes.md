@@ -1,5 +1,9 @@
 # Parser Improvements After Full-District Validation
 
+## Household-size and lodger dashboard — 2026-10-30
+
+Recorded the owner-supplied [published dashboard](https://public.tableau.com/views/Sakhalin1890Householdsizesandrecordedlodgers/Sakhalin1890Householdsizesandrecordedlodgers) and inspected its saved screenshot. Size bars cover 2,796 groups; one-/two-person groups total 1,735 (62.1%). The fixed all-settlement lodger indicator is 320 / 2,796 (11.4%); the settlement panel has its own District filter and omits zero-recorded-lodger settlements. Notes retain the 246 missing household IDs and recording limitations. Items 1–7 are complete; the historical origin map is the remaining planned visualization. Ten named dashboards, one shared origin view and fifteen screenshots are registered. No CSV values changed. [Dashboard record](households_lodgers_tableau.md).
+
 ## Recorded arrival-years dashboard — 2026-10-29
 
 Recorded the owner-supplied [published dashboard](https://public.tableau.com/views/Sakhalin1890Recordedarrivalyears/Sakhalin1890Recordedarrivalyears) and inspected its saved screenshot. Chronological bars and a decade/year-ending heatmap show 4,826 records with arrival years from 1865–1890. Both show 1884 = 548; coverage and retrospective-count caveats are displayed. Item 5 is complete; item 6, household size and lodgers, is next. Nine named dashboards, one shared origin view and fourteen screenshots are registered. No new CSV was generated. [Dashboard record](arrival_years_tableau.md).
